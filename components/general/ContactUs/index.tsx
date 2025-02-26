@@ -1,7 +1,8 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Logo from '../Logo';
 import Image from 'next/image';
+import { sendEmail } from '@/lib/resend';
 
 const ContactUs = () => {
   // State for form inputs
@@ -15,7 +16,9 @@ const ContactUs = () => {
   });
 
   // Handle input changes
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -24,6 +27,16 @@ const ContactUs = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form data submitted:', formData);
+    sendEmail(formData);
+
+    setFormData({
+      firstName: '',
+      lastName: '',
+      companyMail: '',
+      companyName: '',
+      numberOfStudents: '',
+      message: '',
+    });
 
     // Add form submission logic (e.g., API call)
     alert('Form submitted successfully!');
@@ -39,7 +52,9 @@ const ContactUs = () => {
       <div className="flex flex-col lg:flex-row p-6 rounded-3xl border border-solid border-gray-200 gap-6">
         {/* FORM CONTAINER */}
         <div className="bg-[#EDECECB5] basis-4/6 p-6 rounded-[14px]">
-          <h5 className="font-bold text-pumpkin xl:text-2xl mb-4">Get in Touch</h5>
+          <h5 className="font-bold text-pumpkin xl:text-2xl mb-4">
+            Get in Touch
+          </h5>
           <p className="text-gray-dark lg:text-blueberry text-sm mb-4">
             Feel free to drop your message below
           </p>
@@ -51,7 +66,10 @@ const ContactUs = () => {
           >
             {/* First Name */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="firstName">
+              <label
+                className="block text-purple-dark mb-1"
+                htmlFor="firstName"
+              >
                 First name
               </label>
               <input
@@ -81,7 +99,10 @@ const ContactUs = () => {
             </div>
             {/* Company Mail */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="companyMail">
+              <label
+                className="block text-purple-dark mb-1"
+                htmlFor="companyMail"
+              >
                 Company mail
               </label>
               <input
@@ -96,7 +117,10 @@ const ContactUs = () => {
             </div>
             {/* Company Name */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="companyName">
+              <label
+                className="block text-purple-dark mb-1"
+                htmlFor="companyName"
+              >
                 Company name
               </label>
               <input
@@ -111,7 +135,10 @@ const ContactUs = () => {
             </div>
             {/* Number of Students / Employees */}
             <div className="lg:col-span-2">
-              <label className="block text-purple-dark mb-1" htmlFor="numberOfStudents">
+              <label
+                className="block text-purple-dark mb-1"
+                htmlFor="numberOfStudents"
+              >
                 Number of students / Employees
               </label>
               <input
@@ -153,31 +180,72 @@ const ContactUs = () => {
 
         {/* LOGO + CONTACT DETAILS */}
         <div className="flex-1 flex flex-col items-center gap-6">
-          <div className='bg-gray-default px-6 py-[18px] w-full flex items-center justify-center rounded-[14px]'>
+          <div className="bg-gray-default px-6 py-[18px] w-full flex items-center justify-center rounded-[14px]">
             <Logo width={343} height={92} />
           </div>
 
-          <div className='w-full h-full rounded-[14px] bg-blueberry p-6 font-mono'>
-            <h5 className="mb-5 lg:mb-12 text-white font-bold text-3xl">Contact us</h5>
+          <div className="w-full h-full rounded-[14px] bg-blueberry p-6 font-mono">
+            <h5 className="mb-5 lg:mb-12 text-white font-bold text-3xl">
+              Contact us
+            </h5>
 
             <div className="text-white text-xl space-y-4 mb-5 lg:mb-12 ">
-              <p className='flex items-start gap-2'><Image src='/Location.svg' width={24} height={24} alt="location" />Egypt — 5th District, New Cairo, Cairo, Egypt</p>
-              <p className='flex items-center gap-2'><Image src='/envlope.svg' width={24} height={24} alt="mail" /> Info@NGen.com</p>
-              <p className='flex items-start gap-2'><Image src='/telephone.svg' width={24} height={24} alt="phone" />(+20) 2324 5967</p>
+              <p className="flex items-start gap-2">
+                <Image
+                  src="/Location.svg"
+                  width={24}
+                  height={24}
+                  alt="location"
+                />
+                Egypt — 5th District, New Cairo, Cairo, Egypt
+              </p>
+              <p className="flex items-center gap-2">
+                <Image src="/envlope.svg" width={24} height={24} alt="mail" />{' '}
+                Info@NGen.com
+              </p>
+              <p className="flex items-start gap-2">
+                <Image
+                  src="/telephone.svg"
+                  width={24}
+                  height={24}
+                  alt="phone"
+                />
+                (+20) 2324 5967
+              </p>
             </div>
 
             <div className="flex justify-center items-center mt-4 space-x-6">
               <a href="#">
-                <Image src='/facebook.svg' width={40} height={40} alt="facebook" />
+                <Image
+                  src="/facebook.svg"
+                  width={40}
+                  height={40}
+                  alt="facebook"
+                />
               </a>
               <a href="#">
-                <Image src='/linkedin.svg' width={40} height={40} alt="linkedin" />
+                <Image
+                  src="/linkedin.svg"
+                  width={40}
+                  height={40}
+                  alt="linkedin"
+                />
               </a>
               <a href="#">
-                <Image src='/instagram.svg' width={40} height={40} alt="instagram" />
+                <Image
+                  src="/instagram.svg"
+                  width={40}
+                  height={40}
+                  alt="instagram"
+                />
               </a>
               <a href="#">
-                <Image src='/twitter-x.svg' width={40} height={40} alt="twitter-x" />
+                <Image
+                  src="/twitter-x.svg"
+                  width={40}
+                  height={40}
+                  alt="twitter-x"
+                />
               </a>
             </div>
           </div>
@@ -188,3 +256,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+// re_QQCHua2w_EszsbbJCgCed6FvjAEA3kbpF
