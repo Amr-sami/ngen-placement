@@ -48,31 +48,33 @@ function AboutPage() {
                 Who we are
               </h1>
               <p>
-                Our mission is simple: to make modern, industry-relevant skills
-                accessible and enjoyable for teenagers. We combine live,
-                expert-led courses with interactive tools to help students
-                discover new interests, connect with mentors, and develop
-                practical skills they can apply both in school and in the real
-                world.
+                NGen stands for the Ninja Generation. When you think of a ninja,
+                you think of someone who’s the best, the smartest, and the
+                strongest mentally. This is exactly what we aim for our
+                graduates to become! NGen is a virtual school that Educates kids
+                from (8-18 y). Our programs are built around game-based
+                strategies, specially designed for each age group to match their
+                unique developmental and cognitive needs.
               </p>
             </div>
             <div className="flex flex-col gap-4">
               <H2>Our mission</H2>
               <p>
-                Our mission is simple: to make modern, industry-relevant skills
-                accessible and enjoyable for teenagers. We combine live,
-                expert-led courses with interactive tools to help students
-                discover new interests, connect with mentors, and develop
-                practical .
+                To empower students with the knowledge, skills, and innovative
+                mindset needed to thrive in a technology-driven world. We
+                provide a dynamic learning environment that fosters creativity,
+                collaboration, and critical thinking through cutting-edge
+                technology education and hands-on experiences.
               </p>
             </div>
             <div className="flex flex-col gap-4">
               <H2>Our vision</H2>
               <p>
-                We envision a world where every teenager has the resources to
-                pursue their passions and reach their full potential. NGen
-                empowers young learners to take charge of their futures and
-                embrace lifelong learning in a supportive community.
+                To be a leading educational institution recognized for nurturing
+                the next generation of tech leaders and innovators. We envision
+                a future where every student is equipped with the digital
+                literacy and problem-solving skills necessary to succeed and
+                positively impact their communities and the world.
               </p>
             </div>
           </div>
@@ -85,7 +87,7 @@ function AboutPage() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-4 lg:gap-10 py-10">
+        {/* <div className="flex flex-col gap-4 lg:gap-10 py-10">
           <h3 className="text-xl md:text-2xl lg:text-4xl font-protestRiot text-[#BD256D]">
             What Parents Say about us ?
           </h3>
@@ -112,7 +114,7 @@ function AboutPage() {
               ))}
             </CarouselContent>
           </Carousel>
-        </div>
+        </div> */}
         <ContactUs />
       </PageWrapper>
     </main>

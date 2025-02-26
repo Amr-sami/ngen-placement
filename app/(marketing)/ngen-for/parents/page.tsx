@@ -1,55 +1,52 @@
-"use client";
-
 import {
-  Features,
   HowItWorksSection,
+  Features,
   TracksOverviewSection,
 } from "@/components/pages/NgenFor";
-import { CallToAction, PageWrapper } from "@/components/general";
+import { ContactUs, PageWrapper, TracksSection } from "@/components/general";
+import { H2 } from "@/components/general/Heading";
 
-import React from "react";
 const howItWorksData = [
   {
     bgColor: "bg-[#EFE8FD]",
-    imgSrc: "/account-group.svg",
+    imgSrc: "/assets/images/icons/person-icon.svg",
     altText: "user-group",
     title: "Registration",
-    desc: "We envision a world where every teenager has the resources to pursue their passions and reach their full potential. NGen",
+    desc: "Create your account then create your child account",
   },
   {
     bgColor: "bg-[#E5E9FE]",
-    imgSrc: "/account-group.svg",
+    imgSrc: "/assets/images/icons/phone-icon-purple.svg",
     altText: "user-group",
-    title: "Registration",
-    desc: "We envision a world where every teenager has the resources to pursue their passions and reach their full potential. NGen",
+    title: "Choose the suitable track and pricing bundle",
+    desc: "Subscribe on the favorite track for your children",
   },
   {
     bgColor: "bg-[#FDE7D9]",
     imgSrc: "/account-group.svg",
     altText: "user-group",
-    title: "Registration",
-    desc: "We envision a world where every teenager has the resources to pursue their passions and reach their full potential. NGen",
+    title: "Track your child progress",
+    desc: "through regular reports and performance reviews on their achievements and learning level.",
   },
   {
     bgColor: "bg-[#FDDDFB]",
-    imgSrc: "/account-group.svg",
+    imgSrc: "/assets/images/icons/union-icon.svg",
     altText: "user-group",
-    title: "Registration",
-    desc: "We envision a world where every teenager has the resources to pursue their passions and reach their full potential. NGen",
+    title: "Development workshop",
+    desc: "With periodic sessions designed to improve parenting skills and assist parents in addressing their children's issues.",
   },
 ];
 
 const features = [
-  "Live sessions",
-  "Live sessions",
-  "courses and tutorials",
-  "courses and tutorials",
-  "Interaction lessons",
-  "Interaction lessons",
-  "Assessments",
-  "Assessments",
-  "Assessments",
-  "Assessments",
+  "Interactive Live sessions",
+  "Tech community",
+  "Assignments",
+  "Final projects",
+  "Soft skills courses",
+  "Parents workshops",
+  "Regular reports for parents",
+  "Summer and winter camps",
+  "Internship program",
 ];
 
 const overviewData = [
@@ -65,17 +62,16 @@ const overviewData = [
 
 const NgenForParents = () => {
   return (
-    <PageWrapper classNames="py-6 md:pt-8 md:pb-6 xl:pt-16 xl:pb-9">
-      <div className="container mx-auto px-5 md:px-12 xl:px-24">
-        <h2>for parents</h2>
-        {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG*/}
-        <HowItWorksSection data={howItWorksData} />
+    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">
+      <H2>for parents</H2>
+      {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
+      <HowItWorksSection data={howItWorksData} />
+      <Features features={features} imgSrc="/features-for-corporate.svg" />
+      {/* <TracksOverviewSection data={overviewData} /> */}
+      <TracksSection title="Our tracks" />
+      {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
-        <Features features={features} imgSrc="/features-for-parents.svg" />
-        <TracksOverviewSection data={overviewData} />
-      </div>
-
-      <CallToAction cta="Get Started" />
+      <ContactUs />
     </PageWrapper>
   );
 };

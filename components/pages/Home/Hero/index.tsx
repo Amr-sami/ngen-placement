@@ -14,15 +14,15 @@ function HomepageHero() {
           </div>
           <div className="flex flex-col gap-4 md:gap-5 text-center md:text-start">
             <h1 className="font-protestRiot md:text-2xl lg:text-4xl">
-              <span className="text-rose">Empower</span> Your Creativity and
-              Curiosity
+              Future Innovators, Today's{" "}
+              <span className="text-rose">Ninjas!</span>
             </h1>
-            <p className="text-sm md:text-base lg:text-2xl">
+            {/* <p className="text-sm md:text-base lg:text-2xl">
               Dive into Graphics, Data Science, and More with Courses Tailored
               for Future Innovators!
-            </p>
+            </p> */}
             <Button variant="primary" href="/">
-              Get started
+              Start your journey
             </Button>
           </div>
         </div>

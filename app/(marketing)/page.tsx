@@ -12,9 +12,9 @@ export default function Home() {
       <HomepageHero />
       <HomepageAboutSection />
       <HomepageNgenWhySection />
-      <TracksSection title="Our Tracks"/>
+      <TracksSection title="Our Tracks" />
       <HomepageNgenForSection />
-      <HomePageSocialProofSection />
+      {/* <HomePageSocialProofSection /> */}
       <HomepageBannerSection />
     </main>
   );

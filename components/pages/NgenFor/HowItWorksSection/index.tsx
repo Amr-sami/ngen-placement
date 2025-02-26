@@ -1,10 +1,10 @@
-import React from 'react';
-import HowItWorksCard from '../HowItWorksCard';
-import { IHowItWorksData } from '../types';
+import React from "react";
+import HowItWorksCard from "../HowItWorksCard";
+import { IHowItWorksData } from "../types";
 
 const HowItWorksSection: React.FC<IHowItWorksData> = ({ data }) => {
   return (
-    <div>
+    <div className="py-10">
       <h3 className="font-bold text-xl text-pumpkin mb-3 md:text-2xl xl:text-3xl md:mb-0">
         How It Works
       </h3>

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import Image from "next/image";
+import { ROUTES } from "@/util/routes";
 
 type Props = {
   image: string;
@@ -38,14 +39,20 @@ function Card({
         <div className="flex justify-between gap-2">
           <h3 className="text-purple-dark font-bold">{title}</h3>
           <div>
-            <p className="bg-green px-2 py-1 rounded-2xl text-white text-xs font-extrabold">
+            <p
+              className={`px-2 py-1 rounded-2xl text-white text-xs font-extrabold ${
+                status.toLocaleLowerCase() === "upcoming"
+                  ? "bg-pumpkin"
+                  : "bg-green"
+              }`}
+            >
               {status}
             </p>
           </div>
         </div>
-        <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p>
-        <p className="text-sm">{numberOfLevels} Levels included</p>
-        <div className="flex justify-between text-xs md:text-sm text-[#655B62]">
+        {/* <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p> */}
+        {/* <p className="text-sm">{numberOfLevels} Levels included</p> */}
+        {/* <div className="flex justify-between text-xs md:text-sm text-[#655B62]">
           <div className="flex items-center gap-2">
             <Image
               src="/assets/images/icons/duration-icon.svg"
@@ -64,10 +71,10 @@ function Card({
             />
             <p>{skillLevel}</p>
           </div>
-        </div>
+        </div> */}
         <div className="pt-1">
-          <Button variant="secondary" href={`/tracks/${slug}`} takeFullWidth>
-            See more
+          <Button variant="secondary" href={ROUTES.CONTACT_US} takeFullWidth>
+            Register Now
           </Button>
         </div>
       </div>

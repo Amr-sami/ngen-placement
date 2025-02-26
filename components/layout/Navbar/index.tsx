@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   NavigationMenu,
@@ -24,7 +25,7 @@ import { ROUTES } from "@/util/routes";
 
 function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className=" top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-5 flex h-20 items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
@@ -42,10 +43,15 @@ function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>NGen For</NavigationMenuTrigger>
+              <NavigationMenuTrigger
+                onPointerMove={(e) => e.preventDefault()}
+                onPointerLeave={(e) => e.preventDefault()}
+              >
+                NGen For
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
+                  {/* <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <Link
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
@@ -59,7 +65,7 @@ function Navbar() {
                         </p>
                       </Link>
                     </NavigationMenuLink>
-                  </li>
+                  </li> */}
                   <ListItem
                     href={ROUTES.NGEN_FOR.FOR_PARENTS}
                     title="For Parents"
@@ -81,20 +87,20 @@ function Navbar() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <Link href={ROUTES.TRACKS} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Tracks
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
+            </NavigationMenuItem> */}
+            {/* <NavigationMenuItem>
               <Link href={ROUTES.INSTRUCTORS} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Instructors
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             {/* <NavigationMenuItem>
               <Link href="#" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>

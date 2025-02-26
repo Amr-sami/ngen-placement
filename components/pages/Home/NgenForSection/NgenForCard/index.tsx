@@ -22,7 +22,7 @@ function NgenForCard({
     );
   } else if (variation === "text") {
     return (
-      <div className="bg-white rounded-3xl justify-center items-center hidden xl:flex">
+      <div className="bg-white rounded-3xl bg-[url('/assets/images/box-bg.png')] justify-center items-center hidden xl:flex">
         <div className="text-4xl font-protestRiot max-w-64 flex flex-col text-center leading-relaxed gap-2">
           <h3 className="text-5xl text-rose">{title}</h3>
           <p className="text-blueberry">{description}</p>

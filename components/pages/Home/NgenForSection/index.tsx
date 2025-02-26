@@ -9,9 +9,9 @@ function HomepageNgenForSection() {
     {
       image: "/assets/images/NgenFor/kid-on-laptop.png",
       alt: "kid on laptop",
-      title: "For Individual",
+      title: "Individuals",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
+        "we offer an exciting and engaging learning experience based on modern educational principles.",
       href: "#",
     },
     {
@@ -20,9 +20,9 @@ function HomepageNgenForSection() {
     {
       image: "/assets/images/NgenFor/school-grad.png",
       alt: "school graduation cermoney",
-      title: "For Schools",
+      title: "Schools",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
+        "We offer a unique LMS experience with regular detailed reports and workshops to support teacher development.",
       href: ROUTES.NGEN_FOR.FOR_SCHOOL,
     },
     {
@@ -34,17 +34,17 @@ function HomepageNgenForSection() {
     {
       image: "/assets/images/NgenFor/corperate-kid.png",
       alt: "corporate kids image",
-      title: "For Corporates",
+      title: "Corporates",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
+        "We provide high-quality training programs tailored for employees' children at competitive prices.",
       href: ROUTES.NGEN_FOR.FOR_CORPORATES,
     },
     {
       image: "/assets/images/NgenFor/parent-with-kid.png",
       alt: "parent with kid",
-      title: "For Parents",
+      title: "Parents",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
+        "We offer an educational experience that strengthens parent-child communication through awareness workshops for parents and student progress reports.",
       href: ROUTES.NGEN_FOR.FOR_PARENTS,
     },
   ];
