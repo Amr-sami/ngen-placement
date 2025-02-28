@@ -5,6 +5,7 @@ import { NgenForCardType } from "./types";
 import { ROUTES } from "@/util/routes";
 
 function HomepageNgenForSection() {
+  // TODO: Redesign this section
   const DATA: NgenForCardType[] = [
     {
       image: "/assets/images/NgenFor/kid-on-laptop.png",

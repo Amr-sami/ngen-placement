@@ -1,45 +1,94 @@
-import React from "react";
-import FeatureCard from "../../../general/Cards/FeatureCard";
+"use client";
+
 import { H2 } from "@/components/general/Heading";
+import React, { useState } from "react";
+import Image from "next/image";
+
+const DATA = [
+  {
+    id: 0,
+    title: "Soft skills Courses",
+    IconUrl: "/assets/images/icons/star-iconr.svg",
+    description:
+      "To enhance children's personal and interpersonal development.",
+    imageUrl: "",
+    color: "text-[#0BCA6C]",
+  },
+  {
+    id: 1,
+    title: "Insights and regular reports",
+    IconUrl: "/assets/images/icons/document-icon.svg",
+    description:
+      "To track each child's development and skill level, ensuring consistent growth and achievement.",
+    imageUrl: "",
+    color: "text-pumpkin",
+  },
+  {
+    id: 2,
+    title: "Free courses for Parents",
+    IconUrl: "/assets/images/icons/laptop-icon.svg",
+    description:
+      "designed to provide valuable insights and guidance to support their child’s development",
+    imageUrl: "",
+    color: "text-purple-default",
+  },
+  {
+    id: 3,
+    title: "Gamified learning",
+    IconUrl: "/assets/images/icons/gamified-icon.svg",
+    description:
+      "A unique learning experience through play-based education, where children learn and develop new skills in a fun and interactive way.",
+    imageUrl: "",
+    color: "text-rose",
+  },
+  {
+    id: 4,
+    title: "Teachers' development",
+    IconUrl: "/assets/images/icons/user-terminal.svg",
+    description:
+      "We provide regular workshops to enhance their skills and support their professional development.",
+    imageUrl: "",
+    color: "text-purple-darker",
+  },
+];
 
 function HomepageNgenWhySection() {
-  const DATA = [
-    {
-      title: "Foundation level",
-      description:
-        "students will learn the essential basics that form the foundation for any technology-related learning. Once they’ve mastered these fundamentals, they’ll move on to specialize in their chosen track.",
-      image: "/assets/images/placeholder.png",
-      variants: undefined,
-    },
-    {
-      title: "Specified levels",
-      description:
-        "The specialized track starts at the beginner level and progresses to advanced. Students will advance through exams and projects, ensuring mastery of each level before moving forward.",
-      image: "/assets/images/placeholder-1.png",
-      variant: "image-right",
-    },
-  ];
+  const [activeTab, setActiveTab] = useState<number>(0);
 
   return (
-    <section className="bg-purple-lighter py-6 md:py-10 lg:py-20">
-      <div className="container mx-auto px-5 flex flex-col gap-4 md:gap-7 lg:gap-12">
-        <div>
-          <H2>Ngen road map</H2>
-        </div>
-        <div className="flex flex-col gap-4 md:flex-row lg:flex-col lg:gap-10">
-          {DATA.map((element, idx) => (
-            <FeatureCard
-              key={idx}
-              title={element.title}
-              description={element.description}
-              image={element.image}
-              variant={
-                element.variant && element.variant === "image-right"
-                  ? "image-right"
-                  : undefined
-              }
-            />
-          ))}
+    <section className="py-6 md:py-10 lg:py-20">
+      <div className="container mx-auto px-5 flex flex-col gap-7">
+        <H2>Why Ngen</H2>
+
+        <div className="flex gap-2">
+          <div className="flex flex-col gap-2 lg:basis-1/2">
+            {DATA.map((element) => {
+              return (
+                <div
+                  className="flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl"
+                  onClick={(e) => setActiveTab(element.id)}
+                >
+                  <div className="flex flex-col gap-2">
+                    <h3
+                      className={`flex items-center gap-2 ${element.color} text-xl font-semibold`}
+                    >
+                      <Image
+                        src={element.IconUrl}
+                        width={24}
+                        height={24}
+                        alt="icon"
+                      />
+                      {element.title}
+                    </h3>
+                    <p className="text-[#8A8A8A] text-xl">
+                      {element.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="lg:basis-1/2 self-center"></div>
         </div>
       </div>
     </section>

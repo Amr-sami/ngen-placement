@@ -148,17 +148,17 @@ function Navbar() {
               >
                 For corporates
               </Link>
-              <Link href={ROUTES.TRACKS} className="text-sm font-medium">
+              {/* <Link href={ROUTES.TRACKS} className="text-sm font-medium">
                 Tracks
               </Link>
               <Link href={ROUTES.INSTRUCTORS} className="text-sm font-medium">
                 Instructors
-              </Link>
+              </Link> */}
               {/* <Link href="#" className="text-sm font-medium">
                 Blogs
               </Link> */}
               <Button href="#" variant="primary" takeFullWidth>
-                Start Now
+                Start your journey
               </Button>
             </div>
           </SheetContent>
