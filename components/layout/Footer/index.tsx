@@ -5,8 +5,8 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="relative mt-6 py-6 md:py-10 lg:py-20 after:bg-[url('/assets/images/footer-bg.svg')] after:absolute after:content-[''] after:w-full after:h-full after:bottom-0 after:z-0 after:bg-no-repeat after:bg-cover">
-      <div className="container mx-auto px-5 flex flex-col gap-6 lg:flex-row relative z-10">
+    <footer className="relative mt-6 py-6 md:py-10 lg:py-20 after:bg-[url('/assets/images/footer-bg-mob.svg')] lg:after:bg-[url('/assets/images/footer-bg.svg')] after:absolute after:content-[''] after:w-full after:h-full after:bottom-0 after:z-0 after:bg-no-repeat after:bg-cover">
+      <div className="container mx-auto px-5 flex flex-col gap-6 lg:flex-row relative z-10 mt-20 lg:mt-0">
         <div className="self-center lg:basis-2/6 lg:flex lg:flex-col lg:items-center lg:gap-10">
           <div className="md:scale-125">
             <Logo width={200} height={100} />
