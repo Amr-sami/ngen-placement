@@ -21,9 +21,9 @@ export const sendEmail = async ({
   message: string;
 }) => {
   await resend.emails.send({
-    to: 'amr.hassan.emam@gmail.com',
+    to: 'h.mourad@kayfa.io',
     from: 'NgenSchools <onboarding@resend.dev>',
-    subject: 'New Contact Us for submission',
+    subject: 'New Contact Us for submission From Ngen Schools',
     html: `
     <div>Full Name:${firstName} ${lastName}</div>
     <div>Business Email: ${companyMail}</div>
