@@ -215,7 +215,7 @@ const ContactUs = () => {
             </div>
 
             <div className="flex justify-center items-center mt-4 space-x-6">
-              <a href="#">
+              <a href="https://www.facebook.com/ngenschools">
                 <Image
                   src="/facebook.svg"
                   width={40}
@@ -223,7 +223,7 @@ const ContactUs = () => {
                   alt="facebook"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/ngenschools/">
                 <Image
                   src="/linkedin.svg"
                   width={40}
@@ -231,7 +231,7 @@ const ContactUs = () => {
                   alt="linkedin"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/ngenschools/">
                 <Image
                   src="/instagram.svg"
                   width={40}
@@ -256,4 +256,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-// re_QQCHua2w_EszsbbJCgCed6FvjAEA3kbpF
