@@ -1,52 +1,10 @@
 import { H2 } from '@/components/general/Heading';
 import React from 'react';
-import NgenForCard from './NgenForCard';
-import { NgenForCardType } from './types';
 import { ROUTES } from '@/util/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 
 function HomepageNgenForSection() {
-  // TODO: Redesign this section
-  const DATA: NgenForCardType[] = [
-    {
-      image: '/assets/images/NgenFor/kid-on-laptop.png',
-      alt: 'kid on laptop',
-      title: 'Individuals',
-      description:
-        'we offer an exciting and engaging learning experience based on modern educational principles.',
-      preferredColor: '',
-      href: '#',
-    },
-    {
-      image: '/assets/images/NgenFor/school-grad.png',
-      alt: 'school graduation cermoney',
-      title: 'Schools',
-      description:
-        'We offer a unique LMS experience with regular detailed reports and workshops to support teacher development.',
-      preferredColor: '',
-      href: ROUTES.NGEN_FOR.FOR_SCHOOL,
-    },
-    {
-      image: '/assets/images/NgenFor/corperate-kid.png',
-      alt: 'corporate kids image',
-      title: 'Corporates',
-      description:
-        "We provide high-quality training programs tailored for employees' children at competitive prices.",
-      preferredColor: '',
-      href: ROUTES.NGEN_FOR.FOR_CORPORATES,
-    },
-    {
-      image: '/assets/images/NgenFor/parent-with-kid.png',
-      alt: 'parent with kid',
-      title: 'Parents',
-      description:
-        'We offer an educational experience that strengthens parent-child communication through awareness workshops for parents and student progress reports.',
-      preferredColor: '',
-      href: ROUTES.NGEN_FOR.FOR_PARENTS,
-    },
-  ];
-
   return (
     <section className="bg-[#F7F7F7] py-6 md:py-10 lg:py-20">
       <div className="container mx-auto px-5 flex flex-col gap-10">
