@@ -1,7 +1,7 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import Logo from "../Logo";
+'use client';
+// import Image from "next/image";
+import React from 'react';
+import Logo from '../Logo';
 
 interface ICallToActionProps {
   cta: string;
@@ -37,7 +37,7 @@ const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
         />
         <a
           target="_blank"
-          href="https://wa.me/+201000312381"
+          href="https://wa.me/+201055023774"
           className="w-44 lg:w-56 bg-orange-500 text-center text-white py-2 rounded-lg hover:bg-orange-600 transition font-bold"
         >
           {cta}
