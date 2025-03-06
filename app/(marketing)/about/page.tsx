@@ -1,15 +1,15 @@
 "use client";
-import { ContactUs, PageWrapper } from "@/components/general";
+import { ContactUs} from "@/components/general";
 import { H2 } from "@/components/general/Heading";
-import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+// import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+// } from "@/components/ui/carousel";
 import Image from "next/image";
 import React from "react";
-import Autoplay from "embla-carousel-autoplay";
+// import Autoplay from "embla-carousel-autoplay";
 import bgImageDesktop from "@/public/assets/images/about-page-bg.png";
 import bgImageMob from "@/public/assets/images/about-page-bg-mob.png";
 

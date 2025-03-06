@@ -67,7 +67,7 @@ function HomepageNgenWhySection() {
               return (
                 <div
                   className="flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer"
-                  onClick={(e) => setActiveTab(element.id)}
+                  onClick={() => setActiveTab(element.id)}
                   key={element.id}
                 >
                   <div className="flex flex-col gap-2">

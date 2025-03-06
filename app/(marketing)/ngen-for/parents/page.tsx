@@ -1,7 +1,7 @@
 import {
   HowItWorksSection,
   Features,
-  TracksOverviewSection,
+  // TracksOverviewSection,
 } from "@/components/pages/NgenFor";
 import { ContactUs, PageWrapper, TracksSection } from "@/components/general";
 import { H2 } from "@/components/general/Heading";
@@ -49,16 +49,16 @@ const features = [
   "Internship program",
 ];
 
-const overviewData = [
-  {
-    text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.",
-    imgSrc: "/tracks-overview.svg",
-  },
-  {
-    text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools ",
-    imgSrc: "/certificate.svg",
-  },
-];
+// const overviewData = [
+//   {
+//     text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.",
+//     imgSrc: "/tracks-overview.svg",
+//   },
+//   {
+//     text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools ",
+//     imgSrc: "/certificate.svg",
+//   },
+// ];
 
 const NgenForParents = () => {
   return (

@@ -17,12 +17,12 @@ type Props = {
 function Card({
   image,
   title,
-  slug,
+  // slug,
   status,
-  discountValue,
-  numberOfLevels,
-  duration,
-  skillLevel,
+  // discountValue,
+  // numberOfLevels,
+  // duration,
+  // skillLevel,
 }: Props) {
   return (
     <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 lg:my-5">

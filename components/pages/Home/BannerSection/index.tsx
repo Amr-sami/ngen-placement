@@ -1,6 +1,6 @@
 import { CallToAction } from "@/components/general";
-import Button from "@/components/general/Button";
-import Logo from "@/components/general/Logo";
+// import Button from "@/components/general/Button";
+// import Logo from "@/components/general/Logo";
 import React from "react";
 
 function HomepageBannerSection() {

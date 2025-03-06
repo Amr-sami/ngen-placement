@@ -68,8 +68,7 @@ function HomepageNgenForSection() {
               />
             </div>
             <div className="h-[46%] md:bg-[#FF7723] px-6 py-10 text-2xl text-center text-white font-nunito">
-              We provide high-quality training programs tailored for employees'
-              children at competitive prices.
+              We provide high-quality training programs tailored for employees&apos; children at competitive prices.
             </div>
           </Link>
 
@@ -92,7 +91,7 @@ function HomepageNgenForSection() {
             <div className="h-[50%] md:bg-[#0BCA6C] px-6 py-10 text-2xl text-center text-white font-nunito">
               We offer an educational experience that strengthens parent-child
               communication through awareness workshops for parents and student
-              progress reports."
+              progress reports.&quot;
             </div>
           </Link>
         </div>
