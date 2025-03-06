@@ -1,54 +1,54 @@
-"use client";
+'use client';
 
-import { H2 } from "@/components/general/Heading";
-import React, { useState } from "react";
-import Image from "next/image";
+import { H2 } from '@/components/general/Heading';
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 const DATA = [
   {
     id: 0,
-    title: "Soft skills Courses",
-    IconUrl: "/assets/images/icons/star-iconr.svg",
+    title: 'Soft skills Courses',
+    IconUrl: '/assets/images/icons/star-iconr.svg',
     description:
       "To enhance children's personal and interpersonal development.",
-    imageUrl: "/assets/images/soft-skills-image.png",
-    color: "text-[#0BCA6C]",
+    imageUrl: '/assets/images/soft-skills-image.png',
+    color: 'text-[#0BCA6C]',
   },
   {
     id: 1,
-    title: "Insights and regular reports",
-    IconUrl: "/assets/images/icons/document-icon.svg",
+    title: 'Insights and regular reports',
+    IconUrl: '/assets/images/icons/document-icon.svg',
     description:
       "To track each child's development and skill level, ensuring consistent growth and achievement.",
-    imageUrl: "/assets/images/insights-image.png",
-    color: "text-pumpkin",
+    imageUrl: '/assets/images/insights-image.png',
+    color: 'text-pumpkin',
   },
   {
     id: 2,
-    title: "Free courses for Parents",
-    IconUrl: "/assets/images/icons/laptop-icon.svg",
+    title: 'Free courses for Parents',
+    IconUrl: '/assets/images/icons/laptop-icon.svg',
     description:
-      "designed to provide valuable insights and guidance to support their child’s development",
-    imageUrl: "/assets/images/courses-parents-image.png",
-    color: "text-purple-default",
+      'designed to provide valuable insights and guidance to support their child’s development',
+    imageUrl: '/assets/images/courses-parents-image.png',
+    color: 'text-purple-default',
   },
   {
     id: 3,
-    title: "Gamified learning",
-    IconUrl: "/assets/images/icons/gamified-icon.svg",
+    title: 'Gamified learning',
+    IconUrl: '/assets/images/icons/gamified-icon.svg',
     description:
-      "A unique learning experience through play-based education, where children learn and develop new skills in a fun and interactive way.",
-    imageUrl: "/assets/images/games-image.png",
-    color: "text-rose",
+      'A unique learning experience through play-based education, where children learn and develop new skills in a fun and interactive way.',
+    imageUrl: '/assets/images/games-image.png',
+    color: 'text-rose',
   },
   {
     id: 4,
     title: "Teachers' development",
-    IconUrl: "/assets/images/icons/user-terminal.svg",
+    IconUrl: '/assets/images/icons/user-terminal.svg',
     description:
-      "We provide regular workshops to enhance their skills and support their professional development.",
-    imageUrl: "/assets/images/teachers-image.png",
-    color: "text-purple-darker",
+      'We provide regular workshops to enhance their skills and support their professional development.',
+    imageUrl: '/assets/images/teachers-image.png',
+    color: 'text-purple-darker',
   },
 ];
 
@@ -61,7 +61,7 @@ function HomepageNgenWhySection() {
       <div className="container mx-auto px-5 flex flex-col gap-7">
         <H2>Why Ngen</H2>
 
-        <div className="flex gap-2">
+        <div className="flex flex-col-reverse lg:flex-row gap-2">
           <div className="flex flex-col gap-2 lg:basis-1/2">
             {DATA.map((element) => {
               return (
@@ -90,7 +90,7 @@ function HomepageNgenWhySection() {
               );
             })}
           </div>
-          <div className="lg:basis-1/2 self-center lg:flex justify-center hidden">
+          <div className="lg:basis-1/2 self-center lg:flex justify-center">
             {activeImage && (
               <Image
                 src={activeImage.imageUrl}

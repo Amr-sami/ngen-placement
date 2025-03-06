@@ -25,7 +25,7 @@ import { ROUTES } from "@/util/routes";
 
 function Navbar() {
   return (
-    <nav className=" top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className=" top-0 z-50 w-full text-white bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 absolute">
       <div className="container mx-auto px-5 flex h-20 items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
@@ -111,8 +111,8 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="hidden md:block">
-          <Button href="#" variant="primary">
-            Start Now
+          <Button href="/contact-us" variant="primary" classNames="bg-[#627CEE] hover:text-[#627CEE]">
+            Contact Us
           </Button>
         </div>
         <Sheet>

@@ -6,9 +6,11 @@ function Button({
   href,
   variant,
   takeFullWidth = false,
+  classNames,
 }: Readonly<{
   children: React.ReactNode;
   href: string;
+  classNames?: string;
   variant: "primary" | "secondary";
   takeFullWidth?: boolean;
 }>) {
@@ -21,7 +23,7 @@ function Button({
             ? "bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin"
             : "bg-white text-pumpkin hover:bg-pumpkin hover:text-white border border-pumpkin"
         }
-        ${takeFullWidth ? "block w-full text-center" : ""}`}
+        ${takeFullWidth ? "block w-full text-center" : ""} ${classNames}`}
       >
         {children}
       </Link>

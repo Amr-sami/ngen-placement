@@ -5,14 +5,14 @@ import { H2 } from "@/components/general/Heading";
 function HomepageNgenRoadmapSection() {
   const DATA = [
     {
-      title: "Foundation level",
+      title: "1.Foundation level",
       description:
         "students will learn the essential basics that form the foundation for any technology-related learning. Once they’ve mastered these fundamentals, they’ll move on to specialize in their chosen track.",
       image: "/assets/images/placeholder.png",
       variants: undefined,
     },
     {
-      title: "Specified levels",
+      title: "2.Specified levels",
       description:
         "The specialized track starts at the beginner level and progresses to advanced. Students will advance through exams and projects, ensuring mastery of each level before moving forward.",
       image: "/assets/images/placeholder-1.png",
