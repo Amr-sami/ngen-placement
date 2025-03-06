@@ -13,31 +13,31 @@ import React from "react";
 import bgImageDesktop from "@/public/assets/images/about-page-bg.png";
 import bgImageMob from "@/public/assets/images/about-page-bg-mob.png";
 
-const TESTIOMONIALS = [
-  {
-    fullName: "Mona Elmohandes",
-    avatarImg: "/assets/images/avatar-man-placeholder.png",
-    feedbackMessage:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    feedbackRating: 5,
-  },
-  {
-    variation: "testimonial",
-    fullName: "Mona Elmohandes",
-    avatarImg: "/assets/images/avatar-man-placeholder.png",
-    feedbackMessage:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    feedbackRating: 3,
-  },
-  {
-    variation: "testimonial",
-    fullName: "Mona Elmohandes",
-    avatarImg: "/assets/images/avatar-man-placeholder.png",
-    feedbackMessage:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    feedbackRating: 1,
-  },
-];
+// const TESTIOMONIALS = [
+//   {
+//     fullName: "Mona Elmohandes",
+//     avatarImg: "/assets/images/avatar-man-placeholder.png",
+//     feedbackMessage:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+//     feedbackRating: 5,
+//   },
+//   {
+//     variation: "testimonial",
+//     fullName: "Mona Elmohandes",
+//     avatarImg: "/assets/images/avatar-man-placeholder.png",
+//     feedbackMessage:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+//     feedbackRating: 3,
+//   },
+//   {
+//     variation: "testimonial",
+//     fullName: "Mona Elmohandes",
+//     avatarImg: "/assets/images/avatar-man-placeholder.png",
+//     feedbackMessage:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+//     feedbackRating: 1,
+//   },
+// ];
 
 function AboutPage() {
   return (
