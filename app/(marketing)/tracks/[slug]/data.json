@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Graphic design",
+    "slug": "graphic-design",
+    "description": "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 6,
+    "price": 300,
+    "levels_ids": ["", ""]
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Photoshop course",
+    "slug": "course",
+    "description": "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "course_lectures": [
+      {
+        "name": "Basics",
+        "description": "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students",
+        "duration": 5
+      },
+      {
+        "name": "Compositions",
+        "description": "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students",
+        "duration": 8
+      },
+      {
+        "name": "Photoshop",
+        "description": "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students",
+        "duration": 2
+      }
+    ],
+    "assessments_number": 6,
+    "lectures_number": 20,
+    "duration": 20,
+    "age_group": "8 - 18 years old",
+    "price": 300,
+    "cohorts": [
+      {
+        "title": "Photoshop cohort 1",
+        "date": "01/01/2025",
+        "age_group": "10 years old",
+        "duration": 2
+      },
+      {
+        "title": "Photoshop cohort 2",
+        "date": "01/01/2025",
+        "age_group": "18 years old",
+        "duration": 4
+      },
+      {
+        "title": "Photoshop cohort 3",
+        "date": "01/01/2025",
+        "age_group": "8 years old",
+        "duration": 1
+      }
+    ],
+    "instructors": [
+      { "name": "Haitham", "title": "full stack instructor", "rating": 5 },
+      { "name": "Haitham", "title": "full stack instructor", "rating": 3 },
+      { "name": "Haitham", "title": "full stack instructor", "rating": 5 },
+      { "name": "Haitham", "title": "full stack instructor", "rating": 4 },
+      { "name": "Haitham", "title": "full stack instructor", "rating": 5 }
+    ]
+  }
+]
