@@ -12,7 +12,7 @@ const DATA = [
     description:
       "To enhance children's personal and interpersonal development.",
     imageUrl: '/assets/images/soft-skills-image.png',
-    color: 'text-[#0BCA6C]',
+    color: '[#0BCA6C]',
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ const DATA = [
     description:
       "To track each child's development and skill level, ensuring consistent growth and achievement.",
     imageUrl: '/assets/images/insights-image.png',
-    color: 'text-pumpkin',
+    color: 'pumpkin',
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const DATA = [
     description:
       'designed to provide valuable insights and guidance to support their child’s development',
     imageUrl: '/assets/images/courses-parents-image.png',
-    color: 'text-purple-default',
+    color: 'purple-default',
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const DATA = [
     description:
       'A unique learning experience through play-based education, where children learn and develop new skills in a fun and interactive way.',
     imageUrl: '/assets/images/games-image.png',
-    color: 'text-rose',
+    color: 'rose',
   },
   {
     id: 4,
@@ -48,12 +48,14 @@ const DATA = [
     description:
       'We provide regular workshops to enhance their skills and support their professional development.',
     imageUrl: '/assets/images/teachers-image.png',
-    color: 'text-purple-darker',
+    color: 'purple-darker',
   },
 ];
 
 function HomepageNgenWhySection() {
   const [activeTab, setActiveTab] = useState<number>(0);
+
+  console.log({ activeTab });
 
   const activeImage = DATA.find((item) => item.id === activeTab);
   return (
@@ -64,15 +66,21 @@ function HomepageNgenWhySection() {
         <div className="flex flex-col-reverse lg:flex-row gap-2">
           <div className="flex flex-col gap-2 lg:basis-1/2">
             {DATA.map((element) => {
+              console.log(element.id);
               return (
                 <div
-                  className="flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer"
+                  id={`${element.id}`}
+                  className={`flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer border border-solid ${
+                    activeTab === element.id
+                      ? `bg-white border-${element.color}`
+                      : ''
+                  }`}
                   onClick={() => setActiveTab(element.id)}
                   key={element.id}
                 >
                   <div className="flex flex-col gap-2">
                     <h3
-                      className={`flex items-center gap-2 ${element.color} text-xl font-semibold`}
+                      className={`flex items-center gap-2 text-${element.color} text-xl font-semibold`}
                     >
                       <Image
                         src={element.IconUrl}

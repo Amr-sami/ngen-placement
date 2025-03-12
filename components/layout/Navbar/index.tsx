@@ -50,7 +50,7 @@ function Navbar() {
                 NGen For
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <ul className="grid gap-3 p-6 md:w-[200px]">
                   {/* <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <Link
@@ -69,21 +69,21 @@ function Navbar() {
                   <ListItem
                     href={ROUTES.NGEN_FOR.FOR_PARENTS}
                     title="For Parents"
-                  >
-                    Tailored learning for personal growth
-                  </ListItem>
+                  />
+                  {/* Tailored learning for personal growth */}
+                  {/* </ListItem> */}
                   <ListItem
                     href={ROUTES.NGEN_FOR.FOR_SCHOOL}
                     title="For Schools"
-                  >
-                    Enhance your curriculum with cutting-edge tech education
-                  </ListItem>
+                  />
+                  {/* Enhance your curriculum with cutting-edge tech education */}
+                  {/* </ListItem> */}
                   <ListItem
                     href={ROUTES.NGEN_FOR.FOR_CORPORATES}
                     title="For Corporates"
-                  >
-                    Upskill your workforce for the digital age
-                  </ListItem>
+                  />
+                  {/* Upskill your workforce for the digital age */}
+                  {/* </ListItem> */}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
