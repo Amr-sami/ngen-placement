@@ -22,10 +22,16 @@ import Link from 'next/link';
 import Logo from '../../general/Logo';
 import Button from '@/components/general/Button';
 import { ROUTES } from '@/util/routes';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
+  const pathname = usePathname();
   return (
-    <nav className=" top-0 z-50 w-full text-white bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 absolute">
+    <nav
+      className={`top-0 z-50 w-full text-white bg-background/95 absolute ${
+        pathname !== '/' ? "bg-[url('/assets/images/hero-bg.png')]" : ''
+      }`}
+    >
       <div className="container mx-auto px-5 flex h-20 items-center justify-between">
         <div className="flex items-center">
           <Link href="/">

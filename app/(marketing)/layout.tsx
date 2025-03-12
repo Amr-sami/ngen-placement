@@ -34,7 +34,7 @@ export default function RootLayout({
         className={`${nunito.variable} ${protestRiot.variable} ${nunito.className} antialiased relative`}
       >
         <Navbar />
-        {children}
+        <div className="pt-20">{children}</div>
         <Footer />
       </body>
     </html>

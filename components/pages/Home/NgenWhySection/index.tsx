@@ -55,8 +55,6 @@ const DATA = [
 function HomepageNgenWhySection() {
   const [activeTab, setActiveTab] = useState<number>(0);
 
-  console.log({ activeTab });
-
   const activeImage = DATA.find((item) => item.id === activeTab);
   return (
     <section className="py-6 md:py-10 lg:py-20">
@@ -65,38 +63,35 @@ function HomepageNgenWhySection() {
 
         <div className="flex flex-col-reverse lg:flex-row gap-2">
           <div className="flex flex-col gap-2 lg:basis-1/2">
-            {DATA.map((element) => {
-              console.log(element.id);
-              return (
-                <div
-                  id={`${element.id}`}
-                  className={`flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer border border-solid ${
-                    activeTab === element.id
-                      ? `bg-white border-${element.color}`
-                      : ''
-                  }`}
-                  onClick={() => setActiveTab(element.id)}
-                  key={element.id}
-                >
-                  <div className="flex flex-col gap-2">
-                    <h3
-                      className={`flex items-center gap-2 text-${element.color} text-xl font-semibold`}
-                    >
-                      <Image
-                        src={element.IconUrl}
-                        width={24}
-                        height={24}
-                        alt="icon"
-                      />
-                      {element.title}
-                    </h3>
-                    <p className="text-[#8A8A8A] text-xl">
-                      {element.description}
-                    </p>
-                  </div>
+            {DATA.map((element) => (
+              <div
+                id={`${element.id}`}
+                className={`flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer border border-solid ${
+                  activeTab === element.id
+                    ? `bg-white border-${element.color}`
+                    : ''
+                }`}
+                onClick={() => setActiveTab(element.id)}
+                key={element.id}
+              >
+                <div className="flex flex-col gap-2">
+                  <h3
+                    className={`flex items-center gap-2 text-${element.color} text-xl font-semibold`}
+                  >
+                    <Image
+                      src={element.IconUrl}
+                      width={24}
+                      height={24}
+                      alt="icon"
+                    />
+                    {element.title}
+                  </h3>
+                  <p className="text-[#8A8A8A] text-xl">
+                    {element.description}
+                  </p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
           <div className="lg:basis-1/2 self-center lg:flex justify-center">
             {activeImage && (

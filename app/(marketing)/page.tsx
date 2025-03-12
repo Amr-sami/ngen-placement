@@ -9,7 +9,7 @@ import HomepageNgenWhySection from '@/components/pages/Home/NgenWhySection';
 
 export default function Home() {
   return (
-    <main>
+    <main className="-mt-20">
       <HomepageHero />
       <HomepageAboutSection />
       <HomepageRoadmapSection />
