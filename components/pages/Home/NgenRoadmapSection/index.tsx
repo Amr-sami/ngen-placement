@@ -5,7 +5,7 @@ import { H2 } from "@/components/general/Heading";
 function HomepageNgenRoadmapSection() {
   const DATA = [
     {
-      title: "1.Foundation level",
+      title: "1.Foundation levels",
       description:
         "students will learn the essential basics that form the foundation for any technology-related learning. Once they’ve mastered these fundamentals, they’ll move on to specialize in their chosen track.",
       image: "/assets/images/placeholder.png",

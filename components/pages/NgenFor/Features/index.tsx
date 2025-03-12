@@ -11,9 +11,9 @@ const Featured: React.FC<IFeaturedProps> = ({ features, imgSrc }) => {
       </h3>
       <div className='flex flex-col-reverse space-between gap-10 lg:flex-row mb-6 lg:mb-10'>
 
-        <ul className='grid grid-cols-2 my-10 list-disc list-inside flex-grow text-purple-dark font-bold xl:text-2xl'>
+        <ul className='grid list-outside grid-cols-2 my-10 list-disc flex-grow text-purple-dark font-bold xl:text-2xl'>
           {features.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className='pr-8'>{item}</li>
           ))}
         </ul>
 

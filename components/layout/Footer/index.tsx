@@ -1,7 +1,7 @@
-import Logo from "@/components/general/Logo";
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
+import Logo from '@/components/general/Logo';
+import Link from 'next/link';
+import React from 'react';
+import Image from 'next/image';
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
           <div className="hidden lg:block">
             <ul className="flex gap-5 justify-center">
               <li>
-                <Link href={"#"}>
+                <Link href={'#'}>
                   <Image
                     src="/assets/images/icons/fb-icon-light.svg"
                     alt="location icon"
@@ -24,7 +24,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={"#"}>
+                <Link href={'#'}>
                   <Image
                     src="/assets/images/icons/linkedin-icon-light.svg"
                     alt="location icon"
@@ -34,7 +34,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={"#"}>
+                <Link href={'#'}>
                   <Image
                     src="/assets/images/icons/insta-icon-light.svg"
                     alt="location icon"
@@ -44,7 +44,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={"#"}>
+                <Link href={'#'}>
                   <Image
                     src="/assets/images/icons/x-icon-light.svg"
                     alt="location icon"
@@ -116,8 +116,17 @@ function Footer() {
                   height={24}
                 />
                 <Link href="/">
-                  Egypt — 5th District, New Cairo, Cairo, Egypt
+                  Egypt — Maadi, Dar El Hussain St., building 5156, ﬂoor 1
                 </Link>
+              </li>
+              <li className="flex items-start gap-1">
+                <Image
+                  src="/assets/images/icons/location-icon.svg"
+                  alt="location icon"
+                  width={24}
+                  height={24}
+                />
+                <Link href="/">KSA — Riyad, Al-Alia 12211</Link>
               </li>
               <li className="flex items-start gap-1">
                 <Image
@@ -126,7 +135,7 @@ function Footer() {
                   width={24}
                   height={24}
                 />
-                <Link href="/">Info@NGen.com</Link>
+                <Link href="/">Info@ngenschools.com</Link>
               </li>
               <li className="flex items-start gap-1">
                 <Image
@@ -135,7 +144,7 @@ function Footer() {
                   width={24}
                   height={24}
                 />
-                <Link href="/">(+20) 2324 5967</Link>
+                <Link href="/">+201032422466</Link>
               </li>
             </ul>
           </div>
@@ -143,7 +152,7 @@ function Footer() {
         <div className="md:hidden">
           <ul className="flex gap-5 justify-center">
             <li>
-              <Link href={"#"}>
+              <Link href={'#'}>
                 <Image
                   src="/assets/images/icons/fb-icon-light.svg"
                   alt="location icon"
@@ -153,7 +162,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={"#"}>
+              <Link href={'#'}>
                 <Image
                   src="/assets/images/icons/linkedin-icon-light.svg"
                   alt="location icon"
@@ -163,7 +172,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={"#"}>
+              <Link href={'#'}>
                 <Image
                   src="/assets/images/icons/insta-icon-light.svg"
                   alt="location icon"
@@ -173,7 +182,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={"#"}>
+              <Link href={'#'}>
                 <Image
                   src="/assets/images/icons/x-icon-light.svg"
                   alt="location icon"

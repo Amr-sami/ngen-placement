@@ -21,7 +21,7 @@ export const sendEmail = async ({
   message: string;
 }) => {
   await resend.emails.send({
-    to: 'h.mourad@kayfa.io',
+    to: 'Info@ngenschools.com',
     from: 'NgenSchools <onboarding@resend.dev>',
     subject: 'New Contact Us for submission From Ngen Schools',
     html: `

@@ -197,11 +197,20 @@ const ContactUs = () => {
                   height={24}
                   alt="location"
                 />
-                Egypt — 5th District, New Cairo, Cairo, Egypt
+                Egypt — Maadi, Dar El Hussain St., building 5156, ﬂoor 1
+              </p>
+              <p className="flex items-start gap-2">
+                <Image
+                  src="/Location.svg"
+                  width={24}
+                  height={24}
+                  alt="location"
+                />
+                KSA — Riyad, Al-Alia 12211
               </p>
               <p className="flex items-center gap-2">
                 <Image src="/envlope.svg" width={24} height={24} alt="mail" />{' '}
-                Info@NGen.com
+                Info@ngenschools.com
               </p>
               <p className="flex items-start gap-2">
                 <Image
@@ -210,7 +219,7 @@ const ContactUs = () => {
                   height={24}
                   alt="phone"
                 />
-                (+20) 2324 5967
+                +201032422466
               </p>
             </div>
 
