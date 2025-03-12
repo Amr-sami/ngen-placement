@@ -12,7 +12,8 @@ const DATA = [
     description:
       "To enhance children's personal and interpersonal development.",
     imageUrl: '/assets/images/soft-skills-image.png',
-    color: '[#0BCA6C]',
+    color: 'text-[#0BCA6C]',
+    border: 'border-[#0BCA6C]',
   },
   {
     id: 1,
@@ -21,7 +22,8 @@ const DATA = [
     description:
       "To track each child's development and skill level, ensuring consistent growth and achievement.",
     imageUrl: '/assets/images/insights-image.png',
-    color: 'pumpkin',
+    color: 'text-pumpkin',
+    border: 'border-pumpkin',
   },
   {
     id: 2,
@@ -30,7 +32,8 @@ const DATA = [
     description:
       'designed to provide valuable insights and guidance to support their child’s development',
     imageUrl: '/assets/images/courses-parents-image.png',
-    color: 'purple-default',
+    color: 'text-purple-default',
+    border: 'border-purple-default',
   },
   {
     id: 3,
@@ -39,7 +42,8 @@ const DATA = [
     description:
       'A unique learning experience through play-based education, where children learn and develop new skills in a fun and interactive way.',
     imageUrl: '/assets/images/games-image.png',
-    color: 'rose',
+    color: 'text-rose',
+    border: 'border-rose',
   },
   {
     id: 4,
@@ -48,7 +52,8 @@ const DATA = [
     description:
       'We provide regular workshops to enhance their skills and support their professional development.',
     imageUrl: '/assets/images/teachers-image.png',
-    color: 'purple-darker',
+    color: 'text-purple-darker',
+    border: 'border-purple-darker',
   },
 ];
 
@@ -67,16 +72,14 @@ function HomepageNgenWhySection() {
               <div
                 id={`${element.id}`}
                 className={`flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer border border-solid ${
-                  activeTab === element.id
-                    ? `bg-white border-${element.color}`
-                    : ''
+                  activeTab === element.id ? `bg-white ${element.border}` : ''
                 }`}
                 onClick={() => setActiveTab(element.id)}
                 key={element.id}
               >
                 <div className="flex flex-col gap-2">
                   <h3
-                    className={`flex items-center gap-2 text-${element.color} text-xl font-semibold`}
+                    className={`flex items-center gap-2 ${element.color} text-xl font-semibold`}
                   >
                     <Image
                       src={element.IconUrl}

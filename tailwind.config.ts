@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
     extend: {
+      safelist: [
+        {
+          pattern: /(bg|text|border).*/,
+        },
+      ],
       fontFamily: {
         protestRiot: 'var(--font-protestRiot)',
       },
