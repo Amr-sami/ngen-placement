@@ -1,5 +1,5 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -8,20 +8,20 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import Logo from "../../general/Logo";
-import Button from "@/components/general/Button";
-import { ROUTES } from "@/util/routes";
+} from '@/components/ui/sheet';
+import { cn } from '@/lib/utils';
+import { Menu } from 'lucide-react';
+import Link from 'next/link';
+import Logo from '../../general/Logo';
+import Button from '@/components/general/Button';
+import { ROUTES } from '@/util/routes';
 
 function Navbar() {
   return (
@@ -87,20 +87,20 @@ function Navbar() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            {/* <NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href={ROUTES.TRACKS} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Tracks
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem> */}
-            {/* <NavigationMenuItem>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href={ROUTES.INSTRUCTORS} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Instructors
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem> */}
+            </NavigationMenuItem>
             {/* <NavigationMenuItem>
               <Link href="#" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -111,7 +111,11 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="hidden md:block">
-          <Button href="/contact-us" variant="primary" classNames="bg-[#627CEE] hover:text-[#627CEE]">
+          <Button
+            href="/contact-us"
+            variant="primary"
+            classNames="bg-[#627CEE] hover:text-[#627CEE]"
+          >
             Contact Us
           </Button>
         </div>
@@ -171,8 +175,8 @@ function Navbar() {
 export default Navbar;
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
+  React.ElementRef<'a'>,
+  React.ComponentPropsWithoutRef<'a'>
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
@@ -180,7 +184,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className
           )}
           {...props}
@@ -194,4 +198,4 @@ const ListItem = React.forwardRef<
     </li>
   );
 });
-ListItem.displayName = "ListItem";
+ListItem.displayName = 'ListItem';
