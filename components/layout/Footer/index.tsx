@@ -62,17 +62,17 @@ function Footer() {
               <li>
                 <Link href="/">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">NGen for</Link>
+              </li> */}
+              <li>
+                <Link href="/tracks">Tracks</Link>
               </li>
               <li>
-                <Link href="/">Tracks</Link>
+                <Link href="/instructors">Instructors</Link>
               </li>
               <li>
-                <Link href="/">Instructors</Link>
-              </li>
-              <li>
-                <Link href="/">About us</Link>
+                <Link href="/about">About us</Link>
               </li>
             </ul>
           </div>
@@ -85,7 +85,7 @@ function Footer() {
                 <Link href="/">FAQs</Link>
               </li>
               <li>
-                <Link href="/">Policies</Link>
+                <Link href="/policies">Policies</Link>
               </li>
             </ul>
           </div>
@@ -152,7 +152,7 @@ function Footer() {
         <div className="md:hidden">
           <ul className="flex gap-5 justify-center">
             <li>
-              <Link href={'#'}>
+              <Link href="https://www.facebook.com/ngenschools">
                 <Image
                   src="/assets/images/icons/fb-icon-light.svg"
                   alt="location icon"
@@ -162,7 +162,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={'#'}>
+              <Link href="https://www.linkedin.com/company/ngenschools/">
                 <Image
                   src="/assets/images/icons/linkedin-icon-light.svg"
                   alt="location icon"
@@ -172,7 +172,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={'#'}>
+              <Link href="https://www.instagram.com/ngenschools/">
                 <Image
                   src="/assets/images/icons/insta-icon-light.svg"
                   alt="location icon"
