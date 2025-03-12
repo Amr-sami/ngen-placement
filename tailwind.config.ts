@@ -42,6 +42,9 @@ export default {
         for_corporates: 'linear-gradient(180deg, #FFEEE3 0%, #FF7723 150%)',
         for_parents: 'linear-gradient(180deg, #E4FFF2 0%, #0BCA6C 150%)',
       },
+      animation: {
+        'bounce-slow': 'bounce 4s linear infinite',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
