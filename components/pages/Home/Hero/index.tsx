@@ -8,14 +8,21 @@ function HomepageHero() {
   return (
     <header className="bg-[url('/assets/images/hero-bg.png')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
       <div className="container mx-auto px-5 flex h-full items-center justify-between">
-        <div className="flex flex-col max-w-2xl gap-4 md:gap-8 lg:gap-16">
+        <div className="flex flex-col items-center w-full lg:max-w-2xl gap-4 md:gap-8 lg:gap-16">
           <div>
-            <Logo width={475} height={120} classNames="md:mt-32" />
+            <Logo
+              width={475}
+              height={120}
+              classNames="md:mt-32 hidden md:block"
+            />
+            <p className="text-4xl font-semibold md:ml-40 uppercase text-center">
+              schools
+            </p>
           </div>
-          <div className="flex flex-col gap-4 md:gap-5 text-center md:text-start">
+          <div className="flex flex-col gap-4 md:gap-5 text-center lg:text-start">
             <h1 className="font-protestRiot md:text-2xl lg:text-4xl">
-              Learning Through <span className="text-pumpkin">NGen</span> , Grow
-              as <span className="text-rose">A Ninja</span>
+              Future <span className="text-pumpkin">Innovators</span> ,
+              Today&apos;s <span className="text-rose">Ninjas!</span>
             </h1>
             {/* <p className="text-sm md:text-base lg:text-2xl">
               Dive into Graphics, Data Science, and More with Courses Tailored
