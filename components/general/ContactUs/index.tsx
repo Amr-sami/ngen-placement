@@ -226,7 +226,7 @@ const ContactUs = () => {
             <div className="flex justify-center items-center mt-4 space-x-6">
               <a href="https://www.facebook.com/ngenschools">
                 <Image
-                  src="/facebook.svg"
+                  src="/fb.png"
                   width={40}
                   height={40}
                   alt="facebook"

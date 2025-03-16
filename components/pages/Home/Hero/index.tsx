@@ -42,7 +42,7 @@ function HomepageHero() {
           <div className="hidden md:flex flex-col gap-6 absolute -bottom-32 lg:-right-14 right-0">
             <a href="https://www.facebook.com/ngenschools">
               <Image
-                src="/facebook.svg"
+                src="/fb.png"
                 width={40}
                 height={40}
                 alt="facebook"
