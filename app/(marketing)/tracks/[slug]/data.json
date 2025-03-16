@@ -1,14 +1,306 @@
 [
   {
-    "name": "Graphic design",
-    "slug": "graphic-design",
-    "description": "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.",
+    "name": "Foundation",
+    "slug": "foundation",
+    "description": "The Foundation Level is the starting point for building essential technical skills, ensuring a smooth transition into advanced learning. It follows a structured, step-by-step approach, where each stage strengthens the knowledge gained in the previous one. From digital literacy and basic programming to network security and cybersecurity, this stage equips learners with the core competencies needed for future success. both in school and in the real world.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
     "assessments_number": 6,
     "price": 300,
-    "levels_ids": ["", ""]
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Level 1: Introduction to Computers & Digital Literacy",
+        "slug": "course",
+        "description": "Students develop fundamental digital skills, including computer operation, internet usage, and essential software applications, ensuring a strong foundation for technical learning.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 40,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Level 2: Introduction to Programming & Databases",
+        "slug": "course",
+        "description": "This stage introduces the basics of coding and database management, helping students understand how to write simple programs and organize data efficiently.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Level 3: Networking & Basic Security",
+        "slug": "course",
+        "description": "Learners explore networking concepts, internet protocols, and basic security measures, equipping them with the knowledge to build and maintain secure digital environments.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Level 4: Cybersecurity & Advanced Programming",
+        "slug": "course",
+        "description": "Advanced topics in cybersecurity and programming are covered, enabling students to protect systems from cyber threats while enhancing their coding skills for complex applications. Advanced topics in cybersecurity and programming are covered, enabling students to protect systems from cyber threats while enhancing their coding skills for complex applications.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/track-placeholder.png",
+    "status": "AVailable",
+    "discountValue": "",
+    "numberOfLevels": "",
+    "skillLevel": ""
+  },
+  {
+    "name": "Programming",
+    "slug": "programming",
+    "description": "track offers a fun and interactive way to learn coding skills. Through hands-on projects, children will explore the basics of programming, logical thinking, and problem-solving, helping them build creativity and prepare for a future in the tech world.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 6,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Beginner Level",
+        "slug": "course",
+        "description": "Learning coding basics through block-based programming and simple text-based coding (Python, JavaScript).",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 40,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Intermediate",
+        "slug": "course",
+        "description": "Writing structured code, debugging, and developing small applications and interactive programs.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Advanced",
+        "slug": "course",
+        "description": "Full-stack development, data structures, algorithms, and real-world software development projects.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/track-placeholder.png",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "",
+    "skillLevel": ""
+  },
+  {
+    "name": "AI",
+    "slug": "ai",
+    "description": "The AI track offers an in-depth exploration of artificial intelligence. Students will dive into AI concepts, learning how to create models and solutions using AI tools. Through hands-on projects, they’ll gain the skills to build their own AI models, developing both technical expertise and creativity in the field.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 6,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Beginner Level",
+        "slug": "course",
+        "description": "Introduction to AI, basic machine learning concepts, and simple AI applications using visual programming.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 40,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Intermediate",
+        "slug": "course",
+        "description": "Hands-on machine learning projects, neural networks, and AI ethics, with real-world applications.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Advanced",
+        "slug": "course",
+        "description": "Building AI models, automation, and deep learning techniques for advanced problem-solving.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/track-placeholder.png",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "",
+    "skillLevel": ""
+  },
+  {
+    "name": "Cyber Security",
+    "slug": "cyber-security",
+    "description": "The cyber Security track provides kids with a foundational understanding of cybersecurity principles and practices. Through a structured, cumulative approach, students explore kecyber-Securityber-Securityconcepts like cyber threats, data protection, and safe online behavior.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 6,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Beginner Level",
+        "slug": "course",
+        "description": "Fundamentals of cybersecurity, online safety, encryption basics, and ethical hacking introduction.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 40,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Intermediate",
+        "slug": "course",
+        "description": "Network security, penetration testing, and cyber threat detection with hands-on simulations.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Advanced",
+        "slug": "course",
+        "description": "Advanced ethical hacking, cybersecurity frameworks, and digital forensics for real-world security challenges.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/track-placeholder.png",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "",
+    "skillLevel": ""
+  },
+  {
+    "name": "Creative Arts",
+    "slug": "creative-arts",
+    "description": "The Creative Arts Track empowers students to explore the world of digital design, animation, and multimedia creation. Through a structured learning journey, they develop skills in graphic design, video editing, storytelling, and 3D modeling, enabling them to bring their creative ideas to life. This track nurtures artistic expression and technical proficiency, preparing students for careers in digital media,",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 6,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Beginner Level",
+        "slug": "course",
+        "description": "Exploring digital design, animation, and storytelling with basic graphic tools and software.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 40,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Intermediate",
+        "slug": "course",
+        "description": "Graphic design, video editing, interactive media creation, and 2D/3D design principles.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Advanced",
+        "slug": "course",
+        "description": "Professional 3D modeling, game design, animation production, and advanced multimedia storytelling.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/track-placeholder.png",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "",
+    "skillLevel": ""
+  },
+  {
+    "name": "Robotics",
+    "slug": "robotics",
+    "description": "The Robotics Track introduces students to the exciting world of robotics, automation, and engineering. Through a structured learning journey, they develop skills in robot design, programming, and hardware integration, working with sensors, motors, and microcontrollers like Arduino. This track nurtures problem-solving, innovation, and hands-on technical skills, preparing students for future careers in robotics, AI, and automation technologies.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 6,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Beginner Level",
+        "slug": "course",
+        "description": "Introduction to robotics, understanding sensors, motors, and basic mechanical design.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 40,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Intermediate",
+        "slug": "course",
+        "description": "Hands-on robot building, programming robotic movements, and working with microcontrollers like Arduino.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      },
+      {
+        "name": "Advanced",
+        "slug": "course",
+        "description": "Advanced robotics engineering, AI-powered automation, and real-world applications like industrial robotics and autonomous systems.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 8,
+        "lecturesNumber": 20,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/track-placeholder.png",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "",
+    "skillLevel": ""
   }
 ]

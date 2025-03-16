@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "../Button";
-import Image from "next/image";
-import { ROUTES } from "@/util/routes";
+import React from 'react';
+import Button from '../Button';
+import Image from 'next/image';
+// import { ROUTES } from "@/util/routes";
 
 type Props = {
   image: string;
@@ -17,13 +17,13 @@ type Props = {
 function Card({
   image,
   title,
-  // slug,
+  slug,
   status,
-  // discountValue,
-  // numberOfLevels,
-  // duration,
-  // skillLevel,
-}: Props) {
+}: // discountValue,
+// numberOfLevels,
+// duration,
+// skillLevel,
+Props) {
   return (
     <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 lg:my-5">
       <div className="">
@@ -41,9 +41,9 @@ function Card({
           <div>
             <p
               className={`px-2 py-1 rounded-2xl text-white text-xs font-extrabold ${
-                status.toLocaleLowerCase() === "upcoming"
-                  ? "bg-pumpkin"
-                  : "bg-green"
+                status.toLocaleLowerCase() === 'upcoming'
+                  ? 'bg-pumpkin'
+                  : 'bg-green'
               }`}
             >
               {status}
@@ -73,7 +73,7 @@ function Card({
           </div>
         </div> */}
         <div className="pt-1">
-          <Button variant="secondary" href={ROUTES.CONTACT_US} takeFullWidth>
+          <Button variant="secondary" href={`tracks/${slug}`} takeFullWidth>
             Register Now
           </Button>
         </div>

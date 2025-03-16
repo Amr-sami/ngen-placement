@@ -1,17 +1,17 @@
-"use client";
-import { ContactUs} from "@/components/general";
-import { H2 } from "@/components/general/Heading";
+'use client';
+import { CallToAction /*,ContactUs*/ } from '@/components/general';
+import { H2 } from '@/components/general/Heading';
 // import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
 // import {
 //   Carousel,
 //   CarouselContent,
 //   CarouselItem,
 // } from "@/components/ui/carousel";
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 // import Autoplay from "embla-carousel-autoplay";
-import bgImageDesktop from "@/public/assets/images/about-page-bg.png";
-import bgImageMob from "@/public/assets/images/about-page-bg-mob.png";
+import bgImageDesktop from '@/public/assets/images/about-page-bg.png';
+import bgImageMob from '@/public/assets/images/about-page-bg-mob.png';
 
 // const TESTIOMONIALS = [
 //   {
@@ -61,13 +61,12 @@ function AboutPage() {
                   Who we are
                 </h1>
                 <p>
-                  NGen stands for the Ninja Generation. When you think of a
-                  ninja, you think of someone who’s the best, the smartest, and
-                  the strongest mentally. This is exactly what we aim for our
-                  graduates to become! NGen is a virtual school that Educates
-                  kids from (8-18 y). Our programs are built around game-based
-                  strategies, specially designed for each age group to match
-                  their unique developmental and cognitive needs.
+                  NGen is a virtual school that teaches modern technology to
+                  students aged 8 to 18 through gamified learning experiences.
+                  It offers interactive programs designed to develop their
+                  cognitive and problem-solving skills. The platform aims to
+                  nurture intelligent, resilient learners
+                  prepared for the future
                 </p>
               </div>
               <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
@@ -129,10 +128,11 @@ function AboutPage() {
             </CarouselContent>
           </Carousel>
         </div> */}
-        <div className="container mx-auto px-5 text-purple-dark">
+        {/* <div className="container mx-auto px-5 text-purple-dark">
           <ContactUs />
-        </div>
+        </div> */}
       </main>
+      <CallToAction cta="Get Started" />
     </>
   );
 }

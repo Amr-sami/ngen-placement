@@ -1,3 +1,5 @@
+import { LevelCardProps } from '@/components/pages/SingleTrackPage/types';
+
 export type Track = {
   name: string;
   slug: string;
@@ -9,6 +11,13 @@ export type Track = {
   assessments_number: number;
   price: number;
   levels_ids: string[];
+  levels: LevelCardProps[];
+  image: string;
+  status: string;
+  discountValue: string;
+  numberOfLevels: string;
+  skillLevel: string;
+  duration: string;
 };
 
 export type Level = {

@@ -8,13 +8,13 @@ function Footer() {
     <footer className="relative mt-6 py-6 md:py-10 lg:py-20 after:bg-[url('/assets/images/footer-bg-mob.svg')] lg:after:bg-[url('/assets/images/footer-bg.svg')] after:absolute after:content-[''] after:w-full after:h-full after:bottom-0 after:z-0 after:bg-no-repeat after:bg-cover">
       <div className="container mx-auto px-5 flex flex-col gap-6 lg:flex-row relative z-10 mt-20 lg:mt-0">
         <div className="self-center lg:basis-2/6 lg:flex lg:flex-col lg:items-center lg:gap-10">
-          <div className="md:scale-125">
+          <Link href={'/'} className="md:scale-125">
             <Logo width={200} height={100} />
-          </div>
+          </Link>
           <div className="hidden lg:block">
             <ul className="flex gap-5 justify-center">
               <li>
-                <Link href={'#'}>
+                <Link href={'https://www.facebook.com/ngenschools'}>
                   <Image
                     src="/assets/images/icons/fb-icon-light.svg"
                     alt="location icon"
@@ -24,7 +24,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={'#'}>
+                <Link href={'https://www.linkedin.com/company/ngenschools/'}>
                   <Image
                     src="/assets/images/icons/linkedin-icon-light.svg"
                     alt="location icon"
@@ -34,7 +34,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={'#'}>
+                <Link href={'https://www.instagram.com/ngenschools/'}>
                   <Image
                     src="/assets/images/icons/insta-icon-light.svg"
                     alt="location icon"
@@ -59,24 +59,29 @@ function Footer() {
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-5 text-white lg:basis-4/6">
           <div>
             <ul className="flex flex-col gap-2 md:gap-4">
-              <li>
+              {/* <li>
                 <Link href="/">Home</Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link href="/">NGen for</Link>
               </li> */}
               <li>
+                <Link href="/about">About us</Link>
+              </li>
+              <li>
                 <Link href="/tracks">Tracks</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/instructors">Instructors</Link>
-              </li>
+              </li> */}
+
+              {/* TODO: To be deleted when we put the other list down below */}
               <li>
-                <Link href="/about">About us</Link>
+                <Link href="/policies">Policies</Link>
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <ul className="flex flex-col gap-2 md:gap-4">
               <li>
                 <Link href="/">Blogs</Link>
@@ -88,21 +93,21 @@ function Footer() {
                 <Link href="/policies">Policies</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="col-span-2 lg:col-span-1">
             <ul className="flex flex-col gap-2 md:gap-4 ">
               <li>
-                <Link href="/">For schools</Link>
+                <Link href="/ngen-for/schools">For schools</Link>
               </li>
               <li>
-                <Link href="/">For corporates</Link>
+                <Link href="/ngen-for/corporates">For corporates</Link>
               </li>
               <li>
-                <Link href="/">For parents</Link>
+                <Link href="/ngen-for/parents">For parents</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">For individual</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="flex flex-col gap-4 col-span-2">

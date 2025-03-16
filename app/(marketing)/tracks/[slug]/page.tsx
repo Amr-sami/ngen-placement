@@ -1,9 +1,9 @@
-import { CallToAction, PageWrapper } from "@/components/general";
-import { Track } from "@/types";
-import React from "react";
-import tracks from "./data.json";
-import OverviewCard from "@/components/general/OverviewCard";
-import LevelsList from "@/components/pages/SingleTrackPage/LevelsList";
+import { CallToAction, PageWrapper } from '@/components/general';
+import { Track } from '@/types';
+import React from 'react';
+import tracks from './data.json';
+import OverviewCard from '@/components/general/OverviewCard';
+import LevelsList from '@/components/pages/SingleTrackPage/LevelsList';
 
 // If someone goes to a link not contaning the slug the system will redirect him to 404 page, for SSG not SSR
 // for more info: https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
@@ -28,20 +28,20 @@ async function SingleTrackPage({
   const [track] = tracks.filter((track: Track) => track.slug === slug);
 
   const partnersData = {
-    text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools ",
-    imgSrc: "/certificate.svg",
+    text: 'Our Certificate is by IAO, IAO is an international quality assurance agency, working to improve & establish education standards of institutes all over the world. With its global network of experts, IAO grants accreditation to educational institutions, corporations, professionals and qualified individuals.',
+    imgSrc: '/certificate.svg',
     partnerImgs: [
       {
-        src: "/assets/images/partner-placeholder.png",
-        alt: "partner placeholder image",
+        src: '/assets/images/partner-placeholder.png',
+        alt: 'partner placeholder image',
       },
       {
-        src: "/assets/images/partner-placeholder.png",
-        alt: "partner placeholder image",
+        src: '/assets/images/partner-placeholder.png',
+        alt: 'partner placeholder image',
       },
       {
-        src: "/assets/images/partner-placeholder.png",
-        alt: "partner placeholder image",
+        src: '/assets/images/partner-placeholder.png',
+        alt: 'partner placeholder image',
       },
     ],
   };
@@ -62,9 +62,9 @@ async function SingleTrackPage({
           variant="partners"
           text={partnersData.text}
           imgSrc={partnersData.imgSrc}
-          partnersImgs={partnersData.partnerImgs}
+          // partnersImgs={partnersData.partnerImgs}
         />
-        <section className="flex flex-col gap-6 sm:flex-row lg:bg-gray-default rounded-3xl p-6 justify-between ">
+        {/* <section className="flex flex-col gap-6 sm:flex-row lg:bg-gray-default rounded-3xl p-6 justify-between ">
           <div className="flex flex-col gap-2 ">
             <h2 className="font-bold text-xl text-purple-dark md:text-2xl xl:font-medium xl:text-3xl">
               Pricing
@@ -80,8 +80,8 @@ async function SingleTrackPage({
               {track.price} $
             </h3>
           </div>
-        </section>
-        <LevelsList />
+        </section> */}
+        <LevelsList levels={track.levels} />
       </PageWrapper>
       <CallToAction cta="Get Started" />
     </main>
