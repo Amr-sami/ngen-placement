@@ -1,12 +1,12 @@
 import React from 'react';
 import Logo from '../../../general/Logo';
 import Image from 'next/image';
-import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.png';
+import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.svg';
 import Button from '../../../general/Button';
 
 function HomepageHero() {
   return (
-    <header className="bg-[url('/assets/images/hero-bg.png')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
+    <header className="bg-[url('/assets/images/hero-bg.svg')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
       <div className="container mx-auto px-5 flex h-full items-center justify-between">
         <div className="flex flex-col items-center w-full lg:max-w-2xl gap-4 md:gap-8 lg:gap-16">
           <div>
@@ -28,7 +28,7 @@ function HomepageHero() {
               Dive into Graphics, Data Science, and More with Courses Tailored
               for Future Innovators!
             </p> */}
-            <Button variant="primary" href="https://wa.me/+201055023774">
+            <Button variant="primary" href="https://wa.me/+201055023774" isTargetBlank={true}>
               Start your journey
             </Button>
           </div>
@@ -40,7 +40,7 @@ function HomepageHero() {
             className="animate-bounce-slow"
           />
           <div className="hidden md:flex flex-col gap-6 absolute -bottom-32 lg:-right-14 right-0">
-            <a href="https://www.facebook.com/ngenschools">
+            <a href="https://www.facebook.com/ngenschools" target="_blank">
               <Image
                 src="/fb.png"
                 width={40}
@@ -48,7 +48,7 @@ function HomepageHero() {
                 alt="facebook"
               />
             </a>
-            <a href="https://www.linkedin.com/company/ngenschools/">
+            <a href="https://www.linkedin.com/company/ngenschools/" target="_blank">
               <Image
                 src="/linkedin.svg"
                 width={40}
@@ -56,7 +56,7 @@ function HomepageHero() {
                 alt="linkedin"
               />
             </a>
-            <a href="https://www.instagram.com/ngenschools/">
+            <a href="https://www.instagram.com/ngenschools/" target="_blank">
               <Image
                 src="/instagram.svg"
                 width={40}

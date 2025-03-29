@@ -14,7 +14,7 @@ function Footer() {
           <div className="hidden lg:block">
             <ul className="flex gap-5 justify-center">
               <li>
-                <Link href={'https://www.facebook.com/ngenschools'}>
+                <Link href={'https://www.facebook.com/ngenschools'} target="_blank">
                   <Image
                     src="/assets/images/icons/fb-icon-light.svg"
                     alt="location icon"
@@ -24,7 +24,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={'https://www.linkedin.com/company/ngenschools/'}>
+                <Link href={'https://www.linkedin.com/company/ngenschools/'} target="_blank">
                   <Image
                     src="/assets/images/icons/linkedin-icon-light.svg"
                     alt="location icon"
@@ -34,7 +34,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={'https://www.instagram.com/ngenschools/'}>
+                <Link href={'https://www.instagram.com/ngenschools/'} target="_blank">
                   <Image
                     src="/assets/images/icons/insta-icon-light.svg"
                     alt="location icon"
@@ -149,7 +149,16 @@ function Footer() {
                   width={24}
                   height={24}
                 />
-                <Link href="/">+201032422466</Link>
+                <p>+201032422466</p>
+              </li>
+              <li className="flex items-start gap-1">
+                <Image
+                  src="/assets/images/icons/phone-icon.svg"
+                  alt="location icon"
+                  width={24}
+                  height={24}
+                />
+                <p>+966541639695</p>
               </li>
             </ul>
           </div>

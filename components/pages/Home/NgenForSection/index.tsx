@@ -16,7 +16,7 @@ function HomepageNgenForSection() {
                 For Indviduals
               </p>
               <Image
-                src="/assets/images/NgenFor/for-indviduals.png"
+                src="/assets/images/NgenFor/for-indviduals.svg"
                 width={260}
                 height={280}
                 className="mx-auto"
@@ -29,59 +29,15 @@ function HomepageNgenForSection() {
             </div>
           </Link>
 
-          <Link
-            href={ROUTES.NGEN_FOR.FOR_SCHOOL}
-            className="basis-1/4 bg-for_schools"
-          >
-            <div className="h-[50%] md:bg-[#FDBEDA]">
-              <p className="font-protestRiot text-[40px] text-center pt-11 text-[#F659A0]">
-                For Schools
-              </p>
-              <Image
-                src="/assets/images/NgenFor/for-schools.png"
-                width={297}
-                height={228}
-                className="mx-auto"
-                alt="for indviduals"
-              />
-            </div>
-            <div className="h-[50%] md:bg-[#F659A0] px-6 py-10 text-2xl text-center text-white font-nunito">
-              We offer a unique LMS experience with regular detailed reports and
-              workshops to support teacher development.
-            </div>
-          </Link>
-
-          <Link
-            href={ROUTES.NGEN_FOR.FOR_CORPORATES}
-            className="basis-1/4 bg-for_corporates"
-          >
-            <div className="h-[54%] md:bg-[#FFEEE3]">
-              <p className="font-protestRiot text-[40px] text-center pt-11 text-[#FF7723]">
-                For Corporates
-              </p>
-              <Image
-                src="/assets/images/NgenFor/for-corporates.png"
-                width={271}
-                height={260}
-                className="mx-auto"
-                alt="for indviduals"
-              />
-            </div>
-            <div className="h-[46%] md:bg-[#FF7723] px-6 py-10 text-2xl text-center text-white font-nunito">
-              We provide high-quality training programs tailored for employees&apos; children at competitive prices.
-            </div>
-          </Link>
-
-          <Link
+          <Link className="basis-1/4 bg-for_parents"
             href={ROUTES.NGEN_FOR.FOR_PARENTS}
-            className="basis-1/4 bg-for_parents"
           >
             <div className="h-[50%] md:bg-[#E4FFF2]">
               <p className="font-protestRiot text-[40px] text-center pt-11 text-[#0BCA6C]">
                 For Parents
               </p>
               <Image
-                src="/assets/images/NgenFor/for-parents.png"
+                src="/assets/images/NgenFor/for-parents.svg"
                 width={270}
                 height={228}
                 className="mx-auto"
@@ -92,6 +48,47 @@ function HomepageNgenForSection() {
               We offer an educational experience that strengthens parent-child
               communication through awareness workshops for parents and student
               progress reports.&quot;
+            </div>
+          </Link>
+
+          <Link className="basis-1/4 bg-for_corporates"
+            href={ROUTES.NGEN_FOR.FOR_CORPORATES}
+          >
+            <div className="h-[54%] md:bg-[#FFEEE3]">
+              <p className="font-protestRiot text-[40px] text-center pt-11 text-[#FF7723]">
+                For Corporates
+              </p>
+              <Image
+                src="/assets/images/NgenFor/for-corporates.svg"
+                width={271}
+                height={260}
+                className="mx-auto"
+                alt="for indviduals"
+              />
+            </div>
+            <div className="h-[46%] md:bg-[#FF7723] px-6 py-10 text-2xl text-center text-white font-nunito">
+              We provide high-quality training programs tailored for employees&apos; children at competitive prices.
+            </div>
+          </Link>
+          
+          <Link className="basis-1/4 bg-for_schools"
+            href={ROUTES.NGEN_FOR.FOR_SCHOOL}
+          >
+            <div className="h-[50%] md:bg-[#FDBEDA]">
+              <p className="font-protestRiot text-[40px] text-center pt-11 text-[#F659A0]">
+                For Schools
+              </p>
+              <Image
+                src="/assets/images/NgenFor/for-schools.svg"
+                width={297}
+                height={228}
+                className="mx-auto"
+                alt="for indviduals"
+              />
+            </div>
+            <div className="h-[50%] md:bg-[#F659A0] px-6 py-10 text-2xl text-center text-white font-nunito">
+              We offer a unique LMS experience with regular detailed reports and
+              workshops to support teacher development.
             </div>
           </Link>
         </div>

@@ -221,10 +221,19 @@ const ContactUs = () => {
                 />
                 +201032422466
               </p>
+              <p className="flex items-start gap-2">
+                <Image
+                  src="/telephone.svg"
+                  width={24}
+                  height={24}
+                  alt="phone"
+                />
+                +966541639695
+              </p>
             </div>
 
             <div className="flex justify-center items-center mt-4 space-x-6">
-              <a href="https://www.facebook.com/ngenschools">
+              <a href="https://www.facebook.com/ngenschools" target="_blank">
                 <Image
                   src="/fb.png"
                   width={40}
@@ -232,7 +241,7 @@ const ContactUs = () => {
                   alt="facebook"
                 />
               </a>
-              <a href="https://www.linkedin.com/company/ngenschools/">
+              <a href="https://www.linkedin.com/company/ngenschools/" target="_blank">
                 <Image
                   src="/linkedin.svg"
                   width={40}
@@ -240,7 +249,7 @@ const ContactUs = () => {
                   alt="linkedin"
                 />
               </a>
-              <a href="https://www.instagram.com/ngenschools/">
+              <a href="https://www.instagram.com/ngenschools/" target="_blank">
                 <Image
                   src="/instagram.svg"
                   width={40}

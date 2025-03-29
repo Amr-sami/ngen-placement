@@ -11,7 +11,7 @@ const DATA = [
     IconUrl: '/assets/images/icons/star-iconr.svg',
     description:
       "To enhance children's personal and interpersonal development.",
-    imageUrl: '/assets/images/soft-skills-image.png',
+    imageUrl: '/assets/images/soft-skills-image.svg',
     color: 'text-[#0BCA6C]',
     border: 'border-[#0BCA6C]',
   },
@@ -21,7 +21,7 @@ const DATA = [
     IconUrl: '/assets/images/icons/document-icon.svg',
     description:
       "To track each child's development and skill level, ensuring consistent growth and achievement.",
-    imageUrl: '/assets/images/insights-image.png',
+    imageUrl: '/assets/images/insights-image.svg',
     color: 'text-pumpkin',
     border: 'border-pumpkin',
   },
@@ -31,7 +31,7 @@ const DATA = [
     IconUrl: '/assets/images/icons/laptop-icon.svg',
     description:
       'designed to provide valuable insights and guidance to support their child’s development',
-    imageUrl: '/assets/images/courses-parents-image.png',
+    imageUrl: '/assets/images/courses-parents-image.svg',
     color: 'text-purple-default',
     border: 'border-purple-default',
   },
@@ -41,7 +41,7 @@ const DATA = [
     IconUrl: '/assets/images/icons/gamified-icon.svg',
     description:
       'A unique learning experience through play-based education, where children learn and develop new skills in a fun and interactive way.',
-    imageUrl: '/assets/images/games-image.png',
+    imageUrl: '/assets/images/games-image.svg',
     color: 'text-rose',
     border: 'border-rose',
   },
@@ -51,7 +51,7 @@ const DATA = [
     IconUrl: '/assets/images/icons/user-terminal.svg',
     description:
       'We provide regular workshops to enhance their skills and support their professional development.',
-    imageUrl: '/assets/images/teachers-image.png',
+    imageUrl: '/assets/images/teachers-image.svg',
     color: 'text-purple-darker',
     border: 'border-purple-darker',
   },
@@ -103,6 +103,7 @@ function HomepageNgenWhySection() {
                 alt={activeImage.title}
                 width={580}
                 height={530}
+                className='scale-x-[-1]'
               />
             )}
           </div>

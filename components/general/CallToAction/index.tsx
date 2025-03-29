@@ -9,7 +9,7 @@ interface ICallToActionProps {
 
 const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
   return (
-    <div className="bg-[url('/assets/images/get-started-section-bg.png')] bg-cover bg-no-repeat  relative flex items-center justify-between min-h-[715px]">
+    <div className="bg-[url('/assets/images/get-started-section-bg.svg')] bg-cover bg-no-repeat  relative flex items-center justify-between min-h-[715px]">
       {/* <Image
         src="/callToActionRockets.svg"
         alt="rocket"

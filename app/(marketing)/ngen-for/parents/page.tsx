@@ -72,7 +72,7 @@ const NgenForParents = () => {
         <H2>for parents</H2>
         {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
         <HowItWorksSection data={howItWorksData} />
-        <Features features={features} imgSrc="/features-for-corporate.svg" />
+        <Features features={features} imgSrc="/features-for-corporate.svg" title="Parents" />
         {/* <TracksOverviewSection data={overviewData} /> */}
         <TracksSection title="Our tracks" />
         {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}

@@ -14,6 +14,7 @@ export interface IHowItWorksData {
 export interface IFeaturedProps {
   features: string[];
   imgSrc: string;
+  title: string;
 }
 
 export interface ITracksOverviewCardProps {

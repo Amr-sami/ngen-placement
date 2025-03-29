@@ -19,20 +19,21 @@ function Card({
   title,
   slug,
   status,
-}: // discountValue,
-// numberOfLevels,
-// duration,
-// skillLevel,
+  // discountValue,
+  numberOfLevels,
+  duration,
+  skillLevel,
+}:
 Props) {
   return (
-    <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 lg:my-5">
+    <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 lg:my-5 border-[#F5F5F5] border-solid border-2">
       <div className="">
         <Image
           src={image}
           height={150}
           width={275}
           alt={`${title}`}
-          className="w-full min-h-[150px]"
+          className="w-full h-auto rounded-t-2xl"
         />
       </div>
       <div className="px-6 py-4 grid grid-rows-subgrid row-span-5 gap-y-2">
@@ -51,8 +52,8 @@ Props) {
           </div>
         </div>
         {/* <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p> */}
-        {/* <p className="text-sm">{numberOfLevels} Levels included</p> */}
-        {/* <div className="flex justify-between text-xs md:text-sm text-[#655B62]">
+        <p className="text-sm">{numberOfLevels} Levels included</p>
+        <div className="flex justify-between text-xs md:text-sm text-[#655B62]">
           <div className="flex items-center gap-2">
             <Image
               src="/assets/images/icons/duration-icon.svg"
@@ -71,10 +72,10 @@ Props) {
             />
             <p>{skillLevel}</p>
           </div>
-        </div> */}
+        </div>
         <div className="pt-1">
           <Button variant="secondary" href={`tracks/${slug}`} takeFullWidth>
-            Register Now
+            More Details
           </Button>
         </div>
       </div>

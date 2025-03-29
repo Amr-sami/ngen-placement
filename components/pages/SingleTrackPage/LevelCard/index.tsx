@@ -17,7 +17,7 @@ function LevelCard({
 LevelCardProps) {
   return (
     // <Link href={`/level/${slug}`}>
-    <div className="rounded-3xl p-6 border-2 border-gray-default flex flex-col md:flex-row gap-6">
+    <div className="rounded-3xl p-6 border-2 border-gray-default flex flex-col md:flex-row gap-6 hover:bg-gray-default">
       <div className="xl:basis-1/5 sm:basis-2/5 border h-[175px] rounded-2xl self-center flex justify-center items-center md:p-2">
         <Image
           src={mainImage}

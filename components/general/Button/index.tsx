@@ -7,17 +7,20 @@ function Button({
   variant,
   takeFullWidth = false,
   classNames,
+  isTargetBlank,
 }: Readonly<{
   children: React.ReactNode;
   href: string;
   classNames?: string;
   variant: "primary" | "secondary";
   takeFullWidth?: boolean;
+  isTargetBlank?: boolean;
 }>) {
   return (
     <div>
       <Link
         href={href}
+        target={isTargetBlank ? "_blank" : "_self"}
         className={`px-4 py-2 rounded-lg transition-colors duration-300 ease-linear ${
           variant === "primary"
             ? "bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin"

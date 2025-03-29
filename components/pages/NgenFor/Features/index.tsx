@@ -3,11 +3,11 @@ import { IFeaturedProps } from '../types'
 import Image from 'next/image'
 
 
-const Featured: React.FC<IFeaturedProps> = ({ features, imgSrc }) => {
+const Featured: React.FC<IFeaturedProps> = ({ features, imgSrc, title }) => {
   return (
     <>
       <h3 className="font-bold text-xl text-pumpkin mb-4 md:text-2xl xl:text-3xl">
-        Features for Corporate
+        Features for {title}
       </h3>
       <div className='flex flex-col-reverse space-between gap-10 lg:flex-row mb-6 lg:mb-10'>
 

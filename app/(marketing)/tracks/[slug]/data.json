@@ -7,7 +7,7 @@
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
-    "assessments_number": 6,
+    "assessments_number": 40,
     "price": 300,
     "levels_ids": ["", ""],
     "levels": [
@@ -16,7 +16,7 @@
         "slug": "course",
         "description": "Students develop fundamental digital skills, including computer operation, internet usage, and essential software applications, ensuring a strong foundation for technical learning.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 40,
+        "duration": 75,
         "assessmentsNumber": 8,
         "lecturesNumber": 20,
         "rating": 5
@@ -36,7 +36,7 @@
         "slug": "course",
         "description": "Learners explore networking concepts, internet protocols, and basic security measures, equipping them with the knowledge to build and maintain secure digital environments.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 50,
+        "duration": 75,
         "assessmentsNumber": 8,
         "lecturesNumber": 20,
         "rating": 5
@@ -52,12 +52,12 @@
         "rating": 5
       }
     ],
-    "image": "/assets/images/track-placeholder.png",
+    "image": "/assets/images/foundation.svg",
     "status": "AVailable",
     "discountValue": "",
-    "numberOfLevels": "",
-    "skillLevel": "",
-    "duration": ""
+    "numberOfLevels": "4",
+    "skillLevel": "Beginners",
+    "duration": "100"
   },
   {
     "name": "Programming",
@@ -67,7 +67,7 @@
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
-    "assessments_number": 6,
+    "assessments_number": 40,
     "price": 300,
     "levels_ids": ["", ""],
     "levels": [
@@ -76,9 +76,9 @@
         "slug": "course",
         "description": "Learning coding basics through block-based programming and simple text-based coding (Python, JavaScript).",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 40,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
         "rating": 5
       },
       {
@@ -87,8 +87,8 @@
         "description": "Writing structured code, debugging, and developing small applications and interactive programs.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
         "rating": 5
       },
       {
@@ -96,18 +96,18 @@
         "slug": "course",
         "description": "Full-stack development, data structures, algorithms, and real-world software development projects.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
         "rating": 5
       }
     ],
-    "image": "/assets/images/track-placeholder.png",
+    "image": "/assets/images/programming.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "",
-    "skillLevel": "",
-    "duration": ""
+    "numberOfLevels": "8",
+    "skillLevel": "Beginner to Advanced",
+    "duration": "200"
   },
   {
     "name": "AI",
@@ -117,7 +117,7 @@
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
-    "assessments_number": 6,
+    "assessments_number": 40,
     "price": 300,
     "levels_ids": ["", ""],
     "levels": [
@@ -126,9 +126,9 @@
         "slug": "course",
         "description": "Introduction to AI, basic machine learning concepts, and simple AI applications using visual programming.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 40,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
         "rating": 5
       },
       {
@@ -137,8 +137,8 @@
         "description": "Hands-on machine learning projects, neural networks, and AI ethics, with real-world applications.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
         "rating": 5
       },
       {
@@ -146,18 +146,18 @@
         "slug": "course",
         "description": "Building AI models, automation, and deep learning techniques for advanced problem-solving.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
         "rating": 5
       }
     ],
-    "image": "/assets/images/track-placeholder.png",
+    "image": "/assets/images/ai.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "",
-    "skillLevel": "",
-    "duration": ""
+    "numberOfLevels": "8",
+    "skillLevel": "Beginner to Advanced",
+    "duration": "200"
   },
   {
     "name": "Cyber Security",
@@ -167,7 +167,7 @@
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
-    "assessments_number": 6,
+    "assessments_number": 40,
     "price": 300,
     "levels_ids": ["", ""],
     "levels": [
@@ -176,9 +176,9 @@
         "slug": "course",
         "description": "Fundamentals of cybersecurity, online safety, encryption basics, and ethical hacking introduction.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 40,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
         "rating": 5
       },
       {
@@ -187,8 +187,8 @@
         "description": "Network security, penetration testing, and cyber threat detection with hands-on simulations.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
         "rating": 5
       },
       {
@@ -196,18 +196,18 @@
         "slug": "course",
         "description": "Advanced ethical hacking, cybersecurity frameworks, and digital forensics for real-world security challenges.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
         "rating": 5
       }
     ],
-    "image": "/assets/images/track-placeholder.png",
+    "image": "/assets/images/cyber.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "",
-    "skillLevel": "",
-    "duration": ""
+    "numberOfLevels": "8",
+    "skillLevel": "Beginner to Advanced",
+    "duration": "200"
   },
   {
     "name": "Creative Arts",
@@ -217,7 +217,7 @@
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
-    "assessments_number": 6,
+    "assessments_number": 40,
     "price": 300,
     "levels_ids": ["", ""],
     "levels": [
@@ -226,9 +226,9 @@
         "slug": "course",
         "description": "Exploring digital design, animation, and storytelling with basic graphic tools and software.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 40,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
         "rating": 5
       },
       {
@@ -237,8 +237,8 @@
         "description": "Graphic design, video editing, interactive media creation, and 2D/3D design principles.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
         "rating": 5
       },
       {
@@ -246,18 +246,18 @@
         "slug": "course",
         "description": "Professional 3D modeling, game design, animation production, and advanced multimedia storytelling.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
         "rating": 5
       }
     ],
-    "image": "/assets/images/track-placeholder.png",
+    "image": "/assets/images/art.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "",
-    "skillLevel": "",
-    "duration": ""
+    "numberOfLevels": "8",
+    "skillLevel": "Beginner to Advanced",
+    "duration": "200"
   },
   {
     "name": "Robotics",
@@ -267,7 +267,7 @@
     "certificate_image": "",
     "rating": 5,
     "courses_number": 8,
-    "assessments_number": 6,
+    "assessments_number": 40,
     "price": 300,
     "levels_ids": ["", ""],
     "levels": [
@@ -276,9 +276,9 @@
         "slug": "course",
         "description": "Introduction to robotics, understanding sensors, motors, and basic mechanical design.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 40,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
         "rating": 5
       },
       {
@@ -287,8 +287,8 @@
         "description": "Hands-on robot building, programming robotic movements, and working with microcontrollers like Arduino.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
         "rating": 5
       },
       {
@@ -296,17 +296,17 @@
         "slug": "course",
         "description": "Advanced robotics engineering, AI-powered automation, and real-world applications like industrial robotics and autonomous systems.",
         "mainImage": "/assets/images/level-placeholder.png",
-        "duration": 50,
-        "assessmentsNumber": 8,
-        "lecturesNumber": 20,
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
         "rating": 5
       }
     ],
-    "image": "/assets/images/track-placeholder.png",
+    "image": "/assets/images/robotics.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "",
-    "skillLevel": "",
-    "duration": ""
+    "numberOfLevels": "8",
+    "skillLevel": "Beginner to Advanced",
+    "duration": "200"
   }
 ]

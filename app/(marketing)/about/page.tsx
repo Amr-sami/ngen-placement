@@ -10,8 +10,8 @@ import { H2 } from '@/components/general/Heading';
 import Image from 'next/image';
 import React from 'react';
 // import Autoplay from "embla-carousel-autoplay";
-import bgImageDesktop from '@/public/assets/images/about-page-bg.png';
-import bgImageMob from '@/public/assets/images/about-page-bg-mob.png';
+import bgImageDesktop from '@/public/assets/images/about-page-bg.svg';
+import bgImageMob from '@/public/assets/images/about-page-bg-mob.svg';
 
 // const TESTIOMONIALS = [
 //   {
@@ -92,7 +92,7 @@ function AboutPage() {
             </div>
             <div className="basis-3/6 justify-center hidden lg:flex">
               <Image
-                src="/assets/images/about-img.png"
+                src="/assets/images/about-img.svg"
                 alt="About NGen schools"
                 width={355}
                 height={355}
