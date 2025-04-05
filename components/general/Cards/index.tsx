@@ -74,7 +74,7 @@ Props) {
           </div>
         </div>
         <div className="pt-1">
-          <Button variant="secondary" href={`tracks/${slug}`} takeFullWidth>
+          <Button variant="secondary" href={`/tracks/${slug}`} takeFullWidth>
             More Details
           </Button>
         </div>
