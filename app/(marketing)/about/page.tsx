@@ -1,4 +1,3 @@
-'use client';
 import { CallToAction /*,ContactUs*/ } from '@/components/general';
 import { H2 } from '@/components/general/Heading';
 // import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
