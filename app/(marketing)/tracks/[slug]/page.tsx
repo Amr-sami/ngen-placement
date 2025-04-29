@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }: { params: { slug: string } }) {
   const track = tracks.find((t) => t.slug === params.slug);
 
   if (!track) {
