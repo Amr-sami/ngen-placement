@@ -19,8 +19,9 @@ export async function generateStaticParams() {
 }
 
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const track = tracks.find((t) => t.slug === params.slug);
+export async function generateMetadata({params}: {params: Promise<{ slug: string }>}) {
+  const slug = (await params).slug;
+  const track = tracks.find((t) => t.slug === slug);
 
   if (!track) {
     return {
@@ -38,11 +39,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 
 
-async function SingleTrackPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
   const slug = (await params).slug;
 
   // TODO: Fetching data by slug from endpoint
