@@ -1,5 +1,8 @@
 [
   {
+    "meta_title": "Foundation Course for Kids | Start Your Tech Journey",
+    "meta_desc": "The Foundation track builds core tech skills like logic, problem-solving, and digital literacy – preparing kids for advanced learning.",
+    "meta_keywords": ["foundation tech course kids", "basic skills for kids", "online learning basics", "kids digital foundation"],
     "name": "Foundation",
     "slug": "foundation",
     "description": "The Foundation Level is the starting point for building essential technical skills, ensuring a smooth transition into advanced learning. It follows a structured, step-by-step approach, where each stage strengthens the knowledge gained in the previous one. From digital literacy and basic programming to network security and cybersecurity, this stage equips learners with the core competencies needed for future success. both in school and in the real world.",
@@ -60,6 +63,9 @@
     "duration": "100"
   },
   {
+    "meta_title": "Programming for Kids | Learn to Code from Zero to Hero",
+    "meta_desc": "From basics to advanced, NGen’s programming track teaches kids how to code through live classes, games, and real projects.",
+    "meta_keywords": ["kids programming course", "online coding kids", "beginner to advanced coding", "learn to code for children"],
     "name": "Programming",
     "slug": "programming",
     "description": "track offers a fun and interactive way to learn coding skills. Through hands-on projects, children will explore the basics of programming, logical thinking, and problem-solving, helping them build creativity and prepare for a future in the tech world.",
@@ -110,6 +116,9 @@
     "duration": "200"
   },
   {
+    "meta_title": "AI for Kids | Explore Artificial Intelligence with Fun Projects",
+    "meta_desc": "Our AI track introduces kids to the world of smart tech – training them to think logically and solve future challenges.",
+    "meta_keywords": ["AI course for kids", "artificial intelligence children", "machine learning kids", "smart tech for kids"],
     "name": "AI",
     "slug": "ai",
     "description": "The AI track offers an in-depth exploration of artificial intelligence. Students will dive into AI concepts, learning how to create models and solutions using AI tools. Through hands-on projects, they’ll gain the skills to build their own AI models, developing both technical expertise and creativity in the field.",
@@ -160,6 +169,9 @@
     "duration": "200"
   },
   {
+    "meta_title": "Cyber Security for Kids | Stay Safe & Think Smart",
+    "meta_desc": "Kids learn how to protect themselves online while exploring the basics of cybersecurity through fun, interactive challenges.",
+    "meta_keywords": ["cyber security kids course", "online safety children", "kids protect data", "digital safety education"],
     "name": "Cyber Security",
     "slug": "cyber-security",
     "description": "The cyber Security track provides kids with a foundational understanding of cybersecurity principles and practices. Through a structured, cumulative approach, students explore kecyber-Securityber-Securityconcepts like cyber threats, data protection, and safe online behavior.",
@@ -210,6 +222,9 @@
     "duration": "200"
   },
   {
+    "meta_title": "Creative Arts Course for Kids | Learn Design & Imagination",
+    "meta_desc": "NGen’s Creative Arts track helps kids express ideas using digital tools – blending design, imagination, and technology.",
+    "meta_keywords": ["creative arts kids", "online design course children", "kids creativity classes", "digital art for kids"],
     "name": "Creative Arts",
     "slug": "creative-arts",
     "description": "The Creative Arts Track empowers students to explore the world of digital design, animation, and multimedia creation. Through a structured learning journey, they develop skills in graphic design, video editing, storytelling, and 3D modeling, enabling them to bring their creative ideas to life. This track nurtures artistic expression and technical proficiency, preparing students for careers in digital media,",
@@ -260,6 +275,9 @@
     "duration": "200"
   },
   {
+    "meta_title": "Robotics Course for Kids | Build, Code & Compete",
+    "meta_desc": "Kids dive into the world of robotics with fun, hands-on projects that teach real-world engineering and coding skills.",
+    "meta_keywords": ["robotics course for kids", "kids build robots online", "engineering for children", "STEM robotics education"],
     "name": "Robotics",
     "slug": "robotics",
     "description": "The Robotics Track introduces students to the exciting world of robotics, automation, and engineering. Through a structured learning journey, they develop skills in robot design, programming, and hardware integration, working with sensors, motors, and microcontrollers like Arduino. This track nurtures problem-solving, innovation, and hands-on technical skills, preparing students for future careers in robotics, AI, and automation technologies.",

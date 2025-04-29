@@ -39,6 +39,14 @@ import bgImageMob from '@/public/assets/images/about-page-bg-mob.svg';
 //   },
 // ];
 
+
+export const metadata = {
+  title: "About NGen | Modern Online Learning for Kids",
+  description: "Learn more about NGen, where kids explore technology through exciting, hands-on experiences. Our goal: raise the next generation of innovators with skills in coding, AI, robotics, and more.",
+  keywords: ["about NGen", "online learning mission", "kids tech education", "modern learning for children", "digital ninjas", "online school for kids"],
+};
+
+
 function AboutPage() {
   return (
     <>

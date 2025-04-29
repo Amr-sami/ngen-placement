@@ -61,6 +61,12 @@ const features = [
 //   },
 // ];
 
+export const metadata = {
+  title: "For Schools | Tech Learning Programs with LMS & Reports",
+  description: "NGen partners with schools to provide engaging online tech learning with LMS tools, detailed student progress reports, and teacher training workshops.",
+  keywords: ["online tech education for schools", "LMS for schools", "school learning platform kids", "teacher workshops", "student progress reports"],
+};
+
 const NgenForSchools = () => {
   return (
     <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">

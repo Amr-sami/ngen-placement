@@ -18,6 +18,26 @@ export async function generateStaticParams() {
   }));
 }
 
+
+export async function generateMetadata({ params }) {
+  const track = tracks.find((t) => t.slug === params.slug);
+
+  if (!track) {
+    return {
+      title: "Track Not Found",
+      description: "This track could not be found.",
+    };
+  }
+
+  return {
+    title: track.meta_title,
+    description: track.meta_desc,
+    keywords: track.meta_keywords,
+  };
+}
+
+
+
 async function SingleTrackPage({
   params,
 }: {

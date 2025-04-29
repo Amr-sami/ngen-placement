@@ -1,6 +1,9 @@
 import { LevelCardProps } from '@/components/pages/SingleTrackPage/types';
 
 export type Track = {
+  meta_title?: string;
+  meta_desc?: string;
+  meta_keywords?: string[];
   name: string;
   slug: string;
   description: string;

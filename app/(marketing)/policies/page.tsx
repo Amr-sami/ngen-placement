@@ -1,6 +1,13 @@
 import { H2 } from '@/components/general/Heading'
 import React from 'react'
 
+
+export const metadata = {
+  title: "Policies | NGen School Guidelines & Commitments",
+  description: "Review NGen’s policies on privacy, safety, and educational quality. We’re committed to a safe, inclusive, and impactful learning environment.",
+  keywords: ["NGen school policies", "online school safety", "kids online privacy", "education policies", "NGen guidelines"],
+};
+
 const Policies = () => {
   return (
     <main className='container mx-2 lg:mx-auto mb-4 mt-9 lg:my-16'>

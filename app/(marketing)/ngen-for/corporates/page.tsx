@@ -59,6 +59,14 @@ const features = [
 //   },
 // ];
 
+
+export const metadata = {
+  title: "For Corporates | Online Learning for Employees’ Children",
+  description: "Boost employee satisfaction with NGen’s engaging tech education for kids. Affordable online programs in coding, robotics, and more – perfect for corporate benefits.",
+  keywords: ["corporate training for kids", "employee kids learning", "tech courses for children", "online education for families", "corporate family programs"],
+};
+
+
 const NgenForCorporates = () => {
   return (
     <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">

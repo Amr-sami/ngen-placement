@@ -65,6 +65,13 @@ const features = [
 //   },
 // ];
 
+export const metadata = {
+  title: "For Parents | NGen School Support & Progress Tools",
+  description: "At NGen, we support parents with detailed progress reports and free workshops. Stay involved and help your child succeed in coding, AI, and other digital skills.",
+  keywords: ["online school for kids", "digital learning for children", "coding classes for kids", "AI courses for kids", "robotics for kids" ],
+};
+
+
 const NgenForParents = () => {
   return (
     <>
