@@ -6,76 +6,64 @@
   <url>
     <loc>https://www.ngenschools.com/</loc>
     <priority>1.0</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <!-- Core Pages -->
   <url>
     <loc>https://www.ngenschools.com/about</loc>
     <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/tracks</loc>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <!-- Tracks -->
   <url>
     <loc>https://www.ngenschools.com/tracks/foundation</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/tracks/programming</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/tracks/ai</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/tracks/cyber-security</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/tracks/creative-arts</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/tracks/robotics</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
   <!-- Audience Pages -->
   <url>
     <loc>https://www.ngenschools.com/ngen-for/parents</loc>
     <priority>0.7</priority>
-    <changefreq>quarterly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/ngen-for/schools</loc>
     <priority>0.7</priority>
-    <changefreq>quarterly</changefreq>
   </url>
 
   <url>
     <loc>https://www.ngenschools.com/ngen-for/corporates</loc>
     <priority>0.7</priority>
-    <changefreq>quarterly</changefreq>
   </url>
 
 </urlset>
