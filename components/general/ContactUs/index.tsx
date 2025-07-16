@@ -197,7 +197,7 @@ const ContactUs = () => {
                   height={24}
                   alt="location"
                 />
-                Egypt — Maadi, Dar El Hussain St., building 5156, ﬂoor 1
+                15 Al Lasilki, Infront of Maadi Technology Park  Ezbet Fahmy, Maadi, Cairo Egypt
               </p>
               <p className="flex items-start gap-2">
                 <Image
@@ -206,7 +206,7 @@ const ContactUs = () => {
                   height={24}
                   alt="location"
                 />
-                KSA — Riyad, Al-Alia 12211
+                Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.ERiyad, Al-Alia 12211
               </p>
               <p className="flex items-center gap-2">
                 <Image src="/envlope.svg" width={24} height={24} alt="mail" />{' '}

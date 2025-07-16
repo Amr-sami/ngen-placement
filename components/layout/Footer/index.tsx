@@ -121,7 +121,7 @@ function Footer() {
                   height={24}
                 />
                 <Link href="/">
-                  Egypt — Maadi, Dar El Hussain St., building 5156, ﬂoor 1
+                  15 Al Lasilki, Infront of Maadi Technology Park  Ezbet Fahmy, Maadi, Cairo Egypt
                 </Link>
               </li>
               <li className="flex items-start gap-1">
@@ -131,7 +131,7 @@ function Footer() {
                   width={24}
                   height={24}
                 />
-                <Link href="/">KSA — Riyad, Al-Alia 12211</Link>
+                <Link href="/">Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E</Link>
               </li>
               <li className="flex items-start gap-1">
                 <Image
