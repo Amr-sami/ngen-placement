@@ -228,7 +228,7 @@ const ContactUs = () => {
                   height={24}
                   alt="phone"
                 />
-                +966541639695
+                +971526542044
               </p>
             </div>
 

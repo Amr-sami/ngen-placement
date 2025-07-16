@@ -158,7 +158,7 @@ function Footer() {
                   width={24}
                   height={24}
                 />
-                <p>+966541639695</p>
+                <p>+971526542044</p>
               </li>
             </ul>
           </div>

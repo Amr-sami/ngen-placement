@@ -28,7 +28,7 @@ function HomepageHero() {
               Dive into Graphics, Data Science, and More with Courses Tailored
               for Future Innovators!
             </p> */}
-            <Button variant="primary" href="https://wa.me/+201055023774" isTargetBlank={true}>
+            <Button variant="primary" href="https://wa.me/+201032422466" isTargetBlank={true}>
               Start your journey
             </Button>
           </div>

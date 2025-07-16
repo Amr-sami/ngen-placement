@@ -75,7 +75,7 @@ async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
               {track.name}
             </h1>
           </div>
-          <Button variant="primary" href='https://wa.me/+201055023774' isTargetBlank={true} takeFullWidth>
+          <Button variant="primary" href='https://wa.me/+201032422466' isTargetBlank={true} takeFullWidth>
             Get Started
           </Button>
         </div>
