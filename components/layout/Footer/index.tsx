@@ -2,6 +2,8 @@ import Logo from '@/components/general/Logo';
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import { IoLogoWhatsapp } from "react-icons/io";
+
 
 function Footer() {
   return (
@@ -143,12 +145,7 @@ function Footer() {
                 <Link href="/">Info@ngenschools.com</Link>
               </li>
               <li className="flex items-start gap-1">
-                <Image
-                  src="/assets/images/icons/phone-icon.svg"
-                  alt="location icon"
-                  width={24}
-                  height={24}
-                />
+                <IoLogoWhatsapp size={24}/>
                 <p>+201032422466</p>
               </li>
               <li className="flex items-start gap-1">

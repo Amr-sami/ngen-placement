@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Logo from '../Logo';
 import Image from 'next/image';
 import { sendEmail } from '@/lib/resend';
+import { IoLogoWhatsapp } from 'react-icons/io';
 
 const ContactUs = () => {
   // State for form inputs
@@ -213,12 +214,7 @@ const ContactUs = () => {
                 Info@ngenschools.com
               </p>
               <p className="flex items-start gap-2">
-                <Image
-                  src="/telephone.svg"
-                  width={24}
-                  height={24}
-                  alt="phone"
-                />
+                <IoLogoWhatsapp size={24}/>
                 +201032422466
               </p>
               <p className="flex items-start gap-2">
