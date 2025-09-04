@@ -215,7 +215,7 @@ const ContactUs = () => {
               </p>
               <p className="flex items-start gap-2">
                 <IoLogoWhatsapp size={24}/>
-                +201032422466
+                +201055023774
               </p>
               <p className="flex items-start gap-2">
                 <Image

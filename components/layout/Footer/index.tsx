@@ -146,7 +146,7 @@ function Footer() {
               </li>
               <li className="flex items-start gap-1">
                 <IoLogoWhatsapp size={24}/>
-                <p>+201032422466</p>
+                <p>+201055023774</p>
               </li>
               <li className="flex items-start gap-1">
                 <Image
