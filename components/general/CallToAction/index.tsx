@@ -2,12 +2,27 @@
 // import Image from "next/image";
 import React from 'react';
 import Logo from '../Logo';
+import { useRouter } from 'next/navigation';
 
 interface ICallToActionProps {
   cta: string;
 }
 
 const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
+  const router = useRouter();
+  
+  const scrollToContact = () => {
+    // Navigate to home page first if needed
+    router.push('/#contact-us');
+    
+    // Handle scroll behavior for when already on the home page
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact-us');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
   return (
     <div className="bg-[url('/assets/images/get-started-section-bg.svg')] bg-cover bg-no-repeat  relative flex items-center justify-between min-h-[715px]">
       {/* <Image
@@ -35,13 +50,12 @@ const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
           height={95}
           classNames="max-w-[250px] lg:max-w-[320px]"
         />
-        <a
-          target="_blank"
-          href="https://wa.me/+201055023774"
-          className="w-44 lg:w-56 bg-orange-500 text-center text-white py-2 rounded-lg hover:bg-orange-600 transition font-bold"
+        <button
+          onClick={scrollToContact}
+          className="w-44 lg:w-56 bg-orange-500 text-center text-white py-2 rounded-lg hover:bg-orange-600 transition font-bold cursor-pointer"
         >
           {cta}
-        </a>
+        </button>
       </div>
 
       {/* <Image

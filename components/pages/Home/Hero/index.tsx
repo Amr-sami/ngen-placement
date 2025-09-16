@@ -1,10 +1,15 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Logo from '../../../general/Logo';
 import Image from 'next/image';
 import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.svg';
 import Button from '../../../general/Button';
+import ContactModal from '../../../general/ContactModal';
 
 function HomepageHero() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  
   return (
     <header className="bg-[url('/assets/images/hero-bg.svg')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
       <div className="container mx-auto px-5 flex h-full items-center justify-between">
@@ -28,9 +33,14 @@ function HomepageHero() {
               Dive into Graphics, Data Science, and More with Courses Tailored
               for Future Innovators!
             </p> */}
-            <Button variant="primary" href="https://wa.me/+201055023774" isTargetBlank={true}>
-              Start your journey
-            </Button>
+            <div onClick={() => setIsContactModalOpen(true)}>
+              <button
+                className="px-4 py-2 rounded-lg transition-colors duration-300 ease-linear bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin"
+              >
+                Start your journey
+              </button>
+            </div>
+            <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
           </div>
         </div>
         <div className="hidden md:block relative">
