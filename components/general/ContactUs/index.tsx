@@ -400,12 +400,12 @@ const ContactUs = () => {
                   alt="instagram"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.tiktok.com/@ngenschools" target="_blank">
                 <Image
-                  src="/twitter-x.svg"
+                  src="/tiktok-round-white-icon.webp"
                   width={40}
                   height={40}
-                  alt="twitter-x"
+                  alt="tiktok"
                 />
               </a>
             </div>
