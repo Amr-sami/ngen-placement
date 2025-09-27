@@ -8,18 +8,39 @@ import Image from "next/image";
 function HomepageNgenRoadmapSection() {
   const DATA = [
     {
-      title: "1.Foundation levels",
+      title: "Level 1 Foundation",
       description:
-        "students will learn the essential basics that form the foundation for any technology-related learning. Once they’ve mastered these fundamentals, they’ll move on to specialize in their chosen track.",
+        "Students learn the essentials, what machines are, algorithms as steps, digital patterns, and basic AI fairness, building the base for all tech learning.",
       image: "/assets/images/placeholder.svg",
       variants: undefined,
     },
     {
-      title: "2.Specified levels",
+      title: "Level 2 Introduction",
       description:
-        "The specialized track starts at the beginner level and progresses to advanced. Students will advance through exams and projects, ensuring mastery of each level before moving forward.",
+        "Learners master block coding (Scratch): events, loops, conditionals, variables, then scale to bigger systems (lists/functions) plus simple data → charts and an AI assistant.",
       image: "/assets/images/placeholder-1.svg",
       variant: "image-right",
+    },
+    {
+      title: "Level 3 Intermediate",
+      description:
+        "Students think like data scientists: plan/collect/clean data, tell stories with charts, try ML concepts, evaluate models (accuracy/recall), and tackle bias with a mini-startup brief.",
+      image: "/assets/images/placeholder.svg",
+      variants: undefined,
+    },
+    {
+      title: "Level 4 Advanced",
+      description:
+        "Builders ship real ML apps: Python/Colab, pandas, train/test with baselines, intro Keras, Git/GitHub, and simple UIs (Streamlit/Gradio) with usability + ethics reviews.",
+      image: "/assets/images/placeholder-1.svg",
+      variant: "image-right",
+    },
+    {
+      title: "Level 5 Mastery",
+      description:
+        "Two tracks: AI Research (literature → baseline reproduction → original contribution) or AI Leadership (product, policy, and impact). Publish, present, or launch.",
+      image: "/assets/images/placeholder.svg",
+      variants: undefined,
     },
   ];
 
@@ -29,7 +50,7 @@ function HomepageNgenRoadmapSection() {
       <Image src={arrow2} alt="arrow" className="absolute bottom-0 right-1/4 translate-y-1/2 hidden lg:block z-50" />
       <div className="container mx-auto px-5 flex flex-col gap-4 md:gap-7 lg:gap-12">
         <div>
-          <H2>Ngen road map</H2>
+          <H2>NGEN Road Map (5 Levels Program)</H2>
         </div>
         <div className="flex flex-col gap-4 md:flex-row lg:flex-col lg:gap-10">
           {DATA.map((element, idx) => (
