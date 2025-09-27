@@ -78,7 +78,7 @@ const NgenForCorporates = () => {
       <TracksSection title="Our tracks" />
       {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
-      <ContactUs />
+      <ContactUs /> {/* TODO: adjust labels for Corporates audience */}
     </PageWrapper>
   );
 };

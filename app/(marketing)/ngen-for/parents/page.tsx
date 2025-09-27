@@ -5,7 +5,7 @@ import {
 } from '@/components/pages/NgenFor';
 import {
   CallToAction,
-  // ContactUs,
+  ContactUs,
   PageWrapper,
   TracksSection,
 } from '@/components/general';
@@ -84,7 +84,7 @@ const NgenForParents = () => {
         <TracksSection title="Our tracks" />
         {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
-        {/* <ContactUs /> */}
+        <ContactUs /> {/* TODO: adjust labels for Parents audience */}
       </PageWrapper>
       <CallToAction cta="Get Started" />
     </>
