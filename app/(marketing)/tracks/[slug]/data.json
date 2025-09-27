@@ -1,11 +1,11 @@
 [
   {
-    "meta_title": "Foundation Course for Kids | Start Your Tech Journey",
-    "meta_desc": "The Foundation track builds core tech skills like logic, problem-solving, and digital literacy – preparing kids for advanced learning.",
-    "meta_keywords": ["foundation tech course kids", "basic skills for kids", "online learning basics", "kids digital foundation"],
-    "name": "Foundation",
-    "slug": "foundation",
-    "description": "The Foundation Level is the starting point for building essential technical skills, ensuring a smooth transition into advanced learning. It follows a structured, step-by-step approach, where each stage strengthens the knowledge gained in the previous one. From digital literacy and basic programming to network security and cybersecurity, this stage equips learners with the core competencies needed for future success. both in school and in the real world.",
+    "meta_title": "AI Explorer Course | Start Your AI Learning Journey",
+    "meta_desc": "The AI Explorer track builds core skills in artificial intelligence concepts, preparing kids for further tech learning.",
+    "meta_keywords": ["ai explorer kids", "AI basics for kids", "online learning AI", "kids AI foundation"],
+    "name": "AI Explorer",
+    "slug": "ai-explorer",
+    "description": "The AI Explorer level is where students begin their journey into artificial intelligence. Students learn the essentials of what machines are, how algorithms work as steps, understanding digital patterns, and basic concepts of AI fairness. This foundational course builds the base knowledge needed for all future tech learning.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
@@ -15,9 +15,9 @@
     "levels_ids": ["", ""],
     "levels": [
       {
-        "name": "Level 1: Introduction to Computers & Digital Literacy",
+        "name": "Introduction to AI Concepts",
         "slug": "course",
-        "description": "Students develop fundamental digital skills, including computer operation, internet usage, and essential software applications, ensuring a strong foundation for technical learning.",
+        "description": "Students develop a fundamental understanding of AI concepts, machine basics, and how computers learn patterns.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 8,
@@ -25,9 +25,9 @@
         "rating": 5
       },
       {
-        "name": "Level 2: Introduction to Programming & Databases",
+        "name": "Understanding Algorithms",
         "slug": "course",
-        "description": "This stage introduces the basics of coding and database management, helping students understand how to write simple programs and organize data efficiently.",
+        "description": "This stage introduces the basics of algorithms and how computers follow step-by-step instructions.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 8,
@@ -35,9 +35,9 @@
         "rating": 5
       },
       {
-        "name": "Level 3: Networking & Basic Security",
+        "name": "Pattern Recognition Basics",
         "slug": "course",
-        "description": "Learners explore networking concepts, internet protocols, and basic security measures, equipping them with the knowledge to build and maintain secure digital environments.",
+        "description": "Learners explore how computers identify patterns in data and make simple decisions based on those patterns.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 8,
@@ -45,9 +45,9 @@
         "rating": 5
       },
       {
-        "name": "Level 4: Cybersecurity & Advanced Programming",
+        "name": "Ethics & Fairness in AI",
         "slug": "course",
-        "description": "Advanced topics in cybersecurity and programming are covered, enabling students to protect systems from cyber threats while enhancing their coding skills for complex applications. Advanced topics in cybersecurity and programming are covered, enabling students to protect systems from cyber threats while enhancing their coding skills for complex applications.",
+        "description": "Introduction to the importance of fairness, bias, and ethics in AI systems and how to think about responsible AI.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 8,
@@ -56,19 +56,19 @@
       }
     ],
     "image": "/assets/images/foundation.svg",
-    "status": "AVailable",
+    "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "4",
-    "skillLevel": "Beginners",
-    "duration": "100"
+    "numberOfLevels": "40",
+    "skillLevel": "Level 1A",
+    "duration": "80"
   },
   {
-    "meta_title": "Programming for Kids | Learn to Code from Zero to Hero",
-    "meta_desc": "From basics to advanced, NGen’s programming track teaches kids how to code through live classes, games, and real projects.",
-    "meta_keywords": ["kids programming course", "online coding kids", "beginner to advanced coding", "learn to code for children"],
-    "name": "Programming",
-    "slug": "programming",
-    "description": "track offers a fun and interactive way to learn coding skills. Through hands-on projects, children will explore the basics of programming, logical thinking, and problem-solving, helping them build creativity and prepare for a future in the tech world.",
+    "meta_title": "Pattern Detective for Kids | Learn to Find Digital Patterns",
+    "meta_desc": "The Pattern Detective track teaches kids to recognize and analyze patterns in digital data.",
+    "meta_keywords": ["pattern recognition kids", "digital patterns course", "pattern detective children", "pattern analysis kids"],
+    "name": "Pattern Detective",
+    "slug": "pattern-detective",
+    "description": "The Pattern Detective level helps students discover how to identify and analyze patterns in data. Students learn to recognize repeating structures, organize information, and understand how computers use patterns to make decisions.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
@@ -78,9 +78,9 @@
     "levels_ids": ["", ""],
     "levels": [
       {
-        "name": "Beginner Level",
+        "name": "Introduction to Patterns",
         "slug": "course",
-        "description": "Learning coding basics through block-based programming and simple text-based coding (Python, JavaScript).",
+        "description": "Learning to identify basic patterns in everyday data and understanding their importance.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -88,9 +88,9 @@
         "rating": 5
       },
       {
-        "name": "Intermediate",
+        "name": "Data Organization",
         "slug": "course",
-        "description": "Writing structured code, debugging, and developing small applications and interactive programs.",
+        "description": "Understanding how to organize and categorize information to find meaningful patterns.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 10,
@@ -98,9 +98,9 @@
         "rating": 5
       },
       {
-        "name": "Advanced",
+        "name": "Digital Pattern Analysis",
         "slug": "course",
-        "description": "Full-stack development, data structures, algorithms, and real-world software development projects.",
+        "description": "Exploring how computers analyze patterns in digital information and make predictions.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -111,17 +111,17 @@
     "image": "/assets/images/programming.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "8",
-    "skillLevel": "Beginner to Advanced",
-    "duration": "200"
+    "numberOfLevels": "40",
+    "skillLevel": "Level 1B",
+    "duration": "80"
   },
   {
-    "meta_title": "AI for Kids | Explore Artificial Intelligence with Fun Projects",
-    "meta_desc": "Our AI track introduces kids to the world of smart tech – training them to think logically and solve future challenges.",
-    "meta_keywords": ["AI course for kids", "artificial intelligence children", "machine learning kids", "smart tech for kids"],
-    "name": "AI",
-    "slug": "ai",
-    "description": "The AI track offers an in-depth exploration of artificial intelligence. Students will dive into AI concepts, learning how to create models and solutions using AI tools. Through hands-on projects, they’ll gain the skills to build their own AI models, developing both technical expertise and creativity in the field.",
+    "meta_title": "Code Creator for Kids | Learn Programming Fundamentals",
+    "meta_desc": "The Code Creator track introduces kids to programming through block coding and simple projects.",
+    "meta_keywords": ["code creator kids", "block coding children", "programming basics kids", "learn to code kids"],
+    "name": "Code Creator",
+    "slug": "code-creator",
+    "description": "The Code Creator level teaches students the fundamentals of programming through block-based coding. Students learn to work with events, loops, conditionals, and variables, building a solid foundation for more advanced programming concepts.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
@@ -131,9 +131,9 @@
     "levels_ids": ["", ""],
     "levels": [
       {
-        "name": "Beginner Level",
+        "name": "Block Coding Basics",
         "slug": "course",
-        "description": "Introduction to AI, basic machine learning concepts, and simple AI applications using visual programming.",
+        "description": "Introduction to programming concepts using visual block-based coding environments like Scratch.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -141,9 +141,9 @@
         "rating": 5
       },
       {
-        "name": "Intermediate",
+        "name": "Logic and Control Flow",
         "slug": "course",
-        "description": "Hands-on machine learning projects, neural networks, and AI ethics, with real-world applications.",
+        "description": "Understanding programming logic, creating sequences, and controlling program flow.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 10,
@@ -151,9 +151,9 @@
         "rating": 5
       },
       {
-        "name": "Advanced",
+        "name": "Simple Projects",
         "slug": "course",
-        "description": "Building AI models, automation, and deep learning techniques for advanced problem-solving.",
+        "description": "Building simple games and interactive stories using block-based programming.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -164,17 +164,17 @@
     "image": "/assets/images/ai.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "8",
-    "skillLevel": "Beginner to Advanced",
-    "duration": "200"
+    "numberOfLevels": "40",
+    "skillLevel": "Level 2A",
+    "duration": "80"
   },
   {
-    "meta_title": "Cyber Security for Kids | Stay Safe & Think Smart",
-    "meta_desc": "Kids learn how to protect themselves online while exploring the basics of cybersecurity through fun, interactive challenges.",
-    "meta_keywords": ["cyber security kids course", "online safety children", "kids protect data", "digital safety education"],
-    "name": "Cyber Security",
-    "slug": "cyber-security",
-    "description": "The cyber Security track provides kids with a foundational understanding of cybersecurity principles and practices. Through a structured, cumulative approach, students explore kecyber-Securityber-Securityconcepts like cyber threats, data protection, and safe online behavior.",
+    "meta_title": "Smart Builder for Kids | Create Interactive Data Projects",
+    "meta_desc": "Smart Builder teaches kids to create more complex programs and work with data visualization.",
+    "meta_keywords": ["smart builder kids", "data visualization children", "programming with data", "interactive projects kids"],
+    "name": "Smart Builder",
+    "slug": "smart-builder",
+    "description": "The Smart Builder level helps students advance their programming skills by working with more complex systems. Students learn to use lists and functions in their code, work with simple data to create charts, and even build a basic AI assistant.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
@@ -184,9 +184,9 @@
     "levels_ids": ["", ""],
     "levels": [
       {
-        "name": "Beginner Level",
+        "name": "Advanced Programming Concepts",
         "slug": "course",
-        "description": "Fundamentals of cybersecurity, online safety, encryption basics, and ethical hacking introduction.",
+        "description": "Learning about lists, functions, and more complex programming structures.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -194,9 +194,9 @@
         "rating": 5
       },
       {
-        "name": "Intermediate",
+        "name": "Data Visualization",
         "slug": "course",
-        "description": "Network security, penetration testing, and cyber threat detection with hands-on simulations.",
+        "description": "Working with data to create charts and visual representations of information.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 10,
@@ -204,9 +204,9 @@
         "rating": 5
       },
       {
-        "name": "Advanced",
+        "name": "Simple AI Assistant",
         "slug": "course",
-        "description": "Advanced ethical hacking, cybersecurity frameworks, and digital forensics for real-world security challenges.",
+        "description": "Building a basic AI assistant that can respond to simple commands and questions.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -217,17 +217,17 @@
     "image": "/assets/images/cyber.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "8",
-    "skillLevel": "Beginner to Advanced",
-    "duration": "200"
+    "numberOfLevels": "40",
+    "skillLevel": "Level 2B",
+    "duration": "80"
   },
   {
-    "meta_title": "Creative Arts Course for Kids | Learn Design & Imagination",
-    "meta_desc": "NGen’s Creative Arts track helps kids express ideas using digital tools – blending design, imagination, and technology.",
-    "meta_keywords": ["creative arts kids", "online design course children", "kids creativity classes", "digital art for kids"],
-    "name": "Creative Arts",
-    "slug": "creative-arts",
-    "description": "The Creative Arts Track empowers students to explore the world of digital design, animation, and multimedia creation. Through a structured learning journey, they develop skills in graphic design, video editing, storytelling, and 3D modeling, enabling them to bring their creative ideas to life. This track nurtures artistic expression and technical proficiency, preparing students for careers in digital media,",
+    "meta_title": "Data Scientist for Kids | Learn Data Analysis Skills",
+    "meta_desc": "The Data Scientist track teaches kids how to work with data, create visualizations, and understand machine learning concepts.",
+    "meta_keywords": ["data scientist kids", "data analysis children", "machine learning basics kids", "data visualization course"],
+    "name": "Data Scientist",
+    "slug": "data-scientist",
+    "description": "The Data Scientist level helps students develop critical thinking skills through working with data. Students learn how to plan, collect, and clean data, create meaningful visualizations, understand basic machine learning concepts, and evaluate models for accuracy and fairness.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
@@ -237,9 +237,9 @@
     "levels_ids": ["", ""],
     "levels": [
       {
-        "name": "Beginner Level",
+        "name": "Data Collection and Preparation",
         "slug": "course",
-        "description": "Exploring digital design, animation, and storytelling with basic graphic tools and software.",
+        "description": "Learning to plan data collection, gather information, and prepare it for analysis.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -247,9 +247,9 @@
         "rating": 5
       },
       {
-        "name": "Intermediate",
+        "name": "Data Visualization and Storytelling",
         "slug": "course",
-        "description": "Graphic design, video editing, interactive media creation, and 2D/3D design principles.",
+        "description": "Creating charts and visual stories that communicate insights from data effectively.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 10,
@@ -257,9 +257,9 @@
         "rating": 5
       },
       {
-        "name": "Advanced",
+        "name": "Machine Learning Concepts",
         "slug": "course",
-        "description": "Professional 3D modeling, game design, animation production, and advanced multimedia storytelling.",
+        "description": "Understanding how computers learn from data and evaluating model performance and fairness.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -270,17 +270,17 @@
     "image": "/assets/images/art.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "8",
-    "skillLevel": "Beginner to Advanced",
-    "duration": "200"
+    "numberOfLevels": "40",
+    "skillLevel": "Level 3A",
+    "duration": "80"
   },
   {
-    "meta_title": "Robotics Course for Kids | Build, Code & Compete",
-    "meta_desc": "Kids dive into the world of robotics with fun, hands-on projects that teach real-world engineering and coding skills.",
-    "meta_keywords": ["robotics course for kids", "kids build robots online", "engineering for children", "STEM robotics education"],
-    "name": "Robotics",
-    "slug": "robotics",
-    "description": "The Robotics Track introduces students to the exciting world of robotics, automation, and engineering. Through a structured learning journey, they develop skills in robot design, programming, and hardware integration, working with sensors, motors, and microcontrollers like Arduino. This track nurtures problem-solving, innovation, and hands-on technical skills, preparing students for future careers in robotics, AI, and automation technologies.",
+    "meta_title": "AI Trainer for Kids | Develop AI Models and Understand Bias",
+    "meta_desc": "The AI Trainer track teaches kids to work with machine learning models and understand AI ethics.",
+    "meta_keywords": ["AI trainer kids", "machine learning children", "AI ethics course", "bias in AI education"],
+    "name": "AI Trainer",
+    "slug": "ai-trainer",
+    "description": "The AI Trainer level focuses on applying machine learning concepts to solve real problems. Students work on mini-startup projects where they identify, analyze, and tackle bias in AI systems while developing practical machine learning applications.",
     "main_icon": "",
     "certificate_image": "",
     "rating": 5,
@@ -290,9 +290,9 @@
     "levels_ids": ["", ""],
     "levels": [
       {
-        "name": "Beginner Level",
+        "name": "Machine Learning Applications",
         "slug": "course",
-        "description": "Introduction to robotics, understanding sensors, motors, and basic mechanical design.",
+        "description": "Applying machine learning concepts to solve practical problems through guided projects.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -300,9 +300,9 @@
         "rating": 5
       },
       {
-        "name": "Intermediate",
+        "name": "Model Evaluation",
         "slug": "course",
-        "description": "Hands-on robot building, programming robotic movements, and working with microcontrollers like Arduino.",
+        "description": "Learning to assess AI model performance using metrics like accuracy and recall.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 50,
         "assessmentsNumber": 10,
@@ -310,9 +310,9 @@
         "rating": 5
       },
       {
-        "name": "Advanced",
+        "name": "AI Ethics and Bias",
         "slug": "course",
-        "description": "Advanced robotics engineering, AI-powered automation, and real-world applications like industrial robotics and autonomous systems.",
+        "description": "Understanding and addressing bias in AI systems through practical projects.",
         "mainImage": "/assets/images/level-placeholder.png",
         "duration": 75,
         "assessmentsNumber": 15,
@@ -323,8 +323,220 @@
     "image": "/assets/images/robotics.svg",
     "status": "Available",
     "discountValue": "",
-    "numberOfLevels": "8",
-    "skillLevel": "Beginner to Advanced",
-    "duration": "200"
+    "numberOfLevels": "40",
+    "skillLevel": "Level 3B",
+    "duration": "80"
+  },
+  {
+    "meta_title": "AI Developer for Kids | Build Real Machine Learning Apps",
+    "meta_desc": "The AI Developer track teaches kids to build functional machine learning applications using Python.",
+    "meta_keywords": ["AI developer kids", "Python machine learning", "kids coding AI", "ML apps children"],
+    "name": "AI Developer",
+    "slug": "ai-developer",
+    "description": "The AI Developer level focuses on building real machine learning applications. Students learn to use Python and tools like Colab, work with data using pandas, create and evaluate models, and develop simple user interfaces for their AI applications.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 40,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Python Programming for ML",
+        "slug": "course",
+        "description": "Learning to use Python and Colab for machine learning projects.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
+        "rating": 5
+      },
+      {
+        "name": "Data Analysis with Pandas",
+        "slug": "course",
+        "description": "Working with data using the pandas library to prepare and analyze information.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
+        "rating": 5
+      },
+      {
+        "name": "Building ML Applications",
+        "slug": "course",
+        "description": "Creating machine learning models with Keras and building simple user interfaces.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/foundation.svg",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "40",
+    "skillLevel": "Level 4A",
+    "duration": "80"
+  },
+  {
+    "meta_title": "AI Innovator for Kids | Create Original AI Solutions",
+    "meta_desc": "The AI Innovator track helps kids develop unique AI applications with advanced techniques.",
+    "meta_keywords": ["AI innovator kids", "original AI solutions", "creative AI projects", "advanced ML children"],
+    "name": "AI Innovator",
+    "slug": "ai-innovator",
+    "description": "The AI Innovator level challenges students to create original AI solutions. Building on their programming and machine learning foundations, students learn to develop more sophisticated applications and evaluate both the technical performance and ethical implications of their projects.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 40,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Advanced ML Techniques",
+        "slug": "course",
+        "description": "Exploring more sophisticated machine learning algorithms and techniques.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
+        "rating": 5
+      },
+      {
+        "name": "Project Development",
+        "slug": "course",
+        "description": "Planning and implementing original AI solutions for real-world problems.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
+        "rating": 5
+      },
+      {
+        "name": "Ethics and Evaluation",
+        "slug": "course",
+        "description": "Assessing both technical performance and ethical implications of AI applications.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/programming.svg",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "40",
+    "skillLevel": "Level 4B",
+    "duration": "80"
+  },
+  {
+    "meta_title": "AI Researcher for Kids | Explore Advanced AI Concepts",
+    "meta_desc": "The AI Researcher track introduces kids to academic research in artificial intelligence.",
+    "meta_keywords": ["AI researcher kids", "academic AI children", "research methods AI", "literature review kids"],
+    "name": "AI Researcher",
+    "slug": "ai-researcher",
+    "description": "The AI Researcher level introduces students to academic research in artificial intelligence. Students learn to read and understand AI literature, reproduce baseline models, and develop original contributions to the field of AI research.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 40,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "Literature Review",
+        "slug": "course",
+        "description": "Learning to read, understand, and analyze academic papers in artificial intelligence.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
+        "rating": 5
+      },
+      {
+        "name": "Model Reproduction",
+        "slug": "course",
+        "description": "Reproducing and verifying existing AI models from academic literature.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
+        "rating": 5
+      },
+      {
+        "name": "Original Contribution",
+        "slug": "course",
+        "description": "Developing and documenting original research contributions in artificial intelligence.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/ai.svg",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "40",
+    "skillLevel": "Level 5A",
+    "duration": "80"
+  },
+  {
+    "meta_title": "AI Leader for Kids | Develop AI Products and Policies",
+    "meta_desc": "The AI Leader track prepares kids to understand the broader impacts of AI on society.",
+    "meta_keywords": ["AI leader kids", "AI product management", "AI policy children", "AI impact education"],
+    "name": "AI Leader",
+    "slug": "ai-leader",
+    "description": "The AI Leader level focuses on the practical applications and societal impacts of artificial intelligence. Students learn about AI product development, policy considerations, and how to assess the broader impact of AI technologies on different communities and sectors.",
+    "main_icon": "",
+    "certificate_image": "",
+    "rating": 5,
+    "courses_number": 8,
+    "assessments_number": 40,
+    "price": 300,
+    "levels_ids": ["", ""],
+    "levels": [
+      {
+        "name": "AI Product Development",
+        "slug": "course",
+        "description": "Understanding how to create and manage AI-based products and services.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 50,
+        "rating": 5
+      },
+      {
+        "name": "AI Policy and Governance",
+        "slug": "course",
+        "description": "Exploring the regulatory and ethical frameworks that guide responsible AI development.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 50,
+        "assessmentsNumber": 10,
+        "lecturesNumber": 30,
+        "rating": 5
+      },
+      {
+        "name": "Impact Assessment",
+        "slug": "course",
+        "description": "Evaluating the effects of AI technologies on different communities and sectors.",
+        "mainImage": "/assets/images/level-placeholder.png",
+        "duration": 75,
+        "assessmentsNumber": 15,
+        "lecturesNumber": 35,
+        "rating": 5
+      }
+    ],
+    "image": "/assets/images/cyber.svg",
+    "status": "Available",
+    "discountValue": "",
+    "numberOfLevels": "40",
+    "skillLevel": "Level 5B",
+    "duration": "80"
   }
 ]

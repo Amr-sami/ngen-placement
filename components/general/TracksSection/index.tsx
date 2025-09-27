@@ -8,7 +8,7 @@ function HomepageTracksSection({ title }: { title: string }) {
     <section className="py-6 md:py-10 lg:py-20">
       <div className="container mx-auto px-5 flex flex-col gap-4 md:gap-7 lg:gap-10">
         <H2>{title}</H2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-3 md:gap-x-3 lg:grid-cols-4 xl:gap-x-10 lg:gap-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-3 md:gap-x-3 lg:grid-cols-5 xl:gap-x-6 lg:gap-y-8">
           {tracks.map((track, idx) => (
             <Card
               key={idx}
