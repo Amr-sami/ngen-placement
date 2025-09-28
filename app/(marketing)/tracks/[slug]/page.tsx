@@ -124,63 +124,63 @@ async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
             <ul className="list-disc list-inside space-y-2">
               {slug === 'ai-explorer' ? (
                 <>
-                  <li>Is it a Machine? — gallery of everyday objects (digital slideshow).</li>
-                  <li>Pattern Museum — cards/posters showing patterns and rules.</li>
-                  <li>AI Photo Sorter (Demo) — classify a small set with teacher-led tool; talk about fair/unfair.</li>
+                  <li><strong>Is it a Machine?</strong>: Students create a digital gallery showcasing everyday objects and explaining how they relate to machines.</li>
+                  <li><strong>Pattern Museum</strong>: Students design visual cards and posters that demonstrate patterns and rules in technology.</li>
+                  <li><strong>AI Photo Sorter</strong>: With teacher guidance, students use a simple tool to classify images and discuss fairness in AI decisions.</li>
                 </>
               ) : slug === 'pattern-detective' ? (
                 <>
-                  <li>Pattern Detective Journal — weekly digital log of patterns found.</li>
-                  <li>Teach the Snack Bot — classify "snack vs non-snack" with improved examples.</li>
-                  <li>Robot Chef Planner — if/then recipe flow.</li>
+                  <li><strong>Pattern Detective Journal</strong>: Students maintain a weekly digital log documenting patterns they discover in their environment.</li>
+                  <li><strong>Teach the Snack Bot</strong>: Students build a system to classify foods as snacks or non-snacks using improved example sets.</li>
+                  <li><strong>Robot Chef Planner</strong>: Students create logical decision flows for a virtual cooking assistant using if-then logic.</li>
                 </>
               ) : slug === 'code-creator' ? (
                 <>
-                  <li>My Interactive Story — choices change the plot.</li>
-                  <li>Smart Game Challenge — timed points, lives, levels.</li>
-                  <li>AI Magic Show — camera/voice triggers.</li>
+                  <li><strong>My Interactive Story</strong>: Students build a digital story where reader choices affect the narrative direction.</li>
+                  <li><strong>Smart Game Challenge</strong>: Students design games with scoring systems, player lives, and progressive difficulty levels.</li>
+                  <li><strong>AI Magic Show</strong>: Students create interactive demonstrations that respond to camera input or voice commands.</li>
                 </>
               ) : slug === 'smart-builder' ? (
                 <>
-                  <li>School Pulse Survey — dashboard of results.</li>
-                  <li>Study Buddy — Scratch assistant for reminders/tips.</li>
-                  <li>UX Fix-it Sprint — before/after improvements.</li>
+                  <li><strong>School Pulse Survey</strong>: Students collect and visualize data about school experiences in an interactive dashboard.</li>
+                  <li><strong>Study Buddy</strong>: Students create a Scratch-based assistant that provides personalized reminders and learning tips.</li>
+                  <li><strong>UX Fix-it Sprint</strong>: Students identify user experience problems and implement before/after improvements.</li>
                 </>
               ) : slug === 'data-scientist' ? (
                 <>
-                  <li>Community Snapshot — survey dashboard.</li>
-                  <li>Weather Watch — trends and comparisons.</li>
-                  <li>Fair Charts Lab — avoid chart lies; fix misleading graphs.</li>
+                  <li><strong>Community Snapshot</strong>: Students create an interactive dashboard visualizing survey data from their community.</li>
+                  <li><strong>Weather Watch</strong>: Students analyze weather patterns to identify trends and make visual comparisons.</li>
+                  <li><strong>Fair Charts Lab</strong>: Students learn to identify misleading visualizations and create accurate, fair representations of data.</li>
                 </>
               ) : slug === 'ai-trainer' ? (
                 <>
-                  <li>Which Model Wins? — metric comparison board.</li>
-                  <li>Bias Busters — rebuild the dataset to be fairer.</li>
-                  <li>Safety Card — model/usage risks & mitigations.</li>
+                  <li><strong>Which Model Wins?</strong>: Students create a comparison board to evaluate different AI models using various metrics.</li>
+                  <li><strong>Bias Busters</strong>: Students identify bias in datasets and rebuild them to create fairer AI systems.</li>
+                  <li><strong>Safety Card</strong>: Students develop documentation that identifies potential risks and safety measures for AI systems.</li>
                 </>
               ) : slug === 'ai-developer' ? (
                 <>
-                  <li>End-to-End Mini App — notebook/CLI with train/test.</li>
-                  <li>Neural Net Mini-Lab — simple Keras model.</li>
-                  <li>Usability + Ethics Review — user tests + checklist.</li>
+                  <li><strong>End-to-End Mini App</strong>: Students build a complete application with training and testing components.</li>
+                  <li><strong>Neural Net Mini-Lab</strong>: Students create a simple neural network model using the Keras framework.</li>
+                  <li><strong>Usability + Ethics Review</strong>: Students conduct user testing and create ethical guidelines for their applications.</li>
                 </>
               ) : slug === 'ai-innovator' ? (
                 <>
-                  <li>Service Blueprint — architecture + contracts.</li>
-                  <li>Model in the Loop — tracked experiments & versions.</li>
-                  <li>Trust & Safety Readme — privacy + monitoring plan.</li>
+                  <li><strong>Service Blueprint</strong>: Students design system architecture and define how components interact with each other.</li>
+                  <li><strong>Model in the Loop</strong>: Students implement experiment tracking and version control for their AI models.</li>
+                  <li><strong>Trust & Safety Readme</strong>: Students develop comprehensive privacy guidelines and monitoring plans for their systems.</li>
                 </>
               ) : slug === 'ai-researcher' ? (
                 <>
-                  <li>Paper in a Page — concise review + critique.</li>
-                  <li>Baseline Repro — code + results match/variance.</li>
-                  <li>Ablation Atlas — what matters in the model.</li>
+                  <li><strong>Paper in a Page</strong>: Students create concise reviews and critiques of existing research papers.</li>
+                  <li><strong>Baseline Reproduction</strong>: Students recreate published models and document result comparisons.</li>
+                  <li><strong>Ablation Atlas</strong>: Students systematically analyze which components have the greatest impact on model performance.</li>
                 </>
               ) : slug === 'ai-leader' ? (
                 <>
-                  <li>AI Startup Sprint — MVP + lean canvas.</li>
-                  <li>Policy White Paper — problem, options, recommendation.</li>
-                  <li>Global Challenge Lead — international collab pilot.</li>
+                  <li><strong>AI Startup Sprint</strong>: Students develop a minimum viable product and business model canvas.</li>
+                  <li><strong>Policy White Paper</strong>: Students research a problem, present options, and make evidence-based recommendations.</li>
+                  <li><strong>Global Challenge Lead</strong>: Students coordinate an international collaborative project addressing real-world challenges.</li>
                 </>
               ) : (
                 <>
@@ -200,43 +200,43 @@ async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
           <div className="bg-gray-100 p-6 rounded-lg">
             {slug === 'ai-explorer' ? (
               <p className="text-purple-dark">
-                My Helpful Robot — storyboard + clickable prototype.
+                <strong>My Helpful Robot</strong>: Students create a detailed storyboard and interactive prototype of a robot designed to solve everyday problems. This project demonstrates their understanding of how machines can be programmed to assist humans.
               </p>
             ) : slug === 'pattern-detective' ? (
               <p className="text-purple-dark">
-                AI Investigation Agency — case file + short pitch.
+                <strong>AI Investigation Agency</strong>: Students develop a case file analyzing a real-world pattern and deliver a short pitch explaining their findings. This project showcases their ability to identify, document, and communicate pattern-based insights.
               </p>
             ) : slug === 'code-creator' ? (
               <p className="text-purple-dark">
-                Problem-Solver App — Scratch app + demo.
+                <strong>Problem-Solver App</strong>: Students build a complete Scratch application that addresses a specific challenge, accompanied by a live demonstration. This project demonstrates their programming skills and ability to create functional solutions.
               </p>
             ) : slug === 'smart-builder' ? (
               <p className="text-purple-dark">
-                Smart System Showcase — multi-scene app + charts.
+                <strong>Smart System Showcase</strong>: Students develop a multi-scene application with integrated data visualizations. This project highlights their ability to build complex systems and effectively present information through charts.
               </p>
             ) : slug === 'data-scientist' ? (
               <p className="text-purple-dark">
-                Evidence-Based Report — slides + dashboard.
+                <strong>Evidence-Based Report</strong>: Students create a professional presentation with interactive dashboards that communicate data-driven insights. This project demonstrates their ability to analyze data and present compelling conclusions.
               </p>
             ) : slug === 'ai-trainer' ? (
               <p className="text-purple-dark">
-                AI for Good Demo — tested with a community user.
+                <strong>AI for Good Demo</strong>: Students develop an AI solution addressing a social challenge and test it with actual community members. This project showcases their ability to create ethical AI applications with real-world impact.
               </p>
             ) : slug === 'ai-developer' ? (
               <p className="text-purple-dark">
-                AI Application Development — app + README + short video.
+                <strong>AI Application Development</strong>: Students build a complete AI application with comprehensive documentation and a demonstration video. This project demonstrates their technical proficiency and ability to communicate their work effectively.
               </p>
             ) : slug === 'ai-innovator' ? (
               <p className="text-purple-dark">
-                Impact Demo Day — system demo + metrics.
+                <strong>Impact Demo Day</strong>: Students present a working system demonstration with measurable performance metrics. This project showcases their ability to build end-to-end solutions and quantify their effectiveness.
               </p>
             ) : slug === 'ai-researcher' ? (
               <p className="text-purple-dark">
-                Preprint & Talk — submission-ready artifacts.
+                <strong>Preprint & Talk</strong>: Students create publication-quality research materials and deliver a conference-style presentation. This project demonstrates their ability to conduct and communicate original research.
               </p>
             ) : slug === 'ai-leader' ? (
               <p className="text-purple-dark">
-                Legacy Initiative — sustainable plan with handover.
+                <strong>Legacy Initiative</strong>: Students develop a sustainable project plan with clear transition documentation for future teams. This project showcases their leadership abilities and strategic thinking.
               </p>
             ) : (
               <>
