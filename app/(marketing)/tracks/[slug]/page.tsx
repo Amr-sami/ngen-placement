@@ -46,7 +46,9 @@ async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
   const [track] = tracks.filter((track: Track) => track.slug === slug);
 
   const partnersData = {
-    text: 'Our Certificate is by IAO, IAO is an international quality assurance agency, working to improve & establish education standards of institutes all over the world. With its global network of experts, IAO grants accreditation to educational institutions, corporations, professionals and qualified individuals.',
+    text: ['ai-explorer', 'pattern-detective', 'code-creator', 'smart-builder', 'data-scientist', 'ai-trainer', 'ai-developer', 'ai-innovator', 'ai-researcher', 'ai-leader'].includes(slug)
+      ? 'In collaboration with University of Delaware and Academy of Leeds, aligned to their education quality frameworks.' 
+      : 'Our Certificate is by IAO, IAO is an international quality assurance agency, working to improve & establish education standards of institutes all over the world. With its global network of experts, IAO grants accreditation to educational institutions, corporations, professionals and qualified individuals.',
     imgSrc: '/certificate.svg',
     partnerImgs: [
       {
@@ -109,7 +111,145 @@ async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
             </h3>
           </div>
         </section> */}
-        <LevelsList levels={track.levels} />
+        {/* Modules Section */}
+        <section className="flex flex-col gap-4">
+          <h2 className="text-2xl lg:text-3xl text-purple-dark font-bold">Modules</h2>
+          <LevelsList levels={track.levels} />
+        </section>
+        
+        {/* Track Projects Section */}
+        <section className="flex flex-col gap-4">
+          <h2 className="text-2xl lg:text-3xl text-purple-dark font-bold">Track Projects</h2>
+          <div className="bg-gray-100 p-6 rounded-lg">
+            <ul className="list-disc list-inside space-y-2">
+              {slug === 'ai-explorer' ? (
+                <>
+                  <li>Is it a Machine? — gallery of everyday objects (digital slideshow).</li>
+                  <li>Pattern Museum — cards/posters showing patterns and rules.</li>
+                  <li>AI Photo Sorter (Demo) — classify a small set with teacher-led tool; talk about fair/unfair.</li>
+                </>
+              ) : slug === 'pattern-detective' ? (
+                <>
+                  <li>Pattern Detective Journal — weekly digital log of patterns found.</li>
+                  <li>Teach the Snack Bot — classify "snack vs non-snack" with improved examples.</li>
+                  <li>Robot Chef Planner — if/then recipe flow.</li>
+                </>
+              ) : slug === 'code-creator' ? (
+                <>
+                  <li>My Interactive Story — choices change the plot.</li>
+                  <li>Smart Game Challenge — timed points, lives, levels.</li>
+                  <li>AI Magic Show — camera/voice triggers.</li>
+                </>
+              ) : slug === 'smart-builder' ? (
+                <>
+                  <li>School Pulse Survey — dashboard of results.</li>
+                  <li>Study Buddy — Scratch assistant for reminders/tips.</li>
+                  <li>UX Fix-it Sprint — before/after improvements.</li>
+                </>
+              ) : slug === 'data-scientist' ? (
+                <>
+                  <li>Community Snapshot — survey dashboard.</li>
+                  <li>Weather Watch — trends and comparisons.</li>
+                  <li>Fair Charts Lab — avoid chart lies; fix misleading graphs.</li>
+                </>
+              ) : slug === 'ai-trainer' ? (
+                <>
+                  <li>Which Model Wins? — metric comparison board.</li>
+                  <li>Bias Busters — rebuild the dataset to be fairer.</li>
+                  <li>Safety Card — model/usage risks & mitigations.</li>
+                </>
+              ) : slug === 'ai-developer' ? (
+                <>
+                  <li>End-to-End Mini App — notebook/CLI with train/test.</li>
+                  <li>Neural Net Mini-Lab — simple Keras model.</li>
+                  <li>Usability + Ethics Review — user tests + checklist.</li>
+                </>
+              ) : slug === 'ai-innovator' ? (
+                <>
+                  <li>Service Blueprint — architecture + contracts.</li>
+                  <li>Model in the Loop — tracked experiments & versions.</li>
+                  <li>Trust & Safety Readme — privacy + monitoring plan.</li>
+                </>
+              ) : slug === 'ai-researcher' ? (
+                <>
+                  <li>Paper in a Page — concise review + critique.</li>
+                  <li>Baseline Repro — code + results match/variance.</li>
+                  <li>Ablation Atlas — what matters in the model.</li>
+                </>
+              ) : slug === 'ai-leader' ? (
+                <>
+                  <li>AI Startup Sprint — MVP + lean canvas.</li>
+                  <li>Policy White Paper — problem, options, recommendation.</li>
+                  <li>Global Challenge Lead — international collab pilot.</li>
+                </>
+              ) : (
+                <>
+                  <li>AI Ethics Assessment Tool</li>
+                  <li>Data Visualization Dashboard</li>
+                  <li>Sentiment Analysis Application</li>
+                  <li>Image Classification Model</li>
+                </>
+              )}
+            </ul>
+          </div>
+        </section>
+        
+        {/* Capstone Section */}
+        <section className="flex flex-col gap-4">
+          <h2 className="text-2xl lg:text-3xl text-purple-dark font-bold">Capstone</h2>
+          <div className="bg-gray-100 p-6 rounded-lg">
+            {slug === 'ai-explorer' ? (
+              <p className="text-purple-dark">
+                My Helpful Robot — storyboard + clickable prototype.
+              </p>
+            ) : slug === 'pattern-detective' ? (
+              <p className="text-purple-dark">
+                AI Investigation Agency — case file + short pitch.
+              </p>
+            ) : slug === 'code-creator' ? (
+              <p className="text-purple-dark">
+                Problem-Solver App — Scratch app + demo.
+              </p>
+            ) : slug === 'smart-builder' ? (
+              <p className="text-purple-dark">
+                Smart System Showcase — multi-scene app + charts.
+              </p>
+            ) : slug === 'data-scientist' ? (
+              <p className="text-purple-dark">
+                Evidence-Based Report — slides + dashboard.
+              </p>
+            ) : slug === 'ai-trainer' ? (
+              <p className="text-purple-dark">
+                AI for Good Demo — tested with a community user.
+              </p>
+            ) : slug === 'ai-developer' ? (
+              <p className="text-purple-dark">
+                AI Application Development — app + README + short video.
+              </p>
+            ) : slug === 'ai-innovator' ? (
+              <p className="text-purple-dark">
+                Impact Demo Day — system demo + metrics.
+              </p>
+            ) : slug === 'ai-researcher' ? (
+              <p className="text-purple-dark">
+                Preprint & Talk — submission-ready artifacts.
+              </p>
+            ) : slug === 'ai-leader' ? (
+              <p className="text-purple-dark">
+                Legacy Initiative — sustainable plan with handover.
+              </p>
+            ) : (
+              <>
+                <p className="text-purple-dark mb-4">
+                  Students will complete a comprehensive AI project that demonstrates their mastery of the core concepts covered throughout the track. The capstone integrates technical skills with ethical considerations and practical application.
+                </p>
+                <p className="text-purple-dark font-semibold">
+                  Deliverables include a working AI model, documentation, presentation, and reflection on ethical implications.
+                </p>
+              </>
+            )}
+          </div>
+        </section>
       </PageWrapper>
       <CallToAction cta="Get Started" />
     </main>
