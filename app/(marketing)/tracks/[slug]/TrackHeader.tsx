@@ -11,7 +11,7 @@ const TrackHeader: React.FC<TrackHeaderProps> = ({ trackName }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   return (
-    <div className='flex justify-between flex-row gap-5'>
+    <div className='flex justify-between flex-row flex-wrap gap-5'>
       <div>
         <h1 className="text-2xl lg:text-5xl text-purple-dark font-protestRiot">
           Track Details
@@ -20,8 +20,8 @@ const TrackHeader: React.FC<TrackHeaderProps> = ({ trackName }) => {
           {trackName}
         </h1>
       </div>
-      <div onClick={() => setIsContactModalOpen(true)}>
-        <button className="w-full px-4 py-2 rounded-lg transition-colors duration-300 ease-linear bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin">
+      <div onClick={() => setIsContactModalOpen(true)} className="w-full sm:w-auto">
+        <button className="w-full sm:w-auto px-4 py-2 rounded-lg transition-colors duration-300 ease-linear bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin">
           Get Started
         </button>
       </div>

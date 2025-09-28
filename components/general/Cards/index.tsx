@@ -26,7 +26,7 @@ function Card({
 }:
 Props) {
   return (
-    <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 lg:my-5 border-[#F5F5F5] border-solid border-2">
+    <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 my-2 lg:my-5 border-[#F5F5F5] border-solid border-2">
       <div className="">
         <Image
           src={image}
@@ -36,9 +36,9 @@ Props) {
           className="w-full h-auto rounded-t-2xl"
         />
       </div>
-      <div className="px-6 py-4 grid grid-rows-subgrid row-span-5 gap-y-2">
-        <div className="flex justify-between gap-2">
-          <h3 className="text-purple-dark font-bold">{title}</h3>
+      <div className="px-4 sm:px-6 py-4 grid grid-rows-subgrid row-span-5 gap-y-2">
+        <div className="flex flex-wrap justify-between gap-2">
+          <h3 className="text-purple-dark font-bold break-words">{title}</h3>
           <div>
             <p
               className={`px-2 py-1 rounded-2xl text-white text-xs font-extrabold ${
@@ -53,7 +53,7 @@ Props) {
         </div>
         {/* <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p> */}
         <p className="text-sm">{numberOfLevels} sessions included</p>
-        <div className="flex justify-between text-xs md:text-sm text-[#655B62]">
+        <div className="flex flex-col sm:flex-row justify-between text-xs md:text-sm text-[#655B62] gap-2">
           <div className="flex items-center gap-2">
             <Image
               src="/assets/images/icons/duration-icon.svg"

@@ -127,9 +127,9 @@ const ContactUs = () => {
       </h3>
 
       {/* WHOLE CONTAINER */}
-      <div className="flex flex-col lg:flex-row p-6 rounded-3xl border border-solid border-gray-200 gap-6">
+      <div className="flex flex-col lg:flex-row p-4 sm:p-6 rounded-3xl border border-solid border-gray-200 gap-6">
         {/* FORM CONTAINER */}
-        <div className="bg-[#EDECECB5] basis-4/6 p-6 rounded-[14px]">
+        <div className="bg-[#EDECECB5] basis-4/6 p-4 sm:p-6 rounded-[14px]">
           <h5 className="font-bold text-pumpkin xl:text-2xl mb-4">
             Get in Touch
           </h5>
@@ -312,9 +312,9 @@ const ContactUs = () => {
         </div>
 
         {/* LOGO + CONTACT DETAILS */}
-        <div className="flex-1 flex flex-col items-center gap-6">
-          <div className="bg-gray-default px-6 py-[18px] w-full flex items-center justify-center rounded-[14px]">
-            <Logo width={343} height={92} />
+        <div className="flex-1 flex flex-col items-center gap-6 w-full">
+          <div className="bg-gray-default px-4 sm:px-6 py-[18px] w-full flex items-center justify-center rounded-[14px]">
+            <Logo width={300} height={80} classNames="max-w-full" />
           </div>
 
           <div className="w-full h-full rounded-[14px] bg-blueberry p-6 font-mono">

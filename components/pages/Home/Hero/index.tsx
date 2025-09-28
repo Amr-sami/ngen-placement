@@ -13,19 +13,19 @@ function HomepageHero() {
   return (
     <header className="bg-[url('/assets/images/hero-bg.svg')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
       <div className="container mx-auto px-5 flex h-full items-center justify-between">
-        <div className="flex flex-col items-center w-full lg:max-w-2xl gap-4 md:gap-8 lg:gap-16">
+        <div className="flex flex-col items-center w-full lg:max-w-2xl gap-4 md:gap-8 lg:gap-16 px-2">
           <div>
             <Logo
               width={475}
               height={120}
               classNames="md:mt-32 hidden md:block"
             />
-            <p className="text-4xl font-semibold md:ml-40 uppercase text-center">
+            <p className="text-3xl sm:text-4xl font-semibold md:ml-40 uppercase text-center">
               schools
             </p>
           </div>
           <div className="flex flex-col gap-4 md:gap-5 text-center lg:text-start">
-            <h1 className="font-protestRiot md:text-2xl lg:text-4xl">
+            <h1 className="font-protestRiot text-xl md:text-2xl lg:text-4xl">
               Future <span className="text-pumpkin">Innovators</span> ,
               Today&apos;s <span className="text-rose">Ninjas!</span>
             </h1>
