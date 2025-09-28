@@ -10,35 +10,35 @@ function HomepageNgenRoadmapSection() {
     {
       title: "Level 1 Foundation",
       description:
-        "Students learn the essentials, what machines are, algorithms as steps, digital patterns, and basic AI fairness, building the base for all tech learning.",
+        "Students learn essential concepts including machine fundamentals, algorithmic thinking, pattern recognition, and AI ethics principles. This level builds a strong foundation for all future technology learning.",
       image: "/assets/images/placeholder.svg",
       variants: undefined,
     },
     {
       title: "Level 2 Introduction",
       description:
-        "Learners master block coding (Scratch): events, loops, conditionals, variables, then scale to bigger systems (lists/functions) plus simple data → charts and an AI assistant.",
+        "Students master block-based programming with Scratch, learning events, loops, conditionals, and variables. They advance to more complex systems using lists and functions, while exploring data visualization and basic AI assistants.",
       image: "/assets/images/placeholder-1.svg",
       variant: "image-right",
     },
     {
       title: "Level 3 Intermediate",
       description:
-        "Students think like data scientists: plan/collect/clean data, tell stories with charts, try ML concepts, evaluate models (accuracy/recall), and tackle bias with a mini-startup brief.",
+        "Students develop data science skills including data collection planning, data cleaning techniques, and storytelling through charts. They explore machine learning concepts, model evaluation methods, and address bias through mini-startup projects.",
       image: "/assets/images/placeholder.svg",
       variants: undefined,
     },
     {
       title: "Level 4 Advanced",
       description:
-        "Builders ship real ML apps: Python/Colab, pandas, train/test with baselines, intro Keras, Git/GitHub, and simple UIs (Streamlit/Gradio) with usability + ethics reviews.",
+        "Students build real machine learning applications using Python, Colab, and pandas. They learn proper testing methodologies, explore neural networks with Keras, use version control with Git/GitHub, and develop user interfaces with Streamlit or Gradio, all while considering usability and ethics.",
       image: "/assets/images/placeholder-1.svg",
       variant: "image-right",
     },
     {
       title: "Level 5 Mastery",
       description:
-        "Two tracks: AI Research (literature → baseline reproduction → original contribution) or AI Leadership (product, policy, and impact). Publish, present, or launch.",
+        "Students choose between two specialized tracks: AI Research, where they analyze literature, reproduce baseline models, and make original contributions; or AI Leadership, focusing on product development, policy creation, and measuring impact. Both tracks culminate in publishing, presenting, or launching their work.",
       image: "/assets/images/placeholder.svg",
       variants: undefined,
     },
