@@ -52,7 +52,7 @@ function HomepageNgenRoadmapSection() {
         <div>
           <H2>NGEN Road Map (5 Levels Program)</H2>
         </div>
-        <div className="flex flex-col gap-4 md:flex-row lg:flex-col lg:gap-10">
+        <div className="flex flex-col gap-6 lg:gap-10">
           {DATA.map((element, idx) => (
             <FeatureCard
               key={idx}
