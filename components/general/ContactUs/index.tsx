@@ -5,8 +5,17 @@ import Logo from '../Logo';
 import Image from 'next/image';
 import { sendEmail } from '@/lib/resend';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import { usePathname } from 'next/navigation';
 
 const ContactUs = () => {
+  // Get current pathname to determine which page we're on
+  const pathname = usePathname();
+  
+  // Determine labels based on pathname
+  const isParentsPage = pathname?.includes('/ngen-for/parents');
+  const isSchoolsPage = pathname?.includes('/ngen-for/schools');
+  const isCorporatesPage = pathname?.includes('/ngen-for/corporates');
+  
   // State for form inputs
   const [formData, setFormData] = useState({
     firstName: '',
@@ -152,7 +161,9 @@ const ContactUs = () => {
                 className="block text-purple-dark mb-1"
                 htmlFor="firstName"
               >
-                First name <span className="text-red-500">*</span>
+                {isParentsPage ? 'Parent First name' : 
+                 isSchoolsPage || isCorporatesPage ? 'Focal point First name' : 
+                 'First name'} <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -174,7 +185,9 @@ const ContactUs = () => {
             {/* Last Name */}
             <div>
               <label className="block text-purple-dark mb-1" htmlFor="lastName">
-                Last name <span className="text-red-500">*</span>
+                {isParentsPage ? 'Parent Last name' : 
+                 isSchoolsPage || isCorporatesPage ? 'Focal point Last name' : 
+                 'Last name'} <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -199,7 +212,10 @@ const ContactUs = () => {
                 className="block text-purple-dark mb-1"
                 htmlFor="companyMail"
               >
-                Email <span className="text-red-500">*</span>
+                {isParentsPage ? 'Parent Email' : 
+                 isSchoolsPage ? 'School website' : 
+                 isCorporatesPage ? 'Company Focal point Email' : 
+                 'Email'} <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
@@ -207,7 +223,7 @@ const ContactUs = () => {
                 name="companyMail"
                 value={formData.companyMail}
                 onChange={handleChange}
-                placeholder="Your email address"
+                placeholder={isSchoolsPage ? "school.edu" : "Your email address"}
                 className={`w-full text-sm py-3 px-4 border ${
                   errors.companyMail ? 'border-red-500' : 'border-gray-300'
                 } rounded-md outline-none`}
@@ -224,7 +240,9 @@ const ContactUs = () => {
                 className="block text-purple-dark mb-1"
                 htmlFor="companyName"
               >
-                Company name
+                {isParentsPage ? 'Parent Mobile Number' :
+                 isSchoolsPage ? 'School name' :
+                 'Company name'}
               </label>
               <input
                 type="text"
@@ -244,7 +262,10 @@ const ContactUs = () => {
                 className="block text-purple-dark mb-1"
                 htmlFor="numberOfStudents"
               >
-                Number of students / Employees
+                {isParentsPage ? "Number of children" :
+                 isSchoolsPage ? "Number of students" :
+                 isCorporatesPage ? "Number of targeted employee children" :
+                 "Number of students / Employees"}
               </label>
               <input
                 type="text"
