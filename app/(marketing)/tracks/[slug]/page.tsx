@@ -4,7 +4,7 @@ import React from 'react';
 import tracks from './data.json';
 import OverviewCard from '@/components/general/OverviewCard';
 import LevelsList from '@/components/pages/SingleTrackPage/LevelsList';
-import Button from '@/components/general/Button';
+import TrackHeader from './TrackHeader';
 
 // If someone goes to a link not contaning the slug the system will redirect him to 404 page, for SSG not SSR
 // for more info: https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
@@ -68,19 +68,7 @@ async function SingleTrackPage({params}: {params: Promise<{ slug: string }>}) {
   return (
     <main>
       <PageWrapper classNames="container mx-auto px-5 flex flex-col py-6 gap-10">
-        <div className='flex justify-between flex-row gap-5'>
-          <div>
-            <h1 className="text-2xl lg:text-5xl text-purple-dark font-protestRiot">
-              Track Details
-            </h1>
-            <h1 className="text-2xl lg:text-4xl text-pumpkin font-bold">
-              {track.name}
-            </h1>
-          </div>
-          <Button variant="primary" href='https://wa.me/+201055023774' isTargetBlank={true} takeFullWidth>
-            Get Started
-          </Button>
-        </div>
+        <TrackHeader trackName={track.name} />
         <OverviewCard
           text={track.description}
           imgSrc="/tracks-overview.svg"
