@@ -12,7 +12,7 @@ const HowItWorksSection: React.FC<IHowItWorksData> = ({ data }) => {
         Follow the steps to start your journey
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pt-4 pb-6 xl:pt-6 xl:pb-11">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pt-4 pb-6 xl:pt-6 xl:pb-11 auto-rows-fr">
         {data.map((item, index) => (
           <HowItWorksCard
             key={index}

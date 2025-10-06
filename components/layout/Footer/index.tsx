@@ -46,10 +46,10 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={'#'}>
+                <Link href={'https://www.tiktok.com/@ngenschools'} target="_blank">
                   <Image
-                    src="/assets/images/icons/x-icon-light.svg"
-                    alt="location icon"
+                    src="/tiktok-round-white-icon.webp"
+                    alt="tiktok icon"
                     width={40}
                     height={40}
                   />
@@ -193,10 +193,10 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={'#'}>
+              <Link href={'https://www.tiktok.com/@ngenschools'} target="_blank">
                 <Image
-                  src="/assets/images/icons/x-icon-light.svg"
-                  alt="location icon"
+                  src="/assets/images/icons/insta-icon-light.svg"
+                  alt="tiktok icon"
                   width={40}
                   height={40}
                 />
