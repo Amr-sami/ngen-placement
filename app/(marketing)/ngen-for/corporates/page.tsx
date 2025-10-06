@@ -11,29 +11,29 @@ const howItWorksData = [
     bgColor: "bg-[#EFE8FD]",
     imgSrc: "/assets/images/icons/person-icon.svg",
     altText: "user-group",
-    title: "Registration",
-    desc: "Companies can register by filling out the subscription form throw the website.",
+    title: "Registration / Inquiry",
+    desc: "share a few details via the company form and book an intro call.",
   },
   {
     bgColor: "bg-[#E5E9FE]",
     imgSrc: "/assets/images/icons/phone-icon-purple.svg",
     altText: "user-group",
-    title: "Contact with the Organization",
-    desc: "Our customer service team will reach out to schedule a meeting.",
+    title: "Discovery & Needs Assessment",
+    desc: "we meet your HR/CSR team to map tracks, schedule, and goals (family day, summer camp, after-hours).",
   },
   {
     bgColor: "bg-[#FDE7D9]",
     imgSrc: "/account-group.svg",
     altText: "user-group",
-    title: "Meeting Setup",
-    desc: "During the meeting, we will present the available learning tracks and services.",
+    title: "Proposal, Agreement & Setup",
+    desc: "receive a custom proposal with pricing bundles and deliverables. On approval, we handle agreement/MoU, calendar, LMS access, parental consent templates, and trainer assignment plus optional co-branding.",
   },
   {
     bgColor: "bg-[#FDDDFB]",
     imgSrc: "/assets/images/icons/union-icon.svg",
     altText: "user-group",
-    title: "Program Commencement",
-    desc: "The learning process begins based on the selected tracks and levels.",
+    title: "Program Launch & Reporting",
+    desc: "kickoff sessions begin. You get attendance & progress reports, photo highlights, and CSR/ESG impact summaries. We support capstones/competitions and a final showcase for employees' families.",
   },
 ];
 
@@ -78,7 +78,7 @@ const NgenForCorporates = () => {
       <TracksSection title="Our tracks" />
       {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
-      <ContactUs />
+      <ContactUs /> {/* TODO: adjust labels for Corporates audience */}
     </PageWrapper>
   );
 };

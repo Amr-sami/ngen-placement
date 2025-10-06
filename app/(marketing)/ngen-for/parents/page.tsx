@@ -5,7 +5,7 @@ import {
 } from '@/components/pages/NgenFor';
 import {
   CallToAction,
-  // ContactUs,
+  ContactUs,
   PageWrapper,
   TracksSection,
 } from '@/components/general';
@@ -16,29 +16,29 @@ const howItWorksData = [
     bgColor: 'bg-[#EFE8FD]',
     imgSrc: '/assets/images/icons/person-icon.svg',
     altText: 'user-group',
-    title: 'Registration',
-    desc: 'Create your account then create your child account',
+    title: 'Book a Call',
+    desc: 'book a 15-minute welcome call so we can match your child\'s goals and level.',
   },
   {
     bgColor: 'bg-[#E5E9FE]',
     imgSrc: '/assets/images/icons/phone-icon-purple.svg',
     altText: 'user-group',
-    title: 'Choose the suitable track and pricing bundle',
-    desc: 'Subscribe on the favorite track for your children',
+    title: 'Choose Bundle & Set Up',
+    desc: 'pick the pricing bundle that fits you, complete payment, and get the onboarding pack (calendar, tools, logins).',
   },
   {
     bgColor: 'bg-[#FDE7D9]',
     imgSrc: '/account-group.svg',
     altText: 'user-group',
-    title: 'Track your child progress',
-    desc: 'through regular reports and performance reviews on their achievements and learning level.',
+    title: 'Start Classes',
+    desc: 'join the first session, meet the trainer, and do a quick tech check. Your child gets access to the LMS and starter tasks.',
   },
   {
     bgColor: 'bg-[#FDDDFB]',
     imgSrc: '/assets/images/icons/union-icon.svg',
     altText: 'user-group',
-    title: 'Development workshop',
-    desc: "With periodic sessions designed to improve parenting skills and assist parents in addressing their children's issues.",
+    title: 'Track & Support',
+    desc: 'follow weekly updates and term reports, and join our parent workshops to support learning at home.',
   },
 ];
 
@@ -84,7 +84,7 @@ const NgenForParents = () => {
         <TracksSection title="Our tracks" />
         {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
-        {/* <ContactUs /> */}
+        <ContactUs /> {/* TODO: adjust labels for Parents audience */}
       </PageWrapper>
       <CallToAction cta="Get Started" />
     </>

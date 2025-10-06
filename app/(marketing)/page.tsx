@@ -23,7 +23,7 @@ export default function Home() {
       <HomepageNgenWhySection />
       <HomepageNgenForSection />
       {/* <HomePageSocialProofSection /> */}
-      <section className="container mx-auto my-20">
+      <section id="contact-us" className="container mx-auto my-20">
         <ContactUs />
       </section>
       <HomepageBannerSection />

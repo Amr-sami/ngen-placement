@@ -12,14 +12,16 @@ const HowItWorksCard: React.FC<IHowItWorksCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center justify-between p-6 rounded-[14px] gap-4 ${bgColor} ${classNames}`}
+      className={`flex flex-col p-6 rounded-[14px] ${bgColor} ${classNames} h-full`}
     >
-      <Image src={imgSrc} width={92} height={92} alt={altText} />
-      <h2 className="text-xl text-purple-darker font-semibold text-center">
+      <div className="flex justify-center mb-4">
+        <Image src={imgSrc} width={92} height={92} alt={altText} />
+      </div>
+      <h2 className="text-xl text-purple-darker font-semibold text-center mb-4">
         {title}
       </h2>
       {/*TODO: USE THE HEADING COMPONENT INSTEAD OF h2 TAG*/}
-      <p className="text-purple-dark">{desc}</p>
+      <p className="text-purple-dark h-full">{desc}</p>
     </div>
   );
 };
