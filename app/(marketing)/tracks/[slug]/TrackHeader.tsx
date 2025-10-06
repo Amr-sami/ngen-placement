@@ -9,7 +9,6 @@ interface TrackHeaderProps {
 
 const TrackHeader: React.FC<TrackHeaderProps> = ({ trackName }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-
   return (
     <div className='flex justify-between flex-row flex-wrap gap-5'>
       <div>
