@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Logo from '../../../general/Logo';
 import Image from 'next/image';
 import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.svg';
-import Button from '../../../general/Button';
 import ContactModal from '../../../general/ContactModal';
 
 function HomepageHero() {

@@ -111,6 +111,7 @@ const ContactUs = () => {
       });
     } catch (error) {
       // Show error message
+      console.log('error', error)
       setSubmitStatus({
         success: false,
         message: 'An unexpected error occurred. Please try again.',

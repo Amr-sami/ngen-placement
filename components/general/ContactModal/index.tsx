@@ -119,7 +119,7 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
         <SheetHeader>
           <SheetTitle className="text-2xl font-bold text-purple-dark">Start Your Journey</SheetTitle>
           <SheetDescription className="text-gray-dark">
-            Fill out this form and we'll get back to you soon!
+            Fill out this form and we&apos;ll get back to you soon!
           </SheetDescription>
         </SheetHeader>
         
@@ -131,7 +131,7 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
               </svg>
             </div>
             <h3 className="text-xl font-medium text-green-600 mb-2">Thank you!</h3>
-            <p className="text-center text-gray-600">Your message has been sent successfully. We'll get back to you soon.</p>
+            <p className="text-center text-gray-600">Your message has been sent successfully. We&apos;ll get back to you soon.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
