@@ -1,0 +1,17 @@
+{
+  "common": {
+    "welcome": "Welcome to NGen Schools",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "tracks": "Tracks",
+    "instructors": "Instructors",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "copyright": "© 2024 NGen Schools. All rights reserved."
+  }
+}
+

@@ -1,7 +1,7 @@
 import Card from '@/components/general/Cards';
 import { H2 } from '@/components/general/Heading';
 import React from 'react';
-import tracks from '../../../app/(marketing)/tracks/[slug]/data.json';
+import tracks from '../../../app/[locale]/(marketing)/tracks/[slug]/data.json';
 
 function HomepageTracksSection({ title }: { title: string }) {
   return (
