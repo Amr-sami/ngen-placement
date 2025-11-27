@@ -1,10 +1,16 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import kidsOnLaptop from '@/public/assets/images/kids-on-laptop.svg';
 import Button from '../../../general/Button';
 import { H2 } from '@/components/general/Heading';
+import { useParams } from 'next/navigation';
+import { getAboutRoute } from '@/util/routes';
+import type { Locale } from '@/i18n';
 
 function HomepageAboutSection() {
+  const params = useParams();
+  const locale = (params?.locale as Locale) || 'en';
   return (
     <section className="py-6 md:py-10 lg:py-20">
       <div className="container mx-auto px-5 flex items-center gap-20">
@@ -14,7 +20,7 @@ function HomepageAboutSection() {
         <div className="lg:basis-2/3 flex flex-col gap-4 text-purple-dark">
           <div className="flex justify-between items-center">
             <H2>About us</H2>
-            <Button href="/about" variant="secondary">
+            <Button href={getAboutRoute(locale)} variant="secondary">
               See more
             </Button>
           </div>

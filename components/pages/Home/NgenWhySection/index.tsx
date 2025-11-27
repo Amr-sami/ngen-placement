@@ -3,6 +3,7 @@
 import { H2 } from '@/components/general/Heading';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const DATA = [
   {
@@ -117,12 +118,13 @@ const DATA = [
 
 function HomepageNgenWhySection() {
   const [activeTab, setActiveTab] = useState<number>(0);
+  const t = useTranslations('home.sections');
 
   const activeImage = DATA.find((item) => item.id === activeTab);
   return (
-    <section className="py-6 md:py-10 lg:py-20">
+    <section id="why-ngen" className="py-6 md:py-10 lg:py-20">
       <div className="container mx-auto px-5 flex flex-col gap-7">
-        <H2>added value by choosing NGENschools</H2>
+        <H2>{t('whyNgen')}</H2>
 
         <div className="flex flex-col-reverse lg:flex-row gap-2">
           <div className="flex flex-col gap-2 lg:basis-1/2">

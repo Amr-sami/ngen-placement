@@ -12,6 +12,36 @@
   },
   "footer": {
     "copyright": "© 2024 مدارس NGen. جميع الحقوق محفوظة."
+  },
+  "home": {
+    "sections": {
+      "projects": "مشاريعنا",
+      "students": "طلابنا",
+      "whyNgen": "لماذا NGen",
+      "pricing": "خطط الأسعار"
+    },
+    "buttons": {
+      "seeMoreProjects": "المزيد من المشاريع",
+      "seeMoreStudents": "المزيد من الطلاب"
+    }
+  },
+  "projects": {
+    "page": {
+      "title": "مشاريع الطلاب",
+      "description": "اكتشف المشاريع الرائعة التي أنشأها طلابنا"
+    }
+  },
+  "students": {
+    "page": {
+      "title": "طلابنا",
+      "description": "تعرف على طلابنا الموهوبين وإنجازاتهم"
+    }
+  },
+  "blog": {
+    "page": {
+      "title": "مدونة NGen",
+      "description": "آخر الأخبار والرؤى من مدارس NGen"
+    }
   }
 }
 

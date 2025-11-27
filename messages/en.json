@@ -12,6 +12,36 @@
   },
   "footer": {
     "copyright": "© 2024 NGen Schools. All rights reserved."
+  },
+  "home": {
+    "sections": {
+      "projects": "Our Projects",
+      "students": "Our Students",
+      "whyNgen": "Why NGen",
+      "pricing": "Pricing Plans"
+    },
+    "buttons": {
+      "seeMoreProjects": "See More Projects",
+      "seeMoreStudents": "See More Students"
+    }
+  },
+  "projects": {
+    "page": {
+      "title": "Student Projects",
+      "description": "Explore amazing projects created by our students"
+    }
+  },
+  "students": {
+    "page": {
+      "title": "Our Students",
+      "description": "Meet our talented students and their achievements"
+    }
+  },
+  "blog": {
+    "page": {
+      "title": "NGen Blog",
+      "description": "Latest news and insights from NGen Schools"
+    }
   }
 }
 

@@ -21,20 +21,32 @@ import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import Logo from '../../general/Logo';
 import Button from '@/components/general/Button';
-import { ROUTES } from '@/util/routes';
-import { usePathname } from 'next/navigation';
+import {
+  getHomeRoute,
+  getAboutRoute,
+  getContactRoute,
+  getTracksRoute,
+  getNgenForParentsRoute,
+  getNgenForSchoolsRoute,
+  getNgenForCorporatesRoute,
+} from '@/util/routes';
+import { usePathname, useParams } from 'next/navigation';
+import type { Locale } from '@/i18n';
 
 function Navbar() {
   const pathname = usePathname();
+  const params = useParams();
+  const locale = (params?.locale as Locale) || 'en';
+
   return (
     <nav
       className={`top-0 z-50 w-full text-white bg-background/95 absolute ${
-        pathname !== '/' ? "bg-[url('/assets/images/hero-bg.png')]" : ''
+        !pathname.endsWith(`/${locale}`) ? "bg-[url('/assets/images/hero-bg.png')]" : ''
       }`}
     >
       <div className="container mx-auto px-5 flex h-20 items-center justify-between">
         <div className="flex items-center">
-          <Link href="/">
+          <Link href={getHomeRoute(locale)}>
             <Logo width={160} height={35} />
           </Link>
         </div>
@@ -42,7 +54,7 @@ function Navbar() {
           <NavigationMenuList>
             {/* About */}
             <NavigationMenuItem>
-              <Link href={ROUTES.ABOUT} legacyBehavior passHref>
+              <Link href={getAboutRoute(locale)} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   About us
                 </NavigationMenuLink>
@@ -61,7 +73,7 @@ function Navbar() {
                     <NavigationMenuLink asChild>
                       <Link
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/"
+                        href={getHomeRoute(locale)}
                       >
                         <div className="mb-2 mt-4 text-lg font-medium">
                           NGen Schools
@@ -73,19 +85,19 @@ function Navbar() {
                     </NavigationMenuLink>
                   </li> */}
                   <ListItem
-                    href={ROUTES.NGEN_FOR.FOR_PARENTS}
+                    href={getNgenForParentsRoute(locale)}
                     title="For Parents"
                   />
                   {/* Tailored learning for personal growth */}
                   {/* </ListItem> */}
                   <ListItem
-                    href={ROUTES.NGEN_FOR.FOR_SCHOOL}
+                    href={getNgenForSchoolsRoute(locale)}
                     title="For Schools"
                   />
                   {/* Enhance your curriculum with cutting-edge tech education */}
                   {/* </ListItem> */}
                   <ListItem
-                    href={ROUTES.NGEN_FOR.FOR_CORPORATES}
+                    href={getNgenForCorporatesRoute(locale)}
                     title="For Corporates"
                   />
                   {/* Upskill your workforce for the digital age */}
@@ -94,7 +106,7 @@ function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href={ROUTES.TRACKS} legacyBehavior passHref>
+              <Link href={getTracksRoute(locale)} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Tracks
                 </NavigationMenuLink>
@@ -118,7 +130,7 @@ function Navbar() {
         </NavigationMenu>
         <div className="hidden md:block">
           <Button
-            href="/contact-us"
+            href={getContactRoute(locale)}
             variant="primary"
             classNames="bg-[#627CEE] hover:text-[#627CEE]"
           >
@@ -137,37 +149,37 @@ function Navbar() {
               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <div className="mt-4 flex flex-col space-y-4">
-              <Link href={ROUTES.ABOUT} className="text-sm font-medium">
+              <Link href={getAboutRoute(locale)} className="text-sm font-medium">
                 About us
               </Link>
               <Link
-                href={ROUTES.NGEN_FOR.FOR_PARENTS}
+                href={getNgenForParentsRoute(locale)}
                 className="text-sm font-medium"
               >
                 For parents
               </Link>
               <Link
-                href={ROUTES.NGEN_FOR.FOR_SCHOOL}
+                href={getNgenForSchoolsRoute(locale)}
                 className="text-sm font-medium"
               >
                 For schools
               </Link>
               <Link
-                href={ROUTES.NGEN_FOR.FOR_CORPORATES}
+                href={getNgenForCorporatesRoute(locale)}
                 className="text-sm font-medium"
               >
                 For corporates
               </Link>
-              {/* <Link href={ROUTES.TRACKS} className="text-sm font-medium">
+              {/* <Link href={getTracksRoute(locale)} className="text-sm font-medium">
                 Tracks
               </Link>
-              <Link href={ROUTES.INSTRUCTORS} className="text-sm font-medium">
+              <Link href={getInstructorsRoute(locale)} className="text-sm font-medium">
                 Instructors
               </Link> */}
               {/* <Link href="#" className="text-sm font-medium">
                 Blogs
               </Link> */}
-              <Button href="#" variant="primary" takeFullWidth>
+              <Button href={getContactRoute(locale)} variant="primary" takeFullWidth>
                 Start your journey
               </Button>
             </div>

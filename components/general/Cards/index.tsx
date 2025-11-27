@@ -1,7 +1,10 @@
+'use client';
 import React from 'react';
 import Button from '../Button';
 import Image from 'next/image';
-// import { ROUTES } from "@/util/routes";
+import { useParams } from 'next/navigation';
+import { getTrackRoute } from '@/util/routes';
+import type { Locale } from '@/i18n';
 
 type Props = {
   image: string;
@@ -25,6 +28,9 @@ function Card({
   skillLevel,
 }:
 Props) {
+  const params = useParams();
+  const locale = (params?.locale as Locale) || 'en';
+
   return (
     <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 my-2 lg:my-5 border-[#F5F5F5] border-solid border-2">
       <div className="">
@@ -74,7 +80,7 @@ Props) {
           </div>
         </div>
         <div className="pt-1">
-          <Button variant="secondary" href={`/tracks/${slug}`} takeFullWidth>
+          <Button variant="secondary" href={getTrackRoute(locale, slug)} takeFullWidth>
             More Details
           </Button>
         </div>
