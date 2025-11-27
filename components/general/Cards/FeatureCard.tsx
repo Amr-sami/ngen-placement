@@ -1,5 +1,7 @@
+'use client';
 import React from "react";
 import Image from "next/image";
+import { useRTL } from "@/lib/useRTL";
 
 type Props = {
   title: string;
@@ -14,10 +16,17 @@ function FeatureCard({
   description,
   variant = "image-left",
 }: Props) {
+  const isRTL = useRTL();
+  
+  // In RTL, flip the variant logic
+  const effectiveVariant = isRTL 
+    ? (variant === "image-left" ? "image-right" : "image-left")
+    : variant;
+    
   return (
     <div
       className={`min-h-[250px] sm:min-h-[300px] lg:min-h-[350px] p-4 sm:p-6 lg:p-0 text-white flex flex-col gap-4 sm:gap-6 lg:gap-10 rounded-3xl ${
-        variant === "image-left" ? "lg:flex-row bg-purple-darker" : "lg:flex-row-reverse bg-[#74086D]"
+        effectiveVariant === "image-left" ? "lg:flex-row bg-purple-darker" : "lg:flex-row-reverse bg-[#74086D]"
       }`}
     >
       <div className="lg:basis-1/3 flex justify-center">
@@ -30,8 +39,10 @@ function FeatureCard({
         />
       </div>
       <div
-        className={`lg:basis-2/3 flex-col justify-center flex gap-1 md:gap-4 text-center lg:text-start px-2 ${
-          variant === "image-left" ? "lg:max-w-screen-md" : "lg:max-w-4xl"
+        className={`lg:basis-2/3 flex-col justify-center flex gap-1 md:gap-4 text-center px-2 ${
+          isRTL ? 'lg:text-right' : 'lg:text-left'
+        } ${
+          effectiveVariant === "image-left" ? "lg:max-w-screen-md" : "lg:max-w-4xl"
         }`}
       >
         <h3 className={`text-xl sm:text-2xl lg:text-5xl font-protestRiot ${

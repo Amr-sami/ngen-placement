@@ -6,6 +6,18 @@ All notable changes to the NGen Schools project are documented in this file.
 
 ## [Unreleased] - 2024-11-27
 
+### Fixed
+- **RTL Layout Polish for Arabic Locale** - Comprehensive RTL fixes across the application
+  - Hero section: Social media icons now properly positioned on left side in Arabic
+  - Hero section: "schools" text alignment adjusted for RTL
+  - About section: Image and text layout swap positions naturally in RTL
+  - Why NGen section: Image and list layout flip correctly, icon+text alignment fixed
+  - Feature cards: Image/text layout responds to RTL direction
+  - Track cards: Icon+text rows properly aligned for RTL
+  - Call to Action: Locale-aware navigation for contact section scroll
+  - Created reusable `useRTL()` and `useLocale()` hooks in `lib/useRTL.ts` for future-friendly RTL support
+  - All layouts now use direction-aware flex patterns instead of hardcoded left/right positioning
+
 ### Added
 - **Full Internationalization (i18n) Support** - English (EN) and Arabic (AR)
   - Integrated `next-intl` library for App Router i18n

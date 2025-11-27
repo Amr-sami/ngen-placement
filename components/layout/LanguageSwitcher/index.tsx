@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import { useParams, usePathname } from 'next/navigation';
+import { useParams, usePathname, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import { locales } from '@/i18n';
 import type { Locale } from '@/i18n';
 
 function LanguageSwitcher() {
   const params = useParams();
   const pathname = usePathname();
+  const router = useRouter();
   const t = useTranslations('nav.lang');
   const currentLocale = (params?.locale as Locale) || 'en';
 
@@ -22,18 +22,10 @@ function LanguageSwitcher() {
     return pathname;
   };
 
-  // Preserve hash if present
-  const getCurrentHash = () => {
-    if (typeof window !== 'undefined') {
-      return window.location.hash;
-    }
-    return '';
-  };
-
-  const switchLanguage = (locale: Locale) => {
+  const handleLanguageSwitch = (locale: Locale) => {
     const pathWithoutLocale = getPathWithoutLocale();
-    const hash = getCurrentHash();
-    return `/${locale}${pathWithoutLocale}${hash}`;
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    router.push(`/${locale}${pathWithoutLocale}${hash}`);
   };
 
   return (
@@ -41,9 +33,9 @@ function LanguageSwitcher() {
       {locales.map((locale) => {
         const isActive = locale === currentLocale;
         return (
-          <Link
+          <button
             key={locale}
-            href={switchLanguage(locale)}
+            onClick={() => handleLanguageSwitch(locale)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
               isActive
                 ? 'bg-purple-dark text-white'
@@ -51,7 +43,7 @@ function LanguageSwitcher() {
             }`}
           >
             {t(locale)}
-          </Link>
+          </button>
         );
       })}
     </div>

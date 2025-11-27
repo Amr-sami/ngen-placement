@@ -3,6 +3,7 @@
 import React from 'react';
 import Logo from '../Logo';
 import { useRouter } from 'next/navigation';
+import { useLocale } from '@/lib/useRTL';
 
 interface ICallToActionProps {
   cta: string;
@@ -10,10 +11,11 @@ interface ICallToActionProps {
 
 const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
   const router = useRouter();
+  const locale = useLocale();
   
   const scrollToContact = () => {
     // Navigate to home page first if needed
-    router.push('/#contact-us');
+    router.push(`/${locale}/#contact-us`);
     
     // Handle scroll behavior for when already on the home page
     setTimeout(() => {

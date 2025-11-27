@@ -7,15 +7,24 @@ import { H2 } from '@/components/general/Heading';
 import { useParams } from 'next/navigation';
 import { getAboutRoute } from '@/util/routes';
 import type { Locale } from '@/i18n';
+import { useRTL } from '@/lib/useRTL';
 
 function HomepageAboutSection() {
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
+  const isRTL = useRTL();
+  
   return (
     <section className="py-6 md:py-10 lg:py-20">
-      <div className="container mx-auto px-5 flex items-center gap-20">
+      <div className={`container mx-auto px-5 flex items-center gap-20 ${
+        isRTL ? 'flex-row-reverse' : 'flex-row'
+      }`}>
         <div className="hidden lg:basis-1/3 lg:block">
-          <Image src={kidsOnLaptop} alt="kids on laptop" className='scale-x-[-1]'/>
+          <Image 
+            src={kidsOnLaptop} 
+            alt="kids on laptop" 
+            className={isRTL ? '' : 'scale-x-[-1]'}
+          />
         </div>
         <div className="lg:basis-2/3 flex flex-col gap-4 text-purple-dark">
           <div className="flex justify-between items-center">

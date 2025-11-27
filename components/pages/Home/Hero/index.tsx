@@ -5,9 +5,11 @@ import Logo from '../../../general/Logo';
 import Image from 'next/image';
 import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.svg';
 import ContactModal from '../../../general/ContactModal';
+import { useRTL } from '@/lib/useRTL';
 
 function HomepageHero() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const isRTL = useRTL();
   
   return (
     <header className="bg-[url('/assets/images/hero-bg.svg')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
@@ -19,7 +21,9 @@ function HomepageHero() {
               height={120}
               classNames="md:mt-32 hidden md:block"
             />
-            <p className="text-3xl sm:text-4xl font-semibold md:ml-40 uppercase text-center">
+            <p className={`text-3xl sm:text-4xl font-semibold uppercase text-center ${
+              isRTL ? 'md:mr-40' : 'md:ml-40'
+            }`}>
               schools
             </p>
           </div>
@@ -48,7 +52,11 @@ function HomepageHero() {
             alt="Ninja space guy"
             className="animate-bounce-slow"
           />
-          <div className="hidden md:flex flex-col gap-6 absolute -bottom-32 lg:-right-14 right-0">
+          <div className={`hidden md:flex flex-col gap-6 absolute -bottom-32 ${
+            isRTL 
+              ? 'lg:-left-14 left-0' 
+              : 'lg:-right-14 right-0'
+          }`}>
             <a href="https://www.facebook.com/ngenschools" target="_blank">
               <Image
                 src="/fb.png"

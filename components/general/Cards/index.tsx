@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { getTrackRoute } from '@/util/routes';
 import type { Locale } from '@/i18n';
+import { useRTL } from '@/lib/useRTL';
 
 type Props = {
   image: string;
@@ -30,6 +31,7 @@ function Card({
 Props) {
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
+  const isRTL = useRTL();
 
   return (
     <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 my-2 lg:my-5 border-[#F5F5F5] border-solid border-2">
@@ -59,8 +61,12 @@ Props) {
         </div>
         {/* <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p> */}
         <p className="text-sm">{numberOfLevels} sessions included</p>
-        <div className="flex flex-col sm:flex-row justify-between text-xs md:text-sm text-[#655B62] gap-2">
-          <div className="flex items-center gap-2">
+        <div className={`flex flex-col sm:flex-row justify-between text-xs md:text-sm text-[#655B62] gap-2 ${
+          isRTL ? 'sm:flex-row-reverse' : 'sm:flex-row'
+        }`}>
+          <div className={`flex items-center gap-2 ${
+            isRTL ? 'flex-row-reverse' : 'flex-row'
+          }`}>
             <Image
               src="/assets/images/icons/duration-icon.svg"
               width={20}
@@ -69,7 +75,9 @@ Props) {
             />
             <p>{duration} Hours</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className={`flex items-center gap-2 ${
+            isRTL ? 'flex-row-reverse' : 'flex-row'
+          }`}>
             <Image
               src="/assets/images/icons/papers-icon.svg"
               width={20}

@@ -4,6 +4,7 @@ import { H2 } from '@/components/general/Heading';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { useRTL } from '@/lib/useRTL';
 
 const DATA = [
   {
@@ -119,6 +120,7 @@ const DATA = [
 function HomepageNgenWhySection() {
   const [activeTab, setActiveTab] = useState<number>(0);
   const t = useTranslations('home.sections');
+  const isRTL = useRTL();
 
   const activeImage = DATA.find((item) => item.id === activeTab);
   return (
@@ -126,7 +128,9 @@ function HomepageNgenWhySection() {
       <div className="container mx-auto px-5 flex flex-col gap-7">
         <H2>{t('whyNgen')}</H2>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-2">
+        <div className={`flex flex-col-reverse gap-2 ${
+          isRTL ? 'lg:flex-row' : 'lg:flex-row-reverse'
+        }`}>
           <div className="flex flex-col gap-2 lg:basis-1/2">
             {DATA.map((element) => (
               <div
@@ -139,7 +143,9 @@ function HomepageNgenWhySection() {
               >
                 <div className="flex flex-col gap-2">
                   <h3
-                    className={`flex items-center gap-2 ${element.color} text-xl font-semibold`}
+                    className={`flex items-center gap-2 ${element.color} text-xl font-semibold ${
+                      isRTL ? 'flex-row-reverse' : 'flex-row'
+                    }`}
                   >
                     <span className="text-2xl">{element.icon}</span>
                     {element.title}
@@ -158,7 +164,7 @@ function HomepageNgenWhySection() {
                 alt={activeImage.title}
                 width={580}
                 height={530}
-                className='scale-x-[-1]'
+                className={isRTL ? '' : 'scale-x-[-1]'}
               />
             )}
           </div>
