@@ -73,7 +73,7 @@ function HomepageProjectsSection() {
                 height={200}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-4 flex flex-col gap-2">
+              <div className="p-4 flex flex-col gap-2 ltr:text-left rtl:text-right">
                 <h3 className="text-purple-dark font-bold text-lg">{project.title}</h3>
                 <p className="text-sm text-gray-600">{project.description}</p>
                 <div className="mt-2 flex flex-col gap-1 text-xs text-gray-500">

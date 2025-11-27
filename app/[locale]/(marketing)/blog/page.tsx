@@ -101,7 +101,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
                 height={250}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6 flex flex-col gap-4">
+              <div className="p-6 flex flex-col gap-4 ltr:text-left rtl:text-right">
                 <div className="flex justify-between items-center text-sm">
                   <span className="px-3 py-1 bg-purple-lighter text-purple-dark rounded-full font-medium">
                     {post.category}

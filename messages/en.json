@@ -5,10 +5,19 @@
   },
   "nav": {
     "home": "Home",
-    "about": "About",
+    "projects": "Projects",
+    "students": "Students",
+    "ngenFor": "NGen For",
+    "aboutUs": "About Us",
+    "whyNgen": "Why NGen",
     "tracks": "Tracks",
-    "instructors": "Instructors",
-    "contact": "Contact Us"
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "lang": {
+      "en": "English",
+      "ar": "العربية"
+    }
   },
   "footer": {
     "copyright": "© 2024 NGen Schools. All rights reserved."

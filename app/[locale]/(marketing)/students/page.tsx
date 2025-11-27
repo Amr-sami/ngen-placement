@@ -110,12 +110,12 @@ export default async function StudentsPage({ params }: { params: Promise<{ local
                 </span>
               </div>
               
-              <div className="w-full border-t pt-4">
+              <div className="w-full border-t pt-4 ltr:text-left rtl:text-right">
                 <p className="text-sm font-semibold text-purple-darker mb-2">{student.track}</p>
                 <ul className="flex flex-col gap-2">
                   {student.achievements.map((achievement, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="text-green text-lg">✓</span>
+                      <span className="text-green text-lg shrink-0">✓</span>
                       <span>{achievement}</span>
                     </li>
                   ))}

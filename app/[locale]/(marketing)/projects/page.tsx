@@ -101,7 +101,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                 height={250}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-6 flex flex-col gap-4">
+              <div className="p-6 flex flex-col gap-4 ltr:text-left rtl:text-right">
                 <h3 className="text-purple-dark font-bold text-xl">{project.title}</h3>
                 <p className="text-gray-600 text-sm">{project.description}</p>
                 

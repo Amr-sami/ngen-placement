@@ -79,7 +79,7 @@ function HomepagePricingSection() {
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pumpkin to-rose text-white px-4 py-1 rounded-full text-sm font-bold">
+                <div className="absolute -top-4 ltr:left-1/2 rtl:right-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 bg-gradient-to-r from-pumpkin to-rose text-white px-4 py-1 rounded-full text-sm font-bold">
                   Most Popular
                 </div>
               )}
@@ -97,8 +97,8 @@ function HomepagePricingSection() {
               
               <ul className="flex flex-col gap-3 flex-grow">
                 {plan.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-green text-xl">✓</span>
+                  <li key={index} className="flex items-start gap-2 ltr:text-left rtl:text-right">
+                    <span className="text-green text-xl shrink-0">✓</span>
                     <span className="text-sm text-gray-700">{feature}</span>
                   </li>
                 ))}

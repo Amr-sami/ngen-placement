@@ -1,23 +1,32 @@
 {
   "common": {
-    "welcome": "مرحباً بك في مدارس NGen",
+    "welcome": "مرحباً بك في مدارس إنچن",
     "loading": "جاري التحميل..."
   },
   "nav": {
     "home": "الرئيسية",
-    "about": "عن",
+    "projects": "المشاريع",
+    "students": "الطلاب",
+    "ngenFor": "لـ إنچن",
+    "aboutUs": "عن إنچن",
+    "whyNgen": "لماذا إنچن",
     "tracks": "المسارات",
-    "instructors": "المدربون",
-    "contact": "اتصل بنا"
+    "pricing": "الأسعار",
+    "blog": "المدونة",
+    "contact": "اتصل بنا",
+    "lang": {
+      "en": "English",
+      "ar": "العربية"
+    }
   },
   "footer": {
-    "copyright": "© 2024 مدارس NGen. جميع الحقوق محفوظة."
+    "copyright": "© 2024 مدارس إنچن. جميع الحقوق محفوظة."
   },
   "home": {
     "sections": {
       "projects": "مشاريعنا",
       "students": "طلابنا",
-      "whyNgen": "لماذا NGen",
+      "whyNgen": "لماذا إنچن",
       "pricing": "خطط الأسعار"
     },
     "buttons": {
@@ -39,8 +48,8 @@
   },
   "blog": {
     "page": {
-      "title": "مدونة NGen",
-      "description": "آخر الأخبار والرؤى من مدارس NGen"
+      "title": "مدونة إنچن",
+      "description": "آخر الأخبار والرؤى من مدارس إنچن"
     }
   }
 }
