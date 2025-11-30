@@ -18,3 +18,5 @@ export const localeDirections: Record<Locale, 'ltr' | 'rtl'> = {
   ar: 'rtl',
 };
 
+
+

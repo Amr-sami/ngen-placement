@@ -1,5 +1,6 @@
 import { CallToAction /*,ContactUs*/ } from '@/components/general';
 import { H2 } from '@/components/general/Heading';
+import { getTranslations } from 'next-intl/server';
 // import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
 // import {
 //   Carousel,
@@ -46,7 +47,9 @@ export const metadata = {
 };
 
 
-function AboutPage() {
+async function AboutPage() {
+  const t = await getTranslations('about');
+
   return (
     <>
       <Image
@@ -65,35 +68,22 @@ function AboutPage() {
             <div className="lg:basis-3/6 grid grid-cols-2 gap-10 ">
               <div className="col-span-2 flex flex-col gap-4">
                 <h1 className="font-protestRiot lg:text-5xl text-2xl text-purple-dark">
-                  Who we are
+                  {t('whoWeAre.heading')}
                 </h1>
                 <p>
-                  NGen is a virtual school that teaches modern technology to
-                  students aged 8 to 18 through gamified learning experiences.
-                  It offers interactive programs designed to develop their
-                  cognitive and problem-solving skills. The platform aims to
-                  nurture intelligent, resilient learners
-                  prepared for the future
+                  {t('whoWeAre.body')}
                 </p>
               </div>
               <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
-                <H2>Our mission</H2>
+                <H2>{t('mission.heading')}</H2>
                 <p>
-                  To empower students with the knowledge, skills, and innovative
-                  mindset needed to thrive in a technology-driven world. We
-                  provide a dynamic learning environment that fosters
-                  creativity, collaboration, and critical thinking through
-                  cutting-edge technology education and hands-on experiences.
+                  {t('mission.body')}
                 </p>
               </div>
               <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
-                <H2>Our vision</H2>
+                <H2>{t('vision.heading')}</H2>
                 <p>
-                  To be a leading educational institution recognized for
-                  nurturing the next generation of tech leaders and innovators.
-                  We envision a future where every student is equipped with the
-                  digital literacy and problem-solving skills necessary to
-                  succeed and positively impact their communities and the world.
+                  {t('vision.body')}
                 </p>
               </div>
             </div>

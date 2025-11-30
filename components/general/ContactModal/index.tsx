@@ -11,6 +11,8 @@ import {
 } from '@/components/ui/sheet';
 import { X } from 'lucide-react';
 import { sendEmail } from '@/lib/resend';
+import { useRTL } from '@/lib/useRTL';
+import { useTranslations } from 'next-intl';
 
 interface ContactModalProps {
   open: boolean;
@@ -18,6 +20,9 @@ interface ContactModalProps {
 }
 
 const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
+  const isRTL = useRTL();
+  const t = useTranslations('contactModal');
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -115,11 +120,11 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent className="sm:max-w-md md:max-w-lg overflow-y-auto">
-        <SheetHeader>
-          <SheetTitle className="text-2xl font-bold text-purple-dark">Start Your Journey</SheetTitle>
-          <SheetDescription className="text-gray-dark">
-            Fill out this form and we&apos;ll get back to you soon!
+      <SheetContent side={isRTL ? 'left' : 'right'} className="sm:max-w-md md:max-w-lg overflow-y-auto [&>button:last-of-type]:hidden">
+        <SheetHeader className={isRTL ? 'text-right' : 'text-left'}>
+          <SheetTitle className={`text-2xl font-bold text-purple-dark ${isRTL ? 'text-right' : 'text-left'}`}>{t('title')}</SheetTitle>
+          <SheetDescription className={`text-gray-dark ${isRTL ? 'text-right' : 'text-left'}`}>
+            {t('description')}
           </SheetDescription>
         </SheetHeader>
         
@@ -130,16 +135,16 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-medium text-green-600 mb-2">Thank you!</h3>
-            <p className="text-center text-gray-600">Your message has been sent successfully. We&apos;ll get back to you soon.</p>
+            <h3 className="text-xl font-medium text-green-600 mb-2">{t('success.title')}</h3>
+            <p className="text-center text-gray-600">{t('success.message')}</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* First Name */}
               <div>
-                <label className="block text-purple-dark mb-1" htmlFor="firstName">
-                  First name <span className="text-red-500">*</span>
+                <label className={`block text-purple-dark mb-1 ${isRTL ? 'text-right' : 'text-left'}`} htmlFor="firstName">
+                  {t('fields.firstName.label')} <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -147,18 +152,19 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
-                  placeholder="First name"
-                  className={`w-full text-sm py-3 px-4 border ${errors.firstName ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none`}
+                  placeholder={t('fields.firstName.placeholder')}
+                  className={`w-full text-sm py-3 px-4 border ${errors.firstName ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none ${isRTL ? 'text-right' : 'text-left'}`}
+                  dir={isRTL ? 'rtl' : 'ltr'}
                 />
                 {errors.firstName && (
-                  <p className="text-red-500 text-xs mt-1">First name is required</p>
+                  <p className={`text-red-500 text-xs mt-1 ${isRTL ? 'text-right' : 'text-left'}`}>{t('fields.firstName.error')}</p>
                 )}
               </div>
               
               {/* Last Name */}
               <div>
-                <label className="block text-purple-dark mb-1" htmlFor="lastName">
-                  Last name <span className="text-red-500">*</span>
+                <label className={`block text-purple-dark mb-1 ${isRTL ? 'text-right' : 'text-left'}`} htmlFor="lastName">
+                  {t('fields.lastName.label')} <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -166,19 +172,20 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
-                  placeholder="Last name"
-                  className={`w-full text-sm py-3 px-4 border ${errors.lastName ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none`}
+                  placeholder={t('fields.lastName.placeholder')}
+                  className={`w-full text-sm py-3 px-4 border ${errors.lastName ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none ${isRTL ? 'text-right' : 'text-left'}`}
+                  dir={isRTL ? 'rtl' : 'ltr'}
                 />
                 {errors.lastName && (
-                  <p className="text-red-500 text-xs mt-1">Last name is required</p>
+                  <p className={`text-red-500 text-xs mt-1 ${isRTL ? 'text-right' : 'text-left'}`}>{t('fields.lastName.error')}</p>
                 )}
               </div>
             </div>
             
             {/* Email */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="companyMail">
-                Email <span className="text-red-500">*</span>
+              <label className={`block text-purple-dark mb-1 ${isRTL ? 'text-right' : 'text-left'}`} htmlFor="companyMail">
+                {t('fields.email.label')} <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
@@ -186,18 +193,19 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
                 name="companyMail"
                 value={formData.companyMail}
                 onChange={handleChange}
-                placeholder="Your email address"
-                className={`w-full text-sm py-3 px-4 border ${errors.companyMail ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none`}
+                placeholder={t('fields.email.placeholder')}
+                className={`w-full text-sm py-3 px-4 border ${errors.companyMail ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none ${isRTL ? 'text-right' : 'text-left'}`}
+                dir={isRTL ? 'rtl' : 'ltr'}
               />
               {errors.companyMail && (
-                <p className="text-red-500 text-xs mt-1">Please enter a valid email</p>
+                <p className={`text-red-500 text-xs mt-1 ${isRTL ? 'text-right' : 'text-left'}`}>{t('fields.email.error')}</p>
               )}
             </div>
             
             {/* Phone Number */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="phoneNumber">
-                Phone Number
+              <label className={`block text-purple-dark mb-1 ${isRTL ? 'text-right' : 'text-left'}`} htmlFor="phoneNumber">
+                {t('fields.phone.label')}
               </label>
               <input
                 type="tel"
@@ -205,15 +213,16 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                placeholder="Your phone number (optional)"
-                className="w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none"
+                placeholder={t('fields.phone.placeholder')}
+                className={`w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none ${isRTL ? 'text-right' : 'text-left'}`}
+                dir={isRTL ? 'rtl' : 'ltr'}
               />
             </div>
             
             {/* School/Organization */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="companyName">
-                School/Organization
+              <label className={`block text-purple-dark mb-1 ${isRTL ? 'text-right' : 'text-left'}`} htmlFor="companyName">
+                {t('fields.organization.label')}
               </label>
               <input
                 type="text"
@@ -221,43 +230,45 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
                 name="companyName"
                 value={formData.companyName}
                 onChange={handleChange}
-                placeholder="Your school or organization (optional)"
-                className="w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none"
+                placeholder={t('fields.organization.placeholder')}
+                className={`w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none ${isRTL ? 'text-right' : 'text-left'}`}
+                dir={isRTL ? 'rtl' : 'ltr'}
               />
             </div>
             
             {/* Message */}
             <div>
-              <label className="block text-purple-dark mb-1" htmlFor="message">
-                Message
+              <label className={`block text-purple-dark mb-1 ${isRTL ? 'text-right' : 'text-left'}`} htmlFor="message">
+                {t('fields.message.label')}
               </label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Your message (optional)"
-                className="w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none"
+                placeholder={t('fields.message.placeholder')}
+                className={`w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none ${isRTL ? 'text-right' : 'text-left'}`}
                 rows={3}
+                dir={isRTL ? 'rtl' : 'ltr'}
               />
             </div>
             
             {/* Submit Button */}
-            <div className="flex justify-end mt-6">
+            <div className={`flex ${isRTL ? 'justify-start' : 'justify-end'} mt-6`}>
               <button
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full md:w-auto px-6 py-3 bg-pumpkin text-white font-bold rounded-lg hover:bg-orange-600 transition ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                {isSubmitting ? 'Sending...' : 'Submit'}
+                {isSubmitting ? t('submit.sending') : t('submit.button')}
               </button>
             </div>
           </form>
         )}
         
-        <SheetClose className="absolute right-4 top-4 rounded-sm opacity-70 hover:opacity-100 focus:outline-none">
+        <SheetClose className={`absolute ${isRTL ? 'left-4' : 'right-4'} top-4 rounded-sm opacity-70 hover:opacity-100 focus:outline-none`}>
           <X className="h-5 w-5" />
-          <span className="sr-only">Close</span>
+          <span className="sr-only">{t('close')}</span>
         </SheetClose>
       </SheetContent>
     </Sheet>

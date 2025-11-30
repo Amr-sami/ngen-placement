@@ -6,10 +6,12 @@ import Image from 'next/image';
 import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.svg';
 import ContactModal from '../../../general/ContactModal';
 import { useRTL } from '@/lib/useRTL';
+import { useTranslations } from 'next-intl';
 
 function HomepageHero() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const isRTL = useRTL();
+  const t = useTranslations('home.hero');
   
   return (
     <header className="bg-[url('/assets/images/hero-bg.svg')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
@@ -29,8 +31,8 @@ function HomepageHero() {
           </div>
           <div className="flex flex-col gap-4 md:gap-5 text-center lg:text-start">
             <h1 className="font-protestRiot text-xl md:text-2xl lg:text-4xl">
-              Future <span className="text-pumpkin">Innovators</span> ,
-              Today&apos;s <span className="text-rose">Ninjas!</span>
+              {t('tagline.future')} <span className="text-pumpkin">{t('tagline.innovators')}</span>,{' '}
+              {t('tagline.todays')} <span className="text-rose">{t('tagline.ninjas')}</span>
             </h1>
             {/* <p className="text-sm md:text-base lg:text-2xl">
               Dive into Graphics, Data Science, and More with Courses Tailored
@@ -40,7 +42,7 @@ function HomepageHero() {
               <button
                 className="px-4 py-2 rounded-lg transition-colors duration-300 ease-linear bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin"
               >
-                Start your journey
+                {t('cta')}
               </button>
             </div>
             <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
@@ -49,7 +51,7 @@ function HomepageHero() {
         <div className="hidden md:block relative">
           <Image
             src={ninjaSpaceGuy}
-            alt="Ninja space guy"
+            alt={t('ninjaAlt')}
             className="animate-bounce-slow"
           />
           <div className={`hidden md:flex flex-col gap-6 absolute -bottom-32 ${

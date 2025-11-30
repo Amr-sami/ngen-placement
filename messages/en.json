@@ -23,6 +23,31 @@
     "copyright": "© 2024 NGen Schools. All rights reserved."
   },
   "home": {
+    "hero": {
+      "schools": "Schools",
+      "tagline": {
+        "future": "Future",
+        "innovators": "Innovators",
+        "todays": "Today's",
+        "ninjas": "Ninjas!"
+      },
+      "cta": "Start your journey",
+      "ninjaAlt": "Ninja space guy"
+    },
+    "about": {
+      "aboutUs": {
+        "heading": "About Us",
+        "body": "At NGen, we don't just teach technology, we engineer the future. We empower learners aged 6 to 18 to become innovators, creators, and leaders who can navigate and shape the digital world with confidence, creativity, and purpose."
+      },
+      "mission": {
+        "heading": "Our Mission",
+        "body": "To deliver globally accredited, AI-powered education that blends technology, entrepreneurship, and creativity, empowering every learner to lead, innovate, and shine in the digital future."
+      },
+      "vision": {
+        "heading": "Our Vision",
+        "body": "To create a generation that doesn't wait for the future, but designs it. A world where every young mind learns to think critically, build boldly, and lead with purpose."
+      }
+    },
     "sections": {
       "projects": "Our Projects",
       "students": "Our Students",
@@ -32,6 +57,62 @@
     "buttons": {
       "seeMoreProjects": "See More Projects",
       "seeMoreStudents": "See More Students"
+    }
+  },
+  "about": {
+    "whoWeAre": {
+      "heading": "Who We Are",
+      "body": "At NGen, we don't just teach technology, we engineer the future. We empower learners aged 6 to 18 to become innovators, creators, and leaders who can navigate and shape the digital world with confidence, creativity, and purpose."
+    },
+    "mission": {
+      "heading": "Our Mission",
+      "body": "To deliver globally accredited, AI-powered education that blends technology, entrepreneurship, and creativity, empowering every learner to lead, innovate, and shine in the digital future."
+    },
+    "vision": {
+      "heading": "Our Vision",
+      "body": "To create a generation that doesn't wait for the future, but designs it. A world where every young mind learns to think critically, build boldly, and lead with purpose."
+    }
+  },
+  "contactModal": {
+    "title": "Start Your Journey",
+    "description": "Fill out this form and we'll get back to you soon!",
+    "close": "Close",
+    "success": {
+      "title": "Thank you!",
+      "message": "Your message has been sent successfully. We'll get back to you soon."
+    },
+    "fields": {
+      "firstName": {
+        "label": "First name",
+        "placeholder": "First name",
+        "error": "First name is required"
+      },
+      "lastName": {
+        "label": "Last name",
+        "placeholder": "Last name",
+        "error": "Last name is required"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email address",
+        "error": "Please enter a valid email"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Your phone number (optional)"
+      },
+      "organization": {
+        "label": "School/Organization",
+        "placeholder": "Your school or organization (optional)"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message (optional)"
+      }
+    },
+    "submit": {
+      "button": "Submit",
+      "sending": "Sending..."
     }
   },
   "projects": {
