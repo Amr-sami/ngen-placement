@@ -48,6 +48,163 @@
         "body": "To create a generation that doesn't wait for the future, but designs it. A world where every young mind learns to think critically, build boldly, and lead with purpose."
       }
     },
+    "roadmap": {
+      "title": "Our Courses Tracks",
+      "subtitle": "Six connected tracks that take your child from curiosity to real-world tech impact.",
+      "tracks": {
+        "dataScience": {
+          "title": "Data Science",
+          "description": "Students learn to analyze and visualize data and use it to make predictions — starting from understanding what data is to building simple forecasting models."
+        },
+        "programming": {
+          "title": "Programming",
+          "description": "Students move from Scratch-style animations to full Python applications while learning code structure, debugging, and problem-solving logic."
+        },
+        "artificialIntelligence": {
+          "title": "Artificial Intelligence",
+          "description": "Students design smart systems, train basic machine-learning models, and create simple AI-powered games, progressing from tools like Teachable Machine to beginner Python models."
+        },
+        "creativeArts": {
+          "title": "Creative Arts",
+          "description": "Students explore digital design, animation, and video production — growing from character sketches into polished digital portfolios."
+        },
+        "robotics": {
+          "title": "Robotics",
+          "description": "Students control hardware and sensors and build IoT projects — starting with LED circuits and evolving into connected smart devices."
+        },
+        "cybersecurity": {
+          "title": "Cybersecurity",
+          "description": "Students practice digital safety, ethical hacking basics, and network protection — from strong passwords to simple tools that test and secure systems."
+        }
+      }
+    },
+    "tracks": {
+      "title": "Our Tracks",
+      "builtSystemsIntro": "Across Data Science, Programming, Artificial Intelligence, Creative Arts, Robotics, and Cybersecurity, students build real systems — from smart apps and AI games to robots, dashboards, and secure digital experiences."
+    },
+    "journey": {
+      "title": "Your NGen Journey",
+      "subtitle": "A clear path from beginner to tech leader",
+      "card": {
+        "hours": "Total Hours",
+        "classes": "Classes",
+        "duration": "Duration",
+        "models": "Models",
+        "focus": "Focus"
+      },
+      "stages": {
+        "placement-test": { 
+          "title": "Placement Test", 
+          "description": "Start Here",
+          "longDescription": "A comprehensive assessment to determine your current skill level and place you in the perfect starting belt.",
+          "duration": "30 min",
+          "hours": "0.5",
+          "classes": "1",
+          "models": "—",
+          "focus": "Skill Assessment & Path Recommendation"
+        },
+        "white": { 
+          "title": "White Belt", 
+          "description": "Pre-Foundation",
+          "longDescription": "Introduction to the digital world, building curiosity and awareness about technology and its role in our lives.",
+          "duration": "1 Month",
+          "hours": "12",
+          "classes": "8",
+          "models": "Universal",
+          "focus": "Digital Awareness & Curiosity"
+        },
+        "yellow": { 
+          "title": "Yellow Belt", 
+          "description": "Foundation",
+          "longDescription": "Building the core foundation of coding and logical thinking through block-based programming and computational concepts.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "Universal",
+          "focus": "Core Coding & Logical Thinking"
+        },
+        "orange": { 
+          "title": "Orange Belt", 
+          "description": "Foundation",
+          "longDescription": "Exploring creativity and digital design, learning to express ideas through visual media and interactive projects.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "3 Models",
+          "focus": "Creativity & Digital Design"
+        },
+        "green": { 
+          "title": "Green Belt", 
+          "description": "Foundation",
+          "longDescription": "Building smart projects that combine AI and robotics concepts, transitioning from blocks to real-world applications.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "3 Models",
+          "focus": "Smart Projects (AI & Robotics)"
+        },
+        "blue": { 
+          "title": "Blue Belt", 
+          "description": "Specialization",
+          "longDescription": "Deep diving into your chosen track, exploring advanced concepts and building specialized skills.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "3 Models",
+          "focus": "Deep Track Exploration"
+        },
+        "red": { 
+          "title": "Red Belt", 
+          "description": "Specialization",
+          "longDescription": "Working on advanced projects that push your skills to the next level with real-world complexity.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "3 Models",
+          "focus": "Advanced Projects"
+        },
+        "brown": { 
+          "title": "Brown Belt", 
+          "description": "Specialization",
+          "longDescription": "Combining technical skills with innovation and entrepreneurship mindset to create impactful solutions.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "3 Models",
+          "focus": "Innovation & Entrepreneurship"
+        },
+        "black": { 
+          "title": "Black Belt", 
+          "description": "Specialization",
+          "longDescription": "Conducting research, leading projects, and developing expertise that sets you apart as a tech leader.",
+          "duration": "3-4 Months",
+          "hours": "35",
+          "classes": "24",
+          "models": "3 Models",
+          "focus": "Research & Leadership"
+        },
+        "ninja": { 
+          "title": "Ninja", 
+          "description": "Advanced",
+          "longDescription": "Becoming a mentor and innovation leader, guiding others while pushing the boundaries of your own expertise.",
+          "duration": "6 Months",
+          "hours": "70",
+          "classes": "48",
+          "models": "3 Models",
+          "focus": "Mentorship & Innovation Leadership"
+        },
+        "master": { 
+          "title": "Grand Master", 
+          "description": "Advanced",
+          "longDescription": "Creating legacy projects with global impact, contributing to the tech community and inspiring the next generation.",
+          "duration": "6 Months",
+          "hours": "70",
+          "classes": "48",
+          "models": "3 Models",
+          "focus": "Global Impact & Legacy Projects"
+        }
+      }
+    },
     "sections": {
       "projects": "Our Projects",
       "students": "Our Students",

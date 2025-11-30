@@ -1,7 +1,8 @@
 import HomepageHero from '@/components/pages/Home/Hero';
 import HomepageAboutSection from '@/components/pages/Home/AboutSection';
 import HomepageRoadmapSection from '@/components/pages/Home/NgenRoadmapSection';
-import { ContactUs, TracksSection } from '@/components/general';
+import { ContactUs } from '@/components/general';
+import JourneySection from '@/components/pages/Home/JourneySection';
 import HomepageNgenForSection from '@/components/pages/Home/NgenForSection';
 // import HomePageSocialProofSection from "@/components/pages/Home/SocialProofSection";
 import HomepageBannerSection from '@/components/pages/Home/BannerSection';
@@ -22,7 +23,7 @@ export default function Home() {
       <HomepageHero />
       <HomepageAboutSection />
       <HomepageRoadmapSection />
-      <TracksSection title="Our Tracks" />
+      <JourneySection />
       <HomepageProjectsSection />
       <HomepageStudentsSection />
       <HomepageNgenWhySection />
