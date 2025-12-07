@@ -1,4 +1,5 @@
 import { CallToAction /*,ContactUs*/ } from '@/components/general';
+import { useTranslations } from 'next-intl';
 import { H2 } from '@/components/general/Heading';
 import { getTranslations } from 'next-intl/server';
 // import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
@@ -49,6 +50,7 @@ export const metadata = {
 
 async function AboutPage() {
   const t = await getTranslations('about');
+  const heroT = await getTranslations('home.hero');
 
   return (
     <>
@@ -129,7 +131,7 @@ async function AboutPage() {
           <ContactUs />
         </div> */}
       </main>
-      <CallToAction cta="Get Started" />
+      <CallToAction cta={heroT('cta')} slogan={heroT('slogan')} />
     </>
   );
 }

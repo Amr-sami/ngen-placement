@@ -9,10 +9,11 @@ import Image from 'next/image';
 
 function JourneySection() {
   const t = useTranslations('home.journey');
-  const [activeStageId, setActiveStageId] = useState<string | null>(null);
+  // Start with placement-test selected by default
+  const [activeStageId, setActiveStageId] = useState<string>('placement-test');
 
   const handleStageClick = (id: string) => {
-    setActiveStageId(prev => prev === id ? null : id);
+    setActiveStageId(id);
   };
 
   const activeStage = JOURNEY_STAGES.find(s => s.id === activeStageId);
@@ -20,73 +21,70 @@ function JourneySection() {
   return (
     <section className="py-10 lg:py-20 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-5 flex flex-col gap-8 lg:gap-12">
+        {/* Header */}
         <div className="text-center flex flex-col gap-2 items-center">
           <H2>{t('title')}</H2>
           <p className="text-gray-600 text-lg">{t('subtitle')}</p>
-          
-          {/* Container - image controls the height, text overlays */}
-          <div className="w-full max-w-4xl mt-6 relative">
-            {/* Image - always in DOM to maintain height, fades out */}
+        </div>
+
+        {/* Two-column layout: Map + Belt Info */}
+        <div className="flex flex-col lg:flex-row gap-8 items-center">
+          {/* Left: Journey Map (permanent) */}
+          <div className="w-full lg:w-1/2">
             <Image
               src="/assets/images/journey-map.svg"
               alt="NGen Journey Map"
               width={800}
-              height={300}
-              className={`
-                w-full h-auto transition-opacity duration-500 ease-in-out
-                ${activeStageId ? 'opacity-0' : 'opacity-100'}
-              `}
+              height={500}
+              className="w-full h-auto"
             />
+          </div>
 
-            {/* Text Content - absolutely positioned over image area */}
-            <div className={`
-              absolute inset-0 flex items-center justify-center
-              transition-opacity duration-500 ease-in-out
-              ${activeStageId && activeStage ? 'opacity-100' : 'opacity-0 pointer-events-none'}
-            `}>
-              {activeStageId && activeStage && (
-                <div className="w-full max-w-3xl mx-auto text-purple-dark px-4">
-                  {/* Title */}
-                  <h3 className="font-protestRiot text-2xl lg:text-4xl mb-4">
-                    {t(`stages.${activeStageId}.title`)}
-                  </h3>
-                  
-                  {/* Description */}
-                  <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-6">
-                    {t(`stages.${activeStageId}.longDescription`)}
-                  </p>
+          {/* Right: Belt Info */}
+          <div className="w-full lg:w-1/2 flex items-center justify-center min-h-[300px]">
+            {activeStage && (
+              <div className="w-full text-purple-dark transition-opacity duration-300 ease-in-out animate-in fade-in">
+                {/* Title */}
+                <h3 className="font-protestRiot text-2xl lg:text-4xl mb-4">
+                  {t(`stages.${activeStageId}.title`)}
+                </h3>
+                
+                {/* Description */}
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-6">
+                  {t(`stages.${activeStageId}.longDescription`)}
+                </p>
 
-                  {/* Stats as simple text */}
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm md:text-base">
-                    <div>
-                      <span className="text-gray-500">{t('card.duration')}: </span>
-                      <span className="font-semibold">{t(`stages.${activeStageId}.duration`)}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">{t('card.hours')}: </span>
-                      <span className="font-semibold">{t(`stages.${activeStageId}.hours`)}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">{t('card.classes')}: </span>
-                      <span className="font-semibold">{t(`stages.${activeStageId}.classes`)}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">{t('card.models')}: </span>
-                      <span className="font-semibold">{t(`stages.${activeStageId}.models`)}</span>
-                    </div>
+                {/* Stats as simple text */}
+                <div className="grid grid-cols-2 gap-4 text-sm md:text-base">
+                  <div>
+                    <span className="text-gray-500">{t('card.duration')}: </span>
+                    <span className="font-semibold">{t(`stages.${activeStageId}.duration`)}</span>
                   </div>
-
-                  {/* Focus */}
-                  <p className="mt-4 text-sm md:text-base lg:text-lg">
-                    <span className="text-gray-500">{t('card.focus')}: </span>
-                    <span className="font-semibold">{t(`stages.${activeStageId}.focus`)}</span>
-                  </p>
+                  <div>
+                    <span className="text-gray-500">{t('card.hours')}: </span>
+                    <span className="font-semibold">{t(`stages.${activeStageId}.hours`)}</span>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">{t('card.classes')}: </span>
+                    <span className="font-semibold">{t(`stages.${activeStageId}.classes`)}</span>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">{t('card.models')}: </span>
+                    <span className="font-semibold">{t(`stages.${activeStageId}.models`)}</span>
+                  </div>
                 </div>
-              )}
-            </div>
+
+                {/* Focus */}
+                <p className="mt-4 text-sm md:text-base lg:text-lg">
+                  <span className="text-gray-500">{t('card.focus')}: </span>
+                  <span className="font-semibold">{t(`stages.${activeStageId}.focus`)}</span>
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
+        {/* Belt circles row */}
         <div className="relative flex items-center justify-center">
           {/* Dotted Connecting Line (Desktop) - centered through circles */}
           {/* py-4 = 16px padding + half of w-16 (32px) = 48px = top-12 */}

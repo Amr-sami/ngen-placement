@@ -20,6 +20,8 @@ export default {
       },
       colors: {
         pumpkin: '#ff7723',
+        ninja: '#944268',
+        grandmaster: '#96819f',
         purple: {
           darker: '#2E1660',
           dark: '#3B117F',

@@ -74,16 +74,16 @@ export const JOURNEY_STAGES: JourneyStage[] = [
   },
   {
     id: 'ninja',
-    color: 'bg-purple-darker',
-    bgColor: 'bg-purple-lighter',
-    borderColor: 'border-purple-darker',
+    color: 'bg-ninja',
+    bgColor: 'bg-ninja/10',
+    borderColor: 'border-ninja',
     textColor: 'text-white',
   },
   {
     id: 'master',
-    color: 'bg-pumpkin',
-    bgColor: 'bg-pumpkin/10',
-    borderColor: 'border-pumpkin',
+    color: 'bg-grandmaster',
+    bgColor: 'bg-grandmaster/10',
+    borderColor: 'border-grandmaster',
     textColor: 'text-white',
   },
 ];

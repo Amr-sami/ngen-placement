@@ -31,6 +31,7 @@
         "todays": "Today's",
         "ninjas": "Ninjas!"
       },
+      "slogan": "Future Innovators, Today's Ninjas!",
       "cta": "Start your journey",
       "ninjaAlt": "Ninja space guy"
     },
@@ -50,11 +51,11 @@
     },
     "roadmap": {
       "title": "Our Courses Tracks",
-      "subtitle": "Six connected tracks that take your child from curiosity to real-world tech impact.",
+      "subtitle": "Six tracks that take your child from curiosity to real-world tech impact.",
       "tracks": {
         "dataScience": {
           "title": "Data Science",
-          "description": "Students learn to analyze and visualize data and use it to make predictions — starting from understanding what data is to building simple forecasting models."
+          "description": "Students learn to analyze and visualize data and use it to make predictions, starting from understanding what data is to building simple forecasting models."
         },
         "programming": {
           "title": "Programming",
@@ -66,21 +67,21 @@
         },
         "creativeArts": {
           "title": "Creative Arts",
-          "description": "Students explore digital design, animation, and video production — growing from character sketches into polished digital portfolios."
+          "description": "Students explore digital design, animation, and video production, growing from character sketches into polished digital portfolios."
         },
         "robotics": {
           "title": "Robotics",
-          "description": "Students control hardware and sensors and build IoT projects — starting with LED circuits and evolving into connected smart devices."
+          "description": "Students control hardware and sensors and build IoT projects, starting with LED circuits and evolving into connected smart devices."
         },
         "cybersecurity": {
           "title": "Cybersecurity",
-          "description": "Students practice digital safety, ethical hacking basics, and network protection — from strong passwords to simple tools that test and secure systems."
+          "description": "Students practice digital safety, ethical hacking basics, and network protection, from strong passwords to simple tools that test and secure systems."
         }
       }
     },
     "tracks": {
       "title": "Our Tracks",
-      "builtSystemsIntro": "Across Data Science, Programming, Artificial Intelligence, Creative Arts, Robotics, and Cybersecurity, students build real systems — from smart apps and AI games to robots, dashboards, and secure digital experiences."
+      "builtSystemsIntro": "Across Data Science, Programming, Artificial Intelligence, Creative Arts, Robotics, and Cybersecurity, students build real systems: smart apps and AI games, robots, dashboards, and secure digital experiences."
     },
     "journey": {
       "title": "Your NGen Journey",
@@ -100,7 +101,7 @@
           "duration": "30 min",
           "hours": "0.5",
           "classes": "1",
-          "models": "—",
+          "models": "N/A",
           "focus": "Skill Assessment & Path Recommendation"
         },
         "white": { 
@@ -206,8 +207,8 @@
       }
     },
     "sections": {
-      "projects": "Our Projects",
-      "students": "Our Students",
+      "projects": "Our Students Projects",
+      "students": "Meet Our Students",
       "whyNgen": "Why NGen",
       "pricing": "Pricing Plans"
     },

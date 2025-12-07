@@ -7,9 +7,10 @@ import { useLocale } from '@/lib/useRTL';
 
 interface ICallToActionProps {
   cta: string;
+  slogan: string;
 }
 
-const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
+const CallToAction: React.FC<ICallToActionProps> = ({ cta, slogan }) => {
   const router = useRouter();
   const locale = useLocale();
   
@@ -45,7 +46,7 @@ const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
 
       <div className="lg:absolute lg:top-1/2 lg:left-1/2 lg:translate-x-[-50%] lg:translate-y-[-100%] lg:mt-[5rem] flex flex-col items-center justify-center gap-5 lg:gap-7">
         <p className="font-protestRiot text-2xl text-white xl:text-[64px] mb-5 lg:mb-7">
-          Work smart not hard
+          {slogan}
         </p>
         <Logo
           width={320}
