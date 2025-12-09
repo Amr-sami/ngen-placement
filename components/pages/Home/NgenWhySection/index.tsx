@@ -1,7 +1,7 @@
 'use client';
 
 import { H2 } from '@/components/general/Heading';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useRTL } from '@/lib/useRTL';
@@ -9,167 +9,517 @@ import { useRTL } from '@/lib/useRTL';
 const DATA = [
   {
     id: 0,
-    title: 'Digital-First AI Pathway (L1A → L5B)',
+    title: 'Digital-First AI Pathway',
     icon: '🚀',
-    description: '', // TODO: fill description
+    description: 'Start your journey into AI with our structured learning path from L1A to L5B!',
     imageUrl: '/assets/images/soft-skills-image.svg',
-    color: 'text-[#0BCA6C]',
-    border: 'border-[#0BCA6C]',
+    bg: 'bg-gradient-to-br from-emerald-400 to-teal-500',
   },
   {
     id: 1,
-    title: 'Project-Based, Capstone-Driven',
+    title: 'Project-Based Learning',
     icon: '🧩',
-    description: '', // TODO: fill description
+    description: 'Build real projects and create your own capstone masterpiece!',
     imageUrl: '/assets/images/insights-image.svg',
-    color: 'text-pumpkin',
-    border: 'border-pumpkin',
+    bg: 'bg-gradient-to-br from-orange-400 to-pink-500',
   },
   {
     id: 2,
     title: 'Soft Skills Built-In',
     icon: '⭐',
-    description: '', // TODO: fill description
+    description: 'Develop teamwork, communication, and problem-solving skills naturally!',
     imageUrl: '/assets/images/courses-parents-image.svg',
-    color: 'text-purple-default',
-    border: 'border-purple-default',
+    bg: 'bg-gradient-to-br from-purple-400 to-indigo-500',
   },
   {
     id: 3,
-    title: 'Business & Entrepreneurship Mindset',
+    title: 'Entrepreneurship Mindset',
     icon: '💼',
-    description: '', // TODO: fill description
+    description: 'Think like a business owner and turn ideas into reality!',
     imageUrl: '/assets/images/games-image.svg',
-    color: 'text-rose',
-    border: 'border-rose',
+    bg: 'bg-gradient-to-br from-rose-400 to-red-500',
   },
   {
     id: 4,
-    title: 'Measurable Growth & Reports',
+    title: 'Track Your Growth',
     icon: '📈',
-    description: '', // TODO: fill description
+    description: 'See your progress with detailed reports and achievements!',
     imageUrl: '/assets/images/teachers-image.svg',
-    color: 'text-purple-darker',
-    border: 'border-purple-darker',
+    bg: 'bg-gradient-to-br from-blue-400 to-cyan-500',
   },
   {
     id: 5,
-    title: 'Parent Enablement',
+    title: 'Parent Dashboard',
     icon: '👪',
-    description: '', // TODO: fill description
+    description: 'Parents stay updated with real-time progress and insights!',
     imageUrl: '/assets/images/soft-skills-image.svg',
-    color: 'text-[#0BCA6C]',
-    border: 'border-[#0BCA6C]',
+    bg: 'bg-gradient-to-br from-emerald-400 to-teal-500',
   },
   {
     id: 6,
-    title: 'Gamified Learning & Ninja Belts',
+    title: 'Gamified & Fun',
     icon: '🥷',
-    description: '', // TODO: fill description
+    description: 'Earn ninja belts, badges, and unlock achievements!',
     imageUrl: '/assets/images/insights-image.svg',
-    color: 'text-pumpkin',
-    border: 'border-pumpkin',
+    bg: 'bg-gradient-to-br from-orange-400 to-pink-500',
   },
   {
     id: 7,
-    title: 'Competitions That Motivate',
+    title: 'Friendly Competitions',
     icon: '🏆',
-    description: '', // TODO: fill description
+    description: 'Challenge yourself and compete with peers in exciting contests!',
     imageUrl: '/assets/images/courses-parents-image.svg',
-    color: 'text-purple-default',
-    border: 'border-purple-default',
+    bg: 'bg-gradient-to-br from-purple-400 to-indigo-500',
   },
   {
     id: 8,
-    title: 'World-Class Tools, Zero Hassle',
+    title: 'Pro Tools Made Easy',
     icon: '🧰',
-    description: '', // TODO: fill description
+    description: 'Access world-class tools designed specifically for young learners!',
     imageUrl: '/assets/images/games-image.svg',
-    color: 'text-rose',
-    border: 'border-rose',
+    bg: 'bg-gradient-to-br from-rose-400 to-red-500',
   },
   {
     id: 9,
-    title: 'High-Caliber Trainers',
+    title: 'Expert Trainers',
     icon: '👩🏫',
-    description: '', // TODO: fill description
+    description: 'Learn from passionate teachers who love what they do!',
     imageUrl: '/assets/images/teachers-image.svg',
-    color: 'text-purple-darker',
-    border: 'border-purple-darker',
+    bg: 'bg-gradient-to-br from-blue-400 to-cyan-500',
   },
   {
     id: 10,
-    title: 'Portfolio That Matters',
+    title: 'Build Your Portfolio',
     icon: '🗂',
-    description: '', // TODO: fill description
+    description: 'Create an impressive showcase of your amazing work!',
     imageUrl: '/assets/images/soft-skills-image.svg',
-    color: 'text-[#0BCA6C]',
-    border: 'border-[#0BCA6C]',
+    bg: 'bg-gradient-to-br from-emerald-400 to-teal-500',
   },
   {
     id: 11,
-    title: 'Teacher Development',
+    title: 'Always Improving',
     icon: '🎓',
-    description: '', // TODO: fill description
+    description: 'Our teachers keep learning to give you the best experience!',
     imageUrl: '/assets/images/insights-image.svg',
-    color: 'text-pumpkin',
-    border: 'border-pumpkin',
+    bg: 'bg-gradient-to-br from-orange-400 to-pink-500',
   },
 ];
 
+// Animated journey elements
+const journeyIcons = [''];
+
 function HomepageNgenWhySection() {
   const [activeTab, setActiveTab] = useState<number>(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const t = useTranslations('home.sections');
   const isRTL = useRTL();
 
-  const activeImage = DATA.find((item) => item.id === activeTab);
-  return (
-    <section id="why-ngen" className="py-6 md:py-10 lg:py-20">
-      <div className="container mx-auto px-5 flex flex-col gap-7">
-        <H2>{t('whyNgen')}</H2>
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
 
-        <div className={`flex flex-col-reverse gap-2 ${
-          isRTL ? 'lg:flex-row' : 'lg:flex-row-reverse'
-        }`}>
-          <div className="flex flex-col gap-2 lg:basis-1/2">
-            {DATA.map((element) => (
-              <div
-                id={`${element.id}`}
-                className={`flex flex-col gap-4 p-4 bg-[#F2F2F2] rounded-xl cursor-pointer border border-solid ${
-                  activeTab === element.id ? `bg-white ${element.border}` : ''
-                }`}
-                onClick={() => setActiveTab(element.id)}
-                key={element.id}
-              >
-                <div className="flex flex-col gap-2">
-                  <h3
-                    className={`flex items-center gap-2 ${element.color} text-xl font-semibold ${
-                      isRTL ? 'flex-row-reverse' : 'flex-row'
-                    }`}
-                  >
-                    <span className="text-2xl">{element.icon}</span>
-                    {element.title}
-                  </h3>
-                  <p className="text-[#8A8A8A] text-xl">
-                    {element.description}
-                  </p>
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setActiveTab((prev) => (prev + 1) % DATA.length);
+        setIsTransitioning(false);
+      }, 300);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying]);
+
+  const nextCard = () => {
+    setIsAutoPlaying(false);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveTab((prev) => (prev + 1) % DATA.length);
+      setIsTransitioning(false);
+    }, 300);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
+
+  const prevCard = () => {
+    setIsAutoPlaying(false);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveTab((prev) => (prev - 1 + DATA.length) % DATA.length);
+      setIsTransitioning(false);
+    }, 300);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
+
+  const goToCard = (index: number) => {
+    setIsAutoPlaying(false);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveTab(index);
+      setIsTransitioning(false);
+    }, 300);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
+
+  // Touch handlers for mobile swipe
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextCard();
+    }
+    if (isRightSwipe) {
+      prevCard();
+    }
+
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
+  const activeItem = DATA[activeTab];
+  const displayItems = [
+    DATA[(activeTab - 1 + DATA.length) % DATA.length],
+    activeItem,
+    DATA[(activeTab + 1) % DATA.length],
+  ];
+
+  return (
+    <section id="why-ngen" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-purple-50 via-pink-50 to-blue-50 relative overflow-hidden">
+      {/* Animated Journey Path Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Wavy path */}
+        <svg className="absolute w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style={{ stopColor: '#8B5CF6', stopOpacity: 0.3 }} />
+              <stop offset="50%" style={{ stopColor: '#EC4899', stopOpacity: 0.3 }} />
+              <stop offset="100%" style={{ stopColor: '#3B82F6', stopOpacity: 0.3 }} />
+            </linearGradient>
+          </defs>
+          <path
+            d="M 0,200 Q 200,100 400,200 T 800,200 T 1200,200 T 1600,200"
+            stroke="url(#pathGradient)"
+            strokeWidth="8"
+            fill="none"
+            strokeDasharray="20,10"
+            className="animate-dash"
+          />
+        </svg>
+
+        {/* Floating journey icons along the path */}
+        {journeyIcons.map((icon, index) => (
+          <div
+            key={index}
+            className="absolute text-4xl animate-float"
+            style={{
+              left: `${(index * 8.33) + 5}%`,
+              top: `${20 + Math.sin(index * 0.5) * 15}%`,
+              animationDelay: `${index * 0.3}s`,
+              animationDuration: `${3 + (index % 3)}s`,
+            }}
+          >
+            {icon}
+          </div>
+        ))}
+
+        {/* Sparkling stars */}
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={`star-${i}`}
+            className="absolute text-yellow-400 animate-twinkle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              fontSize: `${Math.random() * 20 + 10}px`,
+            }}
+          >
+            ✨
+          </div>
+        ))}
+
+        {/* Floating clouds */}
+        <div className="absolute top-10 left-10 text-6xl opacity-30 animate-float-slow">☁️</div>
+        <div className="absolute top-32 right-20 text-7xl opacity-20 animate-float-slow" style={{ animationDelay: '1s' }}>☁️</div>
+        <div className="absolute bottom-20 left-1/3 text-5xl opacity-25 animate-float-slow" style={{ animationDelay: '2s' }}>☁️</div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-5 relative z-10">
+        <div className="text-center mb-6 md:mb-8">
+          <H2 className="mb-2 text-2xl md:text-3xl lg:text-4xl inline-block animate-bounce-gentle">
+            {t('whyNgen')} 🎉
+          </H2>
+          <p className="text-gray-600 text-base md:text-lg font-medium">
+            Join the adventure! 12 amazing stops on your learning journey! 🚂
+          </p>
+        </div>
+
+        {/* Carousel Container */}
+        <div 
+          className="relative max-w-7xl mx-auto"
+          onMouseEnter={() => setIsAutoPlaying(false)}
+          onMouseLeave={() => setIsAutoPlaying(true)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+          {/* Desktop: 3-Card View */}
+          <div className="hidden lg:flex items-center justify-center gap-4 mb-8 h-[450px]">
+            {displayItems.map((item, index) => {
+              const isActive = item.id === activeTab;
+              const isPrev = index === 0;
+              const isNext = index === 2;
+              
+              return (
+                <div
+                  key={`${item.id}-${index}`}
+                  onClick={() => goToCard(item.id)}
+                  className={`
+                    relative rounded-3xl overflow-hidden cursor-pointer
+                    transition-all duration-700 ease-out
+                    ${isActive 
+                      ? 'w-[600px] h-[400px] shadow-2xl z-10' 
+                      : 'w-[160px] h-[340px] opacity-60 hover:opacity-80 scale-95 hover:scale-100'
+                    }
+                  `}
+                  style={{
+                    transform: isActive 
+                      ? 'scale(1) rotateY(0deg)' 
+                      : isPrev 
+                        ? 'translateX(20px) rotateY(15deg)' 
+                        : 'translateX(-20px) rotateY(-15deg)',
+                  }}
+                >
+                  <div className={`${item.bg} w-full h-full p-8 flex flex-col text-white relative overflow-hidden`}>
+                    {/* Animated background bubbles */}
+                    <div className="absolute inset-0 opacity-10">
+                      <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+                      <div className="absolute bottom-0 right-0 w-40 h-40 bg-white rounded-full translate-x-1/2 translate-y-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                      <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                    </div>
+                    
+                    {isActive ? (
+                      <div className={isTransitioning ? 'animate-popOut' : 'animate-popIn'}>
+                        {/* Active Card - Full Details */}
+                        <div className="flex items-center gap-4 mb-4 relative z-10">
+                          <span className="text-7xl animate-bounce-gentle">{item.icon}</span>
+                          <h3 className="text-3xl font-bold">{item.title}</h3>
+                        </div>
+                        <p className="text-xl mb-6 flex-1 relative z-10 leading-relaxed">
+                          {item.description}
+                        </p>
+                        <div className="relative h-52 mt-auto z-10">
+                          <Image
+                            src={item.imageUrl}
+                            alt={item.title}
+                            fill
+                            className={`object-contain drop-shadow-2xl ${isRTL ? '' : 'scale-x-[-1]'}`}
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        {/* Side Cards - Icon Only */}
+                        <div className="flex flex-col items-center justify-center h-full gap-4 relative z-10">
+                          <span className="text-6xl transform transition-all duration-300 hover:scale-125 hover:rotate-12">
+                            {item.icon}
+                          </span>
+                          <p className="text-sm font-bold text-center px-2">
+                            {item.title}
+                          </p>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                  
+                  {/* Magical shine effect */}
+                  {isActive && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent pointer-events-none animate-shine" />
+                  )}
                 </div>
+              );
+            })}
+          </div>
+
+          {/* Mobile & Tablet: Single Card View */}
+          <div className="lg:hidden mb-8">
+            <div className="relative h-[400px] sm:h-[450px] md:h-[500px]">
+              <div
+                className={`${activeItem.bg} w-full h-full rounded-3xl p-6 sm:p-8 flex flex-col text-white relative overflow-hidden shadow-2xl ${isTransitioning ? 'animate-popOut' : 'animate-popIn'}`}
+              >
+                {/* Animated background bubbles */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+                  <div className="absolute bottom-0 right-0 w-40 h-40 bg-white rounded-full translate-x-1/2 translate-y-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                </div>
+
+                {/* Content */}
+                <div className="flex items-center gap-3 sm:gap-4 mb-4 relative z-10">
+                  <span className="text-5xl sm:text-6xl md:text-7xl animate-bounce-gentle">{activeItem.icon}</span>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">{activeItem.title}</h3>
+                </div>
+                <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 flex-1 relative z-10 leading-relaxed">
+                  {activeItem.description}
+                </p>
+                <div className="relative h-36 sm:h-44 md:h-52 mt-auto z-10">
+                  <Image
+                    src={activeItem.imageUrl}
+                    alt={activeItem.title}
+                    fill
+                    className={`object-contain drop-shadow-2xl ${isRTL ? '' : 'scale-x-[-1]'}`}
+                  />
+                </div>
+
+                {/* Magical shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent pointer-events-none animate-shine" />
               </div>
+            </div>
+          </div>
+
+          {/* Colorful Navigation Arrows */}
+          <button
+            onClick={prevCard}
+            className="absolute left-0 lg:left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-6 z-20 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full p-2 sm:p-3 shadow-lg hover:shadow-2xl transition-all hover:scale-110 animate-pulse-slow"
+            aria-label="Previous"
+          >
+            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            onClick={nextCard}
+            className="absolute right-0 lg:right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-6 z-20 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full p-2 sm:p-3 shadow-lg hover:shadow-2xl transition-all hover:scale-110 animate-pulse-slow"
+            aria-label="Next"
+          >
+            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          {/* Colorful Navigation Dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {DATA.map((item, idx) => (
+              <button
+                key={item.id}
+                onClick={() => goToCard(item.id)}
+                className={`
+                  transition-all duration-500 rounded-full
+                  ${activeTab === item.id 
+                    ? `w-8 sm:w-10 h-3 ${item.bg} shadow-lg animate-bounce-gentle` 
+                    : 'w-3 h-3 bg-gray-300 hover:bg-gray-400 hover:scale-125'
+                  }
+                `}
+                aria-label={`Go to ${item.title}`}
+              />
             ))}
           </div>
-          <div className="lg:basis-1/2 self-center lg:flex justify-center">
-            {activeImage && (
-              <Image
-                src={activeImage.imageUrl}
-                alt={activeImage.title}
-                width={580}
-                height={530}
-                className={isRTL ? '' : 'scale-x-[-1]'}
-              />
-            )}
+
+          {/* Progress with emoji */}
+          <div className="text-center mt-4 font-bold text-lg">
+            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+              Stop {activeTab + 1} of {DATA.length} 
+            </span>
+            {isAutoPlaying && <span className="ml-2 text-sm text-purple-500 animate-pulse">🚂 Riding along...</span>}
           </div>
         </div>
       </div>
+
+      {/* Animations */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-25px) rotate(5deg); }
+        }
+        
+        @keyframes float-slow {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-30px); }
+        }
+        
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.5); }
+        }
+        
+        @keyframes bounce-gentle {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-8px); }
+        }
+        
+        @keyframes popIn {
+          0% { transform: scale(0.8) rotateY(180deg); opacity: 0; }
+          60% { transform: scale(1.1) rotateY(-20deg); }
+          100% { transform: scale(1) rotateY(0deg); opacity: 1; }
+        }
+        
+        @keyframes popOut {
+          0% { transform: scale(1) rotateY(0deg); opacity: 1; }
+          100% { transform: scale(0.8) rotateY(-180deg); opacity: 0; }
+        }
+        
+        @keyframes shine {
+          0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+          100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        @keyframes dash {
+          to { stroke-dashoffset: -100; }
+        }
+        
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.8; transform: scale(0.95); }
+        }
+        
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-float-slow {
+          animation: float-slow 6s ease-in-out infinite;
+        }
+        
+        .animate-twinkle {
+          animation: twinkle 2s ease-in-out infinite;
+        }
+        
+        .animate-bounce-gentle {
+          animation: bounce-gentle 2s ease-in-out infinite;
+        }
+        
+        .animate-popIn {
+          animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+        }
+        
+        .animate-popOut {
+          animation: popOut 0.3s ease-in forwards;
+        }
+        
+        .animate-shine {
+          animation: shine 2s ease-in-out infinite;
+        }
+        
+        .animate-dash {
+          animation: dash 3s linear infinite;
+        }
+        
+        .animate-pulse-slow {
+          animation: pulse-slow 3s ease-in-out infinite;
+        }
+      `}</style>
     </section>
   );
 }
