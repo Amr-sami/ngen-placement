@@ -13,7 +13,7 @@ const TracksPage = () => {
         <TracksSection title="Available Tracks" />
         {/* <TracksSection title="Upcoming Tracks" /> */}
       </PageWrapper>
-      <CallToAction cta={t('cta')} slogan={t('slogan')} />
+      <CallToAction cta={t('cta')} />
     </>
   );
 };

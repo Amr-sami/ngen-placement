@@ -9,7 +9,7 @@ function HomepageBannerSection() {
   
   return (
     <section className=" text-white">
-      <CallToAction cta={t('cta')} slogan={t('slogan')} />
+      <CallToAction cta={t('cta')} />
     </section>
   );
 }

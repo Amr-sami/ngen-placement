@@ -131,7 +131,7 @@ async function AboutPage() {
           <ContactUs />
         </div> */}
       </main>
-      <CallToAction cta={heroT('cta')} slogan={heroT('slogan')} />
+      <CallToAction cta={heroT('cta')} />
     </>
   );
 }

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   HowItWorksSection,
   Features,
@@ -10,6 +12,7 @@ import {
   TracksSection,
 } from '@/components/general';
 import { H2 } from '@/components/general/Heading';
+import { useTranslations } from 'next-intl';
 
 const howItWorksData = [
   {
@@ -73,6 +76,8 @@ export const metadata = {
 
 
 const NgenForParents = () => {
+  const t = useTranslations('home.hero');
+  
   return (
     <>
       <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">
@@ -86,7 +91,7 @@ const NgenForParents = () => {
 
         <ContactUs /> {/* TODO: adjust labels for Parents audience */}
       </PageWrapper>
-      <CallToAction cta="Get Started" />
+      <CallToAction cta={t('cta')} />
     </>
   );
 };
