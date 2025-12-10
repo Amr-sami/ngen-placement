@@ -115,6 +115,47 @@ export const getBlogRoute = (locale: Locale): string => {
 };
 
 // ============================================
+// AUTH ROUTES (Locale-Aware)
+// ============================================
+
+/**
+ * Login page route
+ */
+export const getLoginRoute = (locale: Locale): string => {
+  return `/${locale}/auth/login`;
+};
+
+/**
+ * Signup page route
+ */
+export const getSignupRoute = (locale: Locale): string => {
+  return `/${locale}/auth/signup`;
+};
+
+/**
+ * Forget password page route
+ */
+export const getForgetPasswordRoute = (locale: Locale): string => {
+  return `/${locale}/auth/forget-password`;
+};
+
+/**
+ * Verify email page route
+ */
+export const getVerifyEmailRoute = (locale: Locale, email?: string): string => {
+  const base = `/${locale}/auth/verify-email`;
+  return email ? `${base}?email=${encodeURIComponent(email)}` : base;
+};
+
+/**
+ * OTP verification page route
+ */
+export const getOTPRoute = (locale: Locale, email?: string): string => {
+  const base = `/${locale}/auth/otp`;
+  return email ? `${base}?email=${encodeURIComponent(email)}` : base;
+};
+
+// ============================================
 // FUTURE HOME SECTION ANCHORS
 // ============================================
 

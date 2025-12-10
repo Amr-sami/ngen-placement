@@ -32,6 +32,7 @@ import {
   getNgenForParentsRoute,
   getNgenForSchoolsRoute,
   getNgenForCorporatesRoute,
+  getLoginRoute,
   type HomeSectionHash,
 } from '@/util/routes';
 import { usePathname, useParams } from 'next/navigation';
@@ -124,16 +125,16 @@ function Navbar() {
       }`}
       dir={locale === 'ar' ? 'rtl' : 'ltr'}
     >
-      <div className="container mx-auto px-5 flex h-20 items-center justify-between gap-4">
+      <div className="container mx-auto px-5 flex h-20 items-center justify-between gap-2">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center flex-shrink-0">
           <Link href={getHomeRoute(locale)}>
-            <Logo width={160} height={35} />
+            <Logo width={140} height={32} />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <NavigationMenu className="hidden lg:flex">
+        <NavigationMenu className="hidden xl:flex">
           <NavigationMenuList>
             {displayItems.map((item) => {
               // Handle dropdown (NGen For)
@@ -187,13 +188,18 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Language Switcher & Contact (Desktop) */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* Language Switcher, Login & Contact (Desktop) */}
+        <div className="hidden xl:flex items-center gap-3 flex-shrink-0">
           <LanguageSwitcher />
+          <Button
+            href={getLoginRoute(locale)}
+            variant="primary"
+          >
+            {t('login')}
+          </Button>
           <Button
             href={getContactRoute(locale)}
             variant="primary"
-            classNames="bg-[#627CEE] hover:text-[#627CEE]"
           >
             {t('contact')}
           </Button>
@@ -202,7 +208,7 @@ function Navbar() {
         {/* Mobile Menu */}
         <Sheet>
           <SheetTrigger asChild>
-            <button className="lg:hidden">
+            <button className="xl:hidden">
               <Menu className="h-5 w-5" />
               <span className="sr-only">Toggle menu</span>
             </button>
@@ -280,6 +286,11 @@ function Navbar() {
               <div className="pt-4 border-t">
                 <LanguageSwitcher />
               </div>
+
+              {/* Login Button */}
+              <Button href={getLoginRoute(locale)} variant="primary" takeFullWidth>
+                {t('login')}
+              </Button>
 
               {/* Contact Button */}
               <Button href={getContactRoute(locale)} variant="primary" takeFullWidth>
