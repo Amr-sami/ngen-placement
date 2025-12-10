@@ -75,7 +75,7 @@ const NgenForSchools = () => {
       <HowItWorksSection data={howItWorksData} />
       <Features features={features} imgSrc="/features-for-corporate.svg" title="Schools"/>
       {/* <TracksOverviewSection data={overviewData} /> */}
-      <TracksSection title="Our tracks" />
+      {/* <TracksSection title="Our tracks" /> */}
       {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
       <ContactUs /> {/* TODO: adjust labels for Schools audience */}

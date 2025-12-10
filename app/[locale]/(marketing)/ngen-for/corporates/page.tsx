@@ -75,7 +75,7 @@ const NgenForCorporates = () => {
       <HowItWorksSection data={howItWorksData} />
       <Features features={features} imgSrc="/features-for-corporate.svg" title="Corporates"/>
       {/* <TracksOverviewSection data={overviewData} /> */}
-      <TracksSection title="Our tracks" />
+      {/* <TracksSection title="Our tracks" /> */}
       {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
       <ContactUs /> {/* TODO: adjust labels for Corporates audience */}

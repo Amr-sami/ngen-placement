@@ -1,5 +1,3 @@
-'use client';
-
 import {
   HowItWorksSection,
   Features,
@@ -12,7 +10,7 @@ import {
   TracksSection,
 } from '@/components/general';
 import { H2 } from '@/components/general/Heading';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 const howItWorksData = [
   {
@@ -57,17 +55,6 @@ const features = [
   'Internship program',
 ];
 
-// const overviewData = [
-//   {
-//     text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.",
-//     imgSrc: "/tracks-overview.svg",
-//   },
-//   {
-//     text: "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools ",
-//     imgSrc: "/certificate.svg",
-//   },
-// ];
-
 export const metadata = {
   title: "For Parents | NGen School Support & Progress Tools",
   description: "At NGen, we support parents with detailed progress reports and free workshops. Stay involved and help your child succeed in coding, AI, and other digital skills.",
@@ -75,8 +62,8 @@ export const metadata = {
 };
 
 
-const NgenForParents = () => {
-  const t = useTranslations('home.hero');
+const NgenForParents = async () => {
+  const t = await getTranslations('home.hero');
   
   return (
     <>
@@ -86,7 +73,7 @@ const NgenForParents = () => {
         <HowItWorksSection data={howItWorksData} />
         <Features features={features} imgSrc="/features-for-corporate.svg" title="Parents" />
         {/* <TracksOverviewSection data={overviewData} /> */}
-        <TracksSection title="Our tracks" />
+        {/* <TracksSection title="Our tracks" /> */}
         {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
 
         <ContactUs /> {/* TODO: adjust labels for Parents audience */}
