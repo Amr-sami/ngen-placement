@@ -293,10 +293,24 @@
     }
   },
   "auth": {
+    "common": {
+      "goHome": "Go to home page",
+      "leaveConfirm": {
+        "title": "Return to Home?",
+        "message": "Are you sure you want to return to the home page? Your progress will be lost.",
+        "confirm": "Yes, Return Home",
+        "cancel": "Stay Here"
+      }
+    },
     "login": {
       "title": "Login",
-      "taglineLine1": "Future Innovators, Today's Ninjas!",
-      "taglineLine2": "Welcome back to NGen Schools.",
+      "tagline": {
+        "future": "Future",
+        "innovators": "Innovators",
+        "todays": "Today's",
+        "ninjas": "Ninjas!"
+      },
+      "welcomeBack": "Welcome back to NGen Schools.",
       "email": "Email",
       "password": "Password",
       "rememberMe": "Remember Me",
@@ -306,6 +320,7 @@
       "or": "OR",
       "terms": "Terms And Conditions",
       "privacy": "Privacy Policy",
+      "loggingIn": "Logging in...",
       "with": {
         "google": "Continue with Google",
         "apple": "Continue with Apple",
@@ -314,8 +329,13 @@
     },
     "signup": {
       "title": "Create Account",
-      "taglineLine1": "Future Innovators, Today's Ninjas!",
-      "taglineLine2": "Join NGen Schools and start your journey.",
+      "tagline": {
+        "future": "Future",
+        "innovators": "Innovators",
+        "todays": "Today's",
+        "ninjas": "Ninjas!"
+      },
+      "joinUs": "Join NGen Schools and start your journey.",
       "firstName": "First Name",
       "lastName": "Last Name",
       "password": "Password",
@@ -329,6 +349,7 @@
       "terms": "Terms And Conditions",
       "privacy": "Privacy Policy",
       "passwordMismatch": "Passwords do not match",
+      "creatingAccount": "Creating account...",
       "with": {
         "google": "Continue with Google",
         "apple": "Continue with Apple",

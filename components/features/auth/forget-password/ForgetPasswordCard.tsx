@@ -1,8 +1,9 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { ForgetPasswordForm } from './ForgetPasswordForm';
+import { AuthLogo } from '../shared/AuthLogo';
+import { useRTL } from '@/lib/useRTL';
 
 interface ForgetPasswordCardProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -10,6 +11,7 @@ interface ForgetPasswordCardProps {
 
 export function ForgetPasswordCard({ action }: ForgetPasswordCardProps) {
   const t = useTranslations('auth.forgetPassword');
+  const isRTL = useRTL();
 
   return (
     <div 
@@ -19,16 +21,11 @@ export function ForgetPasswordCard({ action }: ForgetPasswordCardProps) {
         maxWidth: '100%',
         gap: '40px',
       }}
+      dir={isRTL ? 'rtl' : 'ltr'}
     >
       {/* Logo */}
       <div>
-        <Image
-          src="/assets/images/logos/ngen-logo.svg"
-          alt="NGen Schools"
-          width={225}
-          height={62}
-          priority
-        />
+        <AuthLogo />
       </div>
 
       {/* Main Container Rectangle */}
@@ -44,38 +41,14 @@ export function ForgetPasswordCard({ action }: ForgetPasswordCardProps) {
         }}
       >
         {/* Forget Password Frame - Vertical Flow */}
-        <div 
-          className="flex flex-col items-center"
-          style={{
-            maxWidth: '100%',
-            gap: '11.47px',
-          }}
-        >
+        <div className="flex flex-col items-center text-center gap-4 max-w-[523px]">
           {/* Main Heading - Forget Password? */}
-          <h1 
-            className="text-gray-900"
-            style={{
-              fontWeight: 700,
-              fontSize: '36px',
-              lineHeight: '1.2',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <h1 className="text-purple-dark font-bold text-3xl md:text-4xl">
             {t('title')}
           </h1>
 
           {/* Description Text */}
-          <p
-            className="text-gray-600"
-            style={{
-              fontWeight: 500,
-              fontSize: '20px',
-              lineHeight: '32px',
-              textAlign: 'center',
-              maxWidth: '523px',
-            }}
-          >
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             {t('description')}
           </p>
         </div>

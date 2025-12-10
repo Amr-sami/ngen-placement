@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 import Link from 'next/link';
 import { LoginForm } from './LoginForm';
+import { AuthLogo } from '../shared/AuthLogo';
+import { localeDirections } from '@/i18n';
 
 interface LoginCardProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -10,18 +11,13 @@ interface LoginCardProps {
 
 export async function LoginCard({ action, locale }: LoginCardProps) {
   const t = await getTranslations('auth.login');
+  const isRTL = localeDirections[locale as keyof typeof localeDirections] === 'rtl';
 
   return (
-    <>
+    <div dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Logo - Outside container */}
       <div className="flex justify-center mb-12">
-        <Image
-          src="/assets/images/logos/ngen-logo.svg"
-          alt="NGen Schools"
-          width={225}
-          height={62}
-          priority
-        />
+        <AuthLogo />
       </div>
 
       {/* Main Container */}
@@ -31,32 +27,16 @@ export async function LoginCard({ action, locale }: LoginCardProps) {
       >
         {/* Header */}
         <div className="text-center mb-10 flex flex-col items-center">
-          <h1 
-            className="text-gray-900 mb-6"
-            style={{
-              fontWeight: 700,
-              fontSize: '36px',
-              lineHeight: '1.2',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <h1 className="text-purple-dark font-bold text-3xl md:text-4xl mb-6">
             {t('title')}
           </h1>
-          <div
-            style={{
-              fontWeight: 500,
-              fontSize: '20px',
-              lineHeight: '32px',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
-            <p className="text-gray-600">
-              {t('taglineLine1')}
+          <div className="text-center space-y-1">
+            <p className="font-protestRiot text-lg md:text-xl lg:text-2xl text-purple-dark">
+              {t('tagline.future')} <span className="text-pumpkin">{t('tagline.innovators')}</span>,{' '}
+              {t('tagline.todays')} <span className="text-rose">{t('tagline.ninjas')}</span>
             </p>
-            <p className="text-gray-600">
-              {t('taglineLine2')}
+            <p className="text-gray-600 text-base md:text-lg">
+              {t('welcomeBack')}
             </p>
           </div>
         </div>
@@ -70,19 +50,19 @@ export async function LoginCard({ action, locale }: LoginCardProps) {
         <div className="mt-12 text-center space-y-3">
           <Link
             href={`/${locale}/policies`}
-            className="block text-base text-gray-900 underline transition-all focus-visible:ring-2 focus-visible:ring-blueberry/60 focus-visible:ring-offset-1 rounded outline-none"
+            className="block text-base text-gray-600 hover:text-pumpkin underline transition-all focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none"
           >
             {t('terms')}
           </Link>
           <Link
             href={`/${locale}/policies`}
-            className="block text-base text-gray-900 underline transition-all focus-visible:ring-2 focus-visible:ring-blueberry/60 focus-visible:ring-offset-1 rounded outline-none"
+            className="block text-base text-gray-600 hover:text-pumpkin underline transition-all focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none"
           >
             {t('privacy')}
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

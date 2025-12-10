@@ -1,8 +1,9 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { OTPForm } from './OTPForm';
+import { AuthLogo } from '../shared/AuthLogo';
+import { useRTL } from '@/lib/useRTL';
 
 interface OTPCardProps {
   verifyAction: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -12,6 +13,7 @@ interface OTPCardProps {
 
 export function OTPCard({ verifyAction, resendAction, email }: OTPCardProps) {
   const t = useTranslations('auth.otp');
+  const isRTL = useRTL();
 
   return (
     <div 
@@ -21,16 +23,11 @@ export function OTPCard({ verifyAction, resendAction, email }: OTPCardProps) {
         maxWidth: '100%',
         gap: '40px',
       }}
+      dir={isRTL ? 'rtl' : 'ltr'}
     >
       {/* Logo */}
       <div>
-        <Image
-          src="/assets/images/logos/ngen-logo.svg"
-          alt="NGen Schools"
-          width={225}
-          height={62}
-          priority
-        />
+        <AuthLogo />
       </div>
 
       {/* Main Container Rectangle */}
@@ -46,39 +43,14 @@ export function OTPCard({ verifyAction, resendAction, email }: OTPCardProps) {
         }}
       >
         {/* Content Container */}
-        <div 
-          className="flex flex-col items-center"
-          style={{
-            width: '607px',
-            maxWidth: '100%',
-            gap: '24px',
-          }}
-        >
+        <div className="flex flex-col items-center text-center gap-6 w-full max-w-[607px]">
           {/* Main Heading - Please check your Email ! */}
-          <h1 
-            className="text-gray-900"
-            style={{
-              fontWeight: 700,
-              fontSize: '36px',
-              lineHeight: '1.2',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <h1 className="text-purple-dark font-bold text-3xl md:text-4xl">
             {t('title')}
           </h1>
 
           {/* Description Text with Email */}
-          <p
-            className="text-gray-600"
-            style={{
-              fontWeight: 500,
-              fontSize: '20px',
-              lineHeight: '32px',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             {t('description', { email })}
           </p>
 
@@ -93,4 +65,3 @@ export function OTPCard({ verifyAction, resendAction, email }: OTPCardProps) {
     </div>
   );
 }
-

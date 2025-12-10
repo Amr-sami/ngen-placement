@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
+import { useRTL } from '@/lib/useRTL';
 
 interface ForgetPasswordFormProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -11,6 +12,7 @@ interface ForgetPasswordFormProps {
 export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
   const t = useTranslations('auth.forgetPassword');
   const router = useRouter();
+  const isRTL = useRTL();
   const [isPending, startTransition] = useTransition();
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -40,7 +42,7 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center" style={{ gap: '21px' }}>
+    <form onSubmit={handleSubmit} className="flex flex-col items-center" style={{ gap: '21px' }} dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Email Input */}
       <div style={{ width: '528px', maxWidth: '100%' }}>
         <label htmlFor="email" className="sr-only">
@@ -58,7 +60,7 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
           dir="ltr"
           autoComplete="email"
           aria-invalid={false}
-          className="w-full h-[66px] px-5 rounded-[12px] bg-gray-100 text-gray-900 outline-none transition-shadow focus:ring-2 focus:ring-pumpkin/60 placeholder:text-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
+          className={`w-full h-[66px] px-5 rounded-[12px] bg-gray-100 border border-gray-200 text-gray-900 outline-none transition-shadow focus:ring-2 focus:ring-pumpkin/60 placeholder:text-gray-500 disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
         />
       </div>
 

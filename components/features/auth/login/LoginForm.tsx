@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useState, ChangeEvent, useTransition } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRTL } from '@/lib/useRTL';
 
 interface LoginFormProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -12,7 +13,7 @@ interface LoginFormProps {
 
 export function LoginForm({ action, locale }: LoginFormProps) {
   const t = useTranslations('auth.login');
-  const isRTL = locale === 'ar';
+  const isRTL = useRTL();
   
   // Controlled inputs for UI state
   const [email, setEmail] = useState('');
@@ -62,7 +63,7 @@ export function LoginForm({ action, locale }: LoginFormProps) {
           onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
           placeholder={t('email')}
           disabled={isPending}
-          className={`w-full h-[67px] px-4 rounded-[12px] bg-white/80 border border-purple-light placeholder:text-purple-dark/50 text-purple-dark outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
+          className={`w-full h-[67px] px-4 rounded-[12px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
         />
       </div>
 
@@ -82,7 +83,7 @@ export function LoginForm({ action, locale }: LoginFormProps) {
           onChange={(e: ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
           placeholder={t('password')}
           disabled={isPending}
-          className={`w-full h-[67px] px-4 ${isRTL ? 'pl-12' : 'pr-12'} rounded-[12px] bg-white/80 border border-purple-light placeholder:text-purple-dark/50 text-purple-dark outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
+          className={`w-full h-[67px] px-4 ${isRTL ? 'pl-12' : 'pr-12'} rounded-[12px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
         />
         <button
           type="button"
@@ -117,15 +118,15 @@ export function LoginForm({ action, locale }: LoginFormProps) {
             checked={rememberMe}
             onChange={(e: ChangeEvent<HTMLInputElement>) => setRememberMe(e.target.checked)}
             disabled={isPending}
-            className="w-4 h-4 rounded border-purple-light text-pumpkin focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed accent-pumpkin"
+            className="w-4 h-4 rounded border-gray-300 text-pumpkin focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed accent-pumpkin"
           />
-          <span className="text-purple-dark/80 select-none">
+          <span className="text-gray-600 select-none">
             {t('rememberMe')}
           </span>
         </label>
         <Link
           href={`/${locale}/auth/forget-password`}
-          className="text-purple-dark/80 hover:text-pumpkin transition-colors focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none"
+          className="text-gray-600 hover:text-pumpkin transition-colors focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none"
         >
           {t('forgotPassword')}
         </Link>
@@ -141,8 +142,8 @@ export function LoginForm({ action, locale }: LoginFormProps) {
           {isPending ? '...' : t('login')}
         </button>
         {isPending && (
-          <span role="status" className="text-xs text-purple-dark/60">
-            {isRTL ? 'جاري تسجيل الدخول...' : 'Logging in...'}
+          <span role="status" className="text-xs text-gray-600">
+            {t('loggingIn')}
           </span>
         )}
       </div>
@@ -159,11 +160,11 @@ export function LoginForm({ action, locale }: LoginFormProps) {
 
       {/* Divider */}
       <div className="relative flex items-center py-5">
-        <div className="flex-1 border-t border-purple-light"></div>
-        <span className="px-3 text-xs sm:text-sm text-purple-dark/60">
+        <div className="flex-1 border-t border-gray-300"></div>
+        <span className="px-3 text-xs sm:text-sm text-gray-600">
           {t('or')}
         </span>
-        <div className="flex-1 border-t border-purple-light"></div>
+        <div className="flex-1 border-t border-gray-300"></div>
       </div>
 
       {/* Social Login */}

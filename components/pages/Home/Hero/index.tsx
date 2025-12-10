@@ -5,17 +5,16 @@ import Logo from '../../../general/Logo';
 import Image from 'next/image';
 import ninjaSpaceGuy from '@/public/assets/images/space-ninja-guy.svg';
 import ContactModal from '../../../general/ContactModal';
-import { useRTL } from '@/lib/useRTL';
 import { useTranslations } from 'next-intl';
 
 function HomepageHero() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  const isRTL = useRTL();
   const t = useTranslations('home.hero');
   
   return (
     <header className="bg-[url('/assets/images/hero-bg.svg')] h-[60dvh] md:h-[calc(110dvh-81px)] bg-no-repeat bg-cover bg-bottom text-white">
-      <div className="container mx-auto px-5 flex h-full items-center justify-between">
+      {/* Keep layout always LTR - only translate text */}
+      <div className="container mx-auto px-5 flex h-full items-center justify-between" dir="ltr">
         <div className="flex flex-col items-center w-full lg:max-w-2xl gap-4 md:gap-8 lg:gap-16 px-2">
           <div>
             <Logo
@@ -23,10 +22,8 @@ function HomepageHero() {
               height={120}
               classNames="md:mt-32 hidden md:block"
             />
-            <p className={`text-3xl sm:text-4xl font-semibold uppercase text-center ${
-              isRTL ? 'md:mr-40' : 'md:ml-40'
-            }`}>
-              schools
+            <p className="text-3xl sm:text-4xl font-semibold uppercase text-center md:ml-40">
+              Schools
             </p>
           </div>
           <div className="flex flex-col gap-4 md:gap-5 text-center lg:text-start">
@@ -34,10 +31,6 @@ function HomepageHero() {
               {t('tagline.future')} <span className="text-pumpkin">{t('tagline.innovators')}</span>,{' '}
               {t('tagline.todays')} <span className="text-rose">{t('tagline.ninjas')}</span>
             </h1>
-            {/* <p className="text-sm md:text-base lg:text-2xl">
-              Dive into Graphics, Data Science, and More with Courses Tailored
-              for Future Innovators!
-            </p> */}
             <div onClick={() => setIsContactModalOpen(true)}>
               <button
                 className="px-4 py-2 rounded-lg transition-colors duration-300 ease-linear bg-pumpkin text-white font-bold hover:bg-white hover:text-pumpkin"
@@ -54,11 +47,7 @@ function HomepageHero() {
             alt={t('ninjaAlt')}
             className="animate-bounce-slow"
           />
-          <div className={`hidden md:flex flex-col gap-6 absolute -bottom-32 ${
-            isRTL 
-              ? 'lg:-left-14 left-0' 
-              : 'lg:-right-14 right-0'
-          }`}>
+          <div className="hidden md:flex flex-col gap-6 absolute -bottom-32 lg:-right-14 right-0">
             <a href="https://www.facebook.com/ngenschools" target="_blank">
               <Image
                 src="/fb.png"

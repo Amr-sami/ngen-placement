@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 import Link from 'next/link';
 import { SignupForm } from './SignupForm';
+import { AuthLogo } from '../shared/AuthLogo';
+import { localeDirections } from '@/i18n';
 
 interface SignupCardProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -10,18 +11,13 @@ interface SignupCardProps {
 
 export async function SignupCard({ action, locale }: SignupCardProps) {
   const t = await getTranslations('auth.signup');
+  const isRTL = localeDirections[locale as keyof typeof localeDirections] === 'rtl';
 
   return (
-    <>
+    <div dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Logo - Outside container */}
       <div className="flex justify-center mb-12">
-        <Image
-          src="/assets/images/logos/ngen-logo.svg"
-          alt="NGen Schools"
-          width={225}
-          height={62}
-          priority
-        />
+        <AuthLogo />
       </div>
 
       {/* Main Container */}
@@ -31,32 +27,16 @@ export async function SignupCard({ action, locale }: SignupCardProps) {
       >
         {/* Header */}
         <div className="text-center mb-10 flex flex-col items-center">
-          <h1 
-            className="text-gray-900 mb-6"
-            style={{
-              fontWeight: 700,
-              fontSize: '36px',
-              lineHeight: '1.2',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <h1 className="text-purple-dark font-bold text-3xl md:text-4xl mb-6">
             {t('title')}
           </h1>
-          <div
-            style={{
-              fontWeight: 500,
-              fontSize: '20px',
-              lineHeight: '32px',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
-            <p className="text-gray-600">
-              {t('taglineLine1')}
+          <div className="text-center space-y-1">
+            <p className="font-protestRiot text-lg md:text-xl lg:text-2xl text-purple-dark">
+              {t('tagline.future')} <span className="text-pumpkin">{t('tagline.innovators')}</span>,{' '}
+              {t('tagline.todays')} <span className="text-rose">{t('tagline.ninjas')}</span>
             </p>
-            <p className="text-gray-600">
-              {t('taglineLine2')}
+            <p className="text-gray-600 text-base md:text-lg">
+              {t('joinUs')}
             </p>
           </div>
         </div>
@@ -82,7 +62,7 @@ export async function SignupCard({ action, locale }: SignupCardProps) {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

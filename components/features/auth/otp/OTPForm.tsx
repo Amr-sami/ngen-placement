@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useRef, useEffect, useTransition } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import { useRTL } from '@/lib/useRTL';
 
 interface OTPFormProps {
   verifyAction: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -15,31 +16,13 @@ export function OTPForm({ verifyAction, resendAction, email }: OTPFormProps) {
   const router = useRouter();
   const params = useParams();
   const locale = params?.locale as string || 'en';
+  const isRTL = useRTL();
   const [isPending, startTransition] = useTransition();
   const [isResending, startResendTransition] = useTransition();
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
   const [isVerified, setIsVerified] = useState(false);
   const [countdown, setCountdown] = useState(200);
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
-
-  // Add CSS for placeholder styling
-  useEffect(() => {
-    const style = document.createElement('style');
-    style.textContent = `
-      .otp-input::placeholder {
-        font-family: 'Roboto', Arial, sans-serif;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 26px;
-        color: rgba(204, 207, 211, 0.5);
-        opacity: 1;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
 
   // Countdown timer
   useEffect(() => {
@@ -144,16 +127,11 @@ export function OTPForm({ verifyAction, resendAction, email }: OTPFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center" style={{ gap: '24px', marginTop: '16px' }}>
-      {/* OTP Input Group */}
+    <form onSubmit={handleSubmit} className="flex flex-col items-center gap-6 mt-4" dir={isRTL ? 'rtl' : 'ltr'}>
+      {/* OTP Input Group - Always LTR for number input */}
       <div 
-        className="flex items-center justify-center"
-        style={{
-          width: '460px',
-          maxWidth: '100%',
-          height: '60px',
-          gap: '20px',
-        }}
+        className="flex items-center justify-center gap-3 sm:gap-5 w-full max-w-[460px]"
+        dir="ltr"
       >
         {otp.map((digit, index) => (
           <input
@@ -164,35 +142,11 @@ export function OTPForm({ verifyAction, resendAction, email }: OTPFormProps) {
             maxLength={1}
             value={digit}
             placeholder="-"
-            className="otp-input"
             onChange={(e) => handleChange(index, e.target.value)}
             onKeyDown={(e) => handleKeyDown(index, e)}
             onPaste={index === 0 ? handlePaste : undefined}
             disabled={isPending || isVerified}
-            style={{
-              width: '60px',
-              height: '60px',
-              borderRadius: '13px',
-              border: '1px solid rgba(204, 207, 211, 0.5)',
-              backgroundColor: 'rgba(204, 207, 211, 0.5)',
-              fontFamily: 'Roboto, Arial, sans-serif',
-              fontWeight: 700,
-              fontSize: '40px',
-              lineHeight: '26px',
-              textAlign: 'center',
-              color: '#0C1128',
-              outline: 'none',
-              caretColor: '#ff7723',
-              transition: 'border-color 0.2s, box-shadow 0.2s',
-            }}
-            onFocus={(e) => {
-              e.currentTarget.style.border = '1px solid #ff7723';
-              e.currentTarget.style.boxShadow = '0 0 0 2px rgba(255, 119, 35, 0.2)';
-            }}
-            onBlur={(e) => {
-              e.currentTarget.style.border = '1px solid rgba(204, 207, 211, 0.5)';
-              e.currentTarget.style.boxShadow = 'none';
-            }}
+            className="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-xl bg-gray-100 border border-gray-200 text-purple-dark font-bold text-2xl sm:text-4xl text-center outline-none transition-all focus:border-pumpkin focus:ring-2 focus:ring-pumpkin/20 placeholder:text-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
           />
         ))}
       </div>
@@ -201,45 +155,25 @@ export function OTPForm({ verifyAction, resendAction, email }: OTPFormProps) {
       <button
         type="submit"
         disabled={isPending || isVerified || otp.join('').length !== 6}
-        className="bg-pumpkin hover:bg-pumpkin/90 text-white font-bold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-        style={{
-          width: '463px',
-          maxWidth: '100%',
-          height: '55px',
-          padding: '16px 32px',
-          borderRadius: '16px',
-          fontSize: '16px',
-          border: 'none',
-          cursor: isPending || isVerified || otp.join('').length !== 6 ? 'not-allowed' : 'pointer',
-        }}
+        className="w-full max-w-[463px] h-[55px] rounded-2xl bg-pumpkin hover:bg-pumpkin/90 text-white font-bold text-base transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isPending ? '...' : isVerified ? t('verified') : t('verifyButton')}
       </button>
 
       {/* Resend Code Text */}
-      <div
-        style={{
-          width: '607px',
-          maxWidth: '100%',
-          height: '26px',
-          fontSize: '20px',
-          lineHeight: '26px',
-          textAlign: 'center',
-          textTransform: 'capitalize',
-        }}
-      >
-        <span style={{ fontWeight: 400, color: '#0C1128' }}>
+      <div className="w-full max-w-[607px] text-center text-base md:text-lg">
+        <span className="text-gray-600">
           {t('noCode')}
         </span>
         {' '}
         <span 
           onClick={handleResend}
-          style={{ 
-            fontWeight: 400, 
-            color: countdown > 0 ? '#9CA3AF' : '#ff7723',
-            cursor: countdown > 0 || isResending ? 'not-allowed' : 'pointer',
-            textDecoration: countdown === 0 && !isResending ? 'underline' : 'none',
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && countdown === 0) handleResend();
           }}
+          role="button"
+          tabIndex={countdown > 0 ? -1 : 0}
+          className={`${countdown > 0 ? 'text-gray-400 cursor-not-allowed' : 'text-pumpkin cursor-pointer hover:underline'} transition-colors`}
         >
           {isResending ? t('resending') : t('resendCode', { seconds: countdown })}
         </span>
@@ -247,17 +181,16 @@ export function OTPForm({ verifyAction, resendAction, email }: OTPFormProps) {
 
       {/* Status Messages */}
       {isPending && (
-        <span role="status" style={{ fontSize: '12px', color: '#55606B', marginTop: '8px' }}>
+        <span role="status" className="text-xs text-gray-600">
           {t('verifying')}
         </span>
       )}
 
       {isVerified && (
-        <span role="status" style={{ fontSize: '12px', color: '#10B981', marginTop: '8px' }}>
+        <span role="status" className="text-xs text-green">
           ✓ {t('successMessage')}
         </span>
       )}
     </form>
   );
 }
-

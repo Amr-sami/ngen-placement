@@ -3,6 +3,8 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { VerifyEmailButton } from './VerifyEmailButton';
+import { AuthLogo } from '../shared/AuthLogo';
+import { useRTL } from '@/lib/useRTL';
 
 interface VerifyEmailCardProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -12,18 +14,13 @@ interface VerifyEmailCardProps {
 
 export function VerifyEmailCard({ action, email, locale }: VerifyEmailCardProps) {
   const t = useTranslations('auth.verifyEmail');
+  const isRTL = useRTL();
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Logo */}
       <div className="mb-12">
-        <Image
-          src="/assets/images/logos/ngen-logo.svg"
-          alt="NGen Schools"
-          width={225}
-          height={62}
-          priority
-        />
+        <AuthLogo />
       </div>
 
       {/* Main Container Rectangle */}
@@ -35,39 +32,14 @@ export function VerifyEmailCard({ action, email, locale }: VerifyEmailCardProps)
         }}
       >
         {/* Inner Group Container - Vertical Flow */}
-        <div 
-          className="flex flex-col items-center"
-          style={{
-            width: '528px',
-            maxWidth: '100%',
-            gap: '24px'
-          }}
-        >
+        <div className="flex flex-col items-center text-center gap-6 w-full max-w-[528px]">
           {/* Main Heading - Confirm Your Email Address */}
-          <h1 
-            className="text-gray-900"
-            style={{
-              fontWeight: 700,
-              fontSize: '36px',
-              lineHeight: '1.2',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <h1 className="text-purple-dark font-bold text-3xl md:text-4xl">
             {t('title')}
           </h1>
 
           {/* Description Text */}
-          <p
-            className="text-gray-600"
-            style={{
-              fontWeight: 500,
-              fontSize: '20px',
-              lineHeight: '32px',
-              textAlign: 'center',
-              maxWidth: '100%',
-            }}
-          >
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             {t('description')}
           </p>
 
@@ -76,6 +48,7 @@ export function VerifyEmailCard({ action, email, locale }: VerifyEmailCardProps)
 
           {/* Security Notice Frame */}
           <div 
+            className={`flex ${isRTL ? 'flex-row-reverse' : ''}`}
             style={{
               width: '528px',
               maxWidth: '100%',
@@ -88,7 +61,6 @@ export function VerifyEmailCard({ action, email, locale }: VerifyEmailCardProps)
               borderRadius: '12px',
               backgroundColor: 'rgba(255, 204, 0, 0.13)',
               border: '1px solid #F9D158',
-              display: 'flex',
               alignItems: 'flex-start',
               justifyContent: 'flex-start',
             }}
@@ -97,7 +69,8 @@ export function VerifyEmailCard({ action, email, locale }: VerifyEmailCardProps)
             <div 
               style={{
                 flexShrink: 0,
-                marginRight: '12px',
+                marginRight: isRTL ? '0' : '12px',
+                marginLeft: isRTL ? '12px' : '0',
                 marginTop: '2px',
               }}
             >
@@ -118,7 +91,7 @@ export function VerifyEmailCard({ action, email, locale }: VerifyEmailCardProps)
                 flex: 1,
                 fontSize: '14px',
                 lineHeight: '24px',
-                textAlign: 'left',
+                textAlign: isRTL ? 'right' : 'left',
                 color: '#B77C50',
               }}
             >

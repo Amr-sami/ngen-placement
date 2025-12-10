@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   return {
     title: t('title'),
-    description: `${t('taglineLine1')} ${t('taglineLine2')}`,
+    description: `${t('tagline.future')} ${t('tagline.innovators')}, ${t('tagline.todays')} ${t('tagline.ninjas')} ${t('joinUs')}`,
   };
 }
 

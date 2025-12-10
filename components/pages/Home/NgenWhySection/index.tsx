@@ -108,6 +108,25 @@ const DATA = [
 // Animated journey elements
 const journeyIcons = [''];
 
+// Pre-generated sparkle positions to avoid hydration mismatch
+const SPARKLE_POSITIONS = [
+  { left: 5, top: 15, delay: 0.4, size: 26 },
+  { left: 12, top: 67, delay: 0.2, size: 28 },
+  { left: 31, top: 44, delay: 1.3, size: 20 },
+  { left: 39, top: 81, delay: 2.1, size: 25 },
+  { left: 82, top: 11, delay: 2.5, size: 14 },
+  { left: 59, top: 88, delay: 0.8, size: 21 },
+  { left: 62, top: 2, delay: 0.9, size: 28 },
+  { left: 84, top: 47, delay: 2.5, size: 22 },
+  { left: 15, top: 71, delay: 0.5, size: 22 },
+  { left: 49, top: 83, delay: 2.2, size: 10 },
+  { left: 3, top: 40, delay: 0.9, size: 29 },
+  { left: 32, top: 89, delay: 2.7, size: 23 },
+  { left: 64, top: 79, delay: 2.9, size: 23 },
+  { left: 94, top: 67, delay: 2.1, size: 10 },
+  { left: 41, top: 37, delay: 0.3, size: 21 },
+];
+
 function HomepageNgenWhySection() {
   const [activeTab, setActiveTab] = useState<number>(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -236,15 +255,15 @@ function HomepageNgenWhySection() {
         ))}
 
         {/* Sparkling stars */}
-        {[...Array(15)].map((_, i) => (
+        {SPARKLE_POSITIONS.map((sparkle, i) => (
           <div
             key={`star-${i}`}
             className="absolute text-yellow-400 animate-twinkle"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              fontSize: `${Math.random() * 20 + 10}px`,
+              left: `${sparkle.left}%`,
+              top: `${sparkle.top}%`,
+              animationDelay: `${sparkle.delay}s`,
+              fontSize: `${sparkle.size}px`,
             }}
           >
             ✨

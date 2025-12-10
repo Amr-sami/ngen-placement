@@ -5,6 +5,7 @@ import { useState, ChangeEvent, useTransition } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useRTL } from '@/lib/useRTL';
 
 interface SignupFormProps {
   action: (formData: FormData) => Promise<{ ok: boolean }>;
@@ -14,6 +15,7 @@ interface SignupFormProps {
 export function SignupForm({ action, locale }: SignupFormProps) {
   const t = useTranslations('auth.signup');
   const router = useRouter();
+  const isRTL = useRTL();
   
   // Controlled inputs for UI state
   const [firstName, setFirstName] = useState('');
@@ -66,9 +68,9 @@ export function SignupForm({ action, locale }: SignupFormProps) {
   };
 
   return (
-    <form action={handleSubmit} className="w-full max-w-[641px] mx-auto" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+    <form action={handleSubmit} className="w-full max-w-[641px] mx-auto" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }} dir={isRTL ? 'rtl' : 'ltr'}>
       {/* First Name & Last Name Row */}
-      <div className="flex gap-[15px]">
+      <div className={`flex gap-[15px] ${isRTL ? 'flex-row-reverse' : ''}`}>
         <div className="flex-1">
           <label htmlFor="firstName" className="sr-only">
             {t('firstName')}
@@ -83,7 +85,8 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             onChange={(e: ChangeEvent<HTMLInputElement>) => setFirstName(e.target.value)}
             placeholder={t('firstName')}
             disabled={isPending}
-            className="w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
+            dir={isRTL ? 'rtl' : 'ltr'}
           />
         </div>
         <div className="flex-1">
@@ -100,13 +103,14 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             onChange={(e: ChangeEvent<HTMLInputElement>) => setLastName(e.target.value)}
             placeholder={t('lastName')}
             disabled={isPending}
-            className="w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
+            dir={isRTL ? 'rtl' : 'ltr'}
           />
         </div>
       </div>
 
       {/* Password & Confirm Password Row */}
-      <div className="flex gap-[15px]">
+      <div className={`flex gap-[15px] ${isRTL ? 'flex-row-reverse' : ''}`}>
         {/* Password Input */}
         <div className="relative flex-1">
           <label htmlFor="password" className="sr-only">
@@ -123,7 +127,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             onChange={(e: ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
             placeholder={t('password')}
             disabled={isPending}
-            className="w-full h-[60px] px-4 pr-12 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`w-full h-[60px] px-4 ${isRTL ? 'pl-12' : 'pr-12'} rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
           />
           <button
             type="button"
@@ -137,7 +141,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             disabled={isPending}
             aria-pressed={showPassword}
             aria-label={showPassword ? 'Hide password' : 'Show password'}
-            className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`absolute ${isRTL ? 'left-4' : 'right-4'} top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none disabled:opacity-50 disabled:cursor-not-allowed`}
           >
             <Image
               src="/assets/auth/eye.svg"
@@ -166,7 +170,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             disabled={isPending}
             aria-invalid={showPasswordError}
             aria-describedby={showPasswordError ? 'password-error' : undefined}
-            className={`w-full h-[60px] px-4 pr-12 rounded-[16px] bg-gray-100 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${
+            className={`w-full h-[60px] px-4 ${isRTL ? 'pl-12' : 'pr-12'} rounded-[16px] bg-gray-100 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'} ${
               showPasswordError 
                 ? 'border-2 border-red-500 focus-visible:ring-red-500/60' 
                 : 'border border-gray-200 focus-visible:ring-pumpkin/60'
@@ -184,7 +188,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             disabled={isPending}
             aria-pressed={showConfirmPassword}
             aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
-            className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`absolute ${isRTL ? 'left-4' : 'right-4'} top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity focus-visible:ring-2 focus-visible:ring-pumpkin/60 focus-visible:ring-offset-1 rounded outline-none disabled:opacity-50 disabled:cursor-not-allowed`}
           >
             <Image
               src="/assets/auth/eye.svg"
@@ -201,7 +205,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
         <div 
           id="password-error" 
           role="alert" 
-          className="text-red-500 text-sm -mt-3 flex items-center gap-1"
+          className={`text-red-500 text-sm -mt-3 flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}
         >
           <span aria-hidden="true">⚠️</span>
           <span>{t('passwordMismatch')}</span>
@@ -209,7 +213,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
       )}
 
       {/* Phone Number & Country Row */}
-      <div className="flex gap-[15px]">
+      <div className={`flex gap-[15px] ${isRTL ? 'flex-row-reverse' : ''}`}>
         <div className="flex-1">
           <label htmlFor="phoneNumber" className="sr-only">
             {t('phoneNumber')}
@@ -225,7 +229,7 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             onChange={(e: ChangeEvent<HTMLInputElement>) => setPhoneNumber(e.target.value)}
             placeholder={t('phoneNumber')}
             disabled={isPending}
-            className="w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
           />
         </div>
         <div className="flex-1">
@@ -242,7 +246,8 @@ export function SignupForm({ action, locale }: SignupFormProps) {
             onChange={(e: ChangeEvent<HTMLInputElement>) => setCountry(e.target.value)}
             placeholder={t('country')}
             disabled={isPending}
-            className="w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
+            dir={isRTL ? 'rtl' : 'ltr'}
           />
         </div>
       </div>
@@ -263,12 +268,12 @@ export function SignupForm({ action, locale }: SignupFormProps) {
           onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
           placeholder={t('email')}
           disabled={isPending}
-          className="w-full h-[60px] px-4 rounded-[16px] bg-black/5 border border-black/10 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-blueberry/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+          className={`w-full h-[60px] px-4 rounded-[16px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow disabled:opacity-50 disabled:cursor-not-allowed ${isRTL ? 'text-right' : 'text-left'}`}
         />
       </div>
 
       {/* Buttons Row */}
-      <div className="flex gap-[23px] pt-4">
+      <div className={`flex gap-[23px] pt-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
         <button
           type="submit"
           disabled={isPending || !passwordsMatch}
@@ -287,18 +292,18 @@ export function SignupForm({ action, locale }: SignupFormProps) {
       {isPending && (
         <div className="text-center">
           <span role="status" className="text-xs text-gray-600">
-            Creating account...
+            {t('creatingAccount')}
           </span>
         </div>
       )}
 
       {/* Divider */}
       <div className="relative flex items-center py-5">
-        <div className="flex-1 border-t border-black/15"></div>
+        <div className="flex-1 border-t border-gray-300"></div>
         <span className="px-3 text-xs sm:text-sm text-gray-600">
           {t('or')}
         </span>
-        <div className="flex-1 border-t border-black/15"></div>
+        <div className="flex-1 border-t border-gray-300"></div>
       </div>
 
       {/* Social Signup */}
