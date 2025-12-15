@@ -52,11 +52,8 @@ export default function SignupStep1({
   const t = useTranslations('auth.signup');
   const isRTL = useRTL();
 
-  const textAlignClass = isRTL ? 'text-right' : 'text-left';
-  const rowDirectionClass = isRTL ? 'flex-row-reverse' : '';
   const baseInputClasses =
-    'w-full h-[50px] px-3.5 text-sm rounded-[14px] bg-gray-100 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow';
-  const defaultBorderClasses = 'border border-gray-200';
+    'w-full h-[50px] px-3.5 text-sm rounded-[14px] bg-gray-100 border border-gray-200 placeholder:text-gray-500 text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-pumpkin/60 transition-shadow';
 
   const translations = {
     parentPhoneNumber: isRTL ? 'رقم هاتف ولي الأمر' : 'Parent Phone Number',
@@ -77,92 +74,124 @@ export default function SignupStep1({
 
   return (
     <div className="space-y-2.5">
-      {/* First Name & Last Name (mirrored in RTL) */}
-      <div className={`flex gap-2.5 ${rowDirectionClass}`}>
+      {/* First Name & Last Name - MIRRORED IN RTL */}
+      <div className={`flex gap-2.5 ${isRTL ? 'flex-row-reverse' : ''}`}>
+        {/* In RTL: Last Name appears on RIGHT, First Name on LEFT */}
         <div className="flex-1">
           <input
             type="text"
-            value={firstName}
+            value={isRTL ? lastName : firstName}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setFirstName(e.target.value)
+              isRTL ? setLastName(e.target.value) : setFirstName(e.target.value)
             }
-            placeholder={`${t('firstName')} *`}
+            placeholder={isRTL ? `${t('lastName')} *` : `${t('firstName')} *`}
             required
-            className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass}`}
+            className={`${baseInputClasses} ${isRTL ? 'text-right' : 'text-left'}`}
             dir={isRTL ? 'rtl' : 'ltr'}
           />
         </div>
         <div className="flex-1">
           <input
             type="text"
-            value={lastName}
+            value={isRTL ? firstName : lastName}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setLastName(e.target.value)
+              isRTL ? setFirstName(e.target.value) : setLastName(e.target.value)
             }
-            placeholder={`${t('lastName')} *`}
+            placeholder={isRTL ? `${t('firstName')} *` : `${t('lastName')} *`}
             required
-            className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass}`}
+            className={`${baseInputClasses} ${isRTL ? 'text-right' : 'text-left'}`}
             dir={isRTL ? 'rtl' : 'ltr'}
           />
         </div>
       </div>
 
-      {/* Phone Number & Parent Phone Number */}
-      <div className="flex gap-2.5">
+      {/* Phone Number & Parent Phone Number - MIRRORED IN RTL */}
+      <div className={`flex gap-2.5 ${isRTL ? 'flex-row-reverse' : ''}`}>
+        {/* In RTL: Parent Phone on RIGHT, Phone on LEFT */}
         <div className="flex-1">
           <input
             type="tel"
-            value={phoneNumber}
+            value={isRTL ? parentPhoneNumber : phoneNumber}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setPhoneNumber(e.target.value)
+              isRTL ? setParentPhoneNumber(e.target.value) : setPhoneNumber(e.target.value)
             }
-            placeholder={`${t('phoneNumber')} *`}
-            required
+            placeholder={isRTL ? translations.parentPhoneNumber : `${t('phoneNumber')} *`}
+            required={!isRTL}
             dir="ltr"
-            className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass}`}
+            className={`${baseInputClasses} ${isRTL ? 'text-right' : 'text-left'}`}
           />
         </div>
         <div className="flex-1">
           <input
             type="tel"
-            value={parentPhoneNumber}
+            value={isRTL ? phoneNumber : parentPhoneNumber}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setParentPhoneNumber(e.target.value)
+              isRTL ? setPhoneNumber(e.target.value) : setParentPhoneNumber(e.target.value)
             }
-            placeholder={translations.parentPhoneNumber}
+            placeholder={isRTL ? `${t('phoneNumber')} *` : translations.parentPhoneNumber}
+            required={isRTL}
             dir="ltr"
-            className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass}`}
+            className={`${baseInputClasses} ${isRTL ? 'text-right' : 'text-left'}`}
           />
         </div>
       </div>
 
-      {/* Age */}
+      {/* Age Input Field */}
       <div>
         <input
           type="number"
-          min={1}
-          max={120}
           value={age}
-          onChange={(e: ChangeEvent<HTMLInputElement>) =>
-            setAge(e.target.value)
-          }
+          onChange={(e: ChangeEvent<HTMLInputElement>) => {
+            const value = e.target.value;
+            if (value === '' || (parseInt(value) > 0 && parseInt(value) <= 100)) {
+              setAge(value);
+            }
+          }}
           placeholder={`${translations.age} *`}
           required
-          className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass}`}
+          min="1"
+          max="100"
+          className={`${baseInputClasses} ${isRTL ? 'text-right' : 'text-left'}`}
           dir={isRTL ? 'rtl' : 'ltr'}
         />
+        {age && parseInt(age) > 0 && (
+          <div
+            className={`mt-1.5 flex items-center gap-1.5 ${
+              isRTL ? 'justify-end flex-row-reverse' : 'justify-start'
+            }`}
+          >
+            <div className="w-2 h-2 rounded-full bg-pumpkin animate-pulse" />
+            <span className="text-xs font-medium text-gray-600">
+              {parseInt(age) < 13
+                ? isRTL
+                  ? '🎈 طفل رائع!'
+                  : '🎈 Amazing kid!'
+                : parseInt(age) < 18
+                ? isRTL
+                  ? '🚀 مراهق مذهل!'
+                  : '🚀 Awesome teen!'
+                : isRTL
+                ? '⭐ متعلم رائع!'
+                : '⭐ Great learner!'}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Join Type */}
       <div>
         <label
-          className={`block text-xs text-gray-600 mb-1.5 ${textAlignClass}`}
+          className={`block text-xs text-gray-600 mb-1.5 ${
+            isRTL ? 'text-right' : 'text-left'
+          }`}
         >
           {translations.joinType} *
         </label>
-        <div className={`flex gap-4 ${rowDirectionClass}`}>
+        <div className={`flex gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
           <label
-            className={`flex items-center gap-2 cursor-pointer ${rowDirectionClass}`}
+            className={`flex items-center gap-2 cursor-pointer ${
+              isRTL ? 'flex-row-reverse' : ''
+            }`}
           >
             <input
               type="radio"
@@ -173,14 +202,16 @@ export default function SignupStep1({
                 setJoinType('individual');
                 setOrganizationName('');
               }}
-              className="w-4 h-4 text-pumpkin focus:ring-2 focus:ring-pumpkin/60 cursor-pointer"
+              className="w-4 h-4 text-pumpkin focus:ring-2 focus:ring-pumpkin/60 cursor-pointer accent-pumpkin"
             />
             <span className="text-sm text-gray-700">
               {translations.individual}
             </span>
           </label>
           <label
-            className={`flex items-center gap-2 cursor-pointer ${rowDirectionClass}`}
+            className={`flex items-center gap-2 cursor-pointer ${
+              isRTL ? 'flex-row-reverse' : ''
+            }`}
           >
             <input
               type="radio"
@@ -188,7 +219,7 @@ export default function SignupStep1({
               value="organization"
               checked={joinType === 'organization'}
               onChange={() => setJoinType('organization')}
-              className="w-4 h-4 text-pumpkin focus:ring-2 focus:ring-pumpkin/60 cursor-pointer"
+              className="w-4 h-4 text-pumpkin focus:ring-2 focus:ring-pumpkin/60 cursor-pointer accent-pumpkin"
             />
             <span className="text-sm text-gray-700">
               {translations.organization}
@@ -208,7 +239,9 @@ export default function SignupStep1({
             }
             placeholder={`${translations.organizationName} *`}
             required
-            className={`${baseInputClasses} border-2 border-pumpkin/30 ${textAlignClass}`}
+            className={`${baseInputClasses} border-2 border-pumpkin/30 ${
+              isRTL ? 'text-right' : 'text-left'
+            }`}
             dir={isRTL ? 'rtl' : 'ltr'}
           />
         </div>
@@ -222,9 +255,9 @@ export default function SignupStep1({
             setHowDidYouKnow(e.target.value)
           }
           required
-          className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass} ${
-            !howDidYouKnow ? 'text-gray-500' : ''
-          }`}
+          className={`${baseInputClasses} ${
+            isRTL ? 'text-right' : 'text-left'
+          } ${!howDidYouKnow ? 'text-gray-500' : ''}`}
           dir={isRTL ? 'rtl' : 'ltr'}
         >
           <option value="">{translations.howDidYouKnow} *</option>

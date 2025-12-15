@@ -85,6 +85,7 @@
       "builtSystemsIntro": "Across Data Science, Programming, Artificial Intelligence, Creative Arts, Robotics, and Cybersecurity, students build real systems: smart apps and AI games, robots, dashboards, and secure digital experiences."
     },
     "journey": {
+            "learnCta": "What will we learn?" ,
       "title": "Your NGen Journey",
       "subtitle": "A clear path from beginner to tech leader",
       "card": {
@@ -94,9 +95,375 @@
         "models": "Models",
         "focus": "Focus"
       },
+      "trackSpecific": {
+        "cybersecurity": {
+          "label": "Cybersecurity",
+          "stages": {
+            "yellow": {
+              "focus": "Network Basics & Safety",
+              "duration": "3 Months",
+              "hours": "30",
+              "classes": "20",
+              "models": "Network Sim",
+              "longDescription": "Students learn how the internet works, IP addresses, and the fundamentals of staying safe online."
+            },
+            "orange": {
+              "focus": "Linux & Cryptography",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Enigma Lab",
+              "longDescription": "Introduction to Linux commands, basic file system navigation, and the history of codes and ciphers."
+            },
+            "green": {
+              "focus": "Hands-on Security Projects",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Secure Lab",
+              "longDescription": "Students build practical security mini-projects: safe browsing setups, simple firewall rules, and basic threat awareness activities.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Build security mini-projects", "description": "Create safe browsing setups and simple protection rules in guided labs." },
+                { "icon": "rocket", "title": "Practice real safety habits", "description": "Learn practical steps to protect accounts, devices, and personal data." },
+                { "icon": "star", "title": "Understand common threats", "description": "Recognize phishing, malware basics, and risky online behavior." },
+                { "icon": "zap", "title": "Think like a defender", "description": "Learn how to reduce risk and improve security step by step." }
+              ]
+            },
+            "blue": {
+              "focus": "Web & Network Security",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Web Shield",
+              "longDescription": "Students learn common web risks and network protection basics, and practice securing simple systems in a controlled environment.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Secure simple systems", "description": "Apply basic hardening to web and network scenarios in a safe environment." },
+                { "icon": "rocket", "title": "Spot web vulnerabilities", "description": "Understand common risks like weak passwords and unsafe input patterns." },
+                { "icon": "star", "title": "Use security checklists", "description": "Follow structured steps to review and improve protection." },
+                { "icon": "zap", "title": "Explain security decisions", "description": "Communicate what you secured and why it matters." }
+              ]
+            },
+            "red": {
+              "focus": "Ethical Hacking Fundamentals",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Pentest Starter",
+              "longDescription": "Students explore ethical hacking concepts and learn how to identify vulnerabilities responsibly using beginner-friendly tools and labs.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Learn ethical hacking basics", "description": "Understand responsible testing and why permission and ethics matter." },
+                { "icon": "rocket", "title": "Find basic weaknesses", "description": "Identify simple vulnerabilities using beginner-friendly labs and tools." },
+                { "icon": "star", "title": "Document findings", "description": "Write clear notes: issue, impact, and a basic fix suggestion." },
+                { "icon": "zap", "title": "Improve security safely", "description": "Turn findings into actions that reduce risk." }
+              ]
+            },
+            "brown": {
+              "focus": "Incident Response & Defense",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Incident Room",
+              "longDescription": "Students practice responding to simulated attacks, documenting incidents, and applying defensive actions to reduce risks.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Respond to incidents", "description": "Practice what to do when something suspicious happens." },
+                { "icon": "rocket", "title": "Build a defense plan", "description": "Choose practical steps to stop, contain, and prevent repeat attacks." },
+                { "icon": "star", "title": "Write an incident report", "description": "Summarize what happened and what was improved afterward." },
+                { "icon": "zap", "title": "Work with a team mindset", "description": "Understand roles and communication during security events." }
+              ]
+            },
+            "black": {
+              "focus": "Threat Analysis & Hardening",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Threat Hunter",
+              "longDescription": "Students analyze basic threats, strengthen systems, and build a security mindset through structured defensive workflows.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Analyze threats", "description": "Understand how attacks happen and how to reduce exposure." },
+                { "icon": "rocket", "title": "Harden systems", "description": "Apply structured steps to improve configurations and security posture." },
+                { "icon": "star", "title": "Build defensive workflows", "description": "Follow repeatable routines for monitoring and protection." },
+                { "icon": "zap", "title": "Develop a security mindset", "description": "Think proactively about risk, prevention, and safe behavior." }
+              ]
+            },
+            "ninja": {
+              "focus": "Blue Team Operations",
+              "duration": "6 Months",
+              "hours": "70",
+              "classes": "48",
+              "models": "SOC Mini Ops",
+              "longDescription": "Students act as a small security team, monitoring events, applying protections, and presenting what they learned.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Work like a SOC team", "description": "Monitor events, review alerts, and discuss response actions." },
+                { "icon": "rocket", "title": "Present your findings", "description": "Explain what you detected and how you reduced risk." },
+                { "icon": "star", "title": "Use clear security metrics", "description": "Track simple indicators like repeated threats or weak points." },
+                { "icon": "zap", "title": "Level up teamwork", "description": "Collaborate and communicate clearly in security scenarios." }
+              ]
+            },
+            "master": {
+              "focus": "Cybersecurity Capstone",
+              "duration": "6 Months",
+              "hours": "70",
+              "classes": "48",
+              "models": "Final Security Project",
+              "longDescription": "Students deliver a final security project: secure setup, risk checklist, and a simple demonstration of protection techniques.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Deliver a cybersecurity capstone", "description": "Build a final project with a secure setup and risk checklist." },
+                { "icon": "rocket", "title": "Demonstrate protection methods", "description": "Show how your security steps prevent or reduce common risks." },
+                { "icon": "star", "title": "Create documentation", "description": "Provide clear steps, notes, and safe-use guidelines." },
+                { "icon": "zap", "title": "Show leadership", "description": "Explain decisions confidently and recommend improvements." }
+              ]
+            }
+          }
+        },
+        "artificialIntelligence": {
+          "label": "Artificial Intelligence",
+          "stages": {
+            "yellow": {
+              "focus": "ML Concepts",
+              "duration": "3 Months",
+              "hours": "32",
+              "classes": "22",
+              "models": "Teachable Machine",
+              "longDescription": "Understanding how computers learn. Students train their first models to recognize images and sounds."
+            },
+            "orange": {
+              "focus": "NLP Basics",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Chatbot v1",
+              "longDescription": "Exploring Natural Language Processing and building simple rule-based chatbots."
+            },
+            "green": {
+              "focus": "Applied Machine Learning Projects",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "ML Studio",
+              "longDescription": "Students build small ML projects and learn how to improve results by choosing better data, features, and evaluation steps.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Build small ML projects", "description": "Create practical mini models and test them with real examples." },
+                { "icon": "rocket", "title": "Improve results step-by-step", "description": "Learn how better data and features can improve performance." },
+                { "icon": "star", "title": "Understand evaluation basics", "description": "Use simple metrics to judge if a model is doing well." },
+                { "icon": "zap", "title": "Think like an ML builder", "description": "Follow a clear workflow: data → train → test → improve." }
+              ]
+            },
+            "blue": {
+              "focus": "Computer Vision & NLP Projects",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Vision + NLP Lab",
+              "longDescription": "Students explore image and text AI projects and understand how models behave in real use cases.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Build vision & text projects", "description": "Create simple AI projects with images and text use cases." },
+                { "icon": "rocket", "title": "Understand model behavior", "description": "Learn why models make mistakes and how to reduce them." },
+                { "icon": "star", "title": "Use real-world datasets", "description": "Practice with safe, simple datasets and clear goals." },
+                { "icon": "zap", "title": "Explain AI outputs", "description": "Communicate what your model does and what it can’t do." }
+              ]
+            },
+            "red": {
+              "focus": "Model Improvement & Evaluation",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Model Tuner",
+              "longDescription": "Students learn to measure accuracy, reduce errors, and improve a model step-by-step using beginner-friendly workflows.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Tune and evaluate models", "description": "Improve accuracy by adjusting data, features, and parameters." },
+                { "icon": "rocket", "title": "Reduce common errors", "description": "Spot patterns of mistakes and fix them systematically." },
+                { "icon": "star", "title": "Avoid overfitting basics", "description": "Learn how to keep models useful on new data." },
+                { "icon": "zap", "title": "Build confidence with testing", "description": "Test models properly before calling them “good”." }
+              ]
+            },
+            "brown": {
+              "focus": "AI Product Thinking",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "AI App Builder",
+              "longDescription": "Students connect AI to a simple app idea and learn how to design safe, useful AI features.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Design an AI feature", "description": "Connect AI to a simple app idea with a clear user benefit." },
+                { "icon": "rocket", "title": "Build a simple AI-powered app", "description": "Create a small experience where AI helps solve a problem." },
+                { "icon": "star", "title": "Consider safety & usefulness", "description": "Learn simple rules for responsible AI usage." },
+                { "icon": "zap", "title": "Pitch your AI idea", "description": "Explain what you built and why it matters." }
+              ]
+            },
+            "black": {
+              "focus": "Advanced AI Concepts",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "AI Research Kit",
+              "longDescription": "Students explore deeper topics (bias, overfitting, data quality) and apply them in practical experiments.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Explore advanced AI topics", "description": "Learn about bias, data quality, and model limitations." },
+                { "icon": "rocket", "title": "Run practical experiments", "description": "Test ideas and compare results using structured steps." },
+                { "icon": "star", "title": "Improve data quality", "description": "Understand how clean data improves model results." },
+                { "icon": "zap", "title": "Think like a researcher", "description": "Ask good questions and test them carefully." }
+              ]
+            },
+            "ninja": {
+              "focus": "AI Team Project",
+              "duration": "6 Months",
+              "hours": "70",
+              "classes": "48",
+              "models": "AI Sprint",
+              "longDescription": "Students collaborate to build a complete AI project with clear roles, testing, and a final demo.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Deliver an AI team project", "description": "Work in roles and build a complete AI solution together." },
+                { "icon": "rocket", "title": "Test and present your work", "description": "Show a final demo and explain your evaluation results." },
+                { "icon": "star", "title": "Practice collaboration", "description": "Use teamwork skills: planning, tasks, and iteration." },
+                { "icon": "zap", "title": "Create a clear project story", "description": "Explain the problem, approach, and impact." }
+              ]
+            },
+            "master": {
+              "focus": "AI Capstone",
+              "duration": "6 Months",
+              "hours": "70",
+              "classes": "48",
+              "models": "Final AI System",
+              "longDescription": "Students deliver a final AI solution: dataset + model + evaluation + simple user experience.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Build a final AI system", "description": "Deliver dataset + model + evaluation + user experience." },
+                { "icon": "rocket", "title": "Show end-to-end workflow", "description": "Explain how data becomes a working AI feature." },
+                { "icon": "star", "title": "Document your solution", "description": "Write clear steps and limitations of your model." },
+                { "icon": "zap", "title": "Present like a pro", "description": "Deliver a confident demo with key insights." }
+              ]
+            }
+          }
+        },
+
+        "programming": { "label": "Programming", "stages": { "yellow": { "focus": "Block Coding Logic", "duration": "3 Months", "hours": "30", "classes": "20", "models": "Game Lab", "longDescription": "Mastering loops, variables, and conditionals using visual block-based environments." }, "orange": { "focus": "Intro to Python", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Calculator App", "longDescription": "Transitioning from blocks to text. Writing first scripts in Python and understanding syntax." }, "green": { "focus": "Python Projects & Problem Solving", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Project Lab", "longDescription": "Students build real mini-apps and strengthen logic through debugging, functions, and clean code practices.", "outcomes": [ { "icon": "trophy", "title": "Build real Python mini-apps", "description": "Create small programs using functions, logic, and clean structure." }, { "icon": "rocket", "title": "Debug like a developer", "description": "Find errors faster and fix them using simple debugging steps." }, { "icon": "star", "title": "Write cleaner code", "description": "Use readable naming, clear functions, and organized files." }, { "icon": "zap", "title": "Solve problems confidently", "description": "Practice problem-solving patterns with code challenges." } ] }, "blue": { "focus": "Web & APIs Basics", "duration": "4 Months", "hours": "35", "classes": "24", "models": "API Builder", "longDescription": "Students learn how apps talk to servers, use simple APIs, and build small web-connected projects.", "outcomes": [ { "icon": "trophy", "title": "Understand APIs basics", "description": "Learn how apps request and receive data from servers." }, { "icon": "rocket", "title": "Build web-connected projects", "description": "Create small projects that use an API and show results." }, { "icon": "star", "title": "Learn client-server thinking", "description": "Understand requests, responses, and simple data formats." }, { "icon": "zap", "title": "Use real-world examples", "description": "Practice with safe public APIs and simple use cases." } ] }, "red": { "focus": "Data Structures & Algorithms Basics", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Algo Arena", "longDescription": "Students practice core CS logic: arrays/lists, searching, sorting, and simple efficiency thinking.", "outcomes": [ { "icon": "trophy", "title": "Learn DS & algo basics", "description": "Practice arrays/lists, searching, sorting, and logic patterns." }, { "icon": "rocket", "title": "Think about efficiency", "description": "Understand why some solutions are faster than others." }, { "icon": "star", "title": "Improve coding speed", "description": "Solve more problems with better structure and steps." }, { "icon": "zap", "title": "Build strong CS foundations", "description": "Gain skills that help in interviews and real projects." } ] }, "brown": { "focus": "Software Projects & Teamwork", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Team Repo", "longDescription": "Students build a bigger project with teamwork and learn basics of Git and collaboration.", "outcomes": [ { "icon": "trophy", "title": "Build a bigger project", "description": "Create a multi-file project with clear features and structure." }, { "icon": "rocket", "title": "Use Git basics", "description": "Learn commits, branches basics, and teamwork workflow." }, { "icon": "star", "title": "Collaborate with teammates", "description": "Split tasks and combine work safely and clearly." }, { "icon": "zap", "title": "Practice planning", "description": "Turn an idea into tasks and deliver step-by-step." } ] }, "black": { "focus": "Clean Architecture & Testing", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Quality Kit", "longDescription": "Students learn better structure, simple testing, and writing maintainable code.", "outcomes": [ { "icon": "trophy", "title": "Write maintainable code", "description": "Learn simple architecture and better organization." }, { "icon": "rocket", "title": "Add basic testing", "description": "Write small tests to verify your code works." }, { "icon": "star", "title": "Improve code quality", "description": "Understand refactoring and clean structure." }, { "icon": "zap", "title": "Think like a software engineer", "description": "Build with clarity, quality, and long-term thinking." } ] }, "ninja": { "focus": "Full Project Delivery", "duration": "6 Months", "hours": "70", "classes": "48", "models": "Release Sprint", "longDescription": "Students deliver a full project: plan, build, test, and present.", "outcomes": [ { "icon": "trophy", "title": "Deliver a full project", "description": "Plan, build, test, and present a complete app." }, { "icon": "rocket", "title": "Show a final demo", "description": "Explain your features and how your app works." }, { "icon": "star", "title": "Document your work", "description": "Write a short README with setup and usage." }, { "icon": "zap", "title": "Present confidently", "description": "Communicate what you built clearly and proudly." } ] }, "master": { "focus": "Programming Capstone", "duration": "6 Months", "hours": "70", "classes": "48", "models": "Final App", "longDescription": "Students build a polished capstone app with documentation and a final presentation.", "outcomes": [ { "icon": "trophy", "title": "Build a polished capstone app", "description": "Create a final app with strong structure and clean UI." }, { "icon": "rocket", "title": "Publish-ready project", "description": "Prepare your project with docs and a final presentation." }, { "icon": "star", "title": "Show engineering quality", "description": "Highlight clean code, testing, and organization." }, { "icon": "zap", "title": "Ready for next level", "description": "Be prepared for advanced tracks and real projects." } ] } } },
+
+        "dataScience": {
+          "label": "Data Science",
+          "stages": {
+            "yellow": {
+              "focus": "Data Literacy",
+              "duration": "3 Months",
+              "hours": "30",
+              "classes": "20",
+              "models": "Charts & Graphs",
+              "longDescription": "What is data? Learning to collect, sort, and visualize simple datasets using spreadsheets."
+            },
+            "orange": {
+              "focus": "Data Analysis",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Weather Dashboard",
+              "longDescription": "Using Python libraries like Pandas to clean data and find patterns in real-world information."
+            },
+            "green": {
+              "focus": "Data Projects & Visualization",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Insights Dashboard",
+              "longDescription": "Students build dashboards and learn how to explain data insights clearly using charts and storytelling.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Build dashboards", "description": "Create clear charts and dashboards that explain insights." },
+                { "icon": "rocket", "title": "Tell a data story", "description": "Explain what the data means in simple, clear language." },
+                { "icon": "star", "title": "Choose the right chart", "description": "Match chart types to the message you want to show." },
+                { "icon": "zap", "title": "Use real datasets", "description": "Practice with real-world datasets and structured steps." }
+              ]
+            },
+            "blue": {
+              "focus": "Statistics & Patterns",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Stats Lab",
+              "longDescription": "Students learn basic statistics and use them to understand patterns in real-world datasets.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Learn basic statistics", "description": "Understand mean/median, spread, and simple patterns." },
+                { "icon": "rocket", "title": "Spot trends", "description": "Identify relationships and patterns in data." },
+                { "icon": "star", "title": "Ask better questions", "description": "Turn curiosity into data questions that can be answered." },
+                { "icon": "zap", "title": "Explain results clearly", "description": "Communicate insights without confusion." }
+              ]
+            },
+            "red": {
+              "focus": "Prediction & Evaluation",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Forecast Kit",
+              "longDescription": "Students build simple predictive models and learn how to evaluate results and avoid common mistakes.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Build simple prediction models", "description": "Create basic forecasting and prediction steps." },
+                { "icon": "rocket", "title": "Evaluate predictions", "description": "Learn how to check if results are good or misleading." },
+                { "icon": "star", "title": "Avoid common mistakes", "description": "Learn pitfalls like leakage and wrong comparisons." },
+                { "icon": "zap", "title": "Improve model outputs", "description": "Adjust inputs and assumptions to get better results." }
+              ]
+            },
+            "brown": {
+              "focus": "Business Data Thinking",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Decision Board",
+              "longDescription": "Students learn how data supports decisions and build projects that answer real questions.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Think like a business analyst", "description": "Use data to support decisions and recommendations." },
+                { "icon": "rocket", "title": "Build decision dashboards", "description": "Create dashboards that answer real questions." },
+                { "icon": "star", "title": "Write insights summaries", "description": "Summarize what matters and what to do next." },
+                { "icon": "zap", "title": "Present with confidence", "description": "Show your analysis clearly to others." }
+              ]
+            },
+            "black": {
+              "focus": "Advanced Data Workflows",
+              "duration": "4 Months",
+              "hours": "35",
+              "classes": "24",
+              "models": "Pipeline Starter",
+              "longDescription": "Students learn structured workflows: collecting, cleaning, analyzing, and reporting with best practices.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Use structured workflows", "description": "Follow steps: collect → clean → analyze → report." },
+                { "icon": "rocket", "title": "Improve data quality", "description": "Make data more reliable and consistent." },
+                { "icon": "star", "title": "Apply best practices", "description": "Use organization, naming, and repeatable steps." },
+                { "icon": "zap", "title": "Build strong habits", "description": "Work like a real data professional." }
+              ]
+            },
+            "ninja": {
+              "focus": "Team Data Project",
+              "duration": "6 Months",
+              "hours": "70",
+              "classes": "48",
+              "models": "Analytics Sprint",
+              "longDescription": "Students work as a team to deliver an end-to-end analytics project and present findings.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Deliver a team analytics project", "description": "Work as a team to produce an end-to-end analysis." },
+                { "icon": "rocket", "title": "Create a final presentation", "description": "Explain insights and conclusions to an audience." },
+                { "icon": "star", "title": "Collaborate effectively", "description": "Split tasks and merge work into one story." },
+                { "icon": "zap", "title": "Build impact", "description": "Show how data leads to better choices." }
+              ]
+            },
+            "master": {
+              "focus": "Data Science Capstone",
+              "duration": "6 Months",
+              "hours": "70",
+              "classes": "48",
+              "models": "Final Data Story",
+              "longDescription": "Students deliver a capstone with a clear dataset story, visuals, and conclusions.",
+              "outcomes": [
+                { "icon": "trophy", "title": "Deliver a data capstone", "description": "Create a final data story with visuals and conclusions." },
+                { "icon": "rocket", "title": "Show end-to-end skill", "description": "From raw data to clear results and recommendations." },
+                { "icon": "star", "title": "Build a portfolio piece", "description": "Create something you can proudly showcase." },
+                { "icon": "zap", "title": "Present professionally", "description": "Explain your work clearly and confidently." }
+              ]
+            }
+          }
+        },
+
+        "robotics": { "label": "Robotics", "stages": { "yellow": { "focus": "Circuits & Sensors", "duration": "3 Months", "hours": "32", "classes": "22", "models": "Smart Light", "longDescription": "Understanding electricity, basic circuits, and how sensors perceive the world." }, "orange": { "focus": "Microcontrollers", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Line Follower", "longDescription": "Programming Arduino/Micro:bit to control motors and respond to sensor inputs." }, "green": { "focus": "Smart Robotics Projects", "duration": "4 Months", "hours": "35", "classes": "24", "models": "IoT Builder", "longDescription": "Students build smart devices using sensors and logic, and learn how to test and improve their builds.", "outcomes": [ { "icon": "trophy", "title": "Build smart devices", "description": "Create projects using sensors and logic in guided labs." }, { "icon": "rocket", "title": "Test and improve builds", "description": "Learn how to troubleshoot and make projects stable." }, { "icon": "star", "title": "Use structured wiring", "description": "Understand safer connections and cleaner setups." }, { "icon": "zap", "title": "Explain how it works", "description": "Present your device and the logic behind it." } ] }, "blue": { "focus": "Control Systems & Motion", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Motion Lab", "longDescription": "Students learn movement control, motors, and safer wiring with structured robotics exercises.", "outcomes": [ { "icon": "trophy", "title": "Control motion", "description": "Learn motors, movement control, and stable behavior." }, { "icon": "rocket", "title": "Improve precision", "description": "Make movement smoother and more accurate." }, { "icon": "star", "title": "Follow safe practices", "description": "Use safe wiring and careful testing." }, { "icon": "zap", "title": "Build stronger systems", "description": "Turn small builds into reliable projects." } ] }, "red": { "focus": "Robotics Challenges", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Challenge Arena", "longDescription": "Students solve robotics challenges: obstacle avoidance, line tracking, and sensor-based decisions.", "outcomes": [ { "icon": "trophy", "title": "Solve robotics challenges", "description": "Obstacle avoidance, line tracking, and sensor decisions." }, { "icon": "rocket", "title": "Apply problem-solving", "description": "Turn challenge requirements into a working build." }, { "icon": "star", "title": "Improve troubleshooting", "description": "Fix common hardware and logic issues faster." }, { "icon": "zap", "title": "Build confidence", "description": "Handle harder projects step-by-step." } ] }, "brown": { "focus": "Connected Devices", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Cloud Link", "longDescription": "Students connect devices, read data, and build simple IoT-style experiences.", "outcomes": [ { "icon": "trophy", "title": "Connect devices", "description": "Build simple IoT-style experiences." }, { "icon": "rocket", "title": "Read and send data", "description": "Use sensors and share results to simple systems." }, { "icon": "star", "title": "Understand connectivity basics", "description": "Learn how devices communicate." }, { "icon": "zap", "title": "Create smart experiences", "description": "Make devices respond to real situations." } ] }, "black": { "focus": "Advanced Hardware Projects", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Hardware Pro Kit", "longDescription": "Students build more complex systems and learn troubleshooting, stability, and project documentation.", "outcomes": [ { "icon": "trophy", "title": "Build complex systems", "description": "Create advanced builds with stability and structure." }, { "icon": "rocket", "title": "Improve documentation", "description": "Write steps, wiring notes, and project explanations." }, { "icon": "star", "title": "Handle advanced troubleshooting", "description": "Solve stability and performance issues." }, { "icon": "zap", "title": "Think like an engineer", "description": "Build carefully, safely, and professionally." } ] }, "ninja": { "focus": "Team Robotics Build", "duration": "6 Months", "hours": "70", "classes": "48", "models": "Build Sprint", "longDescription": "Students build a full robotics project in teams and present how it works.", "outcomes": [ { "icon": "trophy", "title": "Deliver a team robotics build", "description": "Build a full project in teams and present how it works." }, { "icon": "rocket", "title": "Explain your design choices", "description": "Share why you used specific parts and logic." }, { "icon": "star", "title": "Collaborate effectively", "description": "Split work and combine builds cleanly." }, { "icon": "zap", "title": "Show a final demo", "description": "Present a clear working demonstration." } ] }, "master": { "focus": "Robotics Capstone", "duration": "6 Months", "hours": "70", "classes": "48", "models": "Final Robot", "longDescription": "Students deliver a final robotics system with a clear demo and explanation.", "outcomes": [ { "icon": "trophy", "title": "Deliver a robotics capstone", "description": "Build a final robot system with a clear demo." }, { "icon": "rocket", "title": "Show full system thinking", "description": "Sensors + logic + output + explanation." }, { "icon": "star", "title": "Create a portfolio project", "description": "Build something you can proudly showcase." }, { "icon": "zap", "title": "Present professionally", "description": "Explain your project clearly and confidently." } ] } } },
+
+        "creativeArts": { "label": "Creative Arts", "stages": { "yellow": { "focus": "Digital Illustration", "duration": "3 Months", "hours": "30", "classes": "20", "models": "Character Design", "longDescription": "Learning vector art and digital drawing tools to create characters and icons." }, "orange": { "focus": "Animation Basics", "duration": "4 Months", "hours": "35", "classes": "24", "models": "GIF Scene", "longDescription": "Principles of animation: timing, squat & stretch, and frame-by-frame motion." }, "green": { "focus": "Interactive Media Projects", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Creative Studio", "longDescription": "Students create interactive designs and learn how to turn ideas into polished digital work.", "outcomes": [ { "icon": "trophy", "title": "Create interactive designs", "description": "Turn ideas into polished digital work with strong visuals." }, { "icon": "rocket", "title": "Build creative projects", "description": "Complete projects with clear steps: idea → draft → final." }, { "icon": "star", "title": "Improve design quality", "description": "Learn layout, balance, and stronger composition." }, { "icon": "zap", "title": "Show your work confidently", "description": "Present your design choices and creative process." } ] }, "blue": { "focus": "Branding & Portfolio", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Portfolio Builder", "longDescription": "Students build a portfolio and learn basic branding, layout, and presentation skills.", "outcomes": [ { "icon": "trophy", "title": "Build a portfolio", "description": "Create a portfolio with your best pieces." }, { "icon": "rocket", "title": "Learn basic branding", "description": "Understand identity, consistency, and presentation." }, { "icon": "star", "title": "Create better layouts", "description": "Improve spacing, hierarchy, and readability." }, { "icon": "zap", "title": "Present professionally", "description": "Explain your portfolio clearly and nicely." } ] }, "red": { "focus": "Motion & Video Production", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Motion Lab", "longDescription": "Students create motion graphics and video edits with stronger storytelling and timing.", "outcomes": [ { "icon": "trophy", "title": "Create motion graphics", "description": "Build motion pieces with timing and storytelling." }, { "icon": "rocket", "title": "Edit videos better", "description": "Improve cuts, pacing, and visual flow." }, { "icon": "star", "title": "Tell a visual story", "description": "Use motion and visuals to communicate ideas." }, { "icon": "zap", "title": "Deliver stronger projects", "description": "Produce higher-quality final outputs." } ] }, "brown": { "focus": "Creative Projects & Collaboration", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Team Canvas", "longDescription": "Students collaborate on creative projects and learn critique, iteration, and client-like feedback.", "outcomes": [ { "icon": "trophy", "title": "Collaborate on creative work", "description": "Work with a team and combine ideas into one output." }, { "icon": "rocket", "title": "Use feedback effectively", "description": "Iterate based on critique and improve results." }, { "icon": "star", "title": "Think like a client project", "description": "Deliver based on requirements and constraints." }, { "icon": "zap", "title": "Improve communication", "description": "Explain your creative choices clearly." } ] }, "black": { "focus": "Advanced Creative Direction", "duration": "4 Months", "hours": "35", "classes": "24", "models": "Director Kit", "longDescription": "Students learn higher-level creative planning and produce high-quality final pieces.", "outcomes": [ { "icon": "trophy", "title": "Plan creative direction", "description": "Learn higher-level planning and creative decision making." }, { "icon": "rocket", "title": "Produce high-quality final pieces", "description": "Deliver professional-looking work with polish." }, { "icon": "star", "title": "Build consistency", "description": "Maintain a clear style and quality across outputs." }, { "icon": "zap", "title": "Lead creatively", "description": "Guide ideas from concept to final delivery." } ] }, "ninja": { "focus": "Creative Team Production", "duration": "6 Months", "hours": "70", "classes": "48", "models": "Studio Sprint", "longDescription": "Students produce a complete creative project as a team: concept to final delivery.", "outcomes": [ { "icon": "trophy", "title": "Produce as a team", "description": "Create a full project from concept to final delivery." }, { "icon": "rocket", "title": "Present final production", "description": "Show the final output and explain the process." }, { "icon": "star", "title": "Work with roles", "description": "Practice teamwork with clear roles and tasks." }, { "icon": "zap", "title": "Build confidence", "description": "Showcase your work proudly." } ] }, "master": { "focus": "Creative Arts Capstone", "duration": "6 Months", "hours": "70", "classes": "48", "models": "Final Portfolio", "longDescription": "Students deliver a capstone portfolio showcasing their best work with clear presentation.", "outcomes": [ { "icon": "trophy", "title": "Deliver a capstone portfolio", "description": "Build a final portfolio showcasing your best work." }, { "icon": "rocket", "title": "Show professional presentation", "description": "Explain your work clearly with strong visuals." }, { "icon": "star", "title": "Create a showcase piece", "description": "Produce a final project worth sharing publicly." }, { "icon": "zap", "title": "Ready for next level", "description": "Be prepared for advanced creative work." } ] } } }
+      },
       "stages": {
-        "placement-test": { 
-          "title": "Placement Test", 
+        "placement-test": {
+          "title": "Placement Test",
           "description": "Start Here",
           "longDescription": "A comprehensive assessment to determine your current skill level and place you in the perfect starting belt.",
           "duration": "30 min",
@@ -105,8 +472,8 @@
           "models": "N/A",
           "focus": "Skill Assessment & Path Recommendation"
         },
-        "white": { 
-          "title": "White Belt", 
+        "white": {
+          "title": "White Belt",
           "description": "Pre-Foundation",
           "longDescription": "Introduction to the digital world, building curiosity and awareness about technology and its role in our lives.",
           "duration": "1 Month",
@@ -115,8 +482,8 @@
           "models": "Universal",
           "focus": "Digital Awareness & Curiosity"
         },
-        "yellow": { 
-          "title": "Yellow Belt", 
+        "yellow": {
+          "title": "Yellow Belt",
           "description": "Foundation",
           "longDescription": "Building the core foundation of coding and logical thinking through block-based programming and computational concepts.",
           "duration": "3-4 Months",
@@ -125,8 +492,8 @@
           "models": "Universal",
           "focus": "Core Coding & Logical Thinking"
         },
-        "orange": { 
-          "title": "Orange Belt", 
+        "orange": {
+          "title": "Orange Belt",
           "description": "Foundation",
           "longDescription": "Exploring creativity and digital design, learning to express ideas through visual media and interactive projects.",
           "duration": "3-4 Months",
@@ -135,8 +502,8 @@
           "models": "3 Models",
           "focus": "Creativity & Digital Design"
         },
-        "green": { 
-          "title": "Green Belt", 
+        "green": {
+          "title": "Green Belt",
           "description": "Foundation",
           "longDescription": "Building smart projects that combine AI and robotics concepts, transitioning from blocks to real-world applications.",
           "duration": "3-4 Months",
@@ -145,8 +512,8 @@
           "models": "3 Models",
           "focus": "Smart Projects (AI & Robotics)"
         },
-        "blue": { 
-          "title": "Blue Belt", 
+        "blue": {
+          "title": "Blue Belt",
           "description": "Specialization",
           "longDescription": "Deep diving into your chosen track, exploring advanced concepts and building specialized skills.",
           "duration": "3-4 Months",
@@ -155,8 +522,8 @@
           "models": "3 Models",
           "focus": "Deep Track Exploration"
         },
-        "red": { 
-          "title": "Red Belt", 
+        "red": {
+          "title": "Red Belt",
           "description": "Specialization",
           "longDescription": "Working on advanced projects that push your skills to the next level with real-world complexity.",
           "duration": "3-4 Months",
@@ -165,8 +532,8 @@
           "models": "3 Models",
           "focus": "Advanced Projects"
         },
-        "brown": { 
-          "title": "Brown Belt", 
+        "brown": {
+          "title": "Brown Belt",
           "description": "Specialization",
           "longDescription": "Combining technical skills with innovation and entrepreneurship mindset to create impactful solutions.",
           "duration": "3-4 Months",
@@ -175,8 +542,8 @@
           "models": "3 Models",
           "focus": "Innovation & Entrepreneurship"
         },
-        "black": { 
-          "title": "Black Belt", 
+        "black": {
+          "title": "Black Belt",
           "description": "Specialization",
           "longDescription": "Conducting research, leading projects, and developing expertise that sets you apart as a tech leader.",
           "duration": "3-4 Months",
@@ -185,8 +552,8 @@
           "models": "3 Models",
           "focus": "Research & Leadership"
         },
-        "ninja": { 
-          "title": "Ninja", 
+        "ninja": {
+          "title": "Ninja",
           "description": "Advanced",
           "longDescription": "Becoming a mentor and innovation leader, guiding others while pushing the boundaries of your own expertise.",
           "duration": "6 Months",
@@ -195,8 +562,8 @@
           "models": "3 Models",
           "focus": "Mentorship & Innovation Leadership"
         },
-        "master": { 
-          "title": "Grand Master", 
+        "master": {
+          "title": "Grand Master",
           "description": "Advanced",
           "longDescription": "Creating legacy projects with global impact, contributing to the tech community and inspiring the next generation.",
           "duration": "6 Months",
@@ -241,100 +608,42 @@
       "message": "Your message has been sent successfully. We'll get back to you soon."
     },
     "fields": {
-      "firstName": {
-        "label": "First name",
-        "placeholder": "First name",
-        "error": "First name is required"
-      },
-      "lastName": {
-        "label": "Last name",
-        "placeholder": "Last name",
-        "error": "Last name is required"
-      },
-      "email": {
-        "label": "Email",
-        "placeholder": "Your email address",
-        "error": "Please enter a valid email"
-      },
-      "phone": {
-        "label": "Phone Number",
-        "placeholder": "Your phone number (optional)"
-      },
-      "organization": {
-        "label": "School/Organization",
-        "placeholder": "Your school or organization (optional)"
-      },
-      "message": {
-        "label": "Message",
-        "placeholder": "Your message (optional)"
-      }
+      "firstName": { "label": "First name", "placeholder": "First name", "error": "First name is required" },
+      "lastName": { "label": "Last name", "placeholder": "Last name", "error": "Last name is required" },
+      "email": { "label": "Email", "placeholder": "Your email address", "error": "Please enter a valid email" },
+      "phone": { "label": "Phone Number", "placeholder": "Your phone number (optional)" },
+      "organization": { "label": "School/Organization", "placeholder": "Your school or organization (optional)" },
+      "message": { "label": "Message", "placeholder": "Your message (optional)" }
     },
-    "submit": {
-      "button": "Submit",
-      "sending": "Sending..."
-    }
+    "submit": { "button": "Submit", "sending": "Sending..." }
   },
-  "projects": {
-    "page": {
-      "title": "Student Projects",
-      "description": "Explore amazing projects created by our students"
-    }
-  },
-  "students": {
-    "page": {
-      "title": "Our Students",
-      "description": "Meet our talented students and their achievements"
-    }
-  },
-  "blog": {
-    "page": {
-      "title": "NGen Blog",
-      "description": "Latest news and insights from NGen Schools"
-    }
-  },
+  "projects": { "page": { "title": "Student Projects", "description": "Explore amazing projects created by our students" } },
+  "students": { "page": { "title": "Our Students", "description": "Meet our talented students and their achievements" } },
+  "blog": { "page": { "title": "NGen Blog", "description": "Latest news and insights from NGen Schools" } },
   "auth": {
     "common": {
-      "goHome": "Go to home page",
-      "leaveConfirm": {
-        "title": "Return to Home?",
-        "message": "Are you sure you want to return to the home page? Your progress will be lost.",
-        "confirm": "Yes, Return Home",
-        "cancel": "Stay Here"
-      }
+      "goHome": "Go to Home",
+      "leaveConfirm": { "title": "Return to Home?", "message": "Are you sure you want to go back to the home page? Your progress will be lost.", "confirm": "Yes, Go Back", "cancel": "Stay Here" }
     },
     "login": {
       "title": "Login",
-      "tagline": {
-        "future": "Future",
-        "innovators": "Innovators",
-        "todays": "Today's",
-        "ninjas": "Ninjas!"
-      },
+      "tagline": { "future": "Future", "innovators": "Innovators", "todays": "Today's", "ninjas": "Ninjas!" },
       "welcomeBack": "Welcome back to NGen Schools.",
       "email": "Email",
       "password": "Password",
-      "rememberMe": "Remember Me",
+      "rememberMe": "Remember me",
       "forgotPassword": "Forgot Password?",
-      "login": "Login",
-      "signup": "Sign up",
+      "login": "Sign In",
+      "signup": "Sign Up",
       "or": "OR",
-      "terms": "Terms And Conditions",
+      "terms": "Terms & Conditions",
       "privacy": "Privacy Policy",
-      "loggingIn": "Logging in...",
-      "with": {
-        "google": "Continue with Google",
-        "apple": "Continue with Apple",
-        "facebook": "Continue with Facebook"
-      }
+      "loggingIn": "Signing in...",
+      "with": { "google": "Continue with Google", "apple": "Continue with Apple", "facebook": "Continue with Facebook" }
     },
     "signup": {
       "title": "Create Account",
-      "tagline": {
-        "future": "Future",
-        "innovators": "Innovators",
-        "todays": "Today's",
-        "ninjas": "Ninjas!"
-      },
+      "tagline": { "future": "Future", "innovators": "Innovators", "todays": "Today's", "ninjas": "Ninjas!" },
       "joinUs": "Join NGen Schools and start your journey.",
       "firstName": "First Name",
       "lastName": "Last Name",
@@ -344,52 +653,44 @@
       "country": "Country",
       "email": "Email",
       "createAccount": "Create Account",
-      "login": "Login",
+      "login": "Sign In",
       "or": "OR",
-      "terms": "Terms And Conditions",
+      "terms": "Terms & Conditions",
       "privacy": "Privacy Policy",
       "passwordMismatch": "Passwords do not match",
       "creatingAccount": "Creating account...",
-      "with": {
-        "google": "Continue with Google",
-        "apple": "Continue with Apple",
-        "facebook": "Continue with Facebook"
-      }
+      "with": { "google": "Continue with Google", "apple": "Continue with Apple", "facebook": "Continue with Facebook" }
     },
     "otp": {
-      "title": "Please check your Email!",
-      "description": "We have emailed a 6-digit confirmation code to {email}, please enter the code in below box to verify your email.",
+      "title": "Check your email!",
+      "description": "We sent a 6-digit confirmation code to {email}, please enter the code in below box to verify your email.",
       "verifyButton": "Verify",
       "verifying": "Verifying...",
       "verified": "Verified ✓",
-      "successMessage": "Email verified successfully!",
-      "noCode": "Don't Have The Code?",
-      "resendCode": "Resend Code In {seconds}s",
-      "resending": "Resending..."
+      "successMessage": "Email successfully verified!",
+      "noCode": "Didn't receive code?",
+      "resendCode": "Resend code in {seconds}s",
+      "resending": "Sending..."
     },
     "verifyEmail": {
-      "title": "Confirm Your Email Address",
+      "title": "Verify your email address",
       "description": "Welcome to NGen Schools! To get started, please click the button below to verify your email address.",
-      "verifyButton": "Verify Email Address",
+      "verifyButton": "Verify Email",
       "verifying": "Verifying...",
       "verified": "Verified ✓",
-      "successMessage": "Email verified successfully!",
-      "securityNotice": {
-        "title": "Security Notice:",
-        "message": "If you didn't create an account with NGen Schools, please disregard this email. Your security is important to us."
-      },
+      "successMessage": "Email successfully verified!",
+      "securityNotice": { "title": "Security Note:", "message": "If you did not create an account with NGen Schools, please ignore this email. Your security is important to us." },
       "footer": "© 2024 NGen Schools. All rights reserved."
     },
     "forgetPassword": {
       "title": "Forgot Password?",
-      "description": "Please enter the email address associated with your account and we will email you a link to reset your password.",
-      "email": "Email",
+      "description": "Enter the email address associated with your account and we'll send you a link to reset your password.",
+      "email": "Email Address",
       "sendRequest": "Send Request",
       "back": "Back",
       "sending": "Sending...",
       "sent": "Sent ✓",
-      "successMessage": "Password reset link sent successfully!"
+      "successMessage": "Reset password link sent successfully!"
     }
   }
 }
-
