@@ -83,7 +83,7 @@ export function LearnModal({
             </div>
           ) : (
             <div className="text-center bg-white rounded-2xl p-6 border border-purple-100">
-              <p className="text-purple-900 font-bold">قريباً هنضيف "هنتعلم إيه" للمرحلة دي ✨</p>
+              <p className="text-purple-900 font-bold">قريباً هنضيف &quot;هنتعلم إيه&quot; للمرحلة دي ✨</p>
             </div>
           )}
 

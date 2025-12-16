@@ -2,11 +2,9 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
 import { useRTL } from '@/lib/useRTL';
 
 export default function CertificationSection() {
-  const t = useTranslations('home');
   const isRTL = useRTL();
   const [activeCert, setActiveCert] = useState<'ar' | 'en'>('en');
 
@@ -18,7 +16,7 @@ export default function CertificationSection() {
   return (
     // Reduced padding (py-12 -> py-10) for a tighter section
     <section className="py-10 md:py-16 bg-gradient-to-b from-white to-purple-50 relative overflow-hidden">
-      
+
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-orange-400 rounded-full opacity-20"></div>
@@ -34,7 +32,7 @@ export default function CertificationSection() {
             {isRTL ? 'شهادات التميز' : 'Excellence Certificates'}
           </h2>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-            {isRTL 
+            {isRTL
               ? 'احتفل بإنجازات طلابنا مع شهادات معتمدة دولياً'
               : 'Celebrate our students achievements with internationally recognized certificates'}
           </p>
@@ -44,21 +42,19 @@ export default function CertificationSection() {
         <div className="flex justify-center gap-4 mb-8">
           <button
             onClick={() => setActiveCert('en')}
-            className={`px-5 py-2.5 rounded-xl font-bold transition-all text-sm md:text-base ${
-              activeCert === 'en'
-                ? 'bg-pumpkin text-white shadow-lg scale-105'
-                : 'bg-white text-gray-600 hover:bg-gray-50'
-            }`}
+            className={`px-5 py-2.5 rounded-xl font-bold transition-all text-sm md:text-base ${activeCert === 'en'
+              ? 'bg-pumpkin text-white shadow-lg scale-105'
+              : 'bg-white text-gray-600 hover:bg-gray-50'
+              }`}
           >
             English Certificate
           </button>
           <button
             onClick={() => setActiveCert('ar')}
-            className={`px-5 py-2.5 rounded-xl font-bold transition-all text-sm md:text-base ${
-              activeCert === 'ar'
-                ? 'bg-pumpkin text-white shadow-lg scale-105'
-                : 'bg-white text-gray-600 hover:bg-gray-50'
-            }`}
+            className={`px-5 py-2.5 rounded-xl font-bold transition-all text-sm md:text-base ${activeCert === 'ar'
+              ? 'bg-pumpkin text-white shadow-lg scale-105'
+              : 'bg-white text-gray-600 hover:bg-gray-50'
+              }`}
           >
             الشهادة العربية
           </button>
@@ -67,18 +63,17 @@ export default function CertificationSection() {
         {/* Certificate Display - SIZE REDUCED HERE */}
         {/* Changed max-w-5xl to max-w-3xl for a smaller view */}
         <div className="max-w-3xl mx-auto">
-          <div 
-            className={`relative rounded-2xl shadow-xl overflow-hidden transition-all duration-500 ease-in-out transform ${
-              activeCert === 'ar' ? 'hover:shadow-green-500/20' : 'hover:shadow-pumpkin/20'
-            }`}
+          <div
+            className={`relative rounded-2xl shadow-xl overflow-hidden transition-all duration-500 ease-in-out transform ${activeCert === 'ar' ? 'hover:shadow-green-500/20' : 'hover:shadow-pumpkin/20'
+              }`}
           >
-            <Image 
-              src={certImages[activeCert]} 
+            <Image
+              src={certImages[activeCert]}
               alt={activeCert === 'ar' ? 'نموذج الشهادة العربية' : 'English Certificate Preview'}
-              width={1200} 
+              width={1200}
               height={850}
               className="w-full h-auto object-contain"
-              priority 
+              priority
             />
           </div>
         </div>
@@ -86,7 +81,7 @@ export default function CertificationSection() {
         {/* Call to Action */}
         <div className="text-center mt-10">
           <p className="text-gray-600 mb-6">
-            {isRTL 
+            {isRTL
               ? 'ابدأ رحلتك التعليمية واحصل على شهادتك المعتمدة!'
               : 'Start your learning journey and earn your certificate!'}
           </p>

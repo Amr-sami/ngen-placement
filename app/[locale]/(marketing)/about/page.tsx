@@ -1,5 +1,4 @@
 import { CallToAction /*,ContactUs*/ } from '@/components/general';
-import { useTranslations } from 'next-intl';
 import { H2 } from '@/components/general/Heading';
 import { getTranslations } from 'next-intl/server';
 // import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";

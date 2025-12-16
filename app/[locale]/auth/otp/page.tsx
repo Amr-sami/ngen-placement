@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: OTPPageProps): Promise<Metada
 }
 
 export default async function OTPPage({ params, searchParams }: OTPPageProps) {
-  const { locale } = await params;
+  await params; // Required for Next.js params handling
   const resolvedSearchParams = await searchParams;
 
   // Server action for OTP verification
   async function verifyOTPAction(formData: FormData) {
     'use server';
-    
+
     const email = resolvedSearchParams.email || formData.get('email') as string;
     const otp = formData.get('otp') as string;
 
@@ -59,7 +59,7 @@ export default async function OTPPage({ params, searchParams }: OTPPageProps) {
   // Server action for resending OTP
   async function resendOTPAction(formData: FormData) {
     'use server';
-    
+
     const email = resolvedSearchParams.email || formData.get('email') as string;
 
     console.log('=== OTP Resend Request ===');
@@ -82,10 +82,10 @@ export default async function OTPPage({ params, searchParams }: OTPPageProps) {
 
   return (
     <main className="min-h-screen bg-[url('/assets/images/hero-bg.svg')] bg-no-repeat bg-cover bg-center flex items-center justify-center py-12 px-4">
-      <OTPCard 
-        verifyAction={verifyOTPAction} 
+      <OTPCard
+        verifyAction={verifyOTPAction}
         resendAction={resendOTPAction}
-        email={resolvedSearchParams.email || 'user@example.com'} 
+        email={resolvedSearchParams.email || 'user@example.com'}
       />
     </main>
   );

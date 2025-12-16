@@ -85,10 +85,10 @@ function HomepageNgenRoadmapSection() {
     const checkDesktop = () => {
       setIsDesktop(window.innerWidth >= 1024);
     };
-    
+
     checkDesktop();
     window.addEventListener('resize', checkDesktop);
-    
+
     return () => window.removeEventListener('resize', checkDesktop);
   }, []);
 
@@ -126,7 +126,7 @@ function HomepageNgenRoadmapSection() {
 
   const handleDesktopDragMove = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isDraggingDesktop) return;
-    
+
     const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
     const diff = clientX - dragStartX;
     setDragRotation(diff * 0.3); // Sensitivity: adjust multiplier for more/less sensitive drag
@@ -134,7 +134,7 @@ function HomepageNgenRoadmapSection() {
 
   const handleDesktopDragEnd = () => {
     if (!isDraggingDesktop) return;
-    
+
     // If dragged enough, move to next/prev card
     if (Math.abs(dragRotation) > 50) {
       if (dragRotation > 0) {
@@ -143,10 +143,10 @@ function HomepageNgenRoadmapSection() {
         nextCard();
       }
     }
-    
+
     setIsDraggingDesktop(false);
     setDragRotation(0);
-    
+
     // Resume auto-play after 3 seconds
     setTimeout(() => {
       setIsAutoPlaying(true);
@@ -174,31 +174,31 @@ function HomepageNgenRoadmapSection() {
   const handleDragMove = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isDragging || isDesktop) return;
     e.preventDefault();
-    
+
     const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
     const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
-    
-    setDragOffset({ 
-      x: clientX - dragStart.x, 
-      y: clientY - dragStart.y 
+
+    setDragOffset({
+      x: clientX - dragStart.x,
+      y: clientY - dragStart.y
     });
   };
 
   const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isDragging || isDesktop) return;
     e.preventDefault();
-    
+
     const distance = Math.sqrt(dragOffset.x ** 2 + dragOffset.y ** 2);
-    
+
     if (distance > 150) {
       setCards((prev) => [...prev.slice(1), prev[0]]);
     }
-    
+
     setIsDragging(false);
     setDragOffset({ x: 0, y: 0 });
   };
 
-  const handleCardClick = (e: React.MouseEvent) => {
+  const handleCardClick = () => {
     if (isDesktop) return;
     if (dragOffset.x === 0 && dragOffset.y === 0) {
       setCards((prev) => [...prev.slice(1), prev[0]]);
@@ -227,7 +227,7 @@ function HomepageNgenRoadmapSection() {
 
         {/* Desktop: 3D Circular Carousel with Drag */}
         {isDesktop ? (
-          <div 
+          <div
             className="relative w-full h-[600px] flex items-center justify-center cursor-grab active:cursor-grabbing"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -238,9 +238,9 @@ function HomepageNgenRoadmapSection() {
             onTouchMove={handleDesktopDragMove}
             onTouchEnd={handleDesktopDragEnd}
           >
-            <div 
+            <div
               className="relative w-full h-full"
-              style={{ 
+              style={{
                 perspective: '2000px',
                 transformStyle: 'preserve-3d'
               }}
@@ -249,7 +249,7 @@ function HomepageNgenRoadmapSection() {
                 const baseAngle = ((index - currentIndex) * 360) / TRACKS_DATA.length;
                 const angle = baseAngle + dragRotation;
                 const isCurrent = index === currentIndex;
-                
+
                 return (
                   <div
                     key={track.id}
@@ -300,11 +300,10 @@ function HomepageNgenRoadmapSection() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentIndex 
-                      ? 'bg-purple-600 w-8' 
-                      : 'bg-purple-300 hover:bg-purple-400'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all ${index === currentIndex
+                    ? 'bg-purple-600 w-8'
+                    : 'bg-purple-300 hover:bg-purple-400'
+                    }`}
                   aria-label={`Go to card ${index + 1}`}
                 />
               ))}
@@ -318,7 +317,7 @@ function HomepageNgenRoadmapSection() {
               const zIndex = cards.length - index;
               const scale = 1 - index * 0.05;
               const yOffset = index * 20;
-              
+
               return (
                 <div
                   key={track.id}
@@ -353,7 +352,7 @@ function HomepageNgenRoadmapSection() {
             })}
           </div>
         )}
-        
+
         {/* Instruction Text */}
         {/* <p className="text-center text-gray-tertiary text-sm md:text-base">
           {isDesktop ? (

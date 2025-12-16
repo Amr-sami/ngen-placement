@@ -7,7 +7,6 @@ import {
   CallToAction,
   ContactUs,
   PageWrapper,
-  TracksSection,
 } from '@/components/general';
 import { H2 } from '@/components/general/Heading';
 import { getTranslations } from 'next-intl/server';
@@ -58,13 +57,13 @@ const features = [
 export const metadata = {
   title: "For Parents | NGen School Support & Progress Tools",
   description: "At NGen, we support parents with detailed progress reports and free workshops. Stay involved and help your child succeed in coding, AI, and other digital skills.",
-  keywords: ["online school for kids", "digital learning for children", "coding classes for kids", "AI courses for kids", "robotics for kids" ],
+  keywords: ["online school for kids", "digital learning for children", "coding classes for kids", "AI courses for kids", "robotics for kids"],
 };
 
 
 const NgenForParents = async () => {
   const t = await getTranslations('home.hero');
-  
+
   return (
     <>
       <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">

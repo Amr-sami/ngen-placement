@@ -192,7 +192,7 @@ function HomepageNgenWhySection() {
 
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
-    
+
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > 50;
     const isRightSwipe = distance < -50;
@@ -278,7 +278,7 @@ function HomepageNgenWhySection() {
 
       <div className="container mx-auto px-4 md:px-5 relative z-10">
         <div className="text-center mb-6 md:mb-8">
-          <H2 className="mb-2 text-2xl md:text-3xl lg:text-4xl inline-block animate-bounce-gentle">
+          <H2 classNames="mb-2 text-2xl md:text-3xl lg:text-4xl inline-block animate-bounce-gentle">
             {t('whyNgen')} 🎉
           </H2>
           <p className="text-gray-600 text-base md:text-lg font-medium">
@@ -287,7 +287,7 @@ function HomepageNgenWhySection() {
         </div>
 
         {/* Carousel Container */}
-        <div 
+        <div
           className="relative max-w-7xl mx-auto"
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
@@ -300,8 +300,7 @@ function HomepageNgenWhySection() {
             {displayItems.map((item, index) => {
               const isActive = item.id === activeTab;
               const isPrev = index === 0;
-              const isNext = index === 2;
-              
+
               return (
                 <div
                   key={`${item.id}-${index}`}
@@ -309,16 +308,16 @@ function HomepageNgenWhySection() {
                   className={`
                     relative rounded-3xl overflow-hidden cursor-pointer
                     transition-all duration-700 ease-out
-                    ${isActive 
-                      ? 'w-[600px] h-[400px] shadow-2xl z-10' 
+                    ${isActive
+                      ? 'w-[600px] h-[400px] shadow-2xl z-10'
                       : 'w-[160px] h-[340px] opacity-60 hover:opacity-80 scale-95 hover:scale-100'
                     }
                   `}
                   style={{
-                    transform: isActive 
-                      ? 'scale(1) rotateY(0deg)' 
-                      : isPrev 
-                        ? 'translateX(20px) rotateY(15deg)' 
+                    transform: isActive
+                      ? 'scale(1) rotateY(0deg)'
+                      : isPrev
+                        ? 'translateX(20px) rotateY(15deg)'
                         : 'translateX(-20px) rotateY(-15deg)',
                   }}
                 >
@@ -329,7 +328,7 @@ function HomepageNgenWhySection() {
                       <div className="absolute bottom-0 right-0 w-40 h-40 bg-white rounded-full translate-x-1/2 translate-y-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
                       <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
                     </div>
-                    
+
                     {isActive ? (
                       <div className={isTransitioning ? 'animate-popOut' : 'animate-popIn'}>
                         {/* Active Card - Full Details */}
@@ -363,7 +362,7 @@ function HomepageNgenWhySection() {
                       </>
                     )}
                   </div>
-                  
+
                   {/* Magical shine effect */}
                   {isActive && (
                     <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent pointer-events-none animate-shine" />
@@ -430,14 +429,14 @@ function HomepageNgenWhySection() {
 
           {/* Colorful Navigation Dots */}
           <div className="flex justify-center gap-2 mt-6">
-            {DATA.map((item, idx) => (
+            {DATA.map((item) => (
               <button
                 key={item.id}
                 onClick={() => goToCard(item.id)}
                 className={`
                   transition-all duration-500 rounded-full
-                  ${activeTab === item.id 
-                    ? `w-8 sm:w-10 h-3 ${item.bg} shadow-lg animate-bounce-gentle` 
+                  ${activeTab === item.id
+                    ? `w-8 sm:w-10 h-3 ${item.bg} shadow-lg animate-bounce-gentle`
                     : 'w-3 h-3 bg-gray-300 hover:bg-gray-400 hover:scale-125'
                   }
                 `}
@@ -449,7 +448,7 @@ function HomepageNgenWhySection() {
           {/* Progress with emoji */}
           <div className="text-center mt-4 font-bold text-lg">
             <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-              Stop {activeTab + 1} of {DATA.length} 
+              Stop {activeTab + 1} of {DATA.length}
             </span>
             {isAutoPlaying && <span className="ml-2 text-sm text-purple-500 animate-pulse">🚂 Riding along...</span>}
           </div>

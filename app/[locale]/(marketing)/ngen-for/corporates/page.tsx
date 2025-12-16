@@ -3,7 +3,7 @@ import {
   Features,
   // TracksOverviewSection,
 } from "@/components/pages/NgenFor";
-import { ContactUs, PageWrapper, TracksSection } from "@/components/general";
+import { ContactUs, PageWrapper } from "@/components/general";
 import { H2 } from "@/components/general/Heading";
 
 const howItWorksData = [
@@ -73,7 +73,7 @@ const NgenForCorporates = () => {
       <H2>for corporates</H2>
       {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
       <HowItWorksSection data={howItWorksData} />
-      <Features features={features} imgSrc="/features-for-corporate.svg" title="Corporates"/>
+      <Features features={features} imgSrc="/features-for-corporate.svg" title="Corporates" />
       {/* <TracksOverviewSection data={overviewData} /> */}
       {/* <TracksSection title="Our tracks" /> */}
       {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}

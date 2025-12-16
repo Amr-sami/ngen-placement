@@ -2,12 +2,12 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { 
-  Cpu, 
-  Code2, 
-  ShieldCheck, 
-  Database, 
-  Palette, 
+import {
+  Cpu,
+  Code2,
+  ShieldCheck,
+  Database,
+  Palette,
   Bot,
   Sparkles,
   Zap,
@@ -31,50 +31,50 @@ interface TracksBeltsProps {
   onSelectTrack: (track: TrackKey) => void;
 }
 
-const trackConfigs: Record<TrackKey, { 
-  icon: any; 
-  gradient: string; 
+const trackConfigs: Record<TrackKey, {
+  icon: React.ComponentType<{ className?: string }>;
+  gradient: string;
   shadowColor: string;
   emoji: string;
   particles: string[];
 }> = {
-  programming: { 
-    icon: Code2, 
+  programming: {
+    icon: Code2,
     gradient: 'from-blue-400 via-blue-500 to-cyan-500',
     shadowColor: 'shadow-blue-500/50',
     emoji: '💻',
     particles: ['🚀', '⚡', '✨']
   },
-  artificialIntelligence: { 
-    icon: Cpu, 
+  artificialIntelligence: {
+    icon: Cpu,
     gradient: 'from-purple-400 via-violet-500 to-purple-600',
     shadowColor: 'shadow-purple-500/50',
     emoji: '🤖',
     particles: ['🧠', '⭐', '🔮']
   },
-  cybersecurity: { 
-    icon: ShieldCheck, 
+  cybersecurity: {
+    icon: ShieldCheck,
     gradient: 'from-red-400 via-rose-500 to-pink-500',
     shadowColor: 'shadow-red-500/50',
     emoji: '🛡️',
     particles: ['🔒', '⚔️', '💎']
   },
-  dataScience: { 
-    icon: Database, 
+  dataScience: {
+    icon: Database,
     gradient: 'from-green-400 via-emerald-500 to-teal-500',
     shadowColor: 'shadow-green-500/50',
     emoji: '📊',
     particles: ['📈', '🎯', '💡']
   },
-  robotics: { 
-    icon: Bot, 
+  robotics: {
+    icon: Bot,
     gradient: 'from-orange-400 via-amber-500 to-yellow-500',
     shadowColor: 'shadow-orange-500/50',
     emoji: '🦾',
     particles: ['⚙️', '🔧', '🎮']
   },
-  creativeArts: { 
-    icon: Palette, 
+  creativeArts: {
+    icon: Palette,
     gradient: 'from-pink-400 via-rose-500 to-fuchsia-500',
     shadowColor: 'shadow-pink-500/50',
     emoji: '🎨',
@@ -100,9 +100,6 @@ const TracksBelts: React.FC<TracksBeltsProps> = ({ activeTrack, onSelectTrack })
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Calculate items per view
-  const itemsPerView = isMobile ? 3 : 1;
-
   // Auto-scroll to active track
   useEffect(() => {
     const activeIndex = TRACK_KEYS.indexOf(activeTrack);
@@ -114,7 +111,7 @@ const TracksBelts: React.FC<TracksBeltsProps> = ({ activeTrack, onSelectTrack })
   const handleTrackClick = (track: TrackKey) => {
     setClickedTrack(track);
     onSelectTrack(track);
-    
+
     setTimeout(() => {
       setClickedTrack(null);
     }, 600);
@@ -129,7 +126,7 @@ const TracksBelts: React.FC<TracksBeltsProps> = ({ activeTrack, onSelectTrack })
         const gap = 12;
         const containerWidth = carouselRef.current.offsetWidth;
         const totalCardWidth = cardWidth + gap;
-        
+
         // Center the group of 3 cards
         const scrollPosition = Math.max(0, (index * totalCardWidth) - (containerWidth / 2) + (totalCardWidth * 1.5));
         carouselRef.current.scrollTo({
@@ -226,8 +223,8 @@ const TracksBelts: React.FC<TracksBeltsProps> = ({ activeTrack, onSelectTrack })
                   onMouseLeave={() => setHoveredTrack(null)}
                   className={`
                     relative w-full overflow-hidden rounded-3xl transition-all duration-300
-                    ${isActive 
-                      ? `scale-105 ${Config.shadowColor} shadow-2xl ring-4 ring-white` 
+                    ${isActive
+                      ? `scale-105 ${Config.shadowColor} shadow-2xl ring-4 ring-white`
                       : 'hover:scale-105 hover:shadow-xl'
                     }
                     ${isClicked ? 'animate-wiggle' : ''}
@@ -321,8 +318,8 @@ const TracksBelts: React.FC<TracksBeltsProps> = ({ activeTrack, onSelectTrack })
               onClick={() => scrollToIndex(index)}
               className={`
                 transition-all duration-300 rounded-full
-                ${index === currentIndex 
-                  ? 'w-8 h-3 bg-purple-600' 
+                ${index === currentIndex
+                  ? 'w-8 h-3 bg-purple-600'
                   : 'w-3 h-3 bg-purple-300 hover:bg-purple-400'
                 }
               `}
