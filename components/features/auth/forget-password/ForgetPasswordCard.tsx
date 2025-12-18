@@ -6,15 +6,15 @@ import { AuthLogo } from '../shared/AuthLogo';
 import { useRTL } from '@/lib/useRTL';
 
 interface ForgetPasswordCardProps {
-  action: (formData: FormData) => Promise<{ ok: boolean }>;
+  locale: string;
 }
 
-export function ForgetPasswordCard({ action }: ForgetPasswordCardProps) {
+export function ForgetPasswordCard({ locale }: ForgetPasswordCardProps) {
   const t = useTranslations('auth.forgetPassword');
   const isRTL = useRTL();
 
   return (
-    <div 
+    <div
       className="flex flex-col items-center"
       style={{
         width: '856px',
@@ -29,9 +29,9 @@ export function ForgetPasswordCard({ action }: ForgetPasswordCardProps) {
       </div>
 
       {/* Main Container Rectangle */}
-      <div 
+      <div
         className="flex flex-col items-center justify-center backdrop-blur-sm"
-        style={{ 
+        style={{
           width: '856px',
           maxWidth: '100%',
           minHeight: '500px',
@@ -55,10 +55,9 @@ export function ForgetPasswordCard({ action }: ForgetPasswordCardProps) {
 
         {/* Forget Password Form */}
         <div style={{ marginTop: '85.06px' }}>
-          <ForgetPasswordForm action={action} />
+          <ForgetPasswordForm locale={locale} />
         </div>
       </div>
     </div>
   );
 }
-

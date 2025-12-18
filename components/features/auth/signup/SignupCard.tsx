@@ -5,11 +5,10 @@ import { AuthLogo } from '../shared/AuthLogo';
 import { localeDirections } from '@/i18n';
 
 interface SignupCardProps {
-  action: (formData: FormData) => Promise<{ ok: boolean }>;
   locale: string;
 }
 
-export async function SignupCard({ action, locale }: SignupCardProps) {
+export async function SignupCard({ locale }: SignupCardProps) {
   const t = await getTranslations('auth.signup');
   const isRTL = localeDirections[locale as keyof typeof localeDirections] === 'rtl';
 
@@ -21,12 +20,12 @@ export async function SignupCard({ action, locale }: SignupCardProps) {
       </div>
 
       {/* Main Container with shine effect */}
-      <div 
+      <div
         className="w-full max-w-[700px] rounded-[60px] px-6 sm:px-10 md:px-12 py-6 backdrop-blur-sm relative overflow-hidden"
         style={{ backgroundColor: 'rgba(255, 255, 255, 0.95)' }}
       >
         {/* Shine effect overlay */}
-        <div 
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background: 'linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%)',
@@ -34,7 +33,7 @@ export async function SignupCard({ action, locale }: SignupCardProps) {
             animation: 'shine 3s ease-in-out infinite',
           }}
         />
-        
+
         {/* Keyframes animation */}
         <style dangerouslySetInnerHTML={{
           __html: `
@@ -67,7 +66,7 @@ export async function SignupCard({ action, locale }: SignupCardProps) {
 
         {/* Form */}
         <div className="flex-1 flex flex-col justify-center relative z-10">
-          <SignupForm action={action} locale={locale} />
+          <SignupForm locale={locale} />
         </div>
 
         {/* Footer Links */}

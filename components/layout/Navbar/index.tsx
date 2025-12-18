@@ -22,6 +22,7 @@ import Link from 'next/link';
 import Logo from '../../general/Logo';
 import Button from '@/components/general/Button';
 import LanguageSwitcher from '@/components/layout/LanguageSwitcher';
+import { UserProfileDropdown } from '@/components/layout/UserProfileDropdown';
 import {
   getHomeRoute,
   getHomeWithHashRoute,
@@ -36,6 +37,7 @@ import {
 } from '@/util/routes';
 import { usePathname, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import { useSession } from 'next-auth/react';
 import type { Locale } from '@/i18n';
 
 function Navbar() {
@@ -43,7 +45,9 @@ function Navbar() {
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
   const t = useTranslations('nav');
-  
+  const { status } = useSession();
+  const isLoggedIn = status === 'authenticated';
+
   // Check if we're on the home page
   const isHomePage = pathname === `/${locale}` || pathname === `/${locale}/`;
 
@@ -113,9 +117,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`top-0 z-50 w-full text-white bg-background/95 absolute ${
-        !isHomePage ? "bg-[url('/assets/images/hero-bg.png')]" : ''
-      }`}
+      className={`top-0 z-50 w-full text-white bg-background/95 absolute ${!isHomePage ? "bg-[url('/assets/images/hero-bg.png')]" : ''
+        }`}
       dir={locale === 'ar' ? 'rtl' : 'ltr'}
     >
       <div className="container mx-auto px-5 flex h-20 items-center justify-between gap-2">
@@ -181,15 +184,19 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Language Switcher, Login & Contact (Desktop) */}
+        {/* Language Switcher, Login/Profile & Contact (Desktop) */}
         <div className="hidden xl:flex items-center gap-3 flex-shrink-0">
           <LanguageSwitcher />
-          <Button
-            href={getLoginRoute(locale)}
-            variant="primary"
-          >
-            {t('login')}
-          </Button>
+          {isLoggedIn ? (
+            <UserProfileDropdown locale={locale} />
+          ) : (
+            <Button
+              href={getLoginRoute(locale)}
+              variant="primary"
+            >
+              {t('login')}
+            </Button>
+          )}
           <Button
             href={getContactRoute(locale)}
             variant="primary"
@@ -280,10 +287,14 @@ function Navbar() {
                 <LanguageSwitcher />
               </div>
 
-              {/* Login Button */}
-              <Button href={getLoginRoute(locale)} variant="primary" takeFullWidth>
-                {t('login')}
-              </Button>
+              {/* Login/Profile Button */}
+              {isLoggedIn ? (
+                <UserProfileDropdown locale={locale} />
+              ) : (
+                <Button href={getLoginRoute(locale)} variant="primary" takeFullWidth>
+                  {t('login')}
+                </Button>
+              )}
 
               {/* Contact Button */}
               <Button href={getContactRoute(locale)} variant="primary" takeFullWidth>

@@ -18,6 +18,11 @@
     "lang": {
       "en": "English",
       "ar": "العربية"
+    },
+    "profile": {
+      "myProfile": "ملفي الشخصي",
+      "settings": "الإعدادات",
+      "signOut": "تسجيل الخروج"
     }
   },
   "footer": {
@@ -85,7 +90,7 @@
       "builtSystemsIntro": "من خلال مسارات علوم البيانات، والبرمجة، والذكاء الاصطناعي، والفنون الإبداعية، والروبوتات، والأمن السيبراني، يبني الطلاب أنظمة حقيقية: تطبيقات ذكية وألعاب مدعومة بالذكاء الاصطناعي، روبوتات ولوحات بيانات وتجارب رقمية آمنة."
     },
     "journey": {
-      "learnCta": "هنتعلم إيه؟" ,
+      "learnCta": "هنتعلم إيه؟",
       "title": "رحلتك في إنچن",
       "subtitle": "مسار واضح من المبتدئ إلى القائد التقني",
       "card": {
@@ -154,49 +159,130 @@
           },
           "whatWeWillLearn": {
             "yellow": [
-              { "title": "افهم الشبكات ببساطة", "description": "يعني إيه IP وDNS وإزاي الإنترنت شغال" },
-              { "title": "أمان الحسابات", "description": "كلمات مرور قوية + 2FA + إدارة آمنة" },
-              { "title": "تجنب التصيّد", "description": "تمييز الروابط والإيميلات المشبوهة" }
+              {
+                "title": "افهم الشبكات ببساطة",
+                "description": "يعني إيه IP وDNS وإزاي الإنترنت شغال"
+              },
+              {
+                "title": "أمان الحسابات",
+                "description": "كلمات مرور قوية + 2FA + إدارة آمنة"
+              },
+              {
+                "title": "تجنب التصيّد",
+                "description": "تمييز الروابط والإيميلات المشبوهة"
+              }
             ],
             "orange": [
-              { "title": "أساسيات لينكس", "description": "أوامر مهمة والتنقل بين الملفات" },
-              { "title": "فهم التشفير", "description": "يعني إيه تشفير وليه مهم للأمان" },
-              { "title": "ممارسات أمان يومية", "description": "خصوصية وأمان المتصفح والجهاز" }
+              {
+                "title": "أساسيات لينكس",
+                "description": "أوامر مهمة والتنقل بين الملفات"
+              },
+              {
+                "title": "فهم التشفير",
+                "description": "يعني إيه تشفير وليه مهم للأمان"
+              },
+              {
+                "title": "ممارسات أمان يومية",
+                "description": "خصوصية وأمان المتصفح والجهاز"
+              }
             ],
             "green": [
-              { "title": "مشاريع حماية عملية", "description": "تطبيق إعدادات حماية في بيئة تدريبية" },
-              { "title": "وعي بالتهديدات", "description": "تمارين وسيناريوهات مبسطة للهجمات" },
-              { "title": "حل مشكلات أمان", "description": "تحليل الموقف واختيار حماية مناسبة" }
+              {
+                "title": "مشاريع حماية عملية",
+                "description": "تطبيق إعدادات حماية في بيئة تدريبية"
+              },
+              {
+                "title": "وعي بالتهديدات",
+                "description": "تمارين وسيناريوهات مبسطة للهجمات"
+              },
+              {
+                "title": "حل مشكلات أمان",
+                "description": "تحليل الموقف واختيار حماية مناسبة"
+              }
             ],
             "blue": [
-              { "title": "أمن الويب", "description": "مخاطر شائعة زي XSS/SQLi بشكل مبسط" },
-              { "title": "أمن الشبكات", "description": "أساسيات حماية الشبكات بطرق بسيطة" },
-              { "title": "تطبيقات تدريبية", "description": "تجارب حماية على أنظمة آمنة" }
+              {
+                "title": "أمن الويب",
+                "description": "مخاطر شائعة زي XSS/SQLi بشكل مبسط"
+              },
+              {
+                "title": "أمن الشبكات",
+                "description": "أساسيات حماية الشبكات بطرق بسيطة"
+              },
+              {
+                "title": "تطبيقات تدريبية",
+                "description": "تجارب حماية على أنظمة آمنة"
+              }
             ],
             "red": [
-              { "title": "مبادئ الاختراق الأخلاقي", "description": "يعني إيه Ethical Hacking وحدوده" },
-              { "title": "اكتشاف ثغرات ببساطة", "description": "فحص ومسح بشكل مناسب للمبتدئين" },
-              { "title": "مسؤولية وأخلاقيات", "description": "إزاي تشتغل صح وبأمان" }
+              {
+                "title": "مبادئ الاختراق الأخلاقي",
+                "description": "يعني إيه Ethical Hacking وحدوده"
+              },
+              {
+                "title": "اكتشاف ثغرات ببساطة",
+                "description": "فحص ومسح بشكل مناسب للمبتدئين"
+              },
+              {
+                "title": "مسؤولية وأخلاقيات",
+                "description": "إزاي تشتغل صح وبأمان"
+              }
             ],
             "brown": [
-              { "title": "استجابة للحوادث", "description": "خطوات التعامل مع حادث أمني" },
-              { "title": "توثيق الحادث", "description": "كتابة تقرير مبسط ومنظم" },
-              { "title": "تقليل المخاطر", "description": "إجراءات دفاعية تمنع تكرار المشكلة" }
+              {
+                "title": "استجابة للحوادث",
+                "description": "خطوات التعامل مع حادث أمني"
+              },
+              {
+                "title": "توثيق الحادث",
+                "description": "كتابة تقرير مبسط ومنظم"
+              },
+              {
+                "title": "تقليل المخاطر",
+                "description": "إجراءات دفاعية تمنع تكرار المشكلة"
+              }
             ],
             "black": [
-              { "title": "تقوية الأنظمة", "description": "Hardening مبسط لإعدادات الجهاز" },
-              { "title": "تحليل تهديدات", "description": "فهم مؤشرات هجوم بشكل مبسط" },
-              { "title": "عقلية دفاعية", "description": "تفكير منظم لاختيار أفضل حماية" }
+              {
+                "title": "تقوية الأنظمة",
+                "description": "Hardening مبسط لإعدادات الجهاز"
+              },
+              {
+                "title": "تحليل تهديدات",
+                "description": "فهم مؤشرات هجوم بشكل مبسط"
+              },
+              {
+                "title": "عقلية دفاعية",
+                "description": "تفكير منظم لاختيار أفضل حماية"
+              }
             ],
             "ninja": [
-              { "title": "شغل فريق دفاعي", "description": "مراقبة وتنبيه واستجابة مبسطة" },
-              { "title": "تجهيز تقرير وعرض", "description": "تلخيص النتائج وتقديمها" },
-              { "title": "مشروع فريق", "description": "تنفيذ مهمة كاملة كفريق" }
+              {
+                "title": "شغل فريق دفاعي",
+                "description": "مراقبة وتنبيه واستجابة مبسطة"
+              },
+              {
+                "title": "تجهيز تقرير وعرض",
+                "description": "تلخيص النتائج وتقديمها"
+              },
+              {
+                "title": "مشروع فريق",
+                "description": "تنفيذ مهمة كاملة كفريق"
+              }
             ],
             "master": [
-              { "title": "مشروع نهائي", "description": "حل أمني مبسط قابل للعرض" },
-              { "title": "Risk Checklist", "description": "قائمة فحص مخاطر بطريقة سهلة" },
-              { "title": "عرض تقديمي", "description": "شرح الفكرة والحماية والنتائج" }
+              {
+                "title": "مشروع نهائي",
+                "description": "حل أمني مبسط قابل للعرض"
+              },
+              {
+                "title": "Risk Checklist",
+                "description": "قائمة فحص مخاطر بطريقة سهلة"
+              },
+              {
+                "title": "عرض تقديمي",
+                "description": "شرح الفكرة والحماية والنتائج"
+              }
             ]
           }
         },
@@ -257,49 +343,130 @@
           },
           "whatWeWillLearn": {
             "yellow": [
-              { "title": "يعني إيه AI؟", "description": "إزاي الكمبيوتر بيتعلم من أمثلة" },
-              { "title": "أول نموذج", "description": "تدريب نموذج بسيط للصور/الأصوات" },
-              { "title": "تقييم بسيط", "description": "نعرف النموذج شغال كويس ولا لأ" }
+              {
+                "title": "يعني إيه AI؟",
+                "description": "إزاي الكمبيوتر بيتعلم من أمثلة"
+              },
+              {
+                "title": "أول نموذج",
+                "description": "تدريب نموذج بسيط للصور/الأصوات"
+              },
+              {
+                "title": "تقييم بسيط",
+                "description": "نعرف النموذج شغال كويس ولا لأ"
+              }
             ],
             "orange": [
-              { "title": "NLP ببساطة", "description": "إزاي الكمبيوتر بيفهم النص" },
-              { "title": "Chatbot بسيط", "description": "روبوت محادثة قائم على قواعد" },
-              { "title": "تطبيقات واقعية", "description": "سيناريوهات وأسئلة وتمارين" }
+              {
+                "title": "NLP ببساطة",
+                "description": "إزاي الكمبيوتر بيفهم النص"
+              },
+              {
+                "title": "Chatbot بسيط",
+                "description": "روبوت محادثة قائم على قواعد"
+              },
+              {
+                "title": "تطبيقات واقعية",
+                "description": "سيناريوهات وأسئلة وتمارين"
+              }
             ],
             "green": [
-              { "title": "اصنع مشاريع ML", "description": "اعمل تطبيقات تعلم آلة عملية" },
-              { "title": "حسّن دقة النموذج", "description": "اتعلم تطوير أداء AI" },
-              { "title": "اختار بيانات أفضل", "description": "افهم إيه اللي بيخلي بيانات التدريب كويسة" }
+              {
+                "title": "اصنع مشاريع ML",
+                "description": "اعمل تطبيقات تعلم آلة عملية"
+              },
+              {
+                "title": "حسّن دقة النموذج",
+                "description": "اتعلم تطوير أداء AI"
+              },
+              {
+                "title": "اختار بيانات أفضل",
+                "description": "افهم إيه اللي بيخلي بيانات التدريب كويسة"
+              }
             ],
             "blue": [
-              { "title": "رؤية حاسوبية", "description": "مشاريع للصور بشكل مبسط" },
-              { "title": "لغة ونصوص", "description": "مشاريع NLP للنصوص" },
-              { "title": "دمج مشاريع", "description": "فكرة تجمع صورة + نص" }
+              {
+                "title": "رؤية حاسوبية",
+                "description": "مشاريع للصور بشكل مبسط"
+              },
+              {
+                "title": "لغة ونصوص",
+                "description": "مشاريع NLP للنصوص"
+              },
+              {
+                "title": "دمج مشاريع",
+                "description": "فكرة تجمع صورة + نص"
+              }
             ],
             "red": [
-              { "title": "مقاييس التقييم", "description": "Accuracy وError بطريقة سهلة" },
-              { "title": "تقليل الأخطاء", "description": "تحسينات خطوة بخطوة" },
-              { "title": "تجارب منظمة", "description": "اختبر وقيّم وكرر" }
+              {
+                "title": "مقاييس التقييم",
+                "description": "Accuracy وError بطريقة سهلة"
+              },
+              {
+                "title": "تقليل الأخطاء",
+                "description": "تحسينات خطوة بخطوة"
+              },
+              {
+                "title": "تجارب منظمة",
+                "description": "اختبر وقيّم وكرر"
+              }
             ],
             "brown": [
-              { "title": "Product Thinking", "description": "AI يخدم مشكلة حقيقية" },
-              { "title": "تصميم ميزة", "description": "ميزة ذكية مفيدة وآمنة" },
-              { "title": "تجربة استخدام", "description": "عرض نتائج AI بشكل واضح" }
+              {
+                "title": "Product Thinking",
+                "description": "AI يخدم مشكلة حقيقية"
+              },
+              {
+                "title": "تصميم ميزة",
+                "description": "ميزة ذكية مفيدة وآمنة"
+              },
+              {
+                "title": "تجربة استخدام",
+                "description": "عرض نتائج AI بشكل واضح"
+              }
             ],
             "black": [
-              { "title": "جودة البيانات", "description": "ليه الداتا أساس النجاح" },
-              { "title": "التحيز", "description": "إزاي نقلل Bias بشكل مبسط" },
-              { "title": "Overfitting", "description": "نفهمه ونتجنبّه بالتجربة" }
+              {
+                "title": "جودة البيانات",
+                "description": "ليه الداتا أساس النجاح"
+              },
+              {
+                "title": "التحيز",
+                "description": "إزاي نقلل Bias بشكل مبسط"
+              },
+              {
+                "title": "Overfitting",
+                "description": "نفهمه ونتجنبّه بالتجربة"
+              }
             ],
             "ninja": [
-              { "title": "شغل فريق", "description": "تقسيم أدوار وتعاون" },
-              { "title": "اختبار وDemo", "description": "تحضير عرض نهائي قوي" },
-              { "title": "تسليم مشروع", "description": "تنفيذ من البداية للنهاية" }
+              {
+                "title": "شغل فريق",
+                "description": "تقسيم أدوار وتعاون"
+              },
+              {
+                "title": "اختبار وDemo",
+                "description": "تحضير عرض نهائي قوي"
+              },
+              {
+                "title": "تسليم مشروع",
+                "description": "تنفيذ من البداية للنهاية"
+              }
             ],
             "master": [
-              { "title": "حل متكامل", "description": "بيانات + نموذج + تقييم" },
-              { "title": "توثيق بسيط", "description": "شرح الفكرة والخطوات" },
-              { "title": "عرض نهائي", "description": "تقديم النظام النهائي" }
+              {
+                "title": "حل متكامل",
+                "description": "بيانات + نموذج + تقييم"
+              },
+              {
+                "title": "توثيق بسيط",
+                "description": "شرح الفكرة والخطوات"
+              },
+              {
+                "title": "عرض نهائي",
+                "description": "تقديم النظام النهائي"
+              }
             ]
           }
         },
@@ -360,49 +527,130 @@
           },
           "whatWeWillLearn": {
             "yellow": [
-              { "title": "منطق البرمجة", "description": "شروط وحلقات ومتغيرات بطريقة ممتعة" },
-              { "title": "بناء لعبة بسيطة", "description": "نقاط وحركة وقواعد لعب" },
-              { "title": "حل مشكلات", "description": "تفكير منطقي خطوة بخطوة" }
+              {
+                "title": "منطق البرمجة",
+                "description": "شروط وحلقات ومتغيرات بطريقة ممتعة"
+              },
+              {
+                "title": "بناء لعبة بسيطة",
+                "description": "نقاط وحركة وقواعد لعب"
+              },
+              {
+                "title": "حل مشكلات",
+                "description": "تفكير منطقي خطوة بخطوة"
+              }
             ],
             "orange": [
-              { "title": "أساسيات Python", "description": "Syntax بسيط وبرامج صغيرة" },
-              { "title": "مشروع آلة حاسبة", "description": "Input/Output وعمليات" },
-              { "title": "Debugging", "description": "إزاي تلاقي الغلط وتصلحه" }
+              {
+                "title": "أساسيات Python",
+                "description": "Syntax بسيط وبرامج صغيرة"
+              },
+              {
+                "title": "مشروع آلة حاسبة",
+                "description": "Input/Output وعمليات"
+              },
+              {
+                "title": "Debugging",
+                "description": "إزاي تلاقي الغلط وتصلحه"
+              }
             ],
             "green": [
-              { "title": "مشاريع بايثون", "description": "تطبيقات صغيرة مفيدة" },
-              { "title": "تنظيم الكود", "description": "Functions وتقسيم منطقي" },
-              { "title": "تقوية المنطق", "description": "تمارين وتحديات" }
+              {
+                "title": "مشاريع بايثون",
+                "description": "تطبيقات صغيرة مفيدة"
+              },
+              {
+                "title": "تنظيم الكود",
+                "description": "Functions وتقسيم منطقي"
+              },
+              {
+                "title": "تقوية المنطق",
+                "description": "تمارين وتحديات"
+              }
             ],
             "blue": [
-              { "title": "أساسيات الويب", "description": "Client/Server بشكل مبسط" },
-              { "title": "استخدام APIs", "description": "طلب بيانات وعرضها" },
-              { "title": "مشروع متصل", "description": "فكرة بسيطة تعتمد على API" }
+              {
+                "title": "أساسيات الويب",
+                "description": "Client/Server بشكل مبسط"
+              },
+              {
+                "title": "استخدام APIs",
+                "description": "طلب بيانات وعرضها"
+              },
+              {
+                "title": "مشروع متصل",
+                "description": "فكرة بسيطة تعتمد على API"
+              }
             ],
             "red": [
-              { "title": "هياكل بيانات", "description": "Lists ومفاهيم أساسية بسهولة" },
-              { "title": "خوارزميات", "description": "بحث وفرز بطريقة مبسطة" },
-              { "title": "أداء الكود", "description": "ليه كود أسرع من كود" }
+              {
+                "title": "هياكل بيانات",
+                "description": "Lists ومفاهيم أساسية بسهولة"
+              },
+              {
+                "title": "خوارزميات",
+                "description": "بحث وفرز بطريقة مبسطة"
+              },
+              {
+                "title": "أداء الكود",
+                "description": "ليه كود أسرع من كود"
+              }
             ],
             "brown": [
-              { "title": "Git للمبتدئين", "description": "Commit/Branch/Merge" },
-              { "title": "شغل فريق", "description": "تعاون وتقسيم مهام" },
-              { "title": "مشروع أكبر", "description": "Features أكتر وتنظيم أحسن" }
+              {
+                "title": "Git للمبتدئين",
+                "description": "Commit/Branch/Merge"
+              },
+              {
+                "title": "شغل فريق",
+                "description": "تعاون وتقسيم مهام"
+              },
+              {
+                "title": "مشروع أكبر",
+                "description": "Features أكتر وتنظيم أحسن"
+              }
             ],
             "black": [
-              { "title": "اختبارات بسيطة", "description": "نتأكد إن الكود شغال صح" },
-              { "title": "Clean Code", "description": "Naming وتنظيم ووضوح" },
-              { "title": "قابلية التطوير", "description": "سهولة الإضافة والتعديل" }
+              {
+                "title": "اختبارات بسيطة",
+                "description": "نتأكد إن الكود شغال صح"
+              },
+              {
+                "title": "Clean Code",
+                "description": "Naming وتنظيم ووضوح"
+              },
+              {
+                "title": "قابلية التطوير",
+                "description": "سهولة الإضافة والتعديل"
+              }
             ],
             "ninja": [
-              { "title": "تخطيط مشروع", "description": "Requirements وRoadmap" },
-              { "title": "Build/Test/Demo", "description": "تنفيذ ثم اختبار ثم عرض" },
-              { "title": "عرض احترافي", "description": "شرح الفكرة والنتائج" }
+              {
+                "title": "تخطيط مشروع",
+                "description": "Requirements وRoadmap"
+              },
+              {
+                "title": "Build/Test/Demo",
+                "description": "تنفيذ ثم اختبار ثم عرض"
+              },
+              {
+                "title": "عرض احترافي",
+                "description": "شرح الفكرة والنتائج"
+              }
             ],
             "master": [
-              { "title": "مشروع تخرّج", "description": "تطبيق نهائي مصقول" },
-              { "title": "توثيق", "description": "README وخطوات تشغيل" },
-              { "title": "Presentation", "description": "عرض نهائي منظم وواضح" }
+              {
+                "title": "مشروع تخرّج",
+                "description": "تطبيق نهائي مصقول"
+              },
+              {
+                "title": "توثيق",
+                "description": "README وخطوات تشغيل"
+              },
+              {
+                "title": "Presentation",
+                "description": "عرض نهائي منظم وواضح"
+              }
             ]
           }
         },
@@ -463,49 +711,130 @@
           },
           "whatWeWillLearn": {
             "yellow": [
-              { "title": "يعني إيه بيانات؟", "description": "جمع وتصنيف وفهم أنواع البيانات" },
-              { "title": "رسوم بيانية", "description": "تمثيل الداتا بصريًا بسهولة" },
-              { "title": "قراءة نتائج", "description": "استنتاجات واضحة من الداتا" }
+              {
+                "title": "يعني إيه بيانات؟",
+                "description": "جمع وتصنيف وفهم أنواع البيانات"
+              },
+              {
+                "title": "رسوم بيانية",
+                "description": "تمثيل الداتا بصريًا بسهولة"
+              },
+              {
+                "title": "قراءة نتائج",
+                "description": "استنتاجات واضحة من الداتا"
+              }
             ],
             "orange": [
-              { "title": "تنظيف البيانات", "description": "تصحيح أخطاء وقيم ناقصة" },
-              { "title": "تحليل عملي", "description": "استخراج Patterns من بيانات واقعية" },
-              { "title": "أدوات بسيطة", "description": "Pandas/Sheets بطريقة سهلة" }
+              {
+                "title": "تنظيف البيانات",
+                "description": "تصحيح أخطاء وقيم ناقصة"
+              },
+              {
+                "title": "تحليل عملي",
+                "description": "استخراج Patterns من بيانات واقعية"
+              },
+              {
+                "title": "أدوات بسيطة",
+                "description": "Pandas/Sheets بطريقة سهلة"
+              }
             ],
             "green": [
-              { "title": "Dashboard", "description": "بناء لوحات بيانات بسيطة" },
-              { "title": "Storytelling", "description": "تحكي قصة من الداتا" },
-              { "title": "Insights", "description": "اكتشاف معلومات مفيدة" }
+              {
+                "title": "Dashboard",
+                "description": "بناء لوحات بيانات بسيطة"
+              },
+              {
+                "title": "Storytelling",
+                "description": "تحكي قصة من الداتا"
+              },
+              {
+                "title": "Insights",
+                "description": "اكتشاف معلومات مفيدة"
+              }
             ],
             "blue": [
-              { "title": "إحصاء مبسط", "description": "Mean/Median/Mode بشكل سهل" },
-              { "title": "فهم أنماط", "description": "Trend وCorrelation" },
-              { "title": "تطبيق عملي", "description": "تمارين على بيانات حقيقية" }
+              {
+                "title": "إحصاء مبسط",
+                "description": "Mean/Median/Mode بشكل سهل"
+              },
+              {
+                "title": "فهم أنماط",
+                "description": "Trend وCorrelation"
+              },
+              {
+                "title": "تطبيق عملي",
+                "description": "تمارين على بيانات حقيقية"
+              }
             ],
             "red": [
-              { "title": "توقع بسيط", "description": "Forecast مبسط للنتائج" },
-              { "title": "تقييم", "description": "نعرف التوقع صح ولا لأ" },
-              { "title": "تجنب أخطاء", "description": "فهم حدود النموذج" }
+              {
+                "title": "توقع بسيط",
+                "description": "Forecast مبسط للنتائج"
+              },
+              {
+                "title": "تقييم",
+                "description": "نعرف التوقع صح ولا لأ"
+              },
+              {
+                "title": "تجنب أخطاء",
+                "description": "فهم حدود النموذج"
+              }
             ],
             "brown": [
-              { "title": "Business Thinking", "description": "الداتا تدعم قرار" },
-              { "title": "KPIs", "description": "مؤشرات أداء بشكل مبسط" },
-              { "title": "توصيات", "description": "نطلع بخطوات واضحة بعد التحليل" }
+              {
+                "title": "Business Thinking",
+                "description": "الداتا تدعم قرار"
+              },
+              {
+                "title": "KPIs",
+                "description": "مؤشرات أداء بشكل مبسط"
+              },
+              {
+                "title": "توصيات",
+                "description": "نطلع بخطوات واضحة بعد التحليل"
+              }
             ],
             "black": [
-              { "title": "Pipeline", "description": "جمع → تنظيف → تحليل → تقرير" },
-              { "title": "منهجية", "description": "شغل منظم قابل للتكرار" },
-              { "title": "تقرير نهائي", "description": "نتائج + رسوم + استنتاجات" }
+              {
+                "title": "Pipeline",
+                "description": "جمع → تنظيف → تحليل → تقرير"
+              },
+              {
+                "title": "منهجية",
+                "description": "شغل منظم قابل للتكرار"
+              },
+              {
+                "title": "تقرير نهائي",
+                "description": "نتائج + رسوم + استنتاجات"
+              }
             ],
             "ninja": [
-              { "title": "مشروع فريق", "description": "تقسيم أدوار وتحليل جماعي" },
-              { "title": "عرض النتائج", "description": "Presentation واضح ومرتب" },
-              { "title": "تسليم نهائي", "description": "ملف منظم وقصة كاملة" }
+              {
+                "title": "مشروع فريق",
+                "description": "تقسيم أدوار وتحليل جماعي"
+              },
+              {
+                "title": "عرض النتائج",
+                "description": "Presentation واضح ومرتب"
+              },
+              {
+                "title": "تسليم نهائي",
+                "description": "ملف منظم وقصة كاملة"
+              }
             ],
             "master": [
-              { "title": "مشروع تخرّج", "description": "قصة بيانات متكاملة" },
-              { "title": "قوة العرض", "description": "رسوم وتفسير ووضوح" },
-              { "title": "أثر حقيقي", "description": "نتائج قابلة للاستخدام" }
+              {
+                "title": "مشروع تخرّج",
+                "description": "قصة بيانات متكاملة"
+              },
+              {
+                "title": "قوة العرض",
+                "description": "رسوم وتفسير ووضوح"
+              },
+              {
+                "title": "أثر حقيقي",
+                "description": "نتائج قابلة للاستخدام"
+              }
             ]
           }
         },
@@ -566,49 +895,130 @@
           },
           "whatWeWillLearn": {
             "yellow": [
-              { "title": "دوائر بسيطة", "description": "LED ومقاومات وتوصيل آمن" },
-              { "title": "حساسات", "description": "قراءة Sensors وفهم قيمها" },
-              { "title": "مشروع صغير", "description": "إضاءة ذكية أو إنذار بسيط" }
+              {
+                "title": "دوائر بسيطة",
+                "description": "LED ومقاومات وتوصيل آمن"
+              },
+              {
+                "title": "حساسات",
+                "description": "قراءة Sensors وفهم قيمها"
+              },
+              {
+                "title": "مشروع صغير",
+                "description": "إضاءة ذكية أو إنذار بسيط"
+              }
             ],
             "orange": [
-              { "title": "Microcontroller", "description": "Arduino/Micro:bit بشكل مبسط" },
-              { "title": "تحكم في محركات", "description": "سرعة واتجاه وتشغيل" },
-              { "title": "متتبع خط", "description": "روبوت بسيط يتبع مسار" }
+              {
+                "title": "Microcontroller",
+                "description": "Arduino/Micro:bit بشكل مبسط"
+              },
+              {
+                "title": "تحكم في محركات",
+                "description": "سرعة واتجاه وتشغيل"
+              },
+              {
+                "title": "متتبع خط",
+                "description": "روبوت بسيط يتبع مسار"
+              }
             ],
             "green": [
-              { "title": "IoT مبسط", "description": "جهاز ذكي بمدخلات ومخرجات" },
-              { "title": "اختبار وتحسين", "description": "استقرار وجودة النظام" },
-              { "title": "مشروع عملي", "description": "جهاز/روبوت قابل للعرض" }
+              {
+                "title": "IoT مبسط",
+                "description": "جهاز ذكي بمدخلات ومخرجات"
+              },
+              {
+                "title": "اختبار وتحسين",
+                "description": "استقرار وجودة النظام"
+              },
+              {
+                "title": "مشروع عملي",
+                "description": "جهاز/روبوت قابل للعرض"
+              }
             ],
             "blue": [
-              { "title": "حركة وتحكم", "description": "أوامر حركة وتوازن" },
-              { "title": "سلامة التوصيل", "description": "معايير أمان بسيطة" },
-              { "title": "تمارين حركة", "description": "سيناريوهات تحكم مختلفة" }
+              {
+                "title": "حركة وتحكم",
+                "description": "أوامر حركة وتوازن"
+              },
+              {
+                "title": "سلامة التوصيل",
+                "description": "معايير أمان بسيطة"
+              },
+              {
+                "title": "تمارين حركة",
+                "description": "سيناريوهات تحكم مختلفة"
+              }
             ],
             "red": [
-              { "title": "تجنب عوائق", "description": "حساسات + قرار حركة" },
-              { "title": "تحديات واقعية", "description": "مهام متنوعة للروبوت" },
-              { "title": "تحسين الأداء", "description": "تقليل أخطاء الحركة" }
+              {
+                "title": "تجنب عوائق",
+                "description": "حساسات + قرار حركة"
+              },
+              {
+                "title": "تحديات واقعية",
+                "description": "مهام متنوعة للروبوت"
+              },
+              {
+                "title": "تحسين الأداء",
+                "description": "تقليل أخطاء الحركة"
+              }
             ],
             "brown": [
-              { "title": "ربط بالسحابة", "description": "إرسال بيانات بشكل مبسط" },
-              { "title": "جمع بيانات", "description": "تسجيل قراءات ونتائج" },
-              { "title": "مشروع IoT", "description": "جهاز متصل بسيط" }
+              {
+                "title": "ربط بالسحابة",
+                "description": "إرسال بيانات بشكل مبسط"
+              },
+              {
+                "title": "جمع بيانات",
+                "description": "تسجيل قراءات ونتائج"
+              },
+              {
+                "title": "مشروع IoT",
+                "description": "جهاز متصل بسيط"
+              }
             ],
             "black": [
-              { "title": "تشخيص أعطال", "description": "ليه الجهاز مش شغال؟" },
-              { "title": "تصميم أعقد", "description": "دمج مكونات أكثر" },
-              { "title": "توثيق", "description": "شرح توصيلات وخطوات" }
+              {
+                "title": "تشخيص أعطال",
+                "description": "ليه الجهاز مش شغال؟"
+              },
+              {
+                "title": "تصميم أعقد",
+                "description": "دمج مكونات أكثر"
+              },
+              {
+                "title": "توثيق",
+                "description": "شرح توصيلات وخطوات"
+              }
             ],
             "ninja": [
-              { "title": "مشروع فريق", "description": "بناء روبوت كامل كفريق" },
-              { "title": "اختبار وDemo", "description": "تجربة وعرض عملي" },
-              { "title": "عرض نهائي", "description": "شرح الفكرة والنتيجة" }
+              {
+                "title": "مشروع فريق",
+                "description": "بناء روبوت كامل كفريق"
+              },
+              {
+                "title": "اختبار وDemo",
+                "description": "تجربة وعرض عملي"
+              },
+              {
+                "title": "عرض نهائي",
+                "description": "شرح الفكرة والنتيجة"
+              }
             ],
             "master": [
-              { "title": "روبوت نهائي", "description": "فكرة قوية وتنفيذ متكامل" },
-              { "title": "تقرير مشروع", "description": "مكونات + نتائج + خطوات" },
-              { "title": "تقديم احترافي", "description": "Demo + Story واضحة" }
+              {
+                "title": "روبوت نهائي",
+                "description": "فكرة قوية وتنفيذ متكامل"
+              },
+              {
+                "title": "تقرير مشروع",
+                "description": "مكونات + نتائج + خطوات"
+              },
+              {
+                "title": "تقديم احترافي",
+                "description": "Demo + Story واضحة"
+              }
             ]
           }
         },
@@ -669,49 +1079,130 @@
           },
           "whatWeWillLearn": {
             "yellow": [
-              { "title": "رسم رقمي", "description": "أدوات بسيطة للرسم والتلوين" },
-              { "title": "Vector", "description": "تصميم أيقونات وشخصيات" },
-              { "title": "مشروع شخصية", "description": "Character Design كامل" }
+              {
+                "title": "رسم رقمي",
+                "description": "أدوات بسيطة للرسم والتلوين"
+              },
+              {
+                "title": "Vector",
+                "description": "تصميم أيقونات وشخصيات"
+              },
+              {
+                "title": "مشروع شخصية",
+                "description": "Character Design كامل"
+              }
             ],
             "orange": [
-              { "title": "Animation Basics", "description": "Timing وحركة إطار بإطار" },
-              { "title": "عمل GIF", "description": "مشهد بسيط متحرك" },
-              { "title": "Story قصيرة", "description": "تحويل فكرة لحركة" }
+              {
+                "title": "Animation Basics",
+                "description": "Timing وحركة إطار بإطار"
+              },
+              {
+                "title": "عمل GIF",
+                "description": "مشهد بسيط متحرك"
+              },
+              {
+                "title": "Story قصيرة",
+                "description": "تحويل فكرة لحركة"
+              }
             ],
             "green": [
-              { "title": "مشاريع تفاعلية", "description": "تصميمات قابلة للتفاعل" },
-              { "title": "تحسين الجودة", "description": "Consistency وتنسيق أفضل" },
-              { "title": "إخراج نهائي", "description": "تسليم مشروع مصقول" }
+              {
+                "title": "مشاريع تفاعلية",
+                "description": "تصميمات قابلة للتفاعل"
+              },
+              {
+                "title": "تحسين الجودة",
+                "description": "Consistency وتنسيق أفضل"
+              },
+              {
+                "title": "إخراج نهائي",
+                "description": "تسليم مشروع مصقول"
+              }
             ],
             "blue": [
-              { "title": "هوية بصرية", "description": "ألوان وخطوط وتناسق" },
-              { "title": "بورتفوليو", "description": "عرض الأعمال بشكل احترافي" },
-              { "title": "Presentation", "description": "شرح الفكرة والاختيارات" }
+              {
+                "title": "هوية بصرية",
+                "description": "ألوان وخطوط وتناسق"
+              },
+              {
+                "title": "بورتفوليو",
+                "description": "عرض الأعمال بشكل احترافي"
+              },
+              {
+                "title": "Presentation",
+                "description": "شرح الفكرة والاختيارات"
+              }
             ],
             "red": [
-              { "title": "Motion Graphics", "description": "تحريك نصوص وعناصر" },
-              { "title": "Video Editing", "description": "مونتاج بسيط وسرد أفضل" },
-              { "title": "مشروع فيديو", "description": "إنتاج قصير منظم" }
+              {
+                "title": "Motion Graphics",
+                "description": "تحريك نصوص وعناصر"
+              },
+              {
+                "title": "Video Editing",
+                "description": "مونتاج بسيط وسرد أفضل"
+              },
+              {
+                "title": "مشروع فيديو",
+                "description": "إنتاج قصير منظم"
+              }
             ],
             "brown": [
-              { "title": "شغل فريق", "description": "تقسيم أدوار وإدارة وقت" },
-              { "title": "Feedback", "description": "تعديل وتحسين عبر Iterations" },
-              { "title": "تسليم منظم", "description": "ملفات مرتبة ومعايير جودة" }
+              {
+                "title": "شغل فريق",
+                "description": "تقسيم أدوار وإدارة وقت"
+              },
+              {
+                "title": "Feedback",
+                "description": "تعديل وتحسين عبر Iterations"
+              },
+              {
+                "title": "تسليم منظم",
+                "description": "ملفات مرتبة ومعايير جودة"
+              }
             ],
             "black": [
-              { "title": "إخراج فني", "description": "قرار فني واضح وتنفيذ قوي" },
-              { "title": "تفاصيل احترافية", "description": "Composition وHierarchy" },
-              { "title": "مستوى أعلى", "description": "جودة جاهزة للنشر" }
+              {
+                "title": "إخراج فني",
+                "description": "قرار فني واضح وتنفيذ قوي"
+              },
+              {
+                "title": "تفاصيل احترافية",
+                "description": "Composition وHierarchy"
+              },
+              {
+                "title": "مستوى أعلى",
+                "description": "جودة جاهزة للنشر"
+              }
             ],
             "ninja": [
-              { "title": "إنتاج كامل", "description": "من الفكرة للنتيجة النهائية" },
-              { "title": "تنفيذ جماعي", "description": "Project Sprint كفريق" },
-              { "title": "Showcase", "description": "عرض قوي للأعمال" }
+              {
+                "title": "إنتاج كامل",
+                "description": "من الفكرة للنتيجة النهائية"
+              },
+              {
+                "title": "تنفيذ جماعي",
+                "description": "Project Sprint كفريق"
+              },
+              {
+                "title": "Showcase",
+                "description": "عرض قوي للأعمال"
+              }
             ],
             "master": [
-              { "title": "Portfolio نهائي", "description": "أفضل أعمال مختارة بعناية" },
-              { "title": "هوية شخصية", "description": "Style يميز الطالب" },
-              { "title": "عرض تخرّج", "description": "Presentation احترافي" }
+              {
+                "title": "Portfolio نهائي",
+                "description": "أفضل أعمال مختارة بعناية"
+              },
+              {
+                "title": "هوية شخصية",
+                "description": "Style يميز الطالب"
+              },
+              {
+                "title": "عرض تخرّج",
+                "description": "Presentation احترافي"
+              }
             ]
           }
         }
@@ -947,6 +1438,13 @@
         "google": "المتابعة مع Google",
         "apple": "المتابعة مع Apple",
         "facebook": "المتابعة مع Facebook"
+      },
+      "errors": {
+        "emptyFields": "يرجى إدخال البريد الإلكتروني وكلمة المرور",
+        "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+        "emailNotVerified": "يرجى التحقق من بريدك الإلكتروني قبل تسجيل الدخول",
+        "accountLocked": "الحساب مغلق. يرجى التواصل مع الدعم.",
+        "unexpected": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
       }
     },
     "signup": {
@@ -972,11 +1470,21 @@
       "privacy": "سياسة الخصوصية",
       "passwordMismatch": "كلمات المرور غير متطابقة",
       "creatingAccount": "جاري إنشاء الحساب...",
+      "passwordHint": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
       "with": {
         "google": "المتابعة مع Google",
         "apple": "المتابعة مع Apple",
         "facebook": "المتابعة مع Facebook"
       }
+    },
+    "resetPassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "description": "أدخل كلمة المرور الجديدة أدناه.",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "resetButton": "إعادة تعيين كلمة المرور",
+      "successTitle": "تم إعادة تعيين كلمة المرور بنجاح!",
+      "successMessage": "تم إعادة تعيين كلمة المرور بنجاح. يمكنك الآن تسجيل الدخول بكلمة المرور الجديدة."
     },
     "otp": {
       "title": "يرجى التحقق من بريدك الإلكتروني!",

@@ -5,11 +5,10 @@ import { AuthLogo } from '../shared/AuthLogo';
 import { localeDirections } from '@/i18n';
 
 interface LoginCardProps {
-  action: (formData: FormData) => Promise<{ ok: boolean }>;
   locale: string;
 }
 
-export async function LoginCard({ action, locale }: LoginCardProps) {
+export async function LoginCard({ locale }: LoginCardProps) {
   const t = await getTranslations('auth.login');
   const isRTL = localeDirections[locale as keyof typeof localeDirections] === 'rtl';
 
@@ -72,7 +71,7 @@ export async function LoginCard({ action, locale }: LoginCardProps) {
 
         {/* Form */}
         <div className="flex-1 flex flex-col justify-center relative z-10">
-          <LoginForm action={action} locale={locale} />
+          <LoginForm locale={locale} />
         </div>
 
         {/* Footer Links */}

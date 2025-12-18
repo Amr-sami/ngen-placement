@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
+import VerificationToken, { generateVerificationToken } from '@/lib/models/VerificationToken';
+import { sendVerificationEmail } from '@/lib/email';
 
 export async function POST(request: NextRequest) {
     try {
@@ -90,16 +92,33 @@ export async function POST(request: NextRequest) {
             },
         });
 
-        // TODO: Send verification email here using Resend
-        // For now, we'll auto-verify for testing (remove this in production)
-        // user.emailVerified = true;
-        // user.status = 'active';
-        // await user.save();
+        // Delete any existing verification tokens for this email
+        await VerificationToken.deleteMany({ email: email.toLowerCase() });
+
+        // Create verification token
+        const token = generateVerificationToken();
+        await VerificationToken.create({
+            email: email.toLowerCase(),
+            token,
+            expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000), // 24 hours
+        });
+
+        // Send verification email
+        const emailResult = await sendVerificationEmail(
+            email.toLowerCase(),
+            token,
+            firstName
+        );
+
+        if (!emailResult.success) {
+            console.error('Failed to send verification email:', emailResult.error);
+            // Don't fail registration if email fails - user can request resend
+        }
 
         return NextResponse.json(
             {
                 success: true,
-                message: 'User registered successfully. Please verify your email.',
+                message: 'User registered successfully. Please check your email to verify your account.',
                 userId: user._id.toString(),
             },
             { status: 201 }

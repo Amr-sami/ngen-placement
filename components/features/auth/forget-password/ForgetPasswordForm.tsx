@@ -1,48 +1,69 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useState, useTransition } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useRTL } from '@/lib/useRTL';
 
 interface ForgetPasswordFormProps {
-  action: (formData: FormData) => Promise<{ ok: boolean }>;
+  locale: string;
 }
 
-export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
+export function ForgetPasswordForm({ locale }: ForgetPasswordFormProps) {
   const t = useTranslations('auth.forgetPassword');
   const router = useRouter();
   const isRTL = useRTL();
-  const [isPending, startTransition] = useTransition();
-  const [email, setEmail] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    startTransition(async () => {
-      const formData = new FormData();
-      formData.append('email', email);
-      
-      const result = await action(formData);
-      
-      if (result.ok) {
-        console.log('Password reset email sent successfully!');
-        setIsSubmitted(true);
-        // TODO: Show success message and optionally redirect
+    setError(null);
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('/api/auth/forgot-password', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        setError(result.error || 'Failed to send reset email');
       } else {
-        console.error('Password reset request failed');
-        // TODO: Show error message to user
+        setIsSubmitted(true);
       }
-    });
+    } catch (err) {
+      console.error('Forgot password error:', err);
+      setError('An unexpected error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleBack = () => {
-    router.back();
+    router.push(`/${locale}/auth/login`);
   };
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col items-center" style={{ gap: '21px' }} dir={isRTL ? 'rtl' : 'ltr'}>
+      {/* Error Message */}
+      {error && (
+        <div
+          className="text-red-600 text-sm text-center p-3 rounded-[12px] bg-red-50 border border-red-200"
+          style={{ width: '528px', maxWidth: '100%' }}
+        >
+          {error}
+        </div>
+      )}
+
       {/* Email Input */}
       <div style={{ width: '528px', maxWidth: '100%' }}>
         <label htmlFor="email" className="sr-only">
@@ -56,7 +77,7 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder={t('email')}
           required
-          disabled={isPending || isSubmitted}
+          disabled={isLoading || isSubmitted}
           dir="ltr"
           autoComplete="email"
           aria-invalid={false}
@@ -67,7 +88,7 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
       {/* Send Request Button */}
       <button
         type="submit"
-        disabled={isPending || isSubmitted || !email}
+        disabled={isLoading || isSubmitted || !email}
         className="bg-pumpkin hover:bg-pumpkin/90 text-white font-bold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         style={{
           width: '528px',
@@ -77,17 +98,17 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
           borderRadius: '16px',
           fontSize: '16px',
           border: 'none',
-          cursor: isPending || isSubmitted || !email ? 'not-allowed' : 'pointer',
+          cursor: isLoading || isSubmitted || !email ? 'not-allowed' : 'pointer',
         }}
       >
-        {isPending ? '...' : isSubmitted ? t('sent') : t('sendRequest')}
+        {isLoading ? '...' : isSubmitted ? t('sent') : t('sendRequest')}
       </button>
 
       {/* Back Button */}
       <button
         type="button"
         onClick={handleBack}
-        disabled={isPending}
+        disabled={isLoading}
         className="border border-pumpkin text-pumpkin hover:bg-pumpkin hover:text-white font-bold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         style={{
           width: '528px',
@@ -97,14 +118,14 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
           borderRadius: '16px',
           backgroundColor: 'transparent',
           fontSize: '16px',
-          cursor: isPending ? 'not-allowed' : 'pointer',
+          cursor: isLoading ? 'not-allowed' : 'pointer',
         }}
       >
         {t('back')}
       </button>
 
       {/* Status Messages */}
-      {isPending && (
+      {isLoading && (
         <span role="status" style={{ fontSize: '12px', color: '#55606B', marginTop: '8px' }}>
           {t('sending')}
         </span>
@@ -118,4 +139,3 @@ export function ForgetPasswordForm({ action }: ForgetPasswordFormProps) {
     </form>
   );
 }
-

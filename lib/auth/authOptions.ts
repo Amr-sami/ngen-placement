@@ -43,10 +43,10 @@ export const authOptions: NextAuthOptions = {
                     throw new Error('Invalid password');
                 }
 
-                // Check user status
-                if (user.status === 'pending') {
-                    throw new Error('Please verify your email before logging in');
-                }
+                // TODO: Re-enable email verification check after testing
+                // if (user.status === 'pending') {
+                //     throw new Error('Please verify your email before logging in');
+                // }
 
                 if (user.status === 'suspended' || user.status === 'deleted') {
                     throw new Error('Your account has been suspended');

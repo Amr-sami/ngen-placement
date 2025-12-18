@@ -16,7 +16,6 @@ interface SignupStep2Props {
   isPending: boolean;
   showPasswordError: boolean;
   onBack: () => void;
-  onSocialSignup: (provider: 'google' | 'apple' | 'facebook') => void;
 }
 
 export default function SignupStep2({
@@ -30,7 +29,6 @@ export default function SignupStep2({
   isPending,
   showPasswordError,
   onBack,
-  onSocialSignup,
 }: SignupStep2Props) {
   const t = useTranslations('auth.signup');
   const isRTL = useRTL();
@@ -62,7 +60,8 @@ export default function SignupStep2({
           placeholder={`${t('email')} *`}
           required
           dir="ltr"
-          className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass}`}
+          disabled={isPending}
+          className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass} disabled:opacity-50 disabled:cursor-not-allowed`}
         />
       </div>
 
@@ -77,18 +76,23 @@ export default function SignupStep2({
           placeholder={`${t('password')} *`}
           required
           dir="ltr"
-          className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass} ${passwordEyePadding}`}
+          disabled={isPending}
+          className={`${baseInputClasses} ${defaultBorderClasses} ${textAlignClass} ${passwordEyePadding} disabled:opacity-50 disabled:cursor-not-allowed`}
         />
         <button
           type="button"
           onClick={() => setShowPassword(!showPassword)}
-          className={`absolute ${
-            isRTL ? 'left-3' : 'right-3'
-          } top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity outline-none`}
+          className={`absolute ${isRTL ? 'left-3' : 'right-3'
+            } top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity outline-none`}
         >
           <Image src="/assets/auth/eye.svg" alt="" width={20} height={16} />
         </button>
       </div>
+
+      {/* Password hint */}
+      <p className={`text-[11px] text-gray-500 ${isRTL ? 'text-right' : 'text-left'}`}>
+        {t('passwordHint') || 'Password must be at least 8 characters'}
+      </p>
 
       {/* Confirm Password Input */}
       <div className="relative">
@@ -101,18 +105,17 @@ export default function SignupStep2({
           placeholder={`${t('confirmPassword')} *`}
           required
           dir="ltr"
-          className={`${baseInputClasses} ${textAlignClass} ${passwordEyePadding} ${
-            showPasswordError
+          disabled={isPending}
+          className={`${baseInputClasses} ${textAlignClass} ${passwordEyePadding} disabled:opacity-50 disabled:cursor-not-allowed ${showPasswordError
               ? 'border-2 border-red-500 focus-visible:ring-red-500/60'
               : `${defaultBorderClasses} focus-visible:ring-pumpkin/60`
-          }`}
+            }`}
         />
         <button
           type="button"
           onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-          className={`absolute ${
-            isRTL ? 'left-3' : 'right-3'
-          } top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity outline-none`}
+          className={`absolute ${isRTL ? 'left-3' : 'right-3'
+            } top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity outline-none`}
         >
           <Image src="/assets/auth/eye.svg" alt="" width={20} height={16} />
         </button>
@@ -132,7 +135,8 @@ export default function SignupStep2({
         <button
           type="button"
           onClick={onBack}
-          className="flex-1 h-[45px] text-sm rounded-[14px] bg-transparent border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold transition-colors outline-none"
+          disabled={isPending}
+          className="flex-1 h-[45px] text-sm rounded-[14px] bg-transparent border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold transition-colors outline-none disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {translations.back}
         </button>
@@ -152,46 +156,6 @@ export default function SignupStep2({
           </span>
         </div>
       )}
-
-      {/* Divider */}
-      <div className="relative flex items-center my-3">
-        <div className="flex-1 border-t border-gray-300" />
-        <span className="px-2.5 text-[11px] text-gray-600">{t('or')}</span>
-        <div className="flex-1 border-t border-gray-300" />
-      </div>
-
-      {/* Social Signup */}
-      <div className="flex items-center justify-center gap-4">
-        <button
-          type="button"
-          onClick={() => onSocialSignup('google')}
-          disabled={isPending}
-          className="hover:opacity-80 transition-opacity outline-none"
-        >
-          <Image src="/assets/auth/google.svg" alt="" width={40} height={40} />
-        </button>
-        <button
-          type="button"
-          onClick={() => onSocialSignup('apple')}
-          disabled={isPending}
-          className="hover:opacity-80 transition-opacity outline-none"
-        >
-          <Image src="/assets/auth/apple.svg" alt="" width={40} height={40} />
-        </button>
-        <button
-          type="button"
-          onClick={() => onSocialSignup('facebook')}
-          disabled={isPending}
-          className="hover:opacity-80 transition-opacity outline-none"
-        >
-          <Image
-            src="/assets/auth/facebook.svg"
-            alt=""
-            width={40}
-            height={40}
-          />
-        </button>
-      </div>
     </div>
   );
 }

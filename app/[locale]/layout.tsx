@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { locales, localeDirections } from '@/i18n';
+import { AuthProvider } from '@/components/providers/AuthProvider';
 import '../globals.css';
 
 const nunito = Nunito({
@@ -31,7 +32,7 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
@@ -88,7 +89,7 @@ export default async function RootLayout({
         </noscript>
 
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <AuthProvider>{children}</AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>
