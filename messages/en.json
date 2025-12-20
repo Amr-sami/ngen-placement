@@ -1492,6 +1492,9 @@
         "placement-test": {
           "title": "Placement Test",
           "description": "Start Here",
+          "cta": "Take the Test",
+          "ready": "Ready to Begin? 🚀 ",
+          "info": "The placement test helps us understand your current skills and recommend the best starting point for your learning journey.",
           "longDescription": "A comprehensive assessment to determine your current skill level and place you in the perfect starting belt.",
           "duration": "30 min",
           "hours": "0.5",
