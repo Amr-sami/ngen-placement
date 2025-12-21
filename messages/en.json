@@ -25,6 +25,141 @@
       "signOut": "Sign Out"
     }
   },
+  "profile": {
+    "title": "Profile Information",
+    "personalInfo": "Personal Info",
+    "learningProgress": "Learning Progress",
+    "placementTest": "Placement Test",
+    "currentPlan": "Current Plan",
+    "accountSecurity": "Account & Security",
+    "memberSince": "Member since {date}",
+    "verified": "Verified",
+    "notVerified": "Not Verified",
+    "viewResults": "View Results",
+    "takeTest": "Take Placement Test",
+    "noProgress": "No learning progress yet.",
+    "completeTest": "Complete the placement test to begin your journey!",
+    "notTakenTest": "You haven't taken the placement test yet.",
+    "planType": "Plan Type",
+    "currentLevel": "Current Level",
+    "status": "Status",
+    "active": "Active",
+    "includedFeatures": "Included Features",
+    "features": {
+      "access": "Access to all {level} resources",
+      "tracking": "Progress tracking",
+      "dashboard": "Organization Dashboard"
+    },
+    "result": "Result",
+    "score": "Score",
+    "attempts": "Attempts",
+    "age": "Age",
+    "years": "years",
+    "phone": "Phone",
+    "location": "Location",
+    "authProvider": "Auth Provider",
+    "accountType": "Account Type",
+    "organization": "Organization",
+    "lastLogin": "Last Login"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage your account preferences and personal information.",
+    "tabs": {
+      "profile": "Profile Information",
+      "security": "Security & Account"
+    },
+    "profile": {
+      "title": "Profile Details",
+      "description": "Update your photo and personal details.",
+      "photo": "Profile Photo",
+      "photoDesc": "This will be displayed on your profile.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "age": "Age",
+      "phone": "Phone Number",
+      "country": "Country",
+      "city": "City",
+      "org": "School / Organization",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "security": {
+      "title": "Security & Account",
+      "description": "Manage your login credentials and security.",
+      "email": "Email Address",
+      "emailManaged": "Your email address is managed by your login provider and cannot be changed here.",
+      "dangerZone": "Danger Zone",
+      "deleteAccount": "Delete Account",
+      "deleteWarning": "Permanently delete your account and all of your content. This action cannot be undone."
+    },
+    "messages": {
+      "success": "Profile updated successfully",
+      "error": "Failed to update profile",
+      "loadError": "Failed to load profile data"
+    }
+  },
+  "placementTest": {
+    "results": {
+      "title": "Test Results",
+      "score": "Your Score",
+      "belt": "Belt Level",
+      "retake": "Retake Test",
+      "review": "Review Answers",
+      "dashboard": "Go to Dashboard",
+      "hidden": "Hidden",
+      "loginToSee": "Login to see your score!",
+      "fantasticWork": "Fantastic work, {name}!",
+      "blurOverlay": {
+        "title": "Login to See Your Results",
+        "description": "Create an account or login to view your detailed results"
+      },
+      "loginPrompt": {
+        "title": "Save Your Results",
+        "description": "Login or create an account to save your placement test results, track your progress, and access exclusive features.",
+        "login": "Login",
+        "signup": "Sign Up"
+      }
+    },
+    "survey": {
+      "title": "Start Your Journey",
+      "subtitle": "Tell us a bit about yourself",
+      "personalInfo": "Personal Information",
+      "fields": {
+        "name": "Full Name",
+        "age": "Age",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "country": "Country",
+        "city": "City",
+        "school": "School Name"
+      },
+      "questions": {
+        "techExp": "Do you have previous coding experience?",
+        "details": "If yes, tell us more",
+        "house": "Which element represents you?",
+        "source": "How did you hear about NGen?",
+        "sourceOptions": {
+          "social": "Social Media",
+          "friend": "Friend / Classmate",
+          "school": "School",
+          "other": "Other"
+        }
+      },
+      "submit": "Start Placement Test",
+      "loading": "Starting...",
+      "limitReached": {
+        "title": "Test Limit Reached",
+        "message": "You have used all {total} of your placement test attempts.",
+        "lastResult": "Your Last Result",
+        "viewResults": "View Your Results",
+        "requestMore": "Request More Attempts"
+      },
+      "warnings": {
+        "existingUser": "An account with this email already exists."
+      }
+    }
+  },
   "footer": {
     "copyright": "© 2024 NGen Schools. All rights reserved."
   },

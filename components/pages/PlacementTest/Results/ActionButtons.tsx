@@ -34,13 +34,15 @@ export default function ActionButtons({
         )}
 
         {/* Buy Level Button */}
-        <button
-          onClick={onBuyLevel}
-          className="px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm md:text-base"
-        >
-          <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
-          Buy {beltName || 'This Level'}
-        </button>
+        {isLoggedIn && (
+          <button
+            onClick={onBuyLevel}
+            className="px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+          >
+            <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
+            Buy {beltName || 'This Level'}
+          </button>
+        )}
       </div>
 
       {/* Secondary Actions Row */}

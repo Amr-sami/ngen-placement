@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import {
     User,
     Mail,
@@ -19,7 +20,8 @@ import {
     ArrowRight,
     Loader2,
     CreditCard,
-    Check
+    Check,
+    CheckCircle2
 } from 'lucide-react'
 
 interface ProfileData {
@@ -109,6 +111,9 @@ function ProfileCard({ icon: Icon, title, iconColor, children }: {
 
 export default function ProfilePage({ locale }: ProfilePageProps) {
     const router = useRouter()
+    const t = useTranslations('profile')
+    const tCommon = useTranslations('common')
+
     const [profile, setProfile] = useState<ProfileData | null>(null)
     const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
@@ -138,7 +143,7 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
             <div className="min-h-[60vh] flex items-center justify-center">
                 <div className="text-center">
                     <Loader2 className="w-10 h-10 text-purple-500 animate-spin mx-auto mb-4" />
-                    <p className="text-gray-500">Loading your profile...</p>
+                    <p className="text-gray-500">{tCommon('loading')}</p>
                 </div>
             </div>
         )
@@ -156,7 +161,7 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
     }
 
     const initials = `${profile.profile.firstName.charAt(0)}${profile.profile.lastName.charAt(0)}`.toUpperCase()
-    const memberSinceDate = new Date(profile.memberSince).toLocaleDateString('en-US', {
+    const memberSinceDate = new Date(profile.memberSince).toLocaleDateString(locale === 'ar' ? 'ar-EG' : 'en-US', {
         month: 'long',
         year: 'numeric',
     })
@@ -193,7 +198,7 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                         </div>
 
                         {/* User Info */}
-                        <div className="flex-1 text-center md:text-left">
+                        <div className="flex-1 text-center md:text-start">
                             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                 {profile.profile.fullName}
                             </h1>
@@ -204,18 +209,18 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                                 </span>
                                 <StatusBadge
                                     type={profile.emailVerified ? 'success' : 'warning'}
-                                    label={profile.emailVerified ? 'Verified' : 'Not Verified'}
+                                    label={profile.emailVerified ? t('verified') : t('notVerified')}
                                 />
                             </div>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-sm text-gray-500">
                                 <span className="flex items-center gap-1.5">
                                     <Calendar className="w-4 h-4" />
-                                    Member since {memberSinceDate}
+                                    {t('memberSince', { date: memberSinceDate })}
                                 </span>
                                 <StatusBadge type="info" label={profile.role} />
                                 <StatusBadge
                                     type={profile.status === 'active' ? 'success' : 'warning'}
-                                    label={profile.status}
+                                    label={profile.status === 'active' ? t('active') : profile.status}
                                 />
                             </div>
                         </div>
@@ -226,42 +231,42 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     {/* Current Plan Card */}
-                    <ProfileCard icon={CreditCard} title="Current Plan" iconColor="text-indigo-600">
+                    <ProfileCard icon={CreditCard} title={t('currentPlan')} iconColor="text-indigo-600">
                         <div className="space-y-4">
                             <div className="flex items-center justify-between">
-                                <span className="text-gray-600">Plan Type</span>
+                                <span className="text-gray-600">{t('planType')}</span>
                                 <span className="text-gray-900 font-bold capitalize bg-gray-100 px-3 py-1 rounded-lg">
                                     {profile.profile.joinType}
                                 </span>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="text-gray-600">Current Level</span>
+                                <span className="text-gray-600">{t('currentLevel')}</span>
                                 <span className="text-gray-900 font-semibold">
                                     {profile.progress?.currentBeltName || profile.placementTest?.resultBeltName || "Starter"}
                                 </span>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="text-gray-600">Status</span>
+                                <span className="text-gray-600">{t('status')}</span>
                                 <span className="text-green-600 font-medium flex items-center gap-1">
-                                    <CheckCircle className="w-4 h-4" /> Active
+                                    <CheckCircle className="w-4 h-4" /> {t('active')}
                                 </span>
                             </div>
 
                             <div className="pt-3 border-t border-gray-100">
-                                <p className="text-xs text-gray-500 mb-2 font-medium uppercase tracking-wide">Included Features</p>
+                                <p className="text-xs text-gray-500 mb-2 font-medium uppercase tracking-wide">{t('includedFeatures')}</p>
                                 <ul className="space-y-2">
                                     <li className="flex items-center gap-2 text-sm text-gray-600">
                                         <Check className="w-4 h-4 text-green-500" />
-                                        Access to all {profile.progress?.currentBeltName || "Starter"} resources
+                                        {t('features.access', { level: profile.progress?.currentBeltName || "Starter" })}
                                     </li>
                                     <li className="flex items-center gap-2 text-sm text-gray-600">
                                         <Check className="w-4 h-4 text-green-500" />
-                                        Progress tracking
+                                        {t('features.tracking')}
                                     </li>
                                     {profile.profile.joinType === 'organization' && (
                                         <li className="flex items-center gap-2 text-sm text-gray-600">
                                             <Check className="w-4 h-4 text-green-500" />
-                                            Organization Dashboard
+                                            {t('features.dashboard')}
                                         </li>
                                     )}
                                 </ul>
@@ -269,17 +274,17 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                         </div>
                     </ProfileCard>
                     {/* Placement Test Card */}
-                    <ProfileCard icon={Award} title="Placement Test" iconColor="text-yellow-600">
+                    <ProfileCard icon={Award} title={t('placementTest')} iconColor="text-yellow-600">
                         {(profile.placementTest?.hasTakenTest || profile.placementTest?.resultBeltName) ? (
                             <div className="space-y-3">
                                 <div className="flex items-center justify-between">
-                                    <span className="text-gray-600">Result</span>
+                                    <span className="text-gray-600">{t('result')}</span>
                                     <span className="text-gray-900 font-bold text-lg">
                                         {profile.placementTest.resultBeltName} Belt
                                     </span>
                                 </div>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-gray-600">Score</span>
+                                    <span className="text-gray-600">{t('score')}</span>
                                     <span className="text-gray-900 font-semibold">
                                         {profile.placementTest.resultScore !== undefined && profile.placementTest.resultTotalQuestions
                                             ? `${profile.placementTest.resultScore}/${profile.placementTest.resultTotalQuestions} (${profile.placementTest.resultScorePercent}%)`
@@ -288,7 +293,7 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                                     </span>
                                 </div>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-gray-600">Attempts</span>
+                                    <span className="text-gray-600">{t('attempts')}</span>
                                     <span className="text-gray-500">
                                         {profile.placementTest.attemptsUsed} / {profile.placementTest.allowedAttempts + profile.placementTest.extraAttempts}
                                     </span>
@@ -297,26 +302,26 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                                     onClick={() => router.push(`/${locale}/placement-test/results`)}
                                     className="w-full mt-3 py-2.5 bg-gray-100 hover:bg-gray-200 rounded-xl text-gray-700 text-sm font-medium flex items-center justify-center gap-2 transition-colors"
                                 >
-                                    View Results <ArrowRight className="w-4 h-4" />
+                                    {t('viewResults')} {locale === 'ar' ? <ArrowRight className="w-4 h-4 rotate-180" /> : <ArrowRight className="w-4 h-4" />}
                                 </button>
                             </div>
                         ) : (
                             <div className="text-center py-4">
                                 <p className="text-gray-600 mb-4">
-                                    You haven&apos;t taken the placement test yet.
+                                    {t('notTakenTest')}
                                 </p>
                                 <button
                                     onClick={() => router.push(`/${locale}/placement-test/survey`)}
                                     className="w-full py-3 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl text-white font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
                                 >
-                                    Take Placement Test <ArrowRight className="w-4 h-4" />
+                                    {t('takeTest')} {locale === 'ar' ? <ArrowRight className="w-4 h-4 rotate-180" /> : <ArrowRight className="w-4 h-4" />}
                                 </button>
                             </div>
                         )}
                     </ProfileCard>
 
                     {/* Learning Progress Card */}
-                    <ProfileCard icon={BookOpen} title="Learning Progress" iconColor="text-green-600">
+                    <ProfileCard icon={BookOpen} title={t('learningProgress')} iconColor="text-green-600">
                         {profile.progress?.currentTrackName ? (
                             <div className="space-y-3">
                                 <div className="flex items-center justify-between">
@@ -340,33 +345,33 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                             </div>
                         ) : (
                             <div className="text-center py-4">
-                                <p className="text-gray-600 mb-1">No learning progress yet.</p>
+                                <p className="text-gray-600 mb-1">{t('noProgress')}</p>
                                 <p className="text-gray-400 text-sm">
-                                    Complete the placement test to begin your journey!
+                                    {t('completeTest')}
                                 </p>
                             </div>
                         )}
                     </ProfileCard>
 
                     {/* Personal Info Card */}
-                    <ProfileCard icon={User} title="Personal Info" iconColor="text-blue-600">
+                    <ProfileCard icon={User} title={t('personalInfo')} iconColor="text-blue-600">
                         <div className="space-y-3">
                             <div className="flex items-center gap-3">
                                 <Clock className="w-4 h-4 text-gray-400" />
-                                <span className="text-gray-600">Age:</span>
-                                <span className="text-gray-900">{profile.profile.age} years</span>
+                                <span className="text-gray-600">{t('age')}:</span>
+                                <span className="text-gray-900">{profile.profile.age} {t('years')}</span>
                             </div>
                             {profile.profile.phoneNumber && (
                                 <div className="flex items-center gap-3">
                                     <Phone className="w-4 h-4 text-gray-400" />
-                                    <span className="text-gray-600">Phone:</span>
+                                    <span className="text-gray-600">{t('phone')}:</span>
                                     <span className="text-gray-900">{profile.profile.phoneNumber}</span>
                                 </div>
                             )}
                             {(profile.profile.address?.city || profile.profile.address?.country) && (
                                 <div className="flex items-center gap-3">
                                     <MapPin className="w-4 h-4 text-gray-400" />
-                                    <span className="text-gray-600">Location:</span>
+                                    <span className="text-gray-600">{t('location')}:</span>
                                     <span className="text-gray-900">
                                         {[profile.profile.address?.city, profile.profile.address?.country]
                                             .filter(Boolean)
@@ -378,28 +383,28 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
                     </ProfileCard>
 
                     {/* Account & Security Card */}
-                    <ProfileCard icon={Shield} title="Account & Security" iconColor="text-purple-600">
+                    <ProfileCard icon={Shield} title={t('accountSecurity')} iconColor="text-purple-600">
                         <div className="space-y-3">
                             <div className="flex items-center justify-between">
-                                <span className="text-gray-600">Auth Provider</span>
+                                <span className="text-gray-600">{t('authProvider')}</span>
                                 <span className="text-gray-900 capitalize">{profile.authProvider}</span>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="text-gray-600">Account Type</span>
+                                <span className="text-gray-600">{t('accountType')}</span>
                                 <span className="text-gray-900 capitalize">{profile.profile.joinType}</span>
                             </div>
                             {profile.profile.organizationName && (
                                 <div className="flex items-center gap-3">
                                     <School className="w-4 h-4 text-gray-400" />
-                                    <span className="text-gray-600">Organization:</span>
+                                    <span className="text-gray-600">{t('organization')}:</span>
                                     <span className="text-gray-900">{profile.profile.organizationName}</span>
                                 </div>
                             )}
                             {profile.lastLoginAt && (
                                 <div className="flex items-center justify-between text-sm">
-                                    <span className="text-gray-500">Last Login</span>
+                                    <span className="text-gray-500">{t('lastLogin')}</span>
                                     <span className="text-gray-400">
-                                        {new Date(profile.lastLoginAt).toLocaleDateString()}
+                                        {new Date(profile.lastLoginAt).toLocaleDateString(locale === 'ar' ? 'ar-EG' : 'en-US')}
                                     </span>
                                 </div>
                             )}

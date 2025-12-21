@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import { Trophy, Lock } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 interface ResultsHeaderProps {
   studentName: string
@@ -9,6 +10,7 @@ interface ResultsHeaderProps {
 }
 
 export default function ResultsHeader({ studentName, score, totalQuestions }: ResultsHeaderProps) {
+  const t = useTranslations('placementTest.results')
   const firstName = studentName.split(' ')[0] || 'Explorer'
   const isHidden = score === null || totalQuestions === null
 
@@ -24,20 +26,20 @@ export default function ResultsHeader({ studentName, score, totalQuestions }: Re
           />
         </div>
         <div>
-          <h1 className="text-xl md:text-2xl font-black text-white">Your Results</h1>
+          <h1 className="text-xl md:text-2xl font-black text-white">{t('title')}</h1>
           <p className="text-purple-300 text-sm md:text-base">
-            {isHidden ? 'Login to see your score!' : `Fantastic work, ${firstName}!`}
+            {isHidden ? t('loginToSee') : t('fantasticWork', { name: firstName })}
           </p>
         </div>
       </div>
       <div className="flex items-center gap-3 bg-white/5 sm:bg-transparent p-2 rounded-xl w-full sm:w-auto justify-center">
         <div className="text-right">
           <p className="text-white/60 text-[10px] md:text-xs font-bold uppercase tracking-widest">
-            Final Score
+            {t('score')}
           </p>
           {isHidden ? (
             <p className="text-white/50 text-xl md:text-2xl font-black flex items-center gap-2 justify-end">
-              <Lock className="w-5 h-5" /> Hidden
+              <Lock className="w-5 h-5" /> {t('hidden')}
             </p>
           ) : (
             <p className="text-white text-xl md:text-2xl font-black">

@@ -76,10 +76,10 @@ export default function ContactAdminModal({
     }
 
     const subjectOptions = [
-        { value: 'Request Extra Test Attempt', label: '🎯 Request Extra Test Attempt' },
-        { value: 'Question About Results', label: '❓ Question About Results' },
-        { value: 'Technical Issue', label: '🔧 Technical Issue' },
-        { value: 'Other', label: '💬 Other' },
+        { value: 'Request Extra Test Attempt', label: 'Request Extra Test Attempt' },
+        { value: 'Question About Results', label: 'Question About Results' },
+        { value: 'Technical Issue', label: 'Technical Issue' },
+        { value: 'Other', label: 'Other' },
     ]
 
     if (!isOpen || !mounted) return null

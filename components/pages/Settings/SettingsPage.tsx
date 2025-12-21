@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import {
     User,
     Shield,
@@ -27,6 +28,10 @@ interface SettingsPageProps {
 
 export default function SettingsPage({ locale }: SettingsPageProps) {
     const router = useRouter()
+    const t = useTranslations('settings')
+    const tCommon = useTranslations('common')
+    const tNav = useTranslations('nav')
+
     const [activeTab, setActiveTab] = useState<'profile' | 'security'>('profile')
     const [isLoading, setIsLoading] = useState(true)
     const [isSaving, setIsSaving] = useState(false)
@@ -67,7 +72,7 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                 })
             } catch (error) {
                 console.error(error)
-                setMessage({ type: 'error', text: 'Failed to load profile data' })
+                setMessage({ type: 'error', text: t('messages.loadError') })
             } finally {
                 setIsLoading(false)
             }
@@ -93,11 +98,11 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                 throw new Error(data.error || 'Failed to update profile')
             }
 
-            setMessage({ type: 'success', text: 'Profile updated successfully' })
+            setMessage({ type: 'success', text: t('messages.success') })
             router.refresh()
         } catch (error) {
             if (error instanceof Error) {
-                setMessage({ type: 'error', text: error.message })
+                setMessage({ type: 'error', text: t('messages.error') })
             }
         } finally {
             setIsSaving(false)
@@ -121,8 +126,8 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
 
                     {/* Header */}
                     <div>
-                        <h1 className="text-3xl font-bold text-gray-900 mb-2">Settings</h1>
-                        <p className="text-gray-600">Manage your account preferences and personal information.</p>
+                        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('title')}</h1>
+                        <p className="text-gray-600">{t('description')}</p>
                     </div>
 
                     <div className="flex flex-col lg:flex-row gap-8">
@@ -132,29 +137,29 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                                 <button
                                     onClick={() => setActiveTab('profile')}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm ${activeTab === 'profile'
-                                            ? 'bg-purple-50 text-purple-700'
-                                            : 'text-gray-600 hover:bg-gray-50'
+                                        ? 'bg-purple-50 text-purple-700'
+                                        : 'text-gray-600 hover:bg-gray-50'
                                         }`}
                                 >
                                     <User className="w-5 h-5" />
-                                    Profile Information
+                                    {t('tabs.profile')}
                                 </button>
                                 <button
                                     onClick={() => setActiveTab('security')}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm ${activeTab === 'security'
-                                            ? 'bg-purple-50 text-purple-700'
-                                            : 'text-gray-600 hover:bg-gray-50'
+                                        ? 'bg-purple-50 text-purple-700'
+                                        : 'text-gray-600 hover:bg-gray-50'
                                         }`}
                                 >
                                     <Shield className="w-5 h-5" />
-                                    Security & Account
+                                    {t('tabs.security')}
                                 </button>
                                 <button
                                     onClick={() => signOut({ callbackUrl: `/${locale}` })}
                                     className="flex items-center gap-3 px-4 py-3 rounded-xl text-red-600 hover:bg-red-50 transition-all font-medium text-sm mt-auto"
                                 >
                                     <LogOut className="w-5 h-5" />
-                                    Sign Out
+                                    {tNav('profile.signOut')}
                                 </button>
                             </nav>
                         </div>
@@ -172,8 +177,8 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                             {activeTab === 'profile' && (
                                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
                                     <div className="p-6 md:p-8 border-b border-gray-100">
-                                        <h2 className="text-xl font-bold text-gray-900 mb-1">Profile Details</h2>
-                                        <p className="text-sm text-gray-500">Update your photo and personal details.</p>
+                                        <h2 className="text-xl font-bold text-gray-900 mb-1">{t('profile.title')}</h2>
+                                        <p className="text-sm text-gray-500">{t('profile.description')}</p>
                                     </div>
 
                                     <form onSubmit={handleUpdateProfile} className="p-6 md:p-8 space-y-8">
@@ -198,28 +203,28 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                                                 </button>
                                             </div>
                                             <div>
-                                                <h3 className="font-medium text-gray-900">Profile Photo</h3>
-                                                <p className="text-sm text-gray-500 mt-1">This will be displayed on your profile.</p>
+                                                <h3 className="font-medium text-gray-900">{t('profile.photo')}</h3>
+                                                <p className="text-sm text-gray-500 mt-1">{t('profile.photoDesc')}</p>
                                             </div>
                                         </div>
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <SettingsInput
-                                                label="First Name"
+                                                label={t('profile.firstName')}
                                                 icon={User}
                                                 value={formData.firstName}
                                                 onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                                                 required
                                             />
                                             <SettingsInput
-                                                label="Last Name"
+                                                label={t('profile.lastName')}
                                                 icon={User}
                                                 value={formData.lastName}
                                                 onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                                                 required
                                             />
                                             <SettingsInput
-                                                label="Age"
+                                                label={t('profile.age')}
                                                 icon={Calendar}
                                                 type="number"
                                                 value={formData.age}
@@ -227,26 +232,26 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                                                 required
                                             />
                                             <SettingsInput
-                                                label="Phone Number"
+                                                label={t('profile.phone')}
                                                 icon={Phone}
                                                 type="tel"
                                                 value={formData.phone}
                                                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                             />
                                             <SettingsInput
-                                                label="Country"
+                                                label={t('profile.country')}
                                                 icon={MapPin}
                                                 value={formData.country}
                                                 onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                                             />
                                             <SettingsInput
-                                                label="City"
+                                                label={t('profile.city')}
                                                 icon={Building}
                                                 value={formData.city}
                                                 onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                                             />
                                             <SettingsInput
-                                                label="School / Organization"
+                                                label={t('profile.org')}
                                                 icon={Building}
                                                 value={formData.organizationName}
                                                 onChange={(e) => setFormData({ ...formData, organizationName: e.target.value })}
@@ -263,12 +268,12 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                                                 {isSaving ? (
                                                     <>
                                                         <Loader2 className="w-5 h-5 animate-spin" />
-                                                        Saving...
+                                                        {t('profile.saving')}
                                                     </>
                                                 ) : (
                                                     <>
                                                         <Save className="w-5 h-5" />
-                                                        Save Changes
+                                                        {t('profile.save')}
                                                     </>
                                                 )}
                                             </button>
@@ -280,30 +285,30 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                             {activeTab === 'security' && (
                                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
                                     <div className="p-6 md:p-8 border-b border-gray-100">
-                                        <h2 className="text-xl font-bold text-gray-900 mb-1">Security & Account</h2>
-                                        <p className="text-sm text-gray-500">Manage your login credentials and security.</p>
+                                        <h2 className="text-xl font-bold text-gray-900 mb-1">{t('security.title')}</h2>
+                                        <p className="text-sm text-gray-500">{t('security.description')}</p>
                                     </div>
                                     <div className="p-6 md:p-8 space-y-8">
                                         <div className="space-y-4">
                                             <SettingsInput
-                                                label="Email Address"
+                                                label={t('security.email')}
                                                 icon={Mail}
                                                 value={formData.email}
                                                 onChange={() => { }}
                                                 disabled={true}
                                             />
-                                            <p className="text-sm text-gray-500">Your email address is managed by your login provider and cannot be changed here.</p>
+                                            <p className="text-sm text-gray-500">{t('security.emailManaged')}</p>
                                         </div>
 
                                         <div className="pt-8 border-t border-gray-100">
-                                            <h3 className="text-lg font-bold text-red-600 mb-4">Danger Zone</h3>
+                                            <h3 className="text-lg font-bold text-red-600 mb-4">{t('security.dangerZone')}</h3>
                                             <div className="p-4 bg-red-50 rounded-xl border border-red-100 flex items-start justify-between flex-col md:flex-row gap-4">
                                                 <div>
-                                                    <h4 className="font-semibold text-red-900">Delete Account</h4>
-                                                    <p className="text-sm text-red-700 mt-1">Permanently delete your account and all of your content. This action cannot be undone.</p>
+                                                    <h4 className="font-semibold text-red-900">{t('security.deleteAccount')}</h4>
+                                                    <p className="text-sm text-red-700 mt-1">{t('security.deleteWarning')}</p>
                                                 </div>
                                                 <button className="px-4 py-2 bg-white border border-red-200 text-red-600 font-medium rounded-lg hover:bg-red-600 hover:text-white transition-colors text-sm">
-                                                    Delete Account
+                                                    {t('security.deleteAccount')}
                                                 </button>
                                             </div>
                                         </div>

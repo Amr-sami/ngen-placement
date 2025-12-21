@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/react'
+import { useTranslations } from 'next-intl'
 import type { BeltLevel, StoredQuestion, StudentInfo } from './types'
 import { beltLevels } from './types'
 import ResultsHeader from './ResultsHeader'
@@ -17,6 +18,7 @@ import PurchaseCard from './PurchaseCard'
 
 export default function ResultsMain() {
   const { data: session, status: sessionStatus } = useSession()
+  const t = useTranslations('placementTest.results')
 
   const [score, setScore] = useState(0)
   const [totalQuestions, setTotalQuestions] = useState(0)
@@ -107,7 +109,7 @@ export default function ResultsMain() {
       }
     }
 
-    if (questions.length > 0 && score >= 0) {
+    if (questions.length > 0 && score >= 0 && recommendedBelt) {
       saveResults()
     }
   }, [sessionStatus, questions, selectedAnswers, score, totalQuestions, recommendedBelt])
@@ -194,8 +196,8 @@ export default function ResultsMain() {
           {isGuest && (
             <div className="absolute inset-0 bg-[#1a0b2e]/60 backdrop-blur-xl z-20 rounded-3xl flex items-center justify-center">
               <div className="text-center p-8">
-                <h3 className="text-2xl font-black text-white mb-2">Login to See Your Results</h3>
-                <p className="text-purple-200 mb-6">Create an account or login to view your detailed results</p>
+                <h3 className="text-2xl font-black text-white mb-2">{t('blurOverlay.title')}</h3>
+                <p className="text-purple-200 mb-6">{t('blurOverlay.description')}</p>
               </div>
             </div>
           )}

@@ -102,8 +102,11 @@ export async function POST(req: Request) {
                 },
                 { new: true }
             );
-        } else {
-            // Create new test record (for edge cases)
+        }
+
+        // If no testId provided OR update failed (invalid testId), create new record
+        if (!placementTest) {
+            // Create new test record
             const attemptNumber = (user.placementTest?.attemptsUsed || 0) + 1;
 
             placementTest = await PlacementTest.create({
@@ -119,13 +122,6 @@ export async function POST(req: Request) {
             });
         }
 
-        // Check if placementTest was created/updated
-        if (!placementTest) {
-            return NextResponse.json(
-                { error: 'Failed to create or update placement test' },
-                { status: 500 }
-            );
-        }
 
         // Update user's placement test summary
         const currentAttemptsUsed = user.placementTest?.attemptsUsed || 0;
