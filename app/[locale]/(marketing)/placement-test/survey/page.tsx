@@ -1,5 +1,6 @@
-import SurveyPage from '@/components/pages/PlacementTest/Survey';
 
-export default function Page() {
-  return <SurveyPage />;
+import { SurveyForm } from '@/components/pages/PlacementTest/Survey'
+
+export default function SurveyPage() {
+  return <SurveyForm />
 }
