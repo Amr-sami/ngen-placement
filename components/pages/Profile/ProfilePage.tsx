@@ -18,6 +18,8 @@ import {
     Clock,
     ArrowRight,
     Loader2,
+    CreditCard,
+    Check
 } from 'lucide-react'
 
 interface ProfileData {
@@ -222,6 +224,50 @@ export default function ProfilePage({ locale }: ProfilePageProps) {
 
                 {/* Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    {/* Current Plan Card */}
+                    <ProfileCard icon={CreditCard} title="Current Plan" iconColor="text-indigo-600">
+                        <div className="space-y-4">
+                            <div className="flex items-center justify-between">
+                                <span className="text-gray-600">Plan Type</span>
+                                <span className="text-gray-900 font-bold capitalize bg-gray-100 px-3 py-1 rounded-lg">
+                                    {profile.profile.joinType}
+                                </span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                                <span className="text-gray-600">Current Level</span>
+                                <span className="text-gray-900 font-semibold">
+                                    {profile.progress?.currentBeltName || profile.placementTest?.resultBeltName || "Starter"}
+                                </span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                                <span className="text-gray-600">Status</span>
+                                <span className="text-green-600 font-medium flex items-center gap-1">
+                                    <CheckCircle className="w-4 h-4" /> Active
+                                </span>
+                            </div>
+
+                            <div className="pt-3 border-t border-gray-100">
+                                <p className="text-xs text-gray-500 mb-2 font-medium uppercase tracking-wide">Included Features</p>
+                                <ul className="space-y-2">
+                                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                                        <Check className="w-4 h-4 text-green-500" />
+                                        Access to all {profile.progress?.currentBeltName || "Starter"} resources
+                                    </li>
+                                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                                        <Check className="w-4 h-4 text-green-500" />
+                                        Progress tracking
+                                    </li>
+                                    {profile.profile.joinType === 'organization' && (
+                                        <li className="flex items-center gap-2 text-sm text-gray-600">
+                                            <Check className="w-4 h-4 text-green-500" />
+                                            Organization Dashboard
+                                        </li>
+                                    )}
+                                </ul>
+                            </div>
+                        </div>
+                    </ProfileCard>
                     {/* Placement Test Card */}
                     <ProfileCard icon={Award} title="Placement Test" iconColor="text-yellow-600">
                         {(profile.placementTest?.hasTakenTest || profile.placementTest?.resultBeltName) ? (
