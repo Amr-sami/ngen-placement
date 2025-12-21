@@ -7,6 +7,7 @@ interface ActionButtonsProps {
   onBuyLevel: () => void
   isLoggedIn: boolean
   beltName?: string
+  hasQuestions?: boolean
 }
 
 export default function ActionButtons({
@@ -15,13 +16,14 @@ export default function ActionButtons({
   onBuyLevel,
   isLoggedIn,
   beltName,
+  hasQuestions = true,
 }: ActionButtonsProps) {
   return (
     <div className="space-y-4 mb-10">
       {/* Primary Actions Row */}
       <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-stretch sm:items-center">
-        {/* Review Answers - Only if logged in */}
-        {isLoggedIn && (
+        {/* Review Answers - Only if logged in and has questions */}
+        {isLoggedIn && hasQuestions && (
           <button
             onClick={onReviewAnswers}
             className="px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-white/10 border border-white/20 text-white font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 text-sm md:text-base"

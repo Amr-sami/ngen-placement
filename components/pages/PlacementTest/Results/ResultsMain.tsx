@@ -64,12 +64,12 @@ export default function ResultsMain() {
     const saveResults = async () => {
       if (sessionStatus !== 'authenticated') return
 
-      const alreadySaved = sessionStorage.getItem('resultsSaved')
+      const alreadySaved = sessionStorage.getItem('resultsSaved_v2')
       if (alreadySaved === 'true' || questions.length === 0) return
 
       setSaveStatus('saving')
       try {
-        const surveyData = sessionStorage.getItem('surveyResults')
+        const surveyData = sessionStorage.getItem('surveyData')
         const testId = sessionStorage.getItem('testId')
 
         const response = await fetch('/api/placement-test/submit', {
@@ -88,7 +88,18 @@ export default function ResultsMain() {
 
         if (!response.ok) throw new Error('Failed to save')
 
-        sessionStorage.setItem('resultsSaved', 'true')
+        const data = await response.json()
+
+        // Check if server treated us as guest despite being logged in (session expired/invalid)
+        if (data.isGuest && sessionStatus === 'authenticated') {
+          // Session is invalid on server side. 
+          // Don't mark as saved, set status to error so user sees indicator.
+          console.error('Session expired during save - treated as guest')
+          setSaveStatus('error')
+          return
+        }
+
+        sessionStorage.setItem('resultsSaved_v2', 'true')
         setSaveStatus('success')
       } catch (error) {
         console.error('Error saving results:', error)
@@ -100,6 +111,33 @@ export default function ResultsMain() {
       saveResults()
     }
   }, [sessionStatus, questions, selectedAnswers, score, totalQuestions, recommendedBelt])
+
+  // Recover result from server if local storage empty
+  useEffect(() => {
+    if (sessionStatus !== 'authenticated') return
+    const storedScore = sessionStorage.getItem('testScore')
+    if (storedScore) return // we have local data
+
+    const fetchProfile = async () => {
+      try {
+        const res = await fetch('/api/user/profile')
+        if (!res.ok) return
+        const data = await res.json()
+        if (data.placementTest?.resultBeltName) {
+          // Restore Belt
+          const belt = beltLevels.find(b => b.belt === data.placementTest.resultBeltName)
+          if (belt) setRecommendedBelt(belt)
+
+          // Restore Score
+          if (data.placementTest.resultScore !== undefined) setScore(data.placementTest.resultScore)
+          if (data.placementTest.resultTotalQuestions !== undefined) setTotalQuestions(data.placementTest.resultTotalQuestions)
+        }
+      } catch (e) {
+        console.error('Error recovering results:', e)
+      }
+    }
+    fetchProfile()
+  }, [sessionStatus])
 
   const handleBuyLevel = () => {
     setShowPurchaseCard(true)
@@ -178,6 +216,7 @@ export default function ResultsMain() {
           onBuyLevel={handleBuyLevel}
           isLoggedIn={!isGuest}
           beltName={recommendedBelt.belt}
+          hasQuestions={questions.length > 0}
         />
 
         {/* Review Modal - Only for logged in users */}
