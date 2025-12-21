@@ -8,13 +8,19 @@ export default {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './config/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    // Belt colors - dynamically used in placement test results
+    'bg-slate-100', 'bg-slate-300', 'text-slate-800', 'border-slate-300',
+    'bg-yellow-400', 'bg-yellow-300', 'text-yellow-950', 'border-yellow-200',
+    'bg-orange-500', 'bg-orange-400', 'text-white', 'border-orange-300',
+    'bg-green-500', 'bg-green-400', 'text-green-950', 'border-green-200',
+    'bg-blue-500', 'bg-blue-400', 'text-blue-950', 'border-blue-200',
+    'bg-red-500', 'bg-red-400', 'text-red-950', 'border-red-200',
+    'bg-amber-700', 'bg-amber-600', 'border-amber-400',
+    'bg-gray-900', 'bg-gray-800', 'border-gray-600',
+  ],
   theme: {
     extend: {
-      safelist: [
-        {
-          pattern: /(bg|text|border).*/,
-        },
-      ],
       fontFamily: {
         protestRiot: 'var(--font-protestRiot)',
       },
@@ -57,3 +63,4 @@ export default {
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
+

@@ -6,19 +6,23 @@ interface InputFieldProps {
   placeholder: string
   value: string
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  onBlur?: () => void
   type?: string
   min?: string
   max?: string
+  disabled?: boolean
 }
 
-export default function InputField({ 
-  icon: Icon, 
-  placeholder, 
-  value, 
-  onChange, 
+export default function InputField({
+  icon: Icon,
+  placeholder,
+  value,
+  onChange,
+  onBlur,
   type = "text",
   min,
-  max
+  max,
+  disabled = false
 }: InputFieldProps) {
   return (
     <div className="relative group">
@@ -29,9 +33,11 @@ export default function InputField({
         type={type}
         value={value}
         onChange={onChange}
+        onBlur={onBlur}
         min={min}
         max={max}
-        className="block w-full pl-12 pr-4 py-3.5 bg-black/20 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-black/40 transition-all"
+        disabled={disabled}
+        className="block w-full pl-12 pr-4 py-3.5 bg-black/20 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-black/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         placeholder={placeholder}
         required
       />

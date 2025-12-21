@@ -8,6 +8,9 @@ export interface IBelt extends Document {
     order: number;
     description?: string;
     minScoreToStart?: number;
+    price?: number;
+    currency?: string;
+    purchaseUrl?: string;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -42,6 +45,19 @@ const BeltSchema = new Schema<IBelt>(
             type: Number,
             min: 0,
             max: 100,
+        },
+        price: {
+            type: Number,
+            min: 0,
+        },
+        currency: {
+            type: String,
+            default: 'USD',
+            trim: true,
+        },
+        purchaseUrl: {
+            type: String,
+            trim: true,
         },
     },
     {

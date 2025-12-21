@@ -1726,6 +1726,7 @@
       "errors": {
         "emptyFields": "Please enter your email and password",
         "invalidCredentials": "Invalid email or password",
+        "userNotFound": "No account found with this email",
         "emailNotVerified": "Please verify your email before logging in",
         "accountLocked": "Account is locked. Please contact support.",
         "unexpected": "An unexpected error occurred. Please try again."

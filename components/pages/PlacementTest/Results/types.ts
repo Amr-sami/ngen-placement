@@ -2,9 +2,10 @@
 export type BeltLevel = {
   stage: string
   belt: string
-  color: string
-  textColor: string
-  borderColor: string
+  color: string        // Hex color for background
+  glowColor: string    // Hex color for glow effect
+  textColor: string    // Hex color for text
+  borderColor: string  // Hex color for border
   duration: string
   totalHours: string
   totalClasses: string
@@ -31,9 +32,10 @@ export const beltLevels: BeltLevel[] = [
   {
     stage: 'Pre-Foundation',
     belt: 'White',
-    color: 'bg-slate-100',
-    textColor: 'text-slate-800',
-    borderColor: 'border-slate-300',
+    color: '#f1f5f9',       // slate-100
+    glowColor: '#cbd5e1',   // slate-300
+    textColor: '#1e293b',   // slate-800
+    borderColor: '#cbd5e1', // slate-300
     duration: '1 Month',
     totalHours: '12 hrs',
     totalClasses: '8 Classes',
@@ -43,9 +45,10 @@ export const beltLevels: BeltLevel[] = [
   {
     stage: 'Foundation',
     belt: 'Yellow',
-    color: 'bg-yellow-400',
-    textColor: 'text-yellow-950',
-    borderColor: 'border-yellow-200',
+    color: '#facc15',       // yellow-400
+    glowColor: '#fde047',   // yellow-300
+    textColor: '#422006',   // yellow-950
+    borderColor: '#fef08a', // yellow-200
     duration: '3-4 Months',
     totalHours: '35 hrs',
     totalClasses: '24 Classes',
@@ -55,9 +58,10 @@ export const beltLevels: BeltLevel[] = [
   {
     stage: 'Foundation',
     belt: 'Orange',
-    color: 'bg-orange-500',
-    textColor: 'text-white',
-    borderColor: 'border-orange-300',
+    color: '#f97316',       // orange-500
+    glowColor: '#fb923c',   // orange-400
+    textColor: '#ffffff',   // white
+    borderColor: '#fdba74', // orange-300
     duration: '3-4 Months',
     totalHours: '35 hrs',
     totalClasses: '24 Classes',

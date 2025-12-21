@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/navigation'
+import { useSession } from 'next-auth/react'
 import type { BeltLevel, StoredQuestion, StudentInfo } from './types'
 import { beltLevels } from './types'
 import ResultsHeader from './ResultsHeader'
@@ -11,23 +11,31 @@ import BeltAchievementCard from './BeltAchievementCard'
 import ActionButtons from './ActionButtons'
 import ReviewModal from './ReviewModal'
 import SaveStatusIndicator from './SaveStatusIndicator'
+import ContactAdminModal from './ContactAdminModal'
+import LoginPromptCard from './LoginPromptCard'
+import PurchaseCard from './PurchaseCard'
 
 export default function ResultsMain() {
-  const router = useRouter()
+  const { data: session, status: sessionStatus } = useSession()
+
   const [score, setScore] = useState(0)
   const [totalQuestions, setTotalQuestions] = useState(0)
   const [recommendedBelt, setRecommendedBelt] = useState<BeltLevel>(beltLevels[0])
-  const [studentInfo, setStudentInfo] = useState<StudentInfo>({ 
-    name: '', 
-    age: '', 
-    phone: '', 
-    email: '' 
+  const [studentInfo, setStudentInfo] = useState<StudentInfo>({
+    name: '',
+    age: '',
+    phone: '',
+    email: ''
   })
   const [questions, setQuestions] = useState<StoredQuestion[]>([])
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>([])
   const [isReviewMode, setIsReviewMode] = useState(false)
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success' | 'error'>('idle')
+
+  // Modal states
+  const [showContactModal, setShowContactModal] = useState(false)
+  const [showPurchaseCard, setShowPurchaseCard] = useState(false)
 
   // Load data from sessionStorage
   useEffect(() => {
@@ -51,20 +59,24 @@ export default function ResultsMain() {
     if (storedSelectedAnswers) setSelectedAnswers(JSON.parse(storedSelectedAnswers))
   }, [])
 
-  // Auto-save results to database
+  // Auto-save results to database when logged in
   useEffect(() => {
     const saveResults = async () => {
+      if (sessionStatus !== 'authenticated') return
+
       const alreadySaved = sessionStorage.getItem('resultsSaved')
-      if (alreadySaved === 'true' || !studentInfo.email || questions.length === 0) return
+      if (alreadySaved === 'true' || questions.length === 0) return
 
       setSaveStatus('saving')
       try {
-        const surveyData = sessionStorage.getItem('surveyData')
-        const response = await fetch('/api/save-test-results', {
+        const surveyData = sessionStorage.getItem('surveyResults')
+        const testId = sessionStorage.getItem('testId')
+
+        const response = await fetch('/api/placement-test/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            studentInfo,
+            testId,
             surveyData: surveyData ? JSON.parse(surveyData) : {},
             questions,
             selectedAnswers,
@@ -73,7 +85,9 @@ export default function ResultsMain() {
             belt: recommendedBelt,
           }),
         })
+
         if (!response.ok) throw new Error('Failed to save')
+
         sessionStorage.setItem('resultsSaved', 'true')
         setSaveStatus('success')
       } catch (error) {
@@ -82,14 +96,17 @@ export default function ResultsMain() {
       }
     }
 
-    if (studentInfo.email && questions.length > 0 && score >= 0) {
+    if (questions.length > 0 && score >= 0) {
       saveResults()
     }
-  }, [studentInfo, questions, selectedAnswers, score, totalQuestions, recommendedBelt])
+  }, [sessionStatus, questions, selectedAnswers, score, totalQuestions, recommendedBelt])
 
-  const handleRetakeTest = () => {
-    sessionStorage.clear()
-    router.push('/placement-test/survey')
+  const handleBuyLevel = () => {
+    setShowPurchaseCard(true)
+  }
+
+  const handleContactAdmin = () => {
+    setShowContactModal(true)
   }
 
   const handleReviewAnswers = () => {
@@ -105,11 +122,15 @@ export default function ResultsMain() {
     setCurrentReviewIndex(prev => Math.min(questions.length - 1, prev + 1))
   }
 
+  const isGuest = sessionStatus !== 'authenticated'
+
   return (
     <div className="min-h-screen w-full bg-[#1a0b2e] relative flex flex-col items-center p-4 sm:p-6 md:p-8 overflow-x-hidden">
-      
-      {/* Background Decor */}
+
+      {/* Background Decor with Glow Effect */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Main glow matching belt color */}
+        <div className={`absolute top-[20%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] ${recommendedBelt.color} opacity-20 rounded-full filter blur-[150px] animate-pulse`}></div>
         <div className="absolute top-[-5%] right-[-5%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-purple-600/20 rounded-full filter blur-[80px] md:blur-[100px]"></div>
         <div className="absolute bottom-[-5%] left-[-5%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-blue-600/20 rounded-full filter blur-[80px] md:blur-[100px]"></div>
       </div>
@@ -117,36 +138,73 @@ export default function ResultsMain() {
       {/* Save Status Indicator */}
       <SaveStatusIndicator status={saveStatus} />
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-5xl relative z-10"
       >
-        {/* Header */}
-        <ResultsHeader 
-          studentName={studentInfo.name} 
-          score={score} 
-          totalQuestions={totalQuestions} 
+        {/* Header - Always visible */}
+        <ResultsHeader
+          studentName={studentInfo.name}
+          score={isGuest ? null : score}
+          totalQuestions={isGuest ? null : totalQuestions}
         />
 
-        {/* Achievement Card */}
-        <BeltAchievementCard belt={recommendedBelt} score={score} />
+        {/* Main Content - Blurred for guests */}
+        <div className={`relative ${isGuest ? 'pointer-events-none' : ''}`}>
+          {/* Blur overlay for guests */}
+          {isGuest && (
+            <div className="absolute inset-0 bg-[#1a0b2e]/60 backdrop-blur-xl z-20 rounded-3xl flex items-center justify-center">
+              <div className="text-center p-8">
+                <h3 className="text-2xl font-black text-white mb-2">Login to See Your Results</h3>
+                <p className="text-purple-200 mb-6">Create an account or login to view your detailed results</p>
+              </div>
+            </div>
+          )}
+
+          {/* Achievement Card */}
+          <div className={isGuest ? 'filter blur-md' : ''}>
+            <BeltAchievementCard belt={recommendedBelt} score={score} />
+          </div>
+        </div>
+
+        {/* Login Prompt for Guests - Above buttons */}
+        {isGuest && <LoginPromptCard />}
 
         {/* Action Buttons */}
-        <ActionButtons 
+        <ActionButtons
           onReviewAnswers={handleReviewAnswers}
-          onRetakeTest={handleRetakeTest}
+          onContactAdmin={handleContactAdmin}
+          onBuyLevel={handleBuyLevel}
+          isLoggedIn={!isGuest}
+          beltName={recommendedBelt.belt}
         />
 
-        {/* Review Modal */}
+        {/* Review Modal - Only for logged in users */}
         <ReviewModal
-          isOpen={isReviewMode}
+          isOpen={isReviewMode && !isGuest}
           currentIndex={currentReviewIndex}
           questions={questions}
           selectedAnswers={selectedAnswers}
           onClose={() => setIsReviewMode(false)}
           onPrevious={handlePreviousQuestion}
           onNext={handleNextQuestion}
+        />
+
+        {/* Contact Admin Modal */}
+        <ContactAdminModal
+          isOpen={showContactModal}
+          onClose={() => setShowContactModal(false)}
+          defaultSubject="Request to Retake Test"
+          userEmail={session?.user?.email || studentInfo.email}
+          userName={session?.user?.name || studentInfo.name}
+        />
+
+        {/* Purchase Card Modal */}
+        <PurchaseCard
+          isOpen={showPurchaseCard}
+          onClose={() => setShowPurchaseCard(false)}
+          belt={recommendedBelt}
         />
       </motion.div>
     </div>

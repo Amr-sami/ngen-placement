@@ -59,7 +59,7 @@ export function useJourney() {
     return safeText(specificKey, genericKey);
   };
 
-  const getLearningItems = (): LearnItem[] => {
+  const learningItems = useMemo(() => {
     const translationObj = t as unknown as { raw?: (key: string) => unknown };
     const genericStages = ['placement-test', 'white'];
     if (genericStages.includes(activeStageId)) return [];
@@ -83,7 +83,7 @@ export function useJourney() {
 
     const processRawArray = (rawArray: unknown[] | null): LearnItem[] => {
       if (!rawArray) return [];
-      
+
       return rawArray
         .filter((x): x is Record<string, unknown> => x !== null && typeof x === 'object')
         .map((x) => ({
@@ -119,9 +119,8 @@ export function useJourney() {
     }
 
     return [];
-  };
-
-  const learningItems = useMemo(() => getLearningItems(), [activeTrack, activeStageId]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeTrack, activeStageId, t]);
 
   return {
     activeTrack,

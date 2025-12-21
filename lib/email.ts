@@ -143,3 +143,35 @@ export async function sendPasswordResetEmail(
         return { success: false, error: 'Failed to send email' };
     }
 }
+
+/**
+ * Generic send email function for contact forms and other uses
+ */
+export async function sendEmail({
+    to,
+    subject,
+    html,
+}: {
+    to: string;
+    subject: string;
+    html: string;
+}): Promise<EmailResult> {
+    try {
+        const { error } = await resend.emails.send({
+            from: `${APP_NAME} <${FROM_EMAIL}>`,
+            to,
+            subject,
+            html,
+        });
+
+        if (error) {
+            console.error('Email send error:', error);
+            return { success: false, error: error.message };
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error('Email service error:', error);
+        return { success: false, error: 'Failed to send email' };
+    }
+}

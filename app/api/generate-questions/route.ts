@@ -18,7 +18,7 @@ async function readQuestionsFile() {
   // Try root first, then data folder
   try {
     return await fs.readFile(rootPath, "utf-8")
-  } catch (e) {
+  } catch {
     return await fs.readFile(dataPath, "utf-8")
   }
 }
@@ -54,9 +54,10 @@ export async function POST(req: Request) {
       failed_tracks: [],
       message: "Questions generated from local bank (test.json).",
     })
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "Failed to generate questions from test.json"
     return NextResponse.json(
-      { detail: err?.message || "Failed to generate questions from test.json" },
+      { detail: message },
       { status: 500 }
     )
   }

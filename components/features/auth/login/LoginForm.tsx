@@ -48,8 +48,18 @@ export function LoginForm({ locale }: LoginFormProps) {
         };
         setError(errorMessages[result.error] || result.error);
       } else {
-        // Successful login - redirect to home page
-        router.push(`/${locale}`);
+        // Successful login - check for stored return URL, otherwise go to home
+        const returnUrl = sessionStorage.getItem('returnUrl');
+        if (returnUrl) {
+          sessionStorage.removeItem('returnUrl');
+          // Ensure the URL includes locale if it doesn't already
+          const redirectPath = returnUrl.startsWith(`/${locale}`)
+            ? returnUrl
+            : `/${locale}${returnUrl}`;
+          router.push(redirectPath);
+        } else {
+          router.push(`/${locale}`);
+        }
         router.refresh();
       }
     } catch (err) {

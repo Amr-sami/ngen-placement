@@ -60,11 +60,11 @@ export default function TestMain() {
         })
 
         const text = await res.text()
-        let data: any
+        let data: { questions?: ApiQuestion[]; partial?: boolean; failed_tracks?: string[]; message?: string; detail?: string; error?: string }
 
         try {
           data = JSON.parse(text)
-        } catch (parseError) {
+        } catch {
           console.error('Failed to parse response:', text)
           throw new Error('Received invalid response from server. Please try again.')
         }
@@ -81,19 +81,19 @@ export default function TestMain() {
           if (res.status === 500) {
             throw new Error(
               data?.detail ||
-                'A server error occurred while generating your test. Please try again in a few moments.',
+              'A server error occurred while generating your test. Please try again in a few moments.',
             )
           }
 
           throw new Error(
             data?.detail ||
-              data?.error ||
-              data?.message ||
-              'Failed to generate questions. Please try again.',
+            data?.error ||
+            data?.message ||
+            'Failed to generate questions. Please try again.',
           )
         }
 
-        if (data.partial && data.failed_tracks?.length > 0) {
+        if (data.partial && data.failed_tracks && data.failed_tracks.length > 0) {
           console.warn(`Some tracks failed: ${data.failed_tracks.join(', ')}`)
           console.warn(`Message: ${data.message}`)
         }
@@ -111,15 +111,16 @@ export default function TestMain() {
         setQuestions(apiQuestions)
         setSelectedAnswers(new Array(apiQuestions.length).fill(null))
         setLoadingProgress(100)
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.error('Error in fetchQuestions:', err)
 
-        if (err.name === 'TypeError' && err.message.includes('fetch')) {
+        const error = err as Error
+        if (error.name === 'TypeError' && error.message?.includes('fetch')) {
           setError('Network error. Please check your internet connection and try again.')
         } else {
           setError(
-            err?.message ||
-              'Sorry, something went wrong while generating your placement test. Please try again.',
+            error.message ||
+            'Sorry, something went wrong while generating your placement test. Please try again.',
           )
         }
       } finally {
@@ -182,9 +183,9 @@ export default function TestMain() {
 
   if (error || !questions.length) {
     return (
-      <ErrorState 
-        error={error} 
-        onRetry={() => router.push('/placement-test/survey')} 
+      <ErrorState
+        error={error}
+        onRetry={() => router.push('/placement-test/survey')}
       />
     )
   }
