@@ -3,99 +3,185 @@
 import React from 'react';
 import { H2 } from '@/components/general/Heading';
 import Button from '@/components/general/Button';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { getStudentsRoute } from '@/util/routes';
 import type { Locale } from '@/i18n';
+import { motion } from 'framer-motion';
+import { Sparkles, Trophy, User, Medal, ChevronRight, ChevronLeft } from 'lucide-react';
 
-// Placeholder student data
 const STUDENTS = [
   {
     id: 1,
-    name: 'Sarah Mohamed',
+    name: { en: 'Sarah Mohamed', ar: 'سارة محمد' },
     age: 12,
-    achievement: 'Built 5 AI projects',
-    track: 'AI & Machine Learning',
-    image: '/assets/images/icons/user-avatar.svg',
-    belt: 'Purple Belt',
+    achievement: { en: 'Built 5 AI projects', ar: 'بنت 5 مشاريع ذكاء اصطناعي' },
+    track: { en: 'AI & Machine Learning', ar: 'الذكاء الاصطناعي' },
+    belt: { en: 'Purple Belt', ar: 'الحزام الأرجواني' },
+    color: '#8B5CF6'
   },
   {
     id: 2,
-    name: 'Ahmed Khaled',
+    name: { en: 'Ahmed Khaled', ar: 'أحمد خالد' },
     age: 14,
-    achievement: 'Competed in National Robotics',
-    track: 'Robotics',
-    image: '/assets/images/icons/user-avatar.svg',
-    belt: 'Blue Belt',
+    achievement: { en: 'Competed in National Robotics', ar: 'نافس في المسابقة الوطنية للروبوتات' },
+    track: { en: 'Robotics', ar: 'الروبوتات' },
+    belt: { en: 'Blue Belt', ar: 'الحزام الأزرق' },
+    color: '#3B82F6'
   },
   {
     id: 3,
-    name: 'Maya Layla',
+    name: { en: 'Maya Layla', ar: 'مايا ليلى' },
     age: 11,
-    achievement: 'Created 3 Mobile Games',
-    track: 'Programming',
-    image: '/assets/images/icons/user-avatar.svg',
-    belt: 'Green Belt',
+    achievement: { en: 'Created 3 Mobile Games', ar: 'صممت 3 ألعاب للموبايل' },
+    track: { en: 'Programming', ar: 'البرمجة' },
+    belt: { en: 'Green Belt', ar: 'الحزام الأخضر' },
+    color: '#10B981'
   },
   {
     id: 4,
-    name: 'Omar Hassan',
+    name: { en: 'Omar Hassan', ar: 'عمر حسن' },
     age: 13,
-    achievement: 'Cybersecurity Champion',
-    track: 'Cybersecurity',
-    image: '/assets/images/icons/user-avatar.svg',
-    belt: 'Orange Belt',
+    achievement: { en: 'Cybersecurity Champion', ar: 'بطل الأمن السيبراني' },
+    track: { en: 'Cybersecurity', ar: 'الأمن السيبراني' },
+    belt: { en: 'Orange Belt', ar: 'الحزام البرتقالي' },
+    color: '#F97316'
   },
+  {
+    id: 5,
+    name: { en: 'Lila Zein', ar: 'ليلى زين' },
+    age: 10,
+    achievement: { en: 'Top UI Designer', ar: 'أفضل مصممة واجهات' },
+    track: { en: 'Design', ar: 'التصميم' },
+    belt: { en: 'Yellow Belt', ar: 'الحزام الأصفر' },
+    color: '#EAB308'
+  },
+  {
+    id: 6,
+    name: { en: 'Youssef Ali', ar: 'يوسف علي' },
+    age: 15,
+    achievement: { en: 'Python Expert', ar: 'خبير لغة بايثون' },
+    track: { en: 'Data Science', ar: 'علوم البيانات' },
+    belt: { en: 'Black Belt', ar: 'الحزام الأسود' },
+    color: '#1e293b'
+  }
 ];
 
 function HomepageStudentsSection() {
   const t = useTranslations('home');
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
+  const isRTL = locale === 'ar';
+
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const { current } = scrollRef.current;
+      const scrollAmount = 300;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
-    <section id="students" className="py-6 md:py-10 lg:py-20">
-      <div className="container mx-auto px-5 flex flex-col gap-7">
-        <div className="flex justify-between items-center">
-          <H2>{t('sections.students')}</H2>
-          <Button href={getStudentsRoute(locale)} variant="secondary">
-            {t('buttons.seeMoreStudents')}
-          </Button>
+    <section id="students" className={`py-16 md:py-24 bg-white relative overflow-hidden ${isRTL ? 'rtl' : 'ltr'}`}>
+      <div className="container mx-auto px-4">
+        
+        {/* Header Section */}
+        <div className={`flex flex-col md:flex-row justify-between items-center mb-12 gap-6 ${isRTL ? 'md:flex-row-reverse' : ''}`}>
+          <div className={isRTL ? 'text-right' : 'text-left'}>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-100 mb-4">
+              <Medal className="w-4 h-4 text-[#2e165f]" />
+              <span className="text-[10px] font-black tracking-widest text-[#2e165f] uppercase">
+                {isRTL ? 'مبدعي إن-جين' : 'NGEN CREATORS'}
+              </span>
+            </div>
+            <H2 classNames="text-[#2e165f] text-3xl md:text-5xl">{t('sections.students')}</H2>
+          </div>
+          
+          <div className="flex items-center gap-4">
+            <Button 
+              href={getStudentsRoute(locale)} 
+              variant="secondary" 
+              className="rounded-full px-8 border-2 border-[#2e165f] text-[#2e165f] font-bold hover:bg-[#2e165f] hover:text-white transition-all"
+            >
+              {t('buttons.seeMoreStudents')}
+            </Button>
+            
+            {/* Desktop Arrows */}
+            <div className="hidden md:flex gap-2">
+              <button onClick={() => scroll('left')} className="p-3 rounded-full border border-slate-200 hover:bg-[#2e165f] hover:text-white transition-all"><ChevronLeft className="w-5 h-5"/></button>
+              <button onClick={() => scroll('right')} className="p-3 rounded-full border border-slate-200 hover:bg-[#2e165f] hover:text-white transition-all"><ChevronRight className="w-5 h-5"/></button>
+            </div>
+          </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* SINGLE ROW CAROUSEL */}
+        <div 
+          ref={scrollRef}
+          className="flex overflow-x-auto gap-4 md:gap-6 pb-10 px-2 scrollbar-hide snap-x no-scrollbar"
+        >
           {STUDENTS.map((student) => (
-            <div
+            <motion.div
               key={student.id}
-              className="bg-gradient-to-br from-purple-light to-purple-lighter rounded-2xl p-6 flex flex-col items-center gap-4 text-center hover:shadow-lg transition-shadow"
+              whileHover={{ y: -8 }}
+              className="min-w-[calc(50%-8px)] md:min-w-[320px] snap-center bg-white border border-slate-100 rounded-[2.5rem] p-6 md:p-8 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:shadow-[#2e165f]/5 hover:border-[#2e165f]/20 transition-all group"
             >
-              <Image
-                src={student.image}
-                alt={student.name}
-                width={100}
-                height={100}
-                className="rounded-full"
-              />
-              <div className="flex flex-col gap-2">
-                <h3 className="text-purple-dark font-bold text-xl">{student.name}</h3>
-                <p className="text-sm text-gray-600">Age: {student.age}</p>
-                <p className="text-pumpkin font-semibold text-sm">{student.belt}</p>
-                <p className="text-sm font-medium text-purple-darker">{student.achievement}</p>
-                <p className="text-xs text-gray-500">{student.track}</p>
+              {/* Profile Image Stage */}
+              <div className="relative mb-6">
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-3xl bg-slate-50 border-4 border-white shadow-inner overflow-hidden flex items-center justify-center rotate-3 group-hover:rotate-0 transition-transform">
+                  <User className="w-10 h-10 md:w-12 md:h-12 text-slate-200" />
+                </div>
+                <div 
+                  className="absolute -top-2 -right-2 w-8 h-8 rounded-full flex items-center justify-center shadow-lg text-white"
+                  style={{ backgroundColor: student.color }}
+                >
+                  <Sparkles className="w-4 h-4" />
+                </div>
               </div>
-            </div>
+
+              {/* Student Info */}
+              <div className="flex flex-col gap-2 w-full">
+                <h3 className="text-[#2e165f] font-black text-lg md:text-xl truncate">
+                  {student.name[locale]}
+                </h3>
+                
+                <div className="bg-slate-50/80 rounded-2xl p-4 border border-slate-100/50">
+                  <p className="text-[#2e165f] font-bold text-xs md:text-sm leading-tight mb-1">
+                    {student.achievement[locale]}
+                  </p>
+                  <p className="text-slate-400 text-[9px] font-black uppercase tracking-wider">
+                    {student.track[locale]}
+                  </p>
+                </div>
+
+                {/* Achievement Belt */}
+                <div 
+                  className="mt-4 py-2 px-4 rounded-xl text-[10px] font-black uppercase inline-flex items-center gap-2 justify-center"
+                  style={{ 
+                    backgroundColor: `${student.color}10`, 
+                    color: student.color, 
+                    border: `1px solid ${student.color}20` 
+                  }}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: student.color }} />
+                  {student.belt[locale]}
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      `}</style>
     </section>
   );
 }
 
 export default HomepageStudentsSection;
-
-
-
-
-
-

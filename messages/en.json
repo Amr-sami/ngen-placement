@@ -1940,5 +1940,39 @@
       "sent": "Sent ✓",
       "successMessage": "Reset password link sent successfully!"
     }
+  },
+  "whySection": {
+      "badge": "Why thousands of families trust us",
+      "title": "Why Choose",
+      "titleHighlight": "Our Platform?",
+      "subtitle": "A world-class ecosystem for the next generation",
+      "previous": "Previous",
+      "next": "Next",
+      "features": {
+        "aiPathway": {
+          "title": "Digital-First AI Pathway",
+          "description": "Start your journey into AI with our structured learning path from L1A to L5B"
+        },
+        "projectBased": {
+          "title": "Project-Based Learning",
+          "description": "Build real projects and create your own capstone masterpiece"
+        },
+        "softSkills": {
+          "title": "Soft Skills Built-In",
+          "description": "Develop teamwork, communication, and problem-solving skills naturally"
+        },
+        "entrepreneurship": {
+          "title": "Entrepreneurship Mindset",
+          "description": "Think like a business owner and turn ideas into reality"
+        },
+        "trackGrowth": {
+          "title": "Track Your Growth",
+          "description": "See your progress with detailed reports and achievements"
+        },
+        "parentDashboard": {
+          "title": "Parent Dashboard",
+          "description": "Parents stay updated with real-time progress and insights"
+        }
+      }
+    }
   }
-}
