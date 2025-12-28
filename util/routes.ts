@@ -114,6 +114,13 @@ export const getBlogRoute = (locale: Locale): string => {
   return `/${locale}/blog`;
 };
 
+/**
+ * Placement Test page route
+ */
+export const getPlacementTestRoute = (locale: Locale): string => {
+  return `/${locale}/placement-test`;
+};
+
 // ============================================
 // AUTH ROUTES (Locale-Aware)
 // ============================================
@@ -162,7 +169,7 @@ export const getOTPRoute = (locale: Locale, email?: string): string => {
 /**
  * Valid home section anchor IDs (for future implementation)
  */
-export type HomeSectionHash = 
+export type HomeSectionHash =
   | 'projects'
   | 'students'
   | 'why-ngen'

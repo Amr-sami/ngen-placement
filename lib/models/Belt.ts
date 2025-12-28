@@ -8,8 +8,9 @@ export interface IBelt extends Document {
     order: number;
     description?: string;
     minScoreToStart?: number;
-    price?: number;
-    currency?: string;
+    basePriceEGP: number;
+    basePriceUSD: number;
+    packageLevel: 'pre-foundation' | 'foundation' | 'specialization' | 'advanced';
     purchaseUrl?: string;
     createdAt: Date;
     updatedAt: Date;
@@ -46,14 +47,20 @@ const BeltSchema = new Schema<IBelt>(
             min: 0,
             max: 100,
         },
-        price: {
+        basePriceEGP: {
             type: Number,
+            required: [true, 'Base price EGP is required'],
             min: 0,
         },
-        currency: {
+        basePriceUSD: {
+            type: Number,
+            required: [true, 'Base price USD is required'],
+            min: 0,
+        },
+        packageLevel: {
             type: String,
-            default: 'USD',
-            trim: true,
+            enum: ['pre-foundation', 'foundation', 'specialization', 'advanced'],
+            required: [true, 'Package level is required'],
         },
         purchaseUrl: {
             type: String,

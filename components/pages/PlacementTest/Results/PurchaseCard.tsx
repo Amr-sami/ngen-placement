@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, ShoppingCart, Sparkles, Tag } from 'lucide-react'
+import { X, Sparkles, Tag, Package, MessageCircle } from 'lucide-react'
 import type { BeltLevel } from './types'
+import { formatPrice } from '@/lib/hooks/useUserLocation'
+import type { PricingResponse } from '@/app/api/pricing/route'
 
 interface PurchaseCardProps {
     isOpen: boolean
@@ -12,56 +14,40 @@ interface PurchaseCardProps {
     belt: BeltLevel
 }
 
-interface BeltPricing {
-    price: number
-    currency: string
-}
-
+type PurchaseOption = 'perBelt' | 'package' | 'organization';
 
 export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProps) {
-    const [pricing, setPricing] = useState<BeltPricing | null>(null)
+    const [pricing, setPricing] = useState<PricingResponse | null>(null)
     const [isLoading, setIsLoading] = useState(true)
     const [mounted, setMounted] = useState(false)
+    const [selectedOption, setSelectedOption] = useState<PurchaseOption>('perBelt')
 
     // Only render portal on client side
     useEffect(() => {
         setMounted(true)
     }, [])
 
-    // Fetch belt pricing from database
+    // Fetch pricing from API
     useEffect(() => {
         const fetchPricing = async () => {
             if (!isOpen) return
 
             setIsLoading(true)
             try {
-                // TODO: Implement API to fetch belt pricing
-                // For now, use placeholder pricing
-                // const response = await fetch(`/api/belts/${belt.belt}/pricing`)
-                // const data = await response.json()
-
-                // Placeholder pricing - replace with actual API call
-                const placeholderPricing: Record<string, BeltPricing> = {
-                    'White': { price: 299, currency: 'USD' },
-                    'Yellow': { price: 399, currency: 'USD' },
-                    'Orange': { price: 499, currency: 'USD' },
-                    'Green': { price: 599, currency: 'USD' },
-                    'Blue': { price: 699, currency: 'USD' },
-                    'Brown': { price: 799, currency: 'USD' },
-                    'Black': { price: 999, currency: 'USD' },
+                const response = await fetch('/api/pricing')
+                if (response.ok) {
+                    const data = await response.json()
+                    setPricing(data)
                 }
-
-                setPricing(placeholderPricing[belt.belt] || { price: 399, currency: 'USD' })
             } catch (error) {
                 console.error('Error fetching pricing:', error)
-                setPricing({ price: 399, currency: 'USD' })
             } finally {
                 setIsLoading(false)
             }
         }
 
         fetchPricing()
-    }, [isOpen, belt.belt])
+    }, [isOpen])
 
     // Prevent body scroll when modal is open
     useEffect(() => {
@@ -77,6 +63,28 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
 
     if (!isOpen || !mounted) return null
 
+    // Get belt pricing from API response
+    const getBeltPrice = () => {
+        if (!pricing) return null
+        const beltData = pricing.option1_perBelt.belts.find(
+            b => b.belt.toLowerCase().includes(belt.belt.toLowerCase())
+        )
+        return beltData
+    }
+
+    // Get package that contains this belt
+    const getPackageForBelt = () => {
+        if (!pricing) return null
+        const beltCode = belt.belt.toLowerCase()
+        return pricing.option2_packages.find(pkg =>
+            pkg.belts.some(b => b.toLowerCase().includes(beltCode))
+        )
+    }
+
+    const beltPricing = getBeltPrice()
+    const packagePricing = getPackageForBelt()
+    const currency = pricing?.currency || 'USD'
+
     const modalContent = (
         <AnimatePresence>
             <motion.div
@@ -90,12 +98,11 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                     initial={{ scale: 0.9, opacity: 0, y: 20 }}
                     animate={{ scale: 1, opacity: 1, y: 0 }}
                     exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                    className="bg-[#1a0b2e] border border-white/20 rounded-3xl w-full max-w-md overflow-hidden shadow-2xl"
+                    className="bg-[#1a0b2e] border border-white/20 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto"
                     onClick={e => e.stopPropagation()}
                 >
                     {/* Header with Glow */}
-                    <div className="relative p-8 text-center overflow-hidden">
-                        {/* Glow Effect */}
+                    <div className="relative p-6 text-center overflow-hidden">
                         <div
                             className="absolute inset-0 opacity-30 blur-[60px]"
                             style={{ backgroundColor: belt.color }}
@@ -110,15 +117,14 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                 <X className="w-5 h-5 text-white/70" />
                             </button>
 
-                            {/* Belt Badge */}
                             <div
-                                className="w-24 h-24 mx-auto rounded-full border-4 flex items-center justify-center mb-4 shadow-2xl"
+                                className="w-20 h-20 mx-auto rounded-full border-4 flex items-center justify-center mb-3 shadow-2xl"
                                 style={{ backgroundColor: belt.color, borderColor: belt.borderColor }}
                             >
-                                <Sparkles className="w-10 h-10" style={{ color: belt.textColor }} />
+                                <Sparkles className="w-8 h-8" style={{ color: belt.textColor }} />
                             </div>
 
-                            <h2 className="text-2xl font-black text-white mb-1">
+                            <h2 className="text-xl font-black text-white mb-1">
                                 {belt.belt} Belt
                             </h2>
                             <p className="text-purple-200 text-sm">
@@ -128,7 +134,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                     </div>
 
                     {/* Pricing Section */}
-                    <div className="p-6 border-t border-white/10">
+                    <div className="p-5 border-t border-white/10">
                         {isLoading ? (
                             <div className="text-center py-8">
                                 <div className="w-8 h-8 border-2 border-white/20 border-t-orange-500 rounded-full animate-spin mx-auto mb-3"></div>
@@ -136,48 +142,127 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                             </div>
                         ) : (
                             <>
-                                {/* Price Display */}
-                                <div className="bg-gradient-to-br from-green-500/20 to-emerald-600/20 border border-green-500/30 rounded-2xl p-6 mb-6">
-                                    <div className="flex items-center justify-center gap-2 mb-2">
-                                        <Tag className="w-5 h-5 text-green-400" />
-                                        <span className="text-green-400 text-sm font-bold uppercase tracking-wider">Course Price</span>
-                                    </div>
-                                    <div className="text-center">
-                                        <span className="text-5xl font-black text-white">
-                                            ${pricing?.price || 399}
-                                        </span>
-                                        <span className="text-purple-200 text-lg ml-2">
-                                            {pricing?.currency || 'USD'}
-                                        </span>
-                                    </div>
+                                {/* Option Tabs */}
+                                <div className="flex gap-2 mb-4">
+                                    <button
+                                        onClick={() => setSelectedOption('perBelt')}
+                                        className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'perBelt'
+                                                ? 'bg-green-500/20 border border-green-500/50 text-green-400'
+                                                : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
+                                            }`}
+                                    >
+                                        <Tag className="w-4 h-4 inline mr-1" />
+                                        Per Belt
+                                    </button>
+                                    {packagePricing && (
+                                        <button
+                                            onClick={() => setSelectedOption('package')}
+                                            className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'package'
+                                                    ? 'bg-purple-500/20 border border-purple-500/50 text-purple-400'
+                                                    : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
+                                                }`}
+                                        >
+                                            <Package className="w-4 h-4 inline mr-1" />
+                                            Package
+                                        </button>
+                                    )}
+                                    <button
+                                        onClick={() => setSelectedOption('organization')}
+                                        className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'organization'
+                                                ? 'bg-orange-500/20 border border-orange-500/50 text-orange-400'
+                                                : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
+                                            }`}
+                                    >
+                                        <MessageCircle className="w-4 h-4 inline mr-1" />
+                                        Org
+                                    </button>
                                 </div>
 
+                                {/* Per Belt Option */}
+                                {selectedOption === 'perBelt' && beltPricing && (
+                                    <div className="bg-gradient-to-br from-green-500/20 to-emerald-600/20 border border-green-500/30 rounded-2xl p-5 mb-4">
+                                        <div className="flex items-center justify-center gap-2 mb-2">
+                                            <Tag className="w-4 h-4 text-green-400" />
+                                            <span className="text-green-400 text-xs font-bold uppercase tracking-wider">
+                                                {belt.belt} Belt • {pricing?.option1_perBelt.discountPercent}% Off
+                                            </span>
+                                        </div>
+                                        <div className="text-center">
+                                            <span className="text-4xl font-black text-white">
+                                                {formatPrice(beltPricing.finalPrice, currency)}
+                                            </span>
+                                        </div>
+                                        <p className="text-center text-green-300/60 text-xs mt-2">
+                                            Base: {formatPrice(beltPricing.basePrice, currency)}
+                                        </p>
+                                    </div>
+                                )}
+
+                                {/* Package Option */}
+                                {selectedOption === 'package' && packagePricing && (
+                                    <div className="bg-gradient-to-br from-purple-500/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-5 mb-4">
+                                        <div className="flex items-center justify-center gap-2 mb-2">
+                                            <Package className="w-4 h-4 text-purple-400" />
+                                            <span className="text-purple-400 text-xs font-bold uppercase tracking-wider">
+                                                {packagePricing.name} • {packagePricing.discountPercent}% Off
+                                            </span>
+                                        </div>
+                                        <div className="text-center">
+                                            <span className="text-4xl font-black text-white">
+                                                {formatPrice(packagePricing.finalPrice, currency)}
+                                            </span>
+                                        </div>
+                                        <p className="text-center text-purple-300/60 text-xs mt-2">
+                                            Includes: {packagePricing.belts.join(', ')}
+                                        </p>
+                                    </div>
+                                )}
+
+                                {/* Organization Option */}
+                                {selectedOption === 'organization' && (
+                                    <div className="bg-gradient-to-br from-orange-500/20 to-red-600/20 border border-orange-500/30 rounded-2xl p-5 mb-4">
+                                        <div className="flex items-center justify-center gap-2 mb-2">
+                                            <MessageCircle className="w-4 h-4 text-orange-400" />
+                                            <span className="text-orange-400 text-xs font-bold uppercase tracking-wider">
+                                                Organizations / Schools
+                                            </span>
+                                        </div>
+                                        <div className="text-center">
+                                            <span className="text-2xl font-black text-white">
+                                                Custom Pricing
+                                            </span>
+                                        </div>
+                                        <p className="text-center text-orange-300/60 text-xs mt-2">
+                                            Bulk enrollment & custom curriculum
+                                        </p>
+                                    </div>
+                                )}
+
                                 {/* Course Details */}
-                                <div className="grid grid-cols-3 gap-3 mb-6">
-                                    <div className="text-center p-3 bg-white/5 rounded-xl">
-                                        <p className="text-white font-bold">{belt.duration}</p>
+                                <div className="grid grid-cols-3 gap-2 mb-4">
+                                    <div className="text-center p-2 bg-white/5 rounded-lg">
+                                        <p className="text-white font-bold text-sm">{belt.duration}</p>
                                         <p className="text-purple-300 text-xs">Duration</p>
                                     </div>
-                                    <div className="text-center p-3 bg-white/5 rounded-xl">
-                                        <p className="text-white font-bold">{belt.totalHours}</p>
+                                    <div className="text-center p-2 bg-white/5 rounded-lg">
+                                        <p className="text-white font-bold text-sm">{belt.totalHours}</p>
                                         <p className="text-purple-300 text-xs">Hours</p>
                                     </div>
-                                    <div className="text-center p-3 bg-white/5 rounded-xl">
-                                        <p className="text-white font-bold">{belt.totalClasses}</p>
+                                    <div className="text-center p-2 bg-white/5 rounded-lg">
+                                        <p className="text-white font-bold text-sm">{belt.totalClasses}</p>
                                         <p className="text-purple-300 text-xs">Classes</p>
                                     </div>
                                 </div>
 
-                                {/* Purchase Button - Currently Disabled */}
+                                {/* Purchase Button */}
                                 <button
                                     disabled
-                                    className="w-full py-4 rounded-xl bg-gradient-to-r from-green-500/50 to-emerald-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
+                                    className="w-full py-3 rounded-xl bg-gradient-to-r from-green-500/50 to-emerald-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
                                 >
-                                    <ShoppingCart className="w-5 h-5" />
                                     Coming Soon
                                 </button>
 
-                                <p className="text-center text-purple-300/60 text-xs mt-3">
+                                <p className="text-center text-purple-300/60 text-xs mt-2">
                                     Payment options will be available soon
                                 </p>
                             </>

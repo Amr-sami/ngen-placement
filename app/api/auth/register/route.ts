@@ -4,6 +4,7 @@ import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import VerificationToken, { generateVerificationToken } from '@/lib/models/VerificationToken';
 import { sendVerificationEmail } from '@/lib/email';
+import { getIPFromHeaders, getCountryFromIP } from '@/lib/geoLocation';
 
 export async function POST(request: NextRequest) {
     try {
@@ -66,6 +67,10 @@ export async function POST(request: NextRequest) {
         const saltRounds = 12;
         const passwordHash = await bcrypt.hash(password, saltRounds);
 
+        // Detect location from IP
+        const signupIP = getIPFromHeaders(request.headers);
+        const geoResult = await getCountryFromIP(signupIP);
+
         // Create user
         const user = await User.create({
             email: email.toLowerCase(),
@@ -90,6 +95,9 @@ export async function POST(request: NextRequest) {
                 organizationName: joinType === 'organization' ? organizationName : undefined,
                 howDidYouKnowNgen,
             },
+            signupIP: signupIP !== 'unknown' ? signupIP : undefined,
+            detectedCountry: geoResult.success ? geoResult.country : undefined,
+            detectedCountryCode: geoResult.success ? geoResult.countryCode : undefined,
         });
 
         // Delete any existing verification tokens for this email

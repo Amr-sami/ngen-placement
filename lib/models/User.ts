@@ -60,6 +60,9 @@ export interface IUser extends Document {
     profile: IUserProfile;
     progress?: IUserProgress;
     placementTest?: IUserPlacementTest;
+    detectedCountry?: string;
+    detectedCountryCode?: string;
+    signupIP?: string;
     lastLoginAt?: Date;
     createdAt: Date;
     updatedAt: Date;
@@ -190,6 +193,9 @@ const UserSchema = new Schema<IUser>(
         },
         progress: ProgressSchema,
         placementTest: PlacementTestSummarySchema,
+        detectedCountry: { type: String, trim: true },
+        detectedCountryCode: { type: String, trim: true, uppercase: true },
+        signupIP: { type: String, trim: true },
         lastLoginAt: { type: Date },
     },
     {

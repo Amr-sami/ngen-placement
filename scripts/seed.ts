@@ -4,7 +4,8 @@
  * 
  * This script populates the database with initial data:
  * - Tracks (Programming, AI, Cybersecurity, etc.)
- * - Belts for each track (White, Yellow, Orange, etc.)
+ * - Belts for each track with pricing
+ * - Pricing configurations
  */
 
 import mongoose from 'mongoose';
@@ -13,6 +14,7 @@ import 'dotenv/config';
 // Import models
 import Track from '../lib/models/Track';
 import Belt from '../lib/models/Belt';
+import PricingConfig from '../lib/models/PricingConfig';
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -61,18 +63,69 @@ const tracksData = [
     },
 ];
 
-// Belt data (will be created for each track)
+// Belt data with pricing (base prices before any discount)
 const beltsData = [
-    { name: 'White Belt', code: 'white', order: 1, minScoreToStart: 0, description: 'Beginner level - Start your journey!' },
-    { name: 'Yellow Belt', code: 'yellow', order: 2, minScoreToStart: 60, description: 'Foundation skills acquired' },
-    { name: 'Orange Belt', code: 'orange', order: 3, minScoreToStart: 65, description: 'Building momentum' },
-    { name: 'Green Belt', code: 'green', order: 4, minScoreToStart: 70, description: 'Intermediate skills' },
-    { name: 'Blue Belt', code: 'blue', order: 5, minScoreToStart: 75, description: 'Advanced beginner' },
-    { name: 'Purple Belt', code: 'purple', order: 6, minScoreToStart: 80, description: 'Skilled practitioner' },
-    { name: 'Brown Belt', code: 'brown', order: 7, minScoreToStart: 85, description: 'Near mastery' },
-    { name: 'Black Belt', code: 'black', order: 8, minScoreToStart: 90, description: 'Master level achieved!' },
-    { name: 'Ninja Belt', code: 'ninja', order: 9, minScoreToStart: 95, description: 'Elite ninja status - Top performer!' },
-    { name: 'Master Belt', code: 'master', order: 10, minScoreToStart: 98, description: 'Legendary master - The ultimate achievement!' },
+    { name: 'White Belt', code: 'white', order: 1, minScoreToStart: 0, basePriceEGP: 5000, basePriceUSD: 100, packageLevel: 'pre-foundation' as const, description: 'Pre-Foundation - Start your journey!' },
+    { name: 'Yellow Belt', code: 'yellow', order: 2, minScoreToStart: 60, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'foundation' as const, description: 'Foundation skills acquired' },
+    { name: 'Orange Belt', code: 'orange', order: 3, minScoreToStart: 65, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'foundation' as const, description: 'Building momentum' },
+    { name: 'Green Belt', code: 'green', order: 4, minScoreToStart: 70, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'foundation' as const, description: 'Intermediate skills' },
+    { name: 'Blue Belt', code: 'blue', order: 5, minScoreToStart: 75, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'specialization' as const, description: 'Specialization begins' },
+    { name: 'Red Belt', code: 'red', order: 6, minScoreToStart: 80, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'specialization' as const, description: 'Skilled practitioner' },
+    { name: 'Brown Belt', code: 'brown', order: 7, minScoreToStart: 85, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'specialization' as const, description: 'Near mastery' },
+    { name: 'Black Belt', code: 'black', order: 8, minScoreToStart: 90, basePriceEGP: 9000, basePriceUSD: 200, packageLevel: 'specialization' as const, description: 'Master level achieved!' },
+    { name: 'Ninja Belt', code: 'ninja', order: 9, minScoreToStart: 95, basePriceEGP: 18000, basePriceUSD: 400, packageLevel: 'advanced' as const, description: 'Elite ninja status - Top performer!' },
+    { name: 'Master Belt', code: 'master', order: 10, minScoreToStart: 98, basePriceEGP: 18000, basePriceUSD: 400, packageLevel: 'advanced' as const, description: 'Legendary master - The ultimate achievement!' },
+];
+
+// Pricing configurations
+const pricingConfigsData = [
+    {
+        configType: 'perBelt' as const,
+        name: 'Per Belt',
+        discountPercentEGP: 50,
+        discountPercentUSD: 50,
+        isActive: true,
+    },
+    {
+        configType: 'package' as const,
+        name: 'Foundation Package',
+        packageLevel: 'foundation' as const,
+        discountPercentEGP: 56,
+        discountPercentUSD: 56,
+        belts: ['yellow', 'orange', 'green'],
+        fixedPriceEGP: 12000,
+        fixedPriceUSD: 265,
+        isActive: true,
+    },
+    {
+        configType: 'package' as const,
+        name: 'Specialization Package',
+        packageLevel: 'specialization' as const,
+        discountPercentEGP: 56,
+        discountPercentUSD: 56,
+        belts: ['blue', 'red', 'brown', 'black'],
+        fixedPriceEGP: 16000,
+        fixedPriceUSD: 355,
+        isActive: true,
+    },
+    {
+        configType: 'package' as const,
+        name: 'Advanced Package',
+        packageLevel: 'advanced' as const,
+        discountPercentEGP: 59,
+        discountPercentUSD: 59,
+        belts: ['ninja', 'master'],
+        fixedPriceEGP: 15000,
+        fixedPriceUSD: 330,
+        isActive: true,
+    },
+    {
+        configType: 'organization' as const,
+        name: 'Organizations / Schools',
+        discountPercentEGP: 0, // Custom pricing
+        discountPercentUSD: 0,
+        isActive: true,
+    },
 ];
 
 async function seed() {
@@ -102,8 +155,9 @@ async function seed() {
         console.log(`   📊 Tracks: ${tracksCreated} created, ${tracksSkipped} skipped\n`);
 
         // Seed Belts for each Track
-        console.log('🥋 Seeding Belts...');
+        console.log('🥋 Seeding Belts with pricing...');
         let beltsCreated = 0;
+        let beltsUpdated = 0;
         let beltsSkipped = 0;
 
         const allTracks = await Track.find({});
@@ -114,11 +168,23 @@ async function seed() {
             for (const beltData of beltsData) {
                 const existing = await Belt.findOne({
                     trackId: track._id,
-                    code: beltData.code
+                    code: beltData.code.toUpperCase()
                 });
 
                 if (existing) {
-                    beltsSkipped++;
+                    // Update existing belt with pricing data
+                    await Belt.updateOne(
+                        { _id: existing._id },
+                        {
+                            $set: {
+                                basePriceEGP: beltData.basePriceEGP,
+                                basePriceUSD: beltData.basePriceUSD,
+                                packageLevel: beltData.packageLevel,
+                                name: beltData.name, // Update name in case of Red vs Purple
+                            }
+                        }
+                    );
+                    beltsUpdated++;
                 } else {
                     await Belt.create({
                         ...beltData,
@@ -129,14 +195,41 @@ async function seed() {
                 }
             }
         }
-        console.log(`   📊 Belts: ${beltsCreated} created, ${beltsSkipped} skipped\n`);
+        console.log(`   📊 Belts: ${beltsCreated} created, ${beltsUpdated} updated, ${beltsSkipped} skipped\n`);
+
+        // Seed Pricing Configs
+        console.log('💰 Seeding Pricing Configurations...');
+        let configsCreated = 0;
+        let configsUpdated = 0;
+
+        for (const configData of pricingConfigsData) {
+            const existing = await PricingConfig.findOne({
+                configType: configData.configType,
+                name: configData.name
+            });
+
+            if (existing) {
+                await PricingConfig.updateOne(
+                    { _id: existing._id },
+                    { $set: configData }
+                );
+                console.log(`   🔄 Updated: ${configData.name}`);
+                configsUpdated++;
+            } else {
+                await PricingConfig.create(configData);
+                console.log(`   ✅ Created: ${configData.name}`);
+                configsCreated++;
+            }
+        }
+        console.log(`   📊 Pricing Configs: ${configsCreated} created, ${configsUpdated} updated\n`);
 
         // Summary
         console.log('═══════════════════════════════════');
         console.log('✅ Seed completed successfully!');
         console.log('═══════════════════════════════════');
-        console.log(`   Tracks: ${await Track.countDocuments()}`);
-        console.log(`   Belts:  ${await Belt.countDocuments()}`);
+        console.log(`   Tracks:         ${await Track.countDocuments()}`);
+        console.log(`   Belts:          ${await Belt.countDocuments()}`);
+        console.log(`   PricingConfigs: ${await PricingConfig.countDocuments()}`);
         console.log('═══════════════════════════════════\n');
 
     } catch (error) {
