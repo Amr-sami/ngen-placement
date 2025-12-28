@@ -3,19 +3,29 @@
 import React, { useState, useEffect } from 'react';
 import { H2 } from '@/components/general/Heading';
 import Button from '@/components/general/Button';
-import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { getContactRoute, getPlacementTestRoute } from '@/util/routes';
 import type { Locale } from '@/i18n';
-import { Tag, Package, Check, Sparkles, Zap, Star, Users } from 'lucide-react';
+import { Tag, Package, Check, Sparkles, Zap, Users, Trophy, Star } from 'lucide-react';
 import type { PricingResponse } from '@/app/api/pricing/route';
 import { formatPrice } from '@/lib/hooks/useUserLocation';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// Color Mapping for the Belts
+const BELT_THEMES: Record<string, string> = {
+  'Yellow': '#EAB308',
+  'Orange': '#F97316',
+  'Green': '#22C55E',
+  'Blue': '#3B82F6',
+  'Purple': '#A855F7',
+  'Red': '#EF4444',
+  'Black': '#1E293B',
+  'White': '#94A3B8',
+};
 
 function HomepagePricingSection() {
-  const t = useTranslations('home.sections');
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
-
   const [pricing, setPricing] = useState<PricingResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'perBelt' | 'packages' | 'organization'>('packages');
@@ -34,255 +44,245 @@ function HomepagePricingSection() {
         setIsLoading(false);
       }
     };
-
     fetchPricing();
   }, []);
 
   const currency = pricing?.currency || 'USD';
 
-  // Package styles using the website's color palette
-  const packageStyles = [
-    { gradient: 'from-pumpkin via-yellow to-rose', icon: Zap, iconBg: 'bg-pumpkin' },
-    { gradient: 'from-purple-dark via-purple-default to-rose', icon: Star, iconBg: 'bg-purple-dark' },
-    { gradient: 'from-blueberry via-purple-default to-purple-dark', icon: Sparkles, iconBg: 'bg-blueberry' },
-  ];
-
   return (
-    <section id="pricing" className="py-16 md:py-24 bg-gradient-to-b from-purple-darker via-purple-dark to-purple-darker relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-default/20 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-rose/15 rounded-full blur-[150px]"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pumpkin/10 rounded-full blur-[200px]"></div>
+    <section id="pricing" className="py-16 md:py-20 bg-[#FDFDFF] relative overflow-hidden">
+      {/* Animated Floating Particles */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            animate={{ 
+              y: [0, -20, 0],
+              opacity: [0.2, 0.5, 0.2],
+              scale: [1, 1.1, 1]
+            }}
+            transition={{ duration: 3 + i, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute rounded-full bg-[#2e165f]/5"
+            style={{
+              width: Math.random() * 100 + 50,
+              height: Math.random() * 100 + 50,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+          />
+        ))}
       </div>
 
-      <div className="container mx-auto px-5 flex flex-col gap-10 relative z-10">
-        {/* Header */}
-        <div className="text-center">
-          <H2 classNames="text-white">{t('pricing')}</H2>
-          <p className="text-purple-light/80 mt-4 max-w-2xl mx-auto text-lg">
-            Choose the learning path that works best for you. All options include live sessions,
-            projects, and progress tracking.
-          </p>
-
-          {/* Currency Badge */}
-          {pricing && (
-            <div className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium border border-white/10">
-              <Sparkles className="w-4 h-4 text-pumpkin" />
-              Prices shown in {currency}
-            </div>
-          )}
+      <div className="container mx-auto px-5 max-w-6xl relative z-10">
+        {/* Header with Floating Icon */}
+        <div className="text-center mb-12">
+          {/* <motion.div 
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 4, repeat: Infinity }}
+            className="inline-block mb-4"
+          >
+             <div className="bg-yellow-400 p-3 rounded-2xl shadow-lg shadow-yellow-200">
+                <Star className="w-6 h-6 text-white fill-white" />
+             </div>
+          </motion.div> */}
+          <H2 classNames="text-[#2e165f] text-4xl md:text-5xl font-black italic">CHOOSE YOUR MISSION</H2>
+          <p className="text-slate-400 font-bold mt-2">Level up your skills with NGen Pro</p>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="flex justify-center gap-3 flex-wrap">
-          <button
-            onClick={() => setActiveTab('perBelt')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'perBelt'
-                ? 'bg-gradient-to-r from-pumpkin to-rose text-white shadow-lg shadow-pumpkin/30'
-                : 'bg-white/5 text-purple-light border border-purple-light/20 hover:bg-white/10 hover:text-white'
-              }`}
-          >
-            <Tag className="w-4 h-4" />
-            Per Belt
-          </button>
-          <button
-            onClick={() => setActiveTab('packages')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'packages'
-                ? 'bg-gradient-to-r from-purple-default to-rose text-white shadow-lg shadow-purple-default/30'
-                : 'bg-white/5 text-purple-light border border-purple-light/20 hover:bg-white/10 hover:text-white'
-              }`}
-          >
-            <Package className="w-4 h-4" />
-            Packages
-          </button>
-          <button
-            onClick={() => setActiveTab('organization')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'organization'
-                ? 'bg-gradient-to-r from-blueberry to-purple-default text-white shadow-lg shadow-blueberry/30'
-                : 'bg-white/5 text-purple-light border border-purple-light/20 hover:bg-white/10 hover:text-white'
-              }`}
-          >
-            <Users className="w-4 h-4" />
-            Organizations
-          </button>
-        </div>
-
-        {/* Loading State */}
-        {isLoading && (
-          <div className="flex justify-center py-16">
-            <div className="w-10 h-10 border-4 border-purple-light/30 border-t-pumpkin rounded-full animate-spin"></div>
-          </div>
-        )}
-
-        {/* Per Belt Tab */}
-        {!isLoading && activeTab === 'perBelt' && pricing && (
-          <div className="relative bg-purple-darker/50 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-purple-light/10">
-            {/* Sale Badge */}
-            <div className="absolute -top-4 left-8 bg-gradient-to-r from-pumpkin to-rose text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg shadow-pumpkin/30 flex items-center gap-2">
-              <Zap className="w-4 h-4" />
-              {pricing.option1_perBelt.discountPercent}% OFF ALL BELTS
-            </div>
-
-            <div className="text-center mb-8 mt-4">
-              <h3 className="text-2xl font-bold text-white">Buy Individual Belts</h3>
-              <p className="text-purple-light/70 mt-2">Start with any belt and progress at your own pace</p>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-              {pricing.option1_perBelt.belts.map((belt) => (
-                <div
-                  key={belt.code}
-                  className="group bg-purple-dark/50 hover:bg-purple-dark rounded-2xl p-5 text-center border border-purple-light/10 hover:border-purple-light/30 transition-all duration-300"
-                >
-                  <p className="font-semibold text-white text-sm mb-2">{belt.belt}</p>
-                  <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pumpkin to-yellow">
-                    {formatPrice(belt.finalPrice, currency)}
-                  </p>
-                  <p className="text-xs text-purple-light/50 line-through mt-1">{formatPrice(belt.basePrice, currency)}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 text-center">
-              <Button
-                href={getPlacementTestRoute(locale)}
-                variant="primary"
-                classNames="bg-gradient-to-r from-pumpkin to-rose hover:from-pumpkin hover:to-rose/80 shadow-lg shadow-pumpkin/30"
+        {/* Dynamic Tab Switcher */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-white p-2 rounded-[2.5rem] shadow-xl shadow-slate-200/50 flex gap-2 border border-slate-50">
+            {[
+              { id: 'packages', label: 'Bundles', icon: Package },
+              { id: 'perBelt', label: 'Single Belt', icon: Tag },
+              { id: 'organization', label: 'Schools', icon: Users },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id as any)}
+                className={`flex items-center gap-2 px-6 py-3 rounded-[2rem] text-sm font-black transition-all duration-500 ${
+                  activeTab === tab.id
+                    ? 'bg-[#2e165f] text-white shadow-lg'
+                    : 'text-slate-400 hover:bg-slate-50'
+                }`}
               >
-                Take Placement Test
-              </Button>
-            </div>
+                <tab.icon className="w-4 h-4" />
+                {tab.label}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
 
-        {/* Packages Tab */}
-        {!isLoading && activeTab === 'packages' && pricing && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {pricing.option2_packages.map((pkg, index) => {
-              const style = packageStyles[index];
-              const IconComponent = style.icon;
+        <AnimatePresence mode="wait">
+          {!isLoading && (
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+            >
+              {/* --- Packages Tab --- */}
+              {activeTab === 'packages' && pricing && (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                  {pricing.option2_packages.map((pkg, index) => {
+                    const isFeatured = index === 1;
+                    return (
+                      <motion.div 
+                        key={pkg.packageLevel}
+                        whileHover={{ scale: 1.02 }}
+                        className={`relative bg-white rounded-[3.5rem] p-8 transition-all flex flex-col ${
+                          isFeatured 
+                            ? 'border-4 border-[#2e165f] shadow-[0_20px_50px_rgba(46,22,95,0.15)] md:scale-110 z-20' 
+                            : 'border-2 border-slate-100 shadow-xl opacity-90'
+                        }`}
+                      >
+                        <motion.div 
+                          animate={{ scale: [1, 1.1, 1], rotate: [-2, 2, -2] }}
+                          transition={{ duration: 2, repeat: Infinity }}
+                          className={`absolute -top-5 -right-2 px-4 py-2 rounded-2xl text-white text-xs font-black shadow-lg ${
+                            isFeatured ? 'bg-gradient-to-r from-orange-500 to-red-500' : 'bg-blue-500'
+                          }`}
+                        >
+                          {pkg.discountPercent}% OFF 🔥
+                        </motion.div>
 
-              return (
-                <div
-                  key={pkg.packageLevel}
-                  className="relative group"
-                >
-                  {/* Glow effect */}
-                  <div className={`absolute inset-0 bg-gradient-to-r ${style.gradient} rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
+                        <div className="mb-6">
+                           <h3 className={`text-2xl font-black mb-1 ${isFeatured ? 'text-[#2e165f]' : 'text-slate-600'}`}>{pkg.name}</h3>
+                           <div className="w-12 h-1.5 bg-slate-100 rounded-full" />
+                        </div>
 
-                  <div className="relative bg-purple-darker/60 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-purple-light/10 hover:border-purple-light/20 transition-all duration-300 h-full flex flex-col">
-                    {/* Sale Badge */}
-                    <div className={`absolute -top-3 right-6 bg-gradient-to-r ${style.gradient} text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1`}>
-                      <Zap className="w-3 h-3" />
-                      SALE
-                    </div>
-
-                    {/* Icon & Header */}
-                    <div className="text-center mb-6">
-                      <div className={`w-16 h-16 mx-auto ${style.iconBg} rounded-2xl flex items-center justify-center mb-4 shadow-lg`}>
-                        <IconComponent className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-white">{pkg.name}</h3>
-                      <p className={`text-sm font-semibold bg-gradient-to-r ${style.gradient} bg-clip-text text-transparent mt-1`}>
-                        {pkg.discountPercent}% OFF
-                      </p>
-                    </div>
-
-                    {/* Price */}
-                    <div className="text-center mb-6">
-                      <div className="text-4xl font-black text-white">
-                        {formatPrice(pkg.finalPrice, currency)}
-                      </div>
-                      <p className="text-purple-light/50 text-sm line-through mt-1">
-                        {formatPrice(pkg.baseTotal, currency)}
-                      </p>
-                    </div>
-
-                    {/* Features */}
-                    <ul className="flex flex-col gap-3 flex-grow mb-6">
-                      {pkg.belts.map((belt) => (
-                        <li key={belt} className="flex items-center gap-3 text-purple-light/80">
-                          <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${style.gradient} flex items-center justify-center flex-shrink-0`}>
-                            <Check className="w-3 h-3 text-white" />
+                        <div className="mb-8">
+                          <div className="flex items-baseline gap-2">
+                             <span className="text-4xl font-black text-[#2e165f]">{formatPrice(pkg.finalPrice, currency)}</span>
+                             <span className="text-slate-300 text-sm line-through decoration-red-400">{formatPrice(pkg.baseTotal, currency)}</span>
                           </div>
-                          <span className="text-sm">{belt}</span>
-                        </li>
-                      ))}
-                      <li className="flex items-center gap-3 text-purple-light/80">
-                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${style.gradient} flex items-center justify-center flex-shrink-0`}>
-                          <Check className="w-3 h-3 text-white" />
+                          <p className="text-[10px] font-black text-slate-400 mt-1 uppercase tracking-widest">Full Access Bundle</p>
                         </div>
-                        <span className="text-sm">Live interactive sessions</span>
-                      </li>
-                      <li className="flex items-center gap-3 text-purple-light/80">
-                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${style.gradient} flex items-center justify-center flex-shrink-0`}>
-                          <Check className="w-3 h-3 text-white" />
-                        </div>
-                        <span className="text-sm">Project-based learning</span>
-                      </li>
-                    </ul>
 
-                    <Button
-                      href={getPlacementTestRoute(locale)}
-                      variant="primary"
-                      takeFullWidth
-                      classNames={`bg-gradient-to-r ${style.gradient} hover:opacity-90 shadow-lg`}
+                        <div className="space-y-4 mb-10 flex-grow">
+                          {pkg.belts.map((belt) => (
+                            <div key={belt} className="flex items-center gap-3">
+                              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center">
+                                <Check className="w-3 h-3 text-green-600 stroke-[4px]" />
+                              </div>
+                              <span className="text-sm font-bold text-slate-500">{belt}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        <Button
+                          href={getPlacementTestRoute(locale)}
+                          variant="primary"
+                          takeFullWidth
+                          classNames={`rounded-[1.5rem] py-5 font-black text-sm tracking-wide ${
+                            isFeatured ? 'bg-[#2e165f] shadow-blue-900/20' : 'bg-slate-800'
+                          }`}
+                        >
+                          UNLOCK MISSION
+                        </Button>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* --- Per Belt Tab (COLORIZED) --- */}
+              {activeTab === 'perBelt' && pricing && (
+                <div className="bg-white rounded-[3.5rem] p-10 shadow-2xl shadow-slate-200/40 border border-slate-50">
+                  <div className="flex items-center justify-between mb-10">
+                    <h3 className="text-2xl font-black text-[#2e165f]">Choose Your Level</h3>
+                    <motion.div 
+                      animate={{ opacity: [0.5, 1, 0.5] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                      className="flex items-center gap-2 text-orange-500 font-black text-sm"
                     >
-                      Get Started
+                      <Zap className="w-4 h-4 fill-orange-500" />
+                      LIMITED TIME DEALS
+                    </motion.div>
+                  </div>
+
+                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    {pricing.option1_perBelt.belts.map((belt) => {
+                      // Extract the color name from the belt string (e.g. "Yellow Belt" -> "Yellow")
+                      const beltColor = Object.keys(BELT_THEMES).find(color => belt.belt.includes(color)) || 'White';
+                      const themeColor = BELT_THEMES[beltColor];
+
+                      return (
+                        <motion.div 
+                          key={belt.code} 
+                          whileHover={{ scale: 1.05, y: -5 }}
+                          className="relative bg-white border-2 border-slate-50 rounded-[2.5rem] p-6 text-center transition-all group overflow-hidden"
+                          style={{ boxShadow: `0 15px 30px -10px ${themeColor}20` }}
+                        >
+                          {/* Colored Accent Bar */}
+                          <div 
+                            className="absolute top-0 left-0 w-full h-1.5" 
+                            style={{ backgroundColor: themeColor }}
+                          />
+
+                          {/* Icon Container with dynamic color */}
+                          <div 
+                            className="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center text-white font-black text-lg shadow-lg"
+                            style={{ 
+                              backgroundColor: themeColor,
+                              boxShadow: `0 8px 16px ${themeColor}40`
+                            }}
+                          >
+                            <Trophy className="w-6 h-6" />
+                          </div>
+
+                          <p className="font-black text-slate-400 text-[10px] uppercase tracking-widest mb-1">
+                            {belt.belt}
+                          </p>
+                          
+                          <p className="text-2xl font-black text-[#2e165f]">
+                            {formatPrice(belt.finalPrice, currency)}
+                          </p>
+
+                          <p className="text-[10px] font-bold text-slate-300 line-through mt-0.5">
+                            {formatPrice(belt.basePrice, currency)}
+                          </p>
+
+                          {/* Interactive Hover Glow */}
+                          <div 
+                            className="absolute inset-0 opacity-0 group-hover:opacity-[0.03] transition-opacity pointer-events-none"
+                            style={{ backgroundColor: themeColor }}
+                          />
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* --- Organization Tab --- */}
+              {activeTab === 'organization' && (
+                <div className="bg-gradient-to-br from-[#2e165f] to-[#1a0c36] rounded-[3.5rem] p-12 text-center text-white relative overflow-hidden">
+                  <motion.div 
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                    className="absolute -top-20 -right-20 opacity-5"
+                  >
+                    <Trophy className="w-80 h-80" />
+                  </motion.div>
+                  
+                  <div className="relative z-10 max-w-xl mx-auto">
+                    <Trophy className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
+                    <h3 className="text-3xl font-black mb-4 uppercase italic">Squad Missions</h3>
+                    <p className="text-blue-200 font-medium mb-8">Special training programs for schools, clubs, and groups of 5+ ninjas.</p>
+                    <Button
+                      href={getContactRoute(locale)}
+                      variant="secondary"
+                      classNames="bg-white text-[#2e165f] border-none rounded-2xl px-12 font-black shadow-xl"
+                    >
+                      CONTACT COMMAND CENTER
                     </Button>
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Organizations Tab */}
-        {!isLoading && activeTab === 'organization' && (
-          <div className="relative">
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blueberry to-purple-default rounded-3xl blur-xl opacity-15"></div>
-
-            <div className="relative bg-purple-darker/60 backdrop-blur-sm rounded-3xl p-10 md:p-16 border border-purple-light/10">
-              <div className="max-w-2xl mx-auto text-center">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-r from-blueberry to-purple-default rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blueberry/30">
-                  <Users className="w-10 h-10 text-white" />
-                </div>
-
-                <h3 className="text-3xl font-bold text-white mb-4">
-                  Organizations & Schools
-                </h3>
-                <p className="text-purple-light/70 mb-10 text-lg">
-                  Partner with NGEN for customized learning programs. Get volume discounts,
-                  dedicated support, and tailored curriculum for your organization.
-                </p>
-
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                  {[
-                    { icon: '🎯', text: 'Custom Curriculum' },
-                    { icon: '👥', text: 'Bulk Enrollment' },
-                    { icon: '💬', text: 'Dedicated Support' },
-                    { icon: '🎓', text: 'Teacher Training' },
-                  ].map((item, i) => (
-                    <div key={i} className="bg-purple-dark/50 rounded-xl p-4 border border-purple-light/10">
-                      <span className="text-2xl mb-2 block">{item.icon}</span>
-                      <p className="font-semibold text-white text-sm">{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <Button
-                  href={getContactRoute(locale)}
-                  variant="primary"
-                  classNames="bg-gradient-to-r from-blueberry to-purple-default hover:from-blueberry hover:to-purple-default/80 shadow-lg shadow-blueberry/30"
-                >
-                  Contact Us for Custom Quote
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
