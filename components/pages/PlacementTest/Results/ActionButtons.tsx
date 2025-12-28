@@ -1,5 +1,5 @@
-
 import { MessageCircle, Eye, ShoppingCart } from 'lucide-react'
+import { useLocale } from 'next-intl'
 
 interface ActionButtonsProps {
   onReviewAnswers: () => void
@@ -18,6 +18,27 @@ export default function ActionButtons({
   beltName,
   hasQuestions = true,
 }: ActionButtonsProps) {
+  const locale = useLocale()
+  const isRTL = locale === 'ar'
+
+  // Translations
+  const translations = {
+    en: {
+      reviewAnswers: 'Review Your Answers',
+      buyLevel: 'Buy',
+      thisLevel: 'This Level',
+      retakeContact: 'Retake Test / Contact Us'
+    },
+    ar: {
+      reviewAnswers: 'راجع إجاباتك',
+      buyLevel: 'شراء',
+      thisLevel: 'هذا المستوى',
+      retakeContact: 'إعادة الاختبار / اتصل بنا'
+    }
+  }
+
+  const t = translations[locale as 'en' | 'ar'] || translations.en
+
   return (
     <div className="space-y-4 mb-10">
       {/* Primary Actions Row */}
@@ -26,10 +47,10 @@ export default function ActionButtons({
         {isLoggedIn && hasQuestions && (
           <button
             onClick={onReviewAnswers}
-            className="px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-white/10 border border-white/20 text-white font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+            className={`px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-white/10 border border-white/20 text-white font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 text-sm md:text-base ${isRTL ? 'flex-row-reverse font-arabic' : ''}`}
           >
             <Eye className="w-4 h-4 md:w-5 md:h-5" />
-            Review Your Answers
+            {t.reviewAnswers}
           </button>
         )}
 
@@ -37,10 +58,10 @@ export default function ActionButtons({
         {isLoggedIn && (
           <button
             onClick={onBuyLevel}
-            className="px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+            className={`px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm md:text-base ${isRTL ? 'flex-row-reverse font-arabic' : ''}`}
           >
             <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
-            Buy {beltName || 'This Level'}
+            {t.buyLevel} {beltName || t.thisLevel}
           </button>
         )}
       </div>
@@ -50,10 +71,10 @@ export default function ActionButtons({
         {/* Retake Test - Contact Admin Required */}
         <button
           onClick={onContactAdmin}
-          className="px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-r from-orange-500 to-pink-600 text-white font-black shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+          className={`px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-r from-orange-500 to-pink-600 text-white font-black shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm md:text-base ${isRTL ? 'flex-row-reverse font-arabic' : ''}`}
         >
           <MessageCircle className="w-4 h-4 md:w-5 md:h-5" />
-          Retake Test / Contact Us
+          {t.retakeContact}
         </button>
       </div>
     </div>

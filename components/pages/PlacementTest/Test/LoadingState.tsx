@@ -1,14 +1,41 @@
-
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useLocale } from 'next-intl'
 
 interface LoadingStateProps {
   loadingProgress: number
 }
 
 export default function LoadingState({ loadingProgress }: LoadingStateProps) {
+  const locale = useLocale()
+  const isRTL = locale === 'ar'
+
+  // Translations
+  const translations = {
+    en: {
+      title: 'Building Your Challenge',
+      analyzing: 'Analyzing profile...',
+      selecting: 'Selecting questions...',
+      finalizing: 'Finalizing AI model...'
+    },
+    ar: {
+      title: 'جارٍ إنشاء التحدي الخاص بك',
+      analyzing: 'جارٍ تحليل الملف الشخصي...',
+      selecting: 'جارٍ اختيار الأسئلة...',
+      finalizing: 'جارٍ الانتهاء من نموذج الذكاء الاصطناعي...'
+    }
+  }
+
+  const t = translations[locale as 'en' | 'ar'] || translations.en
+
+  const getLoadingText = () => {
+    if (loadingProgress < 30) return t.analyzing
+    if (loadingProgress < 60) return t.selecting
+    return t.finalizing
+  }
+
   return (
-    <div className="min-h-screen bg-[#1a0b2e] flex items-center justify-center p-4 relative overflow-hidden">
+    <div className={`min-h-screen bg-[#1a0b2e] flex items-center justify-center p-4 relative overflow-hidden ${isRTL ? 'font-arabic' : ''}`}>
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/30 rounded-full mix-blend-screen filter blur-[100px] animate-pulse"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600/30 rounded-full mix-blend-screen filter blur-[100px] animate-pulse"></div>
 
@@ -40,7 +67,7 @@ export default function LoadingState({ loadingProgress }: LoadingStateProps) {
         </motion.div>
 
         <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
-          Building Your Challenge
+          {t.title}
           <motion.span
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
@@ -59,12 +86,7 @@ export default function LoadingState({ loadingProgress }: LoadingStateProps) {
         </div>
 
         <p className="text-purple-200 mt-4 font-mono text-sm">
-          {loadingProgress < 30
-            ? 'Analyzing profile...'
-            : loadingProgress < 60
-              ? 'Selecting questions...'
-              : 'Finalizing AI model...'}{' '}
-          ({Math.round(loadingProgress)}%)
+          {getLoadingText()} ({Math.round(loadingProgress)}%)
         </p>
       </motion.div>
     </div>

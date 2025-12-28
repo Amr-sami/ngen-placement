@@ -1,10 +1,11 @@
-// Path: /components/pages/PlacementTest/Test/TestMain.tsx
+// components/pages/PlacementTest/Test/TestMain.tsx
 
 'use client'
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
+import { useTranslations, useLocale } from 'next-intl'
 import type { ApiQuestion } from './types'
 import LoadingState from './LoadingState'
 import ErrorState from './ErrorState'
@@ -14,6 +15,9 @@ import TestFooter from './TestFooter'
 
 export default function TestMain() {
   const router = useRouter()
+  const t = useTranslations('placementTest')
+  const locale = useLocale()
+  const isRTL = locale === 'ar'
 
   const [isLoading, setIsLoading] = useState(true)
   const [loadingProgress, setLoadingProgress] = useState(0)
@@ -56,11 +60,22 @@ export default function TestMain() {
         const res = await fetch('/api/generate-questions', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ survey_results: surveyResults }),
+          body: JSON.stringify({ 
+            survey_results: surveyResults,
+            language: locale
+          }),
         })
 
         const text = await res.text()
-        let data: { questions?: ApiQuestion[]; partial?: boolean; failed_tracks?: string[]; message?: string; detail?: string; error?: string }
+        let data: { 
+          questions?: ApiQuestion[]
+          partial?: boolean
+          failed_tracks?: string[]
+          message?: string
+          detail?: string
+          error?: string
+          language?: string
+        }
 
         try {
           data = JSON.parse(text)
@@ -73,24 +88,14 @@ export default function TestMain() {
           console.error('Backend error:', data)
 
           if (res.status === 503) {
-            throw new Error(
-              'The AI service is currently overloaded. Please wait a moment and try again.',
-            )
+            throw new Error(t('error.overloaded'))
           }
 
           if (res.status === 500) {
-            throw new Error(
-              data?.detail ||
-              'A server error occurred while generating your test. Please try again in a few moments.',
-            )
+            throw new Error(data?.detail || t('error.server'))
           }
 
-          throw new Error(
-            data?.detail ||
-            data?.error ||
-            data?.message ||
-            'Failed to generate questions. Please try again.',
-          )
+          throw new Error(data?.detail || data?.error || data?.message || t('error.generic'))
         }
 
         if (data.partial && data.failed_tracks && data.failed_tracks.length > 0) {
@@ -101,12 +106,10 @@ export default function TestMain() {
         const apiQuestions: ApiQuestion[] = data.questions ?? []
 
         if (!apiQuestions.length) {
-          throw new Error(
-            'No questions were generated. The service may be experiencing issues. Please try again.',
-          )
+          throw new Error(t('error.noQuestions'))
         }
 
-        console.log(`Successfully loaded ${apiQuestions.length} questions`)
+        console.log(`Successfully loaded ${apiQuestions.length} questions in ${locale}`)
 
         setQuestions(apiQuestions)
         setSelectedAnswers(new Array(apiQuestions.length).fill(null))
@@ -116,12 +119,9 @@ export default function TestMain() {
 
         const error = err as Error
         if (error.name === 'TypeError' && error.message?.includes('fetch')) {
-          setError('Network error. Please check your internet connection and try again.')
+          setError(t('error.network'))
         } else {
-          setError(
-            error.message ||
-            'Sorry, something went wrong while generating your placement test. Please try again.',
-          )
+          setError(error.message || t('error.generic'))
         }
       } finally {
         if (progressTimer) clearInterval(progressTimer)
@@ -134,7 +134,7 @@ export default function TestMain() {
     return () => {
       if (progressTimer) clearInterval(progressTimer)
     }
-  }, [router])
+  }, [router, locale, t])
 
   // --- Handlers ---
   const handleAnswerSelect = (answerIndex: number) => {
@@ -194,7 +194,10 @@ export default function TestMain() {
   const progress = ((currentQuestion + 1) / questions.length) * 100
 
   return (
-    <div className="min-h-screen w-full bg-[#1a0b2e] relative flex flex-col p-4 md:p-6 lg:p-8 overflow-hidden">
+    <div 
+      className={`min-h-screen w-full bg-[#1a0b2e] relative flex flex-col p-4 md:p-6 lg:p-8 overflow-hidden`}
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       {/* Background Blobs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
@@ -217,9 +220,9 @@ export default function TestMain() {
           <AnimatePresence mode="wait">
             <motion.div
               key={currentQuestion}
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: isRTL ? -20 : 20 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
+              exit={{ opacity: 0, x: isRTL ? 20 : -20 }}
               transition={{ duration: 0.3 }}
               className="flex flex-col h-full overflow-y-auto custom-scrollbar"
             >

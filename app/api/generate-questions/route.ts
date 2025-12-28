@@ -1,34 +1,44 @@
+// app/api/generate-questions/route.ts
 
 import { NextResponse } from "next/server"
 import fs from "fs/promises"
 import path from "path"
 import { generateBalancedExam, type BankQuestion } from "@/lib/questionGenerator"
 
-
-// ✅ IMPORTANT: make sure this route runs in Node.js runtime (fs works)
 export const runtime = "nodejs"
 
-async function readQuestionsFile() {
-  // Your actual file location (project root): /ngen/test.json
-  const rootPath = path.join(process.cwd(), "test.json")
+async function readQuestionsFile(language: 'en' | 'ar' = 'en') {
+  const fileName = `test_${language}.json`
+  
+  // Try root first
+  const rootPath = path.join(process.cwd(), fileName)
+  // Fallback to data folder
+  const dataPath = path.join(process.cwd(), "data", fileName)
 
-  // Old location (if you later move it): /ngen/data/test.json
-  const dataPath = path.join(process.cwd(), "data", "test.json")
-
-  // Try root first, then data folder
   try {
-    return await fs.readFile(rootPath, "utf-8")
+    const content = await fs.readFile(rootPath, "utf-8")
+    console.log(`✅ Loaded ${fileName} from root`)
+    return content
   } catch {
-    return await fs.readFile(dataPath, "utf-8")
+    try {
+      const content = await fs.readFile(dataPath, "utf-8")
+      console.log(`✅ Loaded ${fileName} from data folder`)
+      return content
+    } catch (error) {
+      console.error(`❌ Failed to load ${fileName}`)
+      throw new Error(`Could not find ${fileName} in root or data folder`)
+    }
   }
 }
 
 export async function POST(req: Request) {
   try {
-    // keep reading the body to match your existing client logic
-    await req.json().catch(() => ({}))
+    const body = await req.json().catch(() => ({}))
+    const language = (body.language || 'en') as 'en' | 'ar'
+    
+    console.log(`📝 Generating test in language: ${language}`)
 
-    const raw = await readQuestionsFile()
+    const raw = await readQuestionsFile(language)
     const allQuestions: BankQuestion[] = JSON.parse(raw)
 
     const TRACKS = [
@@ -48,14 +58,18 @@ export async function POST(req: Request) {
       seed: Date.now(),
     })
 
+    console.log(`✅ Generated ${exam.length} questions in ${language}`)
+
     return NextResponse.json({
       questions: exam,
       partial: false,
       failed_tracks: [],
-      message: "Questions generated from local bank (test.json).",
+      message: `Questions generated from local bank (test_${language}.json).`,
+      language,
     })
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : "Failed to generate questions from test.json"
+    const message = err instanceof Error ? err.message : "Failed to generate questions"
+    console.error('❌ Error:', message)
     return NextResponse.json(
       { detail: message },
       { status: 500 }

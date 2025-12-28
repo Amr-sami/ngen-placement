@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Send, MessageCircle, RefreshCcw } from 'lucide-react'
+import { useLocale } from 'next-intl'
 
 interface ContactAdminModalProps {
     isOpen: boolean
@@ -20,6 +21,9 @@ export default function ContactAdminModal({
     userEmail = '',
     userName = '',
 }: ContactAdminModalProps) {
+    const locale = useLocale()
+    const isRTL = locale === 'ar'
+
     const [formData, setFormData] = useState({
         name: userName,
         email: userEmail,
@@ -31,12 +35,60 @@ export default function ContactAdminModal({
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
     const [mounted, setMounted] = useState(false)
 
-    // Only render portal on client side
+    // Translations
+    const translations = {
+        en: {
+            title: 'Contact Admin',
+            subtitle: "We'll get back to you soon!",
+            name: 'Name',
+            namePlaceholder: 'Your name',
+            email: 'Email',
+            emailPlaceholder: 'your@email.com',
+            subject: 'Subject',
+            subjectPlaceholder: 'Select a subject...',
+            message: 'Message',
+            messagePlaceholder: 'Tell us how we can help...',
+            sending: 'Sending...',
+            success: 'Message Sent!',
+            error: 'Failed to send. Try again.',
+            send: 'Send Message',
+            subjects: {
+                attempt: 'Request Extra Test Attempt',
+                results: 'Question About Results',
+                tech: 'Technical Issue',
+                other: 'Other'
+            }
+        },
+        ar: {
+            title: 'تواصل مع الإدارة',
+            subtitle: 'سنقوم بالرد عليك في أقرب وقت ممكن!',
+            name: 'الاسم',
+            namePlaceholder: 'اسمك الكريم',
+            email: 'البريد الإلكتروني',
+            emailPlaceholder: 'email@example.com',
+            subject: 'الموضوع',
+            subjectPlaceholder: 'اختر الموضوع...',
+            message: 'الرسالة',
+            messagePlaceholder: 'أخبرنا كيف يمكننا مساعدتك...',
+            sending: 'جاري الإرسال...',
+            success: 'تم إرسال الرسالة!',
+            error: 'فشل الإرسال. حاول مرة أخرى.',
+            send: 'إرسال الرسالة',
+            subjects: {
+                attempt: 'طلب محاولة اختبار إضافية',
+                results: 'سؤال حول النتائج',
+                tech: 'مشكلة تقنية',
+                other: 'أخرى'
+            }
+        }
+    }
+
+    const t = translations[locale as 'en' | 'ar'] || translations.en
+
     useEffect(() => {
         setMounted(true)
     }, [])
 
-    // Prevent body scroll when modal is open
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden'
@@ -76,10 +128,10 @@ export default function ContactAdminModal({
     }
 
     const subjectOptions = [
-        { value: 'Request Extra Test Attempt', label: 'Request Extra Test Attempt' },
-        { value: 'Question About Results', label: 'Question About Results' },
-        { value: 'Technical Issue', label: 'Technical Issue' },
-        { value: 'Other', label: 'Other' },
+        { value: 'Request Extra Test Attempt', label: t.subjects.attempt },
+        { value: 'Question About Results', label: t.subjects.results },
+        { value: 'Technical Issue', label: t.subjects.tech },
+        { value: 'Other', label: t.subjects.other },
     ]
 
     if (!isOpen || !mounted) return null
@@ -97,19 +149,20 @@ export default function ContactAdminModal({
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.9, opacity: 0 }}
-                    className="bg-[#1a0b2e] border border-white/20 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl"
+                    dir={isRTL ? 'rtl' : 'ltr'}
+                    className={`bg-[#1a0b2e] border border-white/20 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl ${isRTL ? 'font-arabic' : ''}`}
                     onClick={e => e.stopPropagation()}
                 >
                     {/* Header */}
                     <div className="bg-gradient-to-r from-purple-600/30 to-pink-600/30 p-6 border-b border-white/10">
                         <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 bg-orange-500/20 rounded-full flex items-center justify-center">
+                            <div className={`flex items-center gap-3 ${isRTL ? 'flex-row' : ''}`}>
+                                <div className="w-10 h-10 bg-orange-500/20 rounded-full flex items-center justify-center shrink-0">
                                     <MessageCircle className="w-5 h-5 text-orange-400" />
                                 </div>
-                                <div>
-                                    <h2 className="text-xl font-bold text-white">Contact Admin</h2>
-                                    <p className="text-purple-200 text-sm">We&apos;ll get back to you soon!</p>
+                                <div className={isRTL ? 'text-right' : 'text-left'}>
+                                    <h2 className="text-xl font-bold text-white">{t.title}</h2>
+                                    <p className="text-purple-200 text-sm">{t.subtitle}</p>
                                 </div>
                             </div>
                             <button
@@ -123,33 +176,33 @@ export default function ContactAdminModal({
 
                     {/* Form */}
                     <form onSubmit={handleSubmit} className="p-6 space-y-4">
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label className="block text-purple-200 text-sm mb-2">Name</label>
+                                <label className={`block text-purple-200 text-sm mb-2 ${isRTL ? 'text-right' : ''}`}>{t.name}</label>
                                 <input
                                     type="text"
                                     value={formData.name}
                                     onChange={e => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                                    className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-orange-500/50"
-                                    placeholder="Your name"
+                                    className={`w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-orange-500/50 ${isRTL ? 'text-right' : ''}`}
+                                    placeholder={t.namePlaceholder}
                                     required
                                 />
                             </div>
                             <div>
-                                <label className="block text-purple-200 text-sm mb-2">Email</label>
+                                <label className={`block text-purple-200 text-sm mb-2 ${isRTL ? 'text-right' : ''}`}>{t.email}</label>
                                 <input
                                     type="email"
                                     value={formData.email}
                                     onChange={e => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                                    className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-orange-500/50"
-                                    placeholder="your@email.com"
+                                    className={`w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-orange-500/50 ${isRTL ? 'text-right' : ''}`}
+                                    placeholder={t.emailPlaceholder}
                                     required
                                 />
                             </div>
                         </div>
 
                         <div>
-                            <label className="block text-purple-200 text-sm mb-2">Subject</label>
+                            <label className={`block text-purple-200 text-sm mb-2 ${isRTL ? 'text-right' : ''}`}>{t.subject}</label>
                             <select
                                 value={formData.subject}
                                 onChange={e => setFormData(prev => ({
@@ -157,10 +210,10 @@ export default function ContactAdminModal({
                                     subject: e.target.value,
                                     type: e.target.value.includes('Attempt') ? 'extra_attempt' : 'general'
                                 }))}
-                                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50"
+                                className={`w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 ${isRTL ? 'text-right' : ''}`}
                                 required
                             >
-                                <option value="" className="bg-[#1a0b2e]">Select a subject...</option>
+                                <option value="" className="bg-[#1a0b2e]">{t.subjectPlaceholder}</option>
                                 {subjectOptions.map(opt => (
                                     <option key={opt.value} value={opt.value} className="bg-[#1a0b2e]">
                                         {opt.label}
@@ -170,12 +223,12 @@ export default function ContactAdminModal({
                         </div>
 
                         <div>
-                            <label className="block text-purple-200 text-sm mb-2">Message</label>
+                            <label className={`block text-purple-200 text-sm mb-2 ${isRTL ? 'text-right' : ''}`}>{t.message}</label>
                             <textarea
                                 value={formData.message}
                                 onChange={e => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-orange-500/50 resize-none"
-                                placeholder="Tell us how we can help..."
+                                className={`w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-orange-500/50 resize-none ${isRTL ? 'text-right' : ''}`}
+                                placeholder={t.messagePlaceholder}
                                 rows={4}
                                 required
                             />
@@ -185,7 +238,7 @@ export default function ContactAdminModal({
                         <button
                             type="submit"
                             disabled={isSubmitting || submitStatus === 'success'}
-                            className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all ${submitStatus === 'success'
+                            className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all ${isRTL ? 'flex-row-reverse' : ''} ${submitStatus === 'success'
                                 ? 'bg-green-500 text-white'
                                 : submitStatus === 'error'
                                     ? 'bg-red-500 text-white'
@@ -195,16 +248,16 @@ export default function ContactAdminModal({
                             {isSubmitting ? (
                                 <>
                                     <RefreshCcw className="w-5 h-5 animate-spin" />
-                                    Sending...
+                                    {t.sending}
                                 </>
                             ) : submitStatus === 'success' ? (
-                                <>✓ Message Sent!</>
+                                <>✓ {t.success}</>
                             ) : submitStatus === 'error' ? (
-                                <>Failed to send. Try again.</>
+                                <>{t.error}</>
                             ) : (
                                 <>
-                                    <Send className="w-5 h-5" />
-                                    Send Message
+                                    <Send className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
+                                    {t.send}
                                 </>
                             )}
                         </button>

@@ -1,21 +1,89 @@
+'use client'
 
-'use client';
-import React, { useState } from 'react';
-import Logo from '../Logo';
-import Image from 'next/image';
-import { sendEmail } from '@/lib/resend';
-import { IoLogoWhatsapp } from 'react-icons/io';
-import { usePathname } from 'next/navigation';
+import React, { useState } from 'react'
+import Logo from '../Logo'
+import Image from 'next/image'
+import { sendEmail } from '@/lib/resend'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
 
 const ContactUs = () => {
-  // Get current pathname to determine which page we're on
-  const pathname = usePathname();
-  
+  const pathname = usePathname()
+  const locale = useLocale()
+  const isRTL = locale === 'ar'
+
   // Determine labels based on pathname
-  const isParentsPage = pathname?.includes('/ngen-for/parents');
-  const isSchoolsPage = pathname?.includes('/ngen-for/schools');
-  const isCorporatesPage = pathname?.includes('/ngen-for/corporates');
-  
+  const isParentsPage = pathname?.includes('/ngen-for/parents')
+  const isSchoolsPage = pathname?.includes('/ngen-for/schools')
+  const isCorporatesPage = pathname?.includes('/ngen-for/corporates')
+
+  // Localization Dictionary
+  const translations = {
+    en: {
+      title: 'Contact Us',
+      getInTouch: 'Get in Touch',
+      subTitle: 'Feel free to drop your message below',
+      firstName: isParentsPage ? 'Parent First name' : isSchoolsPage || isCorporatesPage ? 'Focal point First name' : 'First name',
+      lastName: isParentsPage ? 'Parent Last name' : isSchoolsPage || isCorporatesPage ? 'Focal point Last name' : 'Last name',
+      emailLabel: isParentsPage ? 'Parent Email' : isSchoolsPage ? 'School website' : isCorporatesPage ? 'Company Focal point Email' : 'Email',
+      companyLabel: isParentsPage ? 'Parent Mobile Number' : isSchoolsPage ? 'School name' : 'Company name',
+      studentsLabel: isParentsPage ? "Number of children" : isSchoolsPage ? "Number of students" : isCorporatesPage ? "Number of targeted employee children" : "Number of students / Employees",
+      messageLabel: 'Message',
+      placeholderFirst: 'First name',
+      placeholderLast: 'Last name',
+      placeholderEmail: isSchoolsPage ? "school.edu" : "Your email address",
+      placeholderCompany: isParentsPage ? "01xxxxxxxxx" : isSchoolsPage ? "School Name" : "Company name",
+      placeholderStudents: 'e.g. 50',
+      placeholderMsg: 'Your message',
+      sendBtn: 'Send',
+      sendingBtn: 'Sending...',
+      whatsapp: 'Contact via WhatsApp',
+      successMsg: 'Thank you! Your message has been sent successfully.',
+      errorMsg: 'An unexpected error occurred. Please try again.',
+      reqFirst: 'First name is required',
+      reqLast: 'Last name is required',
+      reqEmail: 'Email is required',
+      invEmail: 'Please enter a valid email',
+      locations: [
+        '15 Al Lasilki, Infront of Maadi Technology Park Ezbet Fahmy, Maadi, Cairo Egypt',
+        'Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E'
+      ]
+    },
+    ar: {
+      title: 'اتصل بنا',
+      getInTouch: 'تواصل معنا',
+      subTitle: 'لا تتردد في ترك رسالتك أدناه',
+      firstName: isParentsPage ? 'الاسم الأول لولي الأمر' : isSchoolsPage || isCorporatesPage ? 'الاسم الأول لمسؤول التواصل' : 'الاسم الأول',
+      lastName: isParentsPage ? 'الاسم الأخير لولي الأمر' : isSchoolsPage || isCorporatesPage ? 'الاسم الأخير لمسؤول التواصل' : 'الاسم الأخير',
+      emailLabel: isParentsPage ? 'البريد الإلكتروني لولي الأمر' : isSchoolsPage ? 'موقع المدرسة الإلكتروني' : isCorporatesPage ? 'البريد الإلكتروني لمسؤول الشركة' : 'البريد الإلكتروني',
+      companyLabel: isParentsPage ? 'رقم موبايل ولي الأمر' : isSchoolsPage ? 'اسم المدرسة' : 'اسم الشركة',
+      studentsLabel: isParentsPage ? "عدد الأطفال" : isSchoolsPage ? "عدد الطلاب" : isCorporatesPage ? "عدد أطفال الموظفين المستهدفين" : "عدد الطلاب / الموظفين",
+      messageLabel: 'الرسالة',
+      placeholderFirst: 'الاسم الأول',
+      placeholderLast: 'الاسم الأخير',
+      placeholderEmail: isSchoolsPage ? "school.edu" : "عنوان بريدك الإلكتروني",
+      placeholderCompany: isParentsPage ? "٠١xxxxxxxx" : isSchoolsPage ? "اسم المدرسة" : "اسم الشركة",
+      placeholderStudents: 'مثال: ٥٠',
+      placeholderMsg: 'رسالتك هنا',
+      sendBtn: 'إرسال',
+      sendingBtn: 'جاري الإرسال...',
+      whatsapp: 'تواصل عبر واتساب',
+      successMsg: 'شكراً لك! تم إرسال رسالتك بنجاح.',
+      errorMsg: 'حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.',
+      reqFirst: 'الاسم الأول مطلوب',
+      reqLast: 'الاسم الأخير مطلوب',
+      reqEmail: 'البريد الإلكتروني مطلوب',
+      invEmail: 'يرجى إدخال بريد إلكتروني صحيح',
+      locations: [
+        '١٥ اللاسلكي، أمام تكنولوجي بارك المعادي، عزبة فهمي، المعادي، القاهرة مصر',
+        'مركز الأعمال ١، الطابق M، فندق الميدان، ند الشبا، دبي، الإمارات العربية المتحدة'
+      ]
+    }
+  }
+
+  const t = translations[locale as 'en' | 'ar'] || translations.en
+
   // State for form inputs
   const [formData, setFormData] = useState({
     firstName: '',
@@ -24,418 +92,238 @@ const ContactUs = () => {
     companyName: '',
     numberOfStudents: '',
     message: '',
-  });
-  
-  // Add state for form validation
+  })
+
   const [errors, setErrors] = useState({
     firstName: '',
     lastName: '',
     companyMail: '',
-  });
-  
-  // Add state for form submission
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  })
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<{
-    success?: boolean;
-    message?: string;
-  }>({});
+    success?: boolean
+    message?: string
+  }>({})
 
-  // Handle input changes
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    
-    // Clear errors when user types
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
     if (errors[name as keyof typeof errors]) {
-      setErrors({
-        ...errors,
-        [name]: '',
-      });
+      setErrors({ ...errors, [name]: '' })
     }
-    
-    // Clear submission status when user makes changes
     if (submitStatus.success !== undefined) {
-      setSubmitStatus({});
+      setSubmitStatus({})
     }
-  };
-  
-  // Validate email format
-  const isValidEmail = (email: string) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
+  }
 
-  // Handle form submission
+  const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validate form inputs
+    e.preventDefault()
     const newErrors = {
-      firstName: formData.firstName.trim() === '' ? 'First name is required' : '',
-      lastName: formData.lastName.trim() === '' ? 'Last name is required' : '',
+      firstName: formData.firstName.trim() === '' ? t.reqFirst : '',
+      lastName: formData.lastName.trim() === '' ? t.reqLast : '',
       companyMail: formData.companyMail.trim() === '' 
-        ? 'Email is required' 
-        : !isValidEmail(formData.companyMail) 
-          ? 'Please enter a valid email' 
-          : '',
-    };
-    
-    setErrors(newErrors);
-    
-    // Check if there are any errors
-    if (Object.values(newErrors).some(error => error !== '')) {
-      return;
+        ? t.reqEmail 
+        : !isValidEmail(formData.companyMail) ? t.invEmail : '',
     }
-    
-    setIsSubmitting(true);
-    
+
+    setErrors(newErrors)
+    if (Object.values(newErrors).some(error => error !== '')) return
+
+    setIsSubmitting(true)
     try {
-      // Call sendEmail without expecting a return value
-      sendEmail(formData);
-      
-      // Show success message
-      setSubmitStatus({
-        success: true,
-        message: 'Thank you! Your message has been sent successfully.',
-      });
-      
-      // Reset form data
-      setFormData({
-        firstName: '',
-        lastName: '',
-        companyMail: '',
-        companyName: '',
-        numberOfStudents: '',
-        message: '',
-      });
+      sendEmail(formData)
+      setSubmitStatus({ success: true, message: t.successMsg })
+      setFormData({ firstName: '', lastName: '', companyMail: '', companyName: '', numberOfStudents: '', message: '' })
     } catch (error) {
-      // Show error message
-      console.log('error', error)
-      setSubmitStatus({
-        success: false,
-        message: 'An unexpected error occurred. Please try again.',
-      });
+      setSubmitStatus({ success: false, message: t.errorMsg })
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   return (
-    <div>
+    <div dir={isRTL ? 'rtl' : 'ltr'} className={isRTL ? 'font-arabic' : ''}>
       <h3 className="font-bold text-xl text-purple-dark font-protestRiot mb-8 xl:mb-10 md:text-2xl xl:text-3xl">
-        Contact Us
+        {t.title}
       </h3>
 
-      {/* WHOLE CONTAINER */}
       <div className="flex flex-col lg:flex-row p-4 sm:p-6 rounded-3xl border border-solid border-gray-200 gap-6">
         {/* FORM CONTAINER */}
         <div className="bg-[#EDECECB5] basis-4/6 p-4 sm:p-6 rounded-[14px]">
-          <h5 className="font-bold text-pumpkin xl:text-2xl mb-4">
-            Get in Touch
+          <h5 className={`font-bold text-pumpkin xl:text-2xl mb-4 ${isRTL ? 'text-right' : ''}`}>
+            {t.getInTouch}
           </h5>
-          <p className="text-gray-dark lg:text-blueberry text-sm mb-4">
-            Feel free to drop your message below
+          <p className={`text-gray-dark lg:text-blueberry text-sm mb-4 ${isRTL ? 'text-right' : ''}`}>
+            {t.subTitle}
           </p>
 
-          {/* Form Status Message */}
           {submitStatus.message && (
-            <div 
-              className={`mb-4 p-3 rounded-md ${
-                submitStatus.success 
-                  ? 'bg-green-50 text-green-700 border border-green-200' 
-                  : 'bg-red-50 text-red-700 border border-red-200'
-              }`}
-            >
+            <div className={`mb-4 p-3 rounded-md ${submitStatus.success ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-red-50 text-red-700 border border-red-200'}`}>
               {submitStatus.message}
             </div>
           )}
           
-          {/* FORM FIELDS */}
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-4"
-          >
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* First Name */}
-            <div>
-              <label
-                className="block text-purple-dark mb-1"
-                htmlFor="firstName"
-              >
-                {isParentsPage ? 'Parent First name' : 
-                 isSchoolsPage || isCorporatesPage ? 'Focal point First name' : 
-                 'First name'} <span className="text-red-500">*</span>
+            <div className={isRTL ? 'text-right' : ''}>
+              <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="firstName">
+                {t.firstName} <span className="text-red-500">*</span>
               </label>
               <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                placeholder="First name"
-                className={`w-full text-sm py-3 px-4 border ${
-                  errors.firstName ? 'border-red-500' : 'border-gray-300'
-                } rounded-md outline-none`}
+                type="text" id="firstName" name="firstName"
+                value={formData.firstName} onChange={handleChange}
+                placeholder={t.placeholderFirst}
+                className={`w-full text-sm py-3 px-4 border ${errors.firstName ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none`}
                 disabled={isSubmitting}
               />
-              {errors.firstName && (
-                <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
-              )}
+              {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>}
             </div>
             
             {/* Last Name */}
-            <div>
-              <label className="block text-purple-dark mb-1" htmlFor="lastName">
-                {isParentsPage ? 'Parent Last name' : 
-                 isSchoolsPage || isCorporatesPage ? 'Focal point Last name' : 
-                 'Last name'} <span className="text-red-500">*</span>
+            <div className={isRTL ? 'text-right' : ''}>
+              <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="lastName">
+                {t.lastName} <span className="text-red-500">*</span>
               </label>
               <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                placeholder="Last name"
-                className={`w-full text-sm py-3 px-4 border ${
-                  errors.lastName ? 'border-red-500' : 'border-gray-300'
-                } rounded-md outline-none`}
+                type="text" id="lastName" name="lastName"
+                value={formData.lastName} onChange={handleChange}
+                placeholder={t.placeholderLast}
+                className={`w-full text-sm py-3 px-4 border ${errors.lastName ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none`}
                 disabled={isSubmitting}
               />
-              {errors.lastName && (
-                <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
-              )}
+              {errors.lastName && <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>}
             </div>
             
-            {/* Company Mail */}
-            <div>
-              <label
-                className="block text-purple-dark mb-1"
-                htmlFor="companyMail"
-              >
-                {isParentsPage ? 'Parent Email' : 
-                 isSchoolsPage ? 'School website' : 
-                 isCorporatesPage ? 'Company Focal point Email' : 
-                 'Email'} <span className="text-red-500">*</span>
+            {/* Email */}
+            <div className={isRTL ? 'text-right' : ''}>
+              <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="companyMail">
+                {t.emailLabel} <span className="text-red-500">*</span>
               </label>
               <input
-                type="email"
-                id="companyMail"
-                name="companyMail"
-                value={formData.companyMail}
-                onChange={handleChange}
-                placeholder={isSchoolsPage ? "school.edu" : "Your email address"}
-                className={`w-full text-sm py-3 px-4 border ${
-                  errors.companyMail ? 'border-red-500' : 'border-gray-300'
-                } rounded-md outline-none`}
+                type="text" id="companyMail" name="companyMail"
+                value={formData.companyMail} onChange={handleChange}
+                placeholder={t.placeholderEmail}
+                className={`w-full text-sm py-3 px-4 border ${errors.companyMail ? 'border-red-500' : 'border-gray-300'} rounded-md outline-none`}
                 disabled={isSubmitting}
               />
-              {errors.companyMail && (
-                <p className="text-red-500 text-xs mt-1">{errors.companyMail}</p>
-              )}
+              {errors.companyMail && <p className="text-red-500 text-xs mt-1">{errors.companyMail}</p>}
             </div>
             
-            {/* Company Name */}
-            <div>
-              <label
-                className="block text-purple-dark mb-1"
-                htmlFor="companyName"
-              >
-                {isParentsPage ? 'Parent Mobile Number' :
-                 isSchoolsPage ? 'School name' :
-                 'Company name'}
+            {/* Company / Phone */}
+            <div className={isRTL ? 'text-right' : ''}>
+              <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="companyName">
+                {t.companyLabel}
               </label>
               <input
-                type="text"
-                id="companyName"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleChange}
-                placeholder="Company name"
+                type="text" id="companyName" name="companyName"
+                value={formData.companyName} onChange={handleChange}
+                placeholder={t.placeholderCompany}
                 className="w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none"
                 disabled={isSubmitting}
               />
             </div>
             
-            {/* Number of Students / Employees */}
-            <div className="lg:col-span-2">
-              <label
-                className="block text-purple-dark mb-1"
-                htmlFor="numberOfStudents"
-              >
-                {isParentsPage ? "Number of children" :
-                 isSchoolsPage ? "Number of students" :
-                 isCorporatesPage ? "Number of targeted employee children" :
-                 "Number of students / Employees"}
+            {/* Count */}
+            <div className={`lg:col-span-2 ${isRTL ? 'text-right' : ''}`}>
+              <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="numberOfStudents">
+                {t.studentsLabel}
               </label>
               <input
-                type="text"
-                id="numberOfStudents"
-                name="numberOfStudents"
-                value={formData.numberOfStudents}
-                onChange={handleChange}
-                placeholder="Number of students / Employees"
+                type="text" id="numberOfStudents" name="numberOfStudents"
+                value={formData.numberOfStudents} onChange={handleChange}
+                placeholder={t.placeholderStudents}
                 className="w-full text-sm py-3 px-4 border border-gray-300 rounded-md outline-none"
                 disabled={isSubmitting}
               />
             </div>
             
             {/* Message */}
-            <div className="lg:col-span-2">
-              <label className="block text-purple-dark mb-1" htmlFor="message">
-                Message
+            <div className={`lg:col-span-2 ${isRTL ? 'text-right' : ''}`}>
+              <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="message">
+                {t.messageLabel}
               </label>
               <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Your message"
+                id="message" name="message"
+                value={formData.message} onChange={handleChange}
+                placeholder={t.placeholderMsg}
                 className="w-full p-3 px-6 border text-sm border-gray-300 rounded-md outline-none"
-                rows={3}
-                disabled={isSubmitting}
+                rows={3} disabled={isSubmitting}
               ></textarea>
             </div>
             
-            {/* Submit Button */}
-            <div className="lg:ml-auto lg:col-span-2">
+            {/* Submit */}
+            <div className={`${isRTL ? 'lg:mr-auto' : 'lg:ml-auto'} lg:col-span-2`}>
               <button
                 type="submit"
-                className={`w-full lg:w-[155px] bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition font-bold ${
-                  isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
-                }`}
+                className={`w-full lg:w-[155px] bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition font-bold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Sending...' : 'Send'}
+                {isSubmitting ? t.sendingBtn : t.sendBtn}
               </button>
             </div>
           </form>
         </div>
 
-        {/* LOGO + CONTACT DETAILS */}
+        {/* DETAILS CONTAINER */}
         <div className="flex-1 flex flex-col items-center gap-6 w-full">
           <div className="bg-gray-default px-4 sm:px-6 py-[18px] w-full flex items-center justify-center rounded-[14px]">
             <Logo width={300} height={80} classNames="max-w-full" />
           </div>
 
-          <div className="w-full h-full rounded-[14px] bg-blueberry p-6 font-mono">
-            <h5 className="mb-5 lg:mb-12 text-white font-bold text-3xl">
-              Contact us
+          <div className="w-full h-full rounded-[14px] bg-blueberry p-6">
+            <h5 className={`mb-5 lg:mb-12 text-white font-bold text-3xl ${isRTL ? 'text-right' : ''}`}>
+              {t.title}
             </h5>
 
-            <div className="text-white text-xl space-y-5 mb-6 lg:mb-8">
-              {/* Cairo Location */}
+            <div className={`text-white text-lg space-y-5 mb-6 lg:mb-8 ${isRTL ? 'text-right' : ''}`}>
+              {t.locations.map((loc, idx) => (
+                <p key={idx} className="flex items-start gap-3">
+                  <Image src="/Location.svg" width={20} height={20} alt="location" className={`flex-shrink-0 mt-1 ${isRTL ? 'order-last' : ''}`} />
+                  <span className="text-sm">{loc}</span>
+                </p>
+              ))}
+              
               <p className="flex items-start gap-3">
-                <Image
-                  src="/Location.svg"
-                  width={24}
-                  height={24}
-                  alt="location"
-                  className="flex-shrink-0 mt-1"
-                />
-                <span>15 Al Lasilki, Infront of Maadi Technology Park Ezbet Fahmy, Maadi, Cairo Egypt</span>
+                <Image src="/envlope.svg" width={20} height={20} alt="mail" className={`flex-shrink-0 mt-1 ${isRTL ? 'order-last' : ''}`} />
+                <span className="text-sm">Info@ngenschools.com</span>
               </p>
               
-              {/* Dubai Location */}
               <p className="flex items-start gap-3">
-                <Image
-                  src="/Location.svg"
-                  width={24}
-                  height={24}
-                  alt="location"
-                  className="flex-shrink-0 mt-1"
-                />
-                <span>Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.ERiyad, Al-Alia 12211</span>
+                <Image src="/telephone.svg" width={20} height={20} alt="phone" className={`flex-shrink-0 mt-1 ${isRTL ? 'order-last' : ''}`} />
+                <span className="text-sm" dir="ltr">+20 105 502 3774</span>
               </p>
-              
-              {/* Email */}
+
               <p className="flex items-start gap-3">
-                <Image 
-                  src="/envlope.svg" 
-                  width={24} 
-                  height={24} 
-                  alt="mail" 
-                  className="flex-shrink-0 mt-1"
-                />
-                <span>Info@ngenschools.com</span>
-              </p>
-              
-              {/* First Phone Number */}
-              <p className="flex items-start gap-3">
-                <Image
-                  src="/telephone.svg"
-                  width={24}
-                  height={24}
-                  alt="phone"
-                  className="flex-shrink-0 mt-1"
-                />
-                <span>+201055023774</span>
-              </p>
-              
-              {/* Second Phone Number */}
-              <p className="flex items-start gap-3">
-                <Image
-                  src="/telephone.svg"
-                  width={24}
-                  height={24}
-                  alt="phone"
-                  className="flex-shrink-0 mt-1"
-                />
-                <span>+971526542044</span>
+                <Image src="/telephone.svg" width={20} height={20} alt="phone" className={`flex-shrink-0 mt-1 ${isRTL ? 'order-last' : ''}`} />
+                <span className="text-sm" dir="ltr">+971 52 654 2044</span>
               </p>
             </div>
             
-            {/* WhatsApp Button */}
             <div className="mb-6">
               <a 
                 href="https://wa.me/+201055023774"
                 target="_blank"
-                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd59] text-white py-3 px-5 rounded-lg transition-all duration-300 w-full md:w-auto"
+                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd59] text-white py-3 px-5 rounded-lg transition-all duration-300 w-full"
               >
-                <IoLogoWhatsapp size={22}/>
-                <span className="font-semibold">Contact via WhatsApp</span>
+                <IoLogoWhatsapp size={22} className={isRTL ? 'order-last' : ''}/>
+                <span className="font-semibold text-sm">{t.whatsapp}</span>
               </a>
             </div>
 
-            <div className="flex justify-center items-center mt-4 space-x-6">
-              <a href="https://www.facebook.com/ngenschools" target="_blank">
-                <Image
-                  src="/fb.png"
-                  width={40}
-                  height={40}
-                  alt="facebook"
-                />
-              </a>
-              <a href="https://www.linkedin.com/company/ngenschools/" target="_blank">
-                <Image
-                  src="/linkedin.svg"
-                  width={40}
-                  height={40}
-                  alt="linkedin"
-                />
-              </a>
-              <a href="https://www.instagram.com/ngenschools/" target="_blank">
-                <Image
-                  src="/instagram.svg"
-                  width={40}
-                  height={40}
-                  alt="instagram"
-                />
-              </a>
-              <a href="https://www.tiktok.com/@ngenschools" target="_blank">
-                <Image
-                  src="/tiktok-round-white-icon.webp"
-                  width={40}
-                  height={40}
-                  alt="tiktok"
-                />
-              </a>
+            <div className="flex justify-center items-center mt-4 space-x-6 rtl:space-x-reverse">
+              <a href="https://www.facebook.com/ngenschools" target="_blank"><Image src="/fb.png" width={35} height={35} alt="facebook" /></a>
+              <a href="https://www.linkedin.com/company/ngenschools/" target="_blank"><Image src="/linkedin.svg" width={35} height={35} alt="linkedin" /></a>
+              <a href="https://www.instagram.com/ngenschools/" target="_blank"><Image src="/instagram.svg" width={35} height={35} alt="instagram" /></a>
+              <a href="https://www.tiktok.com/@ngenschools" target="_blank"><Image src="/tiktok-round-white-icon.webp" width={35} height={35} alt="tiktok" /></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactUs;
+export default ContactUs
