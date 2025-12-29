@@ -20,8 +20,7 @@ import {
     ArrowRight,
     Loader2,
     CreditCard,
-    Check,
-    CheckCircle2
+    Check
 } from 'lucide-react'
 
 interface ProfileData {

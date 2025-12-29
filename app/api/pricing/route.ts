@@ -93,6 +93,11 @@ export async function GET(request: NextRequest) {
             countryCode = geo.countryCode;
         }
 
+        // Fallback to Egypt in development (localhost can't be geolocated)
+        if (countryCode === 'XX' && process.env.NODE_ENV === 'development') {
+            countryCode = 'EG';
+        }
+
         // Determine currency
         const currency = isEgypt(countryCode) ? 'EGP' : 'USD';
         const priceField = currency === 'EGP' ? 'basePriceEGP' : 'basePriceUSD';

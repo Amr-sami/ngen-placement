@@ -124,8 +124,8 @@ const ContactUs = () => {
     const newErrors = {
       firstName: formData.firstName.trim() === '' ? t.reqFirst : '',
       lastName: formData.lastName.trim() === '' ? t.reqLast : '',
-      companyMail: formData.companyMail.trim() === '' 
-        ? t.reqEmail 
+      companyMail: formData.companyMail.trim() === ''
+        ? t.reqEmail
         : !isValidEmail(formData.companyMail) ? t.invEmail : '',
     }
 
@@ -137,7 +137,7 @@ const ContactUs = () => {
       sendEmail(formData)
       setSubmitStatus({ success: true, message: t.successMsg })
       setFormData({ firstName: '', lastName: '', companyMail: '', companyName: '', numberOfStudents: '', message: '' })
-    } catch (error) {
+    } catch {
       setSubmitStatus({ success: false, message: t.errorMsg })
     } finally {
       setIsSubmitting(false)
@@ -165,7 +165,7 @@ const ContactUs = () => {
               {submitStatus.message}
             </div>
           )}
-          
+
           <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* First Name */}
             <div className={isRTL ? 'text-right' : ''}>
@@ -181,7 +181,7 @@ const ContactUs = () => {
               />
               {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>}
             </div>
-            
+
             {/* Last Name */}
             <div className={isRTL ? 'text-right' : ''}>
               <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="lastName">
@@ -196,7 +196,7 @@ const ContactUs = () => {
               />
               {errors.lastName && <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>}
             </div>
-            
+
             {/* Email */}
             <div className={isRTL ? 'text-right' : ''}>
               <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="companyMail">
@@ -211,7 +211,7 @@ const ContactUs = () => {
               />
               {errors.companyMail && <p className="text-red-500 text-xs mt-1">{errors.companyMail}</p>}
             </div>
-            
+
             {/* Company / Phone */}
             <div className={isRTL ? 'text-right' : ''}>
               <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="companyName">
@@ -225,7 +225,7 @@ const ContactUs = () => {
                 disabled={isSubmitting}
               />
             </div>
-            
+
             {/* Count */}
             <div className={`lg:col-span-2 ${isRTL ? 'text-right' : ''}`}>
               <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="numberOfStudents">
@@ -239,7 +239,7 @@ const ContactUs = () => {
                 disabled={isSubmitting}
               />
             </div>
-            
+
             {/* Message */}
             <div className={`lg:col-span-2 ${isRTL ? 'text-right' : ''}`}>
               <label className="block text-purple-dark mb-1 text-sm font-bold" htmlFor="message">
@@ -253,7 +253,7 @@ const ContactUs = () => {
                 rows={3} disabled={isSubmitting}
               ></textarea>
             </div>
-            
+
             {/* Submit */}
             <div className={`${isRTL ? 'lg:mr-auto' : 'lg:ml-auto'} lg:col-span-2`}>
               <button
@@ -285,12 +285,12 @@ const ContactUs = () => {
                   <span className="text-sm">{loc}</span>
                 </p>
               ))}
-              
+
               <p className="flex items-start gap-3">
                 <Image src="/envlope.svg" width={20} height={20} alt="mail" className={`flex-shrink-0 mt-1 ${isRTL ? 'order-last' : ''}`} />
                 <span className="text-sm">Info@ngenschools.com</span>
               </p>
-              
+
               <p className="flex items-start gap-3">
                 <Image src="/telephone.svg" width={20} height={20} alt="phone" className={`flex-shrink-0 mt-1 ${isRTL ? 'order-last' : ''}`} />
                 <span className="text-sm" dir="ltr">+20 105 502 3774</span>
@@ -301,14 +301,14 @@ const ContactUs = () => {
                 <span className="text-sm" dir="ltr">+971 52 654 2044</span>
               </p>
             </div>
-            
+
             <div className="mb-6">
-              <a 
+              <a
                 href="https://wa.me/+201055023774"
                 target="_blank"
                 className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd59] text-white py-3 px-5 rounded-lg transition-all duration-300 w-full"
               >
-                <IoLogoWhatsapp size={22} className={isRTL ? 'order-last' : ''}/>
+                <IoLogoWhatsapp size={22} className={isRTL ? 'order-last' : ''} />
                 <span className="font-semibold text-sm">{t.whatsapp}</span>
               </a>
             </div>

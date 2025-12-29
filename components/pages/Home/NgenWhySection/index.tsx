@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function EnhancedWhySection() {
   const t = useTranslations('whySection');
@@ -91,21 +92,23 @@ export default function EnhancedWhySection() {
 
         {/* Main Content - Stacked Layout */}
         <div className="space-y-6">
-          
+
           {/* Visual Card */}
           <div className="flex justify-center">
             <div className="relative w-full max-w-xs md:max-w-sm">
               <div className={`absolute -inset-2 bg-gradient-to-br ${DATA[activeTab].theme.bg} rounded-2xl opacity-5 blur-lg`} />
-              
+
               <div className="relative">
                 <div className={`absolute inset-0 bg-gradient-to-br ${DATA[activeTab].theme.bg} rounded-2xl rotate-1 opacity-10 transition-all duration-700`} />
                 <div className="absolute inset-0 bg-white/90 backdrop-blur-xl rounded-2xl shadow-lg transition-all duration-700" />
-                
+
                 <div className="relative bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-md border border-white/60">
                   <div key={activeTab} className="relative aspect-square w-full animate-fade-scale">
-                    <img
+                    <Image
                       src={DATA[activeTab].imageUrl}
                       alt={DATA[activeTab].title}
+                      width={300}
+                      height={300}
                       className="w-full h-full object-contain drop-shadow-lg"
                     />
                   </div>
@@ -128,7 +131,7 @@ export default function EnhancedWhySection() {
             <div className="flex flex-col items-center gap-3 pt-2">
               {/* Navigation Buttons */}
               <div className="flex items-center gap-2">
-                <button 
+                <button
                   onClick={prevCard}
                   onMouseEnter={() => setIsAutoPlaying(false)}
                   className="p-2 rounded-lg bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 transition-all active:scale-95"
@@ -138,7 +141,7 @@ export default function EnhancedWhySection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
-                <button 
+                <button
                   onClick={nextCard}
                   onMouseEnter={() => setIsAutoPlaying(false)}
                   className={`p-2 rounded-lg bg-gradient-to-br ${DATA[activeTab].theme.bg} text-white shadow-md hover:shadow-lg transition-all active:scale-95`}
@@ -155,13 +158,12 @@ export default function EnhancedWhySection() {
                 {DATA.map((item, i) => (
                   <button
                     key={i}
-                    onClick={() => { 
-                      setActiveTab(i); 
+                    onClick={() => {
+                      setActiveTab(i);
                       setIsAutoPlaying(false);
                     }}
-                    className={`h-1.5 rounded-full transition-all duration-500 ${
-                      activeTab === i ? `w-10 bg-gradient-to-r ${item.theme.bg}` : 'w-6 bg-slate-200 hover:bg-slate-300'
-                    }`}
+                    className={`h-1.5 rounded-full transition-all duration-500 ${activeTab === i ? `w-10 bg-gradient-to-r ${item.theme.bg}` : 'w-6 bg-slate-200 hover:bg-slate-300'
+                      }`}
                     aria-label={`${t('next')} ${i + 1}`}
                   />
                 ))}

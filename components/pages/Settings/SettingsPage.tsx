@@ -29,7 +29,6 @@ interface SettingsPageProps {
 export default function SettingsPage({ locale }: SettingsPageProps) {
     const router = useRouter()
     const t = useTranslations('settings')
-    const tCommon = useTranslations('common')
     const tNav = useTranslations('nav')
 
     const [activeTab, setActiveTab] = useState<'profile' | 'security'>('profile')
@@ -78,7 +77,7 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
             }
         }
         fetchProfile()
-    }, [])
+    }, [t])
 
     const handleUpdateProfile = async (e: React.FormEvent) => {
         e.preventDefault()

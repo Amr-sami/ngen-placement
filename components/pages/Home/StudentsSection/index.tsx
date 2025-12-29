@@ -78,10 +78,10 @@ function HomepageStudentsSection() {
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = 300;
-      
+
       // Basic movement direction
       let move = direction === 'left' ? -scrollAmount : scrollAmount;
-      
+
       // Fix: If RTL, the horizontal scroll vector is inverted in most browsers
       if (isRTL) {
         move = -move;
@@ -95,13 +95,13 @@ function HomepageStudentsSection() {
   };
 
   return (
-    <section 
-      id="students" 
-      dir={isRTL ? 'rtl' : 'ltr'} 
+    <section
+      id="students"
+      dir={isRTL ? 'rtl' : 'ltr'}
       className="py-16 md:py-24 bg-white relative overflow-hidden"
     >
       <div className="container mx-auto px-4">
-        
+
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
           <div className={isRTL ? 'text-right' : 'text-left'}>
@@ -113,36 +113,36 @@ function HomepageStudentsSection() {
             </div>
             <H2 classNames="text-[#2e165f] text-3xl md:text-5xl">{t('sections.students')}</H2>
           </div>
-          
+
           <div className="flex items-center gap-4">
-            <Button 
-              href={getStudentsRoute(locale)} 
-              variant="secondary" 
-              className="rounded-full px-8 border-2 border-[#2e165f] text-[#2e165f] font-bold hover:bg-[#2e165f] hover:text-white transition-all"
+            <Button
+              href={getStudentsRoute(locale)}
+              variant="secondary"
+              classNames="rounded-full px-8 border-2 border-[#2e165f] text-[#2e165f] font-bold hover:bg-[#2e165f] hover:text-white transition-all"
             >
               {t('buttons.seeMoreStudents')}
             </Button>
-            
+
             {/* Desktop Arrows */}
             <div className="hidden md:flex gap-2">
-              <button 
-                onClick={() => scroll('left')} 
+              <button
+                onClick={() => scroll('left')}
                 className="p-3 rounded-full border border-slate-200 hover:bg-[#2e165f] hover:text-white transition-all"
               >
-                <ChevronLeft className="w-5 h-5"/>
+                <ChevronLeft className="w-5 h-5" />
               </button>
-              <button 
-                onClick={() => scroll('right')} 
+              <button
+                onClick={() => scroll('right')}
                 className="p-3 rounded-full border border-slate-200 hover:bg-[#2e165f] hover:text-white transition-all"
               >
-                <ChevronRight className="w-5 h-5"/>
+                <ChevronRight className="w-5 h-5" />
               </button>
             </div>
           </div>
         </div>
-        
+
         {/* CAROUSEL CONTAINER */}
-        <div 
+        <div
           ref={scrollRef}
           className="flex overflow-x-auto gap-4 md:gap-6 pb-10 px-2 scrollbar-hide snap-x no-scrollbar"
         >
@@ -157,7 +157,7 @@ function HomepageStudentsSection() {
                 <div className={`w-20 h-20 md:w-24 md:h-24 rounded-3xl bg-slate-50 border-4 border-white shadow-inner overflow-hidden flex items-center justify-center transition-transform group-hover:rotate-0 ${isRTL ? '-rotate-3' : 'rotate-3'}`}>
                   <User className="w-10 h-10 md:w-12 md:h-12 text-slate-200" />
                 </div>
-                <div 
+                <div
                   className={`absolute -top-2 w-8 h-8 rounded-full flex items-center justify-center shadow-lg text-white ${isRTL ? '-left-2' : '-right-2'}`}
                   style={{ backgroundColor: student.color }}
                 >
@@ -170,7 +170,7 @@ function HomepageStudentsSection() {
                 <h3 className="text-[#2e165f] font-black text-lg md:text-xl truncate">
                   {student.name[locale]}
                 </h3>
-                
+
                 <div className="bg-slate-50/80 rounded-2xl p-4 border border-slate-100/50">
                   <p className="text-[#2e165f] font-bold text-xs md:text-sm leading-tight mb-1">
                     {student.achievement[locale]}
@@ -181,12 +181,12 @@ function HomepageStudentsSection() {
                 </div>
 
                 {/* Belt Label */}
-                <div 
+                <div
                   className="mt-4 py-2 px-4 rounded-xl text-[10px] font-black uppercase inline-flex items-center gap-2 justify-center"
-                  style={{ 
-                    backgroundColor: `${student.color}10`, 
-                    color: student.color, 
-                    border: `1px solid ${student.color}20` 
+                  style={{
+                    backgroundColor: `${student.color}10`,
+                    color: student.color,
+                    border: `1px solid ${student.color}20`
                   }}
                 >
                   <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: student.color }} />

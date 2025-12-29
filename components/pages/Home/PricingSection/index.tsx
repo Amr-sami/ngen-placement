@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { H2 } from '@/components/general/Heading';
 import Button from '@/components/general/Button';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import { getContactRoute, getPlacementTestRoute } from '@/util/routes';
 import type { Locale } from '@/i18n';
@@ -24,14 +24,39 @@ const BELT_THEMES: Record<string, string> = {
   'White': '#94A3B8',
 };
 
+type Particle = {
+  id: number;
+  width: number;
+  height: number;
+  left: string;
+  top: string;
+  duration: number;
+};
+
 function HomepagePricingSection() {
   const params = useParams();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { status: sessionStatus } = useSession();
   const locale = (params?.locale as Locale) || 'en';
   const [pricing, setPricing] = useState<PricingResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'perBelt' | 'packages' | 'organization'>('packages');
+  const [particles, setParticles] = useState<Particle[]>([]);
+
+  useEffect(() => {
+    setParticles([...Array(6)].map((_, i) => ({
+      id: i,
+      width: Math.random() * 100 + 50,
+      height: Math.random() * 100 + 50,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      duration: 3 + i,
+    })));
+  }, []);
+
+  // Get country override from URL for testing (ensure consistent value for useEffect deps)
+  const countryOverride = searchParams.get('country') || '';
 
   // Derived user context
   const isAuthenticated = pricing?.userContext?.isAuthenticated ?? false;
@@ -41,7 +66,11 @@ function HomepagePricingSection() {
   useEffect(() => {
     const fetchPricing = async () => {
       try {
-        const response = await fetch('/api/pricing');
+        // Pass country override if present in URL
+        const apiUrl = countryOverride
+          ? `/api/pricing?country=${countryOverride}`
+          : '/api/pricing';
+        const response = await fetch(apiUrl);
         if (response.ok) {
           const data = await response.json();
           setPricing(data);
@@ -65,7 +94,7 @@ function HomepagePricingSection() {
     };
     fetchPricing();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sessionStatus]); // Refetch when session changes, activeTab is checked but not a trigger
+  }, [sessionStatus, countryOverride]); // Refetch when session or country changes
 
   const currency = pricing?.currency || 'USD';
 
@@ -110,21 +139,21 @@ function HomepagePricingSection() {
     <section id="pricing" className="py-16 md:py-20 bg-[#FDFDFF] relative overflow-hidden">
       {/* Animated Floating Particles */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(6)].map((_, i) => (
+        {particles.map((p) => (
           <motion.div
-            key={i}
+            key={p.id}
             animate={{
               y: [0, -20, 0],
               opacity: [0.2, 0.5, 0.2],
               scale: [1, 1.1, 1]
             }}
-            transition={{ duration: 3 + i, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: p.duration, repeat: Infinity, ease: "easeInOut" }}
             className="absolute rounded-full bg-[#2e165f]/5"
             style={{
-              width: Math.random() * 100 + 50,
-              height: Math.random() * 100 + 50,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              width: p.width,
+              height: p.height,
+              left: p.left,
+              top: p.top,
             }}
           />
         ))}
@@ -254,9 +283,6 @@ function HomepagePricingSection() {
                         <div className="mb-8">
                           <div className="flex items-baseline gap-2 flex-wrap">
                             <span className="text-4xl font-black text-[#2e165f]">{formatPrice(displayFinalPrice, currency)}</span>
-                            {hasSkippedBelts && (
-                              <span className="text-slate-400 text-sm line-through decoration-slate-300">{formatPrice(pkg.baseTotal, currency)}</span>
-                            )}
                             <span className="text-slate-300 text-sm line-through decoration-red-400">{formatPrice(displayBasePrice, currency)}</span>
                           </div>
                           <p className="text-[10px] font-black text-slate-400 mt-1 uppercase tracking-widest">
