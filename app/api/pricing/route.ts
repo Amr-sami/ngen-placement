@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import authOptions from '@/lib/auth/authOptions';
 import connectDB from '@/lib/mongodb';
 import Belt from '@/lib/models/Belt';
 import PricingConfig from '@/lib/models/PricingConfig';
+import User from '@/lib/models/User';
 import { getIPFromHeaders, getCountryFromIP, isEgypt } from '@/lib/geoLocation';
 
 export interface BeltPricing {
@@ -34,12 +37,36 @@ export interface PricingResponse {
     option3_organization: {
         name: string;
         contactUs: boolean;
+        hidden?: boolean;
+    };
+    userContext?: {
+        isAuthenticated: boolean;
+        hasTakenTest: boolean;
+        recommendedBelt?: string;
+        recommendedBeltCode?: string;
+        recommendedPackageLevel?: string;
     };
 }
 
 export async function GET(request: NextRequest) {
     try {
         await connectDB();
+
+        // Check if user is authenticated
+        const session = await getServerSession(authOptions);
+        const isAuthenticated = !!session?.user?.email;
+
+        // Fetch user's placement test result if authenticated
+        let userPlacementTest = null;
+        if (isAuthenticated && session?.user?.email) {
+            const user = await User.findOne({ email: session.user.email })
+                .select('placementTest')
+                .lean();
+            userPlacementTest = user?.placementTest;
+        }
+
+        const hasTakenTest = !!(userPlacementTest?.hasTakenAnyPlacementTest && userPlacementTest?.resultBeltName);
+        const recommendedBelt = userPlacementTest?.resultBeltName || '';
 
         // Detect country from query param or IP
         const searchParams = request.nextUrl.searchParams;
@@ -78,7 +105,7 @@ export async function GET(request: NextRequest) {
         const perBeltDiscount = perBeltConfig ? (perBeltConfig[discountField] as number) : 50;
 
         // Build Option 1: Per Belt pricing
-        const option1Belts: BeltPricing[] = uniqueBelts.map(belt => {
+        let option1Belts: BeltPricing[] = uniqueBelts.map(belt => {
             const basePrice = (belt[priceField] as number) || 0;
             const finalPrice = Math.round(basePrice * (1 - perBeltDiscount / 100));
             return {
@@ -91,11 +118,31 @@ export async function GET(request: NextRequest) {
             };
         });
 
+        // Determine the recommended belt's package level
+        let recommendedPackageLevel = '';
+        if (hasTakenTest && recommendedBelt) {
+            const matchedBelt = option1Belts.find(
+                b => b.belt.toLowerCase() === recommendedBelt.toLowerCase() ||
+                    b.belt.toLowerCase().includes(recommendedBelt.toLowerCase())
+            );
+            if (matchedBelt) {
+                recommendedPackageLevel = matchedBelt.packageLevel;
+            }
+        }
+
+        // If authenticated user with test result, filter to only their recommended belt
+        if (isAuthenticated && hasTakenTest && recommendedBelt) {
+            option1Belts = option1Belts.filter(
+                b => b.belt.toLowerCase() === recommendedBelt.toLowerCase() ||
+                    b.belt.toLowerCase().includes(recommendedBelt.toLowerCase())
+            );
+        }
+
         const option1Total = option1Belts.reduce((sum, b) => sum + b.finalPrice, 0);
 
         // Build Option 2: Packages
         const packageConfigs = pricingConfigs.filter(c => c.configType === 'package');
-        const option2Packages: PackagePricing[] = packageConfigs.map(config => {
+        let option2Packages: PackagePricing[] = packageConfigs.map(config => {
             // Match belts by the codes stored in the config
             const configBeltCodes = (config.belts || []).map((b: string) => b.toUpperCase());
 
@@ -119,8 +166,24 @@ export async function GET(request: NextRequest) {
             };
         });
 
-        // Build Option 3: Organizations
+        // If authenticated user with test result, filter to only their matching package
+        if (isAuthenticated && hasTakenTest && recommendedPackageLevel) {
+            option2Packages = option2Packages.filter(
+                p => p.packageLevel === recommendedPackageLevel
+            );
+        }
+
+        // Build Option 3: Organizations (hidden for authenticated users)
         const orgConfig = pricingConfigs.find(c => c.configType === 'organization');
+
+        // Build user context for frontend
+        const userContext = {
+            isAuthenticated,
+            hasTakenTest,
+            recommendedBelt: hasTakenTest ? recommendedBelt : undefined,
+            recommendedBeltCode: hasTakenTest ? recommendedBelt.toLowerCase().replace(' belt', '').trim() : undefined,
+            recommendedPackageLevel: hasTakenTest ? recommendedPackageLevel : undefined,
+        };
 
         const response: PricingResponse = {
             currency,
@@ -134,7 +197,9 @@ export async function GET(request: NextRequest) {
             option3_organization: {
                 name: orgConfig?.name || 'Organizations / Schools',
                 contactUs: true,
+                hidden: isAuthenticated, // Hide for logged-in users
             },
+            userContext,
         };
 
         return NextResponse.json(response);

@@ -147,8 +147,8 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                     <button
                                         onClick={() => setSelectedOption('perBelt')}
                                         className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'perBelt'
-                                                ? 'bg-green-500/20 border border-green-500/50 text-green-400'
-                                                : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
+                                            ? 'bg-green-500/20 border border-green-500/50 text-green-400'
+                                            : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
                                             }`}
                                     >
                                         <Tag className="w-4 h-4 inline mr-1" />
@@ -158,24 +158,26 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                         <button
                                             onClick={() => setSelectedOption('package')}
                                             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'package'
-                                                    ? 'bg-purple-500/20 border border-purple-500/50 text-purple-400'
-                                                    : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
+                                                ? 'bg-purple-500/20 border border-purple-500/50 text-purple-400'
+                                                : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
                                                 }`}
                                         >
                                             <Package className="w-4 h-4 inline mr-1" />
                                             Package
                                         </button>
                                     )}
-                                    <button
-                                        onClick={() => setSelectedOption('organization')}
-                                        className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'organization'
+                                    {!pricing?.option3_organization?.hidden && (
+                                        <button
+                                            onClick={() => setSelectedOption('organization')}
+                                            className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'organization'
                                                 ? 'bg-orange-500/20 border border-orange-500/50 text-orange-400'
                                                 : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
-                                            }`}
-                                    >
-                                        <MessageCircle className="w-4 h-4 inline mr-1" />
-                                        Org
-                                    </button>
+                                                }`}
+                                        >
+                                            <MessageCircle className="w-4 h-4 inline mr-1" />
+                                            Org
+                                        </button>
+                                    )}
                                 </div>
 
                                 {/* Per Belt Option */}
