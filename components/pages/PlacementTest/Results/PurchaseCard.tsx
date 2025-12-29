@@ -77,7 +77,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
         if (!pricing) return null
         const beltCode = belt.belt.toLowerCase()
         return pricing.option2_packages.find(pkg =>
-            pkg.belts.some(b => b.toLowerCase().includes(beltCode))
+            pkg.belts.some(b => b.name.toLowerCase().includes(beltCode))
         )
     }
 
@@ -154,7 +154,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                         <Tag className="w-4 h-4 inline mr-1" />
                                         Per Belt
                                     </button>
-                                    {packagePricing && (
+                                    {packagePricing && !packagePricing.showAsSingleBelt && (
                                         <button
                                             onClick={() => setSelectedOption('package')}
                                             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'package'
@@ -211,12 +211,28 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                         </div>
                                         <div className="text-center">
                                             <span className="text-4xl font-black text-white">
-                                                {formatPrice(packagePricing.finalPrice, currency)}
+                                                {formatPrice(packagePricing.skippedBeltsValue > 0 ? packagePricing.adjustedFinalPrice : packagePricing.finalPrice, currency)}
                                             </span>
+                                            {packagePricing.skippedBeltsValue > 0 && (
+                                                <span className="text-purple-300/60 text-sm line-through ml-2">
+                                                    {formatPrice(packagePricing.baseTotal, currency)}
+                                                </span>
+                                            )}
                                         </div>
-                                        <p className="text-center text-purple-300/60 text-xs mt-2">
-                                            Includes: {packagePricing.belts.join(', ')}
-                                        </p>
+                                        <div className="mt-3 space-y-1">
+                                            {packagePricing.belts.map(b => (
+                                                <p key={b.code} className={`text-center text-xs ${b.status === 'passed'
+                                                    ? 'text-purple-300/40 line-through'
+                                                    : b.status === 'starting'
+                                                        ? 'text-green-400 font-bold'
+                                                        : 'text-purple-300/60'
+                                                    }`}>
+                                                    {b.name}
+                                                    {b.status === 'passed' && ' ✓'}
+                                                    {b.status === 'starting' && ' ← Your level'}
+                                                </p>
+                                            ))}
+                                        </div>
                                     </div>
                                 )}
 

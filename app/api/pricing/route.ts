@@ -16,13 +16,27 @@ export interface BeltPricing {
     finalPrice: number;
 }
 
+export interface PackageBeltInfo {
+    name: string;
+    code: string;
+    order: number;
+    price: number;
+    status: 'available' | 'passed' | 'starting';
+}
+
 export interface PackagePricing {
     name: string;
     packageLevel: string;
-    belts: string[];
+    belts: PackageBeltInfo[];
     baseTotal: number;
     discountPercent: number;
     finalPrice: number;
+    // Progressive pricing fields
+    adjustedBaseTotal: number;
+    adjustedFinalPrice: number;
+    skippedBeltsValue: number;
+    remainingBeltCount: number;
+    showAsSingleBelt: boolean;
 }
 
 export interface PricingResponse {
@@ -118,8 +132,9 @@ export async function GET(request: NextRequest) {
             };
         });
 
-        // Determine the recommended belt's package level
+        // Determine the recommended belt's package level and order
         let recommendedPackageLevel = '';
+        let recommendedBeltOrder = 0;
         if (hasTakenTest && recommendedBelt) {
             const matchedBelt = option1Belts.find(
                 b => b.belt.toLowerCase() === recommendedBelt.toLowerCase() ||
@@ -127,6 +142,7 @@ export async function GET(request: NextRequest) {
             );
             if (matchedBelt) {
                 recommendedPackageLevel = matchedBelt.packageLevel;
+                recommendedBeltOrder = matchedBelt.order;
             }
         }
 
@@ -140,7 +156,7 @@ export async function GET(request: NextRequest) {
 
         const option1Total = option1Belts.reduce((sum, b) => sum + b.finalPrice, 0);
 
-        // Build Option 2: Packages
+        // Build Option 2: Packages with progressive pricing
         const packageConfigs = pricingConfigs.filter(c => c.configType === 'package');
         let option2Packages: PackagePricing[] = packageConfigs.map(config => {
             // Match belts by the codes stored in the config
@@ -151,18 +167,56 @@ export async function GET(request: NextRequest) {
                 ? uniqueBelts.filter(b => configBeltCodes.includes(b.code.toUpperCase()))
                 : uniqueBelts.filter(b => b.packageLevel === config.packageLevel);
 
+            // Sort by order to ensure correct progression
+            packageBelts.sort((a, b) => a.order - b.order);
+
             const baseTotal = packageBelts.reduce((sum, b) => sum + ((b[priceField] as number) || 0), 0);
             const fixedPrice = config[fixedPriceField] as number | undefined;
             const discountPercent = config[discountField] as number;
             const finalPrice = fixedPrice || Math.round(baseTotal * (1 - discountPercent / 100));
 
+            // Build belt info with status for authenticated users
+            const beltInfoList: PackageBeltInfo[] = packageBelts.map(b => {
+                const beltPrice = (b[priceField] as number) || 0;
+                let status: 'available' | 'passed' | 'starting' = 'available';
+
+                if (isAuthenticated && hasTakenTest && recommendedBeltOrder > 0) {
+                    if (b.order < recommendedBeltOrder) {
+                        status = 'passed';
+                    } else if (b.order === recommendedBeltOrder) {
+                        status = 'starting';
+                    }
+                }
+
+                return {
+                    name: b.name,
+                    code: b.code.toLowerCase(),
+                    order: b.order,
+                    price: beltPrice,
+                    status,
+                };
+            });
+
+            // Calculate progressive pricing
+            const passedBelts = beltInfoList.filter(b => b.status === 'passed');
+            const remainingBelts = beltInfoList.filter(b => b.status !== 'passed');
+            const skippedBeltsValue = passedBelts.reduce((sum, b) => sum + b.price, 0);
+            const adjustedBaseTotal = baseTotal - skippedBeltsValue;
+            const adjustedFinalPrice = Math.round(adjustedBaseTotal * (1 - discountPercent / 100));
+            const showAsSingleBelt = remainingBelts.length === 1;
+
             return {
                 name: config.name,
                 packageLevel: config.packageLevel || '',
-                belts: packageBelts.map(b => b.name),
+                belts: beltInfoList,
                 baseTotal,
                 discountPercent,
                 finalPrice,
+                adjustedBaseTotal,
+                adjustedFinalPrice,
+                skippedBeltsValue,
+                remainingBeltCount: remainingBelts.length,
+                showAsSingleBelt,
             };
         });
 

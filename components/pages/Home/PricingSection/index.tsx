@@ -50,6 +50,12 @@ function HomepagePricingSection() {
           if (data.option3_organization?.hidden && activeTab === 'organization') {
             setActiveTab('packages');
           }
+
+          // If packages should be hidden (single belt remaining), switch to perBelt
+          const hasSingleBeltPackage = data.option2_packages?.some((p: { showAsSingleBelt: boolean }) => p.showAsSingleBelt);
+          if (hasSingleBeltPackage && activeTab === 'packages') {
+            setActiveTab('perBelt');
+          }
         }
       } catch (error) {
         console.error('Error fetching pricing:', error);
@@ -89,9 +95,13 @@ function HomepagePricingSection() {
     }
   };
 
+  // Check if packages should be hidden (when only single belt remains in user's package)
+  const shouldHidePackages = isAuthenticated && hasTakenTest &&
+    pricing?.option2_packages?.some(p => p.showAsSingleBelt);
+
   // Build available tabs based on auth state
   const availableTabs = [
-    { id: 'packages', label: 'Bundles', icon: Package, show: true },
+    { id: 'packages', label: 'Bundles', icon: Package, show: !shouldHidePackages },
     { id: 'perBelt', label: 'Single Belt', icon: Tag, show: true },
     { id: 'organization', label: 'Schools', icon: Users, show: !isOrganizationHidden },
   ].filter(tab => tab.show);
@@ -172,6 +182,52 @@ function HomepagePricingSection() {
                   {pricing.option2_packages.map((pkg, index) => {
                     // Single package = always featured, multiple = middle one is featured
                     const isFeatured = pricing.option2_packages.length === 1 || index === 1;
+
+                    // Determine if there are skipped belts
+                    const hasSkippedBelts = pkg.skippedBeltsValue > 0;
+
+                    // Use adjusted pricing ONLY if there are skipped belts, otherwise use original
+                    const displayBasePrice = hasSkippedBelts ? pkg.adjustedBaseTotal : pkg.baseTotal;
+                    const displayFinalPrice = hasSkippedBelts ? pkg.adjustedFinalPrice : pkg.finalPrice;
+
+                    // If only 1 belt remains, show as single belt
+                    if (pkg.showAsSingleBelt && isAuthenticated && hasTakenTest) {
+                      const remainingBelt = pkg.belts.find(b => b.status !== 'passed');
+                      if (!remainingBelt) return null;
+
+                      return (
+                        <motion.div
+                          key={pkg.packageLevel}
+                          whileHover={{ scale: 1.02 }}
+                          className="relative bg-white rounded-[3.5rem] p-8 transition-all flex flex-col border-4 border-[#2e165f] shadow-[0_20px_50px_rgba(46,22,95,0.15)] md:scale-110 z-20"
+                        >
+                          <div className="text-center mb-6">
+                            <p className="text-green-500 text-xs font-black uppercase tracking-widest mb-2">
+                              🎉 You&apos;ve mastered previous levels!
+                            </p>
+                            <h3 className="text-2xl font-black text-[#2e165f]">{remainingBelt.name}</h3>
+                            <p className="text-slate-400 text-sm mt-1">Your starting level</p>
+                          </div>
+
+                          <div className="text-center mb-8">
+                            <span className="text-4xl font-black text-[#2e165f]">
+                              {formatPrice(Math.round(remainingBelt.price * (1 - pkg.discountPercent / 100)), currency)}
+                            </span>
+                            <span className="text-slate-300 text-sm line-through decoration-red-400 ml-2">
+                              {formatPrice(remainingBelt.price, currency)}
+                            </span>
+                          </div>
+
+                          <button
+                            onClick={handleBuyClick}
+                            className="w-full rounded-[1.5rem] py-5 font-black text-sm tracking-wide text-white transition-all hover:scale-105 active:scale-95 bg-[#2e165f] shadow-blue-900/20"
+                          >
+                            {getButtonText()}
+                          </button>
+                        </motion.div>
+                      );
+                    }
+
                     return (
                       <motion.div
                         key={pkg.packageLevel}
@@ -196,22 +252,58 @@ function HomepagePricingSection() {
                         </div>
 
                         <div className="mb-8">
-                          <div className="flex items-baseline gap-2">
-                            <span className="text-4xl font-black text-[#2e165f]">{formatPrice(pkg.finalPrice, currency)}</span>
-                            <span className="text-slate-300 text-sm line-through decoration-red-400">{formatPrice(pkg.baseTotal, currency)}</span>
+                          <div className="flex items-baseline gap-2 flex-wrap">
+                            <span className="text-4xl font-black text-[#2e165f]">{formatPrice(displayFinalPrice, currency)}</span>
+                            {hasSkippedBelts && (
+                              <span className="text-slate-400 text-sm line-through decoration-slate-300">{formatPrice(pkg.baseTotal, currency)}</span>
+                            )}
+                            <span className="text-slate-300 text-sm line-through decoration-red-400">{formatPrice(displayBasePrice, currency)}</span>
                           </div>
                           <p className="text-[10px] font-black text-slate-400 mt-1 uppercase tracking-widest">
-                            {pricing.option2_packages.length === 1 ? 'Recommended For You' : 'Full Access Bundle'}
+                            {hasSkippedBelts ? 'Adjusted For Your Level' : (pricing.option2_packages.length === 1 ? 'Recommended For You' : 'Full Access Bundle')}
                           </p>
                         </div>
 
-                        <div className="space-y-4 mb-10 flex-grow">
+                        <div className="space-y-3 mb-10 flex-grow">
                           {pkg.belts.map((belt) => (
-                            <div key={belt} className="flex items-center gap-3">
-                              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center">
-                                <Check className="w-3 h-3 text-green-600 stroke-[4px]" />
+                            <div
+                              key={belt.code}
+                              className={`flex items-center gap-3 ${belt.status === 'passed' ? 'opacity-50' : ''}`}
+                            >
+                              <div className={`w-5 h-5 rounded-full flex items-center justify-center ${belt.status === 'passed'
+                                ? 'bg-slate-200'
+                                : belt.status === 'starting'
+                                  ? 'bg-green-500'
+                                  : 'bg-green-100'
+                                }`}>
+                                <Check className={`w-3 h-3 stroke-[4px] ${belt.status === 'passed'
+                                  ? 'text-slate-400'
+                                  : belt.status === 'starting'
+                                    ? 'text-white'
+                                    : 'text-green-600'
+                                  }`} />
                               </div>
-                              <span className="text-sm font-bold text-slate-500">{belt}</span>
+                              <div className="flex-1">
+                                <span className={`text-sm font-bold ${belt.status === 'passed'
+                                  ? 'text-slate-400 line-through'
+                                  : belt.status === 'starting'
+                                    ? 'text-green-600'
+                                    : 'text-slate-500'
+                                  }`}>
+                                  {belt.name}
+                                </span>
+                                {belt.status === 'passed' && (
+                                  <span className="text-xs text-slate-400 ml-2">✓ Already passed</span>
+                                )}
+                                {belt.status === 'starting' && (
+                                  <span className="text-xs text-green-500 ml-2">← Your level</span>
+                                )}
+                              </div>
+                              {belt.status === 'passed' && (
+                                <span className="text-xs text-slate-400 line-through">
+                                  {formatPrice(belt.price, currency)}
+                                </span>
+                              )}
                             </div>
                           ))}
                         </div>
