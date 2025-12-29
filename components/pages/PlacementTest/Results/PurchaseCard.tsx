@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Sparkles, Tag, Package, MessageCircle } from 'lucide-react'
 import type { BeltLevel } from './types'
+import { beltLevels } from './types'
 import { formatPrice } from '@/lib/hooks/useUserLocation'
 import type { PricingResponse } from '@/app/api/pricing/route'
 
@@ -15,6 +16,39 @@ interface PurchaseCardProps {
 }
 
 type PurchaseOption = 'perBelt' | 'package' | 'organization';
+
+// Helper to parse numeric values from strings
+const parseStats = (belts: BeltLevel[]) => {
+    let minMonths = 0;
+    let maxMonths = 0;
+    let totalHrs = 0;
+    let totalCls = 0;
+
+    belts.forEach(b => {
+        // Parse Duration (e.g., "1 Month", "3-4 Months")
+        const durMatch = b.duration.match(/(\d+)(?:-(\d+))?/);
+        if (durMatch) {
+            const min = parseInt(durMatch[1]);
+            const max = durMatch[2] ? parseInt(durMatch[2]) : min;
+            minMonths += min;
+            maxMonths += max;
+        }
+
+        // Parse Hours
+        const hrMatch = b.totalHours.match(/(\d+)/);
+        if (hrMatch) totalHrs += parseInt(hrMatch[1]);
+
+        // Parse Classes
+        const clsMatch = b.totalClasses.match(/(\d+)/);
+        if (clsMatch) totalCls += parseInt(clsMatch[1]);
+    });
+
+    return {
+        duration: minMonths === maxMonths ? `${minMonths} Months` : `${minMonths}-${maxMonths} Months`,
+        totalHours: `${totalHrs} hrs`,
+        totalClasses: `${totalCls} Classes`
+    };
+}
 
 export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProps) {
     const [pricing, setPricing] = useState<PricingResponse | null>(null)
@@ -85,6 +119,23 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
     const packagePricing = getPackageForBelt()
     const currency = pricing?.currency || 'USD'
 
+    // Calculate package stats
+    let displayStats = {
+        duration: belt.duration,
+        totalHours: belt.totalHours,
+        totalClasses: belt.totalClasses
+    };
+
+    if (selectedOption === 'package' && packagePricing) {
+        // Find matched belt levels from metadata
+        const includedBelts = beltLevels.filter(b =>
+            packagePricing.belts.some(pb => pb.name.toLowerCase().includes(b.belt.toLowerCase()))
+        );
+        if (includedBelts.length > 0) {
+            displayStats = parseStats(includedBelts);
+        }
+    }
+
     const modalContent = (
         <AnimatePresence>
             <motion.div
@@ -146,8 +197,17 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                 <div className="flex gap-2 mb-4">
                                     <button
                                         onClick={() => setSelectedOption('perBelt')}
+                                        style={
+                                            selectedOption === 'perBelt'
+                                                ? {
+                                                    backgroundColor: `${belt.color}33`,
+                                                    borderColor: `${belt.color}80`,
+                                                    color: belt.color,
+                                                }
+                                                : {}
+                                        }
                                         className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'perBelt'
-                                            ? 'bg-green-500/20 border border-green-500/50 text-green-400'
+                                            ? '' // Styles handled by inline style
                                             : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
                                             }`}
                                     >
@@ -182,10 +242,19 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
 
                                 {/* Per Belt Option */}
                                 {selectedOption === 'perBelt' && beltPricing && (
-                                    <div className="bg-gradient-to-br from-green-500/20 to-emerald-600/20 border border-green-500/30 rounded-2xl p-5 mb-4">
+                                    <div
+                                        className="rounded-2xl p-5 mb-4 border"
+                                        style={{
+                                            background: `linear-gradient(135deg, ${belt.color}20, ${belt.color}10)`,
+                                            borderColor: `${belt.color}40`,
+                                        }}
+                                    >
                                         <div className="flex items-center justify-center gap-2 mb-2">
-                                            <Tag className="w-4 h-4 text-green-400" />
-                                            <span className="text-green-400 text-xs font-bold uppercase tracking-wider">
+                                            <Tag className="w-4 h-4" style={{ color: belt.color }} />
+                                            <span
+                                                className="text-xs font-bold uppercase tracking-wider"
+                                                style={{ color: belt.color }}
+                                            >
                                                 {belt.belt} Belt • {pricing?.option1_perBelt.discountPercent}% Off
                                             </span>
                                         </div>
@@ -194,7 +263,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                                 {formatPrice(beltPricing.finalPrice, currency)}
                                             </span>
                                         </div>
-                                        <p className="text-center text-green-300/60 text-xs mt-2">
+                                        <p className="text-center text-xs mt-2 text-white/60">
                                             Base: {formatPrice(beltPricing.basePrice, currency)}
                                         </p>
                                     </div>
@@ -221,12 +290,16 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                         </div>
                                         <div className="mt-3 space-y-1">
                                             {packagePricing.belts.map(b => (
-                                                <p key={b.code} className={`text-center text-xs ${b.status === 'passed'
-                                                    ? 'text-purple-300/40 line-through'
-                                                    : b.status === 'starting'
-                                                        ? 'text-green-400 font-bold'
-                                                        : 'text-purple-300/60'
-                                                    }`}>
+                                                <p
+                                                    key={b.code}
+                                                    className={`text-center text-xs ${b.status === 'passed'
+                                                        ? 'text-purple-300/40 line-through'
+                                                        : b.status === 'starting'
+                                                            ? 'font-bold'
+                                                            : 'text-purple-300/60'
+                                                        }`}
+                                                    style={b.status === 'starting' ? { color: belt.color } : {}}
+                                                >
                                                     {b.name}
                                                     {b.status === 'passed' && ' ✓'}
                                                     {b.status === 'starting' && ' ← Your level'}
@@ -259,26 +332,45 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                 {/* Course Details */}
                                 <div className="grid grid-cols-3 gap-2 mb-4">
                                     <div className="text-center p-2 bg-white/5 rounded-lg">
-                                        <p className="text-white font-bold text-sm">{belt.duration}</p>
+                                        <p className="text-white font-bold text-sm">{displayStats.duration}</p>
                                         <p className="text-purple-300 text-xs">Duration</p>
                                     </div>
                                     <div className="text-center p-2 bg-white/5 rounded-lg">
-                                        <p className="text-white font-bold text-sm">{belt.totalHours}</p>
+                                        <p className="text-white font-bold text-sm">{displayStats.totalHours}</p>
                                         <p className="text-purple-300 text-xs">Hours</p>
                                     </div>
                                     <div className="text-center p-2 bg-white/5 rounded-lg">
-                                        <p className="text-white font-bold text-sm">{belt.totalClasses}</p>
+                                        <p className="text-white font-bold text-sm">{displayStats.totalClasses}</p>
                                         <p className="text-purple-300 text-xs">Classes</p>
                                     </div>
                                 </div>
 
                                 {/* Purchase Button */}
-                                <button
-                                    disabled
-                                    className="w-full py-3 rounded-xl bg-gradient-to-r from-green-500/50 to-emerald-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
-                                >
-                                    Coming Soon
-                                </button>
+                                {selectedOption === 'perBelt' ? (
+                                    <button
+                                        disabled
+                                        className="w-full py-3 rounded-xl text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
+                                        style={{
+                                            background: `linear-gradient(to right, ${belt.color}80, ${belt.color}40)`,
+                                        }}
+                                    >
+                                        Coming Soon
+                                    </button>
+                                ) : selectedOption === 'package' ? (
+                                    <button
+                                        disabled
+                                        className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-500/50 to-pink-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
+                                    >
+                                        Coming Soon
+                                    </button>
+                                ) : (
+                                    <button
+                                        disabled
+                                        className="w-full py-3 rounded-xl bg-gradient-to-r from-orange-500/50 to-red-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
+                                    >
+                                        Coming Soon
+                                    </button>
+                                )}
 
                                 <p className="text-center text-purple-300/60 text-xs mt-2">
                                     Payment options will be available soon

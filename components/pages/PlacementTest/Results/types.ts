@@ -67,5 +67,96 @@ export const beltLevels: BeltLevel[] = [
     totalClasses: '24 Classes',
     focus: 'Creativity & Digital Design',
     scoreRange: [18, 25]
+  },
+  {
+    stage: 'Foundation',
+    belt: 'Green',
+    color: '#22c55e',       // green-500 (standard foundation green)
+    glowColor: '#4ade80',   // green-400
+    textColor: '#ffffff',   // white
+    borderColor: '#86efac', // green-300
+    duration: '3-4 Months',
+    totalHours: '35 hrs',
+    totalClasses: '24 Classes',
+    focus: 'Logic & Problem Solving',
+    scoreRange: [26, 40]
+  },
+  {
+    stage: 'Specialization',
+    belt: 'Blue',
+    color: '#3b82f6',       // blue-500
+    glowColor: '#60a5fa',   // blue-400
+    textColor: '#ffffff',   // white
+    borderColor: '#93c5fd', // blue-300
+    duration: '3-4 Months',
+    totalHours: '35 hrs',
+    totalClasses: '24 Classes',
+    focus: 'Advanced Algorithmic Thinking',
+    scoreRange: [41, 55]
+  },
+  {
+    stage: 'Specialization',
+    belt: 'Red',
+    color: '#ef4444',       // red-500
+    glowColor: '#f87171',   // red-400
+    textColor: '#ffffff',   // white
+    borderColor: '#fca5a5', // red-300
+    duration: '3-4 Months',
+    totalHours: '35 hrs',
+    totalClasses: '24 Classes',
+    focus: 'Complex Systems Design',
+    scoreRange: [56, 70]
+  },
+  {
+    stage: 'Specialization',
+    belt: 'Brown',
+    color: '#b45309',       // amber-700
+    glowColor: '#d97706',   // amber-600
+    textColor: '#ffffff',   // white
+    borderColor: '#fcd34d', // amber-300
+    duration: '3-4 Months',
+    totalHours: '35 hrs',
+    totalClasses: '24 Classes',
+    focus: 'Professional Software Architecture',
+    scoreRange: [71, 85]
+  },
+  {
+    stage: 'Specialization',
+    belt: 'Black',
+    color: '#0f172a',       // slate-900
+    glowColor: '#334155',   // slate-700
+    textColor: '#ffffff',   // white
+    borderColor: '#94a3b8', // slate-400
+    duration: '3-4 Months',
+    totalHours: '35 hrs',
+    totalClasses: '24 Classes',
+    focus: 'Mastery & Leadership',
+    scoreRange: [86, 94]
+  },
+  {
+    stage: 'Advanced',
+    belt: 'Ninja',
+    color: '#7c3aed',       // violet-600
+    glowColor: '#8b5cf6',   // violet-500
+    textColor: '#ffffff',   // white
+    borderColor: '#c4b5fd', // violet-300
+    duration: '4-6 Months',
+    totalHours: '50 hrs',
+    totalClasses: '36 Classes',
+    focus: 'Elite Performance & Innovation',
+    scoreRange: [95, 97]
+  },
+  {
+    stage: 'Advanced',
+    belt: 'Master',
+    color: '#e11d48',       // rose-600
+    glowColor: '#f43f5e',   // rose-500
+    textColor: '#ffffff',   // white
+    borderColor: '#fda4af', // rose-300
+    duration: '6-12 Months',
+    totalHours: '100 hrs',
+    totalClasses: '72 Classes',
+    focus: 'Legendary Status',
+    scoreRange: [98, 100]
   }
 ]

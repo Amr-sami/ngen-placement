@@ -5,12 +5,14 @@ import { H2 } from '@/components/general/Heading';
 import Button from '@/components/general/Button';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useSession } from 'next-auth/react';
-import { getContactRoute, getPlacementTestRoute } from '@/util/routes';
+import { getContactRoute, getPlacementTestRoute } from '@/lib/routes';
 import type { Locale } from '@/i18n';
 import { Tag, Package, Check, Zap, Users, Trophy, Shield } from 'lucide-react';
-import type { PricingResponse } from '@/app/api/pricing/route';
+import type { PricingResponse, PackagePricing, BeltPricing } from '@/app/api/pricing/route';
 import { formatPrice } from '@/lib/hooks/useUserLocation';
 import { motion, AnimatePresence } from 'framer-motion';
+import HomePurchaseModal, { type PurchaseItem } from './HomePurchaseModal';
+import { beltLevels } from '@/components/pages/PlacementTest/Results/types';
 
 // Color Mapping for the Belts
 const BELT_THEMES: Record<string, string> = {
@@ -20,8 +22,11 @@ const BELT_THEMES: Record<string, string> = {
   'Blue': '#3B82F6',
   'Purple': '#A855F7',
   'Red': '#EF4444',
+  'Brown': '#B45309',
   'Black': '#1E293B',
   'White': '#94A3B8',
+  'Ninja': '#7C3AED',
+  'Master': '#E11D48',
 };
 
 type Particle = {
@@ -43,6 +48,8 @@ function HomepagePricingSection() {
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'perBelt' | 'packages' | 'organization'>('packages');
   const [particles, setParticles] = useState<Particle[]>([]);
+  const [showPurchaseModal, setShowPurchaseModal] = useState(false);
+  const [purchaseItem, setPurchaseItem] = useState<PurchaseItem | null>(null);
 
   useEffect(() => {
     setParticles([...Array(6)].map((_, i) => ({
@@ -99,26 +106,35 @@ function HomepagePricingSection() {
   const currency = pricing?.currency || 'USD';
 
   // Handle buy button click
-  const handleBuyClick = () => {
+  const handleBuyClick = (type: 'package' | 'belt', data: PackagePricing | BeltPricing) => {
     if (!isAuthenticated) {
-      // Guest: redirect to placement test
       router.push(getPlacementTestRoute(locale));
-    } else if (!hasTakenTest) {
-      // Logged in but no test: redirect to placement test
+      return;
+    }
+
+    if (!hasTakenTest) {
       router.push(getPlacementTestRoute(locale));
+      return;
+    }
+
+    if (type === 'package') {
+      setPurchaseItem({ type: 'package', data: data as PackagePricing });
+      setShowPurchaseModal(true);
     } else {
-      // Logged in with test: proceed to checkout (TODO: implement checkout)
-      // For now, redirect to a coming soon or contact page
-      router.push(getContactRoute(locale));
+      // Find belt level info for styling
+      const beltData = data as BeltPricing;
+      const beltLevel = beltLevels.find(b => beltData.belt.includes(b.belt)) || null;
+      setPurchaseItem({ type: 'belt', data: beltData, beltLevel });
+      setShowPurchaseModal(true);
     }
   };
 
   // Determine button text based on state
   const getButtonText = () => {
     if (!isAuthenticated) {
-      return 'Take Test to Unlock';
+      return 'Take Your Placement Test';
     } else if (!hasTakenTest) {
-      return 'Take Test First';
+      return 'Take Placement Test';
     } else {
       return 'Enroll Now';
     }
@@ -219,6 +235,9 @@ function HomepagePricingSection() {
                     const displayBasePrice = hasSkippedBelts ? pkg.adjustedBaseTotal : pkg.baseTotal;
                     const displayFinalPrice = hasSkippedBelts ? pkg.adjustedFinalPrice : pkg.finalPrice;
 
+                    // Identify the relevant belt name for this package (current user level or first belt)
+
+
                     // If only 1 belt remains, show as single belt
                     if (pkg.showAsSingleBelt && isAuthenticated && hasTakenTest) {
                       const remainingBelt = pkg.belts.find(b => b.status !== 'passed');
@@ -248,7 +267,7 @@ function HomepagePricingSection() {
                           </div>
 
                           <button
-                            onClick={handleBuyClick}
+                            onClick={() => handleBuyClick('package', pkg)}
                             className="w-full rounded-[1.5rem] py-5 font-black text-sm tracking-wide text-white transition-all hover:scale-105 active:scale-95 bg-[#2e165f] shadow-blue-900/20"
                           >
                             {getButtonText()}
@@ -335,7 +354,7 @@ function HomepagePricingSection() {
                         </div>
 
                         <button
-                          onClick={handleBuyClick}
+                          onClick={() => handleBuyClick('package', pkg)}
                           className={`w-full rounded-[1.5rem] py-5 font-black text-sm tracking-wide text-white transition-all hover:scale-105 active:scale-95 ${isFeatured ? 'bg-[#2e165f] shadow-blue-900/20' : 'bg-slate-800'
                             }`}
                         >
@@ -389,7 +408,7 @@ function HomepagePricingSection() {
                           whileHover={{ scale: 1.05, y: -5 }}
                           className="relative bg-white border-2 border-slate-50 rounded-[2.5rem] p-6 text-center transition-all group overflow-hidden cursor-pointer"
                           style={{ boxShadow: `0 15px 30px -10px ${themeColor}20` }}
-                          onClick={handleBuyClick}
+                          onClick={() => handleBuyClick('belt', belt)}
                         >
                           {/* Colored Accent Bar */}
                           <div
@@ -422,7 +441,7 @@ function HomepagePricingSection() {
 
                           {/* Buy Button */}
                           <button
-                            onClick={(e) => { e.stopPropagation(); handleBuyClick(); }}
+                            onClick={(e) => { e.stopPropagation(); handleBuyClick('belt', belt); }}
                             className="w-full py-2 rounded-xl text-xs font-black text-white transition-all hover:scale-105"
                             style={{ backgroundColor: themeColor }}
                           >
@@ -470,6 +489,16 @@ function HomepagePricingSection() {
           )}
         </AnimatePresence>
       </div>
+
+      {purchaseItem && (
+        <HomePurchaseModal
+          isOpen={showPurchaseModal}
+          onClose={() => setShowPurchaseModal(false)}
+          item={purchaseItem}
+          pricing={pricing}
+          currency={currency as 'USD' | 'EGP'}
+        />
+      )}
     </section>
   );
 }

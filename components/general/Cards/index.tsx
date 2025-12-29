@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../Button';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
-import { getTrackRoute } from '@/util/routes';
+import { getTrackRoute } from "@/lib/routes";
 import type { Locale } from '@/i18n';
 import { useRTL } from '@/lib/useRTL';
 
@@ -28,7 +28,7 @@ function Card({
   duration,
   skillLevel,
 }:
-Props) {
+  Props) {
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
   const isRTL = useRTL();
@@ -49,11 +49,10 @@ Props) {
           <h3 className="text-purple-dark font-bold break-words">{title}</h3>
           <div>
             <p
-              className={`px-2 py-1 rounded-2xl text-white text-xs font-extrabold ${
-                status.toLocaleLowerCase() === 'upcoming'
-                  ? 'bg-pumpkin'
-                  : 'bg-green'
-              }`}
+              className={`px-2 py-1 rounded-2xl text-white text-xs font-extrabold ${status.toLocaleLowerCase() === 'upcoming'
+                ? 'bg-pumpkin'
+                : 'bg-green'
+                }`}
             >
               {status}
             </p>
@@ -61,12 +60,10 @@ Props) {
         </div>
         {/* <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p> */}
         <p className="text-sm">{numberOfLevels} sessions included</p>
-        <div className={`flex flex-col sm:flex-row justify-between text-xs md:text-sm text-[#655B62] gap-2 ${
-          isRTL ? 'sm:flex-row-reverse' : 'sm:flex-row'
-        }`}>
-          <div className={`flex items-center gap-2 ${
-            isRTL ? 'flex-row-reverse' : 'flex-row'
+        <div className={`flex flex-col sm:flex-row justify-between text-xs md:text-sm text-[#655B62] gap-2 ${isRTL ? 'sm:flex-row-reverse' : 'sm:flex-row'
           }`}>
+          <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : 'flex-row'
+            }`}>
             <Image
               src="/assets/images/icons/duration-icon.svg"
               width={20}
@@ -75,9 +72,8 @@ Props) {
             />
             <p>{duration} Hours</p>
           </div>
-          <div className={`flex items-center gap-2 ${
-            isRTL ? 'flex-row-reverse' : 'flex-row'
-          }`}>
+          <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : 'flex-row'
+            }`}>
             <Image
               src="/assets/images/icons/papers-icon.svg"
               width={20}

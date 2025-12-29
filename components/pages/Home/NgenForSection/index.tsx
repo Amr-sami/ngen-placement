@@ -1,6 +1,8 @@
 import { H2 } from '@/components/general/Heading';
 import React from 'react';
-import { ROUTES } from '@/util/routes';
+import {
+  ROUTES,
+} from '@/lib/routes';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -70,7 +72,7 @@ function HomepageNgenForSection() {
               We provide high-quality training programs tailored for employees&apos; children at competitive prices.
             </div>
           </Link>
-          
+
           <Link className="basis-1/4 bg-for_schools"
             href={ROUTES.NGEN_FOR.FOR_SCHOOL}
           >

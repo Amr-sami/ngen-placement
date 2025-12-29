@@ -5,7 +5,7 @@ import { H2 } from '@/components/general/Heading';
 import Button from '@/components/general/Button';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
-import { getStudentsRoute } from '@/util/routes';
+import { getStudentsRoute } from '@/lib/routes';
 import type { Locale } from '@/i18n';
 import { motion } from 'framer-motion';
 import { Sparkles, User, Medal, ChevronRight, ChevronLeft } from 'lucide-react';

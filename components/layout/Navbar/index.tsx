@@ -34,7 +34,7 @@ import {
   getNgenForCorporatesRoute,
   getLoginRoute,
   type HomeSectionHash,
-} from '@/util/routes';
+} from '@/lib/routes';
 import { usePathname, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { useSession } from 'next-auth/react';

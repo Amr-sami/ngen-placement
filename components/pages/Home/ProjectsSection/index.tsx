@@ -6,7 +6,7 @@ import Button from '@/components/general/Button';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
-import { getProjectsRoute } from '@/util/routes';
+import { getProjectsRoute } from '@/lib/routes';
 import type { Locale } from '@/i18n';
 
 // Placeholder project data
@@ -59,7 +59,7 @@ function HomepageProjectsSection() {
             {t('buttons.seeMoreProjects')}
           </Button>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {PROJECTS.map((project) => (
             <div

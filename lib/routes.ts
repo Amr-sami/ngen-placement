@@ -118,7 +118,7 @@ export const getBlogRoute = (locale: Locale): string => {
  * Placement Test page route
  */
 export const getPlacementTestRoute = (locale: Locale): string => {
-  return `/${locale}/placement-test`;
+  return `/${locale}/placement-test/survey`;
 };
 
 // ============================================

@@ -13,7 +13,7 @@ import {
   getNgenForSchoolsRoute,
   getNgenForCorporatesRoute,
   getNgenForParentsRoute,
-} from '@/util/routes';
+} from '@/lib/routes';
 import type { Locale } from '@/i18n';
 
 function Footer() {
@@ -158,7 +158,7 @@ function Footer() {
                 <Link href="/">Info@ngenschools.com</Link>
               </li>
               <li className="flex items-start gap-1">
-                <IoLogoWhatsapp size={24}/>
+                <IoLogoWhatsapp size={24} />
                 <p>+201055023774</p>
               </li>
               <li className="flex items-start gap-1">
