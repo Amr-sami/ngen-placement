@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Sparkles, Tag, Package, MessageCircle } from 'lucide-react'
+import { useLocale } from 'next-intl'
 import type { BeltLevel } from './types'
-import { beltLevels } from './types'
+import { beltLevels, getLocalizedBeltValue } from './types'
 import { formatPrice } from '@/lib/hooks/useUserLocation'
 import type { PricingResponse } from '@/app/api/pricing/route'
 
@@ -17,8 +18,8 @@ interface PurchaseCardProps {
 
 type PurchaseOption = 'perBelt' | 'package' | 'organization';
 
-// Helper to parse numeric values from strings
-const parseStats = (belts: BeltLevel[]) => {
+// Helper to parse numeric values from strings (for English values)
+const parseStats = (belts: BeltLevel[], locale: 'en' | 'ar') => {
     let minMonths = 0;
     let maxMonths = 0;
     let totalHrs = 0;
@@ -26,7 +27,8 @@ const parseStats = (belts: BeltLevel[]) => {
 
     belts.forEach(b => {
         // Parse Duration (e.g., "1 Month", "3-4 Months")
-        const durMatch = b.duration.match(/(\d+)(?:-(\d+))?/);
+        const durationEn = b.duration.en;
+        const durMatch = durationEn.match(/(\d+)(?:-(\d+))?/);
         if (durMatch) {
             const min = parseInt(durMatch[1]);
             const max = durMatch[2] ? parseInt(durMatch[2]) : min;
@@ -35,13 +37,23 @@ const parseStats = (belts: BeltLevel[]) => {
         }
 
         // Parse Hours
-        const hrMatch = b.totalHours.match(/(\d+)/);
+        const hoursEn = b.totalHours.en;
+        const hrMatch = hoursEn.match(/(\d+)/);
         if (hrMatch) totalHrs += parseInt(hrMatch[1]);
 
         // Parse Classes
-        const clsMatch = b.totalClasses.match(/(\d+)/);
+        const classesEn = b.totalClasses.en;
+        const clsMatch = classesEn.match(/(\d+)/);
         if (clsMatch) totalCls += parseInt(clsMatch[1]);
     });
+
+    if (locale === 'ar') {
+        return {
+            duration: minMonths === maxMonths ? `${minMonths} أشهر` : `${minMonths}-${maxMonths} أشهر`,
+            totalHours: `${totalHrs} ساعة`,
+            totalClasses: `${totalCls} حصة`
+        };
+    }
 
     return {
         duration: minMonths === maxMonths ? `${minMonths} Months` : `${minMonths}-${maxMonths} Months`,
@@ -51,10 +63,18 @@ const parseStats = (belts: BeltLevel[]) => {
 }
 
 export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProps) {
+    const locale = useLocale() as 'en' | 'ar'
+    const isRTL = locale === 'ar'
+
     const [pricing, setPricing] = useState<PricingResponse | null>(null)
     const [isLoading, setIsLoading] = useState(true)
     const [mounted, setMounted] = useState(false)
     const [selectedOption, setSelectedOption] = useState<PurchaseOption>('perBelt')
+
+    // Get localized values
+    const beltDisplayName = getLocalizedBeltValue(belt, 'beltName', locale)
+    const stageDisplay = getLocalizedBeltValue(belt, 'stage', locale)
+    const focusDisplay = getLocalizedBeltValue(belt, 'focus', locale)
 
     // Only render portal on client side
     useEffect(() => {
@@ -68,7 +88,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
 
             setIsLoading(true)
             try {
-                const response = await fetch('/api/pricing')
+                const response = await fetch(`/api/pricing?locale=${locale}`)
                 if (response.ok) {
                     const data = await response.json()
                     setPricing(data)
@@ -81,7 +101,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
         }
 
         fetchPricing()
-    }, [isOpen])
+    }, [isOpen, locale])
 
     // Prevent body scroll when modal is open
     useEffect(() => {
@@ -97,11 +117,49 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
 
     if (!isOpen || !mounted) return null
 
+    // Translations
+    const t = {
+        en: {
+            perBelt: 'Per Belt',
+            package: 'Package',
+            org: 'Org',
+            loading: 'Loading pricing...',
+            off: 'Off',
+            base: 'Base',
+            yourLevel: 'Your level',
+            customPricing: 'Custom Pricing',
+            bulkEnrollment: 'Bulk enrollment & custom curriculum',
+            duration: 'Duration',
+            hours: 'Hours',
+            classes: 'Classes',
+            comingSoon: 'Coming Soon',
+            paymentSoon: 'Payment options will be available soon',
+            orgsSchools: 'Organizations / Schools',
+        },
+        ar: {
+            perBelt: 'لكل حزام',
+            package: 'الباقة',
+            org: 'مؤسسات',
+            loading: 'جاري تحميل الأسعار...',
+            off: 'خصم',
+            base: 'السعر الأساسي',
+            yourLevel: 'مستواك',
+            customPricing: 'أسعار مخصصة',
+            bulkEnrollment: 'تسجيل جماعي ومنهج مخصص',
+            duration: 'المدة',
+            hours: 'الساعات',
+            classes: 'الحصص',
+            comingSoon: 'قريباً',
+            paymentSoon: 'خيارات الدفع ستكون متاحة قريباً',
+            orgsSchools: 'المؤسسات / المدارس',
+        }
+    }[locale]
+
     // Get belt pricing from API response
     const getBeltPrice = () => {
         if (!pricing) return null
         const beltData = pricing.option1_perBelt.belts.find(
-            b => b.belt.toLowerCase().includes(belt.belt.toLowerCase())
+            b => b.code.toLowerCase() === belt.belt.toLowerCase()
         )
         return beltData
     }
@@ -111,7 +169,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
         if (!pricing) return null
         const beltCode = belt.belt.toLowerCase()
         return pricing.option2_packages.find(pkg =>
-            pkg.belts.some(b => b.name.toLowerCase().includes(beltCode))
+            pkg.belts.some(b => b.code.toLowerCase() === beltCode)
         )
     }
 
@@ -121,18 +179,18 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
 
     // Calculate package stats
     let displayStats = {
-        duration: belt.duration,
-        totalHours: belt.totalHours,
-        totalClasses: belt.totalClasses
+        duration: getLocalizedBeltValue(belt, 'duration', locale),
+        totalHours: getLocalizedBeltValue(belt, 'totalHours', locale),
+        totalClasses: getLocalizedBeltValue(belt, 'totalClasses', locale)
     };
 
     if (selectedOption === 'package' && packagePricing) {
         // Find matched belt levels from metadata
         const includedBelts = beltLevels.filter(b =>
-            packagePricing.belts.some(pb => pb.name.toLowerCase().includes(b.belt.toLowerCase()))
+            packagePricing.belts.some(pb => pb.code.toLowerCase() === b.belt.toLowerCase())
         );
         if (includedBelts.length > 0) {
-            displayStats = parseStats(includedBelts);
+            displayStats = parseStats(includedBelts, locale);
         }
     }
 
@@ -149,7 +207,8 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                     initial={{ scale: 0.9, opacity: 0, y: 20 }}
                     animate={{ scale: 1, opacity: 1, y: 0 }}
                     exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                    className="bg-[#1a0b2e] border border-white/20 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto"
+                    className={`bg-[#1a0b2e] border border-white/20 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto ${isRTL ? 'font-arabic' : ''}`}
+                    dir={isRTL ? 'rtl' : 'ltr'}
                     onClick={e => e.stopPropagation()}
                 >
                     {/* Header with Glow */}
@@ -163,7 +222,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                         <div className="relative z-10">
                             <button
                                 onClick={onClose}
-                                className="absolute top-0 right-0 p-2 hover:bg-white/10 rounded-full transition-colors"
+                                className={`absolute top-0 ${isRTL ? 'left-0' : 'right-0'} p-2 hover:bg-white/10 rounded-full transition-colors`}
                             >
                                 <X className="w-5 h-5 text-white/70" />
                             </button>
@@ -176,10 +235,10 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                             </div>
 
                             <h2 className="text-xl font-black text-white mb-1">
-                                {belt.belt} Belt
+                                {beltDisplayName}
                             </h2>
                             <p className="text-purple-200 text-sm">
-                                {belt.stage} Stage • {belt.focus}
+                                {stageDisplay} • {focusDisplay}
                             </p>
                         </div>
                     </div>
@@ -189,7 +248,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                         {isLoading ? (
                             <div className="text-center py-8">
                                 <div className="w-8 h-8 border-2 border-white/20 border-t-orange-500 rounded-full animate-spin mx-auto mb-3"></div>
-                                <p className="text-purple-200 text-sm">Loading pricing...</p>
+                                <p className="text-purple-200 text-sm">{t.loading}</p>
                             </div>
                         ) : (
                             <>
@@ -211,8 +270,8 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                             : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
                                             }`}
                                     >
-                                        <Tag className="w-4 h-4 inline mr-1" />
-                                        Per Belt
+                                        <Tag className={`w-4 h-4 inline ${isRTL ? 'ml-1' : 'mr-1'}`} />
+                                        {t.perBelt}
                                     </button>
                                     {packagePricing && !packagePricing.showAsSingleBelt && (
                                         <button
@@ -222,8 +281,8 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                                 : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
                                                 }`}
                                         >
-                                            <Package className="w-4 h-4 inline mr-1" />
-                                            Package
+                                            <Package className={`w-4 h-4 inline ${isRTL ? 'ml-1' : 'mr-1'}`} />
+                                            {t.package}
                                         </button>
                                     )}
                                     {!pricing?.option3_organization?.hidden && (
@@ -234,8 +293,8 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                                 : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
                                                 }`}
                                         >
-                                            <MessageCircle className="w-4 h-4 inline mr-1" />
-                                            Org
+                                            <MessageCircle className={`w-4 h-4 inline ${isRTL ? 'ml-1' : 'mr-1'}`} />
+                                            {t.org}
                                         </button>
                                     )}
                                 </div>
@@ -255,7 +314,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                                 className="text-xs font-bold uppercase tracking-wider"
                                                 style={{ color: belt.color }}
                                             >
-                                                {belt.belt} Belt • {pricing?.option1_perBelt.discountPercent}% Off
+                                                {beltDisplayName} • {pricing?.option1_perBelt.discountPercent}% {t.off}
                                             </span>
                                         </div>
                                         <div className="text-center">
@@ -264,7 +323,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                             </span>
                                         </div>
                                         <p className="text-center text-xs mt-2 text-white/60">
-                                            Base: {formatPrice(beltPricing.basePrice, currency)}
+                                            {t.base}: {formatPrice(beltPricing.basePrice, currency)}
                                         </p>
                                     </div>
                                 )}
@@ -275,7 +334,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                         <div className="flex items-center justify-center gap-2 mb-2">
                                             <Package className="w-4 h-4 text-purple-400" />
                                             <span className="text-purple-400 text-xs font-bold uppercase tracking-wider">
-                                                {packagePricing.name} • {packagePricing.discountPercent}% Off
+                                                {packagePricing.name} • {packagePricing.discountPercent}% {t.off}
                                             </span>
                                         </div>
                                         <div className="text-center">
@@ -302,7 +361,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                                 >
                                                     {b.name}
                                                     {b.status === 'passed' && ' ✓'}
-                                                    {b.status === 'starting' && ' ← Your level'}
+                                                    {b.status === 'starting' && ` ← ${t.yourLevel}`}
                                                 </p>
                                             ))}
                                         </div>
@@ -315,16 +374,16 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                         <div className="flex items-center justify-center gap-2 mb-2">
                                             <MessageCircle className="w-4 h-4 text-orange-400" />
                                             <span className="text-orange-400 text-xs font-bold uppercase tracking-wider">
-                                                Organizations / Schools
+                                                {t.orgsSchools}
                                             </span>
                                         </div>
                                         <div className="text-center">
                                             <span className="text-2xl font-black text-white">
-                                                Custom Pricing
+                                                {t.customPricing}
                                             </span>
                                         </div>
                                         <p className="text-center text-orange-300/60 text-xs mt-2">
-                                            Bulk enrollment & custom curriculum
+                                            {t.bulkEnrollment}
                                         </p>
                                     </div>
                                 )}
@@ -333,15 +392,15 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                 <div className="grid grid-cols-3 gap-2 mb-4">
                                     <div className="text-center p-2 bg-white/5 rounded-lg">
                                         <p className="text-white font-bold text-sm">{displayStats.duration}</p>
-                                        <p className="text-purple-300 text-xs">Duration</p>
+                                        <p className="text-purple-300 text-xs">{t.duration}</p>
                                     </div>
                                     <div className="text-center p-2 bg-white/5 rounded-lg">
                                         <p className="text-white font-bold text-sm">{displayStats.totalHours}</p>
-                                        <p className="text-purple-300 text-xs">Hours</p>
+                                        <p className="text-purple-300 text-xs">{t.hours}</p>
                                     </div>
                                     <div className="text-center p-2 bg-white/5 rounded-lg">
                                         <p className="text-white font-bold text-sm">{displayStats.totalClasses}</p>
-                                        <p className="text-purple-300 text-xs">Classes</p>
+                                        <p className="text-purple-300 text-xs">{t.classes}</p>
                                     </div>
                                 </div>
 
@@ -354,26 +413,26 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                             background: `linear-gradient(to right, ${belt.color}80, ${belt.color}40)`,
                                         }}
                                     >
-                                        Coming Soon
+                                        {t.comingSoon}
                                     </button>
                                 ) : selectedOption === 'package' ? (
                                     <button
                                         disabled
                                         className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-500/50 to-pink-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
                                     >
-                                        Coming Soon
+                                        {t.comingSoon}
                                     </button>
                                 ) : (
                                     <button
                                         disabled
                                         className="w-full py-3 rounded-xl bg-gradient-to-r from-orange-500/50 to-red-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
                                     >
-                                        Coming Soon
+                                        {t.comingSoon}
                                     </button>
                                 )}
 
                                 <p className="text-center text-purple-300/60 text-xs mt-2">
-                                    Payment options will be available soon
+                                    {t.paymentSoon}
                                 </p>
                             </>
                         )}

@@ -404,8 +404,9 @@ function HomepagePricingSection() {
                       }`}
                   >
                     {pricing.option1_perBelt.belts.map(belt => {
-                      // Extract the color name from the belt string (e.g. "Yellow Belt" -> "Yellow")
-                      const beltColor = Object.keys(BELT_THEMES).find(color => belt.belt.includes(color)) || 'White';
+                      // Extract the color from belt code (e.g. "yellow" -> "Yellow")
+                      // Belt codes are lowercase English, so we match against BELT_THEMES keys
+                      const beltColor = Object.keys(BELT_THEMES).find(color => color.toLowerCase() === belt.code.toLowerCase()) || 'White';
                       const themeColor = BELT_THEMES[beltColor];
 
                       return (

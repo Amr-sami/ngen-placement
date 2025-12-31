@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Award, Info, Clock, BookOpen, Users, Star } from 'lucide-react'
 import { useLocale } from 'next-intl'
 import type { BeltLevel } from './types'
+import { getLocalizedBeltValue } from './types'
 import StatBox from './StatBox'
 
 interface BeltAchievementCardProps {
@@ -10,8 +11,16 @@ interface BeltAchievementCardProps {
 }
 
 export default function BeltAchievementCard({ belt, score }: BeltAchievementCardProps) {
-  const locale = useLocale()
+  const locale = useLocale() as 'en' | 'ar'
   const isRTL = locale === 'ar'
+
+  // Get localized values
+  const beltDisplayName = getLocalizedBeltValue(belt, 'beltName', locale)
+  const stageDisplay = getLocalizedBeltValue(belt, 'stage', locale)
+  const focusDisplay = getLocalizedBeltValue(belt, 'focus', locale)
+  const durationDisplay = getLocalizedBeltValue(belt, 'duration', locale)
+  const hoursDisplay = getLocalizedBeltValue(belt, 'totalHours', locale)
+  const classesDisplay = getLocalizedBeltValue(belt, 'totalClasses', locale)
 
   // Translations
   const translations = {
@@ -22,7 +31,7 @@ export default function BeltAchievementCard({ belt, score }: BeltAchievementCard
       duration: 'Duration',
       curriculum: 'Curriculum',
       structure: 'Structure',
-      aiMessage: (score: number, beltName: string) => 
+      aiMessage: (score: number, beltName: string) =>
         `Based on your score of ${score}, our AI suggests starting at the ${beltName} level to ensure you have a strong foundation before moving to complex projects.`
     },
     ar: {
@@ -32,12 +41,12 @@ export default function BeltAchievementCard({ belt, score }: BeltAchievementCard
       duration: 'المدة',
       curriculum: 'المنهج',
       structure: 'الهيكل',
-      aiMessage: (score: number, beltName: string) => 
+      aiMessage: (score: number, beltName: string) =>
         `بناءً على درجتك ${score}، يقترح الذكاء الاصطناعي لدينا البدء في مستوى ${beltName} لضمان حصولك على أساس قوي قبل الانتقال إلى مشاريع معقدة.`
     }
   }
 
-  const t = translations[locale as 'en' | 'ar'] || translations.en
+  const t = translations[locale] || translations.en
 
   return (
     <div className="bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-[2.5rem] shadow-2xl overflow-hidden mb-6 md:mb-10">
@@ -101,18 +110,10 @@ export default function BeltAchievementCard({ belt, score }: BeltAchievementCard
               ))}
             </div>
             <h3 className={`text-white text-2xl md:text-5xl font-black tracking-tight leading-none ${isRTL ? 'font-arabic' : ''}`}>
-              {isRTL ? (
-                <>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50">{t.belt}</span> {belt.belt}
-                </>
-              ) : (
-                <>
-                  {belt.belt} <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50">{t.belt}</span>
-                </>
-              )}
+              {beltDisplayName}
             </h3>
             <p className={`text-purple-200/70 font-bold mt-2 text-xs md:text-lg uppercase tracking-[0.3em] ${isRTL ? 'font-arabic' : ''}`}>
-              {isRTL ? `${t.stage} ${belt.stage}` : `${belt.stage} ${t.stage}`}
+              {isRTL ? `${t.stage} ${stageDisplay}` : `${stageDisplay} ${t.stage}`}
             </p>
           </div>
         </div>
@@ -128,7 +129,7 @@ export default function BeltAchievementCard({ belt, score }: BeltAchievementCard
               </span>
             </div>
             <p className={`text-white text-xl md:text-4xl font-extrabold leading-tight tracking-tight ${isRTL ? 'font-arabic' : ''}`}>
-              {belt.focus}
+              {focusDisplay}
             </p>
           </div>
 
@@ -137,19 +138,19 @@ export default function BeltAchievementCard({ belt, score }: BeltAchievementCard
             <StatBox
               icon={Clock}
               label={t.duration}
-              value={belt.duration}
+              value={durationDisplay}
               color="text-blue-400"
             />
             <StatBox
               icon={BookOpen}
               label={t.curriculum}
-              value={belt.totalHours}
+              value={hoursDisplay}
               color="text-green-400"
             />
             <StatBox
               icon={Users}
               label={t.structure}
-              value={belt.totalClasses}
+              value={classesDisplay}
               color="text-pink-400"
             />
           </div>
@@ -158,7 +159,7 @@ export default function BeltAchievementCard({ belt, score }: BeltAchievementCard
           <div className={`mt-8 md:mt-12 p-5 md:p-8 rounded-[2rem] bg-gradient-to-br from-white/5 to-transparent border border-white/10 relative group`}>
             <div className={`absolute top-0 w-12 h-1 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full ${isRTL ? 'right-8' : 'left-8'}`}></div>
             <p className={`text-slate-300 text-sm md:text-lg leading-relaxed italic ${isRTL ? 'font-arabic text-right' : ''}`}>
-              {isRTL ? '«' : '&ldquo;'}{t.aiMessage(score, belt.belt)}{isRTL ? '»' : '&rdquo;'}
+              {isRTL ? '«' : '&ldquo;'}{t.aiMessage(score, beltDisplayName)}{isRTL ? '»' : '&rdquo;'}
             </p>
           </div>
         </div>
