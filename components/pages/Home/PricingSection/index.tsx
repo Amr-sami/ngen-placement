@@ -51,8 +51,8 @@ function HomepagePricingSection() {
   const { status: sessionStatus } = useSession();
 
   const locale = (params?.locale as Locale) || 'en';
-  const dict = (MESSAGES[locale as 'en' | 'ar'] ?? MESSAGES.en) as any;
-  const t = dict?.pricing ?? MESSAGES.en?.pricing;
+  const dict = MESSAGES[locale as 'en' | 'ar'] ?? MESSAGES.en;
+  const t = dict.pricing ?? MESSAGES.en.pricing;
 
   const [pricing, setPricing] = useState<PricingResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -270,8 +270,8 @@ function HomepagePricingSection() {
                         key={pkg.packageLevel}
                         whileHover={{ scale: 1.02 }}
                         className={`relative bg-white rounded-[3.5rem] p-8 transition-all flex flex-col ${isFeatured
-                            ? 'border-4 border-[#2e165f] shadow-[0_20px_50px_rgba(46,22,95,0.15)] md:scale-110 z-20'
-                            : 'border-2 border-slate-100 shadow-xl opacity-90'
+                          ? 'border-4 border-[#2e165f] shadow-[0_20px_50px_rgba(46,22,95,0.15)] md:scale-110 z-20'
+                          : 'border-2 border-slate-100 shadow-xl opacity-90'
                           }`}
                       >
                         <motion.div
@@ -316,18 +316,18 @@ function HomepagePricingSection() {
                             >
                               <div
                                 className={`w-5 h-5 rounded-full flex items-center justify-center ${belt.status === 'passed'
-                                    ? 'bg-slate-200'
-                                    : belt.status === 'starting'
-                                      ? 'bg-green-500'
-                                      : 'bg-green-100'
+                                  ? 'bg-slate-200'
+                                  : belt.status === 'starting'
+                                    ? 'bg-green-500'
+                                    : 'bg-green-100'
                                   }`}
                               >
                                 <Check
                                   className={`w-3 h-3 stroke-[4px] ${belt.status === 'passed'
-                                      ? 'text-slate-400'
-                                      : belt.status === 'starting'
-                                        ? 'text-white'
-                                        : 'text-green-600'
+                                    ? 'text-slate-400'
+                                    : belt.status === 'starting'
+                                      ? 'text-white'
+                                      : 'text-green-600'
                                     }`}
                                 />
                               </div>
@@ -335,10 +335,10 @@ function HomepagePricingSection() {
                               <div className="flex-1">
                                 <span
                                   className={`text-sm font-bold ${belt.status === 'passed'
-                                      ? 'text-slate-400 line-through'
-                                      : belt.status === 'starting'
-                                        ? 'text-green-600'
-                                        : 'text-slate-500'
+                                    ? 'text-slate-400 line-through'
+                                    : belt.status === 'starting'
+                                      ? 'text-green-600'
+                                      : 'text-slate-500'
                                     }`}
                                 >
                                   {belt.name}

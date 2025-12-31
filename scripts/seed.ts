@@ -9,7 +9,10 @@
  */
 
 import mongoose from 'mongoose';
-import 'dotenv/config';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env.local
+dotenv.config({ path: '.env.local' });
 
 // Import models
 import Track from '../lib/models/Track';
