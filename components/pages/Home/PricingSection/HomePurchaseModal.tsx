@@ -174,7 +174,7 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
 
                                                 <button className="w-full py-4 bg-white text-[#2e165f] rounded-2xl font-black text-sm hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg">
                                                     <PackageIcon className="w-4 h-4" />
-                                                    SWITCH TO PACKAGE & SAVE
+                                                    SWITCH TO PACKAGE
                                                 </button>
                                             </div>
                                         </div>

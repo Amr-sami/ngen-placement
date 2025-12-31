@@ -135,9 +135,9 @@ function HomepagePricingSection() {
       setPurchaseItem({ type: 'package', data: data as PackagePricing });
       setShowPurchaseModal(true);
     } else {
-      // Find belt level info for styling
+      // Find belt level info for styling (use code for matching since belt name is localized)
       const beltData = data as BeltPricing;
-      const beltLevel = beltLevels.find(b => beltData.belt.includes(b.belt)) || null;
+      const beltLevel = beltLevels.find(b => b.belt.toLowerCase() === beltData.code.toLowerCase()) || null;
       setPurchaseItem({ type: 'belt', data: beltData, beltLevel });
       setShowPurchaseModal(true);
     }
