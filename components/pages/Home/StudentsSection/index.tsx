@@ -123,8 +123,8 @@ function HomepageStudentsSection() {
               {t('buttons.seeMoreStudents')}
             </Button>
 
-            {/* Desktop Arrows */}
-            <div className="hidden md:flex gap-2">
+            {/* Desktop Arrows - Keep same physical direction */}
+            <div className="hidden md:flex gap-2" dir="ltr">
               <button
                 onClick={() => scroll('left')}
                 className="p-3 rounded-full border border-slate-200 hover:bg-[#2e165f] hover:text-white transition-all"

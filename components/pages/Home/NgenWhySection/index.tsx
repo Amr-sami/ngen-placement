@@ -129,8 +129,8 @@ export default function EnhancedWhySection() {
 
             {/* Controls */}
             <div className="flex flex-col items-center gap-3 pt-2">
-              {/* Navigation Buttons */}
-              <div className="flex items-center gap-2">
+              {/* Navigation Buttons - Keep same physical direction in all locales */}
+              <div className="flex items-center gap-2" dir="ltr">
                 <button
                   onClick={prevCard}
                   onMouseEnter={() => setIsAutoPlaying(false)}
