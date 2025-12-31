@@ -1,0 +1,227 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+import { connectToDatabase } from '@/lib/mongodb';
+import Belt from '@/lib/models/Belt';
+import Order from '@/lib/models/Order';
+import {
+    initiatePayment,
+    isPaymobConfigured,
+    PaymobError,
+    BillingData,
+} from '@/lib/paymob';
+import { sendPaymentEmail, sendAdminEmail } from '@/lib/email/send';
+import { orderConfirmationTemplate } from '@/lib/email/templates/order-confirmation';
+import { adminNotificationTemplate, getAdminNotificationSubject } from '@/lib/email/templates/admin-notification';
+
+/**
+ * POST /api/orders/create
+ * 
+ * Create a new order and initiate Paymob payment flow
+ * 
+ * Request Body:
+ * - beltId: string (required) - MongoDB ObjectId of the belt to purchase
+ * - customerName: string (required) - Full name of the customer
+ * - customerEmail: string (required) - Customer email
+ * - customerPhone: string (required) - Customer phone number
+ * - paymentMethod: 'card' | 'wallet' (optional, default: 'card')
+ * - currency: 'EGP' | 'USD' (optional, default: 'EGP')
+ * 
+ * Response:
+ * - orderId: string - Local order ID
+ * - iframeUrl: string - Paymob payment iframe URL
+ * - amount: number - Order amount
+ * - currency: string - Currency code
+ */
+
+// Request validation schema
+const createOrderSchema = z.object({
+    beltId: z.string().min(1, 'Belt ID is required'),
+    customerName: z.string().min(2, 'Name must be at least 2 characters'),
+    customerEmail: z.string().email('Invalid email address'),
+    customerPhone: z.string().min(10, 'Phone must be at least 10 digits'),
+    paymentMethod: z.enum(['card', 'wallet']).optional().default('card'),
+    currency: z.enum(['EGP', 'USD']).optional().default('EGP'),
+    // Optional: if user is logged in
+    userId: z.string().optional(),
+});
+
+export async function POST(request: NextRequest) {
+    try {
+        // Check if Paymob is configured
+        if (!isPaymobConfigured()) {
+            return NextResponse.json(
+                {
+                    error: 'Payment gateway not configured',
+                    message: 'Paymob credentials are not set. Please configure the payment gateway.',
+                },
+                { status: 503 }
+            );
+        }
+
+        // Parse and validate request body
+        const body = await request.json();
+        const validationResult = createOrderSchema.safeParse(body);
+
+        if (!validationResult.success) {
+            return NextResponse.json(
+                {
+                    error: 'Validation failed',
+                    details: validationResult.error.flatten().fieldErrors,
+                },
+                { status: 400 }
+            );
+        }
+
+        const {
+            beltId,
+            customerName,
+            customerEmail,
+            customerPhone,
+            paymentMethod,
+            currency,
+            userId,
+        } = validationResult.data;
+
+        // Connect to database
+        await connectToDatabase();
+
+        // Fetch the belt/product
+        const belt = await Belt.findById(beltId).populate('trackId');
+
+        if (!belt) {
+            return NextResponse.json(
+                { error: 'Belt not found' },
+                { status: 404 }
+            );
+        }
+
+        // Calculate amount based on currency
+        const amount = currency === 'USD' ? belt.basePriceUSD : belt.basePriceEGP;
+        const amountCents = Math.round(amount * 100);
+
+        // Split customer name into first and last name
+        const nameParts = customerName.trim().split(' ');
+        const firstName = nameParts[0] || 'Customer';
+        const lastName = nameParts.slice(1).join(' ') || 'Customer';
+
+        // Prepare billing data for Paymob
+        const billingData: BillingData = {
+            first_name: firstName,
+            last_name: lastName,
+            email: customerEmail,
+            phone_number: customerPhone,
+            country: 'EG', // Default to Egypt
+        };
+
+        // Create local order (pending status)
+        const order = await Order.create({
+            userId: userId || undefined,
+            trackId: belt.trackId?._id,
+            beltId: belt._id,
+            amount,
+            currency,
+            status: 'pending',
+            paymentMethod,
+            customerName,
+            customerEmail,
+            customerPhone,
+            metadata: {
+                beltName: belt.name,
+                beltCode: belt.code,
+            },
+        });
+
+        // Initiate Paymob payment flow
+        const paymobResult = await initiatePayment({
+            amountCents,
+            currency,
+            merchantOrderId: order._id.toString(),
+            billingData,
+            paymentMethod,
+            items: [
+                {
+                    name: belt.name,
+                    amount_cents: amountCents,
+                    description: `NGen Schools - ${belt.name} Belt`,
+                    quantity: 1,
+                },
+            ],
+        });
+
+        // Update order with Paymob order ID
+        order.paymobOrderId = paymobResult.paymobOrderId.toString();
+        await order.save();
+
+        // Send order confirmation email (async, don't wait)
+        sendPaymentEmail({
+            to: customerEmail,
+            subject: `Order Confirmation - #${order._id.toString().slice(-8)}`,
+            html: orderConfirmationTemplate({
+                customerName,
+                orderId: order._id.toString().slice(-8),
+                productName: belt.name,
+                amount,
+                currency,
+                orderDate: new Date(),
+            }),
+        }).catch(err => console.error('Failed to send confirmation email:', err));
+
+        // Notify admin (async, don't wait)
+        sendAdminEmail({
+            subject: getAdminNotificationSubject('new_order', order._id.toString().slice(-8)),
+            html: adminNotificationTemplate({
+                type: 'new_order',
+                orderId: order._id.toString().slice(-8),
+                customerName,
+                customerEmail,
+                customerPhone,
+                productName: belt.name,
+                amount,
+                currency,
+                timestamp: new Date(),
+            }),
+        }).catch(err => console.error('Failed to send admin notification:', err));
+
+        // Return success response
+        return NextResponse.json({
+            success: true,
+            orderId: order._id.toString(),
+            paymobOrderId: paymobResult.paymobOrderId,
+            iframeUrl: paymobResult.iframeUrl,
+            amount,
+            currency,
+        });
+
+    } catch (error) {
+        console.error('Order creation error:', error);
+
+        if (error instanceof PaymobError) {
+            return NextResponse.json(
+                {
+                    error: 'Payment gateway error',
+                    message: error.message,
+                    details: error.responseData,
+                },
+                { status: 502 }
+            );
+        }
+
+        if (error instanceof z.ZodError) {
+            return NextResponse.json(
+                {
+                    error: 'Validation error',
+                    details: error.flatten().fieldErrors,
+                },
+                { status: 400 }
+            );
+        }
+
+        return NextResponse.json(
+            {
+                error: 'Failed to create order',
+                message: error instanceof Error ? error.message : 'Unknown error',
+            },
+            { status: 500 }
+        );
+    }
+}
