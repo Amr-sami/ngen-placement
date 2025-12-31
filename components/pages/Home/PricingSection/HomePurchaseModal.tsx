@@ -1,8 +1,9 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Trophy, Check, Package as PackageIcon, Zap } from 'lucide-react';
+import { useParams } from 'next/navigation';
 import { formatPrice } from '@/lib/hooks/useUserLocation';
 import type { BeltLevel } from '@/components/pages/PlacementTest/Results/types';
 import type { PricingResponse, BeltPricing, PackagePricing, PackageBeltInfo } from '@/app/api/pricing/route';
@@ -20,7 +21,63 @@ type Props = {
     currency: 'USD' | 'EGP';
 };
 
+// Translations
+const translations = {
+    en: {
+        secureBundle: 'SECURE YOUR BUNDLE',
+        levelUp: 'LEVEL UP',
+        bestValue: 'Best Value Offer',
+        includes: 'Includes',
+        levelsOfMastery: 'Levels of Mastery',
+        save: 'Save',
+        today: 'Today',
+        whatsIncluded: "What's Included",
+        start: 'Start',
+        recommended: 'Recommended',
+        dontMiss: "Don't miss this offer!",
+        upgradeTo: 'Upgrade to',
+        getLevels: 'Get',
+        forMassiveDiscount: 'levels for a massive discount. Master the complete track and save big.',
+        packagePrice: 'Package Price',
+        youSave: 'You Save',
+        switchToPackage: 'SWITCH TO PACKAGE',
+        readyToMaster: 'Ready to master this level? Proceed below.',
+        paymentComingSoon: 'Payment Coming Soon...',
+        secureEncryption: 'Secure 256-bit SSL Encryption',
+    },
+    ar: {
+        secureBundle: 'احصل على الباقة',
+        levelUp: 'ارتقِ بمستواك',
+        bestValue: 'أفضل عرض',
+        includes: 'يشمل',
+        levelsOfMastery: 'مستويات',
+        save: 'وفّر',
+        today: 'اليوم',
+        whatsIncluded: 'ما يشمله العرض',
+        start: 'ابدأ',
+        recommended: 'موصى به',
+        dontMiss: 'لا تفوّت هذا العرض!',
+        upgradeTo: 'ترقية إلى',
+        getLevels: 'احصل على',
+        forMassiveDiscount: 'مستويات بخصم كبير. أتقن المسار الكامل ووفّر أكثر.',
+        packagePrice: 'سعر الباقة',
+        youSave: 'توفيرك',
+        switchToPackage: 'التحويل للباقة',
+        readyToMaster: 'مستعد لإتقان هذا المستوى؟ تابع أدناه.',
+        paymentComingSoon: 'الدفع قريباً...',
+        secureEncryption: 'تشفير SSL آمن 256-bit',
+    }
+};
+
 export default function HomePurchaseModal({ isOpen, onClose, item, pricing, currency }: Props) {
+    const params = useParams();
+    const locale = (params?.locale as 'en' | 'ar') || 'en';
+    const isRTL = locale === 'ar';
+    const t = translations[locale] || translations.en;
+
+    // State to switch between belt and package view
+    const [viewPackage, setViewPackage] = useState(false);
+
     if (!isOpen || !item) return null;
 
     // Find upsell package if user selected a single belt
@@ -28,10 +85,14 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
         ? pricing.option2_packages.find(p => p.belts.some(b => b.code === item.data.code))
         : null;
 
-    // Determine what to display as the main "Upgrade" or "Buy" target
-    // If package is selected, that's the target.
-    // If belt is selected, we show belt, but maybe the Upsell is the focused action? 
-    // The user said: "buytin as single belt need to suggest to buy the package".
+    // Handle switch to package
+    const handleSwitchToPackage = () => {
+        setViewPackage(true);
+    };
+
+    // Determine what to show - package view or belt view
+    const showingPackage = item.type === 'package' || (item.type === 'belt' && viewPackage && upsellPackage);
+    const currentPackage = item.type === 'package' ? item.data : upsellPackage;
 
     return (
         <AnimatePresence>
@@ -51,7 +112,8 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="relative w-full max-w-2xl bg-[#FDFDFF] rounded-[3rem] shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
+                        className={`relative w-full max-w-2xl bg-[#FDFDFF] rounded-[3rem] shadow-2xl overflow-hidden max-h-[90vh] flex flex-col ${isRTL ? 'font-arabic' : ''}`}
+                        dir={isRTL ? 'rtl' : 'ltr'}
                     >
                         {/* Header */}
                         <div className="relative h-24 bg-[#2e165f] flex items-center justify-center overflow-hidden shrink-0">
@@ -60,11 +122,11 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-orange-500 rounded-full blur-3xl translate-x-10 translate-y-10"></div>
                             </div>
                             <h2 className="relative z-10 text-white font-black text-2xl italic tracking-wider">
-                                {item.type === 'package' ? 'SECURE YOUR BUNDLE' : 'LEVEL UP'}
+                                {showingPackage ? t.secureBundle : t.levelUp}
                             </h2>
                             <button
                                 onClick={onClose}
-                                className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors bg-white/10 p-2 rounded-full backdrop-blur-sm"
+                                className={`absolute top-6 ${isRTL ? 'left-6' : 'right-6'} text-white/50 hover:text-white transition-colors bg-white/10 p-2 rounded-full backdrop-blur-sm`}
                             >
                                 <X className="w-5 h-5" />
                             </button>
@@ -74,36 +136,36 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                         <div className="p-8 md:p-10 overflow-y-auto custom-scrollbar">
 
                             {/* --- PACKAGE VIEW --- */}
-                            {item.type === 'package' && (
+                            {showingPackage && currentPackage && (
                                 <div className="space-y-8">
                                     <div className="text-center">
                                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-600 font-bold text-xs uppercase tracking-widest mb-4">
                                             <Zap className="w-4 h-4 fill-orange-600" />
-                                            Best Value Offer
+                                            {t.bestValue}
                                         </div>
-                                        <h3 className="text-3xl font-black text-[#2e165f] mb-2">{item.data.name}</h3>
-                                        <p className="text-slate-500 font-medium">Includes {item.data.belts.length} Levels of Mastery</p>
+                                        <h3 className="text-3xl font-black text-[#2e165f] mb-2">{currentPackage.name}</h3>
+                                        <p className="text-slate-500 font-medium">{t.includes} {currentPackage.belts.length} {t.levelsOfMastery}</p>
                                     </div>
 
                                     {/* Price Tag */}
                                     <div className="bg-slate-50 rounded-3xl p-6 text-center border border-slate-100">
                                         <div className="flex items-center justify-center gap-3 mb-1">
                                             <span className="text-5xl font-black text-[#2e165f]">
-                                                {formatPrice(item.data.skippedBeltsValue > 0 ? item.data.adjustedFinalPrice : item.data.finalPrice, currency)}
+                                                {formatPrice(currentPackage.skippedBeltsValue > 0 ? currentPackage.adjustedFinalPrice : currentPackage.finalPrice, currency)}
                                             </span>
                                             <span className="text-lg text-slate-400 line-through decoration-red-400 decoration-2 font-bold">
-                                                {formatPrice(item.data.skippedBeltsValue > 0 ? item.data.adjustedBaseTotal : item.data.baseTotal, currency)}
+                                                {formatPrice(currentPackage.skippedBeltsValue > 0 ? currentPackage.adjustedBaseTotal : currentPackage.baseTotal, currency)}
                                             </span>
                                         </div>
                                         <p className="text-green-500 font-black text-sm uppercase tracking-wide">
-                                            Save {Math.round(item.data.discountPercent)}% Today
+                                            {t.save} {Math.round(currentPackage.discountPercent)}% {t.today}
                                         </p>
                                     </div>
 
                                     {/* What's Included */}
                                     <div className="space-y-3">
-                                        <p className="text-sm font-black text-slate-400 uppercase tracking-widest mb-2">What&apos;s Included</p>
-                                        {item.data.belts.map((belt: PackageBeltInfo) => (
+                                        <p className="text-sm font-black text-slate-400 uppercase tracking-widest mb-2">{t.whatsIncluded}</p>
+                                        {currentPackage.belts.map((belt: PackageBeltInfo) => (
                                             <div key={belt.code} className={`flex items-center gap-3 p-3 rounded-2xl ${belt.status === 'passed' ? 'bg-slate-100 opacity-60' : 'bg-white border border-slate-100 shadow-sm'}`}>
                                                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${belt.status === 'passed' ? 'bg-slate-300' : 'bg-[#2e165f]/10'}`}>
                                                     <Check className={`w-4 h-4 ${belt.status === 'passed' ? 'text-white' : 'text-[#2e165f]'}`} />
@@ -111,7 +173,7 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                                                 <span className={`font-bold ${belt.status === 'passed' ? 'text-slate-400 line-through' : 'text-[#2e165f]'}`}>
                                                     {belt.name}
                                                 </span>
-                                                {belt.status === 'starting' && <span className="text-[10px] bg-green-100 text-green-600 px-2 py-1 rounded-lg font-bold">Start</span>}
+                                                {belt.status === 'starting' && <span className="text-[10px] bg-green-100 text-green-600 px-2 py-1 rounded-lg font-bold">{t.start}</span>}
                                             </div>
                                         ))}
                                     </div>
@@ -120,18 +182,18 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
 
 
                             {/* --- SINGLE BELT VIEW --- */}
-                            {item.type === 'belt' && (
+                            {item.type === 'belt' && !viewPackage && (
                                 <div className="space-y-8">
-                                    <div className="flex items-start gap-6">
+                                    <div className={`flex items-start gap-6 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                         <div
                                             className="w-20 h-20 rounded-3xl flex items-center justify-center shrink-0 shadow-lg text-white"
                                             style={{ backgroundColor: item.beltLevel?.color || '#333' }}
                                         >
                                             <Trophy className="w-10 h-10" />
                                         </div>
-                                        <div>
+                                        <div className={isRTL ? 'text-right' : ''}>
                                             <h3 className="text-2xl font-black text-[#2e165f] mb-1">{item.data.belt}</h3>
-                                            <div className="flex items-baseline gap-2">
+                                            <div className={`flex items-baseline gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                                 <span className="text-3xl font-black text-[#2e165f]">
                                                     {formatPrice(item.data.finalPrice, currency)}
                                                 </span>
@@ -148,33 +210,36 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                                     {upsellPackage && (
                                         <div className="relative overflow-hidden bg-gradient-to-br from-[#2e165f] to-[#4c249f] rounded-[2.5rem] p-6 text-white shadow-xl shadow-purple-900/20">
                                             <div className="relative z-10">
-                                                <div className="flex items-center gap-2 mb-3">
+                                                <div className={`flex items-center gap-2 mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                                     <div className="bg-yellow-400 text-[#2e165f] text-[10px] font-black px-2 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1">
                                                         <Zap className="w-3 h-3 fill-[#2e165f]" />
-                                                        Recommended
+                                                        {t.recommended}
                                                     </div>
-                                                    <span className="text-purple-200 text-sm font-bold">Don&apos;t miss this offer!</span>
+                                                    <span className="text-purple-200 text-sm font-bold">{t.dontMiss}</span>
                                                 </div>
 
-                                                <h4 className="text-xl font-black mb-2">Upgrade to {upsellPackage.name}</h4>
+                                                <h4 className="text-xl font-black mb-2">{t.upgradeTo} {upsellPackage.name}</h4>
                                                 <p className="text-purple-200 text-sm mb-4 leading-relaxed">
-                                                    Get <strong>{upsellPackage.belts.length} levels</strong> for a massive discount. Master the complete track and save big.
+                                                    {t.getLevels} <strong>{upsellPackage.belts.length}</strong> {t.forMassiveDiscount}
                                                 </p>
 
-                                                <div className="flex items-center justify-between bg-white/10 rounded-2xl p-4 backdrop-blur-sm border border-white/10 mb-5">
+                                                <div className={`flex items-center justify-between bg-white/10 rounded-2xl p-4 backdrop-blur-sm border border-white/10 mb-5`}>
                                                     <div>
-                                                        <p className="text-xs text-purple-200 uppercase tracking-wide font-bold">Package Price</p>
+                                                        <p className="text-xs text-purple-200 uppercase tracking-wide font-bold">{t.packagePrice}</p>
                                                         <p className="text-2xl font-black text-white">{formatPrice(upsellPackage.skippedBeltsValue > 0 ? upsellPackage.adjustedFinalPrice : upsellPackage.finalPrice, currency)}</p>
                                                     </div>
-                                                    <div className="text-right">
-                                                        <p className="text-xs text-purple-200 uppercase tracking-wide font-bold">You Save</p>
+                                                    <div className={isRTL ? 'text-left' : 'text-right'}>
+                                                        <p className="text-xs text-purple-200 uppercase tracking-wide font-bold">{t.youSave}</p>
                                                         <p className="text-xl font-black text-green-400">{Math.round(upsellPackage.discountPercent)}%</p>
                                                     </div>
                                                 </div>
 
-                                                <button className="w-full py-4 bg-white text-[#2e165f] rounded-2xl font-black text-sm hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg">
+                                                <button
+                                                    onClick={handleSwitchToPackage}
+                                                    className="w-full py-4 bg-white text-[#2e165f] rounded-2xl font-black text-sm hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg"
+                                                >
                                                     <PackageIcon className="w-4 h-4" />
-                                                    SWITCH TO PACKAGE
+                                                    {t.switchToPackage}
                                                 </button>
                                             </div>
                                         </div>
@@ -182,7 +247,7 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
 
                                     {!upsellPackage && (
                                         <p className="text-slate-500 text-sm">
-                                            Ready to master this level? Proceed below.
+                                            {t.readyToMaster}
                                         </p>
                                     )}
                                 </div>
@@ -196,10 +261,10 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                                 disabled
                                 className="w-full py-5 rounded-2xl bg-[#2e165f] text-white font-black text-base shadow-xl shadow-purple-900/10 flex items-center justify-center gap-2 opacity-90 cursor-not-allowed"
                             >
-                                Payment Coming Soon...
+                                {t.paymentComingSoon}
                             </button>
                             <p className="text-center text-slate-400 text-xs font-bold mt-4">
-                                Secure 256-bit SSL Encryption
+                                {t.secureEncryption}
                             </p>
                         </div>
 
