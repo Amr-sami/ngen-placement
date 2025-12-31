@@ -42,6 +42,8 @@ const createOrderSchema = z.object({
     customerPhone: z.string().min(10, 'Phone must be at least 10 digits'),
     paymentMethod: z.enum(['card', 'wallet']).optional().default('card'),
     currency: z.enum(['EGP', 'USD']).optional().default('EGP'),
+    // Country code for billing (detected from user's location)
+    countryCode: z.string().length(2).optional().default('EG'),
     // Optional: if user is logged in
     userId: z.string().optional(),
 });
@@ -80,6 +82,7 @@ export async function POST(request: NextRequest) {
             customerPhone,
             paymentMethod,
             currency,
+            countryCode,
             userId,
         } = validationResult.data;
 
@@ -105,13 +108,13 @@ export async function POST(request: NextRequest) {
         const firstName = nameParts[0] || 'Customer';
         const lastName = nameParts.slice(1).join(' ') || 'Customer';
 
-        // Prepare billing data for Paymob
+        // Prepare billing data for Paymob (use detected country code)
         const billingData: BillingData = {
             first_name: firstName,
             last_name: lastName,
             email: customerEmail,
             phone_number: customerPhone,
-            country: 'EG', // Default to Egypt
+            country: countryCode.toUpperCase(), // Use country from request
         };
 
         // Create local order (pending status)
