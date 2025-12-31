@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 import SignupStep1 from './SignupStep1';
 import SignupStep2 from './SignupStep2';
 

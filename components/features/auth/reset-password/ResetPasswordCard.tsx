@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { AuthLogo } from '../shared/AuthLogo';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 interface ResetPasswordCardProps {
     locale: string;

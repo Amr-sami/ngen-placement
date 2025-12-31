@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 interface ForgetPasswordFormProps {
   locale: string;

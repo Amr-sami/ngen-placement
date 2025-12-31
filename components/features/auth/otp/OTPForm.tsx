@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useRef, useEffect, useTransition } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 interface OTPFormProps {
   verifyAction: (formData: FormData) => Promise<{ ok: boolean }>;

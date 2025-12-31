@@ -3,7 +3,7 @@
 import { ChangeEvent, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 interface SignupStep2Props {
   email: string;

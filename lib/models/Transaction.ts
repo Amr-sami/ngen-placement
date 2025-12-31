@@ -63,7 +63,6 @@ const TransactionSchema = new Schema<ITransaction>(
 
 // Indexes for fast lookups
 TransactionSchema.index({ orderId: 1 });
-TransactionSchema.index({ paymobTxnId: 1 }, { unique: true });
 TransactionSchema.index({ createdAt: -1 });
 
 const Transaction: Model<ITransaction> =

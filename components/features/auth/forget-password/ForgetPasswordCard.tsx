@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { ForgetPasswordForm } from './ForgetPasswordForm';
 import { AuthLogo } from '../shared/AuthLogo';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 interface ForgetPasswordCardProps {
   locale: string;

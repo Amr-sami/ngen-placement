@@ -3,7 +3,7 @@
 import React from 'react';
 import Logo from '../Logo';
 import { useRouter } from 'next/navigation';
-import { useLocale } from '@/lib/useRTL';
+import { useLocale } from '@/hooks/useRTL';
 import { useTranslations } from 'next-intl';
 
 interface ICallToActionProps {

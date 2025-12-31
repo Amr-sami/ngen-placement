@@ -97,7 +97,6 @@ const OrderSchema = new Schema<IOrder>(
 OrderSchema.index({ customerEmail: 1 });
 OrderSchema.index({ status: 1 });
 OrderSchema.index({ createdAt: -1 });
-OrderSchema.index({ paymobOrderId: 1 }, { unique: true, sparse: true });
 OrderSchema.index({ userId: 1 });
 
 const Order: Model<IOrder> =

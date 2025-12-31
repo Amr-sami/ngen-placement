@@ -9,7 +9,7 @@ import { getContactRoute, getPlacementTestRoute } from '@/lib/routes';
 import type { Locale } from '@/i18n';
 import { Tag, Package, Check, Zap, Users, Trophy, Shield } from 'lucide-react';
 import type { PricingResponse, PackagePricing, BeltPricing } from '@/app/api/pricing/route';
-import { formatPrice } from '@/lib/hooks/useUserLocation';
+import { formatPrice } from '@/hooks/useUserLocation';
 import { motion, AnimatePresence } from 'framer-motion';
 import HomePurchaseModal, { type PurchaseItem } from './HomePurchaseModal';
 import { beltLevels } from '@/components/pages/PlacementTest/Results/types';

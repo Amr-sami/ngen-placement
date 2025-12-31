@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { getTrackRoute } from "@/lib/routes";
 import type { Locale } from '@/i18n';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 type Props = {
   image: string;

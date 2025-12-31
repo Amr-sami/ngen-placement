@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/sheet';
 import { X } from 'lucide-react';
 import { sendEmail } from '@/lib/resend';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 import { useTranslations } from 'next-intl';
 
 interface ContactModalProps {

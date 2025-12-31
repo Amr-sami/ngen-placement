@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Trophy, Check, Package as PackageIcon, Zap } from 'lucide-react';
 import { useParams } from 'next/navigation';
-import { formatPrice } from '@/lib/hooks/useUserLocation';
+import { formatPrice } from '@/hooks/useUserLocation';
 import type { BeltLevel } from '@/components/pages/PlacementTest/Results/types';
 import type { PricingResponse, BeltPricing, PackagePricing, PackageBeltInfo } from '@/app/api/pricing/route';
 

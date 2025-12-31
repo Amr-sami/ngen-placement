@@ -7,7 +7,7 @@ import { X, Sparkles, Tag, Package, MessageCircle } from 'lucide-react'
 import { useLocale } from 'next-intl'
 import type { BeltLevel } from './types'
 import { beltLevels, getLocalizedBeltValue } from './types'
-import { formatPrice } from '@/lib/hooks/useUserLocation'
+import { formatPrice } from '@/hooks/useUserLocation'
 import type { PricingResponse } from '@/app/api/pricing/route'
 
 interface PurchaseCardProps {

@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NGen Learning Platform (LMS)
 
-## Getting Started
+![NGen Logo](/public/assets/images/logo.png)
 
-First, run the development server:
+A comprehensive Learning Management System (LMS) built for the next generation of learners, featuring bilingual support (English/Arabic), gamified progression (Belts/Tracks), and integrated payments.
 
+## 📚 Documentation
+
+Detailed documentation is available in the `docs/` folder:
+
+*   [**📁 Project Structure**](docs/PROJECT_STRUCTURE.md): Overview of folders, components, and code organization.
+*   [**💳 Payment Integration**](docs/PAYMENT.md): Guide to Paymob integration, flows, and webhooks.
+*   [**🌍 Localization (i18n)**](docs/LOCALIZATION.md): How we handle bilingual content and RTL support.
+
+## 🚀 Getting Started
+
+### Prerequisites
+*   Node.js 18+
+*   MongoDB Instance
+*   Paymob Account (for payments)
+
+### 1. Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Environment Setup
+Copy `.env.local.example` (if available) or create `.env.local` with the following:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Database
+MONGODB_URI=mongodb+srv://...
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Auth
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=...
 
-## Learn More
+# Payments (Paymob)
+PAYMOB_API_KEY=...
+PAYMOB_INTEGRATION_ID_CARD=...
+PAYMOB_INTEGRATION_ID_WALLET=...
+PAYMOB_IFRAME_ID=...
+PAYMOB_HMAC_SECRET=...
 
-To learn more about Next.js, take a look at the following resources:
+# Email (Resend)
+RESEND_API_KEY=...
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Run Development Server
+```bash
+npm run dev
+```
+Access the app at `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗 Tech Stack
 
-## Deploy on Vercel
+*   **Framework**: Next.js 15 (App Router)
+*   **Language**: TypeScript
+*   **Database**: MongoDB (Mongoose)
+*   **Styling**: Tailwind CSS + Shadcn/ui
+*   **Auth**: NextAuth.js
+*   **i18n**: next-intl
+*   **Payments**: Paymob
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Key Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🥋 Gamified Tracks & Belts
+Students progress through "Tracks" (e.g., Robotics, AI), earning "Belts" (Yellow, Orange, Green, etc.).
+*   Data is seeded via `scripts/seed.ts`.
+*   Pricing varies per belt and package.
+
+### 📝 Placement Test
+New users take a placement test to determine their starting level.
+*   Engine: Custom logic in `api/placement-test`.
+*   Result: Recommends a specific Belt/Track.
+
+### 💰 Payment & Checkout
+(See [Payment Docs](docs/PAYMENT.md))
+*   Supports Cards & Wallets.
+*   Multi-currency (EGP for Egypt, USD for others).
+*   Localized checkout experience.
+
+---
+**Maintained by NGen Team**

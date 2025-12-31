@@ -3,7 +3,7 @@
 import { ChangeEvent } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 import type { JoinType } from './SignupForm';
 
 interface SignupStep1Props {

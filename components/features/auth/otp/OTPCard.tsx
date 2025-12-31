@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { OTPForm } from './OTPForm';
 import { AuthLogo } from '../shared/AuthLogo';
-import { useRTL } from '@/lib/useRTL';
+import { useRTL } from '@/hooks/useRTL';
 
 interface OTPCardProps {
   verifyAction: (formData: FormData) => Promise<{ ok: boolean }>;
