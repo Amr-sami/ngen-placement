@@ -1,12 +1,13 @@
 import mongoose, { Schema, Document, Model } from 'mongoose';
+import { LocalizedString, LocalizedStringSchemaDefinition } from '../localization';
 
 export interface IBelt extends Document {
     _id: mongoose.Types.ObjectId;
     trackId: mongoose.Types.ObjectId;
-    name: string;
+    name: LocalizedString;
     code: string;
     order: number;
-    description?: string;
+    description?: LocalizedString;
     minScoreToStart?: number;
     basePriceEGP: number;
     basePriceUSD: number;
@@ -24,9 +25,8 @@ const BeltSchema = new Schema<IBelt>(
             required: [true, 'Track ID is required'],
         },
         name: {
-            type: String,
+            type: LocalizedStringSchemaDefinition,
             required: [true, 'Belt name is required'],
-            trim: true,
         },
         code: {
             type: String,
@@ -39,8 +39,7 @@ const BeltSchema = new Schema<IBelt>(
             required: [true, 'Belt order is required'],
         },
         description: {
-            type: String,
-            trim: true,
+            type: LocalizedStringSchemaDefinition,
         },
         minScoreToStart: {
             type: Number,

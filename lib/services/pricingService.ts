@@ -4,13 +4,15 @@ import User from '@/lib/models/User';
 import { isEgypt } from '@/lib/geoLocation';
 import { PricingResponse, BeltPricing, PackagePricing, PackageBeltInfo } from '@/app/api/pricing/route';
 import connectDB from '@/lib/mongodb';
+import { getLocalizedValue, Locale } from '@/lib/localization';
 
 // Re-exporting interfaces here for clarity if needed, or keeping them in route.ts and importing
 export class PricingService {
 
     static async getPricingForUser(
         email: string | null | undefined,
-        countryCode: string
+        countryCode: string,
+        locale: Locale = 'en'
     ): Promise<PricingResponse> {
         await connectDB();
 
@@ -51,11 +53,16 @@ export class PricingService {
         const perBeltConfig = pricingConfigs.find(c => c.configType === 'perBelt');
         const perBeltDiscount = perBeltConfig ? (perBeltConfig[discountField] as number) : 50;
 
+        // Helper to get localized belt name
+        const getBeltName = (belt: typeof uniqueBelts[0]): string => {
+            return getLocalizedValue(belt.name, locale);
+        };
+
         let option1Belts: BeltPricing[] = uniqueBelts.map(belt => {
             const basePrice = (belt[priceField] as number) || 0;
             const finalPrice = Math.round(basePrice * (1 - perBeltDiscount / 100));
             return {
-                belt: belt.name,
+                belt: getBeltName(belt),
                 code: belt.code.toLowerCase(),
                 order: belt.order,
                 packageLevel: belt.packageLevel,
@@ -71,7 +78,8 @@ export class PricingService {
         if (hasTakenTest && recommendedBelt) {
             const matchedBelt = option1Belts.find(
                 b => b.belt.toLowerCase() === recommendedBelt.toLowerCase() ||
-                    b.belt.toLowerCase().includes(recommendedBelt.toLowerCase())
+                    b.belt.toLowerCase().includes(recommendedBelt.toLowerCase()) ||
+                    b.code === recommendedBelt.toLowerCase().replace(' belt', '').trim()
             );
             if (matchedBelt) {
                 recommendedPackageLevel = matchedBelt.packageLevel;
@@ -82,7 +90,8 @@ export class PricingService {
         if (isAuthenticated && hasTakenTest && recommendedBelt) {
             option1Belts = option1Belts.filter(
                 b => b.belt.toLowerCase() === recommendedBelt.toLowerCase() ||
-                    b.belt.toLowerCase().includes(recommendedBelt.toLowerCase())
+                    b.belt.toLowerCase().includes(recommendedBelt.toLowerCase()) ||
+                    b.code === recommendedBelt.toLowerCase().replace(' belt', '').trim()
             );
         }
 
@@ -115,7 +124,7 @@ export class PricingService {
                     }
                 }
                 return {
-                    name: b.name,
+                    name: getBeltName(b),
                     code: b.code.toLowerCase(),
                     order: b.order,
                     price: beltPrice,
@@ -130,8 +139,11 @@ export class PricingService {
             const adjustedFinalPrice = Math.round(adjustedBaseTotal * (1 - discountPercent / 100));
             const showAsSingleBelt = remainingBelts.length === 1;
 
+            // Get localized package name
+            const packageName = getLocalizedValue(config.name, locale);
+
             return {
-                name: config.name,
+                name: packageName,
                 packageLevel: config.packageLevel || '',
                 belts: beltInfoList,
                 baseTotal,
@@ -153,6 +165,9 @@ export class PricingService {
 
         // 7. Option 3: Organization
         const orgConfig = pricingConfigs.find(c => c.configType === 'organization');
+        const orgName = orgConfig
+            ? getLocalizedValue(orgConfig.name, locale)
+            : (locale === 'ar' ? 'المؤسسات / المدارس' : 'Organizations / Schools');
 
         return {
             currency,
@@ -164,7 +179,7 @@ export class PricingService {
             },
             option2_packages: option2Packages,
             option3_organization: {
-                name: orgConfig?.name || 'Organizations / Schools',
+                name: orgName,
                 contactUs: true,
                 hidden: isAuthenticated,
             },

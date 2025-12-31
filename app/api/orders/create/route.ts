@@ -12,6 +12,7 @@ import {
 import { sendPaymentEmail, sendAdminEmail } from '@/lib/email/send';
 import { orderConfirmationTemplate } from '@/lib/email/templates/order-confirmation';
 import { adminNotificationTemplate, getAdminNotificationSubject } from '@/lib/email/templates/admin-notification';
+import { getLocalizedValue } from '@/lib/localization';
 
 /**
  * POST /api/orders/create
@@ -126,10 +127,13 @@ export async function POST(request: NextRequest) {
             customerEmail,
             customerPhone,
             metadata: {
-                beltName: belt.name,
+                beltName: getLocalizedValue(belt.name, 'en'), // Store English name in records
                 beltCode: belt.code,
             },
         });
+
+        // Get belt name in English for payment (Paymob needs consistent format)
+        const beltNameEn = getLocalizedValue(belt.name, 'en');
 
         // Initiate Paymob payment flow
         const paymobResult = await initiatePayment({
@@ -140,9 +144,9 @@ export async function POST(request: NextRequest) {
             paymentMethod,
             items: [
                 {
-                    name: belt.name,
+                    name: beltNameEn,
                     amount_cents: amountCents,
-                    description: `NGen Schools - ${belt.name} Belt`,
+                    description: `NGen Schools - ${beltNameEn} Belt`,
                     quantity: 1,
                 },
             ],
@@ -159,7 +163,7 @@ export async function POST(request: NextRequest) {
             html: orderConfirmationTemplate({
                 customerName,
                 orderId: order._id.toString().slice(-8),
-                productName: belt.name,
+                productName: beltNameEn,
                 amount,
                 currency,
                 orderDate: new Date(),
@@ -175,7 +179,7 @@ export async function POST(request: NextRequest) {
                 customerName,
                 customerEmail,
                 customerPhone,
-                productName: belt.name,
+                productName: beltNameEn,
                 amount,
                 currency,
                 timestamp: new Date(),

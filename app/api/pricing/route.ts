@@ -70,6 +70,9 @@ export async function GET(request: NextRequest) {
         const searchParams = request.nextUrl.searchParams;
         let countryCode = searchParams.get('country')?.toUpperCase() || '';
 
+        // Get locale from query param (defaults to 'en')
+        const locale = (searchParams.get('locale') === 'ar' ? 'ar' : 'en') as 'en' | 'ar';
+
         // If no country param, detect from IP
         if (!countryCode) {
             const ip = getIPFromHeaders(request.headers);
@@ -82,7 +85,7 @@ export async function GET(request: NextRequest) {
             countryCode = 'EG';
         }
 
-        const response = await PricingService.getPricingForUser(email, countryCode);
+        const response = await PricingService.getPricingForUser(email, countryCode, locale);
 
         return NextResponse.json(response);
     } catch (error) {

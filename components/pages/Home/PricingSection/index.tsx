@@ -85,8 +85,12 @@ function HomepagePricingSection() {
   useEffect(() => {
     const fetchPricing = async () => {
       try {
-        // Pass country override if present in URL
-        const apiUrl = countryOverride ? `/api/pricing?country=${countryOverride}` : '/api/pricing';
+        // Build API URL with country override and locale
+        const params = new URLSearchParams();
+        if (countryOverride) params.set('country', countryOverride);
+        params.set('locale', locale);
+        const apiUrl = `/api/pricing?${params.toString()}`;
+
         const response = await fetch(apiUrl);
         if (response.ok) {
           const data = await response.json();
@@ -111,7 +115,7 @@ function HomepagePricingSection() {
     };
     fetchPricing();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sessionStatus, countryOverride]); // Refetch when session or country changes
+  }, [sessionStatus, countryOverride, locale]); // Refetch when session, country, or locale changes
 
   const currency = pricing?.currency || 'USD';
 
@@ -188,9 +192,8 @@ function HomepagePricingSection() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as 'perBelt' | 'packages' | 'organization')}
-                className={`flex items-center gap-2 px-6 py-3 rounded-[2rem] text-sm font-black transition-all duration-500 ${
-                  activeTab === tab.id ? 'bg-[#2e165f] text-white shadow-lg' : 'text-slate-400 hover:bg-slate-50'
-                }`}
+                className={`flex items-center gap-2 px-6 py-3 rounded-[2rem] text-sm font-black transition-all duration-500 ${activeTab === tab.id ? 'bg-[#2e165f] text-white shadow-lg' : 'text-slate-400 hover:bg-slate-50'
+                  }`}
               >
                 <tab.icon className="w-4 h-4" />
                 {tab.label}
@@ -210,9 +213,8 @@ function HomepagePricingSection() {
               {/* --- Packages Tab --- */}
               {activeTab === 'packages' && pricing && (
                 <div
-                  className={`grid gap-8 items-center ${
-                    pricing.option2_packages.length === 1 ? 'grid-cols-1 max-w-md mx-auto' : 'grid-cols-1 md:grid-cols-3'
-                  }`}
+                  className={`grid gap-8 items-center ${pricing.option2_packages.length === 1 ? 'grid-cols-1 max-w-md mx-auto' : 'grid-cols-1 md:grid-cols-3'
+                    }`}
                 >
                   {pricing.option2_packages.map((pkg, index) => {
                     // Single package = always featured, multiple = middle one is featured
@@ -267,18 +269,16 @@ function HomepagePricingSection() {
                       <motion.div
                         key={pkg.packageLevel}
                         whileHover={{ scale: 1.02 }}
-                        className={`relative bg-white rounded-[3.5rem] p-8 transition-all flex flex-col ${
-                          isFeatured
+                        className={`relative bg-white rounded-[3.5rem] p-8 transition-all flex flex-col ${isFeatured
                             ? 'border-4 border-[#2e165f] shadow-[0_20px_50px_rgba(46,22,95,0.15)] md:scale-110 z-20'
                             : 'border-2 border-slate-100 shadow-xl opacity-90'
-                        }`}
+                          }`}
                       >
                         <motion.div
                           animate={{ scale: [1, 1.1, 1], rotate: [-2, 2, -2] }}
                           transition={{ duration: 2, repeat: Infinity }}
-                          className={`absolute -top-5 -right-2 px-4 py-2 rounded-2xl text-white text-xs font-black shadow-lg ${
-                            isFeatured ? 'bg-gradient-to-r from-orange-500 to-red-500' : 'bg-blue-500'
-                          }`}
+                          className={`absolute -top-5 -right-2 px-4 py-2 rounded-2xl text-white text-xs font-black shadow-lg ${isFeatured ? 'bg-gradient-to-r from-orange-500 to-red-500' : 'bg-blue-500'
+                            }`}
                         >
                           {t.packages.badgeOff.replace('{percent}', String(pkg.discountPercent))}
                         </motion.div>
@@ -315,34 +315,31 @@ function HomepagePricingSection() {
                               className={`flex items-center gap-3 ${belt.status === 'passed' ? 'opacity-50' : ''}`}
                             >
                               <div
-                                className={`w-5 h-5 rounded-full flex items-center justify-center ${
-                                  belt.status === 'passed'
+                                className={`w-5 h-5 rounded-full flex items-center justify-center ${belt.status === 'passed'
                                     ? 'bg-slate-200'
                                     : belt.status === 'starting'
                                       ? 'bg-green-500'
                                       : 'bg-green-100'
-                                }`}
+                                  }`}
                               >
                                 <Check
-                                  className={`w-3 h-3 stroke-[4px] ${
-                                    belt.status === 'passed'
+                                  className={`w-3 h-3 stroke-[4px] ${belt.status === 'passed'
                                       ? 'text-slate-400'
                                       : belt.status === 'starting'
                                         ? 'text-white'
                                         : 'text-green-600'
-                                  }`}
+                                    }`}
                                 />
                               </div>
 
                               <div className="flex-1">
                                 <span
-                                  className={`text-sm font-bold ${
-                                    belt.status === 'passed'
+                                  className={`text-sm font-bold ${belt.status === 'passed'
                                       ? 'text-slate-400 line-through'
                                       : belt.status === 'starting'
                                         ? 'text-green-600'
                                         : 'text-slate-500'
-                                  }`}
+                                    }`}
                                 >
                                   {belt.name}
                                 </span>
@@ -364,9 +361,8 @@ function HomepagePricingSection() {
 
                         <button
                           onClick={() => handleBuyClick('package', pkg)}
-                          className={`w-full rounded-[1.5rem] py-5 font-black text-sm tracking-wide text-white transition-all hover:scale-105 active:scale-95 ${
-                            isFeatured ? 'bg-[#2e165f] shadow-blue-900/20' : 'bg-slate-800'
-                          }`}
+                          className={`w-full rounded-[1.5rem] py-5 font-black text-sm tracking-wide text-white transition-all hover:scale-105 active:scale-95 ${isFeatured ? 'bg-[#2e165f] shadow-blue-900/20' : 'bg-slate-800'
+                            }`}
                         >
                           {getButtonText()}
                         </button>
@@ -404,9 +400,8 @@ function HomepagePricingSection() {
                   </div>
 
                   <div
-                    className={`grid gap-6 ${
-                      pricing.option1_perBelt.belts.length === 1 ? 'grid-cols-1 max-w-sm mx-auto' : 'grid-cols-2 md:grid-cols-4 lg:grid-cols-5'
-                    }`}
+                    className={`grid gap-6 ${pricing.option1_perBelt.belts.length === 1 ? 'grid-cols-1 max-w-sm mx-auto' : 'grid-cols-2 md:grid-cols-4 lg:grid-cols-5'
+                      }`}
                   >
                     {pricing.option1_perBelt.belts.map(belt => {
                       // Extract the color name from the belt string (e.g. "Yellow Belt" -> "Yellow")

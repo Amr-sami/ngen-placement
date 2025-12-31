@@ -1,9 +1,10 @@
 import mongoose, { Schema, Document, Model } from 'mongoose';
+import { LocalizedString, LocalizedStringSchemaDefinition } from '../localization';
 
 export interface IPricingConfig extends Document {
     _id: mongoose.Types.ObjectId;
     configType: 'perBelt' | 'package' | 'organization';
-    name: string;
+    name: LocalizedString;
     packageLevel?: 'pre-foundation' | 'foundation' | 'specialization' | 'advanced';
     discountPercentEGP: number;
     discountPercentUSD: number;
@@ -23,9 +24,8 @@ const PricingConfigSchema = new Schema<IPricingConfig>(
             required: [true, 'Config type is required'],
         },
         name: {
-            type: String,
+            type: LocalizedStringSchemaDefinition,
             required: [true, 'Name is required'],
-            trim: true,
         },
         packageLevel: {
             type: String,

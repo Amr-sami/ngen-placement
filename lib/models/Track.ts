@@ -1,10 +1,11 @@
 import mongoose, { Schema, Document, Model } from 'mongoose';
+import { LocalizedString, LocalizedStringSchemaDefinition } from '../localization';
 
 export interface ITrack extends Document {
     _id: mongoose.Types.ObjectId;
-    name: string;
+    name: LocalizedString;
     slug: string;
-    description?: string;
+    description?: LocalizedString;
     isActive: boolean;
     createdAt: Date;
     updatedAt: Date;
@@ -13,9 +14,8 @@ export interface ITrack extends Document {
 const TrackSchema = new Schema<ITrack>(
     {
         name: {
-            type: String,
+            type: LocalizedStringSchemaDefinition,
             required: [true, 'Track name is required'],
-            trim: true,
         },
         slug: {
             type: String,
@@ -25,8 +25,7 @@ const TrackSchema = new Schema<ITrack>(
             trim: true,
         },
         description: {
-            type: String,
-            trim: true,
+            type: LocalizedStringSchemaDefinition,
         },
         isActive: {
             type: Boolean,
