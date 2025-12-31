@@ -160,9 +160,7 @@
       }
     }
   },
-  "footer": {
-    "copyright": "© 2024 مدارس إنچن. جميع الحقوق محفوظة."
-  },
+ 
   "home": {
     "hero": {
       "schools": "مدارس",
@@ -1720,6 +1718,178 @@
         "noQuestions": "لم يتم إنشاء أي أسئلة. قد تكون الخدمة تواجه مشاكل. يرجى المحاولة مرة أخرى.",
         "generic": "عذراً، حدث خطأ أثناء إنشاء اختبار التحديد. يرجى المحاولة مرة أخرى."
       }
+  },
+  "footer": {
+  "quickLinks": "روابط سريعة",
+  "aboutUs": "من نحن",
+  "tracks": "المسارات",
+  "policies": "السياسات",
+  "ngenFor": "إن جِن لـ",
+  "forSchools": "للمدارس",
+  "forCorporates": "للشركات",
+  "forParents": "لأولياء الأمور",
+  "getInTouch": "تواصل معنا",
+  "email": "البريد الإلكتروني",
+  "copyright": "إن جِن للمدارس. جميع الحقوق محفوظة.",
 
+  "offices": {
+    "egypt": {
+      "country": "مصر",
+      "address": "15 اللاسلكي، أمام مادي تكنولوجي بارك، عزبة فهمي، المعادي، القاهرة، مصر",
+      "phone": "+20 105 502 3774",
+      "hasWhatsapp": true
+    },
+    "uae": {
+      "country": "الإمارات",
+      "address": "مركز الأعمال 1، الطابق M، فندق الميدان، ند الشبا، دبي، الإمارات",
+      "phone": "+971 52 654 2044",
+      "hasWhatsapp": false
+    },
+    "syria": {
+      "country": "سوريا",
+      "address": "بجانب مركز داي باي داي التجاري، غرب المشتل، حماة، سوريا",
+      "phones": ["+963 12 303 7037", "+963 98 337 8448"],
+      "hasWhatsapp": false
+    }
   }
+},
+"contact": {
+  "title": "اتصل بنا",
+  "getInTouch": "تواصل معنا",
+  "subTitle": "لا تتردد في ترك رسالتك أدناه",
+
+  "fields": {
+    "firstName": {
+      "default": "الاسم الأول",
+      "parents": "الاسم الأول لولي الأمر",
+      "schools": "الاسم الأول لمسؤول التواصل",
+      "corporates": "الاسم الأول لمسؤول التواصل"
+    },
+    "lastName": {
+      "default": "الاسم الأخير",
+      "parents": "الاسم الأخير لولي الأمر",
+      "schools": "الاسم الأخير لمسؤول التواصل",
+      "corporates": "الاسم الأخير لمسؤول التواصل"
+    },
+    "emailLabel": {
+      "default": "البريد الإلكتروني",
+      "parents": "البريد الإلكتروني لولي الأمر",
+      "schools": "موقع المدرسة الإلكتروني",
+      "corporates": "البريد الإلكتروني لمسؤول الشركة"
+    },
+    "companyLabel": {
+      "default": "اسم الشركة",
+      "parents": "رقم موبايل ولي الأمر",
+      "schools": "اسم المدرسة",
+      "corporates": "اسم الشركة"
+    },
+    "studentsLabel": {
+      "default": "عدد الطلاب / الموظفين",
+      "parents": "عدد الأطفال",
+      "schools": "عدد الطلاب",
+      "corporates": "عدد أطفال الموظفين المستهدفين"
+    },
+
+    "messageLabel": "الرسالة",
+
+    "placeholders": {
+      "first": "الاسم الأول",
+      "last": "الاسم الأخير",
+      "emailDefault": "عنوان بريدك الإلكتروني",
+      "emailSchools": "school.edu",
+      "companyDefault": "اسم الشركة",
+      "companySchools": "اسم المدرسة",
+      "companyParents": "٠١xxxxxxxx",
+      "students": "مثال: ٥٠",
+      "message": "رسالتك هنا"
+    }
+  },
+
+  "buttons": {
+    "send": "إرسال الرسالة",
+    "sending": "جاري الإرسال..."
+  },
+
+  "whatsapp": {
+    "label": "تواصل عبر واتساب"
+  },
+
+  "messages": {
+    "success": "شكراً لك! تم إرسال رسالتك بنجاح.",
+    "error": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
+  },
+
+  "validation": {
+    "reqFirst": "الاسم الأول مطلوب",
+    "reqLast": "الاسم الأخير مطلوب",
+    "reqEmail": "البريد الإلكتروني مطلوب",
+    "invEmail": "يرجى إدخال بريد إلكتروني صحيح"
+  },
+
+  "ourLocations": "مواقعنا",
+  "locations": [
+    {
+      "address": "١٥ اللاسلكي، أمام ماضي تكنولوجي بارك، عزبة فهمي، المعادي، القاهرة، مصر",
+      "phones": ["+20 105 502 3774"]
+    },
+    {
+      "address": "مركز الأعمال ١، الطابق M، فندق الميدان، ند الشبا، دبي، الإمارات العربية المتحدة",
+      "phones": ["+971 52 654 2044"]
+    },
+    {
+      "address": "جانب مركز التسوق يوم بيوم - غرب المشتل - حماه - سوريا",
+      "phones": ["+963 12 303 7037", "+963 98 337 8448"]
+    }
+  ]
+},
+"pricing": {
+  "sectionTitle": "اختر مهمتك",
+  "sectionSubtitle": "طوّر مهاراتك مع NGen Pro",
+
+  "tabs": {
+    "bundles": "الباقات",
+    "singleBelt": "حزام واحد",
+    "schools": "المدارس"
+  },
+
+  "button": {
+    "takeYourPlacementTest": "ابدأ اختبار تحديد المستوى",
+    "takePlacementTest": "ابدأ اختبار تحديد المستوى",
+    "enrollNow": "اشترك الآن"
+  },
+
+  "packages": {
+    "badgeOff": "{percent}% خصم 🔥",
+    "beltMode": {
+      "mastered": "🎉 ممتاز! لقد اجتزت المستويات السابقة",
+      "startingLevel": "مستواك الحالي"
+    },
+    "labels": {
+      "adjustedForYourLevel": "سعر مخصص حسب مستواك",
+      "recommendedForYou": "موصى به لك",
+      "fullAccessBundle": "باقة وصول كامل"
+    },
+    "beltStatus": {
+      "alreadyPassed": "✓ تم اجتيازه",
+      "yourLevel": "← مستواك"
+    }
+  },
+
+  "perBelt": {
+    "titleAuthed": "المستوى المقترح لك",
+    "titleGuest": "اختر مستواك",
+    "limitedDeals": "عروض لفترة محدودة",
+    "personalized": "مخصص لك"
+  },
+
+  "organization": {
+    "title": "مهام جماعية",
+    "subtitle": "برامج تدريب خاصة للمدارس والنوادي والمجموعات من 5+ طلاب.",
+    "cta": "تواصل معنا"
+  }
+}
+
+
+
+  
 }

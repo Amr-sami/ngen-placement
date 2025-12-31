@@ -160,9 +160,7 @@
       }
     }
   },
-  "footer": {
-    "copyright": "© 2024 NGen Schools. All rights reserved."
-  },
+
   "home": {
     "hero": {
       "schools": "Schools",
@@ -2001,5 +1999,177 @@
         "noQuestions": "No questions were generated. The service may be experiencing issues. Please try again.",
         "generic": "Sorry, something went wrong while generating your placement test. Please try again."
       }
+  },
+  "footer": {
+  "quickLinks": "Quick Links",
+  "aboutUs": "About us",
+  "tracks": "Tracks",
+  "policies": "Policies",
+  "ngenFor": "NGen For",
+  "forSchools": "For schools",
+  "forCorporates": "For corporates",
+  "forParents": "For parents",
+  "getInTouch": "Get in Touch",
+  "email": "Email",
+  "copyright": "NGen Schools. All rights reserved.",
+
+  "offices": {
+    "egypt": {
+      "country": "Egypt",
+      "address": "15 Al Lasilki, In front of Maadi Technology Park, Ezbet Fahmy, Maadi, Cairo, Egypt",
+      "phone": "+20 105 502 3774",
+      "hasWhatsapp": true
+    },
+    "uae": {
+      "country": "UAE",
+      "address": "Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E",
+      "phone": "+971 52 654 2044",
+      "hasWhatsapp": false
+    },
+    "syria": {
+      "country": "Syria",
+      "address": "Next to Day by Day Shopping Center, West of Al-Mushtal, Hama, Syria",
+      "phones": ["+963 12 303 7037", "+963 98 337 8448"],
+      "hasWhatsapp": false
+    }
   }
+},
+"contact": {
+  "title": "Contact Us",
+  "getInTouch": "Get in Touch",
+  "subTitle": "Feel free to drop your message below",
+
+  "fields": {
+    "firstName": {
+      "default": "First name",
+      "parents": "Parent First name",
+      "schools": "Focal point First name",
+      "corporates": "Focal point First name"
+    },
+    "lastName": {
+      "default": "Last name",
+      "parents": "Parent Last name",
+      "schools": "Focal point Last name",
+      "corporates": "Focal point Last name"
+    },
+    "emailLabel": {
+      "default": "Email",
+      "parents": "Parent Email",
+      "schools": "School website",
+      "corporates": "Company Focal point Email"
+    },
+    "companyLabel": {
+      "default": "Company name",
+      "parents": "Parent Mobile Number",
+      "schools": "School name",
+      "corporates": "Company name"
+    },
+    "studentsLabel": {
+      "default": "Number of students / Employees",
+      "parents": "Number of children",
+      "schools": "Number of students",
+      "corporates": "Number of targeted employee children"
+    },
+
+    "messageLabel": "Message",
+
+    "placeholders": {
+      "first": "First name",
+      "last": "Last name",
+      "emailDefault": "Your email address",
+      "emailSchools": "school.edu",
+      "companyDefault": "Company name",
+      "companySchools": "School Name",
+      "companyParents": "01xxxxxxxxx",
+      "students": "e.g. 50",
+      "message": "Your message"
+    }
+  },
+
+  "buttons": {
+    "send": "Send Message",
+    "sending": "Sending..."
+  },
+
+  "whatsapp": {
+    "label": "Contact via WhatsApp"
+  },
+
+  "messages": {
+    "success": "Thank you! Your message has been sent successfully.",
+    "error": "An unexpected error occurred. Please try again."
+  },
+
+  "validation": {
+    "reqFirst": "First name is required",
+    "reqLast": "Last name is required",
+    "reqEmail": "Email is required",
+    "invEmail": "Please enter a valid email"
+  },
+
+  "ourLocations": "Our Locations",
+  "locations": [
+    {
+      "address": "15 Al Lasilki, In front of Maadi Technology Park, Ezbet Fahmy, Maadi, Cairo, Egypt",
+      "phones": ["+20 105 502 3774"]
+    },
+    {
+      "address": "Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E",
+      "phones": ["+971 52 654 2044"]
+    },
+    {
+      "address": "Next to Day by Day Shopping Center, West of Al-Mushtal, Hama, Syria",
+      "phones": ["+963 12 303 7037", "+963 98 337 8448"]
+    }
+  ]
+},
+"pricing": {
+  "sectionTitle": "CHOOSE YOUR MISSION",
+  "sectionSubtitle": "Level up your skills with NGen Pro",
+
+  "tabs": {
+    "bundles": "Bundles",
+    "singleBelt": "Single Belt",
+    "schools": "Schools"
+  },
+
+  "button": {
+    "takeYourPlacementTest": "Take Your Placement Test",
+    "takePlacementTest": "Take Placement Test",
+    "enrollNow": "Enroll Now"
+  },
+
+  "packages": {
+    "badgeOff": "{percent}% OFF 🔥",
+    "beltMode": {
+      "mastered": "🎉 You've mastered previous levels!",
+      "startingLevel": "Your starting level"
+    },
+    "labels": {
+      "adjustedForYourLevel": "Adjusted For Your Level",
+      "recommendedForYou": "Recommended For You",
+      "fullAccessBundle": "Full Access Bundle"
+    },
+    "beltStatus": {
+      "alreadyPassed": "✓ Already passed",
+      "yourLevel": "← Your level"
+    }
+  },
+
+  "perBelt": {
+    "titleAuthed": "Your Recommended Level",
+    "titleGuest": "Choose Your Level",
+    "limitedDeals": "LIMITED TIME DEALS",
+    "personalized": "PERSONALIZED FOR YOU"
+  },
+
+  "organization": {
+    "title": "Squad Missions",
+    "subtitle": "Special training programs for schools, clubs, and groups of 5+ ninjas.",
+    "cta": "CONTACT COMMAND CENTER"
+  }
+}
+
+
+
 }
