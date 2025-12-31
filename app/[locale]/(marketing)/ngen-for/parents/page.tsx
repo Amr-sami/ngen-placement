@@ -1,7 +1,6 @@
 import {
   HowItWorksSection,
   Features,
-  // TracksOverviewSection,
 } from '@/components/pages/NgenFor';
 import {
   CallToAction,
@@ -9,50 +8,7 @@ import {
   PageWrapper,
 } from '@/components/general';
 import { H2 } from '@/components/general/Heading';
-import { getTranslations } from 'next-intl/server';
-
-const howItWorksData = [
-  {
-    bgColor: 'bg-[#EFE8FD]',
-    imgSrc: '/assets/images/icons/person-icon.svg',
-    altText: 'user-group',
-    title: 'Book a Call',
-    desc: 'book a 15-minute welcome call so we can match your child\'s goals and level.',
-  },
-  {
-    bgColor: 'bg-[#E5E9FE]',
-    imgSrc: '/assets/images/icons/phone-icon-purple.svg',
-    altText: 'user-group',
-    title: 'Choose Bundle & Set Up',
-    desc: 'pick the pricing bundle that fits you, complete payment, and get the onboarding pack (calendar, tools, logins).',
-  },
-  {
-    bgColor: 'bg-[#FDE7D9]',
-    imgSrc: '/account-group.svg',
-    altText: 'user-group',
-    title: 'Start Classes',
-    desc: 'join the first session, meet the trainer, and do a quick tech check. Your child gets access to the LMS and starter tasks.',
-  },
-  {
-    bgColor: 'bg-[#FDDDFB]',
-    imgSrc: '/assets/images/icons/union-icon.svg',
-    altText: 'user-group',
-    title: 'Track & Support',
-    desc: 'follow weekly updates and term reports, and join our parent workshops to support learning at home.',
-  },
-];
-
-const features = [
-  'Interactive Live sessions',
-  'Tech community',
-  'Assignments',
-  'Final projects',
-  'Soft skills courses',
-  'Parents workshops',
-  'Regular reports for parents',
-  'Summer and winter camps',
-  'Internship program',
-];
+import { getTranslations, getLocale } from 'next-intl/server';
 
 export const metadata = {
   title: "For Parents | NGen School Support & Progress Tools",
@@ -60,25 +16,67 @@ export const metadata = {
   keywords: ["online school for kids", "digital learning for children", "coding classes for kids", "AI courses for kids", "robotics for kids"],
 };
 
-
 const NgenForParents = async () => {
-  const t = await getTranslations('home.hero');
+  const t = await getTranslations('ngenFor.parents');
+  const tHero = await getTranslations('home.hero');
+  const locale = await getLocale();
+  const isRTL = locale === 'ar';
+
+  // Build howItWorksData from translations
+  const howItWorksData = [
+    {
+      bgColor: 'bg-[#EFE8FD]',
+      imgSrc: '/assets/images/icons/person-icon.svg',
+      altText: 'user-group',
+      title: t('howItWorks.steps.0.title'),
+      desc: t('howItWorks.steps.0.description'),
+    },
+    {
+      bgColor: 'bg-[#E5E9FE]',
+      imgSrc: '/assets/images/icons/phone-icon-purple.svg',
+      altText: 'user-group',
+      title: t('howItWorks.steps.1.title'),
+      desc: t('howItWorks.steps.1.description'),
+    },
+    {
+      bgColor: 'bg-[#FDE7D9]',
+      imgSrc: '/account-group.svg',
+      altText: 'user-group',
+      title: t('howItWorks.steps.2.title'),
+      desc: t('howItWorks.steps.2.description'),
+    },
+    {
+      bgColor: 'bg-[#FDDDFB]',
+      imgSrc: '/assets/images/icons/union-icon.svg',
+      altText: 'user-group',
+      title: t('howItWorks.steps.3.title'),
+      desc: t('howItWorks.steps.3.description'),
+    },
+  ];
+
+  // Build features from translations
+  const features = [
+    t('features.list.0'),
+    t('features.list.1'),
+    t('features.list.2'),
+    t('features.list.3'),
+    t('features.list.4'),
+    t('features.list.5'),
+    t('features.list.6'),
+    t('features.list.7'),
+    t('features.list.8'),
+  ];
 
   return (
-    <>
+    <div dir={isRTL ? 'rtl' : 'ltr'} className={isRTL ? 'font-arabic' : ''}>
       <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">
-        <H2>for parents</H2>
-        {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
-        <HowItWorksSection data={howItWorksData} />
-        <Features features={features} imgSrc="/features-for-corporate.svg" title="Parents" />
-        {/* <TracksOverviewSection data={overviewData} /> */}
-        {/* <TracksSection title="Our tracks" /> */}
-        {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
-
-        <ContactUs /> {/* TODO: adjust labels for Parents audience */}
+        <H2>{t('pageTitle')}</H2>
+        <HowItWorksSection data={howItWorksData} title={t('howItWorks.title')} />
+        <Features features={features} imgSrc="/features-for-corporate.svg" title={t('features.title')} />
+        <ContactUs />
       </PageWrapper>
-      <CallToAction cta={t('cta')} />
-    </>
+      <CallToAction cta={tHero('cta')} />
+    </div>
   );
 };
 

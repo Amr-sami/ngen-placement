@@ -160,7 +160,6 @@
       }
     }
   },
-
   "home": {
     "hero": {
       "schools": "Schools",
@@ -1940,236 +1939,364 @@
     }
   },
   "whySection": {
-      "badge": "Why thousands of families trust us",
-      "title": "Why Choose",
-      "titleHighlight": "Our Platform?",
-      "subtitle": "A world-class ecosystem for the next generation",
-      "previous": "Previous",
-      "next": "Next",
-      "features": {
-        "aiPathway": {
-          "title": "Digital-First AI Pathway",
-          "description": "Start your journey into AI with our structured learning path from L1A to L5B"
-        },
-        "projectBased": {
-          "title": "Project-Based Learning",
-          "description": "Build real projects and create your own capstone masterpiece"
-        },
-        "softSkills": {
-          "title": "Soft Skills Built-In",
-          "description": "Develop teamwork, communication, and problem-solving skills naturally"
-        },
-        "entrepreneurship": {
-          "title": "Entrepreneurship Mindset",
-          "description": "Think like a business owner and turn ideas into reality"
-        },
-        "trackGrowth": {
-          "title": "Track Your Growth",
-          "description": "See your progress with detailed reports and achievements"
-        },
-        "parentDashboard": {
-          "title": "Parent Dashboard",
-          "description": "Parents stay updated with real-time progress and insights"
-        }
-      }
-    },
-     "test": {
-      "title": "Placement Test",
-      "progress": "Progress",
-      "currentChallenge": "Current Challenge",
-      "level": "Level",
-      "expert": "Expert",
-      "standard": "Standard",
-      "previous": "Previous",
-      "next": "Next",
-      "nextQuestion": "Next Question",
-      "finishTest": "Finish Test",
-      "loading": {
-        "title": "Building Your Challenge",
-        "analyzing": "Analyzing profile...",
-        "selecting": "Selecting questions...",
-        "finalizing": "Finalizing AI model..."
+    "badge": "Why thousands of families trust us",
+    "title": "Why Choose",
+    "titleHighlight": "Our Platform?",
+    "subtitle": "A world-class ecosystem for the next generation",
+    "previous": "Previous",
+    "next": "Next",
+    "features": {
+      "aiPathway": {
+        "title": "Digital-First AI Pathway",
+        "description": "Start your journey into AI with our structured learning path from L1A to L5B"
       },
-      "error": {
-        "title": "Something went wrong",
-        "retry": "Try Again",
-        "network": "Network error. Please check your internet connection and try again.",
-        "overloaded": "The AI service is currently overloaded. Please wait a moment and try again.",
-        "server": "A server error occurred while generating your test. Please try again in a few moments.",
-        "noQuestions": "No questions were generated. The service may be experiencing issues. Please try again.",
-        "generic": "Sorry, something went wrong while generating your placement test. Please try again."
+      "projectBased": {
+        "title": "Project-Based Learning",
+        "description": "Build real projects and create your own capstone masterpiece"
+      },
+      "softSkills": {
+        "title": "Soft Skills Built-In",
+        "description": "Develop teamwork, communication, and problem-solving skills naturally"
+      },
+      "entrepreneurship": {
+        "title": "Entrepreneurship Mindset",
+        "description": "Think like a business owner and turn ideas into reality"
+      },
+      "trackGrowth": {
+        "title": "Track Your Growth",
+        "description": "See your progress with detailed reports and achievements"
+      },
+      "parentDashboard": {
+        "title": "Parent Dashboard",
+        "description": "Parents stay updated with real-time progress and insights"
       }
+    }
+  },
+  "test": {
+    "title": "Placement Test",
+    "progress": "Progress",
+    "currentChallenge": "Current Challenge",
+    "level": "Level",
+    "expert": "Expert",
+    "standard": "Standard",
+    "previous": "Previous",
+    "next": "Next",
+    "nextQuestion": "Next Question",
+    "finishTest": "Finish Test",
+    "loading": {
+      "title": "Building Your Challenge",
+      "analyzing": "Analyzing profile...",
+      "selecting": "Selecting questions...",
+      "finalizing": "Finalizing AI model..."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "retry": "Try Again",
+      "network": "Network error. Please check your internet connection and try again.",
+      "overloaded": "The AI service is currently overloaded. Please wait a moment and try again.",
+      "server": "A server error occurred while generating your test. Please try again in a few moments.",
+      "noQuestions": "No questions were generated. The service may be experiencing issues. Please try again.",
+      "generic": "Sorry, something went wrong while generating your placement test. Please try again."
+    }
   },
   "footer": {
-  "quickLinks": "Quick Links",
-  "aboutUs": "About us",
-  "tracks": "Tracks",
-  "policies": "Policies",
-  "ngenFor": "NGen For",
-  "forSchools": "For schools",
-  "forCorporates": "For corporates",
-  "forParents": "For parents",
-  "getInTouch": "Get in Touch",
-  "email": "Email",
-  "copyright": "NGen Schools. All rights reserved.",
-
-  "offices": {
-    "egypt": {
-      "country": "Egypt",
-      "address": "15 Al Lasilki, In front of Maadi Technology Park, Ezbet Fahmy, Maadi, Cairo, Egypt",
-      "phone": "+20 105 502 3774",
-      "hasWhatsapp": true
+    "quickLinks": "Quick Links",
+    "aboutUs": "About us",
+    "tracks": "Tracks",
+    "policies": "Policies",
+    "ngenFor": "NGen For",
+    "forSchools": "For schools",
+    "forCorporates": "For corporates",
+    "forParents": "For parents",
+    "getInTouch": "Get in Touch",
+    "email": "Email",
+    "copyright": "NGen Schools. All rights reserved.",
+    "offices": {
+      "egypt": {
+        "country": "Egypt",
+        "address": "15 Al Lasilki, In front of Maadi Technology Park, Ezbet Fahmy, Maadi, Cairo, Egypt",
+        "phone": "+20 105 502 3774",
+        "hasWhatsapp": true
+      },
+      "uae": {
+        "country": "UAE",
+        "address": "Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E",
+        "phone": "+971 52 654 2044",
+        "hasWhatsapp": false
+      },
+      "syria": {
+        "country": "Syria",
+        "address": "Next to Day by Day Shopping Center, West of Al-Mushtal, Hama, Syria",
+        "phones": [
+          "+963 12 303 7037",
+          "+963 98 337 8448"
+        ],
+        "hasWhatsapp": false
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "getInTouch": "Get in Touch",
+    "subTitle": "Feel free to drop your message below",
+    "fields": {
+      "firstName": {
+        "default": "First name",
+        "parents": "Parent First name",
+        "schools": "Focal point First name",
+        "corporates": "Focal point First name"
+      },
+      "lastName": {
+        "default": "Last name",
+        "parents": "Parent Last name",
+        "schools": "Focal point Last name",
+        "corporates": "Focal point Last name"
+      },
+      "emailLabel": {
+        "default": "Email",
+        "parents": "Parent Email",
+        "schools": "School website",
+        "corporates": "Company Focal point Email"
+      },
+      "companyLabel": {
+        "default": "Company name",
+        "parents": "Parent Mobile Number",
+        "schools": "School name",
+        "corporates": "Company name"
+      },
+      "studentsLabel": {
+        "default": "Number of students / Employees",
+        "parents": "Number of children",
+        "schools": "Number of students",
+        "corporates": "Number of targeted employee children"
+      },
+      "messageLabel": "Message",
+      "placeholders": {
+        "first": "First name",
+        "last": "Last name",
+        "emailDefault": "Your email address",
+        "emailSchools": "school.edu",
+        "companyDefault": "Company name",
+        "companySchools": "School Name",
+        "companyParents": "01xxxxxxxxx",
+        "students": "e.g. 50",
+        "message": "Your message"
+      }
     },
-    "uae": {
-      "country": "UAE",
-      "address": "Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E",
-      "phone": "+971 52 654 2044",
-      "hasWhatsapp": false
+    "buttons": {
+      "send": "Send Message",
+      "sending": "Sending..."
     },
-    "syria": {
-      "country": "Syria",
-      "address": "Next to Day by Day Shopping Center, West of Al-Mushtal, Hama, Syria",
-      "phones": ["+963 12 303 7037", "+963 98 337 8448"],
-      "hasWhatsapp": false
+    "whatsapp": {
+      "label": "Contact via WhatsApp"
+    },
+    "messages": {
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "An unexpected error occurred. Please try again."
+    },
+    "validation": {
+      "reqFirst": "First name is required",
+      "reqLast": "Last name is required",
+      "reqEmail": "Email is required",
+      "invEmail": "Please enter a valid email"
+    },
+    "ourLocations": "Our Locations",
+    "locations": [
+      {
+        "address": "15 Al Lasilki, In front of Maadi Technology Park, Ezbet Fahmy, Maadi, Cairo, Egypt",
+        "phones": [
+          "+20 105 502 3774"
+        ]
+      },
+      {
+        "address": "Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E",
+        "phones": [
+          "+971 52 654 2044"
+        ]
+      },
+      {
+        "address": "Next to Day by Day Shopping Center, West of Al-Mushtal, Hama, Syria",
+        "phones": [
+          "+963 12 303 7037",
+          "+963 98 337 8448"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "sectionTitle": "CHOOSE YOUR MISSION",
+    "sectionSubtitle": "Level up your skills with NGen Pro",
+    "tabs": {
+      "bundles": "Bundles",
+      "singleBelt": "Single Belt",
+      "schools": "Schools"
+    },
+    "button": {
+      "takeYourPlacementTest": "Take Your Placement Test",
+      "takePlacementTest": "Take Placement Test",
+      "enrollNow": "Enroll Now"
+    },
+    "packages": {
+      "badgeOff": "{percent}% OFF 🔥",
+      "beltMode": {
+        "mastered": "🎉 You've mastered previous levels!",
+        "startingLevel": "Your starting level"
+      },
+      "labels": {
+        "adjustedForYourLevel": "Adjusted For Your Level",
+        "recommendedForYou": "Recommended For You",
+        "fullAccessBundle": "Full Access Bundle"
+      },
+      "beltStatus": {
+        "alreadyPassed": "✓ Already passed",
+        "yourLevel": "← Your level"
+      }
+    },
+    "perBelt": {
+      "titleAuthed": "Your Recommended Level",
+      "titleGuest": "Choose Your Level",
+      "limitedDeals": "LIMITED TIME DEALS",
+      "personalized": "PERSONALIZED FOR YOU"
+    },
+    "organization": {
+      "title": "Squad Missions",
+      "subtitle": "Special training programs for schools, clubs, and groups of 5+ ninjas.",
+      "cta": "CONTACT COMMAND CENTER"
+    }
+  },
+  "ngenFor": {
+    "sectionTitle": "NGen For",
+    "cards": {
+      "individuals": {
+        "title": "For Individuals",
+        "description": "We offer an exciting and engaging learning experience based on modern educational principles."
+      },
+      "parents": {
+        "title": "For Parents",
+        "description": "We offer an educational experience that strengthens parent-child communication through awareness workshops for parents and student progress reports."
+      },
+      "corporates": {
+        "title": "For Corporates",
+        "description": "We provide high-quality training programs tailored for employees' children at competitive prices."
+      },
+      "schools": {
+        "title": "For Schools",
+        "description": "We offer a unique LMS experience with regular detailed reports and workshops to support teacher development."
+      }
+    },
+    "parents": {
+      "pageTitle": "For Parents",
+      "howItWorks": {
+        "title": "How it Works",
+        "steps": [
+          {
+            "title": "Book a Call",
+            "description": "Book a 15-minute welcome call so we can match your child's goals and level."
+          },
+          {
+            "title": "Choose Bundle & Set Up",
+            "description": "Pick the pricing bundle that fits you, complete payment, and get the onboarding pack (calendar, tools, logins)."
+          },
+          {
+            "title": "Start Classes",
+            "description": "Join the first session, meet the trainer, and do a quick tech check. Your child gets access to the LMS and starter tasks."
+          },
+          {
+            "title": "Track & Support",
+            "description": "Follow weekly updates and term reports, and join our parent workshops to support learning at home."
+          }
+        ]
+      },
+      "features": {
+        "title": "Features for Parents",
+        "list": [
+          "Interactive Live sessions",
+          "Tech community",
+          "Assignments",
+          "Final projects",
+          "Soft skills courses",
+          "Parents workshops",
+          "Regular reports for parents",
+          "Summer and winter camps",
+          "Internship program"
+        ]
+      }
+    },
+    "schools": {
+      "pageTitle": "For Schools",
+      "howItWorks": {
+        "title": "How it Works",
+        "steps": [
+          {
+            "title": "Registration",
+            "description": "Fill out the school form for booking a call."
+          },
+          {
+            "title": "Discovery & Needs Assessment",
+            "description": "Our business development team meets your leadership/ICT staff to map tracks, timetable, and goals."
+          },
+          {
+            "title": "Proposal & Setup",
+            "description": "Receive a custom proposal (tracks, schedule, pricing bundle). On approval, we handle MoU/contract, calendar, LMS provisioning."
+          },
+          {
+            "title": "Program Launch & Support",
+            "description": "Kickoff sessions begin. You get attendance & progress reports, parent updates, teachers onboarding and access to capstones/competitions with a single point of contact for ongoing support."
+          }
+        ]
+      },
+      "features": {
+        "title": "Features for Schools",
+        "list": [
+          "Interactive Live sessions",
+          "Tech community",
+          "Assignments",
+          "Final projects",
+          "Soft skills courses",
+          "Teachers development workshops",
+          "Parents workshops",
+          "Regular reports for parents",
+          "Summer and winter camps",
+          "Internship program"
+        ]
+      }
+    },
+    "corporates": {
+      "pageTitle": "For Corporates",
+      "howItWorks": {
+        "title": "How it Works",
+        "steps": [
+          {
+            "title": "Registration / Inquiry",
+            "description": "Share a few details via the company form and book an intro call."
+          },
+          {
+            "title": "Discovery & Needs Assessment",
+            "description": "We meet your HR/CSR team to map tracks, schedule, and goals (family day, summer camp, after-hours)."
+          },
+          {
+            "title": "Proposal, Agreement & Setup",
+            "description": "Receive a custom proposal with pricing bundles and deliverables. On approval, we handle agreement/MoU, calendar, LMS access, parental consent templates, and trainer assignment plus optional co-branding."
+          },
+          {
+            "title": "Program Launch & Reporting",
+            "description": "Kickoff sessions begin. You get attendance & progress reports, photo highlights, and CSR/ESG impact summaries. We support capstones/competitions and a final showcase for employees' families."
+          }
+        ]
+      },
+      "features": {
+        "title": "Features for Corporates",
+        "list": [
+          "Interactive Live sessions",
+          "Tech community",
+          "Assignments",
+          "Final projects",
+          "Soft skills courses",
+          "Parents workshops",
+          "Regular reports for parents",
+          "Internship program"
+        ]
+      }
     }
   }
-},
-"contact": {
-  "title": "Contact Us",
-  "getInTouch": "Get in Touch",
-  "subTitle": "Feel free to drop your message below",
-
-  "fields": {
-    "firstName": {
-      "default": "First name",
-      "parents": "Parent First name",
-      "schools": "Focal point First name",
-      "corporates": "Focal point First name"
-    },
-    "lastName": {
-      "default": "Last name",
-      "parents": "Parent Last name",
-      "schools": "Focal point Last name",
-      "corporates": "Focal point Last name"
-    },
-    "emailLabel": {
-      "default": "Email",
-      "parents": "Parent Email",
-      "schools": "School website",
-      "corporates": "Company Focal point Email"
-    },
-    "companyLabel": {
-      "default": "Company name",
-      "parents": "Parent Mobile Number",
-      "schools": "School name",
-      "corporates": "Company name"
-    },
-    "studentsLabel": {
-      "default": "Number of students / Employees",
-      "parents": "Number of children",
-      "schools": "Number of students",
-      "corporates": "Number of targeted employee children"
-    },
-
-    "messageLabel": "Message",
-
-    "placeholders": {
-      "first": "First name",
-      "last": "Last name",
-      "emailDefault": "Your email address",
-      "emailSchools": "school.edu",
-      "companyDefault": "Company name",
-      "companySchools": "School Name",
-      "companyParents": "01xxxxxxxxx",
-      "students": "e.g. 50",
-      "message": "Your message"
-    }
-  },
-
-  "buttons": {
-    "send": "Send Message",
-    "sending": "Sending..."
-  },
-
-  "whatsapp": {
-    "label": "Contact via WhatsApp"
-  },
-
-  "messages": {
-    "success": "Thank you! Your message has been sent successfully.",
-    "error": "An unexpected error occurred. Please try again."
-  },
-
-  "validation": {
-    "reqFirst": "First name is required",
-    "reqLast": "Last name is required",
-    "reqEmail": "Email is required",
-    "invEmail": "Please enter a valid email"
-  },
-
-  "ourLocations": "Our Locations",
-  "locations": [
-    {
-      "address": "15 Al Lasilki, In front of Maadi Technology Park, Ezbet Fahmy, Maadi, Cairo, Egypt",
-      "phones": ["+20 105 502 3774"]
-    },
-    {
-      "address": "Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E",
-      "phones": ["+971 52 654 2044"]
-    },
-    {
-      "address": "Next to Day by Day Shopping Center, West of Al-Mushtal, Hama, Syria",
-      "phones": ["+963 12 303 7037", "+963 98 337 8448"]
-    }
-  ]
-},
-"pricing": {
-  "sectionTitle": "CHOOSE YOUR MISSION",
-  "sectionSubtitle": "Level up your skills with NGen Pro",
-
-  "tabs": {
-    "bundles": "Bundles",
-    "singleBelt": "Single Belt",
-    "schools": "Schools"
-  },
-
-  "button": {
-    "takeYourPlacementTest": "Take Your Placement Test",
-    "takePlacementTest": "Take Placement Test",
-    "enrollNow": "Enroll Now"
-  },
-
-  "packages": {
-    "badgeOff": "{percent}% OFF 🔥",
-    "beltMode": {
-      "mastered": "🎉 You've mastered previous levels!",
-      "startingLevel": "Your starting level"
-    },
-    "labels": {
-      "adjustedForYourLevel": "Adjusted For Your Level",
-      "recommendedForYou": "Recommended For You",
-      "fullAccessBundle": "Full Access Bundle"
-    },
-    "beltStatus": {
-      "alreadyPassed": "✓ Already passed",
-      "yourLevel": "← Your level"
-    }
-  },
-
-  "perBelt": {
-    "titleAuthed": "Your Recommended Level",
-    "titleGuest": "Choose Your Level",
-    "limitedDeals": "LIMITED TIME DEALS",
-    "personalized": "PERSONALIZED FOR YOU"
-  },
-
-  "organization": {
-    "title": "Squad Missions",
-    "subtitle": "Special training programs for schools, clubs, and groups of 5+ ninjas.",
-    "cta": "CONTACT COMMAND CENTER"
-  }
-}
-
-
-
 }

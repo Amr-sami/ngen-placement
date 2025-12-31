@@ -5,7 +5,6 @@ import Logo from '../Logo'
 import Image from 'next/image'
 import { sendEmail } from '@/lib/resend'
 import { IoLogoWhatsapp } from 'react-icons/io'
-import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
 
 import enMessages from '@/messages/en.json'
@@ -14,18 +13,13 @@ import arMessages from '@/messages/ar.json'
 const MESSAGES = { en: enMessages, ar: arMessages } as const
 
 const ContactUs = () => {
-  const pathname = usePathname()
   const locale = useLocale() as 'en' | 'ar'
   const isRTL = locale === 'ar'
 
-  const isParentsPage = pathname?.includes('/ngen-for/parents')
-  const isSchoolsPage = pathname?.includes('/ngen-for/schools')
-  const isCorporatesPage = pathname?.includes('/ngen-for/corporates')
-
   const contact = (MESSAGES[locale]?.contact ?? MESSAGES.en.contact)
 
-  const pageKey: 'parents' | 'schools' | 'corporates' | 'default' =
-    isParentsPage ? 'parents' : isSchoolsPage ? 'schools' : isCorporatesPage ? 'corporates' : 'default'
+  // Always use default labels for consistency across all pages
+  const pageKey = 'default' as const
 
   const t = {
     title: contact.title,
@@ -42,12 +36,8 @@ const ContactUs = () => {
 
     placeholderFirst: contact.fields.placeholders.first,
     placeholderLast: contact.fields.placeholders.last,
-    placeholderEmail: isSchoolsPage ? contact.fields.placeholders.emailSchools : contact.fields.placeholders.emailDefault,
-    placeholderCompany: isParentsPage
-      ? contact.fields.placeholders.companyParents
-      : isSchoolsPage
-        ? contact.fields.placeholders.companySchools
-        : contact.fields.placeholders.companyDefault,
+    placeholderEmail: contact.fields.placeholders.emailDefault,
+    placeholderCompany: contact.fields.placeholders.companyDefault,
     placeholderStudents: contact.fields.placeholders.students,
     placeholderMsg: contact.fields.placeholders.message,
 
@@ -143,11 +133,10 @@ const ContactUs = () => {
 
           {submitStatus.message && (
             <div
-              className={`mb-4 p-4 rounded-xl font-medium text-sm flex items-center gap-3 animate-fadeIn ${
-                submitStatus.success
-                  ? 'bg-green-50 text-green-700 border-2 border-green-200'
-                  : 'bg-red-50 text-red-700 border-2 border-red-200'
-              }`}
+              className={`mb-4 p-4 rounded-xl font-medium text-sm flex items-center gap-3 animate-fadeIn ${submitStatus.success
+                ? 'bg-green-50 text-green-700 border-2 border-green-200'
+                : 'bg-red-50 text-red-700 border-2 border-red-200'
+                }`}
             >
               <span className="text-lg">{submitStatus.success ? '✓' : '✕'}</span>
               {submitStatus.message}
@@ -167,9 +156,8 @@ const ContactUs = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder={t.placeholderFirst}
-                className={`w-full text-sm py-3 px-4 border-2 ${
-                  errors.firstName ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-blue-400'
-                } rounded-xl outline-none transition-all duration-200 bg-white`}
+                className={`w-full text-sm py-3 px-4 border-2 ${errors.firstName ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-blue-400'
+                  } rounded-xl outline-none transition-all duration-200 bg-white`}
                 disabled={isSubmitting}
               />
               {errors.firstName && (
@@ -191,9 +179,8 @@ const ContactUs = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder={t.placeholderLast}
-                className={`w-full text-sm py-3 px-4 border-2 ${
-                  errors.lastName ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-blue-400'
-                } rounded-xl outline-none transition-all duration-200 bg-white`}
+                className={`w-full text-sm py-3 px-4 border-2 ${errors.lastName ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-blue-400'
+                  } rounded-xl outline-none transition-all duration-200 bg-white`}
                 disabled={isSubmitting}
               />
               {errors.lastName && (
@@ -215,9 +202,8 @@ const ContactUs = () => {
                 value={formData.companyMail}
                 onChange={handleChange}
                 placeholder={t.placeholderEmail}
-                className={`w-full text-sm py-3 px-4 border-2 ${
-                  errors.companyMail ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-blue-400'
-                } rounded-xl outline-none transition-all duration-200 bg-white`}
+                className={`w-full text-sm py-3 px-4 border-2 ${errors.companyMail ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-blue-400'
+                  } rounded-xl outline-none transition-all duration-200 bg-white`}
                 disabled={isSubmitting}
               />
               {errors.companyMail && (
@@ -282,9 +268,8 @@ const ContactUs = () => {
             <div className={`${isRTL ? 'lg:mr-auto' : 'lg:ml-auto'} lg:col-span-2`}>
               <button
                 type="submit"
-                className={`w-full lg:w-auto px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 font-bold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
-                  isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
-                }`}
+                className={`w-full lg:w-auto px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 font-bold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+                  }`}
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

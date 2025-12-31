@@ -69,7 +69,7 @@ export default function EnhancedWhySection() {
   }, [isAutoPlaying, nextCard]);
 
   return (
-    <section className="py-8 md:py-12 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+    <section id="why-ngen" className="py-8 md:py-12 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
       {/* Ambient Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute top-1/2 left-0 w-96 h-96 rounded-full blur-3xl transition-all duration-1000 opacity-10 bg-gradient-to-br ${DATA[activeTab].theme.bg}`} />

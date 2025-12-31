@@ -45,6 +45,7 @@ function Navbar() {
   const params = useParams();
   const locale = (params?.locale as Locale) || 'en';
   const t = useTranslations('nav');
+  const tFooter = useTranslations('footer');
   const { status } = useSession();
   const isLoggedIn = status === 'authenticated';
 
@@ -145,9 +146,9 @@ function Navbar() {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-6 md:w-[200px]">
-                        <ListItem href={getNgenForParentsRoute(locale)} title="For Parents" />
-                        <ListItem href={getNgenForSchoolsRoute(locale)} title="For Schools" />
-                        <ListItem href={getNgenForCorporatesRoute(locale)} title="For Corporates" />
+                        <ListItem href={getNgenForParentsRoute(locale)} title={tFooter('forParents')} />
+                        <ListItem href={getNgenForSchoolsRoute(locale)} title={tFooter('forSchools')} />
+                        <ListItem href={getNgenForCorporatesRoute(locale)} title={tFooter('forCorporates')} />
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -230,19 +231,19 @@ function Navbar() {
                         href={getNgenForParentsRoute(locale)}
                         className="text-sm font-medium"
                       >
-                        For Parents
+                        {tFooter('forParents')}
                       </Link>
                       <Link
                         href={getNgenForSchoolsRoute(locale)}
                         className="text-sm font-medium"
                       >
-                        For Schools
+                        {tFooter('forSchools')}
                       </Link>
                       <Link
                         href={getNgenForCorporatesRoute(locale)}
                         className="text-sm font-medium"
                       >
-                        For Corporates
+                        {tFooter('forCorporates')}
                       </Link>
                     </div>
                   );

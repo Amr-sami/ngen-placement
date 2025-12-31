@@ -9,6 +9,8 @@ export interface IHowItWorksCardProps {
 
 export interface IHowItWorksData {
   data: IHowItWorksCardProps[];
+  title?: string;
+  subtitle?: string;
 }
 
 export interface IFeaturedProps {

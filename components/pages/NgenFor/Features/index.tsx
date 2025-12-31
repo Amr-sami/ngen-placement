@@ -7,17 +7,17 @@ const Featured: React.FC<IFeaturedProps> = ({ features, imgSrc, title }) => {
   return (
     <>
       <h3 className="font-bold text-xl text-pumpkin mb-4 md:text-2xl xl:text-3xl">
-        Features for {title}
+        {title}
       </h3>
       <div className='flex flex-col-reverse space-between gap-10 lg:flex-row mb-6 lg:mb-10'>
 
-        <ul className='grid list-outside grid-cols-2 my-10 list-disc flex-grow text-purple-dark font-bold xl:text-2xl'>
+        <ul className='grid list-outside grid-cols-2 my-10 list-disc flex-grow text-purple-dark font-bold xl:text-2xl rtl:pr-4'>
           {features.map((item, index) => (
-            <li key={index} className='pr-8'>{item}</li>
+            <li key={index} className='pr-8 rtl:pr-0 rtl:pl-8'>{item}</li>
           ))}
         </ul>
 
-        <Image src={imgSrc} alt='Features' width={650} height={330}/>
+        <Image src={imgSrc} alt='Features' width={650} height={330} />
       </div>
     </>
   )
