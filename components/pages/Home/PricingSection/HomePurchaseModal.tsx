@@ -75,8 +75,15 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
     const isRTL = locale === 'ar';
     const t = translations[locale] || translations.en;
 
-    // State to switch between belt and package view
+    // State to switch between belt and package view (temporary - resets on close)
     const [viewPackage, setViewPackage] = useState(false);
+
+    // Reset view when modal closes or item changes
+    React.useEffect(() => {
+        if (!isOpen) {
+            setViewPackage(false);
+        }
+    }, [isOpen]);
 
     if (!isOpen || !item) return null;
 
