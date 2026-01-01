@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import CurriculumList from '@/components/admin/curriculum/CurriculumList';
+import CreateTrackModal from '@/components/admin/curriculum/CreateTrackModal';
 
 export default function CurriculumPage() {
     return (
@@ -12,6 +13,7 @@ export default function CurriculumPage() {
                         Manage tracks, belts, and learning progression
                     </p>
                 </div>
+                <CreateTrackModal />
             </div>
 
             {/* Curriculum List */}

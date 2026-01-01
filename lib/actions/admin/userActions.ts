@@ -71,6 +71,33 @@ export async function updateUserStatus(
 }
 
 /**
+ * Manually verify a user's email address
+ */
+export async function verifyUserEmail(userId: string) {
+    await requireSuperAdmin();
+    await connectToDatabase();
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+        throw new Error('User not found');
+    }
+
+    if (user.emailVerified) {
+        throw new Error('Email is already verified');
+    }
+
+    user.emailVerified = true;
+    user.status = 'active'; // Also activate the user
+    await user.save();
+
+    revalidatePath('/en/admin/users');
+    revalidatePath(`/en/admin/users/${userId}`);
+
+    return { success: true, message: 'Email verified successfully' };
+}
+
+/**
  * Update user profile fields
  */
 export async function updateUserProfile(userId: string, data: {
@@ -207,6 +234,14 @@ export async function getUserById(userId: string) {
         return null;
     }
 
+    // Convert ObjectIds to strings to avoid serialization issues
+    // when passing from Server Components to Client Components
+    const placementTest = user.placementTest ? {
+        ...user.placementTest,
+        lastPlacementTestId: user.placementTest.lastPlacementTestId?.toString() || null,
+        takenAt: user.placementTest.takenAt?.toISOString?.() || user.placementTest.takenAt || null,
+    } : null;
+
     return {
         id: user._id.toString(),
         email: user.email,
@@ -216,7 +251,7 @@ export async function getUserById(userId: string) {
         status: user.status,
         profile: user.profile,
         progress: user.progress,
-        placementTest: user.placementTest,
+        placementTest,
         detectedCountry: user.detectedCountry,
         detectedCountryCode: user.detectedCountryCode,
         createdAt: user.createdAt,

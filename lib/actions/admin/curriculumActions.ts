@@ -268,3 +268,30 @@ export async function deleteBelt(beltId: string) {
 
     return { success: true };
 }
+
+/**
+ * Delete a track
+ * Only if it has no belts associated with it
+ */
+export async function deleteTrack(trackId: string) {
+    await requireSuperAdmin();
+    await connectToDatabase();
+
+    // Check if track has any belts
+    const beltCount = await Belt.countDocuments({ trackId });
+    if (beltCount > 0) {
+        throw new Error(`Cannot delete track with ${beltCount} belts. Delete all belts first.`);
+    }
+
+    const result = await Track.findByIdAndDelete(trackId);
+
+    if (!result) {
+        throw new Error('Track not found');
+    }
+
+    revalidatePath('/en/admin/curriculum');
+    revalidatePath('/ar/admin/curriculum');
+
+    return { success: true };
+}
+

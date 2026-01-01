@@ -37,8 +37,9 @@ interface UserDetailCardProps {
             extraAttemptsGrantedBySupport?: number;
             resultBeltName?: string;
             resultScorePercent?: number;
-            takenAt?: Date;
-        };
+            takenAt?: Date | string | null;
+            lastPlacementTestId?: string | null;
+        } | null;
         detectedCountry?: string;
         detectedCountryCode?: string;
         createdAt: Date;

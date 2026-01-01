@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getOrders } from '@/lib/actions/admin/operationsActions';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Eye } from 'lucide-react';
 import OrderStatusBadge from '@/components/admin/orders/OrderStatusBadge';
 
 interface OrdersTableProps {
@@ -40,6 +40,7 @@ export default async function OrdersTable({ page, search, status }: OrdersTableP
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Status</th>
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Date</th>
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Transaction ID</th>
+                            <th className="text-right py-4 px-6 text-sm font-medium text-gray-400">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -84,6 +85,17 @@ export default async function OrdersTable({ page, search, status }: OrdersTableP
                                     ) : (
                                         <span className="text-gray-500 text-sm">-</span>
                                     )}
+                                </td>
+                                <td className="py-4 px-6">
+                                    <div className="flex items-center justify-end">
+                                        <Link
+                                            href={`/en/admin/orders/${order.id}`}
+                                            className="p-2 text-gray-400 hover:text-white hover:bg-gray-700 rounded-lg transition-colors"
+                                            title="View Details"
+                                        >
+                                            <Eye size={16} />
+                                        </Link>
+                                    </div>
                                 </td>
                             </tr>
                         ))}

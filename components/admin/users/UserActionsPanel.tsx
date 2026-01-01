@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Plus, UserCheck, Ban, Trash2, RefreshCw } from 'lucide-react';
-import { updateUserStatus, grantExtraAttempt } from '@/lib/actions/admin/userActions';
+import { Plus, UserCheck, Ban, Trash2, RefreshCw, Mail } from 'lucide-react';
+import { updateUserStatus, grantExtraAttempt, verifyUserEmail } from '@/lib/actions/admin/userActions';
 import ResetUserPassword from './ResetUserPassword';
 
 interface UserActionsPanelProps {
@@ -11,11 +11,12 @@ interface UserActionsPanelProps {
         id: string;
         email: string;
         status: string;
+        emailVerified?: boolean;
         placementTest?: {
             allowedAttempts: number;
             attemptsUsed: number;
             extraAttemptsGrantedBySupport?: number;
-        };
+        } | null;
     };
 }
 
@@ -45,6 +46,20 @@ export default function UserActionsPanel({ user }: UserActionsPanelProps) {
         } catch (error) {
             console.error('Failed to update status:', error);
             alert('Failed to update user status');
+        } finally {
+            setIsLoading(null);
+        }
+    };
+
+    const handleVerifyEmail = async () => {
+        setIsLoading('verify');
+        try {
+            await verifyUserEmail(user.id);
+            router.refresh();
+            alert('Email verified successfully!');
+        } catch (error) {
+            console.error('Failed to verify email:', error);
+            alert(error instanceof Error ? error.message : 'Failed to verify email');
         } finally {
             setIsLoading(null);
         }
@@ -130,6 +145,30 @@ export default function UserActionsPanel({ user }: UserActionsPanelProps) {
             {/* Password Reset */}
             <div className="space-y-3">
                 <p className="text-sm text-gray-400">Security</p>
+
+                {/* Manual Email Verification */}
+                {!user.emailVerified && (
+                    <button
+                        onClick={handleVerifyEmail}
+                        disabled={isLoading !== null}
+                        className="flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-600/50 text-white rounded-lg transition-colors"
+                    >
+                        {isLoading === 'verify' ? (
+                            <RefreshCw size={16} className="animate-spin" />
+                        ) : (
+                            <Mail size={16} />
+                        )}
+                        <span>Verify Email Manually</span>
+                    </button>
+                )}
+
+                {user.emailVerified && (
+                    <div className="flex items-center gap-2 px-4 py-2.5 bg-green-600/20 text-green-400 rounded-lg">
+                        <Mail size={16} />
+                        <span>Email Verified</span>
+                    </div>
+                )}
+
                 <ResetUserPassword userId={user.id} userEmail={user.email} />
             </div>
         </div>

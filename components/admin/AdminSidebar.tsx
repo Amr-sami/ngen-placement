@@ -15,18 +15,22 @@ import {
     Shield,
 } from 'lucide-react';
 
+// Base nav items without locale prefix
 const navItems = [
-    { href: '/en/admin', label: 'Dashboard', icon: LayoutDashboard, exact: true },
-    { href: '/en/admin/users', label: 'Users', icon: Users },
-    { href: '/en/admin/pricing', label: 'Pricing', icon: DollarSign },
-    { href: '/en/admin/curriculum', label: 'Curriculum', icon: BookOpen },
-    { href: '/en/admin/orders', label: 'Orders', icon: ShoppingCart },
-    { href: '/en/admin/placement-tests', label: 'Placement Tests', icon: ClipboardList },
-    { href: '/en/admin/settings', label: 'Settings', icon: Settings },
+    { path: '/admin', label: 'Dashboard', icon: LayoutDashboard, exact: true },
+    { path: '/admin/users', label: 'Users', icon: Users },
+    { path: '/admin/pricing', label: 'Pricing', icon: DollarSign },
+    { path: '/admin/curriculum', label: 'Curriculum', icon: BookOpen },
+    { path: '/admin/orders', label: 'Orders', icon: ShoppingCart },
+    { path: '/admin/placement-tests', label: 'Placement Tests', icon: ClipboardList },
+    { path: '/admin/settings', label: 'Settings', icon: Settings },
 ];
 
 export default function AdminSidebar() {
     const pathname = usePathname();
+
+    // Extract locale from pathname (e.g., /en/admin -> en)
+    const locale = pathname.split('/')[1] || 'en';
 
     return (
         <aside className="w-64 bg-gray-800 border-r border-gray-700 flex flex-col">
@@ -51,18 +55,19 @@ export default function AdminSidebar() {
                     </p>
                 </div>
                 {navItems.map((item) => {
+                    const href = `/${locale}${item.path}`;
                     const isActive = item.exact
-                        ? pathname === item.href
-                        : pathname.startsWith(item.href);
+                        ? pathname === href
+                        : pathname.startsWith(href);
                     const Icon = item.icon;
 
                     return (
                         <Link
-                            key={item.href}
-                            href={item.href}
+                            key={item.path}
+                            href={href}
                             className={`flex items-center gap-3 mx-3 px-3 py-2.5 rounded-lg text-sm transition-all duration-200 ${isActive
-                                    ? 'bg-purple-600/20 text-purple-400 border-l-4 border-purple-500 -ml-0.5'
-                                    : 'text-gray-300 hover:bg-gray-700/50 hover:text-white'
+                                ? 'bg-purple-600/20 text-purple-400 border-l-4 border-purple-500 -ml-0.5'
+                                : 'text-gray-300 hover:bg-gray-700/50 hover:text-white'
                                 }`}
                         >
                             <Icon size={18} className={isActive ? 'text-purple-400' : ''} />
