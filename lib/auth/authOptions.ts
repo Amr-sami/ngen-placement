@@ -138,11 +138,28 @@ export const authOptions: NextAuthOptions = {
         async session({ session, token }) {
             if (session.user) {
                 session.user.id = token.id as string;
-                session.user.role = token.role as string;
+                session.user.role = token.role as 'student' | 'parent' | 'superadmin';
                 session.user.firstName = token.firstName as string;
                 session.user.lastName = token.lastName as string;
             }
             return session;
+        },
+
+        async redirect({ url, baseUrl }) {
+            // Handle callbackUrl for super admin
+            // If the callback contains /admin, allow it for super admins
+            if (url.includes('/admin')) {
+                return url;
+            }
+
+            // Default redirect behavior
+            if (url.startsWith('/')) {
+                return `${baseUrl}${url}`;
+            }
+            if (url.startsWith(baseUrl)) {
+                return url;
+            }
+            return baseUrl;
         },
     },
 

@@ -55,7 +55,7 @@ export interface IUser extends Document {
     passwordHash?: string;
     authProvider: 'email' | 'google' | 'apple' | 'facebook';
     emailVerified: boolean;
-    role: 'student' | 'parent';
+    role: 'student' | 'parent' | 'superadmin';
     status: 'pending' | 'active' | 'suspended' | 'deleted';
     profile: IUserProfile;
     progress?: IUserProgress;
@@ -179,7 +179,7 @@ const UserSchema = new Schema<IUser>(
         },
         role: {
             type: String,
-            enum: ['student', 'parent'],
+            enum: ['student', 'parent', 'superadmin'],
             default: 'student',
         },
         status: {

@@ -1858,8 +1858,11 @@
       "errors": {
         "emptyFields": "Please enter your email and password",
         "invalidCredentials": "Invalid email or password",
+        "invalidPassword": "The password you entered is incorrect. Please try again.",
         "userNotFound": "No account found with this email",
         "emailNotVerified": "Please verify your email before logging in",
+        "useSocialLogin": "This account uses social login. Please sign in with Google, Apple, or Facebook.",
+        "accountSuspended": "Your account has been suspended. Please contact support.",
         "accountLocked": "Account is locked. Please contact support.",
         "unexpected": "An unexpected error occurred. Please try again."
       }

@@ -48,7 +48,18 @@ export function LoginForm({ locale }: LoginFormProps) {
         };
         setError(errorMessages[result.error] || result.error);
       } else {
-        // Successful login - check for stored return URL, otherwise go to home
+        // Successful login - fetch session to check role
+        const sessionRes = await fetch('/api/auth/session');
+        const session = await sessionRes.json();
+
+        // Super admin → redirect to admin dashboard
+        if (session?.user?.role === 'superadmin') {
+          router.push(`/${locale}/admin`);
+          router.refresh();
+          return;
+        }
+
+        // Regular user - check for stored return URL, otherwise go to home
         const returnUrl = sessionStorage.getItem('returnUrl');
         if (returnUrl) {
           sessionStorage.removeItem('returnUrl');

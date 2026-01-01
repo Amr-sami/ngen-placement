@@ -37,8 +37,7 @@ const TrackSchema = new Schema<ITrack>(
     }
 );
 
-// Index for fast slug lookups
-TrackSchema.index({ slug: 1 }, { unique: true });
+
 
 const Track: Model<ITrack> =
     mongoose.models.Track || mongoose.model<ITrack>('Track', TrackSchema);

@@ -21,6 +21,7 @@ import {
 } from 'lucide-react'
 import { signOut } from 'next-auth/react'
 import SettingsInput from './SettingsInput'
+import UserPasswordChange from './UserPasswordChange'
 
 interface SettingsPageProps {
     locale: string
@@ -288,7 +289,13 @@ export default function SettingsPage({ locale }: SettingsPageProps) {
                                         <p className="text-sm text-gray-500">{t('security.description')}</p>
                                     </div>
                                     <div className="p-6 md:p-8 space-y-8">
+                                        {/* Password Change Section */}
                                         <div className="space-y-4">
+                                            <h3 className="text-lg font-semibold text-gray-900">{locale === 'ar' ? 'تغيير كلمة المرور' : 'Change Password'}</h3>
+                                            <UserPasswordChange locale={locale} />
+                                        </div>
+
+                                        <div className="space-y-4 pt-6 border-t border-gray-100">
                                             <SettingsInput
                                                 label={t('security.email')}
                                                 icon={Mail}
