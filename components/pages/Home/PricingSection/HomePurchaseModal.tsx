@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Trophy, Check, Package as PackageIcon, Zap } from 'lucide-react';
-import { useParams } from 'next/navigation';
+import { X, Trophy, Check, Package as PackageIcon, Zap, Loader2 } from 'lucide-react';
+import { useParams, useRouter } from 'next/navigation';
 import { formatPrice } from '@/hooks/useUserLocation';
 import type { BeltLevel } from '@/components/pages/PlacementTest/Results/types';
 import type { PricingResponse, BeltPricing, PackagePricing, PackageBeltInfo } from '@/app/api/pricing/route';
@@ -20,6 +20,21 @@ type Props = {
     pricing: PricingResponse | null;
     currency: 'USD' | 'EGP';
 };
+
+// Form state type
+interface PurchaseFormData {
+    customerName: string;
+    customerEmail: string;
+    customerPhone: string;
+    paymentMethod: 'card' | 'wallet';
+}
+
+interface FormErrors {
+    customerName?: string;
+    customerEmail?: string;
+    customerPhone?: string;
+    general?: string;
+}
 
 // Translations
 const translations = {
@@ -42,8 +57,28 @@ const translations = {
         youSave: 'You Save',
         switchToPackage: 'SWITCH TO PACKAGE',
         readyToMaster: 'Ready to master this level? Proceed below.',
-        paymentComingSoon: 'Payment Coming Soon...',
+        proceedToPayment: 'Proceed to Payment',
+        processing: 'Processing...',
         secureEncryption: 'Secure 256-bit SSL Encryption',
+        // Form labels
+        fullName: 'Full Name',
+        email: 'Email Address',
+        phone: 'Phone Number',
+        enterName: 'Enter your full name',
+        enterEmail: 'your@email.com',
+        enterPhone: '+20 123 456 7890',
+        paymentMethod: 'Payment Method',
+        card: 'Card',
+        wallet: 'Wallet',
+        // Validation
+        nameRequired: 'Name is required',
+        nameMin: 'Name must be at least 2 characters',
+        emailRequired: 'Email is required',
+        emailInvalid: 'Please enter a valid email',
+        phoneRequired: 'Phone number is required',
+        phoneMin: 'Phone must be at least 10 digits',
+        // Package notice
+        packageNotice: 'Package purchases coming soon! Please select individual belts.',
     },
     ar: {
         secureBundle: 'احصل على الباقة',
@@ -64,13 +99,34 @@ const translations = {
         youSave: 'توفيرك',
         switchToPackage: 'التحويل للباقة',
         readyToMaster: 'مستعد لإتقان هذا المستوى؟ تابع أدناه.',
-        paymentComingSoon: 'الدفع قريباً...',
+        proceedToPayment: 'المتابعة للدفع',
+        processing: 'جاري المعالجة...',
         secureEncryption: 'تشفير SSL آمن 256-bit',
+        // Form labels
+        fullName: 'الاسم الكامل',
+        email: 'البريد الإلكتروني',
+        phone: 'رقم الهاتف',
+        enterName: 'أدخل اسمك الكامل',
+        enterEmail: 'your@email.com',
+        enterPhone: '+20 123 456 7890',
+        paymentMethod: 'طريقة الدفع',
+        card: 'بطاقة',
+        wallet: 'محفظة',
+        // Validation
+        nameRequired: 'الاسم مطلوب',
+        nameMin: 'الاسم يجب أن يكون حرفين على الأقل',
+        emailRequired: 'البريد الإلكتروني مطلوب',
+        emailInvalid: 'يرجى إدخال بريد إلكتروني صحيح',
+        phoneRequired: 'رقم الهاتف مطلوب',
+        phoneMin: 'الهاتف يجب أن يكون 10 أرقام على الأقل',
+        // Package notice
+        packageNotice: 'شراء الباقات قريباً! يرجى اختيار الأحزمة الفردية.',
     }
 };
 
 export default function HomePurchaseModal({ isOpen, onClose, item, pricing, currency }: Props) {
     const params = useParams();
+    const router = useRouter();
     const locale = (params?.locale as 'en' | 'ar') || 'en';
     const isRTL = locale === 'ar';
     const t = translations[locale] || translations.en;
@@ -78,10 +134,31 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
     // State to switch between belt and package view (temporary - resets on close)
     const [viewPackage, setViewPackage] = useState(false);
 
-    // Reset view when modal closes or item changes
-    React.useEffect(() => {
+    // Form state
+    const [formData, setFormData] = useState<PurchaseFormData>({
+        customerName: '',
+        customerEmail: '',
+        customerPhone: '',
+        paymentMethod: 'card',
+    });
+    const [errors, setErrors] = useState<FormErrors>({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    // Refs for form inputs
+    const nameInputRef = useRef<HTMLInputElement>(null);
+
+    // Reset view and form when modal closes or item changes
+    useEffect(() => {
         if (!isOpen) {
             setViewPackage(false);
+            setFormData({
+                customerName: '',
+                customerEmail: '',
+                customerPhone: '',
+                paymentMethod: 'card',
+            });
+            setErrors({});
+            setIsSubmitting(false);
         }
     }, [isOpen]);
 
@@ -100,6 +177,123 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
     // Determine what to show - package view or belt view
     const showingPackage = item.type === 'package' || (item.type === 'belt' && viewPackage && upsellPackage);
     const currentPackage = item.type === 'package' ? item.data : upsellPackage;
+
+    // Get the beltId for purchase
+    const getBeltId = (): string | null => {
+        if (item.type === 'belt' && item.data.beltId) {
+            return item.data.beltId;
+        }
+        return null;
+    };
+
+    // Get the price based on what's being purchased
+    const getPurchasePrice = (): number => {
+        if (showingPackage && currentPackage) {
+            return currentPackage.skippedBeltsValue > 0
+                ? currentPackage.adjustedFinalPrice
+                : currentPackage.finalPrice;
+        }
+        if (item.type === 'belt') {
+            return item.data.finalPrice;
+        }
+        return 0;
+    };
+
+    // Validate form
+    const validateForm = (): boolean => {
+        const newErrors: FormErrors = {};
+
+        if (!formData.customerName.trim()) {
+            newErrors.customerName = t.nameRequired;
+        } else if (formData.customerName.trim().length < 2) {
+            newErrors.customerName = t.nameMin;
+        }
+
+        if (!formData.customerEmail.trim()) {
+            newErrors.customerEmail = t.emailRequired;
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.customerEmail)) {
+            newErrors.customerEmail = t.emailInvalid;
+        }
+
+        if (!formData.customerPhone.trim()) {
+            newErrors.customerPhone = t.phoneRequired;
+        } else if (formData.customerPhone.replace(/\D/g, '').length < 10) {
+            newErrors.customerPhone = t.phoneMin;
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    // Handle form submission
+    const handleSubmit = async () => {
+        // Package purchases not yet supported
+        if (showingPackage) {
+            setErrors({ general: t.packageNotice });
+            return;
+        }
+
+        const beltId = getBeltId();
+        if (!beltId) {
+            setErrors({ general: 'Unable to identify product. Please try again.' });
+            return;
+        }
+
+        if (!validateForm()) {
+            return;
+        }
+
+        setIsSubmitting(true);
+        setErrors({});
+
+        try {
+            const response = await fetch('/api/orders/create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    beltId,
+                    customerName: formData.customerName.trim(),
+                    customerEmail: formData.customerEmail.trim().toLowerCase(),
+                    customerPhone: formData.customerPhone.trim(),
+                    paymentMethod: formData.paymentMethod,
+                    currency,
+                }),
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                const errorMessage = data.message || data.error || 'Failed to create order';
+                setErrors({ general: errorMessage });
+                return;
+            }
+
+            // Redirect to checkout page with iframe
+            if (data.iframeUrl && data.orderId) {
+                const checkoutUrl = `/${locale}/payment/checkout?orderId=${encodeURIComponent(data.orderId)}&iframeUrl=${encodeURIComponent(data.iframeUrl)}`;
+                router.push(checkoutUrl);
+            } else {
+                throw new Error('No payment URL received');
+            }
+        } catch (error) {
+            console.error('Purchase error:', error);
+            const errorMessage = error instanceof Error ? error.message : 'An unexpected error occurred';
+            setErrors({ general: errorMessage });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    // Handle input change
+    const handleInputChange = (field: keyof PurchaseFormData, value: string) => {
+        setFormData(prev => ({ ...prev, [field]: value }));
+        // Clear field error when typing
+        if (errors[field as keyof FormErrors]) {
+            setErrors(prev => ({ ...prev, [field]: undefined }));
+        }
+    };
 
     return (
         <AnimatePresence>
@@ -262,16 +456,103 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
 
                         </div>
 
-                        {/* Footer Actions */}
-                        <div className="p-8 border-t border-slate-100 bg-slate-50/50">
+                        {/* Footer with Form */}
+                        <div className="p-6 md:p-8 border-t border-slate-100 bg-slate-50/50 space-y-4">
+                            {/* General Error */}
+                            {errors.general && (
+                                <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-red-600 text-sm text-center">
+                                    {errors.general}
+                                </div>
+                            )}
+
+                            {/* Form Fields */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {/* Name */}
+                                <div className="space-y-1">
+                                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wide">{t.fullName}</label>
+                                    <input
+                                        ref={nameInputRef}
+                                        type="text"
+                                        value={formData.customerName}
+                                        onChange={(e) => handleInputChange('customerName', e.target.value)}
+                                        placeholder={t.enterName}
+                                        disabled={isSubmitting}
+                                        className={`w-full px-4 py-3 rounded-xl border ${errors.customerName ? 'border-red-300 bg-red-50' : 'border-slate-200'} bg-white text-[#2e165f] placeholder-slate-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#2e165f]/20 focus:border-[#2e165f] transition-all disabled:opacity-50`}
+                                    />
+                                    {errors.customerName && <p className="text-xs text-red-500">{errors.customerName}</p>}
+                                </div>
+
+                                {/* Email */}
+                                <div className="space-y-1">
+                                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wide">{t.email}</label>
+                                    <input
+                                        type="email"
+                                        value={formData.customerEmail}
+                                        onChange={(e) => handleInputChange('customerEmail', e.target.value)}
+                                        placeholder={t.enterEmail}
+                                        disabled={isSubmitting}
+                                        className={`w-full px-4 py-3 rounded-xl border ${errors.customerEmail ? 'border-red-300 bg-red-50' : 'border-slate-200'} bg-white text-[#2e165f] placeholder-slate-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#2e165f]/20 focus:border-[#2e165f] transition-all disabled:opacity-50`}
+                                    />
+                                    {errors.customerEmail && <p className="text-xs text-red-500">{errors.customerEmail}</p>}
+                                </div>
+
+                                {/* Phone */}
+                                <div className="space-y-1">
+                                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wide">{t.phone}</label>
+                                    <input
+                                        type="tel"
+                                        value={formData.customerPhone}
+                                        onChange={(e) => handleInputChange('customerPhone', e.target.value)}
+                                        placeholder={t.enterPhone}
+                                        disabled={isSubmitting}
+                                        className={`w-full px-4 py-3 rounded-xl border ${errors.customerPhone ? 'border-red-300 bg-red-50' : 'border-slate-200'} bg-white text-[#2e165f] placeholder-slate-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#2e165f]/20 focus:border-[#2e165f] transition-all disabled:opacity-50`}
+                                    />
+                                    {errors.customerPhone && <p className="text-xs text-red-500">{errors.customerPhone}</p>}
+                                </div>
+
+                                {/* Payment Method */}
+                                <div className="space-y-1">
+                                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wide">{t.paymentMethod}</label>
+                                    <div className="flex gap-3">
+                                        <button
+                                            type="button"
+                                            onClick={() => !isSubmitting && handleInputChange('paymentMethod', 'card')}
+                                            disabled={isSubmitting}
+                                            className={`flex-1 py-3 px-4 rounded-xl border text-sm font-bold transition-all ${formData.paymentMethod === 'card' ? 'border-[#2e165f] bg-[#2e165f] text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'} disabled:opacity-50`}
+                                        >
+                                            💳 {t.card}
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={() => !isSubmitting && handleInputChange('paymentMethod', 'wallet')}
+                                            disabled={isSubmitting}
+                                            className={`flex-1 py-3 px-4 rounded-xl border text-sm font-bold transition-all ${formData.paymentMethod === 'wallet' ? 'border-[#2e165f] bg-[#2e165f] text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'} disabled:opacity-50`}
+                                        >
+                                            📱 {t.wallet}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Submit Button */}
                             <button
-                                disabled
-                                className="w-full py-5 rounded-2xl bg-[#2e165f] text-white font-black text-base shadow-xl shadow-purple-900/10 flex items-center justify-center gap-2 opacity-90 cursor-not-allowed"
+                                onClick={handleSubmit}
+                                disabled={isSubmitting}
+                                className="w-full py-5 rounded-2xl bg-[#2e165f] text-white font-black text-base shadow-xl shadow-purple-900/10 flex items-center justify-center gap-2 hover:bg-[#3d1d7a] active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed"
                             >
-                                {t.paymentComingSoon}
+                                {isSubmitting ? (
+                                    <>
+                                        <Loader2 className="w-5 h-5 animate-spin" />
+                                        {t.processing}
+                                    </>
+                                ) : (
+                                    <>
+                                        {t.proceedToPayment} • {formatPrice(getPurchasePrice(), currency)}
+                                    </>
+                                )}
                             </button>
-                            <p className="text-center text-slate-400 text-xs font-bold mt-4">
-                                {t.secureEncryption}
+                            <p className="text-center text-slate-400 text-xs font-bold">
+                                🔒 {t.secureEncryption}
                             </p>
                         </div>
 

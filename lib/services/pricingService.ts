@@ -68,6 +68,7 @@ export class PricingService {
                     packageLevel: belt.packageLevel,
                     basePrice,
                     finalPrice,
+                    beltId: String(belt._id),
                 };
             });
 

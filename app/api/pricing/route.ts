@@ -12,6 +12,8 @@ export interface BeltPricing {
     packageLevel: string;
     basePrice: number;
     finalPrice: number;
+    /** MongoDB ObjectId as string - used for purchase API */
+    beltId?: string;
 }
 
 export interface PackageBeltInfo {

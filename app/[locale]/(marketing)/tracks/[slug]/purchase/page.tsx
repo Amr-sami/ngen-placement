@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { connectToDatabase } from '@/lib/mongodb';
 import Belt from '@/lib/models/Belt';
 import TrackPurchaseForm from '@/components/payment/TrackPurchaseForm';
-import { getLocalizedValue, Locale, LocalizedString } from '@/lib/localization';
+import { getLocalizedValue, Locale } from '@/lib/localization';
 
 interface PurchasePageProps {
     params: Promise<{
