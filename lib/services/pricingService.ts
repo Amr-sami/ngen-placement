@@ -38,7 +38,8 @@ export class PricingService {
 
         // 3. Fetch Data
         const belts = await Belt.find({}).sort({ order: 1 }).lean();
-        const pricingConfigs = await PricingConfig.find({ isActive: true }).lean();
+        // Fetch ALL configs (including inactive) to determine enabled status
+        const allPricingConfigs = await PricingConfig.find({}).lean();
 
         // 4. Process Unique Belts
         const uniqueBelts = belts.reduce((acc, belt) => {
@@ -50,8 +51,9 @@ export class PricingService {
         }, [] as typeof belts);
 
         // 5. Option 1: Per Belt
-        const perBeltConfig = pricingConfigs.find(c => c.configType === 'perBelt');
-        const perBeltDiscount = perBeltConfig ? (perBeltConfig[discountField] as number) : 50;
+        const perBeltConfig = allPricingConfigs.find(c => c.configType === 'perBelt');
+        const perBeltEnabled = perBeltConfig?.isActive ?? true; // Default to enabled if not found
+        const perBeltDiscount = perBeltConfig && perBeltConfig.isActive ? (perBeltConfig[discountField] as number) : 50;
 
         // Helper to get localized belt name
         const getBeltName = (belt: typeof uniqueBelts[0]): string => {
@@ -98,7 +100,7 @@ export class PricingService {
         const option1Total = option1Belts.reduce((sum, b) => sum + b.finalPrice, 0);
 
         // 6. Option 2: Packages
-        const packageConfigs = pricingConfigs.filter(c => c.configType === 'package');
+        const packageConfigs = allPricingConfigs.filter(c => c.configType === 'package');
         let option2Packages: PackagePricing[] = packageConfigs.map(config => {
             const configBeltCodes = (config.belts || []).map((b: string) => b.toUpperCase());
             const packageBelts = configBeltCodes.length > 0
@@ -145,6 +147,7 @@ export class PricingService {
             return {
                 name: packageName,
                 packageLevel: config.packageLevel || '',
+                enabled: config.isActive, // NEW: Package enabled status
                 belts: beltInfoList,
                 baseTotal,
                 discountPercent,
@@ -164,7 +167,8 @@ export class PricingService {
         }
 
         // 7. Option 3: Organization
-        const orgConfig = pricingConfigs.find(c => c.configType === 'organization');
+        const orgConfig = allPricingConfigs.find(c => c.configType === 'organization');
+        const orgEnabled = orgConfig?.isActive ?? true;
         const orgName = orgConfig
             ? getLocalizedValue(orgConfig.name, locale)
             : (locale === 'ar' ? 'المؤسسات / المدارس' : 'Organizations / Schools');
@@ -173,12 +177,14 @@ export class PricingService {
             currency,
             countryCode,
             option1_perBelt: {
+                enabled: perBeltEnabled,
                 discountPercent: perBeltDiscount,
                 belts: option1Belts,
                 total: option1Total,
             },
             option2_packages: option2Packages,
             option3_organization: {
+                enabled: orgEnabled,
                 name: orgName,
                 contactUs: true,
                 hidden: isAuthenticated,

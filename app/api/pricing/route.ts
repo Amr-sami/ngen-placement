@@ -25,6 +25,7 @@ export interface PackageBeltInfo {
 export interface PackagePricing {
     name: string;
     packageLevel: string;
+    enabled: boolean; // NEW: Whether this package is enabled for purchase
     belts: PackageBeltInfo[];
     baseTotal: number;
     discountPercent: number;
@@ -41,12 +42,14 @@ export interface PricingResponse {
     currency: 'EGP' | 'USD';
     countryCode: string;
     option1_perBelt: {
+        enabled: boolean; // NEW: Whether per-belt purchases are enabled
         discountPercent: number;
         belts: BeltPricing[];
         total: number;
     };
     option2_packages: PackagePricing[];
     option3_organization: {
+        enabled: boolean; // NEW: Whether organization option is enabled
         name: string;
         contactUs: boolean;
         hidden?: boolean;
