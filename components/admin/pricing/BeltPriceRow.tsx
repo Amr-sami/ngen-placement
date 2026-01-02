@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Save, RefreshCw } from 'lucide-react';
-import { updateBeltPrice } from '@/lib/actions/admin/pricingActions';
+import { Save, RefreshCw, ToggleLeft, ToggleRight } from 'lucide-react';
+import { updateBeltPrice, toggleBeltSales } from '@/lib/actions/admin/pricingActions';
 
 interface Belt {
     id: string;
@@ -13,6 +13,7 @@ interface Belt {
     basePriceEGP: number;
     basePriceUSD: number;
     packageLevel: string;
+    salesEnabled: boolean;
 }
 
 interface BeltPriceRowProps {
@@ -22,7 +23,9 @@ interface BeltPriceRowProps {
 export default function BeltPriceRow({ belt }: BeltPriceRowProps) {
     const [priceEGP, setPriceEGP] = useState(belt.basePriceEGP);
     const [priceUSD, setPriceUSD] = useState(belt.basePriceUSD);
+    const [enabled, setEnabled] = useState(belt.salesEnabled);
     const [isLoading, setIsLoading] = useState(false);
+    const [isToggling, setIsToggling] = useState(false);
     const [hasChanges, setHasChanges] = useState(false);
     const router = useRouter();
 
@@ -36,6 +39,20 @@ export default function BeltPriceRow({ belt }: BeltPriceRowProps) {
         const num = parseFloat(value) || 0;
         setPriceUSD(num);
         setHasChanges(priceEGP !== belt.basePriceEGP || num !== belt.basePriceUSD);
+    };
+
+    const handleToggleEnabled = async () => {
+        setIsToggling(true);
+        try {
+            await toggleBeltSales(belt.id, !enabled);
+            setEnabled(!enabled);
+            router.refresh();
+        } catch (error) {
+            console.error('Failed to toggle sales:', error);
+            alert('Failed to toggle sales status');
+        } finally {
+            setIsToggling(false);
+        }
     };
 
     const handleSave = async () => {
@@ -72,6 +89,22 @@ export default function BeltPriceRow({ belt }: BeltPriceRowProps) {
                 <span className="text-gray-400 text-sm capitalize">{belt.packageLevel.replace('-', ' ')}</span>
             </td>
             <td className="py-3 px-4">
+                <button
+                    onClick={handleToggleEnabled}
+                    disabled={isToggling}
+                    className={`transition-colors ${enabled ? 'text-green-400 hover:text-green-300' : 'text-gray-600 hover:text-gray-500'}`}
+                    title={enabled ? 'Sales Enabled' : 'Sales Disabled'}
+                >
+                    {isToggling ? (
+                        <RefreshCw size={24} className="animate-spin text-gray-400" />
+                    ) : enabled ? (
+                        <ToggleRight size={28} />
+                    ) : (
+                        <ToggleLeft size={28} />
+                    )}
+                </button>
+            </td>
+            <td className="py-3 px-4">
                 <div className="flex items-center gap-1">
                     <input
                         type="number"
@@ -102,8 +135,8 @@ export default function BeltPriceRow({ belt }: BeltPriceRowProps) {
                     onClick={handleSave}
                     disabled={!hasChanges || isLoading}
                     className={`flex items-center gap-1 px-3 py-1.5 rounded text-sm transition-colors ${hasChanges
-                            ? 'bg-purple-600 hover:bg-purple-700 text-white'
-                            : 'bg-gray-700 text-gray-500 cursor-not-allowed'
+                        ? 'bg-purple-600 hover:bg-purple-700 text-white'
+                        : 'bg-gray-700 text-gray-500 cursor-not-allowed'
                         }`}
                 >
                     {isLoading ? (

@@ -3,12 +3,9 @@
 import { revalidatePath } from 'next/cache';
 import connectToDatabase from '@/lib/mongodb';
 import Track from '@/lib/models/Track';
-import Belt from '@/lib/models/Belt';
+import Belt, { IBelt } from '@/lib/models/Belt';
 import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
-/**
- * Get all tracks with their belts
- */
 /**
  * Get all tracks with their belts
  */
@@ -16,8 +13,8 @@ export async function getTracksWithBelts() {
     await requireSuperAdmin();
     await connectToDatabase();
 
-    const tracks = await Track.find().sort({ createdAt: 1 }).lean();
-    const belts = await Belt.find().sort({ trackId: 1, order: 1 }).lean();
+    // Populate the belts array
+    const tracks = await Track.find().sort({ createdAt: 1 }).populate('belts').lean();
 
     return tracks.map(track => ({
         id: track._id.toString(),
@@ -25,8 +22,8 @@ export async function getTracksWithBelts() {
         slug: track.slug,
         description: track.description ? { en: track.description.en, ar: track.description.ar } : undefined,
         isActive: track.isActive,
-        belts: belts
-            .filter(b => b.trackId.toString() === track._id.toString())
+        belts: (track.belts as unknown as IBelt[] || [])
+            .sort((a, b) => a.order - b.order)
             .map(belt => ({
                 id: belt._id.toString(),
                 name: { en: belt.name.en, ar: belt.name.ar },
@@ -37,6 +34,7 @@ export async function getTracksWithBelts() {
                 basePriceEGP: belt.basePriceEGP,
                 basePriceUSD: belt.basePriceUSD,
                 packageLevel: belt.packageLevel,
+                salesEnabled: belt.salesEnabled,
             })),
     }));
 }
@@ -67,7 +65,15 @@ export async function createTrack(data: {
             ? { en: data.descriptionEn || '', ar: data.descriptionAr || '' }
             : undefined,
         isActive: true,
+        // When creating a track, we should optionally assign all global belts to it? 
+        // For now, let's leave belts empty unless we fetch them
     });
+
+    // Optionally assign existing global belts to the new track
+    const allBelts = await Belt.find({}).sort({ order: 1 });
+    if (allBelts.length > 0) {
+        track.belts = allBelts.map(b => b._id);
+    }
 
     await track.save();
 
@@ -136,7 +142,7 @@ export async function toggleTrackActive(trackId: string, isActive: boolean) {
 }
 
 /**
- * Update belt order
+ * Update belt order (Global)
  */
 export async function updateBeltOrder(beltId: string, newOrder: number) {
     await requireSuperAdmin();
@@ -158,7 +164,7 @@ export async function updateBeltOrder(beltId: string, newOrder: number) {
 }
 
 /**
- * Update belt minimum score to start
+ * Update belt minimum score to start (Global)
  */
 export async function updateBeltMinScore(beltId: string, minScore: number) {
     await requireSuperAdmin();
@@ -180,10 +186,10 @@ export async function updateBeltMinScore(beltId: string, minScore: number) {
 }
 
 /**
- * Create a new belt
+ * Create a new belt (Global and linked to all tracks for now)
  */
 export async function createBelt(data: {
-    trackId: string;
+    trackId: string; // Kept for API compatibility but used to trigger linking
     nameEn: string;
     nameAr: string;
     code: string;
@@ -196,8 +202,8 @@ export async function createBelt(data: {
     await requireSuperAdmin();
     await connectToDatabase();
 
+    // 1. Create the global belt
     const belt = new Belt({
-        trackId: data.trackId,
         name: { en: data.nameEn, ar: data.nameAr },
         code: data.code.toUpperCase(),
         order: data.order,
@@ -205,9 +211,17 @@ export async function createBelt(data: {
         basePriceUSD: data.basePriceUSD,
         packageLevel: data.packageLevel,
         minScoreToStart: data.minScoreToStart,
+        salesEnabled: true
     });
 
     await belt.save();
+
+    // 2. Link this belt to ALL tracks (to maintain shared structure)
+    // In future this could be selective
+    await Track.updateMany(
+        {},
+        { $push: { belts: belt._id } }
+    );
 
     revalidatePath('/en/admin/curriculum');
 
@@ -215,7 +229,7 @@ export async function createBelt(data: {
 }
 
 /**
- * Update a belt
+ * Update a belt (Global)
  */
 export async function updateBelt(beltId: string, data: {
     nameEn?: string;
@@ -252,17 +266,24 @@ export async function updateBelt(beltId: string, data: {
 }
 
 /**
- * Delete a belt
+ * Delete a belt (Global)
  */
 export async function deleteBelt(beltId: string) {
     await requireSuperAdmin();
     await connectToDatabase();
 
+    // 1. Delete the global belt
     const result = await Belt.findByIdAndDelete(beltId);
 
     if (!result) {
         throw new Error('Belt not found');
     }
+
+    // 2. Remove reference from all tracks
+    await Track.updateMany(
+        {},
+        { $pull: { belts: beltId } }
+    );
 
     revalidatePath('/en/admin/curriculum');
 
@@ -271,18 +292,13 @@ export async function deleteBelt(beltId: string) {
 
 /**
  * Delete a track
- * Only if it has no belts associated with it
  */
 export async function deleteTrack(trackId: string) {
     await requireSuperAdmin();
     await connectToDatabase();
 
-    // Check if track has any belts
-    const beltCount = await Belt.countDocuments({ trackId });
-    if (beltCount > 0) {
-        throw new Error(`Cannot delete track with ${beltCount} belts. Delete all belts first.`);
-    }
-
+    // No longer checking belt count since belts are global/shared
+    // We just delete the track. Belts remain.
     const result = await Track.findByIdAndDelete(trackId);
 
     if (!result) {
@@ -294,4 +310,3 @@ export async function deleteTrack(trackId: string) {
 
     return { success: true };
 }
-

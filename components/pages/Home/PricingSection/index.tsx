@@ -82,6 +82,10 @@ function HomepagePricingSection() {
   const hasTakenTest = pricing?.userContext?.hasTakenTest ?? false;
   const isOrganizationHidden = pricing?.option3_organization?.hidden ?? false;
 
+  // Check if options are enabled (from admin dashboard)
+  const isPerBeltEnabled = pricing?.option1_perBelt?.enabled ?? true;
+  const isOrganizationEnabled = pricing?.option3_organization?.enabled ?? true;
+
   useEffect(() => {
     const fetchPricing = async () => {
       try {
@@ -96,8 +100,13 @@ function HomepagePricingSection() {
           const data = await response.json();
           setPricing(data);
 
-          // If organization tab is hidden and currently selected, switch to packages
-          if (data.option3_organization?.hidden && activeTab === 'organization') {
+          // If organization tab is hidden or disabled, and currently selected, switch to packages
+          if ((data.option3_organization?.hidden || !data.option3_organization?.enabled) && activeTab === 'organization') {
+            setActiveTab('packages');
+          }
+
+          // If per belt is disabled and currently selected, switch to packages
+          if (!data.option1_perBelt?.enabled && activeTab === 'perBelt') {
             setActiveTab('packages');
           }
 
@@ -154,11 +163,11 @@ function HomepagePricingSection() {
   const shouldHidePackages =
     isAuthenticated && hasTakenTest && pricing?.option2_packages?.some(p => p.showAsSingleBelt);
 
-  // Build available tabs based on auth state
+  // Build available tabs based on auth state and enabled status
   const availableTabs = [
-    { id: 'packages', label: t.tabs.bundles, icon: Package, show: !shouldHidePackages },
-    { id: 'perBelt', label: t.tabs.singleBelt, icon: Tag, show: true },
-    { id: 'organization', label: t.tabs.schools, icon: Users, show: !isOrganizationHidden },
+    { id: 'packages', label: t.tabs.bundles, icon: Package, show: !shouldHidePackages && pricing?.option2_packages?.some(p => p.enabled) },
+    { id: 'perBelt', label: t.tabs.singleBelt, icon: Tag, show: isPerBeltEnabled },
+    { id: 'organization', label: t.tabs.schools, icon: Users, show: !isOrganizationHidden && isOrganizationEnabled },
   ].filter(tab => tab.show);
 
   return (
@@ -213,12 +222,13 @@ function HomepagePricingSection() {
               {/* --- Packages Tab --- */}
               {activeTab === 'packages' && pricing && (
                 <div
-                  className={`grid gap-8 items-center ${pricing.option2_packages.length === 1 ? 'grid-cols-1 max-w-md mx-auto' : 'grid-cols-1 md:grid-cols-3'
+                  className={`grid gap-8 items-center ${pricing.option2_packages.filter(p => p.enabled).length === 1 ? 'grid-cols-1 max-w-md mx-auto' : 'grid-cols-1 md:grid-cols-3'
                     }`}
                 >
-                  {pricing.option2_packages.map((pkg, index) => {
+                  {pricing.option2_packages.filter(pkg => pkg.enabled).map((pkg, index) => {
                     // Single package = always featured, multiple = middle one is featured
-                    const isFeatured = pricing.option2_packages.length === 1 || index === 1;
+                    const enabledPackages = pricing.option2_packages.filter(p => p.enabled);
+                    const isFeatured = enabledPackages.length === 1 || index === 1;
 
                     // Determine if there are skipped belts
                     const hasSkippedBelts = pkg.skippedBeltsValue > 0;

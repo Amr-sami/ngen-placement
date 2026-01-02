@@ -51,11 +51,7 @@ export default function TrackCard({ track }: TrackCardProps) {
     };
 
     const handleDeleteTrack = async () => {
-        if (track.belts.length > 0) {
-            alert(`Cannot delete track with ${track.belts.length} belts. Delete all belts first.`);
-            return;
-        }
-
+        // Since belts are global, we can delete a track without deleting belts
         const confirmed = window.confirm(
             `Are you sure you want to delete "${track.name.en}"? This action cannot be undone.`
         );
@@ -76,7 +72,7 @@ export default function TrackCard({ track }: TrackCardProps) {
 
     const handleDeleteBelt = async (beltId: string, beltName: string) => {
         const confirmed = window.confirm(
-            `Are you sure you want to delete "${beltName}"? This action cannot be undone.`
+            `Are you sure you want to delete "${beltName}"? \n\n⚠️ WARNING: This is a GLOBAL BELT. Deleting it will remove it from ALL tracks and pricing configurations across the system.`
         );
 
         if (!confirmed) return;
@@ -133,12 +129,9 @@ export default function TrackCard({ track }: TrackCardProps) {
                     </button>
                     <button
                         onClick={handleDeleteTrack}
-                        disabled={isLoading !== null || track.belts.length > 0}
-                        className={`flex items-center gap-1 text-sm transition-colors ${track.belts.length > 0
-                            ? 'text-gray-600 cursor-not-allowed'
-                            : 'text-red-400 hover:text-red-300'
-                            }`}
-                        title={track.belts.length > 0 ? 'Delete all belts first' : 'Delete track'}
+                        disabled={isLoading !== null}
+                        className="flex items-center gap-1 text-sm transition-colors text-red-400 hover:text-red-300"
+                        title="Delete track"
                     >
                         <Trash2 size={16} />
                     </button>

@@ -42,13 +42,8 @@ export class PricingService {
         const allPricingConfigs = await PricingConfig.find({}).lean();
 
         // 4. Process Unique Belts
-        const uniqueBelts = belts.reduce((acc, belt) => {
-            const code = belt.code.toUpperCase();
-            if (!acc.find(b => b.code.toUpperCase() === code)) {
-                acc.push(belt);
-            }
-            return acc;
-        }, [] as typeof belts);
+        // Belts are globally unique now, no need to deduplicate.
+        const uniqueBelts = belts;
 
         // 5. Option 1: Per Belt
         const perBeltConfig = allPricingConfigs.find(c => c.configType === 'perBelt');
@@ -60,18 +55,21 @@ export class PricingService {
             return getLocalizedValue(belt.name, locale);
         };
 
-        let option1Belts: BeltPricing[] = uniqueBelts.map(belt => {
-            const basePrice = (belt[priceField] as number) || 0;
-            const finalPrice = Math.round(basePrice * (1 - perBeltDiscount / 100));
-            return {
-                belt: getBeltName(belt),
-                code: belt.code.toLowerCase(),
-                order: belt.order,
-                packageLevel: belt.packageLevel,
-                basePrice,
-                finalPrice,
-            };
-        });
+        // Filter out belts that are not enabled for individual sales
+        let option1Belts: BeltPricing[] = uniqueBelts
+            .filter(belt => belt.salesEnabled !== false)
+            .map(belt => {
+                const basePrice = (belt[priceField] as number) || 0;
+                const finalPrice = Math.round(basePrice * (1 - perBeltDiscount / 100));
+                return {
+                    belt: getBeltName(belt),
+                    code: belt.code.toLowerCase(),
+                    order: belt.order,
+                    packageLevel: belt.packageLevel,
+                    basePrice,
+                    finalPrice,
+                };
+            });
 
         // Filter logic for recommended belt
         let recommendedPackageLevel = '';

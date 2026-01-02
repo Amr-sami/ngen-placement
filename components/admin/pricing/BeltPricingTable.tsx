@@ -24,6 +24,7 @@ export default async function BeltPricingTable() {
                     <tr className="border-b border-gray-700">
                         <th className="text-left py-3 px-4 text-sm font-medium text-gray-400">Belt</th>
                         <th className="text-left py-3 px-4 text-sm font-medium text-gray-400">Level</th>
+                        <th className="text-left py-3 px-4 text-sm font-medium text-gray-400">Sales Enabled</th>
                         <th className="text-left py-3 px-4 text-sm font-medium text-gray-400">Price (EGP)</th>
                         <th className="text-left py-3 px-4 text-sm font-medium text-gray-400">Price (USD)</th>
                         <th className="text-left py-3 px-4 text-sm font-medium text-gray-400">Action</th>

@@ -24,24 +24,21 @@ interface PurchasePageProps {
  * This page displays the purchase form for a specific belt.
  */
 
-interface PopulatedTrack {
-    _id: string;
-    name: LocalizedString | string;
-}
+import Track from '@/lib/models/Track';
 
-async function getBeltData(beltId: string, locale: Locale) {
+async function getBeltData(beltId: string, slug: string, locale: Locale) {
     await connectToDatabase();
 
-    const belt = await Belt.findById(beltId).populate('trackId');
+    const belt = await Belt.findById(beltId);
+    const track = await Track.findOne({ slug });
 
     if (!belt) {
         return null;
     }
 
-    // Get track name from populated trackId
+    // Get track name from slug lookup
     let trackName = 'Unknown Track';
-    if (belt.trackId && typeof belt.trackId === 'object' && 'name' in belt.trackId) {
-        const track = belt.trackId as unknown as PopulatedTrack;
+    if (track) {
         trackName = getLocalizedValue(track.name, locale);
     }
 
@@ -70,7 +67,7 @@ export default async function PurchasePage({ params, searchParams }: PurchasePag
         notFound();
     }
 
-    const belt = await getBeltData(beltId, locale);
+    const belt = await getBeltData(beltId, resolvedParams.slug, locale);
 
     if (!belt) {
         notFound();
@@ -193,7 +190,7 @@ export async function generateMetadata({ params, searchParams }: PurchasePagePro
         };
     }
 
-    const belt = await getBeltData(beltId, locale);
+    const belt = await getBeltData(beltId, resolvedParams.slug, locale);
 
     if (!belt) {
         return {

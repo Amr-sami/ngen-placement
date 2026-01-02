@@ -8,7 +8,7 @@ import { useLocale } from 'next-intl'
 import type { BeltLevel } from './types'
 import { beltLevels, getLocalizedBeltValue } from './types'
 import { formatPrice } from '@/hooks/useUserLocation'
-import type { PricingResponse } from '@/app/api/pricing/route'
+import type { PricingResponse, PackagePricing, PackageBeltInfo } from '@/app/api/pricing/route'
 
 interface PurchaseCardProps {
     isOpen: boolean
@@ -92,6 +92,22 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                 if (response.ok) {
                     const data = await response.json()
                     setPricing(data)
+
+                    // If "perBelt" is disabled, switch to another available option
+                    if (!data.option1_perBelt?.enabled) {
+                        // Check if package is available for this belt
+                        const beltCode = belt.belt.toLowerCase()
+                        const pkg = data.option2_packages?.find((p: PackagePricing) =>
+                            p.belts.some((b: PackageBeltInfo) => b.code.toLowerCase() === beltCode)
+                        )
+                        const isPackageAvailable = pkg && pkg.enabled && !pkg.showAsSingleBelt
+
+                        if (isPackageAvailable) {
+                            setSelectedOption('package')
+                        } else if (data.option3_organization?.enabled && !data.option3_organization?.hidden) {
+                            setSelectedOption('organization')
+                        }
+                    }
                 }
             } catch (error) {
                 console.error('Error fetching pricing:', error)
@@ -253,27 +269,33 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                         ) : (
                             <>
                                 {/* Option Tabs */}
+                                {/* Option Tabs */}
                                 <div className="flex gap-2 mb-4">
-                                    <button
-                                        onClick={() => setSelectedOption('perBelt')}
-                                        style={
-                                            selectedOption === 'perBelt'
-                                                ? {
-                                                    backgroundColor: `${belt.color}33`,
-                                                    borderColor: `${belt.color}80`,
-                                                    color: belt.color,
-                                                }
-                                                : {}
-                                        }
-                                        className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'perBelt'
-                                            ? '' // Styles handled by inline style
-                                            : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
-                                            }`}
-                                    >
-                                        <Tag className={`w-4 h-4 inline ${isRTL ? 'ml-1' : 'mr-1'}`} />
-                                        {t.perBelt}
-                                    </button>
-                                    {packagePricing && !packagePricing.showAsSingleBelt && (
+                                    {/* Per Belt Option Button */}
+                                    {pricing?.option1_perBelt?.enabled && (
+                                        <button
+                                            onClick={() => setSelectedOption('perBelt')}
+                                            style={
+                                                selectedOption === 'perBelt'
+                                                    ? {
+                                                        backgroundColor: `${belt.color}33`,
+                                                        borderColor: `${belt.color}80`,
+                                                        color: belt.color,
+                                                    }
+                                                    : {}
+                                            }
+                                            className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'perBelt'
+                                                ? '' // Styles handled by inline style
+                                                : 'bg-white/5 border border-white/10 text-white/60 hover:text-white'
+                                                }`}
+                                        >
+                                            <Tag className={`w-4 h-4 inline ${isRTL ? 'ml-1' : 'mr-1'}`} />
+                                            {t.perBelt}
+                                        </button>
+                                    )}
+
+                                    {/* Package Option Button */}
+                                    {packagePricing && packagePricing.enabled && !packagePricing.showAsSingleBelt && (
                                         <button
                                             onClick={() => setSelectedOption('package')}
                                             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'package'
@@ -285,7 +307,9 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                             {t.package}
                                         </button>
                                     )}
-                                    {!pricing?.option3_organization?.hidden && (
+
+                                    {/* Organization Option Button */}
+                                    {!pricing?.option3_organization?.hidden && pricing?.option3_organization?.enabled && (
                                         <button
                                             onClick={() => setSelectedOption('organization')}
                                             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-all ${selectedOption === 'organization'

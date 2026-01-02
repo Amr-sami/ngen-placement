@@ -267,6 +267,24 @@ async function seed() {
         await mongoose.connect(MONGODB_URI!);
         console.log('✅ Connected to MongoDB\n');
 
+        // CLEAR OLD BELTS (Creating unique indexes requires removing duplicates)
+        console.log('⚠️  clearing old belts collection...');
+        await Belt.deleteMany({});
+        console.log('✅  Belts cleared.\n');
+
+        // Clear user progress references to avoid dead links
+        if (mongoose.connection.db) {
+            console.log('⚠️  Clearing dead belt references in User progress...');
+            await mongoose.connection.db.collection('users').updateMany({}, {
+                $set: {
+                    'progress.currentBeltId': null,
+                    'progress.completedBelts': [],
+                    'placementTest.resultBeltId': null,
+                }
+            });
+            console.log('✅  User progress reset.\n');
+        }
+
         // Seed Tracks
         console.log('📚 Seeding Tracks...');
         let tracksCreated = 0;
@@ -290,42 +308,56 @@ async function seed() {
         }
         console.log(`   📊 Tracks: ${tracksCreated} created, ${tracksUpdated} updated\n`);
 
-        // Seed Belts for each Track
-        console.log('🥋 Seeding Belts with pricing...');
+        // Seed Global Belts
+        console.log('🥋 Seeding Global Belts...');
         let beltsCreated = 0;
         let beltsUpdated = 0;
+        const globalBeltsMap = new Map<string, mongoose.Types.ObjectId>();
 
-        const allTracks = await Track.find({});
+        for (const beltData of beltsData) {
+            const existing = await Belt.findOne({ code: beltData.code.toUpperCase() });
 
-        for (const track of allTracks) {
-            const trackName = typeof track.name === 'string' ? track.name : track.name.en;
-            console.log(`   📂 Track: ${trackName}`);
-
-            for (const beltData of beltsData) {
-                const existing = await Belt.findOne({
-                    trackId: track._id,
-                    code: beltData.code.toUpperCase()
+            if (existing) {
+                await Belt.updateOne(
+                    { _id: existing._id },
+                    { $set: { ...beltData, code: beltData.code.toUpperCase(), salesEnabled: true } }
+                );
+                globalBeltsMap.set(beltData.code, existing._id);
+                beltsUpdated++;
+            } else {
+                const newBelt = await Belt.create({
+                    ...beltData,
+                    code: beltData.code.toUpperCase(),
+                    salesEnabled: true,
                 });
-
-                if (existing) {
-                    // Update existing belt with pricing and bilingual data
-                    await Belt.updateOne(
-                        { _id: existing._id },
-                        { $set: { ...beltData, code: beltData.code.toUpperCase() } }
-                    );
-                    beltsUpdated++;
-                } else {
-                    await Belt.create({
-                        ...beltData,
-                        code: beltData.code.toUpperCase(),
-                        trackId: track._id,
-                    });
-                    console.log(`      ✅ ${beltData.name.en}`);
-                    beltsCreated++;
-                }
+                console.log(`      ✅ ${beltData.name.en}`);
+                globalBeltsMap.set(beltData.code, newBelt._id);
+                beltsCreated++;
             }
         }
         console.log(`   📊 Belts: ${beltsCreated} created, ${beltsUpdated} updated\n`);
+
+        // Assign Belts to Tracks
+        console.log('🔗 Assigning Belts to Tracks...');
+        // We assume all tracks get all belts for now, following the standard progression
+        // Foundation belts are shared, Specialization belts are track-contextual but use same definitions
+        const allBeltIds = Array.from(globalBeltsMap.values());
+
+        // Ensure belts are sorted by order before assigning (Map iteration order is insertion order, but let's be safe if we fetched them)
+        // Since we iterated beltsData array which is sorted, standard map values should be sorted.
+        // But let's fetch them sorted to be sure
+        const sortedBelts = await Belt.find({}).sort({ order: 1 });
+        const sortedBeltIds = sortedBelts.map(b => b._id);
+
+        for (const trackData of tracksData) {
+            const track = await Track.findOne({ slug: trackData.slug });
+            if (track) {
+                track.belts = sortedBeltIds;
+                await track.save();
+                console.log(`   Linked ${sortedBeltIds.length} belts to ${trackData.name.en}`);
+            }
+        }
+        console.log('\n');
 
         // Seed Pricing Configs
         console.log('💰 Seeding Pricing Configurations...');

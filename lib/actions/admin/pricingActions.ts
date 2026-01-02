@@ -7,7 +7,7 @@ import PricingConfig from '@/lib/models/PricingConfig';
 import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
 /**
- * Update belt prices globally by belt code
+ * Update belt prices (Global)
  */
 export async function updateBeltPrice(
     beltId: string,
@@ -17,22 +17,20 @@ export async function updateBeltPrice(
     await requireSuperAdmin();
     await connectToDatabase();
 
-    // First find the belt to get its code
-    const sourceBelt = await Belt.findById(beltId);
-    if (!sourceBelt) {
-        throw new Error('Belt not found');
-    }
-
-    // Update ALL belts with the same code
-    const result = await Belt.updateMany(
-        { code: sourceBelt.code },
+    const result = await Belt.findByIdAndUpdate(
+        beltId,
         {
             $set: {
                 basePriceEGP: priceEGP,
                 basePriceUSD: priceUSD,
             }
-        }
+        },
+        { new: true }
     );
+
+    if (!result) {
+        throw new Error('Belt not found');
+    }
 
     // Invalidate pricing pages so changes reflect immediately
     revalidatePath('/en/admin/pricing');
@@ -42,7 +40,30 @@ export async function updateBeltPrice(
     revalidatePath('/en');
     revalidatePath('/ar');
 
-    return { success: true, updatedCount: result.modifiedCount };
+    return { success: true };
+}
+
+/**
+ * Toggle belt sales enabled (Global)
+ */
+export async function toggleBeltSales(beltId: string, enabled: boolean) {
+    await requireSuperAdmin();
+    await connectToDatabase();
+
+    const result = await Belt.findByIdAndUpdate(
+        beltId,
+        { salesEnabled: enabled },
+        { new: true }
+    );
+
+    if (!result) {
+        throw new Error('Belt not found');
+    }
+
+    revalidatePath('/en/admin/pricing');
+    revalidatePath('/en/pricing');
+
+    return { success: true };
 }
 
 /**
@@ -101,7 +122,7 @@ export async function togglePricingConfigActive(configId: string, isActive: bool
 }
 
 /**
- * Get all belts with their tracks for pricing management
+ * Get all belts with their pricing info
  */
 export async function getBeltsWithPricing() {
     await requireSuperAdmin();
@@ -109,25 +130,17 @@ export async function getBeltsWithPricing() {
 
     const belts = await Belt.find().sort({ order: 1 }).lean();
 
-    // Deduplicate belts by code
-    const uniqueBelts = new Map();
-
-    for (const belt of belts) {
-        if (!uniqueBelts.has(belt.code)) {
-            uniqueBelts.set(belt.code, {
-                id: belt._id.toString(),
-                name: { en: belt.name.en, ar: belt.name.ar },
-                code: belt.code,
-                order: belt.order,
-                basePriceEGP: belt.basePriceEGP,
-                basePriceUSD: belt.basePriceUSD,
-                packageLevel: belt.packageLevel,
-            });
-        }
-    }
-
-    // Sort by order
-    return Array.from(uniqueBelts.values()).sort((a, b) => a.order - b.order);
+    // No need to deduplicate, belts are unique global documents now
+    return belts.map(belt => ({
+        id: belt._id.toString(),
+        name: { en: belt.name.en, ar: belt.name.ar },
+        code: belt.code,
+        order: belt.order,
+        basePriceEGP: belt.basePriceEGP,
+        basePriceUSD: belt.basePriceUSD,
+        packageLevel: belt.packageLevel,
+        salesEnabled: belt.salesEnabled,
+    }));
 }
 
 /**

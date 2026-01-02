@@ -3,7 +3,7 @@ import { LocalizedString, LocalizedStringSchemaDefinition } from '../localizatio
 
 export interface IBelt extends Document {
     _id: mongoose.Types.ObjectId;
-    trackId: mongoose.Types.ObjectId;
+    // trackId removed
     name: LocalizedString;
     code: string;
     order: number;
@@ -13,17 +13,14 @@ export interface IBelt extends Document {
     basePriceUSD: number;
     packageLevel: 'pre-foundation' | 'foundation' | 'specialization' | 'advanced';
     purchaseUrl?: string;
+    salesEnabled: boolean;
     createdAt: Date;
     updatedAt: Date;
 }
 
 const BeltSchema = new Schema<IBelt>(
     {
-        trackId: {
-            type: Schema.Types.ObjectId,
-            ref: 'Track',
-            required: [true, 'Track ID is required'],
-        },
+        // Removed trackId - Belts are global now
         name: {
             type: LocalizedStringSchemaDefinition,
             required: [true, 'Belt name is required'],
@@ -33,10 +30,12 @@ const BeltSchema = new Schema<IBelt>(
             required: [true, 'Belt code is required'],
             uppercase: true,
             trim: true,
+            unique: true, // Belts must be unique globally (White, Yellow, etc.)
         },
         order: {
             type: Number,
             required: [true, 'Belt order is required'],
+            unique: true, // Order defines the global progression
         },
         description: {
             type: LocalizedStringSchemaDefinition,
@@ -65,16 +64,17 @@ const BeltSchema = new Schema<IBelt>(
             type: String,
             trim: true,
         },
+        salesEnabled: {
+            type: Boolean,
+            default: true,
+        },
     },
     {
         timestamps: true,
     }
 );
 
-// Compound index for track + order (belt progression)
-BeltSchema.index({ trackId: 1, order: 1 });
-// Index for fast code lookups
-BeltSchema.index({ code: 1 });
+
 
 const Belt: Model<IBelt> =
     mongoose.models.Belt || mongoose.model<IBelt>('Belt', BeltSchema);

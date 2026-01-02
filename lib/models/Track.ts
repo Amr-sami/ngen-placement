@@ -7,6 +7,7 @@ export interface ITrack extends Document {
     slug: string;
     description?: LocalizedString;
     isActive: boolean;
+    belts: mongoose.Types.ObjectId[];
     createdAt: Date;
     updatedAt: Date;
 }
@@ -31,6 +32,10 @@ const TrackSchema = new Schema<ITrack>(
             type: Boolean,
             default: true,
         },
+        belts: [{
+            type: Schema.Types.ObjectId,
+            ref: 'Belt',
+        }],
     },
     {
         timestamps: true,

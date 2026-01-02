@@ -90,7 +90,7 @@ export async function POST(request: NextRequest) {
         await connectToDatabase();
 
         // Fetch the belt/product
-        const belt = await Belt.findById(beltId).populate('trackId');
+        const belt = await Belt.findById(beltId);
 
         if (!belt) {
             return NextResponse.json(
@@ -120,7 +120,7 @@ export async function POST(request: NextRequest) {
         // Create local order (pending status)
         const order = await Order.create({
             userId: userId || undefined,
-            trackId: belt.trackId?._id,
+            // trackId removed as belts are global/shared
             beltId: belt._id,
             amount,
             currency,
