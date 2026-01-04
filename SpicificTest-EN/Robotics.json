@@ -1,0 +1,3720 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Definition",
+            "Function"
+        ],
+        "question": "What is a robot?",
+        "choices": [
+            "A magic rock",
+            "A machine that can carry out a complex series of actions automatically",
+            "A person in a metal suit",
+            "A video game character"
+        ],
+        "ans_idx": 1,
+        "justification": "A robot is a programmable machine designed to perform tasks automatically."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Cycle",
+            "Process"
+        ],
+        "question": "Most robots follow a simple loop: Sense -> Think -> ________.",
+        "choices": [
+            "Sleep",
+            "Act",
+            "Eat",
+            "Hide"
+        ],
+        "ans_idx": 1,
+        "justification": "The 'Sense-Think-Act' cycle is the fundamental process of robotics: gather data, decide what to do, and then do it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Components",
+            "Sensors"
+        ],
+        "question": "Which part of a robot acts like its 'eyes' or 'ears' to gather information about the world?",
+        "choices": [
+            "Motors",
+            "Sensors",
+            "Batteries",
+            "Wheels"
+        ],
+        "ans_idx": 1,
+        "justification": "Sensors (like cameras, microphones, or distance detectors) allow the robot to perceive its environment."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Power",
+            "Energy"
+        ],
+        "question": "Robots need a power source, like a battery or a plug, to work.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Like all electronic devices, robots require electrical energy to run their motors and computers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Movement",
+            "Actuators"
+        ],
+        "question": "What component acts like the 'muscles' of the robot, allowing it to move its arms or turn its wheels?",
+        "choices": [
+            "The Sensor",
+            "The Wire",
+            "The Motor / Actuator",
+            "The Camera"
+        ],
+        "ans_idx": 2,
+        "justification": "Motors and actuators convert electrical energy into physical movement."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Control",
+            "Brain"
+        ],
+        "question": "Which part is considered the 'Brain' of the robot where the code runs?",
+        "choices": [
+            "The Tire",
+            "The Microcontroller / Processor",
+            "The Battery",
+            "The Frame"
+        ],
+        "ans_idx": 1,
+        "justification": "The microcontroller (like an Arduino or Brain brick) processes information and sends commands to the motors."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Chassis",
+            "Structure"
+        ],
+        "question": "The physical body or frame that holds all the robot parts together is called the ________.",
+        "choices": [
+            "Skin",
+            "Chassis",
+            "Clothes",
+            "House"
+        ],
+        "ans_idx": 1,
+        "justification": "The chassis provides the structural support for the robot's components."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Examples",
+            "Household"
+        ],
+        "question": "Which of these is a common household robot used for cleaning?",
+        "choices": [
+            "A Toaster",
+            "A Robot Vacuum (like Roomba)",
+            "A Television",
+            "A Ceiling Fan"
+        ],
+        "ans_idx": 1,
+        "justification": "Robot vacuums are autonomous mobile robots designed to clean floors."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Types",
+            "Humanoid"
+        ],
+        "question": "A 'Humanoid' robot is designed to look and move like a human.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Humanoid robots often have a head, torso, two arms, and two legs to mimic human form."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Control",
+            "Teleoperation"
+        ],
+        "question": "If you are driving a robot car using a joystick or a game controller, the robot is:",
+        "choices": [
+            "Autonomous",
+            "Remote Controlled",
+            "Broken",
+            "Sleeping"
+        ],
+        "ans_idx": 1,
+        "justification": "Remote control (Teleoperation) means a human is manually directing the robot's movements in real-time."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Control",
+            "Autonomous"
+        ],
+        "question": "A robot that can make its own decisions and move without human help is called ________.",
+        "choices": [
+            "Manual",
+            "Autonomous",
+            "Wired",
+            "Toy"
+        ],
+        "ans_idx": 1,
+        "justification": "Autonomous robots perform tasks with a high degree of independence from human intervention."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Exploration",
+            "Mars"
+        ],
+        "question": "What famous robots are exploring the surface of Mars right now?",
+        "choices": [
+            "Rovers",
+            "Submarines",
+            "Boats",
+            "Kites"
+        ],
+        "ans_idx": 0,
+        "justification": "Mars Rovers (like Perseverance and Curiosity) are wheeled robots designed to explore the Martian surface."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Safety",
+            "Emergency"
+        ],
+        "question": "Most big industrial robots have a big red button used to stop everything immediately if something goes wrong. What is it called?",
+        "choices": [
+            "The Go Button",
+            "The E-Stop (Emergency Stop)",
+            "The Easy Button",
+            "The Power Up"
+        ],
+        "ans_idx": 1,
+        "justification": "The E-Stop is a safety mechanism to shut down machinery instantly in an emergency."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Sensors",
+            "Touch"
+        ],
+        "question": "A 'Bumper Sensor' on a robot tells it when it has bumped into a wall.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Bumper sensors are tactile/touch sensors that trigger when they physically contact an object."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Drones",
+            "Flight"
+        ],
+        "question": "A flying robot is commonly called a:",
+        "choices": [
+            "Car",
+            "Drone / UAV",
+            "Submarine",
+            "Tank"
+        ],
+        "ans_idx": 1,
+        "justification": "Drones (Unmanned Aerial Vehicles) are robots designed for flight."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Programming",
+            "Code"
+        ],
+        "question": "Robots don't know what to do on their own. Humans must write ________ to give them instructions.",
+        "choices": [
+            "Letters",
+            "Code / Programs",
+            "Songs",
+            "Books"
+        ],
+        "ans_idx": 1,
+        "justification": "Programming code provides the logic and step-by-step instructions for the robot's processor."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Output",
+            "Sound"
+        ],
+        "question": "If a robot wants to say 'Hello' or make a beep sound, it uses a ________.",
+        "choices": [
+            "Microphone",
+            "Speaker",
+            "Camera",
+            "Wheel"
+        ],
+        "ans_idx": 1,
+        "justification": "Speakers are output devices used to produce sound."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Tasks",
+            "Suitability"
+        ],
+        "question": "Robots are best at doing jobs that are:",
+        "choices": [
+            "Fun and creative",
+            "Dull, Dirty, or Dangerous",
+            "Emotional",
+            "Artistic"
+        ],
+        "ans_idx": 1,
+        "justification": "The '3 Ds of Robotics' are Dull, Dirty, and Dangerous tasks, which are ideal for automation."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Sensors",
+            "Ultrasonic"
+        ],
+        "question": "Some robots use 'Ultrasonic' sensors (like bats) to measure distance using sound waves.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Ultrasonic sensors emit sound waves and measure the time it takes for the echo to return to calculate distance."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Output",
+            "Light"
+        ],
+        "question": "What tiny component is often used on robots to light up or signal a status (like a red power light)?",
+        "choices": [
+            "LED",
+            "Motor",
+            "Switch",
+            "Battery"
+        ],
+        "ans_idx": 0,
+        "justification": "LEDs (Light Emitting Diodes) are small, efficient lights used for indicators and displays."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Input vs Output",
+            "Categorization"
+        ],
+        "question": "Is a 'Motor' an Input device or an Output device?",
+        "choices": [
+            "Input (It gathers info)",
+            "Output (It does an action)",
+            "Neither",
+            "Both"
+        ],
+        "ans_idx": 1,
+        "justification": "Motors are output devices because they receive commands from the computer to perform a physical action."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Locomotion",
+            "Terrain"
+        ],
+        "question": "For rough terrain like rocks or sand, robots often use tank ________ instead of regular wheels.",
+        "choices": [
+            "Wings",
+            "Treads / Tracks",
+            "Propellers",
+            "Skis"
+        ],
+        "ans_idx": 1,
+        "justification": "Tank treads (or continuous tracks) provide better traction and weight distribution on uneven ground."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "History",
+            "Da Vinci"
+        ],
+        "question": "True or False: The idea of robots is very new and only started in the year 2000.",
+        "choices": [
+            "True",
+            "False (People have imagined mechanical men for hundreds of years)",
+            "True (Steve Jobs invented them)",
+            "True (Elon Musk invented them)"
+        ],
+        "ans_idx": 1,
+        "justification": "The concept of automata and mechanical men dates back to ancient history and inventors like Leonardo da Vinci."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Wiring",
+            "Connections"
+        ],
+        "question": "What do we use to connect the battery to the motor so the electricity can flow?",
+        "choices": [
+            "String",
+            "Wires",
+            "Glue",
+            "Tape"
+        ],
+        "ans_idx": 1,
+        "justification": " conductive Wires are required to create an electrical circuit between components."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Environment",
+            "Water"
+        ],
+        "question": "You can usually throw a regular robot into a swimming pool, and it will keep working fine.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Most electronics short circuit in water. Robots need special waterproofing (IP rating) to survive underwater."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Terminology",
+            "Slang"
+        ],
+        "question": "The word 'Bot' is just a short way of saying ________.",
+        "choices": [
+            "Bottom",
+            "Bottle",
+            "Robot",
+            "Box"
+        ],
+        "ans_idx": 2,
+        "justification": "'Bot' is a common abbreviation for Robot, used in phrases like 'Chatbot' or 'Game Bot'."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "End Effector",
+            "Gripper"
+        ],
+        "question": "The 'hand' at the end of a robot arm that grabs things is often called a Gripper or Claw.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "End effectors are the devices at the end of a robotic arm, and a gripper is a common type designed to hold objects."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Locomotion",
+            "Efficiency"
+        ],
+        "question": "If a robot needs to move fast on a flat floor, which is better?",
+        "choices": [
+            "Two Legs (walking)",
+            "Four Legs (crawling)",
+            "Wheels",
+            "Slithering like a snake"
+        ],
+        "ans_idx": 2,
+        "justification": "Wheels are mechanically simpler and much more energy-efficient for movement on flat, hard surfaces compared to legs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Input",
+            "Button"
+        ],
+        "question": "A simple switch that you press with your finger to tell the robot to start is called a ________.",
+        "choices": [
+            "Button",
+            "Dial",
+            "Light",
+            "Motor"
+        ],
+        "ans_idx": 0,
+        "justification": "A push-button is a simple tactile sensor used to send a signal when pressed."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Power",
+            "Recharging"
+        ],
+        "question": "When a robot's battery runs out of energy, what does it need to do?",
+        "choices": [
+            "Eat a sandwich",
+            "Recharge",
+            "Sleep for 8 hours",
+            "Drink water"
+        ],
+        "ans_idx": 1,
+        "justification": "Recharging restores the chemical energy in the battery so the robot can function again."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Gears",
+            "Speed vs Torque"
+        ],
+        "question": "If a BIG gear turns a SMALL gear, what happens to the small gear?",
+        "choices": [
+            "It spins slower",
+            "It spins faster",
+            "It spins at the same speed",
+            "It stops"
+        ],
+        "ans_idx": 1,
+        "justification": "Gear ratios: A large gear driving a small gear increases speed but decreases torque (strength)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Line Follower",
+            "Contrast"
+        ],
+        "question": "A 'Line Follower' robot usually uses a Light Sensor (or Infrared) to see the difference between a dark line and a light floor.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Line following works by detecting the contrast in reflected light between the line (e.g., black tape) and the surface."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Programming",
+            "Logic",
+            "Loop"
+        ],
+        "question": "In robot code, if you want the robot to keep driving forward forever, you put the 'Drive' command inside a:",
+        "choices": [
+            "Stop Block",
+            "Loop / Forever Block",
+            "If Statement",
+            "Variable"
+        ],
+        "ans_idx": 1,
+        "justification": "A Loop (often called 'Forever' in block coding) repeats the instructions inside it indefinitely."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Lidar",
+            "Laser"
+        ],
+        "question": "A sophisticated sensor that spins around shooting lasers to make a 3D map of the room is called ________.",
+        "choices": [
+            "Radar",
+            "LIDAR",
+            "Sonar",
+            "GPS"
+        ],
+        "ans_idx": 1,
+        "justification": "LIDAR stands for Light Detection and Ranging, using laser pulses to map environments."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Components",
+            "Motors",
+            "Servo"
+        ],
+        "question": "Which type of motor is best for a robot arm because you can tell it to turn to a specific angle (like 'Turn to 90 degrees')?",
+        "choices": [
+            "DC Motor",
+            "Servo Motor",
+            "Fan Motor",
+            "Engine"
+        ],
+        "ans_idx": 1,
+        "justification": "Servo motors have built-in feedback that allows precise control of angular position, unlike standard DC motors that just spin."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Physics",
+            "Center of Gravity",
+            "Stability"
+        ],
+        "question": "Why do we usually put heavy batteries at the BOTTOM of a robot?",
+        "choices": [
+            "To hide them",
+            "To lower the Center of Gravity so the robot doesn't tip over",
+            "Because they are ugly",
+            "To keep them warm"
+        ],
+        "ans_idx": 1,
+        "justification": "A low center of gravity increases stability, preventing the robot from falling over when moving or stopping."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Programming",
+            "Debugging",
+            "Errors"
+        ],
+        "question": "If your robot turns left when it should turn right, the process of finding and fixing the mistake is called 'Debugging'.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Debugging is the standard term for identifying and resolving errors in software or hardware behavior."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Infrared",
+            "Remote"
+        ],
+        "question": "TV remotes and many simple robots communicate using invisible light called:",
+        "choices": [
+            "Ultraviolet (UV)",
+            "Infrared (IR)",
+            "X-Ray",
+            "Gamma Ray"
+        ],
+        "ans_idx": 1,
+        "justification": "Infrared (IR) light is commonly used for short-range wireless communication like remote controls."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Logic",
+            "Conditionals",
+            "If-Else"
+        ],
+        "question": "To make a robot avoid a wall, you use logic: '________ sensor sees wall THEN turn left'.",
+        "choices": [
+            "WHEN",
+            "IF",
+            "LOOP",
+            "AND"
+        ],
+        "ans_idx": 1,
+        "justification": "The 'IF' statement checks a condition (is the wall there?). If true, it executes the action."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Degrees of Freedom",
+            "Movement"
+        ],
+        "question": "A robot arm that can bend at the shoulder, elbow, and wrist is said to have multiple:",
+        "choices": [
+            "Degrees of Freedom (DOF)",
+            "Degrees of Temperature",
+            "Degrees of College",
+            "Degrees of Angles"
+        ],
+        "ans_idx": 0,
+        "justification": "Degrees of Freedom (DOF) refer to the number of independent ways a robot or joint can move."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Electronics",
+            "Circuit",
+            "Switch"
+        ],
+        "question": "In a circuit, a switch turns a light (or motor) ON by:",
+        "choices": [
+            "Closing the gap so electricity can flow",
+            "Opening the gap to stop electricity",
+            "Adding more wire",
+            "Cooling the battery"
+        ],
+        "ans_idx": 0,
+        "justification": "A closed circuit allows current to flow. A switch 'closes' the circuit loop to turn the device on."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Hydraulics",
+            "Fluid"
+        ],
+        "question": "Hydraulic robots use liquid (oil or water) under pressure to move heavy things, while Electric robots use motors.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Hydraulics systems use pressurized fluid to generate force, often used in heavy machinery and large robots."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Programming",
+            "Algorithm",
+            "Planning"
+        ],
+        "question": "A step-by-step plan you write out before you code (like 'Move forward 10 steps, Turn Right') is called an:",
+        "choices": [
+            "Algorithm",
+            "Antenna",
+            "Algebra",
+            "Alias"
+        ],
+        "ans_idx": 0,
+        "justification": "An algorithm is a sequence of well-defined instructions to solve a specific problem or perform a task."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Components",
+            "Microcontroller",
+            "Ports"
+        ],
+        "question": "On a robot brain (like Micro:bit), the places where you plug in sensors and motors are called ________.",
+        "choices": [
+            "Doors",
+            "Ports / Pins",
+            "Windows",
+            "Keys"
+        ],
+        "ans_idx": 1,
+        "justification": "Ports or Pins (Input/Output pins) are the physical interfaces for connecting components to the microcontroller."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Potentiometer",
+            "Knob"
+        ],
+        "question": "What kind of sensor is a knob or dial that you can turn to change a robot's speed? (Like a volume dial).",
+        "choices": [
+            "Button",
+            "Potentiometer",
+            "LED",
+            "Buzzer"
+        ],
+        "ans_idx": 1,
+        "justification": "A potentiometer is a variable resistor that provides different voltage values based on how much it is turned."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Physics",
+            "Friction",
+            "Traction"
+        ],
+        "question": "Why do robot wheels usually have rubber tires instead of being smooth plastic?",
+        "choices": [
+            "To look cool",
+            "To create Friction so they don't slip",
+            "To make them bounce",
+            "Rubber is cheaper"
+        ],
+        "ans_idx": 1,
+        "justification": "Friction (traction) is necessary for wheels to grip the ground and propel the robot forward without spinning in place."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Logic",
+            "AND Logic",
+            "Conditions"
+        ],
+        "question": "If you use 'AND' logic (Sensor A AND Sensor B), the robot will act if ONLY ONE sensor is triggered.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "AND logic requires *both* conditions to be true simultaneously. OR logic would act if only one was triggered."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Planning",
+            "Pseudocode",
+            "Design"
+        ],
+        "question": "Writing your code in plain English first (e.g., 'If hit wall, back up') before writing real code is called:",
+        "choices": [
+            "Fake Code",
+            "Pseudocode",
+            "Hard Code",
+            "Secret Code"
+        ],
+        "ans_idx": 1,
+        "justification": "Pseudocode is a simplified, human-readable description of what a computer program or algorithm must do."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Simple Machines",
+            "Lever"
+        ],
+        "question": "A robot arm often works like a see-saw. What simple machine is this?",
+        "choices": [
+            "Pulley",
+            "Lever",
+            "Wedge",
+            "Screw"
+        ],
+        "ans_idx": 1,
+        "justification": "A lever is a simple machine consisting of a beam pivoted at a fixed hinge (fulcrum), used to lift loads."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Feedback",
+            "Closed Loop",
+            "Accuracy"
+        ],
+        "question": "A robot that checks its own sensors to correct its path (e.g., 'Am I too far left? Turn right') is using a:",
+        "choices": [
+            "Feedback Loop",
+            "Blind Fold",
+            "Guess",
+            "Random Walk"
+        ],
+        "ans_idx": 0,
+        "justification": "A feedback loop (Closed Loop control) constantly compares the actual state to the desired state and makes corrections."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Torque",
+            "Force"
+        ],
+        "question": "If a robot needs to lift a very heavy rock, it needs motors with high ________.",
+        "choices": [
+            "Speed",
+            "Torque",
+            "Color",
+            "Noise"
+        ],
+        "ans_idx": 1,
+        "justification": "Torque is the rotational force required to lift or turn heavy objects. High speed motors often have low torque."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Calibration",
+            "Setup"
+        ],
+        "question": "If your robot's light sensor reads '100' in a dark room and '0' in a bright room, you might need to 'Calibrate' (reset/adjust) it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Calibration is the process of configuring an instrument to provide a result for a sample within an acceptable range."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Components",
+            "Microcontroller",
+            "Brain"
+        ],
+        "question": "A popular small computer used by students to build robots is called the ________ (starts with A).",
+        "choices": [
+            "Android",
+            "Arduino",
+            "Apple",
+            "Alien"
+        ],
+        "ans_idx": 1,
+        "justification": "Arduino is an open-source electronics platform based on easy-to-use hardware and software, widely used in robotics education."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Gyroscope",
+            "Balance"
+        ],
+        "question": "Which sensor helps a robot know if it is tilting or falling over (like in a Segway)?",
+        "choices": [
+            "Thermometer",
+            "Gyroscope / Accelerometer",
+            "Microphone",
+            "Light Sensor"
+        ],
+        "ans_idx": 1,
+        "justification": "Gyroscopes measure orientation and angular velocity, helping robots maintain balance."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Electronics",
+            "Polarity",
+            "Batteries"
+        ],
+        "question": "Batteries have a Positive (+) side and a Negative (-) side. What happens if you put them in backwards?",
+        "choices": [
+            "The robot works twice as fast",
+            "Nothing works, or the motor might spin backwards",
+            "The robot flies",
+            "It becomes a generator"
+        ],
+        "ans_idx": 1,
+        "justification": "Polarity matters in DC circuits. Reversing polarity usually stops the circuit from working or reverses the direction of simple motors."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Logic",
+            "Variables",
+            "Memory"
+        ],
+        "question": "If you want your robot to remember how many times it bumped into a wall, you need to use a:",
+        "choices": [
+            "Variable",
+            "Sticker",
+            "Wheel",
+            "Loop"
+        ],
+        "ans_idx": 0,
+        "justification": "Variables are used in programming to store data (like a count/score) that can change while the program runs."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Omni-wheels",
+            "Movement"
+        ],
+        "question": "Omni-wheels are special wheels with rollers that allow a robot to slide sideways without turning.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Omni-wheels (or Mecanum wheels) allow for holonomic movement, meaning the robot can move in any direction instantly."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Components",
+            "Breadboard",
+            "Prototyping"
+        ],
+        "question": "A plastic board with holes used to test circuits without soldering (gluing) wires is called a:",
+        "choices": [
+            "Cutting Board",
+            "Breadboard",
+            "Surfboard",
+            "Motherboard"
+        ],
+        "ans_idx": 1,
+        "justification": "Breadboards are reusable platforms for building and testing temporary electronic circuits."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Sensors",
+            "Ultrasonic",
+            "Physics"
+        ],
+        "question": "An Ultrasonic sensor works like which animal's echolocation?",
+        "choices": [
+            "Cat",
+            "Bat",
+            "Fish",
+            "Bird"
+        ],
+        "ans_idx": 1,
+        "justification": "Bats use echolocation (sending out sound waves and listening for the echo) to navigate, exactly how ultrasonic sensors work."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Motors",
+            "RPM"
+        ],
+        "question": "The speed of a motor is measured in RPM, which stands for Revolutions Per ________.",
+        "choices": [
+            "Mile",
+            "Minute",
+            "Meter",
+            "Month"
+        ],
+        "ans_idx": 1,
+        "justification": "RPM measures how many full turns (revolutions) the motor shaft completes in one minute."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Electronics",
+            "LED",
+            "Legs"
+        ],
+        "question": "An LED light has two legs (wires). One is longer than the other. The longer leg usually goes to:",
+        "choices": [
+            "Positive (+)",
+            "Negative (-)",
+            "Anywhere",
+            "Ground"
+        ],
+        "ans_idx": 0,
+        "justification": "The longer leg (Anode) connects to the positive side; the shorter leg (Cathode) connects to the negative."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Programming",
+            "Wait",
+            "Timing"
+        ],
+        "question": "Why do we sometimes put a 'Wait 1 Second' block in our code?",
+        "choices": [
+            "To let the robot rest",
+            "Because computers are too fast and we need time to see what happened",
+            "To save battery",
+            "To clean the memory"
+        ],
+        "ans_idx": 1,
+        "justification": "Processors execute commands instantly. 'Wait' blocks allow time for physical actions (like blinking a light or moving) to complete visibly."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Mechanics",
+            "Pulleys",
+            "Belts"
+        ],
+        "question": "A rubber belt connecting two pulleys can be used to move a motor's power to a wheel that is far away.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Belt and pulley systems are common mechanisms for transferring rotary motion across a distance within a robot chassis."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Ethics",
+            "Jobs",
+            "Automation"
+        ],
+        "question": "Why are some people worried about robots in factories?",
+        "choices": [
+            "Robots might steal their lunch",
+            "Robots might replace human jobs (Automation)",
+            "Robots are too loud",
+            "Robots use too much paper"
+        ],
+        "ans_idx": 1,
+        "justification": "Automation displacing human workers is a primary ethical and economic concern regarding widespread robotics."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Electronics",
+            "Resistor",
+            "Components"
+        ],
+        "question": "What component slows down the flow of electricity to protect an LED from blowing up?",
+        "choices": [
+            "Wire",
+            "Battery",
+            "Resistor",
+            "Switch"
+        ],
+        "ans_idx": 2,
+        "justification": "Resistors limit the current flowing through a circuit, preventing sensitive components like LEDs from burning out."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Control",
+            "Input",
+            "Joystick"
+        ],
+        "question": "To control a robot's speed and direction at the same time (like in a video game), it is best to use a ________.",
+        "choices": [
+            "Button",
+            "Joystick",
+            "Switch",
+            "Keyboard"
+        ],
+        "ans_idx": 1,
+        "justification": "A joystick provides analog input on two axes (X and Y) simultaneously, allowing for smooth speed and directional control."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Physics",
+            "Payload",
+            "Capacity"
+        ],
+        "question": "The amount of weight a robot arm can lift is called its:",
+        "choices": [
+            "Payload",
+            "Body Weight",
+            "Heavy Score",
+            "Force Number"
+        ],
+        "ans_idx": 0,
+        "justification": "Payload refers to the carrying capacity of a robot or manipulator."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Components",
+            "H-Bridge",
+            "Motor Driver"
+        ],
+        "question": "A microcontroller can't power a big motor directly (it is too weak). What part do you put in between to handle the power?",
+        "choices": [
+            "A bigger battery",
+            "A Motor Driver / H-Bridge",
+            "A fan",
+            "A glue gun"
+        ],
+        "ans_idx": 1,
+        "justification": "Motor drivers (or H-Bridges) act as amplifiers, taking low-power signals from the brain to control high-power currents for the motors."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics Programming",
+            "Upload",
+            "Compile"
+        ],
+        "question": "After you write code on your computer, you must 'Upload' or 'Download' it to the robot before the robot can use it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "The code must be transferred (flashed/uploaded) from the PC to the robot's onboard memory to run."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics History",
+            "Asimov",
+            "Laws"
+        ],
+        "question": "Isaac Asimov wrote the 'Three Laws of Robotics'. The most important one says:",
+        "choices": [
+            "A robot must always clean its room",
+            "A robot may not injure a human being",
+            "A robot must cost less than $100",
+            "A robot must speak English"
+        ],
+        "ans_idx": 1,
+        "justification": "Asimov's First Law of Robotics states: 'A robot may not injure a human being or, through inaction, allow a human being to come to harm.'"
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Components",
+            "Microcontroller",
+            "GPIO"
+        ],
+        "question": "On a Raspberry Pi or Arduino, the metal pins used to connect wires are called GPIO pins. What does GPIO stand for?",
+        "choices": [
+            "General Purpose Input/Output",
+            "Giant Power In Out",
+            "Global Position In Orbit",
+            "Green Parts Inside Only"
+        ],
+        "ans_idx": 0,
+        "justification": "GPIO (General Purpose Input/Output) pins can be programmed to either read input signals or send output signals."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Electronics",
+            "Voltage",
+            "Ground"
+        ],
+        "question": "In a DC circuit, the black wire usually connects to ________ (GND), which is 0 Volts.",
+        "choices": [
+            "Power",
+            "Ground",
+            "Signal",
+            "High"
+        ],
+        "ans_idx": 1,
+        "justification": "Ground (GND) is the reference point in an electrical circuit, typically at 0 volts."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Control",
+            "PWM",
+            "Speed"
+        ],
+        "question": "Digital pins are usually only On or Off. To make a motor run at 50% speed, we use a trick called PWM. What does the robot actually do?",
+        "choices": [
+            "It lowers the battery voltage",
+            "It switches the power On and Off extremely fast (pulsing)",
+            "It uses a gearbox",
+            "It asks the motor nicely"
+        ],
+        "ans_idx": 1,
+        "justification": "PWM (Pulse Width Modulation) simulates analog output by rapidly toggling a digital signal on and off to control average power."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Sensors",
+            "Analog vs Digital",
+            "Data"
+        ],
+        "question": "A 'Digital' sensor can send any number between 0 and 1023, while an 'Analog' sensor can only send 0 (Off) or 1 (On).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "It is the opposite. Digital is 0 or 1. Analog provides a range of values (like 0 to 1023)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Programming",
+            "Functions",
+            "Efficiency"
+        ],
+        "question": "If your code has to 'Turn Right' in 10 different places, it is better to create a ________ called `turn_right()` instead of writing the code 10 times.",
+        "choices": [
+            "Variable",
+            "Function / Subroutine",
+            "Loop",
+            "Comment"
+        ],
+        "ans_idx": 1,
+        "justification": "Functions allow you to define a block of code once and reuse it multiple times, making code cleaner and more efficient."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Control",
+            "PID",
+            "Smoothness"
+        ],
+        "question": "Advanced robots use a math trick called PID Control. What does it help the robot do?",
+        "choices": [
+            "Play music louder",
+            "Move smoothly without wobbling or overshooting the target",
+            "Connect to Wi-Fi",
+            "Charge the battery instantly"
+        ],
+        "ans_idx": 1,
+        "justification": "PID (Proportional-Integral-Derivative) control calculates errors to apply smooth corrections, stopping the robot from jerking or missing its target."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Electronics",
+            "Short Circuit",
+            "Safety"
+        ],
+        "question": "A 'Short Circuit' happens when the positive wire touches the negative wire directly without going through a motor or light first. This is dangerous.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "A short circuit creates a path of almost zero resistance, causing massive current flow that creates heat, sparks, or fire."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Sensors",
+            "Encoders",
+            "Precision"
+        ],
+        "question": "To know EXACTLY how far a robot has driven (e.g., 'Move 50cm'), we put a sensor on the wheel that counts how many times it turns. This sensor is an:",
+        "choices": [
+            "Encoder",
+            "Decoder",
+            "Estimator",
+            "Engine"
+        ],
+        "ans_idx": 0,
+        "justification": "Rotary encoders convert the angular position or motion of a shaft into a digital signal to track precise movement."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Programming",
+            "Arrays",
+            "Data"
+        ],
+        "question": "If a robot needs to remember a path of 50 different turns to solve a maze, it should store them in a list or ________.",
+        "choices": [
+            "Bucket",
+            "Array",
+            "Loop",
+            "Switch"
+        ],
+        "ans_idx": 1,
+        "justification": "An Array (or List) is a data structure used to store a collection of values, perfect for recording a sequence of moves."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Mechanics",
+            "Inverse Kinematics",
+            "Math"
+        ],
+        "question": "When a robot arm calculates what angles its shoulder and elbow need to be at to touch a specific point in the air, this math is called:",
+        "choices": [
+            "Inverse Kinematics",
+            "Reverse Engineering",
+            "Forward Motion",
+            "Geometry Dash"
+        ],
+        "ans_idx": 0,
+        "justification": "Inverse Kinematics (IK) is the mathematical process of recovering the joint movements required to place the end-effector at a given position."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Electronics",
+            "Pull-up Resistor",
+            "Signals"
+        ],
+        "question": "Why do we sometimes use a 'Pull-up Resistor' with a button?",
+        "choices": [
+            "To make the button harder to press",
+            "To keep the signal stable (HIGH) when the button isn't being pressed",
+            "To heat up the button",
+            "To make the button light up"
+        ],
+        "ans_idx": 1,
+        "justification": "Without a pull-up (or pull-down) resistor, the input pin would be 'floating' (random noise) when the button is open, causing false readings."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Control",
+            "Latency",
+            "Lag"
+        ],
+        "question": "When controlling a robot on Mars from Earth, there is no delay; the robot moves the instant you press the button.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Radio signals take minutes to travel between Earth and Mars. This 'Latency' means real-time joystick control is impossible."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Components",
+            "Stepper Motor",
+            "Precision"
+        ],
+        "question": "Which motor moves in tiny, exact 'steps' (like a clock hand) and is used in 3D printers?",
+        "choices": [
+            "DC Motor",
+            "Stepper Motor",
+            "Fan",
+            "Vibration Motor"
+        ],
+        "ans_idx": 1,
+        "justification": "Stepper motors divide a full rotation into a large number of steps, allowing for precise position control without feedback sensors."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Power",
+            "Voltage Regulator",
+            "Stability"
+        ],
+        "question": "Your battery gives 9 Volts, but your robot brain only wants 5 Volts. What component do you need?",
+        "choices": [
+            "Voltage Regulator",
+            "Voltage Booster",
+            "Wire Cutter",
+            "Switch"
+        ],
+        "ans_idx": 0,
+        "justification": "A Voltage Regulator reduces the input voltage to a stable, lower level required by sensitive electronics."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Programming",
+            "State Machine",
+            "Logic"
+        ],
+        "question": "A programming pattern where the robot switches between modes like 'Idle', 'Searching', and 'Attacking' is called a State ________.",
+        "choices": [
+            "Computer",
+            "Machine",
+            "Board",
+            "Game"
+        ],
+        "ans_idx": 1,
+        "justification": "A Finite State Machine (FSM) is a model of computation where the system is in exactly one of a finite number of states at any given time."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Sensors",
+            "IMU",
+            "Orientation"
+        ],
+        "question": "An IMU sensor combines an Accelerometer and a Gyroscope. What does IMU stand for?",
+        "choices": [
+            "Inertial Measurement Unit",
+            "Internal Motor Unit",
+            "Instant Motion Update",
+            "International Map User"
+        ],
+        "ans_idx": 0,
+        "justification": "An Inertial Measurement Unit (IMU) measures specific force, angular rate, and sometimes the orientation of the body."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Code",
+            "Multitasking",
+            "Threads"
+        ],
+        "question": "Standard Arduino code runs one line at a time. If you want it to check sensors AND blink lights at the exact same time, you are trying to do:",
+        "choices": [
+            "Multitasking / Concurrency",
+            "Singing",
+            "Sleeping",
+            "Deleting"
+        ],
+        "ans_idx": 0,
+        "justification": "Multitasking involves running multiple tasks (threads) concurrently so one process doesn't block the others."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Mechanics",
+            "Tolerance",
+            "Manufacturing"
+        ],
+        "question": "In robotics engineering, 'Tolerance' is the amount of error or wiggle room allowed for a part to still fit.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Tolerance defines the allowable variation in a physical dimension; low tolerance means parts must be made very precisely."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Sensors",
+            "Drift",
+            "Error"
+        ],
+        "question": "Cheap gyroscope sensors suffer from 'Drift'. What does this mean?",
+        "choices": [
+            "They float away",
+            "Over time, the reading slowly becomes wrong even if the robot isn't moving",
+            "They drive fast",
+            "They fall asleep"
+        ],
+        "ans_idx": 1,
+        "justification": "Sensor drift refers to the gradual accumulation of error in the sensor signal over time, common in gyros."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Logic",
+            "Boolean",
+            "Operators"
+        ],
+        "question": "Look at this logic: `IF (Battery < 10%) OR (Heat > 90%) THEN Stop`. When will the robot stop?",
+        "choices": [
+            "Only if BOTH bad things happen",
+            "If EITHER bad thing happens (or both)",
+            "Never",
+            "Only when the battery is full"
+        ],
+        "ans_idx": 1,
+        "justification": "The OR operator evaluates to True if *at least one* of the conditions is met."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Power",
+            "Capacity",
+            "mAh"
+        ],
+        "question": "The capacity of a robot battery is measured in mAh, which stands for Milliamp ________.",
+        "choices": [
+            "Heat",
+            "Hours",
+            "High",
+            "Half"
+        ],
+        "ans_idx": 1,
+        "justification": "Milliamp Hours (mAh) describes how much electric charge a battery can hold and how long it can power a device."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Electronics",
+            "Relay",
+            "Click"
+        ],
+        "question": "A component that uses a small magnet to physically 'click' a switch on and off to control high power is called a:",
+        "choices": [
+            "Transistor",
+            "Relay",
+            "Resistor",
+            "Diode"
+        ],
+        "ans_idx": 1,
+        "justification": "A relay is an electrically operated switch. The clicking sound is the physical armature moving to close the contact."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Mechanics",
+            "Differential Drive",
+            "Turning"
+        ],
+        "question": "How does a robot with two wheels (Differential Drive) turn right?",
+        "choices": [
+            "It turns a steering wheel",
+            "The left wheel spins forward, and the right wheel stops (or spins backward)",
+            "It jumps",
+            "It asks nicely"
+        ],
+        "ans_idx": 1,
+        "justification": "Differential drive robots steer by varying the speed and direction of the two drive wheels relative to each other."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Electronics",
+            "Fuse",
+            "Protection"
+        ],
+        "question": "A 'Fuse' is a safety wire designed to melt and break the connection if too much electricity flows, protecting the robot.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Fuses are sacrificial safety devices that break the circuit during an overcurrent event to prevent damage to expensive components."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Programming",
+            "Libraries",
+            "Dependencies"
+        ],
+        "question": "Instead of writing complex code to talk to a sensor, you can download a pre-written collection of code called a:",
+        "choices": [
+            "Story",
+            "Library",
+            "Dictionary",
+            "Album"
+        ],
+        "ans_idx": 1,
+        "justification": "Libraries are collections of pre-compiled routines that a program can use, simplifying the coding process for standard tasks."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Components",
+            "Actuator",
+            "Pneumatic"
+        ],
+        "question": "A robot arm that moves using compressed air (hissing sound) is using what kind of actuation?",
+        "choices": [
+            "Hydraulic",
+            "Electric",
+            "Pneumatic",
+            "Magnetic"
+        ],
+        "ans_idx": 2,
+        "justification": "Pneumatic systems use pressurized gas (air) to produce mechanical motion."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Mechanics",
+            "Stall",
+            "Damage"
+        ],
+        "question": "If you hold a running motor's shaft so it can't spin, the motor will '________', heat up, and might burn out.",
+        "choices": [
+            "Sleep",
+            "Stall",
+            "Jump",
+            "Win"
+        ],
+        "ans_idx": 1,
+        "justification": "Stalling a motor draws maximum current (Stall Current) because the back-EMF drops to zero, causing rapid overheating."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Sensors",
+            "Resolution",
+            "Quality"
+        ],
+        "question": "A sensor with 'High Resolution' means:",
+        "choices": [
+            "It is very big",
+            "It can detect very tiny, precise changes",
+            "It is very strong",
+            "It is waterproof"
+        ],
+        "ans_idx": 1,
+        "justification": "Resolution refers to the smallest change in the physical quantity that a sensor can detect."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics AI",
+            "Edge Computing",
+            "Speed"
+        ],
+        "question": "Why do some robots process data on their own computer (Edge Computing) instead of sending it to the Cloud?",
+        "choices": [
+            "It is faster (less lag) and works without internet",
+            "The Cloud is full",
+            "They like to keep secrets",
+            "It is cheaper"
+        ],
+        "ans_idx": 0,
+        "justification": "Edge computing processes data locally to reduce latency and dependence on network connectivity."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics Electronics",
+            "Transistor",
+            "Switch"
+        ],
+        "question": "A Transistor is like a tiny electronic switch that can turn current on and off extremely fast.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Transistors are the fundamental building blocks of modern electronics, acting as switches or amplifiers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Sensors",
+            "Temperature",
+            "Environment"
+        ],
+        "question": "Which sensor would a robot use to tell if it is too hot or too cold?",
+        "choices": [
+            "Light Sensor",
+            "Temperature Sensor",
+            "Sound Sensor",
+            "Touch Sensor"
+        ],
+        "ans_idx": 1,
+        "justification": "A temperature sensor measures heat energy to determine the temperature of the environment."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Mechanics",
+            "Wheels",
+            "Friction"
+        ],
+        "question": "Smooth wheels work best on slippery ice because they have less friction.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "On slippery surfaces like ice, you need MORE friction (grip), so rough or spiked wheels would be better than smooth ones."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Variables",
+            "Data"
+        ],
+        "question": "In coding, a ________ is like a box where you can store a number or a word to use later.",
+        "choices": [
+            "Loop",
+            "Variable",
+            "Sensor",
+            "Wire"
+        ],
+        "ans_idx": 1,
+        "justification": "A variable is a storage location in programming that holds data which can be changed or retrieved."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Circuits",
+            "Short Circuit"
+        ],
+        "question": "What happens if you connect the positive (+) and negative (-) ends of a battery directly with a wire without a load (like a light)?",
+        "choices": [
+            "The battery charges",
+            "It creates a Short Circuit and gets hot",
+            "The wire turns into gold",
+            "Nothing happens"
+        ],
+        "ans_idx": 1,
+        "justification": "A short circuit allows excessive current to flow, causing overheating and potential damage."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics Basics",
+            "Definition",
+            "Automation"
+        ],
+        "question": "Which of these is NOT usually considered a robot?",
+        "choices": [
+            "A Remote Controlled Car",
+            "A Washing Machine",
+            "A simple Rock",
+            "A Mars Rover"
+        ],
+        "ans_idx": 2,
+        "justification": "A rock is an inanimate object with no mechanisms, power, or programming."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Control Systems",
+            "Open Loop",
+            "Feedback"
+        ],
+        "question": "An 'Open Loop' system checks its own errors and corrects them automatically.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Open Loop systems do not use feedback to correct errors; 'Closed Loop' systems do."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Power",
+            "Batteries",
+            "Safety"
+        ],
+        "question": "If a robot's battery is leaking a weird liquid, what should you do?",
+        "choices": [
+            "Taste it",
+            "Touch it with bare hands",
+            "Tell an adult and don't touch it",
+            "Put it in water"
+        ],
+        "ans_idx": 2,
+        "justification": "Leaking batteries can be dangerous and chemical burns can occur, so safety precautions are necessary."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Torque",
+            "Physics"
+        ],
+        "question": "Twisting force that causes rotation is called ________.",
+        "choices": [
+            "Speed",
+            "Torque",
+            "Gravity",
+            "Mass"
+        ],
+        "ans_idx": 1,
+        "justification": "Torque is the rotational equivalent of linear force."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Sensors",
+            "Vision",
+            "Cameras"
+        ],
+        "question": "Which sensor helps a robot 'see' colors and shapes?",
+        "choices": [
+            "Microphone",
+            "Camera / Vision Sensor",
+            "Gyroscope",
+            "Thermometer"
+        ],
+        "ans_idx": 1,
+        "justification": "Cameras capture visual data which can be processed to identify colors and shapes."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Boolean",
+            "Logic"
+        ],
+        "question": "A Boolean value can only be one of two things:",
+        "choices": [
+            "Red or Blue",
+            "True or False",
+            "1 or 10",
+            "Up or Down"
+        ],
+        "ans_idx": 1,
+        "justification": "In computer science, a Boolean data type has two possible values: true or false."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Construction",
+            "Materials",
+            "Strength"
+        ],
+        "question": "Carbon Fiber is a material used in high-tech robots because it is very strong but also very light.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Carbon fiber is prized in engineering for its high strength-to-weight ratio."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Gyroscope",
+            "Balance"
+        ],
+        "question": "A sensor that helps a robot balance or know which way is 'up' is called a ________.",
+        "choices": [
+            "Gyroscope",
+            "Timer",
+            "Radar",
+            "Speaker"
+        ],
+        "ans_idx": 0,
+        "justification": "Gyroscopes measure orientation and angular velocity, essential for balancing robots."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI",
+            "Machine Learning",
+            "Training"
+        ],
+        "question": "When a robot learns to do a task by practicing it over and over, we call this:",
+        "choices": [
+            "Machine Learning",
+            "Magic",
+            "Hard Coding",
+            "Guessing"
+        ],
+        "ans_idx": 0,
+        "justification": "Machine Learning involves algorithms that improve automatically through experience and data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Medical",
+            "Surgery"
+        ],
+        "question": "Robots used by doctors to help perform delicate operations are called:",
+        "choices": [
+            "Chef Robots",
+            "Surgical Robots",
+            "Farm Robots",
+            "Space Robots"
+        ],
+        "ans_idx": 1,
+        "justification": "Surgical robots (like Da Vinci) assist surgeons with precision and control."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Voltage",
+            "Power"
+        ],
+        "question": "Using a 9V battery on a motor rated for only 3V will probably make the motor run faster effectively forever.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Over-volting a motor might make it run fast briefly, but it will likely overheat and burn out quickly."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Programming",
+            "Sequence",
+            "Order"
+        ],
+        "question": "In a computer program, the order in which commands are run is called the ________.",
+        "choices": [
+            "Costume",
+            "Sequence",
+            "Color",
+            "Flavor"
+        ],
+        "ans_idx": 1,
+        "justification": "Sequence refers to the specific order of instructions to be executed."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Pneumatics",
+            "Air"
+        ],
+        "question": "Pneumatic systems use what to create movement?",
+        "choices": [
+            "Water",
+            "Compressed Air",
+            "Gasoline",
+            "Electricity only"
+        ],
+        "ans_idx": 1,
+        "justification": "Pneumatics involves the use of gas or pressurized air."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Interaction",
+            "HRI",
+            "Social"
+        ],
+        "question": "HRI stands for:",
+        "choices": [
+            "High Robot Intelligence",
+            "Human-Robot Interaction",
+            "Huge Robot Invention",
+            "Human Running Inside"
+        ],
+        "ans_idx": 1,
+        "justification": "HRI is the field of study dedicated to understanding, designing, and evaluating robotic systems for use by or with humans."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Microphone",
+            "Sound"
+        ],
+        "question": "A digital microphone sends sound waves directly to the processor without converting them to electrical signals first.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Microphones convert sound waves into electrical signals (analog or digital) for the processor to understand."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Conditionals",
+            "Else"
+        ],
+        "question": "In an If-Else block, when does the code in the 'Else' part run?",
+        "choices": [
+            "When the condition is True",
+            "When the condition is False",
+            "Always",
+            "Never"
+        ],
+        "ans_idx": 1,
+        "justification": "The Else branch executes only when the 'If' condition evaluates to False."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Control",
+            "PID",
+            "Precision"
+        ],
+        "question": "A common control loop feedback mechanism used for precise control is called ________.",
+        "choices": [
+            "ABC",
+            "PID",
+            "XYZ",
+            "LOL"
+        ],
+        "ans_idx": 1,
+        "justification": "PID (Proportional-Integral-Derivative) controllers are widely used for precise control in industrial and robotic systems."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Components",
+            "Wheels",
+            "Omni"
+        ],
+        "question": "What special wheels allow a robot to slide sideways without turning?",
+        "choices": [
+            "Standard Wheels",
+            "Omni Wheels / Mecanum Wheels",
+            "Square Wheels",
+            "Wooden Wheels"
+        ],
+        "ans_idx": 1,
+        "justification": "Omni or Mecanum wheels have rollers that allow movement in any direction, including sideways."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Ground",
+            "Circuit"
+        ],
+        "question": "In electronics, GND codes for:",
+        "choices": [
+            "Grand",
+            "Grind",
+            "Ground",
+            "Green"
+        ],
+        "ans_idx": 2,
+        "justification": "GND is the abbreviation for Ground, the reference point in a circuit."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Agriculture",
+            "Farming"
+        ],
+        "question": "There are robots that can milk cows and pick apples.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Agricultural robotics is a growing field with robots performing tasks like harvesting and milking."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Hardware",
+            "Processing",
+            "CPU"
+        ],
+        "question": "CPU stands for Central ________ Unit.",
+        "choices": [
+            "Power",
+            "Processing",
+            "Program",
+            "Peripheral"
+        ],
+        "ans_idx": 1,
+        "justification": "CPU stands for Central Processing Unit."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Physics",
+            "Velocity",
+            "Speed"
+        ],
+        "question": "Velocity is different from speed because velocity includes:",
+        "choices": [
+            "Weight",
+            "Color",
+            "Direction",
+            "Volume"
+        ],
+        "ans_idx": 2,
+        "justification": "Velocity is a vector quantity, meaning it has both magnitude (speed) and direction."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Localization",
+            "SLAM",
+            "Mapping"
+        ],
+        "question": "SLAM allows a robot to build a map and know where it is. What does SLAM stand for?",
+        "choices": [
+            "Super Loud Automatic Motor",
+            "Simultaneous Localization and Mapping",
+            "Slow Low And Medium",
+            "System Logic And Memory"
+        ],
+        "ans_idx": 1,
+        "justification": "SLAM (Simultaneous Localization and Mapping) is the computational problem of constructing a map of an unknown environment while simultaneously keeping track of an agent's location within it."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "History",
+            "Fiction",
+            "Asimov"
+        ],
+        "question": "Isaac Asimov is a famous writer who created the 'Three Laws of Robotics' in his stories.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Isaac Asimov introduced the Three Laws of Robotics in his 1942 short story 'Runaround'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Potentiometer",
+            "Angle"
+        ],
+        "question": "A knob you can turn to change a value (like volume, or a robot joint angle) is often a:",
+        "choices": [
+            "Switch",
+            "Potentiometer",
+            "Button",
+            "LED"
+        ],
+        "ans_idx": 1,
+        "justification": "A potentiometer is a variable resistor that acts as an adjustable voltage divider."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Control",
+            "Wireless",
+            "Bluetooth"
+        ],
+        "question": "A common wireless technology used to connect a phone to a robot over short distances is ________.",
+        "choices": [
+            "Bluetooth",
+            "Satellite",
+            "Fiber Optic",
+            "Morse Code"
+        ],
+        "ans_idx": 0,
+        "justification": "Bluetooth is a standard for short-range wireless communication."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Mechanics",
+            "Design",
+            "Stability"
+        ],
+        "question": "Which robot base shape is generally more stable and easier to control?",
+        "choices": [
+            "A tall stick",
+            "A wide, low platform",
+            "An upside-down pyramid",
+            "A loose pile of wire"
+        ],
+        "ans_idx": 1,
+        "justification": "Wide, low platforms have a lower center of gravity and wider base of support, increasing stability."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Functions",
+            "Reuse"
+        ],
+        "question": "Using 'Functions' or 'My Blocks' helps you reuse code so you don't have to write the same thing 10 times.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Functions allow code encapsulation and reuse, making programs cleaner and more efficient."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Resistor",
+            "Current"
+        ],
+        "question": "What component is used to limit the amount of electricity flowing to an LED so it doesn't burn out?",
+        "choices": [
+            "Resistor",
+            "Battery",
+            "Motor",
+            "Gear"
+        ],
+        "ans_idx": 0,
+        "justification": "Resistors limit the flow of electrical current in a circuit."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Control",
+            "Telepresence",
+            "Remote"
+        ],
+        "question": "A ________ robot allows a person to see and hear from a remote location as if they were there.",
+        "choices": [
+            "Telepresence",
+            "Chef",
+            "Vacuum",
+            "Toy"
+        ],
+        "ans_idx": 0,
+        "justification": "Telepresence robots provide a remote physical presence using video and audio capabilities."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI",
+            "Computer Vision",
+            "Recognition"
+        ],
+        "question": "Face Recognition software helps a robot:",
+        "choices": [
+            "Clean the floor",
+            "Identify who a person is",
+            "Move faster",
+            "Save battery"
+        ],
+        "ans_idx": 1,
+        "justification": "Face recognition is a biometric technology used to identify or verify a person from a digital image."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Ethics",
+            "Jobs",
+            "Society"
+        ],
+        "question": "Robots are only used in factories and never in homes.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Robots are increasingly common in homes (vacuums, toys, assistants) and other service sectors."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Linkages",
+            "Motion"
+        ],
+        "question": "A mechanical system of bars connected by joints is called a:",
+        "choices": [
+            "Linkage",
+            "Leakage",
+            "Luggage",
+            "Language"
+        ],
+        "ans_idx": 0,
+        "justification": "Linkages are assemblies of bodies connected to manage forces and movement."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Components",
+            "Microcontroller",
+            "Arduino"
+        ],
+        "question": "Arduino is a popular brand of:",
+        "choices": [
+            "Car",
+            "Microcontroller Board",
+            "Battery",
+            "Soda"
+        ],
+        "ans_idx": 1,
+        "justification": "Arduino is an open-source electronics platform based on easy-to-use hardware (microcontrollers) and software."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Accelerometer",
+            "Motion"
+        ],
+        "question": "An ________ measures how fast speed is changing (acceleration).",
+        "choices": [
+            "Odometer",
+            "Accelerometer",
+            "Thermometer",
+            "Barometer"
+        ],
+        "ans_idx": 1,
+        "justification": "Accelerometers measure proper acceleration."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Programming",
+            "Binary",
+            "Data"
+        ],
+        "question": "Computers and robots ultimately understand data as 1s and 0s. This system is called:",
+        "choices": [
+            "Decimal",
+            "Binary",
+            "Roman Numerals",
+            "Alphabet"
+        ],
+        "ans_idx": 1,
+        "justification": "Binary code representing text or processor instructions using the two-symbol system '0' and '1'."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Polarity",
+            "Connections"
+        ],
+        "question": "For a DC motor, if you swap the red and black wires connected to the battery, the motor will usually spin in the opposite direction.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Reversing polarity on a standard DC motor reverses the direction of the magnetic field, thus reversing spin direction."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Design",
+            "Prototyping",
+            "3D Printing"
+        ],
+        "question": "What machine is often used to make custom plastic parts for robots?",
+        "choices": [
+            "Microwave",
+            "3D Printer",
+            "Toaster",
+            "Paper Printer"
+        ],
+        "ans_idx": 1,
+        "justification": "3D printers are widely used in robotics for rapid prototyping and manufacturing custom parts."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Terminologies",
+            "Cyborg",
+            "Fiction"
+        ],
+        "question": "A being with both organic (biological) and biomechatronic parts is called a:",
+        "choices": [
+            "Cyborg",
+            "Android",
+            "Robot",
+            "Statue"
+        ],
+        "ans_idx": 0,
+        "justification": "Cyborg stands for 'cybernetic organism', combining biological and artificial components."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Physics",
+            "Kinematics",
+            "Motion"
+        ],
+        "question": "Inverse ________ is the math used to calculate the joint angles needed to move a robot hand to a specific point in space.",
+        "choices": [
+            "Kinematics",
+            "Biology",
+            "Economics",
+            "History"
+        ],
+        "ans_idx": 0,
+        "justification": "Inverse Kinematics (IK) calculates the variable joint parameters needed to place the end-effector in a given position and orientation."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Military",
+            "Security"
+        ],
+        "question": "Robots used to defuse bombs so people don't have to are an example of:",
+        "choices": [
+            "Safety Robots",
+            "Cooking Robots",
+            "Dancing Robots",
+            "Sports Robots"
+        ],
+        "ans_idx": 0,
+        "justification": "Bomb disposable robots (EOD robots) improve safety by keeping humans at a distance from explosives."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Encoder",
+            "Rotation"
+        ],
+        "question": "A Wheel Encoder counts how many times a wheel has turned so the robot knows how far it has gone.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Rotary encoders convert the angular position or motion of a shaft to an analog or digital signal."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Components",
+            "Wheels",
+            "Caster"
+        ],
+        "question": "A small swivel wheel (like on a shopping cart) used for balance on a robot is called a:",
+        "choices": [
+            "Steering Wheel",
+            "Caster Wheel",
+            "Cog",
+            "Drive Wheel"
+        ],
+        "ans_idx": 1,
+        "justification": "Caster wheels swivel to allow movement in any direction, providing support without steering resistance."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Software",
+            "Simulation",
+            "Testing"
+        ],
+        "question": "Testing your robot code on a computer model before putting it on the real robot is called:",
+        "choices": [
+            "Simulation",
+            "Imagination",
+            "Drawing",
+            "Video Gaming"
+        ],
+        "ans_idx": 0,
+        "justification": "Simulation allows safe and fast testing of robot algorithms in a virtual environment."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Effector",
+            "Tools"
+        ],
+        "question": "A tool attached to the robot's arm, like a specialized drill or welder, is an End ________.",
+        "choices": [
+            "Starter",
+            "Effector",
+            "Point",
+            "Zone"
+        ],
+        "ans_idx": 1,
+        "justification": "End Effector is the device at the end of a robotic arm directly interacting with the environment."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data",
+            "Cloud",
+            "Connectivity"
+        ],
+        "question": "Cloud Robotics means:",
+        "choices": [
+            "Robots that fly in clouds",
+            "Robots made of water vapor",
+            "Robots that use the internet for processing power and data",
+            "Robots that sleep"
+        ],
+        "ans_idx": 2,
+        "justification": "Cloud robotics allows robots to offload compute-intensive tasks and share data via the internet."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Levers",
+            "Physics"
+        ],
+        "question": "A see-saw is an example of what simple machine?",
+        "choices": [
+            "Wheel",
+            "Lever",
+            "Pulley",
+            "Screw"
+        ],
+        "ans_idx": 1,
+        "justification": "A lever is a simple machine consisting of a beam pivoted at a fixed hinge, or fulcrum."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Programming",
+            "Bugs",
+            "History"
+        ],
+        "question": "The first computer 'bug' was an actual moth trapped inside a computer relay.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "In 1947, engineers found a moth stuck in the Mark II computer, coining the term 'computer bug'."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "LED",
+            "Polarity"
+        ],
+        "question": "An LED has two legs: the longer leg is the Positive (Anode) and the shorter leg is the ________ (Cathode).",
+        "choices": [
+            "Negative",
+            "Neutral",
+            "Broken",
+            "Ground"
+        ],
+        "ans_idx": 0,
+        "justification": "LEDs are polarized; the shorter leg (Cathode) must connect to the negative side."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Sensors",
+            "Human Senses",
+            "Analogy"
+        ],
+        "question": "A Robot's camera is most like which human organ?",
+        "choices": [
+            "Ear",
+            "Eye",
+            "Nose",
+            "Tongue"
+        ],
+        "ans_idx": 1,
+        "justification": "Cameras capture visual information just like eyes do."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Arrays",
+            "Lists"
+        ],
+        "question": "If you have a list of robot names: ['Bot1', 'Bot2', 'Bot3'], what is at index 0?",
+        "choices": [
+            "Bot1",
+            "Bot2",
+            "Bot3",
+            "Nothing"
+        ],
+        "ans_idx": 0,
+        "justification": "In most programming languages, array indexing starts at 0."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Electronics",
+            "Analog vs Digital",
+            "Signals"
+        ],
+        "question": "A Digital signal can have any value between 0 and 100 (like 50.5), while an Analog signal is only ON or OFF.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "It is the opposite: Digital is discrete (0 or 1), Analog is continuous (any value)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Types",
+            "Nanobots",
+            "Future"
+        ],
+        "question": "Tiny robots that are too small to see with the naked eye are called:",
+        "choices": [
+            "Megabots",
+            "Nanobots",
+            "Kilobots",
+            "Gigabots"
+        ],
+        "ans_idx": 1,
+        "justification": "Nanorobotics is the field of creating machines or robots at or near the scale of a nanometer."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Friction",
+            "Physics"
+        ],
+        "question": "To make a robot stop moving, you often use brakes which rely on ________ to slow down the wheels.",
+        "choices": [
+            "Magnetism",
+            "Friction",
+            "Gravity",
+            "Wind"
+        ],
+        "ans_idx": 1,
+        "justification": "Brakes use friction to convert kinetic energy into heat, slowing the vehicle."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Components",
+            "Breadboard",
+            "Prototyping"
+        ],
+        "question": "What tool looks like a board with many holes, used to test circuits without soldering?",
+        "choices": [
+            "Cutting Board",
+            "Breadboard",
+            "Motherboard",
+            "Chalkboard"
+        ],
+        "ans_idx": 1,
+        "justification": "A breadboard is a construction base for prototyping of electronics."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Power",
+            "Solar",
+            "Energy"
+        ],
+        "question": "A robot that gets its energy from the sun uses:",
+        "choices": [
+            "Wind Turbines",
+            "Solar Panels",
+            "Coal",
+            "Nuclear Reactor"
+        ],
+        "ans_idx": 1,
+        "justification": "Solar panels convert sunlight into electrical energy."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Infinite Loop",
+            "Bug"
+        ],
+        "question": "An 'Infinite Loop' is a loop that runs exactly one time and then stops.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "An infinite loop repeats indefinitely and never terminates on its own."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Control",
+            "Input",
+            "Sensors"
+        ],
+        "question": "Which of these is an example of an INPUT device?",
+        "choices": [
+            "Light Bulb",
+            "Motor",
+            "Temperature Sensor",
+            "Buzzer"
+        ],
+        "ans_idx": 2,
+        "justification": "Sensors provide data (input) to the system, while others are outputs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "AND Gate",
+            "Circuits"
+        ],
+        "question": "For an AND logic gate, if Input A is True AND Input B is True, the Output is ________.",
+        "choices": [
+            "False",
+            "True",
+            "Unknown",
+            "Zero"
+        ],
+        "ans_idx": 1,
+        "justification": "The AND gate outputs True only if both inputs are True."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Mechanics",
+            "Motors",
+            "Rotation"
+        ],
+        "question": "RPM stands for:",
+        "choices": [
+            "Robots Per Minute",
+            "Revolutions Per Minute",
+            "Red Purple Maroon",
+            "Run Power Max"
+        ],
+        "ans_idx": 1,
+        "justification": "RPM is a unit of rotational speed."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Voltage",
+            "Units"
+        ],
+        "question": "Voltage is measured in:",
+        "choices": [
+            "Amps",
+            "Volts",
+            "Ohms",
+            "Meters"
+        ],
+        "ans_idx": 1,
+        "justification": "The volt (V) is the derived unit for electric potential and electromotive force."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Domestic",
+            "Vacuum"
+        ],
+        "question": "The Roomba is a famous example of a military robot.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Roomba is a domestic robot vacuum cleaner, not a military robot."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Programming",
+            "Python",
+            "Languages"
+        ],
+        "question": "Which programming language is very popular in robotics and AI because it is easy to read?",
+        "choices": [
+            "Python",
+            "Klingon",
+            "Binary",
+            "Latin"
+        ],
+        "ans_idx": 0,
+        "justification": "Python is widely used in robotics for its simplicity and vast library support (e.g., ROS)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Power",
+            "Current",
+            "Units"
+        ],
+        "question": "Electric Current is measured in ________.",
+        "choices": [
+            "Volts",
+            "Amperes (Amps)",
+            "Watts",
+            "Joules"
+        ],
+        "ans_idx": 1,
+        "justification": "The ampere (A) is the base unit of electric current."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Center of Gravity",
+            "Physics"
+        ],
+        "question": "If a robot is too tall and has a high center of gravity, it is likely to:",
+        "choices": [
+            "Fly",
+            "Tip over",
+            "Run faster",
+            "Be invisible"
+        ],
+        "ans_idx": 1,
+        "justification": "A high center of gravity makes an object less stable and more prone to tipping."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Interaction",
+            "Voice",
+            "AI"
+        ],
+        "question": "When you talk to a robot and it understands you, it is using:",
+        "choices": [
+            "Telepathy",
+            "Voice Recognition / NLP",
+            "Mind Control",
+            "Magic"
+        ],
+        "ans_idx": 1,
+        "justification": "Voice recognition and Natural Language Processing (NLP) allow machines to interpret human speech."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Calibration",
+            "Accuracy"
+        ],
+        "question": "Calibration is the process of adjusting a sensor so it gives accurate readings.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Calibration ensures that sensor outputs correspond correctly to known standards."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Gears",
+            "Ratios"
+        ],
+        "question": "If a small gear with 10 teeth turns a large gear with 50 teeth, the gear ratio is:",
+        "choices": [
+            "1:1",
+            "5:1",
+            "1:5",
+            "10:50"
+        ],
+        "ans_idx": 1,
+        "justification": "Gear Ratio = Driven/Driver = 50/10 = 5:1. (The input turns 5 times for 1 output turn)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Multimeter",
+            "Tools"
+        ],
+        "question": "A tool used to measure Voltage, Current, and Resistance is called a ________.",
+        "choices": [
+            "Ruler",
+            "Multimeter",
+            "Thermometer",
+            "Scale"
+        ],
+        "ans_idx": 1,
+        "justification": "A multimeter combines several measurement functions in one unit."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Components",
+            "Battery",
+            "Energy"
+        ],
+        "question": "Which of these stores energy chemically?",
+        "choices": [
+            "Motor",
+            "Battery",
+            "Switch",
+            "Wire"
+        ],
+        "ans_idx": 1,
+        "justification": "Batteries store energy in chemical form and convert it to electricity."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Software",
+            "ROS",
+            "Framework"
+        ],
+        "question": "What does ROS stand for?",
+        "choices": [
+            "Robot Operating System",
+            "Really Old Sandwich",
+            "Robot Over Sizing",
+            "Run On Sunday"
+        ],
+        "ans_idx": 0,
+        "justification": "ROS (Robot Operating System) is a flexible framework for writing robot software."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Electronics",
+            "Insulator",
+            "Material"
+        ],
+        "question": "Rubber and plastic are good Conductors of electricity.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Rubber and plastic are Insulators, meaning they stop electricity from flowing."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensing",
+            "Obstacle Avoidance",
+            "Navigation"
+        ],
+        "question": "Which behavior allows a robot to navigate a room without hitting things?",
+        "choices": [
+            "Wall Following",
+            "Obstacle Avoidance",
+            "Sleeping",
+            "Dancing"
+        ],
+        "ans_idx": 1,
+        "justification": "Obstacle avoidance involves detecting objects and changing path to avoid collision."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Degrees",
+            "Geometry"
+        ],
+        "question": "A full circle turn for a robot is ________ degrees.",
+        "choices": [
+            "90",
+            "180",
+            "360",
+            "100"
+        ],
+        "ans_idx": 2,
+        "justification": "A complete rotation is 360 degrees."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Types",
+            "Exoskeleton",
+            "Wearable"
+        ],
+        "question": "A wearable robot suit that helps people lift heavy objects or walk is called an:",
+        "choices": [
+            "Endoskeleton",
+            "Exoskeleton",
+            "Overcoat",
+            "Underwear"
+        ],
+        "ans_idx": 1,
+        "justification": "An exoskeleton is a wearable mobile machine that is powered by a system of electric motors, pneumatics, levers, or hydraulics."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Compilation",
+            "Code"
+        ],
+        "question": "When you convert human-readable code into machine code the computer understands, it is called:",
+        "choices": [
+            "Compiling",
+            "Composing",
+            "Composting",
+            "Complaining"
+        ],
+        "ans_idx": 0,
+        "justification": "Compilers translate source code into object code (machine language)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Safety",
+            "Water",
+            "Electronics"
+        ],
+        "question": "It is safe to use a hair dryer while taking a bath.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Mixing electricity and water is extremely dangerous due to shock hazards."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "GPS",
+            "Navigation"
+        ],
+        "question": "What system uses satellites to tell a robot where it is on Earth?",
+        "choices": [
+            "GPS (Global Positioning System)",
+            "TBS",
+            "CBS",
+            "USB"
+        ],
+        "ans_idx": 0,
+        "justification": "GPS uses signals from satellites to determine precise location coordinates."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI",
+            "Turing Test",
+            "Intelligence"
+        ],
+        "question": "The ________ Test is a way to see if a computer is intelligent enough to fool a human into thinking it is also human.",
+        "choices": [
+            "Speed",
+            "Chaos",
+            "Turing",
+            "Math"
+        ],
+        "ans_idx": 2,
+        "justification": "The Turing Test, proposed by Alan Turing, evaluates a machine's ability to exhibit intelligent behavior."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Components",
+            "Jumper Wires",
+            "Connections"
+        ],
+        "question": "Wires with pins on the ends used to quickly connect parts on a breadboard are called:",
+        "choices": [
+            "Jumper Wires",
+            "Skipping Ropes",
+            "Fishing Lines",
+            "Strings"
+        ],
+        "ans_idx": 0,
+        "justification": "Jumper wires are used for making connections on a breadboard or between headers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Physics",
+            "Inertia",
+            "Motion"
+        ],
+        "question": "Newton's First Law says an object in motion stays in motion unless acted on by a force. This is called:",
+        "choices": [
+            "Inertia",
+            "Gravity",
+            "Friction",
+            "Magic"
+        ],
+        "ans_idx": 0,
+        "justification": "Inertia is the resistance of any physical object to any change in its velocity."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Pulleys",
+            "Lifting"
+        ],
+        "question": "A Pulley system can make it feel easier to lift a heavy weight.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Pulleys can provide mechanical advantage, reducing the force needed to lift a load."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "NOT Gate",
+            "Inverter"
+        ],
+        "question": "What does a NOT gate (Inverter) do?",
+        "choices": [
+            "It does nothing",
+            "It flips the signal (True becomes False, False becomes True)",
+            "It makes the signal louder",
+            "It stops the electricity"
+        ],
+        "ans_idx": 1,
+        "justification": "A NOT gate outputs the opposite of its input."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Ethics",
+            "Asimov",
+            "Laws"
+        ],
+        "question": "Asimov's First Law says: A robot may not ________ a human being.",
+        "choices": [
+            "Help",
+            "See",
+            "Injure",
+            "Love"
+        ],
+        "ans_idx": 2,
+        "justification": "First Law: A robot may not injure a human being or, through inaction, allow a human being to come to harm."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Electronics",
+            "Capacitor",
+            "Storage"
+        ],
+        "question": "Which component stores electricity for a short time, like a tiny rechargeable battery?",
+        "choices": [
+            "Resistor",
+            "Capacitor",
+            "Transistor",
+            "Diode"
+        ],
+        "ans_idx": 1,
+        "justification": "Capacitors store electrical energy in an electric field."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensors",
+            "Color Sensor",
+            "Refraction"
+        ],
+        "question": "A Color Sensor works by shining light and measuring:",
+        "choices": [
+            "How much it hurts",
+            "How much light reflects back",
+            "The temperature",
+            "The sound"
+        ],
+        "ans_idx": 1,
+        "justification": "Color sensors detect color by measuring the intensity of reflected light from the surface."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Robotics",
+            "Art",
+            "Creativity"
+        ],
+        "question": "Robots are only for math and science; they cannot create art or music.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Robots are used to create paintings, sculptures, and music (e.g., robotic orchestras)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Mechanics",
+            "Payload",
+            "Capacity"
+        ],
+        "question": "The maximum weight a robot arm can lift is called its:",
+        "choices": [
+            "Payload Capacity",
+            "Body Weight",
+            "IQ",
+            "Height"
+        ],
+        "ans_idx": 0,
+        "justification": "Payload capacity is the maximum weight a manipulator can lift."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Software",
+            "Firmware",
+            "Hardware"
+        ],
+        "question": "Software that is permanently programmed into a hardware device's memory is called ________.",
+        "choices": [
+            "Softwear",
+            "Firmware",
+            "Hardwear",
+            "Malware"
+        ],
+        "ans_idx": 1,
+        "justification": "Firmware is a specific class of computer software that provides the low-level control for a device's specific hardware."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Electronics",
+            "Diode",
+            "Direction"
+        ],
+        "question": "Which component allows current to flow in only ONE direction?",
+        "choices": [
+            "Wire",
+            "Diode",
+            "Resistor",
+            "Capacitor"
+        ],
+        "ans_idx": 1,
+        "justification": "A diode is a two-terminal electronic component that conducts current primarily in one direction."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Programming",
+            "Syntax",
+            "Grammar"
+        ],
+        "question": "If you misspell a command in your code, you get a:",
+        "choices": [
+            "Syntax Error",
+            "Logic Error",
+            "Hardware Error",
+            "User Error"
+        ],
+        "ans_idx": 0,
+        "justification": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Energy",
+            "Kinetic",
+            "Movement"
+        ],
+        "question": "A moving robot has Kinetic Energy.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Kinetic energy is the energy an object possesses due to its motion."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "OR Gate",
+            "Circuits"
+        ],
+        "question": "For an OR gate, the output is True if:",
+        "choices": [
+            "Both inputs are False",
+            "At least one input is True",
+            "It is raining",
+            "None of the above"
+        ],
+        "ans_idx": 1,
+        "justification": "The OR gate outputs True if one or both of the inputs are True."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "Sensing",
+            "Proximity",
+            "Distance"
+        ],
+        "question": "A sensor that detects when an object is close without touching it is a ________ sensor.",
+        "choices": [
+            "Proximity",
+            "Taste",
+            "Touch",
+            "Button"
+        ],
+        "ans_idx": 0,
+        "justification": "Proximity sensors detect the presence of nearby objects without any physical contact."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "Mechanics",
+            "Robot",
+            "Term"
+        ],
+        "question": "The word 'Robot' comes from a Czech word 'Robota' which means:",
+        "choices": [
+            "Forced Labor / Work",
+            "Friend",
+            "Metal Man",
+            "Intelligent"
+        ],
+        "ans_idx": 0,
+        "justification": "Karel Čapek introduced the word in his play R.U.R., derived from robota (forced labor)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "Control",
+            "Force Feedback",
+            "Haptics"
+        ],
+        "question": "Technology that lets you 'feel' virtual objects (like a vibrating game controller) is called:",
+        "choices": [
+            "Optics",
+            "Haptics",
+            "Sonics",
+            "Genetics"
+        ],
+        "ans_idx": 1,
+        "justification": "Haptics involves tactile feedback technology."
+    }
+]

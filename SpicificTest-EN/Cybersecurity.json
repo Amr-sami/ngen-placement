@@ -1,0 +1,4139 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Passwords",
+            "Safety"
+        ],
+        "question": "What is the most important rule about your password for a game like Fortnite or Roblox?",
+        "choices": [
+            "Share it with your best friend only",
+            "Write it on a sticky note on your monitor",
+            "Never share it with anyone, even friends",
+            "Make it '123456' so it is easy to remember"
+        ],
+        "ans_idx": 2,
+        "justification": "Sharing passwords, even with friends, creates a security risk. If they get hacked or you have a fight, your account is in danger."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Phishing",
+            "Scams"
+        ],
+        "question": "If you get an email saying 'Click here to claim your FREE iPhone 15!', it is likely a scam.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Offers that sound too good to be true are almost always 'Phishing' scams trying to steal your information."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Malware",
+            "Definition"
+        ],
+        "question": "What do we call bad software that sneaks onto your computer to break it or steal data?",
+        "choices": [
+            "Hardware",
+            "Malware",
+            "Software",
+            "Underwear"
+        ],
+        "ans_idx": 1,
+        "justification": "Malware (Malicious Software) is the general name for viruses, worms, and other harmful programs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Privacy",
+            "Digital Footprint"
+        ],
+        "question": "Everything you post on the internet stays there forever. This trail of data is called your Digital ________.",
+        "choices": [
+            "Shoe",
+            "Footprint",
+            "Ghost",
+            "Shadow"
+        ],
+        "ans_idx": 1,
+        "justification": "Your 'Digital Footprint' is the record of all your online activity, which can be searched and seen by others years later."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Passwords",
+            "Strength"
+        ],
+        "question": "Which of these is the Strongest password?",
+        "choices": [
+            "password123",
+            "ilovedogs",
+            "K!tTy_C@t_99!",
+            "qwerty"
+        ],
+        "ans_idx": 2,
+        "justification": "Strong passwords use a mix of uppercase letters, lowercase letters, numbers, and symbols to make them hard to guess."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Physical Security",
+            "USB"
+        ],
+        "question": "If you find a random USB stick (flash drive) on the ground outside school, you should plug it into your computer to see what is on it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Never plug in unknown drives. They often contain viruses that automatically install as soon as you plug them in."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Privacy",
+            "PII"
+        ],
+        "question": "Which of these is safe to share publicly in a YouTube comment?",
+        "choices": [
+            "Your home address",
+            "Your phone number",
+            "Your favorite color",
+            "Your school name"
+        ],
+        "ans_idx": 2,
+        "justification": "Your favorite color is not sensitive personal information. Addresses, phone numbers, and school names can help strangers find you in real life."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Defenses",
+            "Antivirus"
+        ],
+        "question": "What kind of program acts like a doctor for your computer, scanning for viruses and removing them?",
+        "choices": [
+            "Antivirus",
+            "Paint",
+            "Calculator",
+            "Browser"
+        ],
+        "ans_idx": 0,
+        "justification": "Antivirus software scans files to detect and delete malicious software before it can do harm."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Hacking",
+            "Term"
+        ],
+        "question": "A person who uses their computer skills to break into other computers or steal information is often called a ________.",
+        "choices": [
+            "Gamer",
+            "Hacker",
+            "Coder",
+            "Maker"
+        ],
+        "ans_idx": 1,
+        "justification": "A Hacker is someone who exploits vulnerabilities in computer systems."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Gaming",
+            "Scams"
+        ],
+        "question": "A player in a game messages you: 'I am an Admin. Give me your password or I will ban you.' What should you do?",
+        "choices": [
+            "Give them the password immediately",
+            "Cry",
+            "Report and Block them",
+            "Argue with them"
+        ],
+        "ans_idx": 2,
+        "justification": "Real game administrators (Admins) will NEVER ask for your password. This is a common scam."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Updates",
+            "Patching"
+        ],
+        "question": "You should always ignore 'Software Update' notifications because they just make your computer slower.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Updates often contain 'Security Patches' that fix holes where hackers could get in. You should always update."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Privacy",
+            "Webcams"
+        ],
+        "question": "Why do some people put a sticker or cover over their laptop webcam when they aren't using it?",
+        "choices": [
+            "To keep the lens warm",
+            "To stop hackers from spying on them if they get hacked",
+            "To make the picture better",
+            "It looks cool"
+        ],
+        "ans_idx": 1,
+        "justification": "If a hacker takes control of your computer (RAT), they can turn on the webcam without the light turning on to spy on you."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Network",
+            "Public Wi-Fi"
+        ],
+        "question": "Why should you be careful using free Wi-Fi at a coffee shop or airport?",
+        "choices": [
+            "It is too fast",
+            "Hackers can sometimes spy on what you are doing on public networks",
+            "It drains your battery",
+            "It smells like coffee"
+        ],
+        "ans_idx": 1,
+        "justification": "Public Wi-Fi networks are often unencrypted, allowing attackers on the same network to intercept your data."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Defenses",
+            "Firewall"
+        ],
+        "question": "A ________ is a security tool that acts like a wall, blocking bad connections from the internet while letting good ones through.",
+        "choices": [
+            "Firewall",
+            "Door",
+            "Window",
+            "Roof"
+        ],
+        "ans_idx": 0,
+        "justification": "A Firewall monitors network traffic and blocks unauthorized access, acting like a barrier between you and the internet."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Phishing",
+            "Links"
+        ],
+        "question": "You get a text message with a weird link: 'http://bit.ly/claim-prize-now'. What should you do?",
+        "choices": [
+            "Click it to see what happens",
+            "Forward it to everyone",
+            "Delete it and do NOT click",
+            "Click it on a friend's phone"
+        ],
+        "ans_idx": 2,
+        "justification": "Unknown links (especially shortened ones) often lead to malware sites or phishing pages. Never click them."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Access",
+            "Logout"
+        ],
+        "question": "If you log into your email on a library computer, you can just walk away when you are done. The computer will log you out automatically.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "You must explicitly click 'Log Out'. If you don't, the next person who sits down has full access to your email."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Downloads",
+            "Sources"
+        ],
+        "question": "Where is the safest place to download an app for your phone?",
+        "choices": [
+            "A random website found on Google",
+            "A link sent by a stranger",
+            "The Official App Store or Google Play Store",
+            "A pop-up ad"
+        ],
+        "ans_idx": 2,
+        "justification": "Official stores check apps for viruses before letting you download them. Random websites do not."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Social Media",
+            "Strangers"
+        ],
+        "question": "Someone you don't know sends you a friend request. Their profile picture is a cute puppy. You should:",
+        "choices": [
+            "Accept it because puppies are cute",
+            "Accept it and tell them your address",
+            "Ignore or Decline it because you don't know them",
+            "Send them money"
+        ],
+        "ans_idx": 2,
+        "justification": "Strangers often use fake profile pictures (Catfishing) to trick kids into accepting requests."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Authentication",
+            "2FA"
+        ],
+        "question": "Two-Factor Authentication (2FA) means you need your password AND a special ________ (usually sent to your phone) to log in.",
+        "choices": [
+            "Key",
+            "Code",
+            "Name",
+            "Game"
+        ],
+        "ans_idx": 1,
+        "justification": "2FA requires a secondary verification code (OTP) to prove it is really you logging in."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Privacy",
+            "GPS"
+        ],
+        "question": "If you take a photo in front of your house and post it, what hidden danger might be in the photo?",
+        "choices": [
+            "Your house number or street sign is visible",
+            "The photo is too blurry",
+            "Your hair looks messy",
+            "The sky is blue"
+        ],
+        "ans_idx": 0,
+        "justification": "Visual clues like street signs or house numbers allow strangers to find your exact physical location."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Devices",
+            "Locking"
+        ],
+        "question": "You should put a PIN or passcode on your phone so if you lose it, thieves can't read your texts.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Screen locks (PIN, Pattern, FaceID) are the first line of defense for physical device theft."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Data",
+            "Backups"
+        ],
+        "question": "What is a 'Backup'?",
+        "choices": [
+            "Walking backwards",
+            "A copy of your important files kept in a safe place",
+            "A virus that deletes files",
+            "A type of hacker"
+        ],
+        "ans_idx": 1,
+        "justification": "A backup is a duplicate copy of data used to restore the original in case of data loss events."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Communication",
+            "Cyberbullying"
+        ],
+        "question": "Using the internet to be mean, spread rumors, or make fun of someone is called:",
+        "choices": [
+            "Coding",
+            "Cyberbullying",
+            "Debugging",
+            "Streaming"
+        ],
+        "ans_idx": 1,
+        "justification": "Cyberbullying is bullying that takes place over digital devices like cell phones, computers, and tablets."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Email",
+            "Spam"
+        ],
+        "question": "Junk email sent to thousands of people at once (usually ads) is called ________.",
+        "choices": [
+            "Meat",
+            "Spam",
+            "Ham",
+            "Trash"
+        ],
+        "ans_idx": 1,
+        "justification": "Spam refers to unsolicited commercial email sent in bulk."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Web",
+            "HTTPS"
+        ],
+        "question": "When you visit a website where you enter a password, you should look for a little ________ icon next to the URL address.",
+        "choices": [
+            "Skull",
+            "Lock",
+            "Smiley Face",
+            "Bomb"
+        ],
+        "ans_idx": 1,
+        "justification": "The Padlock icon indicates the site uses HTTPS encryption, meaning your password is sent securely."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Accounts",
+            "Sharing"
+        ],
+        "question": "Your friend says: 'Let me log into your account to beat this level for you.' What is the risk?",
+        "choices": [
+            "They might steal your account or delete your items",
+            "The game will crash",
+            "You will get too many points",
+            "There is no risk"
+        ],
+        "ans_idx": 0,
+        "justification": "Account sharing is a leading cause of account theft. Once someone else has access, they can change the password or ruin your progress."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Pop-ups",
+            "Adware"
+        ],
+        "question": "If a pop-up window appears saying 'Your computer has 1,000 viruses! Click here to fix!', it is telling the truth.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "This is a 'Scareware' tactic. Browsers cannot scan your hard drive for viruses; these ads just want to scare you into downloading malware."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Privacy",
+            "Username"
+        ],
+        "question": "When choosing a Username for a game, do not use your real ________.",
+        "choices": [
+            "Avatar",
+            "Name",
+            "Score",
+            "Color"
+        ],
+        "ans_idx": 1,
+        "justification": "Using your real full name as a username helps strangers identify you offline."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Hardware",
+            "Lost Device"
+        ],
+        "question": "If you lose your school tablet or laptop, what is the first thing you should do?",
+        "choices": [
+            "Wait a week to see if it comes back",
+            "Tell a parent or teacher immediately",
+            "Buy a new one secretly",
+            "Hide under your bed"
+        ],
+        "ans_idx": 1,
+        "justification": "Reporting a lost device immediately allows adults to track it or remotely wipe the data before it is stolen."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Scams",
+            "Chain Letters"
+        ],
+        "question": "You get a message: 'Send this to 10 friends or you will have bad luck for 5 years'. This is:",
+        "choices": [
+            "A Chain Letter / Spam",
+            "A real curse",
+            "Important news",
+            "A government warning"
+        ],
+        "ans_idx": 0,
+        "justification": "Chain letters are a form of spam designed to frighten young users into spreading the message further."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Encryption",
+            "Analogy"
+        ],
+        "question": "Encryption is like:",
+        "choices": [
+            "Sending a postcard that anyone can read",
+            "Putting your message in a locked box that only the receiver has the key to",
+            "Writing with invisible ink that never appears",
+            "Shredding the paper"
+        ],
+        "ans_idx": 1,
+        "justification": "Encryption scrambles data (locks it) so that only authorized parties with the decryption key can read it."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Social Engineering",
+            "Tricking"
+        ],
+        "question": "Hackers don't always use code. Sometimes they just trick people into giving up secrets. This is called Social ________.",
+        "choices": [
+            "Media",
+            "Engineering",
+            "Science",
+            "Studies"
+        ],
+        "ans_idx": 1,
+        "justification": "Social Engineering relies on psychological manipulation (like pretending to be IT support) to trick users into making security mistakes."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Identity Theft",
+            "Definition"
+        ],
+        "question": "Identity Theft is when someone steals your personal details (like Name and Birthday) to pretend to be you.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Identity theft involves using someone else's PII to commit fraud, such as opening bank accounts or credit cards."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Passwords",
+            "Reuse"
+        ],
+        "question": "Why is it bad to use the same password for everything (Game, Email, School)?",
+        "choices": [
+            "It is boring",
+            "If a hacker steals that one password, they can get into ALL your accounts",
+            "You will forget it",
+            "Computers get confused"
+        ],
+        "ans_idx": 1,
+        "justification": "Password reuse is a major vulnerability. A data breach at one site (like a game) compromises all other accounts using the same credentials."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Trojan"
+        ],
+        "question": "A virus that hides inside a program that looks safe (like a free game installer) is called a ________ Horse.",
+        "choices": [
+            "Greek",
+            "Trojan",
+            "Hidden",
+            "Sneaky"
+        ],
+        "ans_idx": 1,
+        "justification": "Named after the Greek myth, a Trojan Horse is malware that disguises itself as legitimate software to trick users into running it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Attacks",
+            "DDOS"
+        ],
+        "question": "A DDoS attack makes a website crash by:",
+        "choices": [
+            "Deleting the website code",
+            "Overwhelming it with too much fake traffic from thousands of computers at once",
+            "Cutting the power cord",
+            "Changing the password"
+        ],
+        "ans_idx": 1,
+        "justification": "DDoS (Distributed Denial of Service) floods a server with traffic, using up all its resources so real users cannot access it."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Browser",
+            "Cookies"
+        ],
+        "question": "Deleting your 'Browser History' deletes everything you ever did on the internet from the internet itself.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Deleting history only removes the record from *your* computer. The websites, your school, and your ISP still have records of your visit."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Ethics",
+            "Hats"
+        ],
+        "question": "A 'White Hat' hacker is someone who:",
+        "choices": [
+            "Hacks to steal money",
+            "Hacks to help companies find weaknesses and fix them (The Good Guys)",
+            "Wears a white hat while coding",
+            "Hacks only in winter"
+        ],
+        "ans_idx": 1,
+        "justification": "White Hat hackers are ethical security experts hired to test systems and improve security, unlike Black Hats who hack for malicious reasons."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Keylogger"
+        ],
+        "question": "What does a 'Keylogger' spy program do?",
+        "choices": [
+            "It records every key you press on the keyboard (stealing passwords)",
+            "It unlocks doors",
+            "It logs you out",
+            "It plays music"
+        ],
+        "ans_idx": 0,
+        "justification": "Keyloggers capture keystrokes, allowing attackers to steal passwords, credit card numbers, and messages typed by the user."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Scams",
+            "Bot"
+        ],
+        "question": "If an account sends you a message instantly, 24/7, and replies faster than a human can type, it is likely a ________.",
+        "choices": [
+            "Genius",
+            "Bot",
+            "Admin",
+            "Ghost"
+        ],
+        "ans_idx": 1,
+        "justification": "Bots are automated programs that can send messages and interact with users much faster than humans."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Privacy",
+            "Permissions"
+        ],
+        "question": "You download a simple 'Flashlight' app, but it asks for permission to access your Contacts and Location. What should you do?",
+        "choices": [
+            "Allow it",
+            "Deny it / Delete the app (It doesn't need those to work)",
+            "Email the developer",
+            "Reboot your phone"
+        ],
+        "ans_idx": 1,
+        "justification": "This is a red flag. Apps requesting permissions they don't need (like a flashlight needing your contacts) are often spying on you."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Security",
+            "Patches"
+        ],
+        "question": "A 'Security Patch' is a digital bandage that fixes a hole in software code.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Patches are updates specifically released to correct vulnerabilities (bugs/holes) in software."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Attacks",
+            "Brute Force"
+        ],
+        "question": "What is a 'Brute Force' attack?",
+        "choices": [
+            "Hitting the computer with a hammer",
+            "A program trying every possible password combination until one works",
+            "Yelling at the screen",
+            "Stealing the Wi-Fi"
+        ],
+        "ans_idx": 1,
+        "justification": "Brute forcing involves systematically trying all possible credentials (dictionary words, combinations) to gain access."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Worms"
+        ],
+        "question": "How is a Computer 'Worm' different from a Virus?",
+        "choices": [
+            "Worms are smaller",
+            "Worms can travel from computer to computer by themselves; Viruses need a human to open a file",
+            "Worms only affect Apple computers",
+            "Viruses are green"
+        ],
+        "ans_idx": 1,
+        "justification": "Viruses require a host file and user action to spread. Worms are self-replicating and can spread across networks automatically."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Passwords",
+            "Manager"
+        ],
+        "question": "To remember lots of complex passwords safely, you should use a Password ________.",
+        "choices": [
+            "Book",
+            "Manager",
+            "Helper",
+            "Wizard"
+        ],
+        "ans_idx": 1,
+        "justification": "A Password Manager is a secure vault software that stores and encrypts all your passwords so you only have to remember one master password."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Internet",
+            "IP Address"
+        ],
+        "question": "Your IP Address is like your computer's:",
+        "choices": [
+            "Social Security Number",
+            "Home Address on the internet",
+            "Phone Number",
+            "Fingerprint"
+        ],
+        "ans_idx": 1,
+        "justification": "An IP address identifies a device on the network and allows data to be routed to it, much like a postal address."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Hacking",
+            "Ethical Hacking"
+        ],
+        "question": "Companies actually hire hackers to try and break into their systems on purpose.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is called 'Penetration Testing'. Companies pay experts to find flaws so they can fix them before bad guys find them."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Data",
+            "Breach"
+        ],
+        "question": "When a company gets hacked and thousands of user passwords are stolen, this event is called a:",
+        "choices": [
+            "Data Breach",
+            "System Crash",
+            "Firewall",
+            "Update"
+        ],
+        "ans_idx": 0,
+        "justification": "A data breach is a security incident where sensitive, protected, or confidential data is copied, transmitted, or stolen."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Safety",
+            "Meeting IRL"
+        ],
+        "question": "An online friend you have never met asks to meet you in the park alone. What should you do?",
+        "choices": [
+            "Go meet them",
+            "Tell them 'No', Block them, and tell an adult immediately",
+            "Bring a friend",
+            "Ask for a picture first"
+        ],
+        "ans_idx": 1,
+        "justification": "Meeting strangers from the internet is dangerous. You should never go alone, and you must always involve a trusted adult."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Social Media",
+            "Privacy"
+        ],
+        "question": "It is safe to post a picture of your plane ticket or concert ticket on social media before the event.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Tickets often contain barcodes or personal info that people can copy to steal your seat or find out your travel plans."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Communication",
+            "Reporting"
+        ],
+        "question": "If someone is being mean to you in a game chat, you should use the ________ button to tell the game company.",
+        "choices": [
+            "Like",
+            "Share",
+            "Report",
+            "Save"
+        ],
+        "ans_idx": 2,
+        "justification": "The Report button alerts the moderators to bad behavior so they can take action against the bully."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Browsing",
+            "Ads"
+        ],
+        "question": "You see a flashy button that says 'Download NOW' on a website full of ads. Is it safe to click?",
+        "choices": [
+            "Yes, always",
+            "No, fake download buttons are often tricks to install malware",
+            "Only if it is green",
+            "Only on Tuesdays"
+        ],
+        "ans_idx": 1,
+        "justification": "Fake download buttons are a common trick (clickbait) used by malicious sites to install unwanted software."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity Basics",
+            "Devices",
+            "Sharing"
+        ],
+        "question": "Why is it risky to let a stranger borrow your phone to 'make a call'?",
+        "choices": [
+            "They might drop it",
+            "They might quickly install a tracking app or steal your money via apps",
+            "They will change your wallpaper",
+            "It makes the phone dirty"
+        ],
+        "ans_idx": 1,
+        "justification": "In an unlocked state, a stranger can access banking apps, passwords, or install spyware in seconds."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Phishing",
+            "URL Inspection"
+        ],
+        "question": "Which of these website links looks like a Phishing scam trying to trick you?",
+        "choices": [
+            "www.roblox.com",
+            "www.google.com",
+            "www.roblox-free-robux-generator.net",
+            "www.apple.com"
+        ],
+        "ans_idx": 2,
+        "justification": "Scam sites often use long, complicated names promising 'free' items to trick you into entering your password."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Passwords",
+            "Storage"
+        ],
+        "question": "The safest place to store your passwords is in a text file named 'Passwords' on your desktop.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "If a hacker gets into your computer or a virus scans your files, a text file is the first thing they will steal. Use a Password Manager instead."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Encryption",
+            "HTTPS"
+        ],
+        "question": "What does the 'S' stand for in HTTPS?",
+        "choices": [
+            "Super",
+            "Secure",
+            "Speed",
+            "Slow"
+        ],
+        "ans_idx": 1,
+        "justification": "HTTPS stands for Hypertext Transfer Protocol SECURE. It means the connection is encrypted."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Social Engineering",
+            "Trust"
+        ],
+        "question": "When a hacker pretends to be your boss or principal to trick you into sending money, this trick is called Social ________.",
+        "choices": [
+            "Science",
+            "Engineering",
+            "Media",
+            "Studies"
+        ],
+        "ans_idx": 1,
+        "justification": "Social Engineering relies on manipulating people into breaking normal security procedures."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Ransomware"
+        ],
+        "question": "Your computer screen turns red and says: 'Your files are encrypted! Pay $500 to get them back.' You have been hit by:",
+        "choices": [
+            "Spyware",
+            "Ransomware",
+            "Hardware",
+            "Freeware"
+        ],
+        "ans_idx": 1,
+        "justification": "Ransomware is malicious software that blocks access to a computer system until a sum of money is paid."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Authentication",
+            "Biometrics"
+        ],
+        "question": "Which of these is a 'Biometric' password?",
+        "choices": [
+            "1234",
+            "Your Fingerprint",
+            "Your Mother's Maiden Name",
+            "A Pattern Draw"
+        ],
+        "ans_idx": 1,
+        "justification": "Biometrics use unique physical characteristics (fingerprint, face, iris) to verify identity."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Digital Footprint",
+            "Permanence"
+        ],
+        "question": "If you delete a mean comment you posted, it is gone forever and nobody could have screenshotted it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Once something is posted, it can be screenshotted or archived instantly. Deleting it does not remove copies others have made."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Network",
+            "Wi-Fi"
+        ],
+        "question": "Why is 'Starbucks_Free_WiFi' risky compared to your home Wi-Fi?",
+        "choices": [
+            "It tastes like coffee",
+            "It is an 'Unsecured Network' where hackers can spy on your data stream",
+            "It is faster",
+            "It blocks games"
+        ],
+        "ans_idx": 1,
+        "justification": "Public networks often lack encryption, allowing 'Man-in-the-Middle' attacks where data is intercepted."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Updates",
+            "Vulnerabilities"
+        ],
+        "question": "Hackers love it when you use old software because:",
+        "choices": [
+            "It looks retro",
+            "Old software has 'holes' (vulnerabilities) that they already know how to break",
+            "It is cheaper",
+            "It is faster"
+        ],
+        "ans_idx": 1,
+        "justification": "Developers fix security holes in updates. Using old versions leaves those holes open for attackers to use."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Trojan"
+        ],
+        "question": "A virus that hides inside a legitimate-looking app (like a fake version of Minecraft) is called a ________ Horse.",
+        "choices": [
+            "Trojan",
+            "Roman",
+            "Greek",
+            "Fast"
+        ],
+        "ans_idx": 0,
+        "justification": "A Trojan Horse pretends to be useful software to trick the user into installing it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Privacy",
+            "Metadata"
+        ],
+        "question": "When you take a photo with a smartphone, it often secretly records the GPS location of where you stood. This hidden data is called:",
+        "choices": [
+            "Metadata / Geotagging",
+            "Microdata",
+            "Megadata",
+            "Magic"
+        ],
+        "ans_idx": 0,
+        "justification": "Geotagging adds location metadata to image files, which can reveal your location if shared online."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Attacks",
+            "Brute Force"
+        ],
+        "question": "A 'Brute Force' attack is when a hacker guesses your password by typing every single word in the dictionary.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Brute forcing involves trying all possible combinations until the correct one is found."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Defenses",
+            "VPN"
+        ],
+        "question": "What tool creates a private 'tunnel' for your internet connection, hiding your location and data?",
+        "choices": [
+            "GPS",
+            "VPN (Virtual Private Network)",
+            "VLC Player",
+            "USB"
+        ],
+        "ans_idx": 1,
+        "justification": "A VPN encrypts your traffic and masks your IP address, enhancing privacy and security."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Authentication",
+            "2FA"
+        ],
+        "question": "If you turn on 2-Step Verification, what happens if a hacker steals your password?",
+        "choices": [
+            "They get in easily",
+            "They still can't get in because they don't have your phone to get the code",
+            "Your account is deleted",
+            "The hacker gets arrested immediately"
+        ],
+        "ans_idx": 1,
+        "justification": "2FA acts as a second lock. Even with the password (the key), they can't open the door without the code (the second key)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Privacy",
+            "Cookies"
+        ],
+        "question": "Small files that websites save on your computer to track you or keep you logged in are called ________.",
+        "choices": [
+            "Cakes",
+            "Cookies",
+            "Candies",
+            "Trackers"
+        ],
+        "ans_idx": 1,
+        "justification": "HTTP Cookies are small data packets used by websites to remember stateful information and track browsing."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Identity Theft",
+            "Prevention"
+        ],
+        "question": "To prevent Identity Theft, you should shred documents that contain:",
+        "choices": [
+            "Your drawings",
+            "Your homework",
+            "Your Personal Information (Address, SSN, Bank info)",
+            "Coupons"
+        ],
+        "ans_idx": 2,
+        "justification": "Dumpster diving is a real way thieves steal info. Shredding sensitive documents prevents physical theft of data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Email",
+            "Attachments"
+        ],
+        "question": "An email from 'UPS Delivery' has a file attached called `invoice.exe`. You didn't order anything. What should you do?",
+        "choices": [
+            "Open it to see what it is",
+            "Delete it immediately. It is likely a virus.",
+            "Forward it to your mom",
+            "Reply and ask who they are"
+        ],
+        "ans_idx": 1,
+        "justification": "Executable files (.exe) sent via email are the most common way to deliver malware. Legitimate invoices are usually PDFs."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "IoT",
+            "Risks"
+        ],
+        "question": "Smart devices like 'Smart Lightbulbs' cannot be hacked because they don't have screens.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Any device connected to the internet (IoT) can be hacked. Hackers often use smart bulbs to get into the home network."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Spyware"
+        ],
+        "question": "What is the main goal of 'Spyware'?",
+        "choices": [
+            "To break your screen",
+            "To secretly watch what you do and steal your info",
+            "To show you funny videos",
+            "To make your internet faster"
+        ],
+        "ans_idx": 1,
+        "justification": "Spyware runs in the background, collecting data on user habits, keystrokes, and personal info without consent."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Attacks",
+            "DDOS"
+        ],
+        "question": "When hackers use thousands of zombie computers to crash a website with too much traffic, it is called a:",
+        "choices": [
+            "DDOS Attack",
+            "Zombie Apocalypse",
+            "Traffic Jam",
+            "Glitch"
+        ],
+        "ans_idx": 0,
+        "justification": "Distributed Denial of Service (DDoS) uses a botnet (zombie computers) to overwhelm a target server."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Phishing",
+            "Email Headers"
+        ],
+        "question": "You receive an email from 'support@amaz0n.com' (notice the zero). This is a clear sign of:",
+        "choices": [
+            "A VIP Account",
+            "Typosquatting / Phishing",
+            "A System Error",
+            "A Discount Code"
+        ],
+        "ans_idx": 1,
+        "justification": "Phishers often use 'Typosquatting' (misspelled domains like amaz0n instead of amazon) to trick users into thinking the email is legitimate."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Social Engineering",
+            "Urgency"
+        ],
+        "question": "Social Engineers often try to create a sense of 'Urgency' (e.g., 'Act NOW or your account will be deleted!') to make you make a mistake.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Creating panic or urgency stops the victim from thinking critically or checking if the threat is real."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Authentication",
+            "Passphrases"
+        ],
+        "question": "Which of these is considered a modern, secure 'Passphrase'?",
+        "choices": [
+            "P@ssword1",
+            "Purple-Elephant-Dancing-Pizza",
+            "12345678",
+            "SmithFamily"
+        ],
+        "ans_idx": 1,
+        "justification": "Passphrases made of random words are long (hard to crack) but easy for humans to remember compared to complex short codes."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Adware"
+        ],
+        "question": "Malware that floods your screen with unwanted pop-up advertisements to generate money for the attacker is called ________.",
+        "choices": [
+            "Spyware",
+            "Adware",
+            "Ransomware",
+            "Botware"
+        ],
+        "ans_idx": 1,
+        "justification": "Adware (Advertising-supported software) automatically displays or downloads advertising material when a user is online."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Network",
+            "WPA2"
+        ],
+        "question": "When setting up your home Wi-Fi, you should choose WPA2 or WPA3 security. What does 'WEP' security mean?",
+        "choices": [
+            "It is the newest and best",
+            "It is very old and easy to hack",
+            "It stands for Wireless Extra Power",
+            "It makes the internet faster"
+        ],
+        "ans_idx": 1,
+        "justification": "WEP (Wired Equivalent Privacy) is an outdated security protocol that can be cracked by hackers in minutes."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Principles",
+            "CIA Triad",
+            "Confidentiality"
+        ],
+        "question": "In the CIA Triad of security, 'Confidentiality' means:",
+        "choices": [
+            "The data is accurate and unchanged",
+            "The system is always online",
+            "Only authorized people can see the data",
+            "The computer is fast"
+        ],
+        "ans_idx": 2,
+        "justification": "Confidentiality ensures that sensitive information is disclosed only to authorized parties."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Principles",
+            "Encryption",
+            "Symmetric vs Asymmetric"
+        ],
+        "question": "In Asymmetric Encryption, there are two keys. The Public Key locks the message, and the ________ Key unlocks it.",
+        "choices": [
+            "Master",
+            "Private",
+            "Guest",
+            "Open"
+        ],
+        "ans_idx": 1,
+        "justification": "Asymmetric encryption uses a pair of keys: a Public key for encryption (shared with everyone) and a Private key for decryption (kept secret)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Principles",
+            "Integrity",
+            "Hashing"
+        ],
+        "question": "To check if a file has been changed or corrupted, we compare its 'digital fingerprint', also known as a ________.",
+        "choices": [
+            "Tag",
+            "Hash",
+            "Cookie",
+            "Pixel"
+        ],
+        "ans_idx": 1,
+        "justification": "A Hash is a fixed-size string of characters generated from data; if the data changes even slightly, the hash changes completely."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Threats",
+            "Exploits",
+            "Zero-Day"
+        ],
+        "question": "What is a 'Zero-Day' vulnerability?",
+        "choices": [
+            "A virus that lasts for zero days",
+            "A flaw in software that the creators don't know about yet (so they have had 0 days to fix it)",
+            "A computer that costs 0 dollars",
+            "A calendar error"
+        ],
+        "ans_idx": 1,
+        "justification": "Zero-day vulnerabilities are dangerous because no patch exists yet, leaving systems defenseless against attacks targeting them."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Threats",
+            "Botnets",
+            "C&C"
+        ],
+        "question": "A 'Botnet' is a network of hacked computers controlled by a single attacker, often used to launch DDoS attacks.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Botnets consist of 'zombie' devices infected with malware that receive commands from a central Command & Control (C&C) server."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "SQL Injection",
+            "Code"
+        ],
+        "question": "If a hacker types `' OR '1'='1` into a login box to trick the database into letting them in, this is called:",
+        "choices": [
+            "HTML Editing",
+            "SQL Injection",
+            "Python Scripting",
+            "CSS Breaking"
+        ],
+        "ans_idx": 1,
+        "justification": "SQL Injection involves inputting malicious SQL code to manipulate the backend database, often bypassing authentication."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Man-in-the-Middle",
+            "Interception"
+        ],
+        "question": "A 'Man-in-the-Middle' (MitM) attack happens when:",
+        "choices": [
+            "A hacker steals your physical laptop",
+            "A hacker secretly intercepts the communication between you and the website you are visiting",
+            "A server crashes in the middle of a download",
+            "You sit in the middle of the room"
+        ],
+        "ans_idx": 1,
+        "justification": "MitM attacks involve an attacker secretly relaying and possibly altering the communication between two parties who believe they are communicating directly."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "CIA Triad",
+            "Availability"
+        ],
+        "question": "If a DDoS attack crashes a website, it has violated the ________ part of the CIA Triad.",
+        "choices": [
+            "Confidentiality",
+            "Availability",
+            "Integrity",
+            "Secrecy"
+        ],
+        "ans_idx": 1,
+        "justification": "Availability ensures that systems and data are accessible to authorized users when needed; a crash violates this."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Phishing",
+            "Spear Phishing"
+        ],
+        "question": "Regular Phishing sends spam to everyone. 'Spear Phishing' is different because:",
+        "choices": [
+            "It uses a spear",
+            "It targets a specific person or company using personal details to look real",
+            "It only works underwater",
+            "It is legal"
+        ],
+        "ans_idx": 1,
+        "justification": "Spear phishing is highly targeted; attackers research the victim to make the scam message appear trustworthy and personalized."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Malware",
+            "Rootkit",
+            "Stealth"
+        ],
+        "question": "Which type of malware buries itself deep into the operating system (kernel) to hide from antivirus software?",
+        "choices": [
+            "Adware",
+            "Rootkit",
+            "Cookie",
+            "Bug"
+        ],
+        "ans_idx": 1,
+        "justification": "Rootkits are designed to provide continued privileged access to a computer while actively hiding their presence from system tools."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Air Gap",
+            "Physical"
+        ],
+        "question": "An 'Air Gapped' computer is one that is physically disconnected from the internet and all other networks to prevent hacking.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Air gapping is a security measure where a device is physically isolated from unsecured networks to prevent remote access."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Firewall",
+            "Rules"
+        ],
+        "question": "Firewalls use rules to make decisions. An 'Inbound Rule' controls:",
+        "choices": [
+            "Data trying to leave your computer to the internet",
+            "Data trying to enter your computer from the internet",
+            "The speed of the fan",
+            "The volume of the speakers"
+        ],
+        "ans_idx": 1,
+        "justification": "Inbound rules filter traffic attempting to connect to the system from the outside network."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Whaling",
+            "CEO Fraud"
+        ],
+        "question": "Targeting a 'Big Fish' like a CEO or President with a phishing email to steal high-level secrets is called:",
+        "choices": [
+            "Fishing",
+            "Whaling",
+            "Sharking",
+            "Boating"
+        ],
+        "ans_idx": 1,
+        "justification": "Whaling is a specific type of spear phishing that targets high-profile executives or senior management."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Pen Testing",
+            "Ethical Hacking"
+        ],
+        "question": "A simulated cyberattack authorized by a company to find their own weak spots is called a ________ Test.",
+        "choices": [
+            "Stress",
+            "Penetration",
+            "Speed",
+            "Beta"
+        ],
+        "ans_idx": 1,
+        "justification": "Penetration Testing (or Pen Testing) involves ethical hackers attempting to breach security to identify vulnerabilities."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Salting",
+            "Passwords"
+        ],
+        "question": "To make passwords harder to crack, systems add random data to the password before hashing it. This is called:",
+        "choices": [
+            "Pepper",
+            "Salting",
+            "Cooking",
+            "Mixing"
+        ],
+        "ans_idx": 1,
+        "justification": "Salting adds a unique random string of characters to each password before hashing, preventing attacks like Rainbow Tables."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "XSS",
+            "Web"
+        ],
+        "question": "Cross-Site Scripting (XSS) is when a hacker:",
+        "choices": [
+            "Steals your monitor",
+            "Injects malicious scripts (code) into a trusted website that other users view",
+            "Crosses out your name",
+            "Deletes the website database"
+        ],
+        "ans_idx": 1,
+        "justification": "XSS attacks exploit vulnerabilities in web applications to execute malicious scripts in the browser of an unsuspecting user."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Encryption",
+            "End-to-End"
+        ],
+        "question": "In End-to-End Encryption (E2EE), even the company providing the service (like WhatsApp) cannot read your messages.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "E2EE ensures that data is encrypted on the sender's device and only decrypted on the recipient's device; no intermediary can access it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Session Hijacking",
+            "Cookies"
+        ],
+        "question": "If a hacker steals your 'Session Cookie' after you log in, what can they do?",
+        "choices": [
+            "Eat the cookie",
+            "Take over your account without needing your password",
+            "See your webcam",
+            "Nothing"
+        ],
+        "ans_idx": 1,
+        "justification": "Session hijacking (or cookie side-jacking) allows an attacker to impersonate the user by stealing the active session token."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Honeypot",
+            "Trap"
+        ],
+        "question": "A 'Honeypot' is a fake computer system set up by security experts to:",
+        "choices": [
+            "Make honey",
+            "Lure hackers in to study their methods and waste their time",
+            "Store extra files",
+            "Speed up the network"
+        ],
+        "ans_idx": 1,
+        "justification": "A honeypot is a decoy system designed to attract cyberattackers to detect, deflect, or study hacking attempts."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Tech",
+            "Steganography",
+            "Hiding"
+        ],
+        "question": "The practice of hiding secret data inside a normal file, like hiding a text message inside the pixels of an image, is called ________.",
+        "choices": [
+            "Photography",
+            "Steganography",
+            "Biography",
+            "Geography"
+        ],
+        "ans_idx": 1,
+        "justification": "Steganography is the technique of hiding secret data within an ordinary, non-secret, file or message."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Social Media",
+            "Oversharing"
+        ],
+        "question": "Posting a picture of your house keys on Instagram is a bad idea because:",
+        "choices": [
+            "Keys are boring",
+            "Thieves can actually copy the key shape just from a high-quality photo",
+            "It takes up too much storage",
+            "The keys look ugly"
+        ],
+        "ans_idx": 1,
+        "justification": "High-resolution photos allow criminals to replicate the bitting (shape) of physical keys to break into homes."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Privacy",
+            "Incognito Mode"
+        ],
+        "question": "If you use 'Incognito Mode' at school, the teachers and school administrators cannot see what you are doing.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Incognito mode only stops the *browser* from saving history. The network administrator (school) can still see all traffic."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Authentication",
+            "Security Questions"
+        ],
+        "question": "Why is 'What is your dog's name?' a bad Security Question for resetting your password?",
+        "choices": [
+            "You might forget the name",
+            "It is too hard to spell",
+            "People can easily find the answer by looking at your social media posts",
+            "Dogs don't have names"
+        ],
+        "ans_idx": 2,
+        "justification": "Security questions should be secrets. Information shared publicly on social media (like pet names) is easily guessable by hackers."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Malware",
+            "Scareware"
+        ],
+        "question": "A pop-up that screams 'WARNING! VIRUS DETECTED!' to scare you into buying fake software is called ________.",
+        "choices": [
+            "Hardware",
+            "Scareware",
+            "Software",
+            "Glitch"
+        ],
+        "ans_idx": 1,
+        "justification": "Scareware is a form of malware that uses social engineering to cause shock, anxiety, or the perception of a threat."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Gaming",
+            "Mods"
+        ],
+        "question": "Downloading 'Free Cheats' or 'Mods' for games from unofficial websites is the #1 way kids get:",
+        "choices": [
+            "Banned",
+            "Malware / Viruses",
+            "Free money",
+            "Better at the game"
+        ],
+        "ans_idx": 1,
+        "justification": "Hackers target young gamers by hiding malware inside files that promise cheats, hacks, or free currency."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Privacy",
+            "Terms of Service"
+        ],
+        "question": "When an app says 'It is Free', how do they usually make money?",
+        "choices": [
+            "They don't, they are just nice",
+            "By selling your personal data to advertisers",
+            "By asking for donations",
+            "By mining gold"
+        ],
+        "ans_idx": 1,
+        "justification": "The saying 'If the product is free, YOU are the product' refers to companies collecting and selling user data for profit."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Email",
+            "Verification"
+        ],
+        "question": "If you get an email from 'Apple' but the sender address is `apple_support@gmail.com`, it is fake.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Real companies use their own domain names (e.g., @apple.com), never free public domains like @gmail.com or @yahoo.com."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Attacks",
+            "Shoulder Surfing"
+        ],
+        "question": "Someone standing behind you watching you type your PIN code into an ATM or phone is called:",
+        "choices": [
+            "Screen Sharing",
+            "Shoulder Surfing",
+            "Back Watching",
+            "Piggybacking"
+        ],
+        "ans_idx": 1,
+        "justification": "Shoulder surfing is a direct observation technique used to steal credentials or PINs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Data",
+            "Encryption"
+        ],
+        "question": "To make a message unreadable to anyone except the person with the key, you use ________.",
+        "choices": [
+            "Deletion",
+            "Encryption",
+            "Compression",
+            "Translation"
+        ],
+        "ans_idx": 1,
+        "justification": "Encryption transforms readable data (plaintext) into an unreadable format (ciphertext)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Mobile",
+            "Bluetooth"
+        ],
+        "question": "Why should you turn off Bluetooth when you are not using it in public?",
+        "choices": [
+            "It uses too much data",
+            "Hackers can connect to your device (Bluebugging) if it is visible",
+            "It makes the music stop",
+            "It breaks the phone"
+        ],
+        "ans_idx": 1,
+        "justification": "Leaving Bluetooth on makes your device discoverable, allowing attackers to potentially connect to or access your device (Bluejacking/Bluebugging)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Ethics",
+            "Grey Hat"
+        ],
+        "question": "A hacker who breaks laws but thinks they are doing it for a 'good cause' (like hacking a bad company) is called a:",
+        "choices": [
+            "White Hat",
+            "Black Hat",
+            "Grey Hat",
+            "Red Hat"
+        ],
+        "ans_idx": 2,
+        "justification": "Grey Hats sit between ethical (White) and malicious (Black) hackers; they may violate laws but often without malicious intent."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Network",
+            "Router"
+        ],
+        "question": "You should leave the default password (like 'admin') on your home Wi-Fi router because it is easy to remember.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Default passwords are public knowledge. Hackers try them first to take control of your network. Always change them."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Downloads",
+            "Piracy"
+        ],
+        "question": "Downloading a movie for free that is normally paid for is called 'Piracy'. Besides being illegal, why is it dangerous?",
+        "choices": [
+            "The movie will be blurry",
+            "Pirated files are a very common hiding spot for malware",
+            "Your internet will turn off",
+            "The actors will be mad"
+        ],
+        "ans_idx": 1,
+        "justification": "Attackers know people want free stuff, so they bundle viruses with pirated movies and games."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Recovery",
+            "Backups"
+        ],
+        "question": "If your computer gets destroyed by Ransomware, what is the only 100% sure way to get your files back without paying?",
+        "choices": [
+            "Ask nicely",
+            "Restore from a Backup you made earlier",
+            "Hack the hacker",
+            "Buy a new computer"
+        ],
+        "ans_idx": 1,
+        "justification": "Having an offline backup allows you to wipe the infected computer and restore your clean files."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity Concepts",
+            "Social Engineering",
+            "Baiting"
+        ],
+        "question": "Leaving a USB drive labeled 'Secret' on a desk hoping someone plugs it in is a trick called ________.",
+        "choices": [
+            "Fishing",
+            "Baiting",
+            "Hunting",
+            "Trapping"
+        ],
+        "ans_idx": 1,
+        "justification": "Baiting uses physical media (like USBs) and curiosity to trick victims into compromising their security."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Cryptography",
+            "Caesar Cipher"
+        ],
+        "question": "One of the oldest codes is the 'Caesar Cipher', which works by:",
+        "choices": [
+            "Writing backwards",
+            "Shifting every letter down the alphabet (A becomes B, B becomes C)",
+            "Using numbers instead of letters",
+            "Speaking Latin"
+        ],
+        "ans_idx": 1,
+        "justification": "The Caesar Cipher is a substitution cipher where each letter is shifted a fixed number of positions down the alphabet."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Tech",
+            "Blockchain",
+            "Immutability"
+        ],
+        "question": "Blockchain technology is useful for security because once data is added to the chain, it is extremely difficult to change or delete it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Blockchain is an immutable ledger; changing one block would require changing every subsequent block across the entire network."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Packet Sniffing",
+            "Network"
+        ],
+        "question": "A hacker on your Wi-Fi uses a tool called a 'Packet Sniffer'. What are they doing?",
+        "choices": [
+            "Smelling your computer",
+            "Capturing the data traveling through the air to read your unencrypted messages",
+            "Speeding up the Wi-Fi",
+            "Blocking your connection"
+        ],
+        "ans_idx": 1,
+        "justification": "Packet sniffers (like Wireshark) capture and analyze network traffic, allowing attackers to read unencrypted data."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Access Control",
+            "Least Privilege"
+        ],
+        "question": "The Principle of Least ________ means giving a user ONLY the access they need to do their job, and nothing more.",
+        "choices": [
+            "Effort",
+            "Privilege",
+            "Power",
+            "Time"
+        ],
+        "ans_idx": 1,
+        "justification": "Least Privilege minimizes the potential damage if an account is compromised by limiting its access rights."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Spoofing",
+            "Caller ID"
+        ],
+        "question": "When a scammer calls you and your phone says 'School Office' but it is actually a hacker, this is called:",
+        "choices": [
+            "Spoofing",
+            "Pranking",
+            "Glitching",
+            "Blocking"
+        ],
+        "ans_idx": 0,
+        "justification": "Caller ID Spoofing falsifies the information transmitted to your caller ID display to disguise the caller's identity."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Forensics",
+            "Digital"
+        ],
+        "question": "After a crime, police use Digital Forensics to:",
+        "choices": [
+            "Arrest the computer",
+            "Recover deleted files and find clues hidden on the hard drive",
+            "Clean the computer",
+            "Sell the computer"
+        ],
+        "ans_idx": 1,
+        "justification": "Digital Forensics is the process of uncovering and interpreting electronic data for use in a court of law."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Dictionary Attack",
+            "Passwords"
+        ],
+        "question": "A 'Dictionary Attack' works by trying every word in the dictionary to guess your password.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is why using common words (like 'password' or 'monkey') makes you vulnerable. Attackers use automated tools with wordlists."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Tech",
+            "Sandbox",
+            "Safety"
+        ],
+        "question": "Security experts often run unknown viruses inside a 'Sandbox'. What is that?",
+        "choices": [
+            "A box of sand",
+            "A safe, isolated virtual environment where the virus can't hurt the real computer",
+            "A trash can",
+            "A cloud server"
+        ],
+        "ans_idx": 1,
+        "justification": "A Sandbox is an isolated testing environment that enables users to run programs without affecting the application, system, or platform."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Defense",
+            "Bio-hacking",
+            "RFID"
+        ],
+        "question": "Some people implant tiny RFID chips into their hands to open doors. This merging of body and technology is called:",
+        "choices": [
+            "Bio-hacking",
+            "Life-hacking",
+            "Body-building",
+            "Chip-tuning"
+        ],
+        "ans_idx": 0,
+        "justification": "Bio-hacking (or grinder movement) involves do-it-yourself biology and implanting technology to enhance the human body."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity Attacks",
+            "Clickjacking",
+            "Web"
+        ],
+        "question": "________ is an attack where an invisible button is placed over a real button, tricking you into clicking something you didn't mean to.",
+        "choices": [
+            "Mouse-trapping",
+            "Clickjacking",
+            "Keylogging",
+            "Spoofing"
+        ],
+        "ans_idx": 1,
+        "justification": "Clickjacking (UI redressing) deceives a user into clicking on something different from what the user perceives."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Social Media",
+            "Privacy",
+            "Sharing"
+        ],
+        "question": "You take a picture of your plane ticket to show you are going on vacation. Why is this a bad idea?",
+        "choices": [
+            "It makes people jealous",
+            "The barcode contains personal data that hackers can steal",
+            "The photo is blurry",
+            "Your friends will miss you"
+        ],
+        "ans_idx": 1,
+        "justification": "Barcodes on boarding passes contain sensitive data like your full name and flight details, which can be misused."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Gaming",
+            "Scams",
+            "Chat"
+        ],
+        "question": "If a player in Roblox offers to double your Robux if you give them your login details, they are telling the truth.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "This is a common scam. Never give your login details to anyone promising free currency."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Security",
+            "Good Habits"
+        ],
+        "question": "You should change your password immediately if you think someone else has ________ it.",
+        "choices": [
+            "Seen",
+            "Guessed",
+            "Eaten",
+            "Liked"
+        ],
+        "ans_idx": 1,
+        "justification": "If you suspect your password has been guessed or stolen, changing it immediately prevents unauthorized access."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Phishing",
+            "Email",
+            "Red Flags"
+        ],
+        "question": "Which of these is a sign of a Phishing email?",
+        "choices": [
+            "It addresses you by your name",
+            "It has no spelling errors",
+            "It creates a sense of urgent panic (e.g., 'Act Now or Account Deleted!')",
+            "It comes from a known sender"
+        ],
+        "ans_idx": 2,
+        "justification": "Phishing emails often use urgency to make you act quickly without thinking."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Devices",
+            "Physical Security",
+            "School"
+        ],
+        "question": "You need to use the bathroom while working in the library. What should you do with your laptop?",
+        "choices": [
+            "Leave it on the table",
+            "Ask a stranger to watch it",
+            "Take it with you or lock it up",
+            "Cover it with a jacket"
+        ],
+        "ans_idx": 2,
+        "justification": "Leaving devices unattended, even for a minute, puts them at risk of theft."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Internet Safety",
+            "Strangers",
+            "Meeting"
+        ],
+        "question": "It is always safe to meet an online friend in person as long as you meet at a park.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Meeting online friends can be dangerous. If you must meet, take a parent or guardian with you."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Privacy",
+            "App Permissions",
+            "Mobile"
+        ],
+        "question": "Why does a calculator app NOT need access to your microphone?",
+        "choices": [
+            "It needs to hear the numbers",
+            "It doesn't need to listen to you to do math",
+            "It wants to record your singing",
+            "It helps the battery"
+        ],
+        "ans_idx": 1,
+        "justification": "Apps should only have permissions necessary for their function. A calculator does not need audio access."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Authentication",
+            "Biometrics",
+            "Security"
+        ],
+        "question": "Unlocking your phone with your face or fingerprint is called ________ authentication.",
+        "choices": [
+            "Robot",
+            "Biometric",
+            "Magic",
+            "Secret"
+        ],
+        "ans_idx": 1,
+        "justification": "Biometrics use unique physical traits like fingerprints or facial features for identification."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Network",
+            "VPN",
+            "Privacy"
+        ],
+        "question": "What does a VPN (Virtual Private Network) do?",
+        "choices": [
+            "Makes your internet faster",
+            "Hides your online activity and location",
+            "Downloads games for free",
+            "Fixes a broken screen"
+        ],
+        "ans_idx": 1,
+        "justification": "A VPN improves privacy by masking your IP address and encrypting your internet traffic."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Social Engineering",
+            "Trust",
+            "Verification"
+        ],
+        "question": "If your 'friend' messages you asking for money but calls you by the wrong name, it might be a hacker on their account.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Unusual behavior, like wrong names or strange requests, is a sign of a compromised account."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Digital Footprint",
+            "Posting",
+            "Future"
+        ],
+        "question": "Who can see the embarrassing photo you posted publicly 5 years ago?",
+        "choices": [
+            "Only you",
+            "Your friends",
+            "Potential bosses or colleges searching your name",
+            "Nobody"
+        ],
+        "ans_idx": 2,
+        "justification": "Public posts contribute to your digital footprint and can affect future opportunities like jobs or college."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Malware",
+            "Ransomware",
+            "Attacks"
+        ],
+        "question": "Malware that locks your computer and demands money to unlock it is called ________.",
+        "choices": [
+            "Spyware",
+            "Ransomware",
+            "Adware",
+            "Freeware"
+        ],
+        "ans_idx": 1,
+        "justification": "Ransomware holds your data hostage (ransom) until payment is made."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Browsing",
+            "Security",
+            "Downloads"
+        ],
+        "question": "Your browser warns you: 'This site may be harmful'. What should you do?",
+        "choices": [
+            "Ignore it and enter",
+            "Close the tab immediately",
+            "Email the website owner",
+            "Turn off your monitor"
+        ],
+        "ans_idx": 1,
+        "justification": "Browser warnings exist to protect you from sites known to host malware or phishing scams."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Sharing",
+            "Best Practices"
+        ],
+        "question": "It is okay to email your password to yourself so you don't forget it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Emailing passwords is unsafe because if your email is hacked, the attacker gets all your passwords."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cyberbullying",
+            "Reporting",
+            "Safety"
+        ],
+        "question": "If someone is being mean to you in an online game, what is the best first step?",
+        "choices": [
+            "Be mean back",
+            "Block and Report them",
+            "Delete the game",
+            "Cry"
+        ],
+        "ans_idx": 1,
+        "justification": "Blocking and reporting stops the interaction and alerts moderators to the bad behavior."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "IoT",
+            "Smart Devices",
+            "Security"
+        ],
+        "question": "Smart devices like connected cameras and speakers are part of the 'Internet of ________'.",
+        "choices": [
+            "Games",
+            "Things",
+            "People",
+            "Worlds"
+        ],
+        "ans_idx": 1,
+        "justification": "IoT stands for Internet of Things, referring to physical devices connected to the internet."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "WiFi",
+            "Eavesdropping",
+            "Encryption"
+        ],
+        "question": "What is 'Shoulder Surfing'?",
+        "choices": [
+            "Surfing on a friend's shoulders",
+            "Looking over someone's shoulder to steal their PIN or password",
+            "Using the computer while standing up",
+            "A new Olympic sport"
+        ],
+        "ans_idx": 1,
+        "justification": "Shoulder surfing is a physical technique to steal passwords by watching someone type them."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Updates",
+            "Software",
+            "Maintenance"
+        ],
+        "question": "Old software often has security holes that hackers can use.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Developers update software to fix bugs and security vulnerabilities found in older versions."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data",
+            "Encryption",
+            "HTTPS"
+        ],
+        "question": "If a website address starts with HTTP (no 'S'), it means:",
+        "choices": [
+            "The site is super safe",
+            "The connection is not encrypted",
+            "The site is for kids",
+            "The site is broken"
+        ],
+        "ans_idx": 1,
+        "justification": "HTTP is unencrypted, meaning data sent (like passwords) can be read by others on the network."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Phishing",
+            "Spoofing",
+            "Identity"
+        ],
+        "question": "When a hacker disguises their email address to look like it comes from a trusted company, it is called ________.",
+        "choices": [
+            "Spoofing",
+            "Goofing",
+            "Looping",
+            "Proofing"
+        ],
+        "ans_idx": 0,
+        "justification": "Spoofing involves falsifying data to masquerade as a legitimate source."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Botnet",
+            "Malware",
+            "Attacks"
+        ],
+        "question": "A group of infected computers controlled by a hacker to attack others is called a:",
+        "choices": [
+            "Robot Army",
+            "Botnet",
+            "Computer Club",
+            "Web Ring"
+        ],
+        "ans_idx": 1,
+        "justification": "A Botnet is a network of compromised devices controlled by an attacker."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Privacy",
+            "Settings",
+            "Social Media"
+        ],
+        "question": "Setting your social media profile to 'Private' gives you more control over who sees your photos.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Private profiles require you to approve followers, limiting who can access your content."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Copyright",
+            "Piracy",
+            "Law"
+        ],
+        "question": "Downloading a paid game for free from a pirate site is:",
+        "choices": [
+            "A good deal",
+            "Illegal and risky for malware",
+            "Permitted by teachers",
+            "Safe if you are fast"
+        ],
+        "ans_idx": 1,
+        "justification": "Software piracy is illegal and pirated files are a common source of malware."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Authentication",
+            "MFA",
+            "Security"
+        ],
+        "question": "MFA stands for Multi-________ Authentication.",
+        "choices": [
+            "Face",
+            "Factor",
+            "Fast",
+            "Fake"
+        ],
+        "ans_idx": 1,
+        "justification": "Multi-Factor Authentication requires multiple methods to verify identity."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Accounts",
+            "Logout",
+            "School"
+        ],
+        "question": "Why should you log out of the school computer when you are done?",
+        "choices": [
+            "To save electricity",
+            "So the next student can't access your files or email",
+            "To clean the screen",
+            "It is polite"
+        ],
+        "ans_idx": 1,
+        "justification": "Logging out prevents unauthorized access by the next user of a shared device."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI",
+            "Deepfakes",
+            "Misinformation"
+        ],
+        "question": "Deepfakes are videos created by AI that can make it look like a real person said something they never said.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Deepfake technology uses AI to manipulate video and audio to create convincing fakes."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Passwords",
+            "Manager",
+            "Tools"
+        ],
+        "question": "What is a Password Manager?",
+        "choices": [
+            "A person you hire to remember passwords",
+            "A secure app that stores and fills in your passwords for you",
+            "A notebook under your keyboard",
+            "A game"
+        ],
+        "ans_idx": 1,
+        "justification": "Password managers store credentials securely, allowing you to use unique, complex passwords for every site."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Scams",
+            "Offers",
+            "Critical Thinking"
+        ],
+        "question": "If an online offer looks too good to be ________, it probably is.",
+        "choices": [
+            "False",
+            "True",
+            "Blue",
+            "New"
+        ],
+        "ans_idx": 1,
+        "justification": "This is a golden rule of internet safety. Scammers lure victims with unbelievable deals."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "QR Codes",
+            "Scams",
+            "Mobile"
+        ],
+        "question": "What is 'Quishing'?",
+        "choices": [
+            "Fishing for quails",
+            "Phishing scams that use QR codes instead of links",
+            "Quitting a game",
+            "Quiet wishing"
+        ],
+        "ans_idx": 1,
+        "justification": "Quishing involves malicious QR codes that direct users to phishing sites when scanned."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Privacy",
+            "Location",
+            "Sharing"
+        ],
+        "question": "You should turn off 'Location Services' for apps that don't need it (like a flashlight or calculator).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Restricting location access protects your privacy and saves battery."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Communication",
+            "Strangers",
+            "Gaming"
+        ],
+        "question": "A stranger in a game asks: 'What school do you go to?' You should:",
+        "choices": [
+            "Tell them the truth",
+            "Lie and say a different school",
+            "Say 'I don't share personal info' and stop talking to them",
+            "Ask them first"
+        ],
+        "ans_idx": 2,
+        "justification": "Revealing your school can help strangers locate you. It's best to set a boundary and not share PII."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Malware",
+            "Adware",
+            "Annoyance"
+        ],
+        "question": "Software that automatically displays unwanted advertisements on your computer is called ________.",
+        "choices": [
+            "Malware",
+            "Adware",
+            "Badware",
+            "Spyware"
+        ],
+        "ans_idx": 1,
+        "justification": "Adware generates revenue for its developer by automatically displaying online advertisements."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Sharing",
+            "Trust"
+        ],
+        "question": "Which of these people is it SAFE to share your password with?",
+        "choices": [
+            "Your best friend",
+            "Your teacher",
+            "Your parent or guardian",
+            "A police officer online"
+        ],
+        "ans_idx": 2,
+        "justification": "Parents need access for safety. No one else, not even authority figures online, typically needs your password."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Backups",
+            "Ransomware",
+            "Recovery"
+        ],
+        "question": "If you have a backup of your files, a Ransomware attack is less scary because you can just restore your files.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Backups defeat the purpose of ransomware since you can recover your data without paying."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Phishing",
+            "Email",
+            "Attachments"
+        ],
+        "question": "An email arrives with an attachment: 'Homework_Answers.exe'. You didn't ask for it. What should you do?",
+        "choices": [
+            "Open it to check",
+            "Delete it immediately",
+            "Forward it to your teacher",
+            "Run a virus scan after opening"
+        ],
+        "ans_idx": 1,
+        "justification": ".exe files are programs. Unexpected executables are almost always malware."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cyberbullying",
+            "Evidence",
+            "Screenshots"
+        ],
+        "question": "If you are being bullied online, keep the evidence by taking a ________.",
+        "choices": [
+            "Selfie",
+            "Screenshot",
+            "Break",
+            "Nap"
+        ],
+        "ans_idx": 1,
+        "justification": "Screenshots provide proof of the harassment which is useful when reporting it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Browsers",
+            "Incognito",
+            "Privacy"
+        ],
+        "question": "What does 'Incognito Mode' or 'Private Browsing' do?",
+        "choices": [
+            "Makes you invisible to the internet",
+            "Stops your browser from saving your history",
+            "Protects you from viruses",
+            "Hides your IP address"
+        ],
+        "ans_idx": 1,
+        "justification": "Incognito mode only prevents the browser from storing local history/cookies. It does not hide activity from the ISP or websites."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Devices",
+            "Charging",
+            "Juice Jacking"
+        ],
+        "question": "Plugging your phone into a public USB charging station at the mall is 100% safe.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Public chargers can be modified to steal data ('Juice Jacking'). Use your own power adapter instead."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Zero Day",
+            "Vulnerabilities",
+            "Advanced"
+        ],
+        "question": "What is a 'Zero-Day' vulnerability?",
+        "choices": [
+            "A virus that lasts zero days",
+            "A security flaw that the developers don't know about yet",
+            "A fast computer",
+            "A holiday for hackers"
+        ],
+        "ans_idx": 1,
+        "justification": "It refers to a vulnerability that is unknown to the vendor, meaning they have had 'zero days' to fix it."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Passwords",
+            "Hacking",
+            "Dictionary"
+        ],
+        "question": "A ________ Attack uses a list of common words to guess a password.",
+        "choices": [
+            "Book",
+            "Dictionary",
+            "Library",
+            "Word"
+        ],
+        "ans_idx": 1,
+        "justification": "Dictionary attacks use predefined lists of words to crack passwords."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Clickbait",
+            "Awareness",
+            "Browsing"
+        ],
+        "question": "A video title says: 'YOU WON'T BELIEVE WHAT HAPPENED!!'. This is an example of:",
+        "choices": [
+            "good journalism",
+            "Clickbait",
+            "a virus",
+            "encryption"
+        ],
+        "ans_idx": 1,
+        "justification": "Clickbait uses sensational headlines to tempt you into clicking, often leading to low-quality content or ads."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Terms",
+            "Service",
+            "Legal"
+        ],
+        "question": "Clicking 'I Agree' to Terms of Service without reading them is what most people do, but it can be risky.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "While common, it is risky because you may be agreeing to data collection or other invasive policies."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Shopping",
+            "Security",
+            "Credit Cards"
+        ],
+        "question": "Before entering credit card info to buy a game skin, you should check:",
+        "choices": [
+            "If the website looks cool",
+            "If the site is secure (https) and trustworthy",
+            "If your friend likes the skin",
+            "If it is raining"
+        ],
+        "ans_idx": 1,
+        "justification": "Ensuring the site is secure (HTTPS) and reputable prevents credit card theft."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Verification",
+            "Captcha",
+            "Bots"
+        ],
+        "question": "A CAPTCHA is a test to tell if a user is a ________ or a robot.",
+        "choices": [
+            "Dog",
+            "Human",
+            "Alien",
+            "Computer"
+        ],
+        "ans_idx": 1,
+        "justification": "CAPTCHA stands for 'Completely Automated Public Turing test to tell Computers and Humans Apart'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Safety",
+            "Offline",
+            "Balance"
+        ],
+        "question": "What is 'Doomscrolling'?",
+        "choices": [
+            "A new dance",
+            "Endlessly scrolling through bad news on social media",
+            "Scrolling to the bottom of a page",
+            "Playing Doom"
+        ],
+        "ans_idx": 1,
+        "justification": "Doomscrolling is the act of consuming large amounts of negative news, which can affect mental health."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Wifi",
+            "Hotspot",
+            "Fakes"
+        ],
+        "question": "Hackers can create fake Wi-Fi hotspots with names like 'Free_Airport_WiFi' to steal your data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is a 'Rogue Access Point' or 'Evil Twin' attack designed to intercept data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Emails",
+            "Safety",
+            "Unknowns"
+        ],
+        "question": "You receive an email from 'support@goggle.com' (notice the spelling). It is likely:",
+        "choices": [
+            "Real",
+            "A scam/Phishing",
+            "A mistake",
+            "Important"
+        ],
+        "ans_idx": 1,
+        "justification": "Misspelled domain names (Typosquatting) are a clear sign of phishing attempts."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Crypto",
+            "Blockchain",
+            "Tech"
+        ],
+        "question": "Bitcoin is a type of ________currency.",
+        "choices": [
+            "Real",
+            "Crypto",
+            "Magic",
+            "Paper"
+        ],
+        "ans_idx": 1,
+        "justification": "Cryptocurrency is digital currency secured by cryptography."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Privacy",
+            "Metadata",
+            "Photos"
+        ],
+        "question": "Metadata in a photo can reveal:",
+        "choices": [
+            "Who is in the photo",
+            "What you ate",
+            "The exact time and location (GPS) where it was taken",
+            "Your mood"
+        ],
+        "ans_idx": 2,
+        "justification": "EXIF metadata often stores GPS coordinates and timestamps, which can compromise privacy."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Sharing",
+            "Games"
+        ],
+        "question": "It is safe to use your password on a friend's device if you trust them.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Even if you trust the friend, their device might have malware (like keyloggers) that steals your password."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Operating Systems",
+            "Updates",
+            "Vulnerabilities"
+        ],
+        "question": "What happens if you never update your phone's operating system (iOS or Android)?",
+        "choices": [
+            "It becomes a vintage collector's item",
+            "It remains secure forever",
+            "It keeps known security holes open for hackers to attack",
+            "The battery lasts longer"
+        ],
+        "ans_idx": 2,
+        "justification": "Software updates are crucial for patching known security vulnerabilities."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Email",
+            "Safety",
+            "Attachments"
+        ],
+        "question": "It is safe to open an email attachment from a stranger if the subject line says 'You Won!'.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Unexpected winnings are a classic phishing hook. The attachment likely contains malware."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Privacy",
+            "Data",
+            "Cookies"
+        ],
+        "question": "Small files that websites save on your computer to remember you are called ________.",
+        "choices": [
+            "Biscuits",
+            "Cookies",
+            "Cakes",
+            "Chips"
+        ],
+        "ans_idx": 1,
+        "justification": "Cookies are text files used by websites to remember user preferences and session data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Social Media",
+            "Privacy",
+            "Oversharing"
+        ],
+        "question": "Posting 'Going on vacation for 2 weeks!' publicly can lead to:",
+        "choices": [
+            "More likes",
+            "Burglars knowing your house is empty",
+            "Cheaper plane tickets",
+            "Better weather"
+        ],
+        "ans_idx": 1,
+        "justification": "Announcing you are away tells criminals that your home is unattended."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Security",
+            "Keyboards"
+        ],
+        "question": "Be careful when typing your password in public because of:",
+        "choices": [
+            "Shoulder Surfers",
+            "Wind",
+            "Too much sun",
+            "Loud noises"
+        ],
+        "ans_idx": 0,
+        "justification": "Shoulder surfing is when someone watches you type your credentials."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Hacking",
+            "Ethical Hacking",
+            "Bug Bounty"
+        ],
+        "question": "Some companies pay 'Good Hackers' money if they find a security problem and report it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is called a 'Bug Bounty' program, used to incentivize ethical hacking."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Malware",
+            "Spyware",
+            "Privacy"
+        ],
+        "question": "Software that hides on your computer and collects info about you without your knowledge is called ________.",
+        "choices": [
+            "Spyware",
+            "Shareware",
+            "Freeware",
+            "Groupware"
+        ],
+        "ans_idx": 0,
+        "justification": "Spyware is designed to gather data about a person or organization without their knowledge."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Encryption",
+            "Ransomware",
+            "Keys"
+        ],
+        "question": "In a Ransomware attack, hackers use ________ to lock your files so you can't read them.",
+        "choices": [
+            "Glue",
+            "Encryption",
+            "Passwords",
+            "Firewalls"
+        ],
+        "ans_idx": 1,
+        "justification": "Ransomware uses strong encryption to make files inaccessible until a decryption key is provided."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Digital Footprint",
+            "Etiquette",
+            "Kindness"
+        ],
+        "question": "What is the 'Grandma Rule' of posting online?",
+        "choices": [
+            "Only post pictures of cookies",
+            "Don't post anything you wouldn't want your Grandma to see",
+            "Post in all caps",
+            "Only post on Sundays"
+        ],
+        "ans_idx": 1,
+        "justification": "This rule helps you judge if content is appropriate for a public, permanent setting."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Gaming",
+            "Mods",
+            "Viruses"
+        ],
+        "question": "Downloading 'Free Hacks' or 'Cheat Tools' for games is a safe way to win.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Game hacks are the #1 way young gamers get infected with malware/stealers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Authentication",
+            "Biometrics",
+            "Privacy"
+        ],
+        "question": "Which of these is Biometric data?",
+        "choices": [
+            "Your password",
+            "Your fingerprint",
+            "Your username",
+            "Your high score"
+        ],
+        "ans_idx": 1,
+        "justification": "Biometrics are biological measurements used for identification."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Phishing",
+            "Email",
+            "Suspicion"
+        ],
+        "question": "If you are unsure if an email is real, do not click the ________ inside it.",
+        "choices": [
+            "Mouse",
+            "Links",
+            "Screen",
+            "Spacebar"
+        ],
+        "ans_idx": 1,
+        "justification": "Links in suspicious emails are the primary vector for phishing attacks."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Network",
+            "IP Address",
+            "Identity"
+        ],
+        "question": "Every device on the internet has a unique number address called an:",
+        "choices": [
+            "IP Address",
+            "ID Card",
+            "VIP Pass",
+            "IQ Score"
+        ],
+        "ans_idx": 0,
+        "justification": "An IP (Internet Protocol) address identifies a device on a network."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Social Engineering",
+            "Vishing",
+            "Phone"
+        ],
+        "question": "'Vishing' is Phishing that happens over a Voice call (Phone).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Vishing stands for Voice Phishing, where scammers use phone calls to extract information."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Physical Security",
+            "Screen Lock",
+            "Habits"
+        ],
+        "question": "What is the shortcut to quickly lock a Windows computer?",
+        "choices": [
+            "Windows Key + L",
+            "Ctrl + Alt + Delete",
+            "Alt + F4",
+            "H + L"
+        ],
+        "ans_idx": 0,
+        "justification": "Windows + L is the standard shortcut to immediately lock the workstation."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Web",
+            "Browser",
+            "Cache"
+        ],
+        "question": "Clearing your browser ________ helps fix loading errors and removes temporary files.",
+        "choices": [
+            "History",
+            "Cache",
+            "Screen",
+            "Keyboard"
+        ],
+        "ans_idx": 1,
+        "justification": "The cache stores temporary data to speed up loading, but can cause issues if outdated."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Security",
+            "Questions"
+        ],
+        "question": "Avoid using 'Security Questions' answers that are:",
+        "choices": [
+            "True but random",
+            "Easy to guess or find on your social media (like 'Mother's Maiden Name')",
+            "Complex",
+            "Made up"
+        ],
+        "ans_idx": 1,
+        "justification": "Using easily searchable info (like pet names found on Instagram) defeats the purpose of security questions."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data",
+            "Cloud",
+            "Storage"
+        ],
+        "question": "Saving files to 'The Cloud' means they are stored on a server owned by a company like Google or Apple.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Cloud storage involves saving data on remote servers accessed via the internet."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Mobile",
+            "Apps",
+            "Fake"
+        ],
+        "question": "How can you tell if an App Store app might be fake?",
+        "choices": [
+            "It has millions of 5-star reviews",
+            "It has the correct logo",
+            "It has a typo in the title or bad grammar in the description",
+            "It is free"
+        ],
+        "ans_idx": 2,
+        "justification": "Poor grammar and typos are common indicators of hasty, illegitimate copycat apps."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Network",
+            "DDOS",
+            "Traffic"
+        ],
+        "question": "In a DDoS attack, the 'D' stands for ________.",
+        "choices": [
+            "Digital",
+            "Distributed",
+            "Dangerous",
+            "Direct"
+        ],
+        "ans_idx": 1,
+        "justification": "DDoS = Distributed Denial of Service, meaning the attack comes from many sources at once."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "IoT",
+            "Security",
+            "Cameras"
+        ],
+        "question": "If you buy a smart camera for your room, what is the FIRST thing you should do?",
+        "choices": [
+            "Change the default password",
+            "Paint it",
+            "Hide it",
+            "Yell at it"
+        ],
+        "ans_idx": 0,
+        "justification": "Default passwords (like admin/admin) are public knowledge. Changing them prevents unauthorized access."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Privacy",
+            "Sharing",
+            "Gaming"
+        ],
+        "question": "You should never share your Voice or Face in a public game lobby with strangers.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Voice and video chat can reveal age, gender, and sometimes location, attracting predators."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Scams",
+            "Support",
+            "Tech"
+        ],
+        "question": "A pop-up says 'Microsoft Support Alert: Call this number immediately!'. What is this?",
+        "choices": [
+            "Real help from Microsoft",
+            "A Tech Support Scam",
+            "A prize",
+            "A system update"
+        ],
+        "ans_idx": 1,
+        "justification": "Microsoft/Apple will never ask you to call a phone number via a browser pop-up."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Hacking",
+            "Prevention",
+            "Software"
+        ],
+        "question": "To protect your computer from viruses, you should install ________ software.",
+        "choices": [
+            "Antivirus",
+            "Game",
+            "Music",
+            "Video"
+        ],
+        "ans_idx": 0,
+        "justification": "Antivirus software is the standard tool for preventing and removing malware."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Digital Citizenship",
+            "Bullying",
+            "Bystander"
+        ],
+        "question": "If you see your friend bullying someone online, you should:",
+        "choices": [
+            "Join in",
+            "Laugh",
+            "Tell them to stop or report it (Be an Upstander)",
+            "Do nothing"
+        ],
+        "ans_idx": 2,
+        "justification": "Being an Upstander helps stop bullying and supports the victim."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Browsing",
+            "HTTPS",
+            "Encryption"
+        ],
+        "question": "HTTPS is more secure than HTTP.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "The 'S' stands for Secure, indicating encryption is used."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data",
+            "PII",
+            "School"
+        ],
+        "question": "Which of these is PII (Personally Identifiable Information)?",
+        "choices": [
+            "The name of a video game",
+            "Your full home address",
+            "A cat video",
+            "The weather"
+        ],
+        "ans_idx": 1,
+        "justification": "PII is any data that can identify a specific individual. Addresses are highly sensitive PII."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Hacking",
+            "Types",
+            "Hats"
+        ],
+        "question": "A ________ Hat Hacker steals data for bad reasons.",
+        "choices": [
+            "White",
+            "Black",
+            "Blue",
+            "Green"
+        ],
+        "ans_idx": 1,
+        "justification": "Black Hat hackers are those who violate computer security for little reason or personal gain."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Gaming",
+            "In-App Purchases",
+            "Scams"
+        ],
+        "question": "A website claims to give 'Free V-Bucks' if you complete a survey. It is likely:",
+        "choices": [
+            "Real",
+            "A Data Harvesting Scam",
+            "Generous",
+            "From Epic Games"
+        ],
+        "ans_idx": 1,
+        "justification": "Survey scams exist to harvest personal data and sell it."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Physical Security",
+            "Writing"
+        ],
+        "question": "Writing your password on a sticky note and putting it on your monitor is a great idea.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "This mocks physical security. Anyone walking by can see and steal the password."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Email",
+            "Spam",
+            "Filter"
+        ],
+        "question": "What is the 'Spam Folder' in your email for?",
+        "choices": [
+            "For important letters",
+            "For junk mail and possible scams",
+            "For food recipes",
+            "For deleted items"
+        ],
+        "ans_idx": 1,
+        "justification": "Email providers filter suspected junk and malicious emails into spam."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Security",
+            "Updates",
+            "Automatic"
+        ],
+        "question": "You should turn on ________ Updates so you don't forget to install them.",
+        "choices": [
+            "Manual",
+            "Automatic",
+            "Slow",
+            "No"
+        ],
+        "ans_idx": 1,
+        "justification": "Automatic updates ensure patches are applied as soon as they are available."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Social Media",
+            "Respect",
+            "Communication"
+        ],
+        "question": "Writing in ALL CAPS usually makes people think you are:",
+        "choices": [
+            "Happy",
+            "Yelling / Angry",
+            "Whispering",
+            "Singing"
+        ],
+        "ans_idx": 1,
+        "justification": "In digital etiquette, all caps is universally interpreted as shouting."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Malware",
+            "Worm",
+            "Spread"
+        ],
+        "question": "A computer 'Worm' is a virus that can copy itself to other computers without human help.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Worms are self-replicating malware that spread across networks automatically."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Privacy",
+            "School",
+            "Accounts"
+        ],
+        "question": "When you leave school, what happens to your school email account?",
+        "choices": [
+            "You keep it forever",
+            "It usually gets deleted",
+            "It turns into gold",
+            "It becomes a game account"
+        ],
+        "ans_idx": 1,
+        "justification": "School accounts are temporary. You should not link personal services (like games) to them."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Attacks",
+            "Phishing",
+            "Email"
+        ],
+        "question": "Checking the Sender's ________ Address helps you spot fake emails.",
+        "choices": [
+            "Home",
+            "Email",
+            "IP",
+            "Mac"
+        ],
+        "ans_idx": 1,
+        "justification": "Checking the actual email address (not just the display name) reveals spoofing."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data",
+            "Backup",
+            "Rule"
+        ],
+        "question": "The 3-2-1 Backup Rule suggests:",
+        "choices": [
+            "3 copies of data, on 2 different media, with 1 offsite",
+            "Counting to 3",
+            "3 passwords",
+            "3 computers"
+        ],
+        "ans_idx": 0,
+        "justification": "The 3-2-1 rule is the industry standard for robust data backup strategy."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Social Media",
+            "Friends",
+            "Strangers"
+        ],
+        "question": "Having 5,000 friends on social media makes you safer than having 50.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "More kinds of 'friends' increases the attack surface and exposure to potential scammers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Encryption",
+            "End-to-End",
+            "Messaging"
+        ],
+        "question": "What does 'End-to-End Encryption' in WhatsApp or Signal mean?",
+        "choices": [
+            "The message ends quickly",
+            "Only the sender and receiver can read the message (not even the company)",
+            "The message is deleted",
+            "It costs money"
+        ],
+        "ans_idx": 1,
+        "justification": "E2EE ensures that data is encrypted on the sender's device and only decrypted on the recipient's."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Strength",
+            "Length"
+        ],
+        "question": "Making a password ________ usually makes it stronger.",
+        "choices": [
+            "Shorter",
+            "Longer",
+            "Simpler",
+            "Loud"
+        ],
+        "ans_idx": 1,
+        "justification": "Length is the most important factor in password strength. Passphrases are best."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Authentication",
+            "2FA",
+            "SMS"
+        ],
+        "question": "What is an OTP in Two-Factor Authentication?",
+        "choices": [
+            "One True Pairing",
+            "One Time Password",
+            "Only To play",
+            "Over The Phone"
+        ],
+        "ans_idx": 1,
+        "justification": "OTP stands for One Time Password, valid for only one login session."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Privacy",
+            "Search",
+            "Tracking"
+        ],
+        "question": "Search engines like Google track what you search for to show you ads.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is the business model of most major search engines."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Gaming",
+            "Toxic",
+            "Behavior"
+        ],
+        "question": "'Griefing' in a game means:",
+        "choices": [
+            "Being sad",
+            "Intentionally annoying or ruining the game for other players",
+            "Winning fairly",
+            "Building a house"
+        ],
+        "ans_idx": 1,
+        "justification": "Griefing is a form of cyberbullying or harassment within games."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Security",
+            "VPN",
+            "Private"
+        ],
+        "question": "A VPN creates a secure ________ over the internet.",
+        "choices": [
+            "Bridge",
+            "Tunnel",
+            "Ladder",
+            "Road"
+        ],
+        "ans_idx": 1,
+        "justification": "VPNs are often described as creating an encrypted 'tunnel' for your data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Attacks",
+            "SQL Injection",
+            "Web"
+        ],
+        "question": "SQL Injection is a way hackers attack:",
+        "choices": [
+            "Databases connected to websites",
+            "Your mouse",
+            "The monitor",
+            "The Wi-Fi"
+        ],
+        "ans_idx": 0,
+        "justification": "SQL Injection targets the database layer of web applications."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Shopping",
+            "Returns",
+            "Scam"
+        ],
+        "question": "If you buy something from a scam site, you will definitely get your money back.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "It is often very difficult to recover funds lost to scam sites, especially if using debit or crypto."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Mobile",
+            "Bluetooth",
+            "Safety"
+        ],
+        "question": "Why should you turn off Bluetooth when not using it?",
+        "choices": [
+            "It saves battery and prevents 'Bluebugging' attacks",
+            "It makes the phone lighter",
+            "It stops calls",
+            "It changes the color"
+        ],
+        "ans_idx": 0,
+        "justification": "Leaving Bluetooth on can expose device to nearby attackers (Bluebugging/Bluejacking)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Cybersecurity",
+        "difficulty_level": 3,
+        "concepts": [
+            "Hacking",
+            "Ethical",
+            "Team"
+        ],
+        "question": "In a cybersecurity exercies, the ________ Team tries to defend the system.",
+        "choices": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+        ],
+        "ans_idx": 1,
+        "justification": "In drills, Red Team attacks and Blue Team defends."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Cybersecurity",
+        "difficulty_level": 2,
+        "concepts": [
+            "Software",
+            "Open Source",
+            "Code"
+        ],
+        "question": "Open Source software means:",
+        "choices": [
+            "The door is open",
+            "The code is public and anyone can inspect or improve it",
+            "It is always buggy",
+            "It costs a million dollars"
+        ],
+        "ans_idx": 1,
+        "justification": "Open Source allows visibility into the code, which can improve security through community auditing."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Cybersecurity",
+        "difficulty_level": 1,
+        "concepts": [
+            "Passwords",
+            "Sharing",
+            "Best Friend"
+        ],
+        "question": "A 'Best Friend' today might not be a 'Best Friend' tomorrow, so don't share passwords.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Relationships change. Shared secrets can be used for revenge later."
+    }
+]

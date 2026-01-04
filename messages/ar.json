@@ -157,6 +157,18 @@
       },
       "warnings": {
         "existingUser": "يوجد حساب مسجل بهذا البريد الإلكتروني."
+      },
+      "trackSelection": {
+        "label": "اختر مسار الاختبار",
+        "options": {
+          "general": "عام (جميع المسارات)",
+          "data_science": "علوم البيانات",
+          "computer_fundamentals": "أساسيات الحاسوب",
+          "cybersecurity": "الأمن السيبراني",
+          "data_analysis": "تحليل البيانات",
+          "python_programming": "برمجة بايثون",
+          "robotics": "الروبوتات"
+        }
       }
     }
   },

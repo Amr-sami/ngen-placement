@@ -10,6 +10,7 @@ export type SurveyFormData = {
   heardAboutUs: string
   phone: string
   email: string
+  selectedTrack: string
 }
 
 export type StudentInfo = {

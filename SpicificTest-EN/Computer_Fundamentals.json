@@ -1,0 +1,4652 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Definitions",
+            "Acronyms"
+        ],
+        "question": "What does the abbreviation 'AI' stand for?",
+        "choices": [
+            "Apple iPhone",
+            "Artificial Intelligence",
+            "Alien Invasion",
+            "Auto Internet"
+        ],
+        "ans_idx": 1,
+        "justification": "AI stands for Artificial Intelligence, which refers to computer systems capable of performing tasks that typically require human intelligence."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Applications",
+            "Recommendations"
+        ],
+        "question": "How does Netflix or YouTube know which movies or videos to suggest to you?",
+        "choices": [
+            "It guesses randomly",
+            "It uses AI to analyze what you watched before",
+            "It asks your best friend",
+            "It suggests the same thing to everyone"
+        ],
+        "ans_idx": 1,
+        "justification": "Recommendation engines analyze your viewing history and compare it with other users to predict what you might like next."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Data",
+            "Definition"
+        ],
+        "question": "In the world of AI, 'Data' refers to the information (like photos, text, or numbers) that the computer learns from.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Data is the raw material used to train AI models; without data, an AI cannot learn patterns."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Algorithms",
+            "Analogy"
+        ],
+        "question": "An ________ is like a recipe or a set of instructions that a computer follows to solve a problem.",
+        "choices": [
+            "Algorithm",
+            "Android",
+            "Antenna",
+            "Album"
+        ],
+        "ans_idx": 0,
+        "justification": "An algorithm is a step-by-step procedure or set of rules to be followed in calculations or problem-solving operations."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Computer Vision",
+            "Social Media"
+        ],
+        "question": "When you use a funny face filter on Snapchat or Instagram that adds dog ears to your head, what technology is finding your face?",
+        "choices": [
+            "Microphone Check",
+            "Computer Vision / Face Detection",
+            "GPS Tracking",
+            "Bluetooth"
+        ],
+        "ans_idx": 1,
+        "justification": "Computer Vision is the field of AI that enables computers to 'see' and interpret images, allowing them to detect facial features."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Voice Assistants",
+            "NLP"
+        ],
+        "question": "Siri, Alexa, and Google Assistant are examples of what kind of AI technology?",
+        "choices": [
+            "Voice Assistants",
+            "Video Games",
+            "Calculators",
+            "Webcams"
+        ],
+        "ans_idx": 0,
+        "justification": "These are Voice Assistants (or Virtual Assistants) that use speech recognition to understand and respond to voice commands."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Robotics",
+            "Hardware vs Software"
+        ],
+        "question": "A robot's body is the hardware, but the AI code running inside it acts as its 'brain'.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "The physical robot is just a machine; the AI software provides the intelligence and instructions on how to move and react."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Applications",
+            "Email"
+        ],
+        "question": "How does your email provider decide which emails to put in the 'Spam' or 'Junk' folder?",
+        "choices": [
+            "It puts all emails from your friends in Spam",
+            "It flips a coin",
+            "It uses AI to recognize patterns of scammy messages",
+            "It only keeps emails with pictures"
+        ],
+        "ans_idx": 2,
+        "justification": "Spam filters use machine learning to identify common characteristics of junk mail (like suspicious links or keywords) to protect your inbox."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Sensors",
+            "Input"
+        ],
+        "question": "For a self-driving car to 'see' the road, traffic lights, and pedestrians, it uses ________ like cameras and radar.",
+        "choices": [
+            "Speakers",
+            "Sensors",
+            "Printers",
+            "Keyboards"
+        ],
+        "ans_idx": 1,
+        "justification": "Sensors are devices that detect events or changes in the environment (like light or distance) and send that information to the computer."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Machine Learning",
+            "Analogy"
+        ],
+        "question": "Teaching an AI model is similar to:",
+        "choices": [
+            "Building a LEGO set following instructions exactly",
+            "Teaching a pet trick by rewarding it when it gets it right",
+            "Writing a book",
+            "Painting a wall"
+        ],
+        "ans_idx": 1,
+        "justification": "Machine Learning often involves showing the computer many examples (training) so it learns patterns, similar to training a pet through repetition."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Nature",
+            "Human vs AI"
+        ],
+        "question": "AI computers are currently much smarter than humans at everything, including having feelings and understanding emotions.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Current AI is 'Narrow AI', meaning it is good at specific tasks (like chess or math), but it does not have feelings, consciousness, or general human understanding."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Text Prediction",
+            "Mobile"
+        ],
+        "question": "When you type a message on your phone and it suggests the next word before you finish typing, what is this called?",
+        "choices": [
+            "Autocorrect / Predictive Text",
+            "Auto-delete",
+            "Spell Check",
+            "Copy Paste"
+        ],
+        "ans_idx": 0,
+        "justification": "Predictive text uses simple AI (language models) to guess the most likely next word based on what you have typed so far."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Input",
+            "Audio"
+        ],
+        "question": "Which part of a smart speaker (like Amazon Echo) acts like an 'ear' to listen to your voice?",
+        "choices": [
+            "The Speaker",
+            "The Battery",
+            "The Microphone",
+            "The Light Ring"
+        ],
+        "ans_idx": 2,
+        "justification": "The microphone is the input hardware that captures sound waves and converts them into digital signals for the AI to process."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Biometrics",
+            "Security"
+        ],
+        "question": "Unlocking your phone by looking at it uses Facial ________.",
+        "choices": [
+            "Painting",
+            "Recognition",
+            "Surgery",
+            "Expression"
+        ],
+        "ans_idx": 1,
+        "justification": "Facial Recognition scans the geometry of your face to verify your identity."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Translation",
+            "Language"
+        ],
+        "question": "You see a sign in Japanese and point your Google Translate camera at it to read it in English. What technology makes this possible?",
+        "choices": [
+            "AI Translation",
+            "X-Ray Vision",
+            "Teleportation",
+            "Magic"
+        ],
+        "ans_idx": 0,
+        "justification": "AI Translation combines character recognition (reading the text) and natural language processing (converting the language) instantly."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Gaming",
+            "NPCs"
+        ],
+        "question": "In video games, the enemies that chase you or fight you are controlled by the computer's AI.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Non-Player Characters (NPCs) use AI scripts to determine how to navigate the map, attack the player, or react to events."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Data",
+            "Types"
+        ],
+        "question": "Which of these is NOT an example of data that an AI might learn from?",
+        "choices": [
+            "A collection of 10,000 cat photos",
+            "A list of temperatures from the last 50 years",
+            "A sandwich you ate for lunch (that you didn't record)",
+            "The text of every book in the library"
+        ],
+        "ans_idx": 2,
+        "justification": "Data must be recorded or digitized (turned into information) for a computer to access it. An unrecorded event cannot be used as training data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Smart Home",
+            "IoT"
+        ],
+        "question": "A 'Smart Thermostat' in a house can save energy by:",
+        "choices": [
+            "Making the house colder than Antarctica",
+            "Learning when people are home and adjusting the temperature automatically",
+            "Turning off the Wi-Fi",
+            "Yelling at you to put on a sweater"
+        ],
+        "ans_idx": 1,
+        "justification": "Smart thermostats use pattern recognition to learn your schedule and preferences, optimizing heating/cooling only when needed."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Prediction",
+            "Weather"
+        ],
+        "question": "Meteorologists use computer models to look at past weather data to make a ________ about whether it will rain tomorrow.",
+        "choices": [
+            "History",
+            "Prediction",
+            "Correction",
+            "Drawing"
+        ],
+        "ans_idx": 1,
+        "justification": "Prediction (or forecasting) is a core task of data science, using past data to estimate future outcomes."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Learning",
+            "Examples"
+        ],
+        "question": "To teach a computer what a 'dog' looks like, you only need to show it one single picture of a dog.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "AI typically needs hundreds or thousands of examples (training data) to accurately learn general features and recognize different types of dogs."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Chatbots",
+            "Service"
+        ],
+        "question": "When you go to a website and a small chat window pops up asking 'How can I help you?', you are likely talking to a:",
+        "choices": [
+            "Chatbot",
+            "Robot Dog",
+            "Video Player",
+            "Hacker"
+        ],
+        "ans_idx": 0,
+        "justification": "Chatbots are AI programs designed to simulate conversation with human users, often used for customer support."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Search Engines",
+            "Ranking"
+        ],
+        "question": "When you search for 'funny cats' on Google, how does it decide which pictures to show first?",
+        "choices": [
+            "It picks the oldest pictures",
+            "It uses an algorithm to rank the most relevant and popular results",
+            "It shows random pictures",
+            "It only shows pictures taken today"
+        ],
+        "ans_idx": 1,
+        "justification": "Search engines use complex ranking algorithms that consider relevance, popularity, and quality to order search results."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Safety",
+            "Driving"
+        ],
+        "question": "Self-driving cars use AI to make decisions, like stopping when they see a red light.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Autonomous vehicles rely on AI to interpret sensor data and make real-time driving decisions for safety."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Deepfakes",
+            "Ethics"
+        ],
+        "question": "A ________ is a video that has been edited using AI to make it look like a person said or did something they never actually did.",
+        "choices": [
+            "Deepfake",
+            "Selfie",
+            "Vlog",
+            "Glitch"
+        ],
+        "ans_idx": 0,
+        "justification": "Deepfakes involve using AI to manipulate media, often swapping faces or synthesizing speech, creating realistic but fake content."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Social Media",
+            "Feeds"
+        ],
+        "question": "Why does your TikTok or Instagram feed look different from your friend's feed?",
+        "choices": [
+            "Your phone is broken",
+            "The algorithm personalizes the feed based on what YOU like",
+            "There are only 10 videos on the whole app",
+            "It is purely by accident"
+        ],
+        "ans_idx": 1,
+        "justification": "Social media algorithms curate personalized feeds by tracking user engagement (likes, watch time) to show content relevant to that specific user."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Automation",
+            "Robots"
+        ],
+        "question": "Robots in car factories are often used to do jobs that are:",
+        "choices": [
+            "Fun and creative",
+            "Dangerous, repetitive, or heavy",
+            "Only related to cooking",
+            "Invisible"
+        ],
+        "ans_idx": 1,
+        "justification": "Industrial robots are designed to automate tasks that are unsafe, boring, or physically difficult for humans."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Virtual Backgrounds",
+            "Computer Vision"
+        ],
+        "question": "When you use a 'Virtual Background' in a Zoom class, AI is used to figure out which part of the video is you and which part is the room.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This technology (image segmentation) separates the foreground (you) from the background pixel by pixel."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Wearables",
+            "Data Collection"
+        ],
+        "question": "A smart watch (like a Fitbit or Apple Watch) counts your steps by analyzing data from:",
+        "choices": [
+            "A tiny camera watching your feet",
+            "Movement sensors (accelerometers) on your wrist",
+            "The GPS satellites only",
+            "Your heartbeat"
+        ],
+        "ans_idx": 1,
+        "justification": "Accelerometers detect motion and vibration, which the watch's software interprets as steps."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Model",
+            "Terminology"
+        ],
+        "question": "After an AI has finished learning from data, the 'brain' that we save and use is called an AI ________.",
+        "choices": [
+            "Toy",
+            "Model",
+            "Picture",
+            "Game"
+        ],
+        "ans_idx": 1,
+        "justification": "A 'Model' is the artifact or file created after a machine learning algorithm has trained on data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Basics",
+            "Music",
+            "Streaming"
+        ],
+        "question": "Spotify creates a 'Daily Mix' playlist for you. This is an example of:",
+        "choices": [
+            "Random shuffling",
+            "Personalized AI Recommendations",
+            "A DJ picking songs live",
+            "A computer glitch"
+        ],
+        "ans_idx": 1,
+        "justification": "Streaming services use AI to analyze your listening habits and suggest songs that fit your taste."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Training vs Testing",
+            "Analogy"
+        ],
+        "question": "Imagine you are teaching a robot to recognize apples. You show it 100 pictures of apples to learn (Training). Then you show it a NEW picture to see if it works. This new picture is part of the:",
+        "choices": [
+            "Training Data",
+            "Testing Data",
+            "Trash Data",
+            "Broken Data"
+        ],
+        "ans_idx": 1,
+        "justification": "Testing data is used to evaluate the model's performance on examples it has never seen before."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Computer Vision",
+            "Pixels"
+        ],
+        "question": "Computers see images as a grid of tiny colored dots called 'Pixels'.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Digital images are composed of pixels, each represented by numerical values for colors (Red, Green, Blue)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Bias",
+            "Fairness"
+        ],
+        "question": "If you only teach an AI what 'shoes' look like using pictures of sneakers, what will happen if you show it a high-heeled boot?",
+        "choices": [
+            "It will know it is a shoe perfectly",
+            "It might not recognize it because the training data was 'Biased' (limited)",
+            "It will explode",
+            "It will ask you to buy the boots"
+        ],
+        "ans_idx": 1,
+        "justification": "Bias occurs when the training data does not represent the real world correctly, causing the AI to fail on unfamiliar examples."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Classification",
+            "Tasks"
+        ],
+        "question": "When an AI looks at an email and decides if it is 'Spam' or 'Not Spam', this task is called ________.",
+        "choices": [
+            "Drawing",
+            "Classification",
+            "Driving",
+            "Singing"
+        ],
+        "ans_idx": 1,
+        "justification": "Classification is the task of assigning a label or category (like 'Cat' vs 'Dog' or 'Spam' vs 'Not Spam') to an input."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Quality",
+            "Garbage In Garbage Out"
+        ],
+        "question": "What does the phrase 'Garbage In, Garbage Out' mean in Data Science?",
+        "choices": [
+            "Computers eat trash",
+            "If you give the AI bad or messy data, it will give you bad results",
+            "You should clean your computer screen",
+            "AI is made of recycled plastic"
+        ],
+        "ans_idx": 1,
+        "justification": "The quality of the output is determined by the quality of the input. Bad training data leads to a bad model."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Features",
+            "Pattern Recognition"
+        ],
+        "question": "When an AI learns to recognize a 'Cat', it looks for specific patterns like pointy ears, whiskers, and a tail. These patterns are called:",
+        "choices": [
+            "Features",
+            "Glitches",
+            "Pixels",
+            "Viruses"
+        ],
+        "ans_idx": 0,
+        "justification": "Features are the specific characteristics or attributes (like shape, color, or texture) that the AI uses to identify objects."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "The Cloud",
+            "Processing"
+        ],
+        "question": "Voice assistants like Alexa do all their thinking inside the plastic speaker sitting on your desk.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Most smart speakers send your voice recording to 'The Cloud' (powerful servers on the internet) to be processed, then send the answer back."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Speech Recognition",
+            "STT"
+        ],
+        "question": "What technology converts the words you speak into written text that the computer can understand?",
+        "choices": [
+            "Text-to-Speech (TTS)",
+            "Speech-to-Text (STT)",
+            "Image Recognition",
+            "Face ID"
+        ],
+        "ans_idx": 1,
+        "justification": "Speech-to-Text (STT) or Automatic Speech Recognition (ASR) converts spoken audio signals into text data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Neural Networks",
+            "Analogy"
+        ],
+        "question": "Scientists created a way for computers to learn that is inspired by how the human brain works. It is called a:",
+        "choices": [
+            "Brain Box",
+            "Neural Network",
+            "Skull Net",
+            "Thought Web"
+        ],
+        "ans_idx": 1,
+        "justification": "Neural Networks are computing systems vaguely inspired by the biological neural networks (neurons and synapses) that constitute animal brains."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Training",
+            "Supervised Learning"
+        ],
+        "question": "When you give the AI pictures of cats and TELL it 'This is a cat', you are using ________ Data.",
+        "choices": [
+            "Secret",
+            "Labeled",
+            "Hidden",
+            "Missing"
+        ],
+        "ans_idx": 1,
+        "justification": "Labeled data consists of input samples (pictures) paired with the correct output labels ('Cat'), used in Supervised Learning."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Science",
+            "Visualization"
+        ],
+        "question": "A Data Scientist wants to show how the temperature changed over the last year. What is the best way to show this?",
+        "choices": [
+            "Write a long essay",
+            "Use a Line Graph",
+            "List 365 numbers in a row",
+            "Draw a picture of the sun"
+        ],
+        "ans_idx": 1,
+        "justification": "Line graphs are the standard tool for visualizing changes in data over periods of time (trends)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "General AI",
+            "Capability"
+        ],
+        "question": "We currently have 'General AI' (AGI) which can do anything a human can do, like cook dinner, write a poem, AND drive a car all in one robot.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "We currently only have 'Narrow AI', which is good at one specific task. AGI (Artificial General Intelligence) is still a theoretical future concept."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Turing Test",
+            "History"
+        ],
+        "question": "The 'Turing Test' is a famous experiment designed to see if:",
+        "choices": [
+            "A computer is water-proof",
+            "A computer can trick a human into thinking it is also human",
+            "A computer can calculate math faster than a calculator",
+            "A robot can lift heavy weights"
+        ],
+        "ans_idx": 1,
+        "justification": "Proposed by Alan Turing, the test assesses a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Privacy",
+            "Ethics"
+        ],
+        "question": "Why do some people worry about Facial Recognition technology in public places?",
+        "choices": [
+            "It uses too much electricity",
+            "It might invade people's privacy by tracking where they go",
+            "It makes people look ugly",
+            "Cameras are scary"
+        ],
+        "ans_idx": 1,
+        "justification": "Privacy concerns arise because mass surveillance can track individuals' movements without their consent."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Dataset",
+            "Terminology"
+        ],
+        "question": "A large collection of data organized for a computer to analyze is called a ________.",
+        "choices": [
+            "Bookshelf",
+            "Dataset",
+            "Playlist",
+            "Bucket"
+        ],
+        "ans_idx": 1,
+        "justification": "A dataset is a structured collection of data used for analysis or training AI models."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Generative AI",
+            "Creativity"
+        ],
+        "question": "Tools like ChatGPT or Midjourney (which makes art) are examples of:",
+        "choices": [
+            "Old Fashioned AI",
+            "Generative AI",
+            "Calculator AI",
+            "Passive AI"
+        ],
+        "ans_idx": 1,
+        "justification": "Generative AI can create *new* content (text, images, audio) rather than just analyzing existing data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Confidence",
+            "Probability"
+        ],
+        "question": "When AI makes a guess, it is always 100% sure of the answer.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "AI outputs usually come with a 'Confidence Score' or probability (e.g., 'I am 85% sure this is a dog'). It is rarely 100% certain."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Ethics",
+            "Echo Chambers"
+        ],
+        "question": "If an algorithm only shows you news that you agree with, it can create an 'Echo Chamber'. Why is this bad?",
+        "choices": [
+            "It is too loud",
+            "You never learn about different opinions or the full truth",
+            "It breaks your phone",
+            "It costs too much money"
+        ],
+        "ans_idx": 1,
+        "justification": "Echo chambers isolate users from opposing views, reinforcing their existing beliefs and potentially spreading misinformation."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Self-Driving",
+            "Lidar"
+        ],
+        "question": "Self-driving cars often use a spinning sensor on the roof called LIDAR. What does it do?",
+        "choices": [
+            "It keeps the car cool",
+            "It shoots lasers to measure distances to objects nearby",
+            "It receives radio music",
+            "It flies the car"
+        ],
+        "ans_idx": 1,
+        "justification": "LIDAR (Light Detection and Ranging) uses laser pulses to create a precise 3D map of the car's surroundings."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Cleaning",
+            "Preparation"
+        ],
+        "question": "Before giving data to an AI, humans often have to fix errors and remove duplicates. This process is called Data ________.",
+        "choices": [
+            "Cleaning",
+            "Eating",
+            "Hiding",
+            "Breaking"
+        ],
+        "ans_idx": 0,
+        "justification": "Data Cleaning (or scrubbing) is the process of correcting or removing corrupt, incorrect, or incomplete data from a dataset."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Science",
+            "Outliers"
+        ],
+        "question": "In a dataset of students' ages: 10, 11, 10, 12, and 95. The number 95 is very different from the rest. What do we call this?",
+        "choices": [
+            "A Mistake",
+            "An Outlier",
+            "A Glitch",
+            "An Average"
+        ],
+        "ans_idx": 1,
+        "justification": "An outlier is a data point that differs significantly from other observations in the dataset."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Reinforcement Learning",
+            "Gaming"
+        ],
+        "question": "Reinforcement Learning is a type of AI training where the computer learns by playing a game over and over, getting points for winning and losing points for dying.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Reinforcement Learning relies on a system of rewards and punishments to teach an agent how to act in an environment."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "NLP",
+            "Sentiment Analysis"
+        ],
+        "question": "Companies use AI to read thousands of tweets about their new product to see if people are happy or angry. This is called:",
+        "choices": [
+            "Sentiment Analysis",
+            "Spell Checking",
+            "Data Hiding",
+            "Voice Recording"
+        ],
+        "ans_idx": 0,
+        "justification": "Sentiment Analysis uses NLP to determine the emotional tone (positive, negative, or neutral) behind a body of text."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Science",
+            "Average"
+        ],
+        "question": "To find the 'Average' score of the class, you add up all the scores and ________ by the number of students.",
+        "choices": [
+            "Multiply",
+            "Divide",
+            "Subtract",
+            "Power"
+        ],
+        "ans_idx": 1,
+        "justification": "The arithmetic mean (average) is calculated by summing all values and dividing by the count of values."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Deep Learning",
+            "Layers"
+        ],
+        "question": "Deep Learning is called 'Deep' because:",
+        "choices": [
+            "It happens deep underwater",
+            "It uses many layers of artificial neurons to learn complex patterns",
+            "It thinks very deep philosophical thoughts",
+            "It is buried underground"
+        ],
+        "ans_idx": 1,
+        "justification": "Deep Learning models consist of multiple (deep) layers of neural networks that process data in stages."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "question": "What is the difference between 'Image Classification' and 'Object Detection'?",
+        "choices": [
+            "They are the same thing",
+            "Classification names the whole picture (e.g., 'Cat'); Detection draws a box around where the cat is",
+            "Detection is only for videos",
+            "Classification is for robots only"
+        ],
+        "ans_idx": 1,
+        "justification": "Classification identifies the main subject of an image, while Object Detection locates and labels multiple objects within the image."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Privacy",
+            "Anonymization"
+        ],
+        "question": "To protect privacy, data scientists often remove names and addresses from a dataset before using it. This is called Anonymization.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Anonymization removes personally identifiable information (PII) so the data cannot be traced back to specific individuals."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Ethics",
+            "Job Displacement"
+        ],
+        "question": "One major ethical concern about AI is that:",
+        "choices": [
+            "It might automate too many jobs, leaving some people without work",
+            "It will eat all our food",
+            "It will make video games too easy",
+            "It uses too much paper"
+        ],
+        "ans_idx": 0,
+        "justification": "Automation and job displacement are significant economic concerns as AI becomes capable of performing tasks previously done by humans."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Unsupervised Learning",
+            "Clustering"
+        ],
+        "question": "If you give an AI a basket of fruit WITHOUT telling it the names, and it groups them by color and shape on its own, this is called ________.",
+        "choices": [
+            "Supervised Learning",
+            "Clustering",
+            "Labeling",
+            "Grading"
+        ],
+        "ans_idx": 1,
+        "justification": "Clustering is an Unsupervised Learning technique where the AI groups similar data points together without pre-existing labels."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Science",
+            "Correlation"
+        ],
+        "question": "If ice cream sales go up when the temperature goes up, we say these two things are:",
+        "choices": [
+            "Correlated / Linked",
+            "Opposites",
+            "Random",
+            "Mistakes"
+        ],
+        "ans_idx": 0,
+        "justification": "Correlation describes a relationship where two variables move in coordination with one another (e.g., as one increases, the other increases)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Model",
+            "Accuracy"
+        ],
+        "question": "You tested your AI model and it got 90 out of 100 questions right. We say its ________ is 90%.",
+        "choices": [
+            "Speed",
+            "Accuracy",
+            "Weight",
+            "Price"
+        ],
+        "ans_idx": 1,
+        "justification": "Accuracy is the metric used to measure how often the AI model predicts the correct outcome."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Big Data",
+            "Definition"
+        ],
+        "question": "'Big Data' just means you have a very large hard drive; it has nothing to do with analyzing information.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Big Data refers to datasets so large and complex that traditional processing software cannot manage them, requiring specialized techniques for analysis."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "History",
+            "Kasparov"
+        ],
+        "question": "In 1997, a computer named Deep Blue became famous for defeating the world champion at which game?",
+        "choices": [
+            "Fortnite",
+            "Chess",
+            "Soccer",
+            "Tic-Tac-Toe"
+        ],
+        "ans_idx": 1,
+        "justification": "IBM's Deep Blue defeated Garry Kasparov in 1997, marking a major milestone in AI's ability to handle complex strategy games."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Robotics",
+            "Sensors"
+        ],
+        "question": "Which sensor helps a robot vacuum (like a Roomba) know when it is about to hit a wall?",
+        "choices": [
+            "Temperature Sensor",
+            "Proximity / Bump Sensor",
+            "Microphone",
+            "Taste Sensor"
+        ],
+        "ans_idx": 1,
+        "justification": "Proximity sensors (infrared or ultrasonic) or physical bump sensors detect obstacles to prevent collisions."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Types",
+            "Strong vs Weak"
+        ],
+        "question": "AI that is designed to do just ONE specific task really well (like playing Chess) is called Narrow or ________ AI.",
+        "choices": [
+            "Strong",
+            "Weak",
+            "Super",
+            "Mega"
+        ],
+        "ans_idx": 1,
+        "justification": "Weak AI (or Narrow AI) is limited to a specific scope, unlike Strong AI which would equal human intelligence."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data Science",
+            "Graphs"
+        ],
+        "question": "Which type of chart is best for comparing the number of students who like Pizza vs. Tacos vs. Burgers?",
+        "choices": [
+            "Bar Chart",
+            "Line Graph",
+            "Scatter Plot",
+            "Map"
+        ],
+        "ans_idx": 0,
+        "justification": "Bar charts are ideal for comparing quantities across different categories."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Training",
+            "Internet"
+        ],
+        "question": "Once an AI is trained and installed on a robot, it always needs the internet to work.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "While training often requires big servers, the finished model can often run 'locally' on the device (Edge AI) without internet."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Computer Vision",
+            "Pixels"
+        ],
+        "question": "If an image has a very low 'Resolution', how does it look to the AI?",
+        "choices": [
+            "Crystal clear",
+            "Blurry or Pixelated",
+            "Black and White",
+            "In 3D"
+        ],
+        "ans_idx": 1,
+        "justification": "Low resolution means fewer pixels, resulting in a blocky or blurry image that is harder to analyze."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Logic",
+            "Rules"
+        ],
+        "question": "Old AI systems weren't 'smart'; they just followed strict rules like: `IF ball is red THEN kick it`. This is called:",
+        "choices": [
+            "Rule-Based AI",
+            "Deep Learning",
+            "Neural Networks",
+            "Generative AI"
+        ],
+        "ans_idx": 0,
+        "justification": "Rule-based systems rely on manually programmed 'if-then' logic rather than learning patterns from data."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Concepts",
+            "Data",
+            "Bias"
+        ],
+        "question": "If a facial recognition system works well for lighter skin tones but fails for darker skin tones, we say the model has a ________.",
+        "choices": [
+            "Virus",
+            "Bias",
+            "Feature",
+            "Glitch"
+        ],
+        "ans_idx": 1,
+        "justification": "Bias in AI often results from unrepresentative training data, leading to unfair or inaccurate results for certain groups."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Overfitting",
+            "School Analogy"
+        ],
+        "question": "Imagine a student who memorizes the answers to the practice test but fails the real exam because the questions are slightly different. In AI, this is called:",
+        "choices": [
+            "Underfitting",
+            "Overfitting",
+            "Good Learning",
+            "Cheating"
+        ],
+        "ans_idx": 1,
+        "justification": "Overfitting happens when an AI learns the training data *too* well (memorizing noise), so it cannot generalize to new, unseen data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Logic",
+            "Evaluation"
+        ],
+        "question": "You built a fire alarm AI. It's better to have a 'False Positive' (Alarm rings, but no fire) than a 'False Negative' (Fire exists, but alarm is silent). Why?",
+        "choices": [
+            "Because noise is fun",
+            "Because a False Negative is dangerous and could hurt people",
+            "Because False Positives are cheaper",
+            "It doesn't matter"
+        ],
+        "ans_idx": 1,
+        "justification": "In safety-critical systems, missing a real danger (False Negative) is much worse than a false alarm (False Positive)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Data Science",
+            "Split"
+        ],
+        "question": "When training an AI, you should use 100% of your data for training and 0% for testing.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "You must save some data (typically 20%) for testing. If you train on everything, you have no way to prove the AI actually works on new data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Ethics",
+            "Trolley Problem"
+        ],
+        "question": "Self-driving car designers have to decide: 'If a crash is unavoidable, should the car swerve to hit a tree (hurting the passenger) or hit a pedestrian?' This is known as:",
+        "choices": [
+            "The Mechanical Fail",
+            "The Ethical Dilemma (Trolley Problem)",
+            "The Traffic Jam",
+            "The Speed Test"
+        ],
+        "ans_idx": 1,
+        "justification": "This is a classic ethical thought experiment adapted for AI, questioning how machines should make moral life-or-death decisions."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Pseudocode",
+            "Logic"
+        ],
+        "question": "Look at this simple logic: `IF (email contains \"Winner\") AND (email contains \"Click Here\") THEN predict = \"Spam\"`. This model relies on ________.",
+        "choices": [
+            "Magic",
+            "Keywords",
+            "Colors",
+            "Time"
+        ],
+        "ans_idx": 1,
+        "justification": "This logic checks for specific words (keywords) that are commonly associated with spam emails."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Neural Networks",
+            "Layers"
+        ],
+        "question": "A Neural Network is made of layers. The first layer takes in the image pixels (Input), and the last layer gives the answer (Output). What are the layers in the middle called?",
+        "choices": [
+            "Sandwich Layers",
+            "Hidden Layers",
+            "Secret Layers",
+            "Magic Layers"
+        ],
+        "ans_idx": 1,
+        "justification": "Hidden layers are located between the input and output layers, where the complex processing and feature extraction happen."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "NLP",
+            "Tokenization"
+        ],
+        "question": "Before an AI reads a sentence, it breaks it down into smaller chunks (like words or parts of words). These chunks are called ________.",
+        "choices": [
+            "Tokens",
+            "Letters",
+            "Crumbs",
+            "Bits"
+        ],
+        "ans_idx": 0,
+        "justification": "Tokenization is the process of splitting text into smaller units (tokens) like words or subwords for the AI to process."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Coding",
+            "Libraries"
+        ],
+        "question": "In Python, which popular library is often used by data scientists to create charts and graphs?",
+        "choices": [
+            "Matplotlib",
+            "GamePy",
+            "MathBot",
+            "ChartMaster"
+        ],
+        "ans_idx": 0,
+        "justification": "Matplotlib is a widely used Python plotting library for creating static, animated, and interactive visualizations."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Computer Vision",
+            "CNN"
+        ],
+        "question": "A Convolutional Neural Network (CNN) is a specific type of AI designed to be very good at understanding images.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "CNNs are specialized neural networks that use convolution to analyze visual imagery, making them perfect for image recognition."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Training",
+            "Epochs"
+        ],
+        "question": "When training an AI, one full pass through the entire dataset is called an:",
+        "choices": [
+            "Era",
+            "Epoch",
+            "Eon",
+            "Episode"
+        ],
+        "ans_idx": 1,
+        "justification": "An epoch is one complete cycle through the full training dataset during the machine learning training process."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Deepfakes",
+            "GANs"
+        ],
+        "question": "Deepfakes are often created using two AIs fighting against each other: one creates the fake, and the other tries to spot the fake. This is called a:",
+        "choices": [
+            "GAN (Generative Adversarial Network)",
+            "PVP (Player vs Player)",
+            "WWE (Wrestling Engine)",
+            "CNN (Convolutional Network)"
+        ],
+        "ans_idx": 0,
+        "justification": "GANs consist of a Generator (creator) and a Discriminator (judge) that compete, resulting in highly realistic generated content."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Data Science",
+            "Median"
+        ],
+        "question": "The ________ is the 'middle' number in a sorted list of data (e.g., in [1, 3, 5, 7, 9], it is 5).",
+        "choices": [
+            "Average",
+            "Median",
+            "Mode",
+            "Total"
+        ],
+        "ans_idx": 1,
+        "justification": "The median is the value separating the higher half from the lower half of a data sample; it is the middle value."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Reinforcement Learning",
+            "Reward Function"
+        ],
+        "question": "In Reinforcement Learning, how does the AI know if it did a good job?",
+        "choices": [
+            "It gets a 'Reward' (points)",
+            "It gets a cookie",
+            "It sends an email",
+            "It guesses"
+        ],
+        "ans_idx": 0,
+        "justification": "The Reward Function defines the goal; the AI tries to maximize the cumulative reward it receives over time."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Logic",
+            "Confidence"
+        ],
+        "question": "Look at this pseudo-code:\n`if confidence < 0.5: ask_human_for_help()`\nWhat is this AI doing?",
+        "choices": [
+            "It is being lazy",
+            "It is handling uncertainty by asking a human when it isn't sure",
+            "It is shutting down",
+            "It is deleting data"
+        ],
+        "ans_idx": 1,
+        "justification": "This is a 'Human-in-the-loop' strategy. If the AI's confidence score is low (below 50%), it defers to a human for accuracy."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Data",
+            "Normalization"
+        ],
+        "question": "Data Scaling (or Normalization) means changing all your numbers to be on the same scale (like 0 to 1) so the AI learns better.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Normalization adjusts numeric columns in the dataset to a common scale, which helps neural networks converge (learn) faster."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Parameters",
+            "Weights"
+        ],
+        "question": "Inside a neural network, the connections between neurons have numbers that determine how important that connection is. These numbers are called:",
+        "choices": [
+            "Weights",
+            "Heights",
+            "Lengths",
+            "Prices"
+        ],
+        "ans_idx": 0,
+        "justification": "Weights are the learnable parameters in a neural network that transform input data within the network's layers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Evaluation",
+            "Confusion Matrix"
+        ],
+        "question": "To check where an AI is making mistakes (e.g., confusing a dog for a wolf), scientists use a table called a:",
+        "choices": [
+            "Multiplication Table",
+            "Periodic Table",
+            "Confusion Matrix",
+            "Dinner Table"
+        ],
+        "ans_idx": 2,
+        "justification": "A Confusion Matrix is a table used to describe the performance of a classification model, showing true positives, false positives, etc."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Learning",
+            "Fine-Tuning"
+        ],
+        "question": "Taking an AI that already knows how to speak English and training it a little bit more on *medical* documents is called ________.",
+        "choices": [
+            "Rebooting",
+            "Fine-Tuning",
+            "Erasing",
+            "Formatting"
+        ],
+        "ans_idx": 1,
+        "justification": "Fine-tuning involves taking a pre-trained model and training it further on a specific dataset to adapt it for a specific task."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Robotics",
+            "Actuators"
+        ],
+        "question": "Sensors let a robot 'feel', but ________ are the motors and parts that let the robot 'move'.",
+        "choices": [
+            "Actuators",
+            "Calculators",
+            "Monitors",
+            "Wires"
+        ],
+        "ans_idx": 0,
+        "justification": "Actuators are the components responsible for moving and controlling a mechanism or system (like a robot arm or wheel)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Algorithm",
+            "Black Box"
+        ],
+        "question": "Sometimes, Deep Learning models are called 'Black Boxes'. Why?",
+        "choices": [
+            "They are painted black",
+            "They are so complex that even humans don't fully understand *how* they reached a specific decision",
+            "They only work at night",
+            "They are broken"
+        ],
+        "ans_idx": 1,
+        "justification": "The 'Black Box' problem refers to the lack of interpretability in complex models; we see input and output, but the internal logic is opaque."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Data",
+            "Synthetic"
+        ],
+        "question": "Synthetic Data is fake data created by a computer to help train an AI when we don't have enough real data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Synthetic data is artificially generated information that mimics real-world data properties, used to augment training datasets."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Code",
+            "Inference"
+        ],
+        "question": "When you are done training and you actually use the AI to make a prediction on a new photo, this phase is called:",
+        "choices": [
+            "Inference",
+            "Training",
+            "Sleeping",
+            "Downloading"
+        ],
+        "ans_idx": 0,
+        "justification": "Inference is the stage where a trained model is used to infer/predict values from live data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Bias",
+            "Historical"
+        ],
+        "question": "If an AI learns from history books written 100 years ago, it might learn to be sexist or racist. Why?",
+        "choices": [
+            "The AI is mean",
+            "The AI learns the biases that existed in the human data it was fed",
+            "The computer is broken",
+            "History books are blank"
+        ],
+        "ans_idx": 1,
+        "justification": "AI models reflect the biases present in their training data. Historical data often contains social biases from that era."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Unsupervised Learning",
+            "Anomalies"
+        ],
+        "question": "Banks use AI to find credit card theft by looking for weird patterns that don't match your normal spending. This is Anomaly ________.",
+        "choices": [
+            "Creation",
+            "Detection",
+            "Deletion",
+            "Payment"
+        ],
+        "ans_idx": 1,
+        "justification": "Anomaly Detection identifies data points that deviate significantly from the norm, often used for fraud detection."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Logic",
+            "Conditions"
+        ],
+        "question": "In a Decision Tree AI, the computer asks a series of Yes/No questions to find the answer. This looks like:",
+        "choices": [
+            "A Flowchart",
+            "A Circle",
+            "A Movie",
+            "A Straight Line"
+        ],
+        "ans_idx": 0,
+        "justification": "Decision Trees split data into branches based on conditions, visually resembling a flowchart structure."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "NLP",
+            "Context"
+        ],
+        "question": "The word 'Bat' means something different in baseball vs. a cave. For an AI to know which one you mean, it needs to look at the:",
+        "choices": [
+            "Context",
+            "Spelling",
+            "Font size",
+            "Color"
+        ],
+        "ans_idx": 0,
+        "justification": "Context refers to the surrounding words and sentences that help clarify the meaning of ambiguous terms."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Python",
+            "Pandas"
+        ],
+        "question": "In Python code, `import pandas as pd` loads a library used for organizing data into tables (DataFrames).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Pandas is the primary library in Python for data manipulation and analysis, using structures like DataFrames."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Hardware",
+            "GPU"
+        ],
+        "question": "Why do AI researchers use GPUs (Graphics Cards) instead of just CPUs to train models?",
+        "choices": [
+            "GPUs have better colors",
+            "GPUs are better at doing thousands of simple math problems at the same time (parallel processing)",
+            "GPUs are cheaper",
+            "GPUs are wireless"
+        ],
+        "ans_idx": 1,
+        "justification": "Neural network training involves matrix multiplication, which is highly parallelizable. GPUs are designed for this exact type of parallel computation."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Code",
+            "Variables"
+        ],
+        "question": "In this code: `prediction = model.predict(new_data)`. The answer the AI gives is stored in the variable named ________.",
+        "choices": [
+            "model",
+            "predict",
+            "new_data",
+            "prediction"
+        ],
+        "ans_idx": 3,
+        "justification": "The variable on the left side of the `=` sign (`prediction`) stores the result of the function call."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Thinking",
+            "Future",
+            "Singularity"
+        ],
+        "question": "The hypothetical future moment when AI becomes smarter than humans and improves itself uncontrollably is called:",
+        "choices": [
+            "The Big Bang",
+            "The Singularity",
+            "The Shutdown",
+            "The Glitch"
+        ],
+        "ans_idx": 1,
+        "justification": "The Technological Singularity is a hypothetical point in time at which technological growth becomes uncontrollable and irreversible."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Ethics",
+            "Bias",
+            "Fairness"
+        ],
+        "question": "If an AI system is trained only on pictures of scientists who are men, what mistake might it make?",
+        "choices": [
+            "It will become a scientist",
+            "It might not recognize women as scientists",
+            "It will only work at night",
+            "It will ask for a lab coat"
+        ],
+        "ans_idx": 1,
+        "justification": "This is an example of bias in training data. If the AI hasn't seen examples of diverse groups, it won't recognize them correctly."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Ethics",
+            "Deepfakes",
+            "Misinformation"
+        ],
+        "question": "Deepfakes are videos where AI creates realistic but fake footage of people saying things they never actually said.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Deepfakes use deep learning to manipulate video and audio, creating convincing but fabricated media."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "AI Ethics",
+            "Privacy",
+            "Data Protection"
+        ],
+        "question": "Why is it important to protect your personal data when using AI apps?",
+        "choices": [
+            "Because AI gets hungry",
+            "To prevent strangers or companies from knowing too much about you without permission",
+            "So your phone battery lasts longer",
+            "To make the internet faster"
+        ],
+        "ans_idx": 1,
+        "justification": "Privacy is a key ethical concern; personal data should be protected to prevent misuse or unauthorized tracking."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI Ethics",
+            "Responsibility",
+            "Safety"
+        ],
+        "question": "Developers must ensure AI is safe and ________, meaning it treats everyone equally and doesn't cause harm.",
+        "choices": [
+            "Fast",
+            "Fair",
+            "Expensive",
+            "Loud"
+        ],
+        "ans_idx": 1,
+        "justification": "Fairness is a core principle of responsible AI, ensuring systems do not discriminate against any group."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI Ethics",
+            "Decisions",
+            "Autonomy"
+        ],
+        "question": "Who should be responsible if a self-driving car gets into an accident?",
+        "choices": [
+            "The car itself",
+            "The passenger sleeping in the back",
+            "This is a complex legal and ethical question still being debated",
+            "The road"
+        ],
+        "ans_idx": 2,
+        "justification": "Legal liability for autonomous systems is a major unsolved ethical and legal challenge."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Machine Learning",
+            "Training",
+            "Data"
+        ],
+        "question": "The data used to teach an AI model initially is called ________ data.",
+        "choices": [
+            "Testing",
+            "Training",
+            "False",
+            "Broken"
+        ],
+        "ans_idx": 1,
+        "justification": "Training data is the dataset used to train the model, while testing data is used to evaluate it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Machine Learning",
+            "Overfitting",
+            "Generalization"
+        ],
+        "question": "What happens if an AI memorizes its training data too perfectly but fails on new data?",
+        "choices": [
+            "Underfitting",
+            "Overfitting",
+            "Perfect Fitting",
+            "Super Learning"
+        ],
+        "ans_idx": 1,
+        "justification": "Overfitting occurs when a model learns the training data (including noise) so well that it cannot generalize to new, unseen data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Machine Learning",
+            "Reinforcement Learning",
+            "Types"
+        ],
+        "question": "An AI learning to play a video game by trial and error, getting points for winning and losing points for dying, is using:",
+        "choices": [
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Reinforcement Learning",
+            "Book Learning"
+        ],
+        "ans_idx": 2,
+        "justification": "Reinforcement learning involves an agent learning to make decisions by performing actions and receiving rewards or penalties."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Machine Learning",
+            "Supervised",
+            "Unsupervised"
+        ],
+        "question": "In Unsupervised Learning, the AI is given data WITHOUT any labels or correct answers and must find patterns on its own.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Unsupervised learning involves finding hidden structures in unlabeled data (e.g., clustering)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Machine Learning",
+            "Data",
+            "Labels"
+        ],
+        "question": "A picture of a cat with the word 'Cat' attached to it is an example of ________ data.",
+        "choices": [
+            "Messy",
+            "Labeled",
+            "Invisible",
+            "Audio"
+        ],
+        "ans_idx": 1,
+        "justification": "Labeled data provides the 'ground truth' or answer key for the model to learn from."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Visualization",
+            "Charts"
+        ],
+        "question": "Which chart is best for showing pieces of a whole (like percentages of pizza toppings)?",
+        "choices": [
+            "Line Graph",
+            "Pie Chart",
+            "Scatter Plot",
+            "Map"
+        ],
+        "ans_idx": 1,
+        "justification": "Pie charts are designed to represent proportions or percentages of a whole."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Cleaning",
+            "Preparation"
+        ],
+        "question": "Data Cleaning means washing your computer screen with soap and water.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Data cleaning (or cleansing) is the process of detecting and correcting (or removing) corrupt or inaccurate records from a record set."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Science",
+            "Correlation",
+            "Logic"
+        ],
+        "question": "Just because ice cream sales and sunburns both happen in summer doesn't mean eating ice cream causes sunburns. This reminds us that:",
+        "choices": [
+            "Correlation is not Causation",
+            "Ice cream is dangerous",
+            "Summer is bad",
+            "Data is always wrong"
+        ],
+        "ans_idx": 0,
+        "justification": "Correlation means two things happen together; causation means one causes the other. They are often confused."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Outliers",
+            "Statistics"
+        ],
+        "question": "A data point that is very different from all the others (like a snowstorm in July) is called an ________.",
+        "choices": [
+            "Average",
+            "Outlier",
+            "Error",
+            "Algorithm"
+        ],
+        "ans_idx": 1,
+        "justification": "An outlier is a data point that differs significantly from other observations."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Anonymization",
+            "Privacy"
+        ],
+        "question": "To protect privacy, data scientists often remove names and addresses from data. This process is called:",
+        "choices": [
+            "Deleting",
+            "Anonymization",
+            "Hacking",
+            "Broadcasting"
+        ],
+        "ans_idx": 1,
+        "justification": "Anonymization removes personally identifiable information so that the people whom the data describes remain anonymous."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Computer Vision",
+            "Images",
+            "Digital"
+        ],
+        "question": "A digital image is made up of a grid of tiny squares called ________.",
+        "choices": [
+            "Atoms",
+            "Pixels",
+            "Cells",
+            "Bytes"
+        ],
+        "ans_idx": 1,
+        "justification": "Pixels (picture elements) are the smallest unit of a digital image."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Computer Vision",
+            "Object Detection",
+            "Bounding Box"
+        ],
+        "question": "Object detection not only recognizes WHAT is in the picture but also WHERE it is by drawing a box around it.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Object detection involves identifying objects and finding their location (bounding box) within the image."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Computer Vision",
+            "Facial Recognition",
+            "Security"
+        ],
+        "question": "Which technology allows you to unlock your phone just by looking at it?",
+        "choices": [
+            "Voice Control",
+            "Facial Recognition",
+            "Fingerprint Scan",
+            "GPS"
+        ],
+        "ans_idx": 1,
+        "justification": "Facial recognition matches the user's face against a stored template to grant access."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Computer Vision",
+            "Segmentation",
+            "Analysis"
+        ],
+        "question": "If an AI colors all the 'sky' pixels blue and all the 'grass' pixels green in an image, it is performing:",
+        "choices": [
+            "Image Segmentation",
+            "Image Compression",
+            "Image Deletion",
+            "Image Printing"
+        ],
+        "ans_idx": 0,
+        "justification": "Image segmentation partitions an image into segments (sets of pixels), effectively classifying every pixel."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Computer Vision",
+            "Filters",
+            "Augmented Reality"
+        ],
+        "question": "Instagram ________ often use computer vision to track your face and add effects like sunglasses.",
+        "choices": [
+            "Filters",
+            "Comments",
+            "Likes",
+            "Posts"
+        ],
+        "ans_idx": 0,
+        "justification": "Filters (specifically AR filters) use facial feature detection to overlay graphics correctly."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "NLP",
+            "Sentiment",
+            "Emotions"
+        ],
+        "question": "If an AI analyzes a movie review and says it is 'Negative' because it found words like 'boring' and 'bad', it is doing:",
+        "choices": [
+            "Spell Check",
+            "Sentiment Analysis",
+            "Word Count",
+            "Translation"
+        ],
+        "ans_idx": 1,
+        "justification": "Sentiment analysis identifies and extracts subjective information (positive/negative/neutral) from source materials."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "NLP",
+            "Chatbots",
+            "Simulation"
+        ],
+        "question": "A chatbot is a computer program designed to simulate conversation with human users.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Chatbots use NLP to understand user queries and respond in a conversational manner."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "NLP",
+            "Translation",
+            "Languages"
+        ],
+        "question": "Google Translate uses Machine ________ to convert text from one language to another.",
+        "choices": [
+            "Learning",
+            "Translation",
+            "Writing",
+            "Speaking"
+        ],
+        "ans_idx": 1,
+        "justification": "Machine Translation is the subfield of AI focused on translating text or speech from one language to another."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "NLP",
+            "Voice Assistants",
+            "Interaction"
+        ],
+        "question": "Which of these is NOT a popular AI voice assistant?",
+        "choices": [
+            "Siri",
+            "Alexa",
+            "Cortana",
+            "Microsoft Word"
+        ],
+        "ans_idx": 3,
+        "justification": "Microsoft Word is a word processor, not a voice assistant, though it may contain some AI features."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "NLP",
+            "Tokenization",
+            "Processing"
+        ],
+        "question": "Before an AI can understand a sentence, it breaks it down into smaller pieces (words or parts of words) called:",
+        "choices": [
+            "Tokens",
+            "Crumbs",
+            "Pixels",
+            "Letters"
+        ],
+        "ans_idx": 0,
+        "justification": "Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics",
+            "Definition",
+            "Hardware"
+        ],
+        "question": "What is the main difference between a simple machine (like a toaster) and a robot?",
+        "choices": [
+            "Robots are made of metal",
+            "Robots can sense their environment, think (process), and act",
+            "Toasters are smarter",
+            "Robots always have legs"
+        ],
+        "ans_idx": 1,
+        "justification": "Robots are defined by the cycle of Sense-Think-Act, whereas simple machines just follow a fixed mechanism."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics",
+            "Sensors",
+            "Input"
+        ],
+        "question": "To measure distance or detect walls, a vacuum robot uses ________, which act like its eyes.",
+        "choices": [
+            "Wheels",
+            "Sensors",
+            "Brushes",
+            "Magnets"
+        ],
+        "ans_idx": 1,
+        "justification": "Sensors allow robots to perceive their physical environment."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Robotics",
+            "Actuators",
+            "Movement"
+        ],
+        "question": "Which part of a robot is responsible for MOVING its arm or wheels?",
+        "choices": [
+            "The Sensor",
+            "The Battery",
+            "The Actuator / Motor",
+            "The Camera"
+        ],
+        "ans_idx": 2,
+        "justification": "Actuators (like motors or hydraulics) convert energy into motion."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics",
+            "Laws",
+            "Safety"
+        ],
+        "question": "Isaac Asimov's First Law of Robotics states that:",
+        "choices": [
+            "A robot must always do its homework",
+            "A robot may not injure a human being or allow a human to come to harm",
+            "A robot must act like a human",
+            "A robot must be painted red"
+        ],
+        "ans_idx": 1,
+        "justification": "The First Law emphasizes safety: preventing harm to humans is the highest priority."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Robotics",
+            "Cobots",
+            "Collaboration"
+        ],
+        "question": "A 'Cobot' is a Collaborative Robot designed to work safely ALONGSIDE humans, unlike big dangerous industrial robots.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Cobots are equipped with sensors to slow down or stop if they touch a human, allowing for safe cooperation."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Big Data",
+            "Characteristics",
+            "3Vs"
+        ],
+        "question": "Big Data is often described by the '3 Vs'. Which one means 'how fast data is created'?",
+        "choices": [
+            "Volume",
+            "Variety",
+            "Velocity",
+            "Vegetables"
+        ],
+        "ans_idx": 2,
+        "justification": "Velocity refers to the speed at which data is generated and processed."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Big Data",
+            "Cloud Computing",
+            "Internet"
+        ],
+        "question": "Instead of storing huge files on your own laptop, you can store them on the internet using ________ Computing.",
+        "choices": [
+            "Cloud",
+            "Rain",
+            "Sky",
+            "Wind"
+        ],
+        "ans_idx": 0,
+        "justification": "Cloud computing allows storing and accessing data and programs over the internet."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Big Data",
+            "Infrastructure",
+            "Hardware"
+        ],
+        "question": "Where does 'The Cloud' physically live?",
+        "choices": [
+            "In the sky",
+            "In massive buildings full of servers called Data Centers",
+            "Inside your phone",
+            "In outer space"
+        ],
+        "ans_idx": 1,
+        "justification": "Data centers are physical facilities that house the servers and storage systems for cloud services."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Big Data",
+            "Storage",
+            "Capacity"
+        ],
+        "question": "A single text message takes up just as much storage space as a 2-hour 4K movie.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Video files (gigabytes) are vastly larger than simple text files (bytes or kilobytes)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Big Data",
+            "Analysis",
+            "Mining"
+        ],
+        "question": "The process of discovering patterns in large data sets is known as:",
+        "choices": [
+            "Data Mining",
+            "Gold Digging",
+            "Data Hiding",
+            "Data Sleeping"
+        ],
+        "ans_idx": 0,
+        "justification": "Data Mining involves using statistics and AI to discover patterns and relationships in big data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI History",
+            "Pioneers",
+            "Turing"
+        ],
+        "question": "Alan Turing is considered the father of theoretical computer science and AI. He helped crack the Enigma code during:",
+        "choices": [
+            "World War I",
+            "World War II",
+            " The Civil War",
+            "The Clone Wars"
+        ],
+        "ans_idx": 1,
+        "justification": "Alan Turing's work at Bletchley Park during WWII was crucial in breaking the German Enigma code."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI History",
+            "Games",
+            "Chess"
+        ],
+        "question": "In 1997, an IBM computer named Deep ________ defeated the world chess champion Garry Kasparov.",
+        "choices": [
+            "Red",
+            "Blue",
+            "Green",
+            "White"
+        ],
+        "ans_idx": 1,
+        "justification": "Deep Blue was the first computer chess-playing system to win a chess match against a reigning world champion."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI History",
+            "Cycles",
+            "Funding"
+        ],
+        "question": "A period of time when interest and funding for AI research disappears because people are disappointed with the results is called an:",
+        "choices": [
+            "AI Summer",
+            "AI Winter",
+            "AI Party",
+            "AI Nap"
+        ],
+        "ans_idx": 1,
+        "justification": "AI Winter refers to periods of reduced funding and interest in AI research after hype fails to materialize."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "AI History",
+            "Pioneers",
+            "Ada Lovelace"
+        ],
+        "question": "Ada Lovelace, who lived in the 1800s, is often considered the first computer programmer.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "She wrote the first algorithm intended to be processed by a machine (Charles Babbage's Analytical Engine)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "AI History",
+            "Origins",
+            "Dartmouth"
+        ],
+        "question": "The term 'Artificial Intelligence' was first coined at a famous conference in 1956 held at:",
+        "choices": [
+            "Disney World",
+            "Dartmouth College",
+            "Hogwarts",
+            " The Moon"
+        ],
+        "ans_idx": 1,
+        "justification": "The Dartmouth Workshop is widely considered the founding event of AI as a field."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "IoT",
+            "Connectivity",
+            "Network"
+        ],
+        "question": "IoT stands for Internet of ________.",
+        "choices": [
+            "Telephones",
+            "Things",
+            "Thoughts",
+            "Tigers"
+        ],
+        "ans_idx": 1,
+        "justification": "IoT (Internet of Things) refers to the network of physical objects embedded with sensors and software."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "IoT",
+            "Examples",
+            "Smart Home"
+        ],
+        "question": "Which of these is an example of an IoT device?",
+        "choices": [
+            "A regular rock",
+            "A smart lightbulb that you can control with your phone",
+            "A paper book",
+            "A wooden chair"
+        ],
+        "ans_idx": 1,
+        "justification": "Smart lightbulbs connect to the internet/network to be controlled remotely, making them IoT devices."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "IoT",
+            "Security",
+            "Risks"
+        ],
+        "question": "Because IoT devices are connected to the internet, they can potentially be hacked if not secured properly.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Security is a major concern for IoT; insecure devices can be entry points for cyberattacks."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "IoT",
+            "Edge Computing",
+            "Processing"
+        ],
+        "question": "When a smart camera processes video locally on the device instead of sending it all to the cloud, it is called:",
+        "choices": [
+            "Edge Computing",
+            "Center Computing",
+            "Slow Computing",
+            "No Computing"
+        ],
+        "ans_idx": 0,
+        "justification": "Edge computing brings computation and data storage closer to the location where it is needed (the 'edge' of the network)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "IoT",
+            "Communication",
+            "Wireless"
+        ],
+        "question": "Many smart home devices talk to each other wirelessly using technology like Wi-Fi or ________.",
+        "choices": [
+            "Strings",
+            "Bluetooth",
+            "Glue",
+            "Water"
+        ],
+        "ans_idx": 1,
+        "justification": "Bluetooth is a common short-range wireless communication standard used in IoT."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Future of AI",
+            "Society",
+            "Jobs"
+        ],
+        "question": "As AI robots do more jobs, some people suggest giving everyone free money to live on. This idea is called:",
+        "choices": [
+            "Universal Basic Income (UBI)",
+            "Free Lunch",
+            "Monopoly Money",
+            "Robot Tax"
+        ],
+        "ans_idx": 0,
+        "justification": "UBI is a proposed system where all citizens receive a regular sum of money from the government, often discussed as a solution to AI job displacement."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Future of AI",
+            "Collaboration",
+            "Augmentation"
+        ],
+        "question": "The goal of AI in the future is likely to replace ALL humans, not to work with them.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Most experts view the future of AI as 'Augmented Intelligence', where humans and AI work together to achieve more than either could alone."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Future of AI",
+            "Exploration",
+            "Space"
+        ],
+        "question": "AI rovers like 'Perseverance' help explore the planet ________ because it is too far and dangerous for humans to stay for long.",
+        "choices": [
+            "Mars",
+            "Earth",
+            "Sun",
+            "Pluto"
+        ],
+        "ans_idx": 0,
+        "justification": "NASA uses AI-powered rovers to explore the surface of Mars autonomously."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Future of AI",
+            "Healthcare",
+            "Diagnosis"
+        ],
+        "question": "How is AI helping doctors in hospitals?",
+        "choices": [
+            "By performing surgery with eyes closed",
+            "By analyzing X-rays and scans to spot diseases earlier",
+            "By sleeping in the waiting room",
+            "By writing illegible prescriptions"
+        ],
+        "ans_idx": 1,
+        "justification": "AI is increasingly used in radiology to analyze medical images and detect abnormalities with high accuracy."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Future of AI",
+            "BCI",
+            "Interface"
+        ],
+        "question": "A Brain-Computer Interface (BCI) allows a human to control a computer using:",
+        "choices": [
+            "A mouse",
+            "A keyboard",
+            "Their thoughts (brain signals)",
+            "Their voice"
+        ],
+        "ans_idx": 2,
+        "justification": "BCIs effectively connect the brain to an external device, enabling control via neural activity (thoughts)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "LLMs",
+            "Chatbots"
+        ],
+        "question": "What does 'LLM' stand for in the context of systems like ChatGPT?",
+        "choices": [
+            "Large Language Model",
+            "Long Learning Machine",
+            "Little Logic Maker",
+            "Lost Lemon Maker"
+        ],
+        "ans_idx": 0,
+        "justification": "LLM stands for Large Language Model, a type of AI trained on vast amounts of text data."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Image Generation",
+            "Diffusion"
+        ],
+        "question": "AI tools like Midjourney or DALL-E create new ________ from text descriptions.",
+        "choices": [
+            "Music",
+            "Images",
+            "Food",
+            "Cars"
+        ],
+        "ans_idx": 1,
+        "justification": "Generative AI like DALL-E creates images based on text prompts."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Hallucinations",
+            "Errors"
+        ],
+        "question": "When an AI confidently gives a wrong answer or makes up facts, this is often called:",
+        "choices": [
+            "Dreaming",
+            "Hallucination",
+            "Lying",
+            "Sleeping"
+        ],
+        "ans_idx": 1,
+        "justification": "AI Hallucination refers to the generation of outputs that may sound plausible but are factually incorrect."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Creativity",
+            "Copyright"
+        ],
+        "question": "If an AI writes a poem, it always owns the copyright to that poem.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Copyright laws for AI-generated works are complex and generally, non-human creators cannot hold copyright in many jurisdictions."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "GenAI",
+            "Prompts",
+            "Input"
+        ],
+        "question": "The text you type into ChatGPT to tell it what to do is called a:",
+        "choices": [
+            "Command Line",
+            "Prompt",
+            "Script",
+            "Email"
+        ],
+        "ans_idx": 1,
+        "justification": "A 'Prompt' is the input query or instruction given to a generative AI model."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Libraries",
+            "Pandas"
+        ],
+        "question": "Which Python library is most commonly used for working with tables of data (DataFrames)?",
+        "choices": [
+            "Pandas",
+            "PyGame",
+            "Turtle",
+            "Requests"
+        ],
+        "ans_idx": 0,
+        "justification": "Pandas is the standard library for data manipulation and analysis in Python."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Libraries",
+            "NumPy"
+        ],
+        "question": "The Python library 'NumPy' is designed for performing mathematical operations on large ________ of numbers.",
+        "choices": [
+            "Lists",
+            "Arrays",
+            "Dictionaries",
+            "Trees"
+        ],
+        "ans_idx": 1,
+        "justification": "NumPy specializes in high-performance operations on multi-dimensional arrays."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Visualization",
+            "Matplotlib"
+        ],
+        "question": "If you want to draw a graph or chart in Python, which library would you use?",
+        "choices": [
+            "Matplotlib",
+            "Math",
+            "Random",
+            "OS"
+        ],
+        "ans_idx": 0,
+        "justification": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Python",
+            "Syntax",
+            "Indentation"
+        ],
+        "question": "In Python, using correct indentation (spaces at the start of a line) is required for the code to run correctly.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Python uses indentation to define blocks of code (like inside loops or functions)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Python",
+            "AI Frameworks",
+            "TensorFlow"
+        ],
+        "question": "Which of these is a famous open-source library developed by Google for building Machine Learning models?",
+        "choices": [
+            "TensorFlow",
+            "Excel",
+            "Photoshop",
+            "Chrome"
+        ],
+        "ans_idx": 0,
+        "justification": "TensorFlow is a widely used end-to-end open source platform for machine learning."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Transformers",
+            "Architecture"
+        ],
+        "question": "The 'GPT' in ChatGPT stands for Generative Pre-trained ________.",
+        "choices": [
+            "Teacher",
+            "Transformer",
+            "Translator",
+            "Truck"
+        ],
+        "ans_idx": 1,
+        "justification": "Transformer is the neural network architecture that revolutionized modern NLP and LLMs."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Style Transfer",
+            "Art"
+        ],
+        "question": "What is it called when AI takes the style of a painting (like Van Gogh) and applies it to a photo effectively repainting it?",
+        "choices": [
+            "Neural Style Transfer",
+            "Filter Copying",
+            "Photo Editing",
+            "Tracing"
+        ],
+        "ans_idx": 0,
+        "justification": "Neural Style Transfer is an optimization technique used to take two images and blend them together so the output image looks like the content image, but 'painted' in the style of the style reference image."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Python",
+            "Jupyter",
+            "Tools"
+        ],
+        "question": "What is the name of the web-based interactive notebook often used by data scientists to write code and see results immediately?",
+        "choices": [
+            "NotePad",
+            "Jupyter Notebook",
+            "WordPad",
+            "Sticky Notes"
+        ],
+        "ans_idx": 1,
+        "justification": "Jupyter Notebooks are widely used in data science for exploratory analysis and visualization."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Training Cost",
+            "Environment"
+        ],
+        "question": "Training a massive AI model like ChatGPT requires very little electricity.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Training large models is extremely computationally expensive and consumes vast amounts of energy."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Multimodal",
+            "Types"
+        ],
+        "question": "An AI model that can understand both text AND images (like looking at a photo and describing it) is called:",
+        "choices": [
+            "Multimodal",
+            "Bilingual",
+            "Double Vision",
+            "Smart"
+        ],
+        "ans_idx": 0,
+        "justification": "Multimodal AI process and relate information from multiple modalities (text, images, audio)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Python",
+            "Variables",
+            "Data Types"
+        ],
+        "question": "In Python, if you write `x = 5`, then `x` is an ________ (whole number).",
+        "choices": [
+            "String",
+            "Integer",
+            "Float",
+            "List"
+        ],
+        "ans_idx": 1,
+        "justification": "Integers are whole numbers without decimals."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Code",
+            "Loops"
+        ],
+        "question": "Which Python keyword is used to repeat a block of code multiple times?",
+        "choices": [
+            "for",
+            "try",
+            "if",
+            "import"
+        ],
+        "ans_idx": 0,
+        "justification": "The `for` loop (and `while` loop) is used for iteration."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "GenAI",
+            "Deep Learning",
+            "GANs"
+        ],
+        "question": "A GAN (Generative Adversarial Network) consists of two AIs competing against each other. One creates fakes, and the other:",
+        "choices": [
+            "Deletes them",
+            "Tries to detect if they are fake",
+            "Claps",
+            "Prints them"
+        ],
+        "ans_idx": 1,
+        "justification": "In a GAN, the Generator creates data and the Discriminator tries to distinguish real data from fake data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Errors",
+            "Debugging"
+        ],
+        "question": "A 'Syntax Error' means the computer broke because it overheated.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "A Syntax Error means the code violates the grammatical rules of the programming language."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Data",
+            "Strings"
+        ],
+        "question": "Text in Python code must be surrounded by ________ marks.",
+        "choices": [
+            "Question",
+            "Quotation",
+            "Exclamation",
+            "Hash"
+        ],
+        "ans_idx": 1,
+        "justification": "Strings (text) are defined using single or double quotation marks."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "GenAI",
+            "Text",
+            "Applications"
+        ],
+        "question": "Which of these is a common use for text-generating AI?",
+        "choices": [
+            "Writing email drafts",
+            "Washing dishes",
+            "Driving a car",
+            "Installing windows"
+        ],
+        "ans_idx": 0,
+        "justification": "LLMs are excellent at drafting text based content like emails, essays, and summaries."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Python",
+            "Conditionals",
+            "Logic"
+        ],
+        "question": "What does the `if` statement do in code?",
+        "choices": [
+            "It makes a decision based on a condition",
+            "It stops the program",
+            "It loops forever",
+            "It imports a library"
+        ],
+        "ans_idx": 0,
+        "justification": "`if` statements allow the program to execute certain code blocks only if a specific condition is true."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "GenAI",
+            "Voice",
+            "Cloning"
+        ],
+        "question": "AI can now clone a person's voice with just a few seconds of audio recording.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Voice cloning technology has advanced to the point where short samples can generate realistic synthetic speech."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Python",
+            "Functions",
+            "Modularity"
+        ],
+        "question": "A reusable block of code that performs a specific task is called a:",
+        "choices": [
+            "Function",
+            "Variable",
+            "Loop",
+            "Comment"
+        ],
+        "ans_idx": 0,
+        "justification": "Functions allow code reuse and organization."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "GenAI",
+            "Fine-Tuning",
+            "Training"
+        ],
+        "question": "Taking a pre-trained AI model and training it further on a specific topic (like medical records) is called ________.",
+        "choices": [
+            "Starting Over",
+            "Fine-tuning",
+            "Erasing",
+            "Breaking"
+        ],
+        "ans_idx": 1,
+        "justification": "Fine-tuning adjusts the parameters of a pre-trained model to better fit a specific task or dataset."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Neurons",
+            "Structure"
+        ],
+        "question": "A Neural Network is made up of layers of tiny computing units called:",
+        "choices": [
+            "Neurons (or Nodes)",
+            "Protons",
+            "Cells",
+            "Pixels"
+        ],
+        "ans_idx": 0,
+        "justification": "Artificial neurons are the fundamental units of a neural network, mimicking biological neurons."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Layers",
+            "Input"
+        ],
+        "question": "The first layer of a neural network that receives the raw data (like image pixels) is called the ________ Layer.",
+        "choices": [
+            "Output",
+            "Hidden",
+            "Input",
+            "Top"
+        ],
+        "ans_idx": 2,
+        "justification": "The Input Layer is the entry point for data into the network."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Hidden Layers",
+            "Processing"
+        ],
+        "question": "The layers between the Input and Output layers where the 'magic' and calculation happens are called:",
+        "choices": [
+            "Secret Layers",
+            "Hidden Layers",
+            "Middle Earth",
+            "Dark Layers"
+        ],
+        "ans_idx": 1,
+        "justification": "Hidden layers perform intermediate computations and feature extraction."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Deep Learning",
+            "Depth"
+        ],
+        "question": "'Deep Learning' is just a name for Neural Networks that have many (deep) hidden layers.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Deep Learning refers to neural networks with multiple (often many) hidden layers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Weights",
+            "Parameters"
+        ],
+        "question": "The strength of the connection between two neurons is represented by a number called a:",
+        "choices": [
+            "Weight",
+            "Height",
+            "Tone",
+            "Mass"
+        ],
+        "ans_idx": 0,
+        "justification": "Weights determine the importance or influence of one neuron's output on the next neuron's input."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Activation Function",
+            "ReLU"
+        ],
+        "question": "An ________ function (like ReLU or Sigmoid) decides whether a neuron should 'fire' or stay incomplete.",
+        "choices": [
+            "Activation",
+            "Addition",
+            "Animation",
+            "Action"
+        ],
+        "ans_idx": 0,
+        "justification": "Activation functions introduce non-linearity and decide the output of a neuron."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Training",
+            "Backpropagation"
+        ],
+        "question": "The process of going backward through the network to fix errors and adjust weights is called:",
+        "choices": [
+            "Backflipping",
+            "Backpropagation",
+            "Reverse Gear",
+            "Undo"
+        ],
+        "ans_idx": 1,
+        "justification": "Backpropagation is the algorithm used to calculate gradients and update weights to minimize error."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Loss Function",
+            "Error"
+        ],
+        "question": "What measures how 'wrong' the AI's prediction was compared to the correct answer?",
+        "choices": [
+            "The Loss (or Cost) Function",
+            "The Scoreboard",
+            "The Teacher",
+            "The Ruler"
+        ],
+        "ans_idx": 0,
+        "justification": "The Loss Function quantifies the difference between the predicted output and the actual target."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "CNN",
+            "Images"
+        ],
+        "question": "A Convolutional Neural Network (CNN) is a special type of AI that is very good at understanding images.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "CNNs use convolution operations to effectively process grid-like data such as images."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Epoch",
+            "Training"
+        ],
+        "question": "One full pass through the entire training dataset is called an ________.",
+        "choices": [
+            "Era",
+            "Epoch",
+            "Hour",
+            "Event"
+        ],
+        "ans_idx": 1,
+        "justification": "An epoch represents one complete iteration over the training data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Learning Rate",
+            "Hyperparameters"
+        ],
+        "question": "The 'Learning Rate' controls:",
+        "choices": [
+            "How fast the computer fan spins",
+            "How big of a step the model takes when adjusting its weights",
+            "How many books the AI reads",
+            "The cost of the electricity"
+        ],
+        "ans_idx": 1,
+        "justification": "The learning rate determines the step size at each iteration while moving toward a minimum of a loss function."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "RNN",
+            "Sequence"
+        ],
+        "question": "Which type of Neural Network is best for sequential data like text or time-series?",
+        "choices": [
+            "RNN (Recurrent Neural Network)",
+            "CNN",
+            "KNN",
+            "ABC"
+        ],
+        "ans_idx": 0,
+        "justification": "RNNs differ from feedforward networks by having feedback loops, making them suitable for sequential data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Black Box",
+            "Explainability"
+        ],
+        "question": "Neural Networks are often called 'Black Boxes' because it is easy to see exactly how they made a specific decision.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "False. They are called Black Boxes because their internal decision-making process is complex and opaque, making it HARD to explain."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Pooling",
+            "CNN"
+        ],
+        "question": "In a CNN, the 'Pooling' layer is used to:",
+        "choices": [
+            "Add water",
+            "Shrink the image size to reduce computation (Downsampling)",
+            "Make the image colorful",
+            "Delete the image"
+        ],
+        "ans_idx": 1,
+        "justification": "Pooling layers reduce the spatial dimensions of the input representation."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Neural Networks",
+            "Analogy",
+            "Biology"
+        ],
+        "question": "Artificial Neural Networks are inspired by the human ________.",
+        "choices": [
+            "Heart",
+            "Brain",
+            "Lungs",
+            "Feet"
+        ],
+        "ans_idx": 1,
+        "justification": "The structure and function of ANNs are biologically inspired by the brain."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Gradient Descent",
+            "Optimization"
+        ],
+        "question": "Gradient Descent is like:",
+        "choices": [
+            "Climbing up a mountain",
+            "Walking down a valley to find the lowest point",
+            "Flying in a plane",
+            "Swimming in a pool"
+        ],
+        "ans_idx": 1,
+        "justification": "Gradient Descent is an optimization algorithm used to find the minimum of a function (the 'lowest point' of error)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Dropout",
+            "Regularization"
+        ],
+        "question": "A technique called 'Dropout' randomly turns off some neurons during training to:",
+        "choices": [
+            "Save electricity",
+            "Prevent Overfitting",
+            "Make the AI forget",
+            "Cool down the CPU"
+        ],
+        "ans_idx": 1,
+        "justification": "Dropout is a regularization technique that prevents overfitting by preventing complex co-adaptations on training data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Classification",
+            "Output"
+        ],
+        "question": "For a simple 'Cat vs Dog' classifier, the output layer typically has 2 neurons (one for Cat, one for Dog).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "In a multi-class classification problem, the output layer typically has one node per class."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Parameters",
+            "Bias"
+        ],
+        "question": "Weights and ________ are the two main types of parameters the network learns.",
+        "choices": [
+            "Colors",
+            "Biases",
+            "Sizes",
+            "Names"
+        ],
+        "ans_idx": 1,
+        "justification": "Biases allow the activation function to be shifted to the left or right, enabling better fitting."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "Transfer Learning",
+            "Efficiency"
+        ],
+        "question": "Using a model already trained on millions of images (like ImageNet) as a starting point for your own project is called:",
+        "choices": [
+            "Cheating",
+            "Transfer Learning",
+            "Copying",
+            "Stealing"
+        ],
+        "ans_idx": 1,
+        "justification": "Transfer learning leverages knowledge from a pre-trained model to solve a new, related problem."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Neural Networks",
+            "Data",
+            "Pixels"
+        ],
+        "question": "To a neural network, a black-and-white image is just a grid of:",
+        "choices": [
+            "Numbers (0 to 255)",
+            "Colors",
+            "Paper",
+            "Text"
+        ],
+        "ans_idx": 0,
+        "justification": "Images are represented digitally as matrices of pixel intensity values."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Inference",
+            "Prediction"
+        ],
+        "question": "'Inference' is the phase where you use the trained model to make predictions on real-world data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Inference is the stage of using a trained model to make predictions."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Neural Networks",
+            "NLP",
+            "Embeddings"
+        ],
+        "question": "Word ________ convert words into lists of numbers (vectors) so the neural network can understand them.",
+        "choices": [
+            "Salads",
+            "Embeddings",
+            "Games",
+            "Lists"
+        ],
+        "ans_idx": 1,
+        "justification": "Embeddings are vector representations of words where similar words have similar representations."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "History",
+            "Perceptron"
+        ],
+        "question": "The simplest type of neural network, invented in the 1950s, is called the:",
+        "choices": [
+            "Perceptron",
+            "Transformer",
+            "Terminator",
+            "Calculator"
+        ],
+        "ans_idx": 0,
+        "justification": "The Perceptron is the simplest form of a feedforward neural network."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Neural Networks",
+            "Fine-Tuning",
+            "LLMs"
+        ],
+        "question": "Which is more computationally expensive?",
+        "choices": [
+            "Training a large model from scratch",
+            "Fine-tuning an existing model",
+            "Running inference on one image",
+            "Opening a spreadsheet"
+        ],
+        "ans_idx": 0,
+        "justification": "Training from scratch (pre-training) requires processing massive datasets, far more than fine-tuning or inference."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Agriculture",
+            "Drones"
+        ],
+        "question": "How are AI-powered drones helping farmers?",
+        "choices": [
+            "By scaring away all the birds",
+            "By monitoring crop health and spraying water/medicine only where needed",
+            "By eating the bugs",
+            "By plowing the fields at night"
+        ],
+        "ans_idx": 1,
+        "justification": "Precision agriculture uses AI drones to analyze field conditions and optimize resource usage."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Finance",
+            "Fraud"
+        ],
+        "question": "Banks use AI to detect ________ transactions lies someone stealing your credit card info.",
+        "choices": [
+            "Fraudulent",
+            "Happy",
+            "Fast",
+            "Slow"
+        ],
+        "ans_idx": 0,
+        "justification": "AI systems analyze transaction patterns in real-time to flag suspicious or fraudulent activity."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Environment",
+            "Climate"
+        ],
+        "question": "AI helps scientists fight climate change by:",
+        "choices": [
+            "Making the sun cooler",
+            "Analyzing satellite data to track deforestation and ice melting",
+            "Creating more plastic",
+            "Turning off all the lights"
+        ],
+        "ans_idx": 1,
+        "justification": "AI processes vast amounts of environmental data to model climate trends and monitor changes."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Shopping",
+            "Recommendations"
+        ],
+        "question": "Online stores use AI to suggest products you might like based on what you bought before.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Recommendation engines are a classic application of AI in e-commerce."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Applications",
+            "Space",
+            "Astronomy"
+        ],
+        "question": "AI helps astronomers discover new planets (exoplanets) by:",
+        "choices": [
+            "Looking through a telescope manually",
+            "Analyzing slight dip in brightness of stars when a planet passes in front (Transit Method)",
+            "Flying there",
+            "Guessing"
+        ],
+        "ans_idx": 1,
+        "justification": "AI algorithms analyze light curves from telescopes to identify potential exoplanet transits."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Healthcare",
+            "Drugs"
+        ],
+        "question": "AI speeds up the discovery of new ________ by predicting how molecules will interact with viruses.",
+        "choices": [
+            "Planets",
+            "Medicines",
+            "Games",
+            "Foods"
+        ],
+        "ans_idx": 1,
+        "justification": "AI accelerates drug discovery by simulating molecular interactions, saving years of lab work."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Transportation",
+            "Traffic"
+        ],
+        "question": "How does Google Maps use AI?",
+        "choices": [
+            "To draw the map",
+            "To predict traffic jams and find the fastest route",
+            "To drive your car",
+            "To take pictures"
+        ],
+        "ans_idx": 1,
+        "justification": "AI analyzes real-time traffic data from millions of users to optimize routing."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Entertainment",
+            "Movies"
+        ],
+        "question": "In movies, AI is used to:",
+        "choices": [
+            "Write better scripts only",
+            "Create realistic CGI characters and de-age actors",
+            "Sell tickets",
+            "Clean the cinema"
+        ],
+        "ans_idx": 1,
+        "justification": "AI-driven VFX are used for motion capture, de-aging, and creating realistic digital environments."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Social Media",
+            "Filtering"
+        ],
+        "question": "Social media apps use AI to automatically detect and block bullying or hateful comments.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Content moderation AI scans text and images for policy violations."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Education",
+            "Tutors"
+        ],
+        "question": "AI ________ are personalized study helpers that can explain math problems step-by-step.",
+        "choices": [
+            "Tutors",
+            "Friends",
+            "Enemies",
+            "Gamers"
+        ],
+        "ans_idx": 0,
+        "justification": "AI tutors adapt to the student's learning pace and provide personalized guidance."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Applications",
+            "Sports",
+            "Analytics"
+        ],
+        "question": "In sports like soccer or basketball, AI analyzes video footage to:",
+        "choices": [
+            "Watch for fun",
+            "Track player movements and strategy statistics",
+            "Cheer for the team",
+            "Sell hotdogs"
+        ],
+        "ans_idx": 1,
+        "justification": "Computer vision tracks player performance metrics to help coaches make strategic decisions."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Accessibility",
+            "Disability"
+        ],
+        "question": "AI apps that describe surroundings for blind people are using:",
+        "choices": [
+            "Computer Vision",
+            "Robotics",
+            "Magic",
+            "Soundwaves"
+        ],
+        "ans_idx": 0,
+        "justification": "Computer vision technologies can narrate the visual world for visually impaired users."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Energy",
+            "Grid"
+        ],
+        "question": "AI helps manage electricity power grids to prevent blackouts by predicting power usage.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Smart grids use AI to balance supply and demand, integrating renewable energy sources efficiently."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Language",
+            "Translation"
+        ],
+        "question": "Real-time translation earbuds allow people who speak different languages to talk. This uses:",
+        "choices": [
+            "Speech-to-Text and Machine Translation",
+            "Video Editing",
+            "Music Streaming",
+            "GPS"
+        ],
+        "ans_idx": 0,
+        "justification": "It combines speech recognition, translation, and text-to-speech synthesis."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Gaming",
+            "NPC"
+        ],
+        "question": "In video games, AI controls the ________ (Non-Player Characters) that interact with you.",
+        "choices": [
+            "Players",
+            "NPCs",
+            "Consoles",
+            "Controllers"
+        ],
+        "ans_idx": 1,
+        "justification": "NPCs are game characters controlled by the computer's AI logic."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Applications",
+            "Cybersecurity",
+            "Phishing"
+        ],
+        "question": "AI helps email providers block 'Phishing' emails. Phishing is:",
+        "choices": [
+            "Going fishing on a boat",
+            "Scam emails trying to steal your password",
+            "Deleting old emails",
+            "Sending photos"
+        ],
+        "ans_idx": 1,
+        "justification": "Phishing involves deceptive emails aiming to trick users into revealing sensitive information."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Manufacturing",
+            "Quality"
+        ],
+        "question": "Cameras on factory assembly lines use AI to:",
+        "choices": [
+            "Take selfies of workers",
+            "Spot defects or broken parts in products",
+            "Watch movies",
+            "Turn off the lights"
+        ],
+        "ans_idx": 1,
+        "justification": "Visual inspection systems use AI to detect manufacturing defects faster and more accurately than humans."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Music",
+            "Composition"
+        ],
+        "question": "AI can now compose original music tracks in different styles like Jazz or Pop.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Generative AI models can compose music by learning patterns from vast audio datasets."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Smart Cities",
+            "Waste"
+        ],
+        "question": "In a Smart City, AI sensors in trash cans can tell garbage trucks:",
+        "choices": [
+            "Jokes",
+            "When they are full and need to be emptied",
+            "What is inside",
+            "Nothing"
+        ],
+        "ans_idx": 1,
+        "justification": "Smart waste management optimizes collection routes based on fill-levels, saving fuel and time."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Applications",
+            "Law",
+            "Contracts"
+        ],
+        "question": "Lawyers use AI to quickly scan thousands of ________ to find important clauses.",
+        "choices": [
+            "Photos",
+            "Contracts",
+            "Recipes",
+            "Shoes"
+        ],
+        "ans_idx": 1,
+        "justification": "Legal AI tools review contracts and legal documents to extract key information and risks."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Customer Service",
+            "Support"
+        ],
+        "question": "When you call a company and talk to a robot that understands what you say, it is an:",
+        "choices": [
+            "IVR (Interactive Voice Response) with AI",
+            "Answering Machine",
+            "Radio",
+            "Prank Call"
+        ],
+        "ans_idx": 0,
+        "justification": "Modern IVR systems use conversational AI to understand and resolve customer queries."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Fashion",
+            "Design"
+        ],
+        "question": "Fashion brands use AI to predict upcoming trends and design new clothes.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "AI analyzes social media and sales data to forecast fashion trends."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Applications",
+            "Logistics",
+            "Delivery"
+        ],
+        "question": "Delivery companies use AI to:",
+        "choices": [
+            "Drive slow",
+            "Calculate the most efficient route for drivers to save gas",
+            "Lose packages",
+            "Paint trucks"
+        ],
+        "ans_idx": 1,
+        "justification": "Route optimization algorithms save costs and improve delivery times."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Applications",
+            "Personal",
+            "Assistants"
+        ],
+        "question": "Siri and Alexa are examples of Personal ________ Assistants.",
+        "choices": [
+            "Shopping",
+            "Digital",
+            "Driving",
+            "Cooking"
+        ],
+        "ans_idx": 1,
+        "justification": "PDAs or Virtual Digital Assistants help with daily tasks."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Applications",
+            "Journalism",
+            "News"
+        ],
+        "question": "Automated Journalism uses AI to write simple news reports on topics like:",
+        "choices": [
+            "Complex political opinions",
+            "Sports scores and stock market updates",
+            "Love letters",
+            "Novels"
+        ],
+        "ans_idx": 1,
+        "justification": "AI is widely used to generate routine reports based on structured data (sports, finance)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Logic",
+            "Algorithm",
+            "Sorting"
+        ],
+        "question": "If you have a deck of cards and you want to put them in order from 1 to 10, the step-by-step method you use is called:",
+        "choices": [
+            "A Wish",
+            "A Sorting Algorithm",
+            "A Card Trick",
+            "A Shuffle"
+        ],
+        "ans_idx": 1,
+        "justification": "Sorting algorithms (like Bubble Sort or Merge Sort) are set procedures for ordering items."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Binary",
+            "Data"
+        ],
+        "question": "Computers ultimately only understand two numbers, 0 and 1. This system is called ________ Code.",
+        "choices": [
+            "Morse",
+            "Binary",
+            "Secret",
+            "Decimal"
+        ],
+        "ans_idx": 1,
+        "justification": "Binary code represents text, computer processor instructions, or any other data using a two-symbol system."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity",
+            "Password",
+            "Safety"
+        ],
+        "question": "Which of these is the STRONGEST password?",
+        "choices": [
+            "123456",
+            "password",
+            "Tr0ub4dor&3",
+            "myname"
+        ],
+        "ans_idx": 2,
+        "justification": "Strong passwords use a mix of uppercase, lowercase, numbers, and symbols and are not easily guessable words."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "Malware",
+            "Virus"
+        ],
+        "question": "A computer virus is a biological germ that makes your laptop sneeze.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "A computer virus is a malicious software program loaded onto a user's computer without the user's knowledge."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Flowchart",
+            "Diagram"
+        ],
+        "question": "A diagram that uses shapes and arrows to show the steps of a process or algorithm is called a:",
+        "choices": [
+            "Flowchart",
+            "Pie Chart",
+            "Painting",
+            "Map"
+        ],
+        "ans_idx": 0,
+        "justification": "Flowcharts graphically represent the flow of data or steps in an algorithm."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "Hacking",
+            "White Hat"
+        ],
+        "question": "A ________ Hat Hacker is a 'good guy' who hacks systems to find legitimate security holes to fix them.",
+        "choices": [
+            "Black",
+            "White",
+            "Red",
+            "Blue"
+        ],
+        "ans_idx": 1,
+        "justification": "White Hat hackers maximize security by finding vulnerabilities before bad guys do."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Logic",
+            "Boolean",
+            "Operators"
+        ],
+        "question": "In logic, if A is True and B is False, what is 'A AND B'?",
+        "choices": [
+            "True",
+            "False",
+            "Maybe",
+            "Both"
+        ],
+        "ans_idx": 1,
+        "justification": "The AND operator returns True only if BOTH operands are True."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "Identity",
+            "MFA"
+        ],
+        "question": "2-Factor Authentication (2FA) is safer because:",
+        "choices": [
+            "It requires TWO passwords",
+            "It requires a password AND something else (like a code sent to your phone)",
+            "It takes twice as long",
+            "It is free"
+        ],
+        "ans_idx": 1,
+        "justification": "MFA adds a layer of security by requiring two different types of identification."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Infinite Loop",
+            "Bug"
+        ],
+        "question": "An 'Infinite Loop' is a piece of code that keeps running forever and never stops.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Infinite loops occur when the terminating condition of a loop is never met."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity",
+            "Social Engineering",
+            "People"
+        ],
+        "question": "Tricking a person into giving away their password by pretending to be IT support is called:",
+        "choices": [
+            "Social Engineering",
+            "Hacking",
+            "Coding",
+            "Debugging"
+        ],
+        "ans_idx": 0,
+        "justification": "Social engineering relies on manipulating people rather than technical hacking."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Logic",
+            "Encryption",
+            "Secret"
+        ],
+        "question": "Scrambling data so that only people with a secret key can read it is called ________.",
+        "choices": [
+            "Deleting",
+            "Encryption",
+            "Painting",
+            "Sorting"
+        ],
+        "ans_idx": 1,
+        "justification": "Encryption converts information into a secret code to prevent unauthorized access."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "VPN",
+            "Privacy"
+        ],
+        "question": "What does a VPN (Virtual Private Network) do?",
+        "choices": [
+            "Speeds up your internet",
+            "Hides your location and encrypts your internet traffic",
+            "Downloads movies",
+            "Blocks ads"
+        ],
+        "ans_idx": 1,
+        "justification": "VPNs create a secure, encrypted tunnel for your data and mask your IP address."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Logic",
+            "Recursion",
+            "Programming"
+        ],
+        "question": "When a function calls ITSELF in order to solve a problem, it is called:",
+        "choices": [
+            "Repetition",
+            "Recursion",
+            "Reflection",
+            "Rejection"
+        ],
+        "ans_idx": 1,
+        "justification": "Recursion is a method where the solution to a problem depends on solutions to smaller instances of the same problem."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity",
+            "Wi-Fi",
+            "Public"
+        ],
+        "question": "It is perfectly safe to do your online banking on free public Wi-Fi at a coffee shop without a VPN.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Public Wi-Fi is often insecure, allowing hackers to potentially intercept sensitive data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Debugging",
+            "History"
+        ],
+        "question": "The first computer 'Bug' was literally:",
+        "choices": [
+            "A spider",
+            "A moth stuck in a relay",
+            "A fly",
+            "A worm"
+        ],
+        "ans_idx": 1,
+        "justification": "In 1947, Grace Hopper found a moth trapped in a relay of the Harvard Mark II computer."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "Firewall",
+            "Defense"
+        ],
+        "question": "A ________ acts like a security guard barrier between your computer and the internet.",
+        "choices": [
+            "Door",
+            "Firewall",
+            "Window",
+            "Roof"
+        ],
+        "ans_idx": 1,
+        "justification": "A firewall monitors and controls incoming and outgoing network traffic."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Optimization",
+            "Efficiency"
+        ],
+        "question": "If you want to find the fastest way home during traffic, you want an algorithm that is:",
+        "choices": [
+            "Creative",
+            "Optimized",
+            "Funny",
+            "Slow"
+        ],
+        "ans_idx": 1,
+        "justification": "Optimization involves selecting the best element (shortest path) from a set of available alternatives."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Cybersecurity",
+            "Ransomware",
+            "Attack"
+        ],
+        "question": "Malware that locks your files and demands money to unlock them is called:",
+        "choices": [
+            "Ransomware",
+            "Spyware",
+            "Adware",
+            "Freeware"
+        ],
+        "ans_idx": 0,
+        "justification": "Ransomware encrypts a victim's files, dealing payment for the decryption key."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Deterministic",
+            "Predictable"
+        ],
+        "question": "A 'Deterministic' algorithm will always produce the exact same output if given the same input.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Deterministic means there is no randomness; the process is fully predictable."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "Updates",
+            "Patching"
+        ],
+        "question": "Why should you update your phone or computer software when it asks you to?",
+        "choices": [
+            "To change the colors",
+            "To fix security holes (patches) and keep it safe",
+            "To make it slower",
+            "To use more battery"
+        ],
+        "ans_idx": 1,
+        "justification": "Software updates often contain critical security patches to protect against new threats."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Logic",
+            "Abstraction",
+            "Complexity"
+        ],
+        "question": "Hiding complex details behind a simple interface (like a steering wheel hiding the car engine) is called ________.",
+        "choices": [
+            "Hiding",
+            "Abstraction",
+            "Lying",
+            "Decoration"
+        ],
+        "ans_idx": 1,
+        "justification": "Abstraction is a fundamental concept in CS, managing complexity by hiding details."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Cybersecurity",
+            "Botnets",
+            "Zombies"
+        ],
+        "question": "A group of hacked computers controlled by one attacker to attack a website is called a:",
+        "choices": [
+            "Robot Army",
+            "Botnet",
+            "Co-op",
+            "Party"
+        ],
+        "ans_idx": 1,
+        "justification": "A Botnet is a network of compromised devices ('zombies') controlled by a botmaster."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "Logic",
+            "Complexity",
+            "Big O"
+        ],
+        "question": "Computer scientists measure how fast an algorithm is using something called:",
+        "choices": [
+            "Big O Notation",
+            "Fast Notation",
+            "Speedometer",
+            "Stopwatch"
+        ],
+        "ans_idx": 0,
+        "justification": "Big O notation describes the performance or complexity of an algorithm."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "Cybersecurity",
+            "Backup",
+            "Data"
+        ],
+        "question": "Backing up your data means saving a copy of it in a second safe place.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Backups ensure data availability in case of original data loss."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "Logic",
+            "Conditional",
+            "Flow"
+        ],
+        "question": "In a flowchart, a Diamond shape usually represents:",
+        "choices": [
+            "Start/End",
+            "A Decision (Yes/No)",
+            "A Process",
+            "Input/Output"
+        ],
+        "ans_idx": 1,
+        "justification": "Diamond shapes in flowcharts are standard symbols for decisions."
+    }
+]

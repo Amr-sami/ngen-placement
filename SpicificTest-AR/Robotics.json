@@ -1,0 +1,3720 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "التعريف (Definition)",
+            "الوظيفة (Function)"
+        ],
+        "question": "ما هو الروبوت؟",
+        "choices": [
+            "صخرة سحرية",
+            "آلة يمكنها تنفيذ سلسلة معقدة من الإجراءات تلقائياً",
+            "شخص ببدلة معدنية",
+            "شخصية لعبة فيديو"
+        ],
+        "ans_idx": 1,
+        "justification": "الروبوت هو آلة قابلة للبرمجة مصممة لأداء المهام تلقائياً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الدورة (Cycle)",
+            "العملية (Process)"
+        ],
+        "question": "تتبع معظم الروبوتات حلقة بسيطة: استشعار -> تفكير -> ________.",
+        "choices": [
+            "نوم",
+            "تصرف (Act)",
+            "أكل",
+            "اختباء"
+        ],
+        "ans_idx": 1,
+        "justification": "دورة 'استشعار-تفكير-تصرف' هي العملية الأساسية للروبوتات: جمع البيانات، تقرير ما يجب فعله، ثم فعله."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المكونات (Components)",
+            "أجهزة الاستشعار (Sensors)"
+        ],
+        "question": "أي جزء من الروبوت يعمل مثل 'عينيه' أو 'أذنيه' لجمع المعلومات حول العالم؟",
+        "choices": [
+            "المحركات (Motors)",
+            "أجهزة الاستشعار (Sensors)",
+            "البطاريات (Batteries)",
+            "العجلات (Wheels)"
+        ],
+        "ans_idx": 1,
+        "justification": "تسمح أجهزة الاستشعار (Sensors) (مثل الكاميرات أو الميكروفونات أو كاشفات المسافة) للروبوت بإدراك بيئته."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الطاقة (Power)",
+            "الطاقة (Energy)"
+        ],
+        "question": "تحتاج الروبوتات إلى مصدر طاقة، مثل البطارية أو القابس، لتعمل.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "مثل جميع الأجهزة الإلكترونية، تتطلب الروبوتات طاقة كهربائية لتشغيل محركاتها وأجهزة الكمبيوتر الخاصة بها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الحركة (Movement)",
+            "المشغلات (Actuators)"
+        ],
+        "question": "ما المكون الذي يعمل مثل 'عضلات' الروبوت، مما يسمح له بتحريك أذرعه أو تدوير عجلاته؟",
+        "choices": [
+            "المستشعر (The Sensor)",
+            "السلك (The Wire)",
+            "المحرك / المشغل (The Motor / Actuator)",
+            "الكاميرا (The Camera)"
+        ],
+        "ans_idx": 2,
+        "justification": "المحركات والمشغلات (Actuators) تحول الطاقة الكهربائية إلى حركة فيزيائية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "التحكم (Control)",
+            "الدماغ (Brain)"
+        ],
+        "question": "أي جزء يعتبر 'دماغ' الروبوت حيث يتم تشغيل الكود؟",
+        "choices": [
+            "الإطار (The Tire)",
+            "المتحكم الدقيق / المعالج (The Microcontroller / Processor)",
+            "البطارية (The Battery)",
+            "الهيكل (The Frame)"
+        ],
+        "ans_idx": 1,
+        "justification": "يقوم المتحكم الدقيق (مثل Arduino أو Brain brick) بمعالجة المعلومات وإرسال الأوامر إلى المحركات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الهيكل (Chassis)",
+            "البنية (Structure)"
+        ],
+        "question": "الجسم المادي أو الإطار الذي يجمع كل أجزاء الروبوت معاً يسمى ________.",
+        "choices": [
+            "الجلد (Skin)",
+            "الهيكل (Chassis)",
+            "الملابس (Clothes)",
+            "المنزل (House)"
+        ],
+        "ans_idx": 1,
+        "justification": "يوفر الهيكل (Chassis) الدعم الهيكلي لمكونات الروبوت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "أمثلة (Examples)",
+            "منزلي (Household)"
+        ],
+        "question": "أي مما يلي هو روبوت منزلي شائع يستخدم للتنظيف؟",
+        "choices": [
+            "محمصة خبز",
+            "روبوت المكنسة الكهربائية (مثل Roomba)",
+            "تلفزيون",
+            "مروحة سقف"
+        ],
+        "ans_idx": 1,
+        "justification": "روبوتات التنظيف هي روبوتات متنقلة مستقلة مصممة لتنظيف الأرضيات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الأنواع (Types)",
+            "شبيه البشر (Humanoid)"
+        ],
+        "question": "الروبوت 'شبيه البشر (Humanoid)' مصمم ليبدو ويتحرك مثل الإنسان.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "الروبوتات الشبيهة بالبشر (Humanoid) غالباً ما يكون لها رأس وجذع وذراعين وساقين لتقليد الشكل البشري."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "التحكم (Control)",
+            "التشغيل عن بعد (Teleoperation)"
+        ],
+        "question": "إذا كنت تقود سيارة روبوت باستخدام عصا تحكم أو وحدة تحكم ألعاب، فإن الروبوت يكون:",
+        "choices": [
+            "مستقل (Autonomous)",
+            "يتم التحكم به عن بعد (Remote Controlled)",
+            "مكسور",
+            "نائم"
+        ],
+        "ans_idx": 1,
+        "justification": "التحكم عن بعد (Teleoperation) يعني أن الإنسان يوجه حركات الروبوت يدوياً في الوقت الفعلي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "التحكم (Control)",
+            "مستقل (Autonomous)"
+        ],
+        "question": "الروبوت الذي يمكنه اتخاذ قراراته الخاصة والتحرك دون مساعدة بشرية يسمى ________.",
+        "choices": [
+            "يدوي (Manual)",
+            "مستقل (Autonomous)",
+            "سلكي (Wired)",
+            "لعبة (Toy)"
+        ],
+        "ans_idx": 1,
+        "justification": "الروبوتات المستقلة (Autonomous) تؤدي المهام بدرجة عالية من الاستقلالية عن التدخل البشري."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الاستكشاف (Exploration)",
+            "المريخ (Mars)"
+        ],
+        "question": "ما هي الروبوتات الشهيرة التي تستكشف سطح المريخ الآن؟",
+        "choices": [
+            "المركبات الجوالة (Rovers)",
+            "الغواصات",
+            "القوارب",
+            "الطائرات الورقية"
+        ],
+        "ans_idx": 0,
+        "justification": "مركبات المريخ الجوالة (Rovers) (مثل Perseverance و Curiosity) هي روبوتات بعجلات مصممة لاستكشاف سطح المريخ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "السلامة (Safety)",
+            "طوارئ (Emergency)"
+        ],
+        "question": "تحتوي معظم الروبوتات الصناعية الكبيرة على زر أحمر كبير يستخدم لإيقاف كل شيء فوراً إذا حدث خطأ ما. ماذا يسمى؟",
+        "choices": [
+            "زر الانطلاق",
+            "إيقاف الطوارئ (E-Stop)",
+            "الزر السهل",
+            "رفع الطاقة"
+        ],
+        "ans_idx": 1,
+        "justification": "إيقاف الطوارئ (E-Stop) هو آلية أمان لإغلاق الآلات فوراً في حالة الطوارئ."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "أجهزة الاستشعار (Sensors)",
+            "اللمس (Touch)"
+        ],
+        "question": "'مستشعر الاصطدام (Bumper Sensor)' في الروبوت يخبره عندما يصطدم بجدار.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "مستشعرات الاصطدام هي مستشعرات لمسية تعمل عند ملامستها جسدياً لشيء ما."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "طائرات بدون طيار (Drones)",
+            "طيران (Flight)"
+        ],
+        "question": "الروبوت الطائر يسمى عادة:",
+        "choices": [
+            "سيارة",
+            "طائرة بدون طيار (Drone / UAV)",
+            "غواصة",
+            "دبابة"
+        ],
+        "ans_idx": 1,
+        "justification": "الطائرات بدون طيار (Drones) هي روبوتات مصممة للطيران."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "البرمجة (Programming)",
+            "الكود (Code)"
+        ],
+        "question": "الروبوتات لا تعرف ماذا تفعل بمفردها. يجب على البشر كتابة ________ لإعطائها التعليمات.",
+        "choices": [
+            "رسائل",
+            "كود / برامج (Code / Programs)",
+            "أغاني",
+            "كتب"
+        ],
+        "ans_idx": 1,
+        "justification": "يوفر كود البرمجة المنطق والتعليمات خطوة بخطوة لمعالج الروبوت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المخرجات (Output)",
+            "الصوت (Sound)"
+        ],
+        "question": "إذا أراد الروبوت قول 'مرحباً' أو إصدار صوت صفير، فإنه يستخدم ________.",
+        "choices": [
+            "ميكروفون",
+            "مكبر صوت (Speaker)",
+            "كاميرا",
+            "عجلة"
+        ],
+        "ans_idx": 1,
+        "justification": "مكبرات الصوت هي أجهزة إخراج تستخدم لإنتاج الصوت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المهام (Tasks)",
+            "الملاءمة (Suitability)"
+        ],
+        "question": "الروبوتات هي الأفضل في القيام بالوظائف التي تكون:",
+        "choices": [
+            "ممتعة ومبدعة",
+            "مملة، قذرة، أو خطرة (Dull, Dirty, or Dangerous)",
+            "عاطفية",
+            "فنية"
+        ],
+        "ans_idx": 1,
+        "justification": "'3 Ds للروبوتات' هي المهام المملة (Dull) والقذرة (Dirty) والخطرة (Dangerous)، والتي تعتبر مثالية للأتمتة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "أجهزة الاستشعار (Sensors)",
+            "فوق صوتي (Ultrasonic)"
+        ],
+        "question": "تستخدم بعض الروبوتات مستشعرات 'فوق صوتية (Ultrasonic)' (مثل الخفافيش) لقياس المسافة باستخدام الموجات الصوتية.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تصدر المستشعرات فوق الصوتية (Ultrasonic) موجات صوتية وتقيس الوقت الذي يستغرقه الصدى للعودة لحساب المسافة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المخرجات (Output)",
+            "الضوء (Light)"
+        ],
+        "question": "ما المكون الصغير الذي غالباً ما يستخدم في الروبوتات للإضاءة أو الإشارة إلى حالة (مثل ضوء طاقة أحمر)؟",
+        "choices": [
+            "LED",
+            "محرك",
+            "مفتاح",
+            "بطارية"
+        ],
+        "ans_idx": 0,
+        "justification": "مصابيح LED (الثنائيات الباعثة للضوء) هي أضواء صغيرة وفعالة تستخدم للمؤشرات والشاشات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المدخلات مقابل المخرجات (Input vs Output)",
+            "التصنيف (Categorization)"
+        ],
+        "question": "هل 'المحرك' جهاز إدخال أم جهاز إخراج؟",
+        "choices": [
+            "إدخال (يجمع المعلومات)",
+            "إخراج (يقوم بعمل)",
+            "لا هذا ولا ذاك",
+            "كلاهما"
+        ],
+        "ans_idx": 1,
+        "justification": "المحركات هي أجهزة إخراج لأنها تتلقى أوامر من الكمبيوتر لأداء عمل مادي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الحركة (Locomotion)",
+            "التضاريس (Terrain)"
+        ],
+        "question": "للتضاريس الوعرة مثل الصخور أو الرمل، غالباً ما تستخدم الروبوتات ________ الدبابات بدلاً من العجلات العادية.",
+        "choices": [
+            "أجنحة",
+            "جنازير / مسارات (Treads / Tracks)",
+            "مراوح",
+            "زلاجات"
+        ],
+        "ans_idx": 1,
+        "justification": "جنازير الدبابات (أو المسارات المستمرة) توفر ثباتاً وتوزيعاً للوزن بشكل أفضل على الأرض غير المستوية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "التاريخ (History)",
+            "دا فينشي (Da Vinci)"
+        ],
+        "question": "صواب أم خطأ: فكرة الروبوتات جديدة جداً وبدأت فقط في عام 2000.",
+        "choices": [
+            "صواب",
+            "خطأ (تخيل الناس رجالاً ميكانيكيين لمئات السنين)",
+            "صواب (اخترعها ستيف جوبز)",
+            "صواب (اخترعها إيلون ماسك)"
+        ],
+        "ans_idx": 1,
+        "justification": "يعود مفهوم الآلات الذاتية والرجال الميكانيكيين إلى التاريخ القديم ومخترعين مثل ليوناردو دا فينشي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الأسلاك (Wiring)",
+            "التوصيلات (Connections)"
+        ],
+        "question": "ماذا نستخدم لتوصيل البطارية بالمحرك حتى تتدفق الكهرباء؟",
+        "choices": [
+            "خيط",
+            "أسلاك (Wires)",
+            "غراء",
+            "شريط لاصق"
+        ],
+        "ans_idx": 1,
+        "justification": "مطلوب أسلاك (Wires) موصلة لإنشاء دائرة كهربائية بين المكونات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "البيئة (Environment)",
+            "الماء (Water)"
+        ],
+        "question": "يمكنك عادة إلقاء روبوت عادي في حمام السباحة، وسيعمل بشكل جيد.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "معظم الإلكترونيات تتعرض لماس كهربائي في الماء. تحتاج الروبوتات إلى عزل خاص ضد الماء (تصنيف IP) للبقاء تحت الماء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المصطلحات (Terminology)",
+            "العامية (Slang)"
+        ],
+        "question": "كلمة 'Bot' هي مجرد طريقة قصيرة لقول ________.",
+        "choices": [
+            "أسفل (Bottom)",
+            "زجاجة (Bottle)",
+            "روبوت (Robot)",
+            "صندوق (Box)"
+        ],
+        "ans_idx": 2,
+        "justification": "'Bot' هو اختصار شائع لـ Robot، يستخدم في عبارات مثل 'Chatbot' أو 'Game Bot'."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "المستجيب النهائي (End Effector)",
+            "القابض (Gripper)"
+        ],
+        "question": "'اليد' في نهاية ذراع الروبوت التي تمسك بالأشياء تسمى غالباً القابض (Gripper) أو المخلب (Claw).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "المستجيبات النهائية (End effectors) هي الأجهزة الموجودة في نهاية الذراع الآلية، والقابض هو نوع شائع مصمم لحمل الأشياء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الحركة (Locomotion)",
+            "الكفاءة (Efficiency)"
+        ],
+        "question": "إذا كان الروبوت بحاجة للتحرك بسرعة على أرضية مسطحة، أيهما أفضل؟",
+        "choices": [
+            "ساقان (Two Legs)",
+            "أربع سيقان (Four Legs)",
+            "عجلات (Wheels)",
+            "الزحف مثل الثعبان (Slithering like a snake)"
+        ],
+        "ans_idx": 2,
+        "justification": "العجلات (Wheels) أبسط ميكانيكياً وأكثر كفاءة في استهلاك الطاقة للحركة على الأسطح المسطحة والصلبة مقارنة بالسيقان."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "الإدخال (Input)",
+            "زر (Button)"
+        ],
+        "question": "مفتاح بسيط تضغطه بإصبعك لإخبار الروبوت بالبدء يسمى ________.",
+        "choices": [
+            "زر (Button)",
+            "قرص (Dial)",
+            "ضوء (Light)",
+            "محرك (Motor)"
+        ],
+        "ans_idx": 0,
+        "justification": "زر الضغط (Push-button) هو مستشعر لمسي (Tactile Sensor) بسيط يستخدم لإرسال إشارة عند ضغطه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "طاقة (Power)",
+            "إعادة الشحن (Recharging)"
+        ],
+        "question": "عندما تنفد طاقة بطارية الروبوت، ماذا يحتاج أن يفعل؟",
+        "choices": [
+            "تناول شطيرة",
+            "إعادة الشحن (Recharge)",
+            "النوم لمدة 8 ساعات",
+            "شرب الماء"
+        ],
+        "ans_idx": 1,
+        "justification": "إعادة الشحن (Recharging) تستعيد الطاقة الكيميائية في البطارية لكي يتمكن الروبوت من العمل مرة أخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "تروس (Gears)",
+            "السرعة مقابل العزم (Speed vs Torque)"
+        ],
+        "question": "إذا قام ترس (Gear) كبير بتدوير ترس (Gear) صغير، ماذا يحدث للترس الصغير؟",
+        "choices": [
+            "يدور أبطأ",
+            "يدور أسرع",
+            "يدور بنفس السرعة",
+            "يتوقف"
+        ],
+        "ans_idx": 1,
+        "justification": "نسب التروس (Gear Ratios): الترس الكبير الذي يقود ترساً صغيراً يزيد السرعة (Speed) ولكنه يقلل العزم (Torque) أو القوة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "متتبع الخط (Line Follower)",
+            "التباين (Contrast)"
+        ],
+        "question": "يستخدم روبوت 'متتبع الخط (Line Follower)' عادةً مستشعر ضوء (Light Sensor) (أو أشعة تحت حمراء) لرؤية الفرق بين خط داكن وأرضية فاتحة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تتبع الخط يعمل عن طريق كشف التباين (Contrast) في الضوء المنعكس بين الخط (مثل شريط أسود) والسطح."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "منطق (Logic)",
+            "حلقة (Loop)"
+        ],
+        "question": "في كود الروبوت، إذا كنت تريد أن يستمر الروبوت في القيادة للأمام إلى الأبد، تضع أمر 'القيادة (Drive)' داخل:",
+        "choices": [
+            "كتلة التوقف (Stop Block)",
+            "حلقة / كتلة إلى الأبد (Loop / Forever Block)",
+            "جملة شرطية (If Statement)",
+            "متغير (Variable)"
+        ],
+        "ans_idx": 1,
+        "justification": "الحلقة (Loop) (غالباً ما تسمى 'إلى الأبد' في البرمجة بالكائنات) تكرر التعليمات الموجودة بداخلها إلى ما لا نهاية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "ليدار (Lidar)",
+            "ليزر (Laser)"
+        ],
+        "question": "مستشعر متطور يدور ويطلق أشعة الليزر لعمل خريطة ثلاثية الأبعاد (3D) للغرفة يسمى ________.",
+        "choices": [
+            "رادار (Radar)",
+            "ليدار (LIDAR)",
+            "سونار (Sonar)",
+            "نظام تحديد المواقع (GPS)"
+        ],
+        "ans_idx": 1,
+        "justification": "ليدار (LIDAR) يرمز إلى كشف الضوء وتحديد المدى (Light Detection and Ranging)، ويستخدم نبضات الليزر لرسم خرائط للبيئات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "محركات (Motors)",
+            "سيرفو (Servo)"
+        ],
+        "question": "أي نوع من المحركات هو الأفضل لذراع الروبوت لأنك تستطيع أمره بالدوران لزاوية محددة (مثل 'در لزاوية 90 درجة')؟",
+        "choices": [
+            "محرك تيار مستمر (DC Motor)",
+            "محرك سيرفو (Servo Motor)",
+            "محرك مروحة (Fan Motor)",
+            "محرك احتراق (Engine)"
+        ],
+        "ans_idx": 1,
+        "justification": "محركات السيرفو (Servo Motors) تحتوي على تغذية راجعة مدمجة تسمح بالتحكم الدقيق في الوضع الزاوي، عكس محركات التيار المستمر (DC Motors) القياسية التي تدور فقط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "فيزياء الروبوتات (Robotics Physics)",
+            "مركز الجاذبية (Center of Gravity)",
+            "الاستقرار (Stability)"
+        ],
+        "question": "لماذا نضع عادة البطاريات الثقيلة في الجزء السفلي من الروبوت؟",
+        "choices": [
+            "لإخفائها",
+            "لخفض مركز الجاذبية (Center of Gravity) حتى لا ينقلب الروبوت",
+            "لأنها قبيحة",
+            "لإبقائها دافئة"
+        ],
+        "ans_idx": 1,
+        "justification": "انخفاض مركز الجاذبية (Center of Gravity) يزيد من الاستقرار (Stability)، مما يمنع الروبوت من السقوط عند التحرك أو التوقف."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "تصحيح الأخطاء (Debugging)",
+            "أخطاء (Errors)"
+        ],
+        "question": "إذا انعطف الروبوت لليسار بينما ينبغي أن ينعطف لليمين، فإن عملية إيجاد وإصلاح الخطأ تسمى 'تصحيح الأخطاء (Debugging)'.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تصحيح الأخطاء (Debugging) هو المصطلح القياسي لتحديد وحل الأخطاء في سلوك البرمجيات أو الأجهزة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "أشعة تحت حمراء (Infrared)",
+            "تحكم عن بعد (Remote)"
+        ],
+        "question": "أجهزة التحكم في التلفاز والعديد من الروبوتات البسيطة تتواصل باستخدام ضوء غير مرئي يسمى:",
+        "choices": [
+            "أشعة فوق بنفسجية (Ultraviolet - UV)",
+            "أشعة تحت حمراء (Infrared - IR)",
+            "أشعة سينية (X-Ray)",
+            "أشعة جاما (Gamma Ray)"
+        ],
+        "ans_idx": 1,
+        "justification": "الأشعة تحت الحمراء (Infrared - IR) تستخدم عادة للاتصال اللاسلكي قصير المدى مثل أجهزة التحكم عن بعد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "منطق الروبوتات (Robotics Logic)",
+            "جمل شرطية (Conditionals)",
+            "إذا-وإلا (If-Else)"
+        ],
+        "question": "لجعل الروبوت يتجنب الجدار، تستخدم منطق: '________ المستشعر يرى الجدار إذن انعطف يساراً'.",
+        "choices": [
+            "عندما (WHEN)",
+            "إذا (IF)",
+            "حلقة (LOOP)",
+            "و (AND)"
+        ],
+        "ans_idx": 1,
+        "justification": "جملة 'إذا (IF)' تتحقق من شرط (هل الجدار موجود؟). إذا كان صحيحاً، فإنها تنفذ الإجراء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "درجات الحرية (Degrees of Freedom)",
+            "الحركة (Movement)"
+        ],
+        "question": "ذراع الروبوت التي يمكن أن تنحني عند الكتف، والمرفق، والمعصم يقال أن لديها عدة:",
+        "choices": [
+            "درجات حرية (Degrees of Freedom - DOF)",
+            "درجات حرارة",
+            "شهادات جامعية",
+            "درجات زوايا"
+        ],
+        "ans_idx": 0,
+        "justification": "درجات الحرية (Degrees of Freedom - DOF) تشير إلى عدد الطرق المستقلة التي يمكن للروبوت أو المفصل التحرك بها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "دائرة (Circuit)",
+            "مفتاح (Switch)"
+        ],
+        "question": "في الدائرة (Circuit)، يقوم المفتاح بتشغيل الضوء (أو المحرك) عن طريق:",
+        "choices": [
+            "إغلاق الفجوة لكي تتدفق الكهرباء",
+            "فتح الفجوة لإيقاف الكهرباء",
+            "إضافة المزيد من الأسلاك",
+            "تبريد البطارية"
+        ],
+        "ans_idx": 0,
+        "justification": "الدائرة المغلقة تسمح للتيار بالتدفق. المفتاح 'يغلق' حلقة الدائرة لتشغيل الجهاز."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "هيدروليك (Hydraulics)",
+            "سائل (Fluid)"
+        ],
+        "question": "الروبوتات الهيدروليكية (Hydraulic) تستخدم سائلاً (زيت أو ماء) تحت ضغط لتحريك الأشياء الثقيلة، بينما الروبوتات الكهربائية تستخدم المحركات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الأنظمة الهيدروليكية (Hydraulics) تستخدم سائلاً مضغوطاً لتوليد القوة، وغالباً ما تستخدم في الآلات الثقيلة والروبوتات الكبيرة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "خوارزمية (Algorithm)",
+            "تخطيط (Planning)"
+        ],
+        "question": "خطة خطوة بخطوة تكتبها قبل البرمجة (مثل 'تحرك للأمام 10 خطوات، انعطف يميناً') تسمى:",
+        "choices": [
+            "خوارزمية (Algorithm)",
+            "هواية (Antenna)",
+            "جبر (Algebra)",
+            "اسم مستعار (Alias)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخوارزمية (Algorithm) هي تسلسل من تعليمات محددة جيداً لحل مشكلة معينة أو أداء مهمة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "متحكم دقيق (Microcontroller)",
+            "منافذ (Ports)"
+        ],
+        "question": "في عقل الروبوت (مثل Micro:bit)، الأماكن التي تقوم بتوصيل المستشعرات والمحركات بها تسمى ________.",
+        "choices": [
+            "أبواب",
+            "منافذ / دبابيس (Ports / Pins)",
+            "نوافذ",
+            "مفاتيح"
+        ],
+        "ans_idx": 1,
+        "justification": "المنافذ أو الدبابيس (Ports or Pins) (دبابيس الإدخال/الإخراج) هي الواجهات المادية لتوصيل المكونات بالمتحكم الدقيق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "مقياس جهد (Potentiometer)",
+            "مقبض (Knob)"
+        ],
+        "question": "ما نوع المستشعر الذي هو عبارة عن مقبض أو قرص يمكنك تدويره لتغيير سرعة الروبوت؟ (مثل قرص الصوت).",
+        "choices": [
+            "زر (Button)",
+            "مقياس جهد (Potentiometer)",
+            "صمام ثنائي باعث للضوء (LED)",
+            "طنان (Buzzer)"
+        ],
+        "ans_idx": 1,
+        "justification": "مقياس الجهد (Potentiometer) هو مقاومة متغيرة توفر قيم جهد مختلفة بناءً على مقدار تدويرها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "فيزياء الروبوتات (Robotics Physics)",
+            "احتكاك (Friction)",
+            "تماسك (Traction)"
+        ],
+        "question": "لماذا تحتوي عجلات الروبوت عادة على إطارات مطاطية بدلاً من البلاستيك الأملس؟",
+        "choices": [
+            "لتبدو رائعة",
+            "لخلق احتكاك (Friction) حتى لا تنزلق",
+            "لجعلها ترتد",
+            "المطاط أرخص"
+        ],
+        "ans_idx": 1,
+        "justification": "الاحتكاك (Friction) (التماسك) ضروري للعجلات للإمساك بالأرض ودفع الروبوت للأمام دون الدوران في مكانه."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "منطق الروبوتات (Robotics Logic)",
+            "منطق و (AND Logic)",
+            "شروط (Conditions)"
+        ],
+        "question": "إذا استخدمت منطق 'و (AND)' (المستشعر أ و المستشعر ب)، سيعمل الروبوت إذا تم تفعيل مستشعر واحد فقط.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "منطق 'و (AND)' يتطلب أن يكون *كلا* الشرطين صحيحين (True) في نفس الوقت. منطق 'أو (OR)' سيعمل إذا تم تفعيل واحد فقط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تخطيط الروبوتات (Robotics Planning)",
+            "كود زائف (Pseudocode)",
+            "تصميم (Design)"
+        ],
+        "question": "كتابة الكود الخاص بك بلغة إنجليزية بسيطة أولاً (مثل 'إذا ضربت الجدار، تراجع') قبل كتابة الكود الحقيقي تسمى:",
+        "choices": [
+            "كود مزيف",
+            "كود زائف (Pseudocode)",
+            "كود صعب",
+            "كود سري"
+        ],
+        "ans_idx": 1,
+        "justification": "الكود الزائف (Pseudocode) هو وصف مبسط ومقروء للبشر لما يجب أن يفعله برنامج الكمبيوتر أو الخوارزمية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "آلات بسيطة (Simple Machines)",
+            "رافعة (Lever)"
+        ],
+        "question": "ذراع الروبوت غالباً ما تعمل مثل الأرجوحة (See-saw). ما هي الآلة البسيطة هذه؟",
+        "choices": [
+            "بكرة (Pulley)",
+            "رافعة (Lever)",
+            "إسفين (Wedge)",
+            "برغي (Screw)"
+        ],
+        "ans_idx": 1,
+        "justification": "الرافعة (Lever) هي آلة بسيطة تتكون من عارضة ترتكز على مفصل ثابت (نقطة ارتكاز)، وتستخدم لرفع الأحمال."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تغذية راجعة للروبوتات (Robotics Feedback)",
+            "حلقة مغلقة (Closed Loop)",
+            "دقة (Accuracy)"
+        ],
+        "question": "الروبوت الذي يتحقق من مستشعراته لتصحيح مساره (مثل 'هل أنا بعيد جداً لليسار؟ انعطف يميناً') يستخدم:",
+        "choices": [
+            "حلقة تغذية راجعة (Feedback Loop)",
+            "غمامة عين",
+            "تخمين",
+            "مشي عشوائي"
+        ],
+        "ans_idx": 0,
+        "justification": "حلقة التغذية الراجعة (Feedback Loop) (التحكم بالحلقة المغلقة) تقارن باستمرار الحالة الحالية بالحالة المطلوبة وتقوم بالتصحيحات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "عزم (Torque)",
+            "قوة (Force)"
+        ],
+        "question": "إذا كان الروبوت بحاجة لرفع صخرة ثقيلة جداً، فإنه يحتاج إلى محركات ذات ________ عالٍ.",
+        "choices": [
+            "سرعة (Speed)",
+            "عزم (Torque)",
+            "لون",
+            "ضوضاء"
+        ],
+        "ans_idx": 1,
+        "justification": "العزم (Torque) هو القوة الدورانية المطلوبة لرفع أو تدوير الأشياء الثقيلة. المحركات ذات السرعة العالية غالباً ما يكون عزمها منخفضاً."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "معايرة (Calibration)",
+            "إعداد (Setup)"
+        ],
+        "question": "إذا كان مستشعر الضوء في الروبوت يقرأ '100' في غرفة مظلمة و '0' في غرفة مضيئة، فقد تحتاج إلى 'معايرته (Calibrate)' (إعادة ضبطه).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "المعايرة (Calibration) هي عملية ضبط الأداة لتقديم نتيجة لعينة ضمن نطاق مقبول."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "متحكم دقيق (Microcontroller)",
+            "عقل (Brain)"
+        ],
+        "question": "كمبيوتر صغير مشهور يستخدمه الطلاب لبناء الروبوتات يسمى ________ (يبدأ بحرف A).",
+        "choices": [
+            "أندرويد (Android)",
+            "أردوينو (Arduino)",
+            "أبل (Apple)",
+            "كائن فضائي (Alien)"
+        ],
+        "ans_idx": 1,
+        "justification": "أردوينو (Arduino) هو منصة إلكترونيات مفتوحة المصدر تعتمد على أجهزة وبرمجيات سهلة الاستخدام، وتستخدم على نطاق واسع في تعليم الروبوتات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "جيروسكوب (Gyroscope)",
+            "توازن (Balance)"
+        ],
+        "question": "أي مستشعر يساعد الروبوت في معرفة ما إذا كان يميل أو يسقط (مثل جهاز Segway)؟",
+        "choices": [
+            "مقياس حرارة (Thermometer)",
+            "جيروسكوب / مقياس تسارع (Gyroscope / Accelerometer)",
+            "ميكروفون",
+            "مستشعر ضوء"
+        ],
+        "ans_idx": 1,
+        "justification": "الجيروسكوبات (Gyroscopes) تقيس الاتجاه والسرعة الزاوية، مما يساعد الروبوتات في الحفاظ على التوازن."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "قطبية (Polarity)",
+            "بطاريات (Batteries)"
+        ],
+        "question": "البطاريات لها جانب موجب (+) وجانب سالب (-). ماذا يحدث إذا وضعتها بشكل معكوس؟",
+        "choices": [
+            "يعمل الروبوت بضعف السرعة",
+            "لا شيء يعمل، أو قد يدور المحرك للخلف",
+            "الروبوت يطير",
+            "تصبح مولداً"
+        ],
+        "ans_idx": 1,
+        "justification": "القطبية (Polarity) مهمة في دوائر التيار المستمر (DC). عكس القطبية عادة ما يوقف الدائرة عن العمل أو يعكس اتجاه المحركات البسيطة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "منطق الروبوتات (Robotics Logic)",
+            "متغيرات (Variables)",
+            "ذاكرة (Memory)"
+        ],
+        "question": "إذا كنت تريد أن يتذكر الروبوت عدد المرات التي اصطدم فيها بالجدار، تحتاج إلى استخدام:",
+        "choices": [
+            "متغير (Variable)",
+            "ملصق",
+            "عجلة",
+            "حلقة"
+        ],
+        "ans_idx": 0,
+        "justification": "المتغيرات (Variables) تستخدم في البرمجة لتخزين البيانات (مثل العد/النتيجة) التي يمكن أن تتغير أثناء تشغيل البرنامج."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "عجلات شاملة الاتجاه (Omni-wheels)",
+            "حركة (Movement)"
+        ],
+        "question": "العجلات شاملة الاتجاه (Omni-wheels) هي عجلات خاصة بكرات تسمح للروبوت بالانزلاق جانبياً دون الدوران.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "العجلات شاملة الاتجاه (Omni-wheels) (أو عجلات ميكانوم) تسمح بحركة هولونومية، مما يعني أن الروبوت يمكنه التحرك في أي اتجاه فوراً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "لوحة تجارب (Breadboard)",
+            "النماذج الأولية (Prototyping)"
+        ],
+        "question": "لوحة بلاستيكية بها ثقوب تستخدم لاختبار الدوائر دون لحام (لصق) الأسلاك تسمى:",
+        "choices": [
+            "لوحة تقطيع",
+            "لوحة تجارب (Breadboard)",
+            "لوحة ركوب أمواج",
+            "لوحة أم"
+        ],
+        "ans_idx": 1,
+        "justification": "لوحات التجارب (Breadboards) هي منصات قابلة لإعادة الاستخدام لبناء واختبار الدوائر الإلكترونية المؤقتة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "موجات فوق صوتية (Ultrasonic)",
+            "فيزياء (Physics)"
+        ],
+        "question": "يعمل المستشعر بالموجات فوق الصوتية (Ultrasonic) مثل تحديد الموقع بالصدى لدى أي حيوان؟",
+        "choices": [
+            "قطة",
+            "خفاش (Bat)",
+            "سمكة",
+            "طائر"
+        ],
+        "ans_idx": 1,
+        "justification": "الخفافيش تستخدم تحديد الموقع بالصدى (إرسال موجات صوتية والاستماع للصدى) للتنقل، وهو بالضبط كيف تعمل المستشعرات بالموجات فوق الصوتية (Ultrasonic)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "محركات (Motors)",
+            "دورة في الدقيقة (RPM)"
+        ],
+        "question": "سرعة المحرك تقاس بـ RPM، والتي ترمز إلى دورات لكل ________.",
+        "choices": [
+            "ميل",
+            "دقيقة (Minute)",
+            "متر",
+            "شهر"
+        ],
+        "ans_idx": 1,
+        "justification": "دورة في الدقيقة (RPM) تقيس عدد اللفات الكاملة (الدورات) التي يكملها عمود المحرك في دقيقة واحدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "صمام ثنائي باعث للضوء (LED)",
+            "سيقان (Legs)"
+        ],
+        "question": "ضوء الـ LED له ساقان (سلكان). إحداهما أطول من الأخرى. الساق الأطول تذهب عادة إلى:",
+        "choices": [
+            "الموجب (+) (Positive)",
+            "السالب (-) (Negative)",
+            "أي مكان",
+            "الأرضي (Ground)"
+        ],
+        "ans_idx": 0,
+        "justification": "الساق الأطول (الأنود) تتصل بالجانب الموجب؛ الساق الأقصر (الكاثود) تتصل بالجانب السالب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "انتظار (Wait)",
+            "توقيت (Timing)"
+        ],
+        "question": "لماذا نضع أحياناً كتلة 'انتظر ثانية واحدة (Wait 1 Second)' في الكود الخاص بنا؟",
+        "choices": [
+            "للسماح للروبوت بالراحة",
+            "لأن أجهزة الكمبيوتر سريعة جداً ونحتاج وقتاً لرؤية ما حدث",
+            "لتوفير البطارية",
+            "لتنظيف الذاكرة"
+        ],
+        "ans_idx": 1,
+        "justification": "المعالجات تنفذ الأوامر فوراً. كتل 'الانتظار (Wait)' تتيح وقتاً للإجراءات الفيزيائية (مثل وميض ضوء أو التحرك) لتكتمل بشكل مرئي."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "بكرات (Pulleys)",
+            "أحزمة (Belts)"
+        ],
+        "question": "يمكن استخدام حزام مطاطي يربط بكرتين لنقل طاقة المحرك إلى عجلة بعيدة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "أنظمة الأحزمة والبكرات هي آليات شائعة لنقل الحركة الدورانية عبر مسافة داخل هيكل الروبوت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "أخلاقيات الروبوتات (Robotics Ethics)",
+            "وظائف (Jobs)",
+            "أتمتة (Automation)"
+        ],
+        "question": "لماذا يقلق بعض الناس بشأن الروبوتات في المصانع؟",
+        "choices": [
+            "الروبوتات قد تسرق غدائهم",
+            "الروبوتات قد تحل محل الوظائف البشرية (الأتمتة - Automation)",
+            "الروبوتات صاخبة جداً",
+            "الروبوتات تستخدم ورقاً كثيراً"
+        ],
+        "ans_idx": 1,
+        "justification": "الأتمتة (Automation) التي تحل محل العمال البشريين هي قلق أخلاقي واقتصادي رئيسي بخصوص انتشار الروبوتات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "مقاومة (Resistor)",
+            "مكونات (Components)"
+        ],
+        "question": "ما المكون الذي يبطئ تدفق الكهرباء لحماية الـ LED من الانفجار؟",
+        "choices": [
+            "سلك",
+            "بطارية",
+            "مقاومة (Resistor)",
+            "مفتاح"
+        ],
+        "ans_idx": 2,
+        "justification": "المقاومات (Resistors) تحد من التيار المتدفق عبر الدائرة، مما يمنع المكونات الحساسة مثل الـ LEDs من الاحتراق."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحكم الروبوتات (Robotics Control)",
+            "إدخال (Input)",
+            "عصا تحكم (Joystick)"
+        ],
+        "question": "للتحكم في سرعة واتجاه الروبوت في نفس الوقت (مثل ألعاب الفيديو)، من الأفضل استخدام ________.",
+        "choices": [
+            "زر",
+            "عصا تحكم (Joystick)",
+            "مفتاح",
+            "لوحة مفاتيح"
+        ],
+        "ans_idx": 1,
+        "justification": "عصا التحكم (Joystick) توفر إدخالاً تماثلياً على محورين (X و Y) في وقت واحد، مما يسمح بتحكم سلس في السرعة والاتجاه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "فيزياء الروبوتات (Robotics Physics)",
+            "حمولة (Payload)",
+            "سعة (Capacity)"
+        ],
+        "question": "كمية الوزن التي يمكن لذراع الروبوت رفعها تسمى:",
+        "choices": [
+            "حمولة (Payload)",
+            "وزن الجسم",
+            "نتيجة ثقيلة",
+            "رقم القوة"
+        ],
+        "ans_idx": 0,
+        "justification": "الحمولة (Payload) تشير إلى سعة الحمل للروبوت أو المناور."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "قنطرة اتش (H-Bridge)",
+            "مشغل محرك (Motor Driver)"
+        ],
+        "question": "المتحكم الدقيق لا يمكنه تشغيل محرك كبير مباشرة (لأنه ضعيف جداً). ما الجزء الذي تضعه بينهما للتعامل مع الطاقة؟",
+        "choices": [
+            "بطارية أكبر",
+            "مشغل محرك / قنطرة اتش (Motor Driver / H-Bridge)",
+            "مروحة",
+            "مسدس غراء"
+        ],
+        "ans_idx": 1,
+        "justification": "مشغلات المحركات (Motor Drivers) (أو قناطر اتش - H-Bridges) تعمل كمضخات، تأخذ إشارات منخفضة الطاقة من العقل للتحكم في تيارات عالية الطاقة للمحركات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "رفع (Upload)",
+            "ترجمة برمجية (Compile)"
+        ],
+        "question": "بعد كتابة الكود على جهاز الكمبيوتر الخاص بك، يجب عليك 'رفعه (Upload)' أو 'تنزيله' إلى الروبوت قبل أن يتمكن الروبوت من استخدامه.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يجب نقل الكود (Flashed/Uploaded) من الكمبيوتر الشخصي إلى ذاكرة الروبوت الداخلية ليعمل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تاريخ الروبوتات (Robotics History)",
+            "أسيموف (Asimov)",
+            "قوانين (Laws)"
+        ],
+        "question": "كتب إسحاق أسيموف (Isaac Asimov) 'قوانين الروبوتات الثلاثة'. الأهم يقول:",
+        "choices": [
+            "يجب على الروبوت تنظيف غرفته دائماً",
+            "لا يجوز للروبوت إيذاء إنسان",
+            "يجب أن يكلف الروبوت أقل من 100 دولار",
+            "يجب أن يتحدث الروبوت الإنجليزية"
+        ],
+        "ans_idx": 1,
+        "justification": "قانون الروبوتات الأول لأسيموف ينص على: 'لا يجوز للروبوت إيذاء إنسان أو، من خلال عدم التصرف، السماح لإنسان بالتعرض للأذى'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "متحكم دقيق (Microcontroller)",
+            "دبابيس الإدخال/الإخراج العامة (GPIO)"
+        ],
+        "question": "في Raspberry Pi أو Arduino، الدبابيس المعدنية المستخدمة لتوصيل الأسلاك تسمى دبابيس GPIO. ماذا يرمز الاختصار GPIO؟",
+        "choices": [
+            "إدخال/إخراج للأغراض العامة (General Purpose Input/Output)",
+            "طاقة عملاقة للداخل والخارج (Giant Power In Out)",
+            "موقع عالمي في المدار (Global Position In Orbit)",
+            "أجزاء خضراء بالداخل فقط (Green Parts Inside Only)"
+        ],
+        "ans_idx": 0,
+        "justification": "دبابيس GPIO (إدخال/إخراج للأغراض العامة) يمكن برمجتها إما لقراءة إشارات الدخل أو إرسال إشارات الخرج."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "جهد (Voltage)",
+            "أرضي (Ground)"
+        ],
+        "question": "في دائرة التيار المستمر (DC)، يتصل السلك الأسود عادة بـ ________ (GND)، وهو 0 فولت.",
+        "choices": [
+            "طاقة (Power)",
+            "أرضي (Ground)",
+            "إشارة (Signal)",
+            "عالي (High)"
+        ],
+        "ans_idx": 1,
+        "justification": "الأرضي (Ground) هو النقطة المرجعية في الدائرة الكهربائية، وعادة ما يكون عند 0 فولت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحكم الروبوتات (Robotics Control)",
+            "تعديل عرض النبضة (PWM)",
+            "سرعة (Speed)"
+        ],
+        "question": "الدبابيس الرقمية عادة ما تكون قيد التشغيل (On) أو الإيقاف (Off) فقط. لجعل المحرك يعمل بنسبة 50% من السرعة، نستخدم حيلة تسمى PWM. ماذا يفعل الروبوت فعلياً؟",
+        "choices": [
+            "يخفض جهد البطارية",
+            "يقوم بتبديل الطاقة بين التشغيل والإيقاف بسرعة كبيرة (نبض)",
+            "يستخدم صندوق تروس",
+            "يطلب من المحرك بلطف"
+        ],
+        "ans_idx": 1,
+        "justification": "تعديل عرض النبضة (PWM) يحاكي الإخراج التماثلي عن طريق تبديل الإشارة الرقمية بسرعة بين التشغيل والإيقاف للتحكم في متوسط الطاقة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "تماثلي مقابل رقمي (Analog vs Digital)",
+            "بيانات (Data)"
+        ],
+        "question": "المستشعر 'الرقمي (Digital)' يمكنه إرسال أي رقم بين 0 و 1023، بينما المستشعر 'التماثلي (Analog)' يمكنه فقط إرسال 0 (إيقاف) أو 1 (تشغيل).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "العكس هو الصحيح. الرقمي هو 0 أو 1. التماثلي (Analog) يوفر نطاقاً من القيم (مثل 0 إلى 1023)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "دوال (Functions)",
+            "كفاءة (Efficiency)"
+        ],
+        "question": "إذا كان الكود الخاص بك يجب أن 'ينعطف يميناً' في 10 أماكن مختلفة، فمن الأفضل إنشاء ________ تسمى `turn_right()` بدلاً من كتابة الكود 10 مرات.",
+        "choices": [
+            "متغير (Variable)",
+            "دالة / روتين فرعي (Function / Subroutine)",
+            "حلقة (Loop)",
+            "تعليق (Comment)"
+        ],
+        "ans_idx": 1,
+        "justification": "الدوال (Functions) تسمح لك بتعريف كتلة من الكود مرة واحدة وإعادة استخدامها عدة مرات، مما يجعل الكود أنظف وأكثر كفاءة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحكم الروبوتات (Robotics Control)",
+            "تحكم تناسبي تكاملي تفاضلي (PID)",
+            "سلاسة (Smoothness)"
+        ],
+        "question": "الروبوتات المتقدمة تستخدم حيلة رياضية تسمى تحكم PID. ماذا يساعد الروبوت أن يفعل؟",
+        "choices": [
+            "تشغيل الموسيقى بصوت أعلى",
+            "التحرك بسلاسة دون اهتزاز أو تجاوز الهدف",
+            "الاتصال بشبكة Wi-Fi",
+            "شحن البطارية فوراً"
+        ],
+        "ans_idx": 1,
+        "justification": "تحكم PID (تناسبي-تكاملي-تفاضلي) يحسب الأخطاء لتطبيق تصحيحات سلسة، مما يمنع الروبوت من الاهتزاز أو تفويت هدفه."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "دائرة قصر (Short Circuit)",
+            "أمان (Safety)"
+        ],
+        "question": "تحدث 'دائرة القصر (Short Circuit)' عندما يلمس السلك الموجب السلك السالب مباشرة دون المرور عبر محرك أو ضوء أولاً. هذا خطير.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "دائرة القصر (Short Circuit) تخلق مساراً بمقاومة تقارب الصفر، مما يسبب تدفق تيار هائل يولد حرارة، أو شرر، أو حريق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "أجهزة التشفير (Encoders)",
+            "الدقة (Precision)"
+        ],
+        "question": "لمعرفة المسافة التي قطعها الروبوت بالضبط (مثلاً: 'تحرك 50 سم')، نضع مستشعراً على العجلة يحسب عدد مرات دورانها. هذا المستشعر هو:",
+        "choices": [
+            "جهاز تشفير (Encoder)",
+            "فك التشفير (Decoder)",
+            "مقدر (Estimator)",
+            "محرك (Engine)"
+        ],
+        "ans_idx": 0,
+        "justification": "تقوم أجهزة التشفير الدوارة (Rotary encoders) بتحويل الموضع الزاوي أو حركة العمود إلى إشارة رقمية لتتبع الحركة الدقيقة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "المصفوفات (Arrays)",
+            "البيانات (Data)"
+        ],
+        "question": "إذا احتاج الروبوت إلى تذكر مسار مكون من 50 منعطفاً مختلفاً لحل متاهة، يجب عليه تخزينها في قائمة أو ________.",
+        "choices": [
+            "دلو (Bucket)",
+            "مصفوفة (Array)",
+            "حلقة (Loop)",
+            "مفتاح (Switch)"
+        ],
+        "ans_idx": 1,
+        "justification": "المصفوفة (Array) (أو القائمة) هي بنية بيانات تستخدم لتخزين مجموعة من القيم، وهي مثالية لتسجيل تسلسل من الحركات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "الكينماتيكا العكسية (Inverse Kinematics)",
+            "الرياضيات (Math)"
+        ],
+        "question": "عندما تحسب ذراع الروبوت الزوايا التي يحتاجها الكتف والمرفق للمس نقطة محددة في الهواء، تسمى هذه الرياضيات:",
+        "choices": [
+            "الكينماتيكا العكسية (Inverse Kinematics)",
+            "الهندسة العكسية (Reverse Engineering)",
+            "الحركة الأمامية (Forward Motion)",
+            "جيومتري داش (Geometry Dash)"
+        ],
+        "ans_idx": 0,
+        "justification": "الكينماتيكا العكسية (Inverse Kinematics) هي العملية الرياضية لاستعادة حركات المفاصل المطلوبة لوضع المؤثر النهائي (end-effector) في موضع معين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "مقاومة الرفع (Pull-up Resistor)",
+            "إشارات (Signals)"
+        ],
+        "question": "لماذا نستخدم أحياناً 'مقاومة الرفع (Pull-up Resistor)' مع زر؟",
+        "choices": [
+            "لجعل الزر أصعب في الضغط",
+            "للحفاظ على استقرار الإشارة (عالية - HIGH) عندما لا يكون الزر مضغوطاً",
+            "لتسخين الزر",
+            "لجعل الزر يضيء"
+        ],
+        "ans_idx": 1,
+        "justification": "بدون مقاومة الرفع (أو الخفض)، سيكون طرف الإدخال 'عائماً (floating)' (ضوضاء عشوائية) عندما يكون الزر مفتوحاً، مما يسبب قراءات خاطئة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "التحكم في الروبوتات (Robotics Control)",
+            "الكمون (Latency)",
+            "التأخر (Lag)"
+        ],
+        "question": "عند التحكم في روبوت على المريخ من الأرض، لا يوجد تأخير؛ الروبوت يتحرك في اللحظة التي تضغط فيها على الزر.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستغرق إشارات الراديو دقائق للسفر بين الأرض والمريخ. هذا 'الكمون (Latency)' يعني أن التحكم بعصا التحكم في الوقت الفعلي مستحيل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "محرك خطوي (Stepper Motor)",
+            "الدقة (Precision)"
+        ],
+        "question": "أي محرك يتحرك في 'خطوات' صغيرة ودقيقة (مثل عقرب الساعة) ويستخدم في الطابعات ثلاثية الأبعاد؟",
+        "choices": [
+            "محرك تيار مستمر (DC Motor)",
+            "محرك خطوي (Stepper Motor)",
+            "مروحة (Fan)",
+            "محرك اهتزاز (Vibration Motor)"
+        ],
+        "ans_idx": 1,
+        "justification": "تقسم المحركات الخطوية (Stepper motors) الدورة الكاملة إلى عدد كبير من الخطوات، مما يسمح بالتحكم الدقيق في الموقع دون أجهزة استشعار للتغذية الراجعة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "طاقة الروبوتات (Robotics Power)",
+            "منظم الجهد (Voltage Regulator)",
+            "الاستقرار (Stability)"
+        ],
+        "question": "بطاريتك تعطي 9 فولت، لكن عقل الروبوت الخاص بك يريد فقط 5 فولت. ما المكون الذي تحتاجه؟",
+        "choices": [
+            "منظم الجهد (Voltage Regulator)",
+            "معزز الجهد (Voltage Booster)",
+            "قاطع أسلاك (Wire Cutter)",
+            "مفتاح (Switch)"
+        ],
+        "ans_idx": 0,
+        "justification": "يقوم منظم الجهد (Voltage Regulator) بتقليل جهد الدخل إلى مستوى أقل ومستقر تتطلبه الإلكترونيات الحساسة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "آلة الحالة (State Machine)",
+            "المنطق (Logic)"
+        ],
+        "question": "نمط برمجي حيث يتنقل الروبوت بين أوضاع مثل 'خامل'، 'بحث'، و 'هجوم' يسمى ________ الحالة.",
+        "choices": [
+            "كمبيوتر (Computer)",
+            "آلة (Machine)",
+            "لوحة (Board)",
+            "لعبة (Game)"
+        ],
+        "ans_idx": 1,
+        "justification": "آلة الحالة المحدودة (Finite State Machine) هي نموذج للحوسبة حيث يكون النظام في حالة واحدة بالضبط من عدد محدود من الحالات في أي وقت معين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "وحدة القياس بالقصور الذاتي (IMU)",
+            "التوجيه (Orientation)"
+        ],
+        "question": "يجمع مستشعر IMU بين مقياس تسارع وجيروسكوب. ماذا يعني اختصار IMU؟",
+        "choices": [
+            "وحدة القياس بالقصور الذاتي (Inertial Measurement Unit)",
+            "وحدة المحرك الداخلي (Internal Motor Unit)",
+            "تحديث الحركة الفوري (Instant Motion Update)",
+            "مستخدم الخرائط الدولي (International Map User)"
+        ],
+        "ans_idx": 0,
+        "justification": "وحدة القياس بالقصور الذاتي (Inertial Measurement Unit) تقيس القوة المحددة، والمعدل الزاوي، وأحياناً اتجاه الجسم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "كود الروبوتات (Robotics Code)",
+            "تعدد المهام (Multitasking)",
+            "الخيوط (Threads)"
+        ],
+        "question": "يعمل كود الأردوينو القياسي سطراً واحداً في كل مرة. إذا كنت تريد منه التحقق من المستشعرات وميض الأضواء في نفس الوقت بالضبط، فأنت تحاول القيام بـ:",
+        "choices": [
+            "تعدد المهام / التزامن (Multitasking / Concurrency)",
+            "الغناء (Singing)",
+            "النوم (Sleeping)",
+            "الحذف (Deleting)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن تعدد المهام (Multitasking) تشغيل مهام متعددة (خيوط - threads) بشكل متزامن حتى لا تمنع عملية واحدة العمليات الأخرى."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "التفاوت (Tolerance)",
+            "التصنيع (Manufacturing)"
+        ],
+        "question": "في هندسة الروبوتات، 'التفاوت (Tolerance)' هو مقدار الخطأ أو المساحة المسموح بها لقطعة ما لتظل مناسبة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يحدد التفاوت (Tolerance) الاختلاف المسموح به في البعد المادي؛ التفاوت المنخفض يعني أنه يجب صنع الأجزاء بدقة شديدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "الانحراف (Drift)",
+            "الخطأ (Error)"
+        ],
+        "question": "تعاني مستشعرات الجيروسكوب الرخيصة من 'الانحراف (Drift)'. ماذا يعني هذا؟",
+        "choices": [
+            "أنها تطفو بعيداً",
+            "مع مرور الوقت، تصبح القراءة خاطئة ببطء حتى لو لم يكن الروبوت يتحرك",
+            "أنها تقود بسرعة",
+            "أنها تنام"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير انحراف المستشعر (Sensor drift) إلى التراكم التدريجي للخطأ في إشارة المستشعر بمرور الوقت، وهو أمر شائع في الجيروسكوبات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "منطق الروبوتات (Robotics Logic)",
+            "منطقي (Boolean)",
+            "العوامل (Operators)"
+        ],
+        "question": "انظر إلى هذا المنطق: `IF (Battery < 10%) OR (Heat > 90%) THEN Stop`. متى سيتوقف الروبوت؟",
+        "choices": [
+            "فقط إذا حدث كلا الأمرين السيئين",
+            "إذا حدث أي من الأمرين السيئين (أو كلاهما)",
+            "أبداً",
+            "فقط عندما تكون البطارية ممتلئة"
+        ],
+        "ans_idx": 1,
+        "justification": "عامل (OR) يعطي قيمة صواب (True) إذا تحقق شرط واحد *على الأقل* من الشروط."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "طاقة الروبوتات (Robotics Power)",
+            "السعة (Capacity)",
+            "مللي أمبير في الساعة (mAh)"
+        ],
+        "question": "تُقاس سعة بطارية الروبوت بـ mAh، والتي ترمز إلى مللي أمبير ________.",
+        "choices": [
+            "حرارة (Heat)",
+            "ساعات (Hours)",
+            "عالي (High)",
+            "نصف (Half)"
+        ],
+        "ans_idx": 1,
+        "justification": "تصف مللي أمبير في الساعة (mAh) مقدار الشحنة الكهربائية التي يمكن للبطارية الاحتفاظ بها ومدة تشغيلها للجهاز."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "مرحل (Relay)",
+            "نقر (Click)"
+        ],
+        "question": "مكون يستخدم مغناطيساً صغيراً لـ 'نقر' مفتاح ميكانيكياً للتشغيل والإيقاف للتحكم في طاقة عالية يسمى:",
+        "choices": [
+            "ترانزستور (Transistor)",
+            "مرحل (Relay)",
+            "مقاومة (Resistor)",
+            "دايود (Diode)"
+        ],
+        "ans_idx": 1,
+        "justification": "المرحل (Relay) هو مفتاح يعمل بالكهرباء. صوت النقر هو حركة العضو الدوار الميكانيكي لإغلاق التلامس."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "الدفع التفاضلي (Differential Drive)",
+            "الدوران (Turning)"
+        ],
+        "question": "كيف ينعطف روبوت بعجلتين (دفع تفاضلي) إلى اليمين؟",
+        "choices": [
+            "يدير عجلة القيادة",
+            "تدور العجلة اليسرى للأمام، وتتوقف العجلة اليمنى (أو تدور للخلف)",
+            "يقفز",
+            "يطلب بلطف"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم روبوتات الدفع التفاضلي (Differential drive) بالتوجيه عن طريق تغيير سرعة واتجاه عجلتي القيادة بالنسبة لبعضهما البعض."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "صمام (Fuse)",
+            "الحماية (Protection)"
+        ],
+        "question": "'الصمام (Fuse)' هو سلك أمان مصمم لينصهر ويكسر الاتصال إذا تدفق تيار كهربائي كبير جداً، مما يحمي الروبوت.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الصمامات (Fuses) هي أجهزة أمان مضحية تكسر الدائرة أثناء حدث زيادة التيار لمنع تلف المكونات باهظة الثمن."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة الروبوتات (Robotics Programming)",
+            "المكتبات (Libraries)",
+            "التبعيات (Dependencies)"
+        ],
+        "question": "بدلاً من كتابة كود معقد للتحدث إلى مستشعر، يمكنك تنزيل مجموعة مكتوبة مسبقاً من الكود تسمى:",
+        "choices": [
+            "قصة (Story)",
+            "مكتبة (Library)",
+            "قاموس (Dictionary)",
+            "ألبوم (Album)"
+        ],
+        "ans_idx": 1,
+        "justification": "المكتبات (Libraries) هي مجموعات من الإجراءات المترجمة مسبقاً التي يمكن للبرنامج استخدامها، مما يبسط عملية الترميز للمهام القياسية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مكونات الروبوتات (Robotics Components)",
+            "مشغل (Actuator)",
+            "هوائي (Pneumatic)"
+        ],
+        "question": "ذراع الروبوت التي تتحرك باستخدام الهواء المضغوط (صوت هسهسة) تستخدم أي نوع من التشغيل؟",
+        "choices": [
+            "هيدروليكي (Hydraulic)",
+            "كهربائي (Electric)",
+            "هوائي (Pneumatic)",
+            "مغناطيسي (Magnetic)"
+        ],
+        "ans_idx": 2,
+        "justification": "تستخدم الأنظمة الهوائية (Pneumatic) الغاز المضغوط (الهواء) لإنتاج حركة ميكانيكية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ميكانيكا الروبوتات (Robotics Mechanics)",
+            "توقف (Stall)",
+            "تلف (Damage)"
+        ],
+        "question": "إذا أمسكت بعمود محرك يعمل بحيث لا يمكنه الدوران، فإن المحرك سوف '________'، ويسخن، وقد يحترق.",
+        "choices": [
+            "ينام (Sleep)",
+            "يتوقف (Stall)",
+            "يقفز (Jump)",
+            "يفوز (Win)"
+        ],
+        "ans_idx": 1,
+        "justification": "توقيف (Stalling) المحرك يسحب أقصى تيار (تيار التوقف - Stall Current) لأن القوة الدافعة الكهربائية العكسية تنخفض إلى الصفر، مما يسبب ارتفاعاً سريعاً في درجة الحرارة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "مستشعرات الروبوتات (Robotics Sensors)",
+            "الدقة (Resolution)",
+            "الجودة (Quality)"
+        ],
+        "question": "مستشعر ذو 'دقة عالية (High Resolution)' يعني:",
+        "choices": [
+            "أنه كبير جداً",
+            "أنه يمكنه اكتشاف تغييرات صغيرة ودقيقة جداً",
+            "أنه قوي جداً",
+            "أنه مقاوم للماء"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير الدقة (Resolution) إلى أصغر تغيير في الكمية المادية يمكن للمستشعر اكتشافه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ذكاء اصطناعي للروبوتات (Robotics AI)",
+            "حوسبة الحافة (Edge Computing)",
+            "السرعة (Speed)"
+        ],
+        "question": "لماذا تقوم بعض الروبوتات بمعالجة البيانات على كمبيوترها الخاص (حوسبة الحافة) بدلاً من إرسالها إلى السحابة؟",
+        "choices": [
+            "إنها أسرع (تأخير أقل) وتعمل بدون إنترنت",
+            "السحابة ممتلئة",
+            "إنها تحب الاحتفاظ بالأسرار",
+            "إنها أرخص"
+        ],
+        "ans_idx": 0,
+        "justification": "تقوم حوسبة الحافة (Edge computing) بمعالجة البيانات محلياً لتقليل الكمون والاعتماد على اتصال الشبكة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات الروبوتات (Robotics Electronics)",
+            "ترانزستور (Transistor)",
+            "مفتاح (Switch)"
+        ],
+        "question": "الترانزستور يشبه مفتاحاً إلكترونياً صغيراً يمكنه تشغيل وإيقاف التيار بسرعة كبيرة جداً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الترانزستوبات (Transistors) هي اللبنات الأساسية للإلكترونيات الحديثة، وتعمل كمفاتيح أو مكبرات صوت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "درجة الحرارة (Temperature)",
+            "بيئة (Environment)"
+        ],
+        "question": "أي مستشعر سيستخدمه الروبوت لمعرفة ما إذا كان الجو حاراً جداً أو بارداً جداً؟",
+        "choices": [
+            "مستشعر الضوء (Light Sensor)",
+            "مستشعر درجة الحرارة (Temperature Sensor)",
+            "مستشعر الصوت (Sound Sensor)",
+            "مستشعر اللمس (Touch Sensor)"
+        ],
+        "ans_idx": 1,
+        "justification": "يقيس مستشعر درجة الحرارة الطاقة الحرارية لتحديد درجة حرارة البيئة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "عجلات (Wheels)",
+            "احتكاك (Friction)"
+        ],
+        "question": "تعمل العجلات الملساء بشكل أفضل على الجليد الزلق لأن احتكاكها أقل.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "على الأسطح الزلقة مثل الجليد، تحتاج إلى مزيد من الاحتكاك (القبضة)، لذا فإن العجلات الخشنة أو المسننة ستكون أفضل من العجلات الملساء."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "متغيرات (Variables)",
+            "بيانات (Data)"
+        ],
+        "question": "في البرمجة، ________ يشبه الصندوق حيث يمكنك تخزين رقم أو كلمة لاستخدامها لاحقاً.",
+        "choices": [
+            "حلقة (Loop)",
+            "متغير (Variable)",
+            "مستشعر (Sensor)",
+            "سلك (Wire)"
+        ],
+        "ans_idx": 1,
+        "justification": "المتغير هو موقع تخزين في البرمجة يحمل بيانات يمكن تغييرها أو استرجاعها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "دوائر (Circuits)",
+            "ماس كهربائي (Short Circuit)"
+        ],
+        "question": "ماذا يحدث إذا قمت بتوصيل الطرفين الموجب (+) والسالب (-) للبطارية مباشرة بسلك دون حمل (مثل المصباح)؟",
+        "choices": [
+            "تشحن البطارية",
+            "ينشئ ماساً كهربائياً ويصبح ساخناً",
+            "يتحول السلك إلى ذهب",
+            "لا يحدث شيء"
+        ],
+        "ans_idx": 1,
+        "justification": "يسمح الماس الكهربائي (Short Circuit) بتدفق تيار مفرط، مما يسبب ارتفاع درجة الحرارة وتلفاً محتملاً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الروبوتات (Robotics Basics)",
+            "تعريف (Definition)",
+            "أتمتة (Automation)"
+        ],
+        "question": "أي مما يلي لا يعتبر عادة روبوتاً؟",
+        "choices": [
+            "سيارة تحكم عن بعد",
+            "غسالة",
+            "صخرة بسيطة",
+            "مركبة المريخ الجوالة"
+        ],
+        "ans_idx": 2,
+        "justification": "الصخرة هي كائن غير حي ليس له آليات أو طاقة أو برمجة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "أنظمة التحكم (Control Systems)",
+            "حلقة مفتوحة (Open Loop)",
+            "تغذية راجعة (Feedback)"
+        ],
+        "question": "يتحقق نظام 'الحلقة المفتوحة (Open Loop)' من أخطائه ويصححها تلقائياً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "لا تستخدم أنظمة الحلقة المفتوحة التغذية الراجعة لتصحيح الأخطاء؛ أنظمة 'الحلقة المغلقة (Closed Loop)' تفعل ذلك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "طاقة (Power)",
+            "بطاريات (Batteries)",
+            "سلامة (Safety)"
+        ],
+        "question": "إذا كانت بطارية الروبوت تسرب سائلاً غريباً، ماذا يجب أن تفعل؟",
+        "choices": [
+            "تذوقه",
+            "المسه بيدين عاريتين",
+            "أخبر شخصاً بالغاً ولا تلمسه",
+            "ضعه في الماء"
+        ],
+        "ans_idx": 2,
+        "justification": "يمكن أن تكون البطاريات المسربة خطيرة ويمكن أن تحدث حروق كيميائية، لذا فإن احتياطات السلامة ضرورية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "عزم الدوران (Torque)",
+            "فيزياء (Physics)"
+        ],
+        "question": "قوة الالتواء التي تسبب الدوران تسمى ________.",
+        "choices": [
+            "سرعة (Speed)",
+            "عزم الدوران (Torque)",
+            "جاذبية (Gravity)",
+            "كتلة (Mass)"
+        ],
+        "ans_idx": 1,
+        "justification": "عزم الدوران هو المكافئ الدوراني للقوة الخطية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "رؤية (Vision)",
+            "كاميرات (Cameras)"
+        ],
+        "question": "أي مستشعر يساعد الروبوت على 'رؤية' الألوان والأشكال؟",
+        "choices": [
+            "ميكروفون",
+            "كاميرا / مستشعر رؤية (Camera / Vision Sensor)",
+            "جيروسكوب",
+            "مقياس حرارة"
+        ],
+        "ans_idx": 1,
+        "justification": "تلتقط الكاميرات البيانات المرئية التي يمكن معالجتها لتحديد الألوان والأشكال."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "منطقي (Boolean)",
+            "منطق (Logic)"
+        ],
+        "question": "يمكن أن تكون القيمة المنطقية (Boolean) شيئاً واحداً فقط من شيئين:",
+        "choices": [
+            "أحمر أو أزرق",
+            "صواب أو خطأ (True or False)",
+            "1 أو 10",
+            "أعلى أو أسفل"
+        ],
+        "ans_idx": 1,
+        "justification": "في علوم الكمبيوتر، نوع البيانات المنطقي له قيمتان محتملتان: صواب أو خطأ."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "بناء (Construction)",
+            "مواد (Materials)",
+            "قوة (Strength)"
+        ],
+        "question": "ألياف الكربون هي مادة تستخدم في الروبوتات عالية التقنية لأنها قوية جداً ولكنها خفيفة جداً أيضاً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تحظى ألياف الكربون بتقدير في الهندسة لنسبة قوتها إلى وزنها العالية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "جيروسكوب (Gyroscope)",
+            "توازن (Balance)"
+        ],
+        "question": "المستشعر الذي يساعد الروبوت على التوازن أو معرفة الاتجاه 'لأعلى' يسمى ________.",
+        "choices": [
+            "جيروسكوب (Gyroscope)",
+            "مؤقت (Timer)",
+            "رادار (Radar)",
+            "مكبر صوت (Speaker)"
+        ],
+        "ans_idx": 0,
+        "justification": "تقيس الجيروسكوبات الاتجاه والسرعة الزاوية، وهو أمر ضروري لموازنة الروبوتات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ذكاء اصطناعي (AI)",
+            "تعلم الآلة (Machine Learning)",
+            "تدريب (Training)"
+        ],
+        "question": "عندما يتعلم الروبوت القيام بمهمة من خلال ممارستها مراراً وتكراراً، نسمي هذا:",
+        "choices": [
+            "تعلم الآلة (Machine Learning)",
+            "سحر",
+            "برمجة صلبة",
+            "تخمين"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن تعلم الآلة خوارزميات تتحسن تلقائياً من خلال التجربة والبيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تطبيقات (Applications)",
+            "طبي (Medical)",
+            "جراحة (Surgery)"
+        ],
+        "question": "تسمى الروبوتات التي يستخدمها الأطباء للمساعدة في إجراء عمليات دقيقة:",
+        "choices": [
+            "روبوتات الطهاة",
+            "روبوتات جراحية (Surgical Robots)",
+            "روبوتات المزارع",
+            "روبوتات الفضاء"
+        ],
+        "ans_idx": 1,
+        "justification": "تساعد الروبوتات الجراحية (مثل دافنشي) الجراحين بدقة وتحكم."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "جهد (Voltage)",
+            "طاقة (Power)"
+        ],
+        "question": "استخدام بطارية 9 فولت على محرك مصنف لـ 3 فولت فقط سيجعل المحرك يعمل بشكل أسرع بفعالية إلى الأبد.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "قد يؤدي زيادة الجهد الكهربائي للمحرك إلى تشغيله بسرعة لفترة وجيزة، ولكن من المحتمل أن ترتفع درجة حرارته ويحترق بسرعة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "برمجة (Programming)",
+            "تسلسل (Sequence)",
+            "ترتيب (Order)"
+        ],
+        "question": "في برنامج الكمبيوتر، الترتيب الذي يتم به تشغيل الأوامر يسمى ________.",
+        "choices": [
+            "زي (Costume)",
+            "تسلسل (Sequence)",
+            "لون (Color)",
+            "نكهة (Flavor)"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير التسلسل إلى الترتيب المحدد للتعليمات التي سيتم تنفيذها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "نيوماتيك (Pneumatics)",
+            "هواء (Air)"
+        ],
+        "question": "تستخدم الأنظمة الهوائية (Pneumatic) ماذا لخلق الحركة؟",
+        "choices": [
+            "ماء",
+            "هواء مضغوط (Compressed Air)",
+            "بنزين",
+            "كهرباء فقط"
+        ],
+        "ans_idx": 1,
+        "justification": "تتضمن الانظمة الهوائية (Pneumatics) استخدام الغاز أو الهواء المضغوط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تفاعل (Interaction)",
+            "تفاعل الإنسان والروبوت (HRI)",
+            "اجتماعي (Social)"
+        ],
+        "question": "HRI ترمز لـ:",
+        "choices": [
+            "ذكاء الروبوت العالي",
+            "تفاعل الإنسان والروبوت (Human-Robot Interaction)",
+            "اختراع الروبوت الضخم",
+            "إنسان يركض بالداخل"
+        ],
+        "ans_idx": 1,
+        "justification": "HRI هو مجال الدراسة المخصص لفهم وتصميم وتقييم الأنظمة الروبوتية للاستخدام من قبل البشر أو معهم."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "ميكروفون (Microphone)",
+            "صوت (Sound)"
+        ],
+        "question": "يرسل الميكروفون الرقمي موجات صوتية مباشرة إلى المعالج دون تحويلها إلى إشارات كهربائية أولاً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "تحول الميكروفونات الموجات الصوتية إلى إشارات كهربائية (تناظرية أو رقمية) لكي يفهمها المعالج."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "جمل شرطية (Conditionals)",
+            "وإلا (Else)"
+        ],
+        "question": "في كتلة If-Else، متى يتم تشغيل الكود في جزء 'Else'؟",
+        "choices": [
+            "عندما يكون الشرط صحيحاً (True)",
+            "عندما يكون الشرط خطأ (False)",
+            "دائماً",
+            "أبداً"
+        ],
+        "ans_idx": 1,
+        "justification": "يتم تنفيذ فرع Else فقط عندما يتم تقييم شرط 'If' على أنه خطأ (False)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحكم (Control)",
+            "تحكم تناسبي تكاملي تفاضلي (PID)",
+            "دقة (Precision)"
+        ],
+        "question": "آلية ردود الفعل لحلقة التحكم الشائعة المستخدمة للتحكم الدقيق تسمى ________.",
+        "choices": [
+            "ABC",
+            "PID",
+            "XYZ",
+            "LOL"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم وحدات تحكم PID (التناسبي-التكاملي-التفاضلي) على نطاق واسع للتحكم الدقيق في الأنظمة الصناعية والروبوتية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مكونات (Components)",
+            "عجلات (Wheels)",
+            "أومني (Omni)"
+        ],
+        "question": "ما العجلات الخاصة التي تسمح للروبوت بالانزلاق جانبيًا دون الدوران؟",
+        "choices": [
+            "عجلات قياسية",
+            "عجلات أومني / ميكانوم (Omni / Mecanum Wheels)",
+            "عجلات مربعة",
+            "عجلات خشبية"
+        ],
+        "ans_idx": 1,
+        "justification": "عجلات أومني أو ميكانوم (Omni or Mecanum) لها بكرات تسمح بالحركة في أي اتجاه، بما في ذلك الجانبي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "أرضي (Ground)",
+            "دائرة (Circuit)"
+        ],
+        "question": "في الإلكترونيات، يرمز GND لـ:",
+        "choices": [
+            "Grand",
+            "Grind",
+            "Ground (أرضي)",
+            "Green"
+        ],
+        "ans_idx": 2,
+        "justification": "GND هو اختصار لـ Ground (الأرضي)، النقطة المرجعية في الدائرة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تطبيقات (Applications)",
+            "زراعة (Agriculture)",
+            "فلاحة (Farming)"
+        ],
+        "question": "هناك روبوتات يمكنها حلب الأبقار وقطف التفاح.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تعد الروبوتات الزراعية مجالاً متنامياً حيث تؤدي الروبوتات مهام مثل الحصاد والحلب."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "أجهزة (Hardware)",
+            "معالجة (Processing)",
+            "وحدة المعالجة المركزية (CPU)"
+        ],
+        "question": "CPU تعني وحدة ________ المركزية.",
+        "choices": [
+            "طاقة (Power)",
+            "معالجة (Processing)",
+            "برنامج (Program)",
+            "طرفية (Peripheral)"
+        ],
+        "ans_idx": 1,
+        "justification": "CPU تعني وحدة المعالجة المركزية (Central Processing Unit)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "فيزياء (Physics)",
+            "سرعة متجهة (Velocity)",
+            "سرعة (Speed)"
+        ],
+        "question": "تختلف السرعة المتجهة (Velocity) عن السرعة (Speed) لأن السرعة المتجهة تشمل:",
+        "choices": [
+            "الوزن",
+            "اللون",
+            "الاتجاه (Direction)",
+            "الحجم"
+        ],
+        "ans_idx": 2,
+        "justification": "السرعة المتجهة هي كمية متجهة، مما يعني أن لها مقداراً (السرعة) واتجاهاً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحديد الموقع (Localization)",
+            "سلام (SLAM)",
+            "رسم الخرائط (Mapping)"
+        ],
+        "question": "يسمح SLAM للروبوت ببناء خريطة ومعرفة موقعه. ماذا تعني كلمة SLAM؟",
+        "choices": [
+            "Super Loud Automatic Motor",
+            "التوطين ورسم الخرائط المتزامن (Simultaneous Localization and Mapping)",
+            "Slow Low And Medium",
+            "System Logic And Memory"
+        ],
+        "ans_idx": 1,
+        "justification": "SLAM (التوطين ورسم الخرائط المتزامن) هي المشكلة الحسابية المتمثلة في إنشاء خريطة لبيئة غير معروفة مع تتبع موقع الوكيل بداخلها في نفس الوقت."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تاريخ (History)",
+            "خيال (Fiction)",
+            "أسيموف (Asimov)"
+        ],
+        "question": "إسحاق أسيموف كاتب مشهور ابتكر 'قوانين الروبوتات الثلاثة' في قصصه.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "قدم إسحاق أسيموف قوانين الروبوتات الثلاثة في قصته القصيرة عام 1942 'Runaround'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "مقياس فرق الجهد (Potentiometer)",
+            "زاوية (Angle)"
+        ],
+        "question": "المقبض الذي يمكنك تدويره لتغيير قيمة (مثل حجم الصوت، أو زاوية مفصل الروبوت) غالباً ما يكون:",
+        "choices": [
+            "مفتاح (Switch)",
+            "مقياس فرق الجهد (Potentiometer)",
+            "زر (Button)",
+            "LED"
+        ],
+        "ans_idx": 1,
+        "justification": "مقياس فرق الجهد هو مقاوم متغير يعمل كمقسم جهد قابل للتعديل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تحكم (Control)",
+            "لاسلكي (Wireless)",
+            "بلوتوث (Bluetooth)"
+        ],
+        "question": "تقنية لاسلكية شائعة تستخدم لتوصيل الهاتف بروبوت عبر مسافات قصيرة هي ________.",
+        "choices": [
+            "بلوتوث (Bluetooth)",
+            "قمر صناعي (Satellite)",
+            "الألياف الضوئية (Fiber Optic)",
+            "شفرة مورس (Morse Code)"
+        ],
+        "ans_idx": 0,
+        "justification": "البلوتوث هو معيار للاتصال اللاسلكي قصير المدى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "تصميم (Design)",
+            "استقرار (Stability)"
+        ],
+        "question": "أي شكل من أشكال قواعد الروبوت يكون أكثر استقراراً وأسهل في التحكم بشكل عام؟",
+        "choices": [
+            "عصا طويلة",
+            "منصة عريضة ومنخفضة",
+            "هرم مقلوب",
+            "كومة مفكوكة من الأسلاك"
+        ],
+        "ans_idx": 1,
+        "justification": "المنصات العريضة والمنخفضة لها مركز جاذبية أقل وقاعدة دعم أوسع، مما يزيد من الاستقرار."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "وظائف (Functions)",
+            "إعادة الاستخدام (Reuse)"
+        ],
+        "question": "يساعدك استخدام 'الوظائف (Functions)' أو 'كتلي (My Blocks)' على إعادة استخدام الكود حتى لا تضطر إلى كتابة نفس الشيء 10 مرات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح الوظائف بتغليف الكود وإعادة استخدامه، مما يجعل البرامج أنظف وأكثر كفاءة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "مقاوم (Resistor)",
+            "تيار (Current)"
+        ],
+        "question": "ما المكون الذي يستخدم للحد من كمية الكهرباء المتدفقة إلى LED حتى لا يحترق؟",
+        "choices": [
+            "مقاوم (Resistor)",
+            "بطارية (Battery)",
+            "محرك (Motor)",
+            "ترس (Gear)"
+        ],
+        "ans_idx": 0,
+        "justification": "تحد المقاومات من تدفق التيار الكهربائي في الدائرة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحكم (Control)",
+            "التواجد عن بعد (Telepresence)",
+            "عن بعد (Remote)"
+        ],
+        "question": "يسمح روبوت ________ للشخص بالرؤية والسمع من موقع بعيد كما لو كان هناك.",
+        "choices": [
+            "التواجد عن بعد (Telepresence)",
+            "شف (Chef)",
+            "مكنسة (Vacuum)",
+            "لعبة (Toy)"
+        ],
+        "ans_idx": 0,
+        "justification": "توفر روبوتات التواجد عن بعد حضوراً مادياً عن بعد باستخدام قدرات الفيديو والصوت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ذكاء اصطناعي (AI)",
+            "رؤية الكمبيوتر (Computer Vision)",
+            "تعرف (Recognition)"
+        ],
+        "question": "يساعد برنامج التعرف على الوجوه الروبوت على:",
+        "choices": [
+            "تنظيف الأرضية",
+            "تحديد هوية الشخص",
+            "التحرك بشكل أسرع",
+            "تفير البطارية"
+        ],
+        "ans_idx": 1,
+        "justification": "التعرف على الوجوه هو تقنية بيومترية تستخدم لتحديد هوية الشخص أو التحقق منها من صورة رقمية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أخلاق (Ethics)",
+            "وظائف (Jobs)",
+            "مجتمع (Society)"
+        ],
+        "question": "تستخدم الروبوتات في المصانع فقط ولا تستخدم أبداً في المنازل.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "تنتشر الروبوتات بشكل متزايد في المنازل (مكانس كهربائية، ألعاب، مساعدين) وقطاعات الخدمات الأخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "وصلات (Linkages)",
+            "حركة (Motion)"
+        ],
+        "question": "يسمى النظام الميكانيكي للقضبان المتصلة بالمفاصل:",
+        "choices": [
+            "وصلة (Linkage)",
+            "تسرب (Leakage)",
+            "أمتعة (Luggage)",
+            "لغة (Language)"
+        ],
+        "ans_idx": 0,
+        "justification": "الوصلات (Linkages) هي تجميعات من الأجسام المتصلة لإدارة القوى والحركة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مكونات (Components)",
+            "متحكم دقيق (Microcontroller)",
+            "أردوينو (Arduino)"
+        ],
+        "question": "Arduino هي علامة تجارية مشهورة لـ:",
+        "choices": [
+            "سيارة",
+            "لوحة متحكم دقيق (Microcontroller Board)",
+            "بطارية",
+            "صودا"
+        ],
+        "ans_idx": 1,
+        "justification": "Arduino هي منصة إلكترونيات مفتوحة المصدر تعتمد على أجهزة (متحكمات دقيقة) وبرامج سهلة الاستخدام."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "مقياس التسارع (Accelerometer)",
+            "حركة (Motion)"
+        ],
+        "question": "يقيس ________ مدى سرعة تغير السرعة (التسارع).",
+        "choices": [
+            "عداد المسافات (Odometer)",
+            "مقياس التسارع (Accelerometer)",
+            "مقياس الحرارة (Thermometer)",
+            "مقياس الضغط الجوي (Barometer)"
+        ],
+        "ans_idx": 1,
+        "justification": "تقيس مقاييس التسارع (Accelerometers) التسارع المناسب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة (Programming)",
+            "ثنائي (Binary)",
+            "بيانات (Data)"
+        ],
+        "question": "تفهم أجهزة الكمبيوتر والروبوتات البيانات في النهاية على أنها 1s و 0s. يسمى هذا النظام:",
+        "choices": [
+            "عشري (Decimal)",
+            "ثنائي (Binary)",
+            "أرقام رومانية (Roman Numerals)",
+            "أبجدية (Alphabet)"
+        ],
+        "ans_idx": 1,
+        "justification": "الرمز الثنائي الذي يمثل النص أو تعليمات المعالج باستخدام نظام الرمزين '0' و '1'."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "قطبية (Polarity)",
+            "توصيلات (Connections)"
+        ],
+        "question": "بالنسبة لمحرك التيار المستمر DC، إذا قمت بتبديل الأسلاك الحمراء والسوداء المتصلة بالبطارية، فمن عادةً ما يدور المحرك في الاتجاه المعاكس.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "عكس القطبية على محرك DC قياسي يعكس اتجاه المجال المغناطيسي، وبالتالي عكس اتجاه الدوران."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تصميم (Design)",
+            "نماذج أولية (Prototyping)",
+            "طباعة ثلاثية الأبعاد (3D Printing)"
+        ],
+        "question": "ما الآلة التي تستخدم غالباً لصنع أجزاء بلاستيكية مخصصة للروبوتات؟",
+        "choices": [
+            "ميكروويف",
+            "طابعة ثلاثية الأبعاد (3D Printer)",
+            "محمصة",
+            "طابعة ورق"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم الطابعات ثلاثية الأبعاد على نطاق واسع في الروبوتات للنماذج الأولية السريعة وتصنيع الأجزاء المخصصة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مصطلحات (Terminologies)",
+            "سايبورغ (Cyborg)",
+            "خيال (Fiction)"
+        ],
+        "question": "الكائن الذي يحتوي على كل من الأجزاء العضوية (البيولوجية) والأجزاء الميكاترونية الحيوية يسمى:",
+        "choices": [
+            "سايبورغ (Cyborg)",
+            "أندرويد",
+            "روبوت",
+            "تمثال"
+        ],
+        "ans_idx": 0,
+        "justification": "سايبورغ (Cyborg) ترمز لـ 'كائن سيبرنيطيقي'، يجمع بين المكونات البيولوجية والاصطناعية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "فيزياء (Physics)",
+            "كينماتيكا (Kinematics)",
+            "حركة (Motion)"
+        ],
+        "question": "الكينماتيكا ________ هي الرياضيات المستخدمة لحساب زوايا المفاصل اللازمة لتحريك يد الروبوت إلى نقطة معينة في الفضاء.",
+        "choices": [
+            "العكسية (Inverse)",
+            "البيولوجيا (Biology)",
+            "الاقتصاد (Economics)",
+            "التاريخ (History)"
+        ],
+        "ans_idx": 0,
+        "justification": "الكينماتيكا العكسية (Inverse Kinematics - IK) تحسب معلمات المفصل المتغيرة اللازمة لوضع المشغل النهائي في موضع واتجاه معينين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تطبيقات (Applications)",
+            "عسكري (Military)",
+            "أمن (Security)"
+        ],
+        "question": "الروبوتات المستخدمة لنزع فتيل القنابل حتى لا يضطر الناس لذلك هي مثال على:",
+        "choices": [
+            "روبوتات الأمان (Safety Robots)",
+            "روبوتات الطبخ",
+            "روبوتات الرقص",
+            "روبوتات الرياضة"
+        ],
+        "ans_idx": 0,
+        "justification": "تحسن روبوتات التخلص من القنابل (روبوتات EOD) السلامة من خلال إبقاء البشر على مسافة من المتفجرات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "مشفّر (Encoder)",
+            "دوران (Rotation)"
+        ],
+        "question": "يحسب مشفر العجلة (Wheel Encoder) عدد المرات التي دارت فيها العجلة حتى يعرف الروبوت المسافة التي قطعها.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تقوم المشفرات الدوارة بتحويل الموضع الزاوي أو حركة العمود إلى إشارة تناظرية أو رقمية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مكونات (Components)",
+            "عجلات (Wheels)",
+            "عجلات كراسي (Caster)"
+        ],
+        "question": "عجلة دوارة صغيرة (مثل الموجودة في عربة التسوق) تستخدم للتوازن في الروبوت تسمى:",
+        "choices": [
+            "عجلة القيادة",
+            "عجلة كراسي (Caster Wheel)",
+            "ترس",
+            "عجلة القيادة"
+        ],
+        "ans_idx": 1,
+        "justification": "عجلات الكراسي (Caster wheels) تدور للسماح بالحركة في أي اتجاه، مما يوفر الدعم دون مقاومة التوجيه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجيات (Software)",
+            "محاكاة (Simulation)",
+            "اختبار (Testing)"
+        ],
+        "question": "يسمى اختبار كود الروبوت الخاص بك على نموذج كمبيوتر قبل وضعه على الروبوت الحقيقي:",
+        "choices": [
+            "محاكاة (Simulation)",
+            "خيال",
+            "رسم",
+            "ألعاب فيديو"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح المحاكاة باختبار آمن وسريع لخوارزميات الروبوت في بيئة افتراضية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "مشغل (Effector)",
+            "أدوات (Tools)"
+        ],
+        "question": "الأداة المرفقة بذراع الروبوت، مثل مثقاب متخصص أو آلة لحام، هي ________ نهائي.",
+        "choices": [
+            "بادئ (Starter)",
+            "مشغل (Effector)",
+            "نقطة (Point)",
+            "منطقة (Zone)"
+        ],
+        "ans_idx": 1,
+        "justification": "المشغل النهائي (End Effector) هو الجهاز الموجود في نهاية الذراع الآلية الذي يتفاعل مباشرة مع البيئة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "بيانات (Data)",
+            "سحاب (Cloud)",
+            "اتصال (Connectivity)"
+        ],
+        "question": "روبوتات السحابة (Cloud Robotics) تعني:",
+        "choices": [
+            "روبوتات تطير في السحب",
+            "روبوتات مصنوعة من بخار الماء",
+            "روبوتات تستخدم الإنترنت لقوة المعالجة والبيانات",
+            "روبوتات تنام"
+        ],
+        "ans_idx": 2,
+        "justification": "تسمح الروبوتات السحابية للروبوتات بإلغاء تحميل المهام كثيفة الحوسبة ومشاركة البيانات عبر الإنترنت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "روافع (Levers)",
+            "فيزياء (Physics)"
+        ],
+        "question": "لعبة السيسو (See-saw) هي مثال على أي آلة بسيطة؟",
+        "choices": [
+            "عجلة (Wheel)",
+            "رافعة (Lever)",
+            "بكرة (Pulley)",
+            "برغي (Screw)"
+        ],
+        "ans_idx": 1,
+        "justification": "الرافعة هي آلة بسيطة تتكون من شعاع يرتكز عند مفصلة ثابتة أو نقطة ارتكاز."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "برمجة (Programming)",
+            "أخطاء (Bugs)",
+            "تاريخ (History)"
+        ],
+        "question": "كان أول 'خطأ برمجي (Bug)' في الكمبيوتر عبارة عن فراشة حقيقية محاصرة داخل مرحل الكمبيوتر.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "في عام 1947، وجد المهندسون فراشة عالقة في كمبيوتر مارك الثاني، صائغين مصطلح 'خطأ الكمبيوتر (computer bug)'."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "LED",
+            "قطبية (Polarity)"
+        ],
+        "question": "للصمام الثنائي الباعث للضوء (LED) ساقان: الساق الأطول هي الموجبة (الأنود) والساق الأقصر هي ________ (الكاثود).",
+        "choices": [
+            "سالبة (Negative)",
+            "محايدة (Neutral)",
+            "مكسورة (Broken)",
+            "أرضي (Ground)"
+        ],
+        "ans_idx": 0,
+        "justification": "مصابيح LED مستقطبة؛ يجب توصيل الساق الأقصر (الكاثود) بالجانب السالب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "حواس الإنسان (Human Senses)",
+            "تشبيه (Analogy)"
+        ],
+        "question": "تشبه كاميرا الروبوت أي عضو بشري؟",
+        "choices": [
+            "أذن",
+            "عين",
+            "أنف",
+            "لسان"
+        ],
+        "ans_idx": 1,
+        "justification": "تلتقط الكاميرات المعلومات المرئية تماماً كما تفعل العيون."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "مصفوفات (Arrays)",
+            "قوائم (Lists)"
+        ],
+        "question": "إذا كان لديك قائمة بأسماء الروبوتات: ['Bot1', 'Bot2', 'Bot3']، ماذا يوجد في الفهرس 0؟",
+        "choices": [
+            "Bot1",
+            "Bot2",
+            "Bot3",
+            "لاشيء"
+        ],
+        "ans_idx": 0,
+        "justification": "في معظم لغات البرمجة، تبدأ فهرسة المصفوفة عند 0."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "تناظري مقابل رقمي (Analog vs Digital)",
+            "إشارات (Signals)"
+        ],
+        "question": "يمكن أن يكون للإشارة الرقمية (Digital) أي قيمة بين 0 و 100 (مثل 50.5)، بينما تكون الإشارة التناظرية (Analog) فقط تشغيل (ON) أو إيقاف (OFF).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "العكس هو الصحيح: الرقمية منفصلة (0 أو 1)، والتناظرية مستمرة (أي قيمة)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "أنواع (Types)",
+            "روبوتات نانوية (Nanobots)",
+            "مستقبل (Future)"
+        ],
+        "question": "تسمى الروبوتات الصغيرة جداً التي لا يمكن رؤيتها بالعين المجردة:",
+        "choices": [
+            "ميجابوت (Megabots)",
+            "روبوتات نانوية (Nanobots)",
+            "كيلوبوت (Kilobots)",
+            "جيجابوت (Gigabots)"
+        ],
+        "ans_idx": 1,
+        "justification": "الروبوتات النانوية هي مجال إنشاء آلات أو روبوتات بمقياس نانومتر أو بالقرب منه."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "احتكاك (Friction)",
+            "فيزياء (Physics)"
+        ],
+        "question": "لجعل الروبوت يتوقف عن الحركة، غالباً ما تستخدم الفرامل التي تعتمد على ________ لإبطاء العجلات.",
+        "choices": [
+            "مغناطيسية (Magnetism)",
+            "احتكاك (Friction)",
+            "جاذبية (Gravity)",
+            "رياح (Wind)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم الفرامل الاحتكاك لتحويل الطاقة الحركية إلى حرارة، مما يبطئ المركبة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مكونات (Components)",
+            "لوحة تجارب (Breadboard)",
+            "نماذج أولية (Prototyping)"
+        ],
+        "question": "ما الأداة التي تشبه لوحة بها العديد من الثقوب، تستخدم لاختبار الدوائر دون لحام؟",
+        "choices": [
+            "لوحة تقطيع",
+            "لوحة تجارب (Breadboard)",
+            "لوحة أم",
+            "سبورة"
+        ],
+        "ans_idx": 1,
+        "justification": "لوحة التجارب (Breadboard) هي قاعدة بناء للنماذج الأولية للإلكترونيات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "طاقة (Power)",
+            "شمسي (Solar)",
+            "طاقة (Energy)"
+        ],
+        "question": "يستخدم الروبوت الذي يحصل على طاقته من الشمس:",
+        "choices": [
+            "توربينات رياح",
+            "ألوح شمسية (Solar Panels)",
+            "فحم",
+            "مفاعل نووي"
+        ],
+        "ans_idx": 1,
+        "justification": "تحول الألواح الشمسية ضوء الشمس إلى طاقة كهربائية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "حلقة لا نهائية (Infinite Loop)",
+            "خطأ برمجي (Bug)"
+        ],
+        "question": "'الحلقة اللانهائية (Infinite Loop)' هي حلقة تعمل لمرة واحدة بالضبط ثم تتوقف.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "تتكرر الحلقة اللانهائية إلى أجل غير مسمى ولا تنتهي أبداً من تلقاء نفسها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحكم (Control)",
+            "إدخال (Input)",
+            "مستشعرات (Sensors)"
+        ],
+        "question": "أي مما يلي مثال على جهاز إدخال (INPUT)؟",
+        "choices": [
+            "مصباح (Light Bulb)",
+            "محرك (Motor)",
+            "مستشعر درجة الحرارة (Temperature Sensor)",
+            "جرس (Buzzer)"
+        ],
+        "ans_idx": 2,
+        "justification": "توفر المستشعرات البيانات (الإدخال) للنظام، بينما الآخرون هم مخرجات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "منطق (Logic)",
+            "بوابة AND (AND Gate)",
+            "دوائر (Circuits)"
+        ],
+        "question": "بالنسبة لبوابة المنطق AND، إذا كان المدخل أ صحيحاً (True) والمدخل ب صحيحاً (True)، فإن المخرج يكون ________.",
+        "choices": [
+            "خطأ (False)",
+            "صحيح (True)",
+            "غير معروف",
+            "صفر"
+        ],
+        "ans_idx": 1,
+        "justification": "تخرج بوابة AND صحيح (True) فقط إذا كان كلا المدخلين صحيحين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "محركات (Motors)",
+            "دوران (Rotation)"
+        ],
+        "question": "RPM ترمز لـ:",
+        "choices": [
+            "روبوتات في الدقيقة",
+            "دورة في الدقيقة (Revolutions Per Minute)",
+            "أحمر أرجواني كستنائي",
+            "تشغيل الطاقة القصوى"
+        ],
+        "ans_idx": 1,
+        "justification": "RPM هي وحدة للسرعة الدورانية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "جهد (Voltage)",
+            "وحدات (Units)"
+        ],
+        "question": "يقاس الجهد الكهربائي (Voltage) بـ:",
+        "choices": [
+            "أمبير",
+            "فولت (Volts)",
+            "أوم",
+            "متر"
+        ],
+        "ans_idx": 1,
+        "justification": "الفولت (V) هو الوحدة المشتقة للجهد الكهربائي والقوة الدافعة الكهربائية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تطبيقات (Applications)",
+            "منزلي (Domestic)",
+            "مكنسة (Vacuum)"
+        ],
+        "question": "رومبا (Roomba) هو مثال شهير للروبوت العسكري.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "رومبا هو مكنسة كهربائية روبوتية منزلية، وليس روبوتاً عسكرياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة (Programming)",
+            "بايثون (Python)",
+            "لغات (Languages)"
+        ],
+        "question": "ما لغة البرمجة المشهورة جداً في الروبوتات والذكاء الاصطناعي لأنها سهلة القراءة؟",
+        "choices": [
+            "بايثون (Python)",
+            "كلينغون",
+            "ثنائي",
+            "لاتيني"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم بايثون (Python) على نطاق واسع في الروبوتات لبساطتها ودعم المكتبات الواسع (مثل ROS)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "طاقة (Power)",
+            "تيار (Current)",
+            "وحدات (Units)"
+        ],
+        "question": "يقاس التيار الكهربائي بـ ________.",
+        "choices": [
+            "فولت",
+            "أمبير (Amperes - Amps)",
+            "واط",
+            "جول"
+        ],
+        "ans_idx": 1,
+        "justification": "الأمبير (A) هو الوحدة الأساسية للتيار الكهربائي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "مركز الجاذبية (Center of Gravity)",
+            "فيزياء (Physics)"
+        ],
+        "question": "إذا كان الروبوت طويلاً جداً وله مركز جاذبية مرتفع، فمن المحتمل أن:",
+        "choices": [
+            "يطير",
+            "ينقلب (Tip over)",
+            "يجري أسرع",
+            "يكون غير مرئي"
+        ],
+        "ans_idx": 1,
+        "justification": "يجعل مركز الجاذبية المرتفع الجسم أقل استقراراً وأكثر عرضة للانقلاب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "تفاعل (Interaction)",
+            "صوت (Voice)",
+            "ذكاء اصطناعي (AI)"
+        ],
+        "question": "عندما تتحدث إلى روبوت ويفهمك، فإنه يستخدم:",
+        "choices": [
+            "تخاطر",
+            "التعرف على الصوت / معالجة اللغات الطبيعية (Voice Recognition / NLP)",
+            "تحكم بالعقل",
+            "سحر"
+        ],
+        "ans_idx": 1,
+        "justification": "يسمح التعرف على الصوت ومعالجة اللغات الطبيعية (NLP) للآلات بتفسير الكلام البشري."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "معايرة (Calibration)",
+            "دقة (Accuracy)"
+        ],
+        "question": "المعايرة (Calibration) هي عملية ضبط المستشعر بحيث يعطي قراءات دقيقة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تضمن المعايرة توافق مخرجات المستشعر بشكل صحيح مع المعايير المعروفة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "تروس (Gears)",
+            "نسب (Ratios)"
+        ],
+        "question": "إذا كان ترس صغير به 10 أسنان يدير ترساً كبيراً به 50 سناً، فإن نسبة التروس هي:",
+        "choices": [
+            "1:1",
+            "5:1",
+            "1:5",
+            "10:50"
+        ],
+        "ans_idx": 1,
+        "justification": "نسبة التروس (Gear Ratio) = المقاد/القائد = 50/10 = 5:1. (المدخلات تدور 5 مرات لدورة واحدة للمخرجات)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "مقياس متعدد (Multimeter)",
+            "أدوات (Tools)"
+        ],
+        "question": "الأداة المستخدمة لقياس الجهد والتيار والمقاومة تسمى ________.",
+        "choices": [
+            "مسطرة",
+            "مقياس متعدد (Multimeter)",
+            "مقياس حرارة",
+            "ميزان"
+        ],
+        "ans_idx": 1,
+        "justification": "يجمع المقياس المتعدد (multimeter) وظائف قياس متعددة في وحدة واحدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مكونات (Components)",
+            "بطارية (Battery)",
+            "طاقة (Energy)"
+        ],
+        "question": "أي مما يلي يخزن الطاقة كيميائياً؟",
+        "choices": [
+            "محرك",
+            "بطارية (Battery)",
+            "مفتاح",
+            "سلك"
+        ],
+        "ans_idx": 1,
+        "justification": "تخزن البطاريات الطاقة في شكل كيميائي وتحولها إلى كهرباء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجيات (Software)",
+            "ROS",
+            "إطار عمل (Framework)"
+        ],
+        "question": "ماذا تعني ROS؟",
+        "choices": [
+            "نظام تشغيل الروبوت (Robot Operating System)",
+            "ساندويتش قديم حقاً",
+            "حجم زائد للروبوت",
+            "تشغيل يوم الأحد"
+        ],
+        "ans_idx": 0,
+        "justification": "ROS (نظام تشغيل الروبوت) هو إطار عمل مرن لكتابة برامج الروبوت."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "عازل (Insulator)",
+            "مادة (Material)"
+        ],
+        "question": "المطاط والبلاستيك موصلات جيدة للكهرباء.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المطاط والبلاستيك عوازل (Insulators)، مما يعني أنها تمنع تدفق الكهرباء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "استشعار (Sensing)",
+            "تجنب العوائق (Obstacle Avoidance)",
+            "ملاحة (Navigation)"
+        ],
+        "question": "أي سلوك يسمح للروبوت بالتنقل في غرفة دون الاصطدام بالأشياء؟",
+        "choices": [
+            "تتبع الجدار",
+            "تجنب العوائق (Obstacle Avoidance)",
+            "نوم",
+            "رقص"
+        ],
+        "ans_idx": 1,
+        "justification": "يتضمن تجنب العوائق اكتشاف الأشياء وتغيير المسار لتجنب الاصطدام."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "درجات (Degrees)",
+            "هندسة (Geometry)"
+        ],
+        "question": "دورة كاملة للروبوت هي ________ درجة.",
+        "choices": [
+            "90",
+            "180",
+            "360",
+            "100"
+        ],
+        "ans_idx": 2,
+        "justification": "الدورة الكاملة هي 360 درجة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أنواع (Types)",
+            "هيكل خارجي (Exoskeleton)",
+            "قابل للارتداء (Wearable)"
+        ],
+        "question": "بدلة روبوت يمكن ارتداؤها تساعد الناس على رفع الأشياء الثقيلة أو المشي تسمى:",
+        "choices": [
+            "هيكل داخلي",
+            "هيكل خارجي (Exoskeleton)",
+            "معطف",
+            "ملابس داخلية"
+        ],
+        "ans_idx": 1,
+        "justification": "الهيكل الخارجي (exoskeleton) هو آلة متنقلة يمكن ارتداؤها وتعمل بنظام من المحركات الكهربائية، أو الهوائية، أو الرافعات، أو الهيدروليكية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "تجميع (Compilation)",
+            "كود (Code)"
+        ],
+        "question": "عندما تقوم بتحويل كود قابل للقراءة من قبل البشر إلى كود آلة يفهمه الكمبيوتر، يسمى ذلك:",
+        "choices": [
+            "تجميع (Compiling)",
+            "تأليف",
+            "تسميد",
+            "شكوى"
+        ],
+        "ans_idx": 0,
+        "justification": "تترجم المجمعات (Compilers) الكود المصدري إلى كود كائن (لغة الآلة)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "سلامة (Safety)",
+            "ماء (Water)",
+            "إلكترونيات (Electronics)"
+        ],
+        "question": "من الآمن استخدام مجفف الشعر أثناء الاستحمام.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "خلط الكهرباء والماء خطير للغاية بسبب مخاطر الصدمة الكهربائية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "نظام تحديد المواقع (GPS)",
+            "ملاحة (Navigation)"
+        ],
+        "question": "ما النظام الذي يستخدم الأقمار الصناعية لإخبار الروبوت بموقعه على الأرض؟",
+        "choices": [
+            "نظام تحديد المواقع العالمي (GPS)",
+            "TBS",
+            "CBS",
+            "USB"
+        ],
+        "ans_idx": 0,
+        "justification": "يستخدم GPS إشارات من الأقمار الصناعية لتحديد إحداثيات الموقع الدقيقة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "ذكاء اصطناعي (AI)",
+            "اختبار تورينج (Turing Test)",
+            "ذكاء (Intelligence)"
+        ],
+        "question": "اختبار ________ هو وسيلة لمعرفة ما إذا كان الكمبيوتر ذكياً بما يكفي لخداع إنسان للاعتقاد بأنه إنسان أيضاً.",
+        "choices": [
+            "سرعة",
+            "فوضى",
+            "تورينج (Turing)",
+            "رياضيات"
+        ],
+        "ans_idx": 2,
+        "justification": "اختبار تورينج، الذي اقترحه آلان تورينج، يقيم قدرة الآلة على إظهار سلوك ذكي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "مكونات (Components)",
+            "أسلاك توصيل (Jumper Wires)",
+            "توصيلات (Connections)"
+        ],
+        "question": "الأسلاك ذات الدبابيس في النهايات الماستخدمة لتوصيل الأجزاء بسرعة على لوحة التجارب تسمى:",
+        "choices": [
+            "أسلاك توصيل (Jumper Wires)",
+            "حبال قفز",
+            "خيوط صيد",
+            "خيوط"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم أسلاك التوصيل (Jumper wires) لعمل توصيلات على لوحة التجارب أو بين الرؤوس."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "فيزياء (Physics)",
+            "قصور ذاتي (Inertia)",
+            "حركة (Motion)"
+        ],
+        "question": "يقول قانون نيوتن الأول أن الجسم المتحرك يبقى متحركاً ما لم تؤثر عليه قوة. يسمى هذا:",
+        "choices": [
+            "قصور ذاتي (Inertia)",
+            "جاذبية",
+            "احتكاك",
+            "سحر"
+        ],
+        "ans_idx": 0,
+        "justification": "القصور الذاتي هو مقاومة أي جسم مادي لأي تغيير في سرعته المتجهة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "بكرات (Pulleys)",
+            "رفع (Lifting)"
+        ],
+        "question": "يمكن لنظام البكرة (Pulley) أن يجعل رفع الوزن الثقيل أسهل.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يمكن أن توفر البكرات ميزة ميكانيكية، مما يقلل من القوة اللازمة لرفع الحمولة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "منطق (Logic)",
+            "بوابة NOT (NOT Gate)",
+            "عاكس (Inverter)"
+        ],
+        "question": "ماذا تفعل بوابة NOT (العاكس)؟",
+        "choices": [
+            "لا تفعل شيئاً",
+            "تقلب الإشارة (صحيح يصبح خطأ، وخطأ يصبح صحيحاً)",
+            "تجعل الإشارة أعلى صوتاً",
+            "توقف الكهرباء"
+        ],
+        "ans_idx": 1,
+        "justification": "تخرج بوابة NOT عكس مدخلاتها."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "أخلاق (Ethics)",
+            "أسيموف (Asimov)",
+            "قوانين (Laws)"
+        ],
+        "question": "يقول قانون أسيموف الأول: لا يجوز للروبوت أن ________ إنساناً.",
+        "choices": [
+            "يساعد",
+            "يرى",
+            "يؤذي (Injure)",
+            "يحب"
+        ],
+        "ans_idx": 2,
+        "justification": "القانون الأول: لا يجوز للروبوت أن يؤذي إنساناً أو يسمح من خلال عدم اتخاذ إجراء بتعرض إنسان للأذى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "مكثف (Capacitor)",
+            "تخزين (Storage)"
+        ],
+        "question": "أي مكون يخزن الكهرباء لفترة قصيرة، مثل بطارية صغيرة قابلة للشحن؟",
+        "choices": [
+            "مقاوم (Resistor)",
+            "مكثف (Capacitor)",
+            "ترانزستور (Transistor)",
+            "دايود (Diode)"
+        ],
+        "ans_idx": 1,
+        "justification": "تخزن المكثفات الطاقة الكهربائية في مجال كهربائي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "مستشعرات (Sensors)",
+            "مستشعر لون (Color Sensor)",
+            "انعكاس (Refraction)"
+        ],
+        "question": "يعمل مستشعر اللون عن طريق تسليط الضوء وقياس:",
+        "choices": [
+            "كم يؤلم",
+            "كمية الضوء المنعكس (Reflected)",
+            "درجة الحرارة",
+            "الصوت"
+        ],
+        "ans_idx": 1,
+        "justification": "تكتشف مستشعرات الألوان اللون عن طريق قياس شدة الضوء المنعكس من السطح."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "روبوتات (Robotics)",
+            "فن (Art)",
+            "إبداع (Creativity)"
+        ],
+        "question": "الروبوتات مخصصة فقط للرياضيات والعلوم؛ لا يمكنها إنتاج فن أو موسيقى.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم الروبوتات لإنشاء لوحات ومنحوتات وموسيقى (مثل الأوركسترا الروبوتية)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "حمولة (Payload)",
+            "سعة (Capacity)"
+        ],
+        "question": "يسمى أقصى وزن يمكن لذراع الروبوت رفعه:",
+        "choices": [
+            "سعة الحمولة (Payload Capacity)",
+            "وزن الجسم",
+            "معدل الذكاء",
+            "الارتفاع"
+        ],
+        "ans_idx": 0,
+        "justification": "سعة الحمولة هي أقصى وزن يمكن للمناور رفعه."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجيات (Software)",
+            "برامج ثابتة (Firmware)",
+            "أجهزة (Hardware)"
+        ],
+        "question": "البرنامج المبرمج بشكل دائم في ذاكرة جهاز يسمى ________.",
+        "choices": [
+            "ملابس ناعمة",
+            "برامج ثابتة (Firmware)",
+            "ملابس صلبة",
+            "برامج خبيثة"
+        ],
+        "ans_idx": 1,
+        "justification": "البرامج الثابتة (Firmware) هي فئة محددة من برامج الكمبيوتر التي توفر التحكم منخفض المستوى لأجهزة معينة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "إلكترونيات (Electronics)",
+            "دايود (Diode)",
+            "اتجاه (Direction)"
+        ],
+        "question": "أي مكون يسمح للتيار بالتدفق في اتجاه واحد فقط؟",
+        "choices": [
+            "سلك",
+            "دايود (Diode)",
+            "مقاوم",
+            "مكثف"
+        ],
+        "ans_idx": 1,
+        "justification": "الدايود (diode) هو مكون إلكتروني ذو طرفين يوصل التيار في اتجاه واحد بشكل أساسي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة (Programming)",
+            "بناء جملة (Syntax)",
+            "قواعد (Grammar)"
+        ],
+        "question": "إذا أخطأت في كتابة أمر في الكود الخاص بك، فستحصل على:",
+        "choices": [
+            "خطأ في بناء الجملة (Syntax Error)",
+            "خطأ منطقي",
+            "خطأ في الأجهزة",
+            "خطأ المستخدم"
+        ],
+        "ans_idx": 0,
+        "justification": "يحدث خطأ في بناء الجملة عندما ينتهك الكود القواعد النحوية لغة البرمجة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "طاقة (Energy)",
+            "حركية (Kinetic)",
+            "حركة (Movement)"
+        ],
+        "question": "الروبوت المتحرك لديه طاقة حركية (Kinetic Energy).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الطاقة الحركية هي الطاقة التي يمتلكها الجسم بسبب حركته."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "منطق (Logic)",
+            "بوابة OR (OR Gate)",
+            "دوائر (Circuits)"
+        ],
+        "question": "بالنسبة لبوابة OR، يكون الناتج صحيحاً (True) إذا:",
+        "choices": [
+            "كلا المدخلين خطأ",
+            "مدخل واحد على الأقل صحيح (True)",
+            "إنها تمطر",
+            "لا شيء مما سبق"
+        ],
+        "ans_idx": 1,
+        "justification": "تخرج بوابة OR صحيح (True) إذا كان أحد المدخلين أو كلاهما صحيحاً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Robotics",
+        "difficulty_level": 2,
+        "concepts": [
+            "استشعار (Sensing)",
+            "قرب (Proximity)",
+            "مسافة (Distance)"
+        ],
+        "question": "المستشعر الذي يكتشف عندما يكون الجسم قريباً دون لمسه هو مستشعر ________.",
+        "choices": [
+            "قرب (Proximity)",
+            "تذوق",
+            "لمس",
+            "زر"
+        ],
+        "ans_idx": 0,
+        "justification": "تكتشف مستشعرات القرب وجود الأجسام القريبة دون أي اتصال جسدي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 1,
+        "concepts": [
+            "ميكانيكا (Mechanics)",
+            "روبوت (Robot)",
+            "مصطلح (Term)"
+        ],
+        "question": "تأتي كلمة 'Robot' من كلمة تشيكية 'Robota' والتي تعني:",
+        "choices": [
+            "عمل قسري / عمل (Forced Labor / Work)",
+            "صديق",
+            "رجل معدني",
+            "ذكي"
+        ],
+        "ans_idx": 0,
+        "justification": "قدم كارل تشابيك الكلمة في مسرحيته R.U.R.، المشتقة من robota (العمل القسري)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Robotics",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحكم (Control)",
+            "ردود فعل القوة (Force Feedback)",
+            "لمسيات (Haptics)"
+        ],
+        "question": "التكنولوجيا التي تتيح لك 'شعور' الأشياء الافتراضية (مثل وحدة تحكم الألعاب المهتزة) تسمى:",
+        "choices": [
+            "بصريات",
+            "لمسيات (Haptics)",
+            "صوتيات",
+            "علم الوراثة"
+        ],
+        "ans_idx": 1,
+        "justification": "تتضمن اللمسيات (Haptics) تقنية ردود الفعل اللمسية."
+    }
+]

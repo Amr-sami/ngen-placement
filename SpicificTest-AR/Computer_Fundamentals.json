@@ -1,0 +1,3514 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "أجهزة الإدخال (Input Devices)"
+        ],
+        "question": "تريد تحريك شخصيتك في لعبة فيديو مثل روبلوكس (Roblox). أي جهاز تستخدمه لإرسال أمر الحركة هذا إلى الكمبيوتر؟",
+        "choices": [
+            "الشاشة (Monitor)",
+            "لوحة المفاتيح (Keyboard)",
+            "مكبر الصوت (Speaker)",
+            "الطابعة (Printer)"
+        ],
+        "ans_idx": 1,
+        "justification": "تعد لوحة المفاتيح (Keyboard) جهاز إدخال يُستخدم لإرسال الأوامر، مثل حركة الشخصية، إلى الكمبيوتر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المكونات المادية (Physical Components)"
+        ],
+        "question": "تشير أجهزة الكمبيوتر (Computer Hardware) إلى أجزاء الكمبيوتر التي يمكنك لمسها فعلياً، مثل الشاشة والماوس.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تشمل الأجهزة (Hardware) جميع المكونات المادية لنظام الكمبيوتر، على عكس البرمجيات (Software) التي تتكون من برامج رقمية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "وحدة المعالجة المركزية (CPU)"
+        ],
+        "question": "أي جزء من الكمبيوتر يعمل بمثابة \"الدماغ\" من خلال معالجة جميع التعليمات من تطبيقاتك وألعابك؟",
+        "choices": [
+            "القرص الصلب (Hard Drive)",
+            "المروحة (Fan)",
+            "وحدة المعالجة المركزية (CPU)",
+            "سلك الطاقة (Power Cord)"
+        ],
+        "ans_idx": 2,
+        "justification": "وحدة المعالجة المركزية (CPU) هي المكون الأساسي الذي يعالج التعليمات والعمليات الحسابية، وتعمل بمثابة دماغ الكمبيوتر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "أنظمة التشغيل (Operating Systems)"
+        ],
+        "question": "تُعد ويندوز (Windows) وماك (macOS) وأندرويد (Android) أمثلة على __________، الذي يدير جميع البرامج الأخرى على الجهاز.",
+        "choices": [
+            "نظام التشغيل (Operating System)",
+            "مضاد الفيروسات (Antivirus)",
+            "جهاز الإدخال (Input Device)",
+            "متصفح الإنترنت (Internet Browser)"
+        ],
+        "ans_idx": 0,
+        "justification": "نظام التشغيل (Operating System) هو برنامج النظام الذي يدير موارد أجهزة الكمبيوتر والبرمجيات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "أجهزة الإخراج (Output Devices)"
+        ],
+        "question": "بعد الانتهاء من كتابة مقال، تريد رؤيته على الورق. أي جهاز يعمل كجهاز \"إخراج\" (Output) للقيام بذلك؟",
+        "choices": [
+            "الميكروفون (Microphone)",
+            "كاميرا الويب (Webcam)",
+            "الماسح الضوئي (Scanner)",
+            "الطابعة (Printer)"
+        ],
+        "ans_idx": 3,
+        "justification": "الطابعة (Printer) هي جهاز إخراج لأنها تأخذ المعلومات الرقمية من الكمبيوتر وتنتج نتيجة مادية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التطبيقات (Applications)"
+        ],
+        "question": "يعد كل من مايكروسوفت وورد (Microsoft Word) وفورتنايت (Fortnite) أمثلة على الأجهزة (Hardware).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "هذه أمثلة على البرمجيات (Software) (تطبيقات/ألعاب)، وليست أجهزة (Hardware)، لأنها برامج رقمية وليست أجزاء مادية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "التخزين (Storage)"
+        ],
+        "question": "إذا قمت بحفظ صورة على جهاز الكمبيوتر الخاص بك لتتمكن من النظر إليها في الأسبوع المقبل، فأين يتم حفظها؟",
+        "choices": [
+            "ذاكرة الوصول العشوائي (RAM)",
+            "القرص الصلب / محرك الحالة الثابتة (Hard Drive / SSD)",
+            "الماوس (Mouse)",
+            "الشاشة (Monitor)"
+        ],
+        "ans_idx": 1,
+        "justification": "يوفر القرص الصلب (Hard Drive) أو محرك الحالة الثابتة (SSD) تخزيناً طويل المدى، مما يحافظ على أمان ملفاتك حتى عند إيقاف تشغيل الكمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الأجهزة الطرفية (Peripherals)"
+        ],
+        "question": "أي مما يلي يُستخدم لسماع الصوت الصادر من جهاز الكمبيوتر الخاص بك دون إزعاج الأشخاص من حولك؟",
+        "choices": [
+            "الميكروفون (Microphone)",
+            "الماسح الضوئي (Scanner)",
+            "سماعات الرأس (Headphones)",
+            "كاميرا الويب (Webcam)"
+        ],
+        "ans_idx": 2,
+        "justification": "سماعات الرأس (Headphones) هي جهاز إخراج صوتي مصمم للاستماع الشخصي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأساسيات (Basics)",
+            "المصطلحات (Terminology)"
+        ],
+        "question": "الكمبيوتر المحمول (Laptop) هو نوع من أجهزة الكمبيوتر _________ الذي يعمل ببطارية ويسهل حمله.",
+        "choices": [
+            "المحمول (Portable)",
+            "المكتبي (Desktop)",
+            "الفائق (Super)",
+            "الثابت (Stationary)"
+        ],
+        "ans_idx": 0,
+        "justification": "تم تصميم أجهزة الكمبيوتر المحمولة (Laptops) لتكون قابلة للحمل (Portable)، مما يسمح للمستخدمين بنقلها بسهولة مقارنة بأجهزة الكمبيوتر المكتبية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "التفاعل (Interaction)"
+        ],
+        "question": "تعمل شاشة اللمس (Touchscreen) في الجهاز اللوحي كجهاز إدخال (تلمسها) وجهاز إخراج (تعرض لك الصور) في آنٍ واحد.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تتميز شاشات اللمس (Touchscreens) بأنها فريدة لأنها تعرض المعلومات (إخراج) وتكتشف إيماءات اللمس (إدخال) في وقت واحد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "واجهة المستخدم (UI)"
+        ],
+        "question": "ما هو اسم السهم الموجود على الشاشة الذي يتحرك عند تحريك الماوس؟",
+        "choices": [
+            "العلامة (Marker)",
+            "المؤشر (Cursor)",
+            "الزر (Button)",
+            "الخلل (Glitch)"
+        ],
+        "ans_idx": 1,
+        "justification": "المؤشر (Cursor) هو العلامة التي تظهر على الشاشة وتُستخدم لتحديد العناصر والتنقل في نظام التشغيل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "أجهزة الإدخال (Input Devices)"
+        ],
+        "question": "تريد التحدث إلى أصدقائك في دردشة صوتية أثناء لعب لعبة. أي جهاز تحتاجه؟",
+        "choices": [
+            "الطابعة (Printer)",
+            "الميكروفون (Microphone)",
+            "الشاشة (Monitor)",
+            "جهاز العرض (Projector)"
+        ],
+        "ans_idx": 1,
+        "justification": "الميكروفون (Microphone) هو جهاز إدخال يلتقط الصوت، مما يسمح لك بالتحدث إلى الكمبيوتر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "إدارة الملفات (File Management)"
+        ],
+        "question": "لتنظيم ملفات واجباتك المدرسية حتى لا تكون فوضوية، يجب عليك وضعها داخل ________.",
+        "choices": [
+            "سلة المحذوفات (Recycle Bin)",
+            "مجلد (Folder)",
+            "متصفح (Browser)",
+            "قابس (Plug)"
+        ],
+        "ans_idx": 1,
+        "justification": "تُستخدم المجلدات (Folders) في أنظمة التشغيل لتجميع وتنظيم الملفات بكفاءة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإقلاع (Booting)"
+        ],
+        "question": "إذا تجمد جهاز الكمبيوتر الخاص بك أو تصرف بغرابة، فإن الخطوة الأولى الشائعة لإصلاحه هي إعادة تشغيله (Reboot).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تعمل إعادة التشغيل على مسح الذاكرة قصيرة المدى (RAM) وإعادة تعيين العمليات الجارية، مما يؤدي غالباً إلى حل المشكلات المؤقتة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الإنترنت (Internet)"
+        ],
+        "question": "أي من هذه البرامج ستفتحه إذا أردت زيارة موقع ويب مثل يوتيوب أو ويكيبيديا؟",
+        "choices": [
+            "الآلة الحاسبة (Calculator)",
+            "متصفح الويب (Web Browser)",
+            "الرسام (Paint)",
+            "المفكرة (Notepad)"
+        ],
+        "ans_idx": 1,
+        "justification": "متصفح الويب (Web Browser) (مثل كروم أو إيدج أو سفاري) هو تطبيق برمجي يُستخدم للوصول إلى الإنترنت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الاتصال (Connectivity)"
+        ],
+        "question": "أي كابل يُستخدم بشكل شائع لتوصيل الماوس أو لوحة المفاتيح أو محرك أقراص فلاش بجهاز كمبيوتر؟",
+        "choices": [
+            "سلك الطاقة (Power Cord)",
+            "كابل يو إس بي (USB Cable)",
+            "إيثرنت (Ethernet)",
+            "مقبس الصوت (Audio Jack)"
+        ],
+        "ans_idx": 1,
+        "justification": "يُعد الناقل التسلسلي العام (USB) واجهة الاتصال القياسية لمعظم الأجهزة الطرفية مثل الماوس ولوحات المفاتيح ومحركات الأقراص."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "تمثيل البيانات (Data Representation)"
+        ],
+        "question": "أجهزة الكمبيوتر لا تفهم الإنجليزية أو الإسبانية. في المستوى الأساسي جداً، ما هي \"اللغة\" التي تفهمها؟",
+        "choices": [
+            "النظام الثنائي (Binary) (أصفار وواحدات)",
+            "الفرنسية (French)",
+            "الرموز التعبيرية (Emojis)",
+            "الصور (Pictures)"
+        ],
+        "ans_idx": 0,
+        "justification": "تعمل أجهزة الكمبيوتر باستخدام الكود الثنائي (Binary Code)، الذي يتكون من تسلسلات من 0 و 1 تمثل إشارات كهربائية (إيقاف وتشغيل)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الذاكرة (Memory)"
+        ],
+        "question": "ذاكرة الوصول العشوائي (RAM) هي ذاكرة الكمبيوتر \"قصيرة المدى\" التي تنسى كل شيء عند إيقاف تشغيل الطاقة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "ذاكرة الوصول العشوائي (RAM) هي ذاكرة متطايرة، مما يعني أنها تحتفظ بالبيانات فقط أثناء تشغيل الكمبيوتر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "الأيقونات (Icons)"
+        ],
+        "question": "الصور الصغيرة الموجودة على شاشتك والتي تنقر عليها لفتح التطبيقات تسمى ________.",
+        "choices": [
+            "الرموز التعبيرية (Emojis)",
+            "الأيقونات (Icons)",
+            "الملفات (Files)",
+            "النوافذ (Windows)"
+        ],
+        "ans_idx": 1,
+        "justification": "الأيقونات (Icons) هي تمثيلات رسومية للبرامج أو الملفات أو الأوامر على واجهة الكمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المكونات (Components)"
+        ],
+        "question": "ماذا تسمى لوحة الدوائر الرئيسية التي تربط وحدة المعالجة المركزية والذاكرة والقرص الصلب معاً؟",
+        "choices": [
+            "اللوحة الأب (Fatherboard)",
+            "اللوحة الأم (Motherboard)",
+            "لوحة المفاتيح (Keyboard)",
+            "لوحة التزلج (Surfboard)"
+        ],
+        "ans_idx": 1,
+        "justification": "اللوحة الأم (Motherboard) هي لوحة الدوائر الرئيسية التي تربط جميع المكونات الأساسية للكمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "امتدادات الملفات (File Extensions)"
+        ],
+        "question": "إذا رأيت ملفاً باسم \"homework.jpg\"، فما نوع هذا الملف على الأرجح؟",
+        "choices": [
+            "أغنية موسيقية",
+            "صورة (Image/Picture)",
+            "لعبة فيديو",
+            "مستند وورد"
+        ],
+        "ans_idx": 1,
+        "justification": "يعمل امتداد الملف .jpg كتسمية تخبر الكمبيوتر أن الملف بتنسيق صورة قياسي."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "التبريد (Cooling)"
+        ],
+        "question": "تحتوي أجهزة الكمبيوتر على مراوح بداخلها لأن الأجزاء الإلكترونية تسخن عندما تعمل بجهد.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تولد المكونات الإلكترونية حرارة أثناء التشغيل، وتكون المراوح مطلوبة لتبريدها لمنع ارتفاع درجة الحرارة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التحديثات (Updates)"
+        ],
+        "question": "لماذا تطلب منك الألعاب والتطبيقات أحياناً تنزيل \"تحديث\" (Update)؟",
+        "choices": [
+            "لتعطيل الكمبيوتر",
+            "لحذف ملفات الحفظ الخاصة بك",
+            "لإضافة ميزات جديدة أو إصلاح الأخطاء (Bugs)",
+            "لتغيير لون الشاشة"
+        ],
+        "ans_idx": 2,
+        "justification": "يتم إصدار التحديثات (Updates) من قبل المطورين لتحسين البرمجيات، أو إضافة محتوى، أو إصلاح الأخطاء (Bugs) الموجودة في الإصدارات السابقة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الشبكة (Network)",
+            "اللاسلكي (Wireless)"
+        ],
+        "question": "عندما تقوم بتوصيل جهاز لوحي بالإنترنت دون استخدام أي أسلاك، فإنك تستخدم ________.",
+        "choices": [
+            "إيثرنت (Ethernet)",
+            "واي فاي (Wi-Fi)",
+            "يو إس بي (USB)",
+            "إتش دي إم آي (HDMI)"
+        ],
+        "ans_idx": 1,
+        "justification": "واي فاي (Wi-Fi) هي التقنية المستخدمة للشبكات المحلية اللاسلكية مع الأجهزة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الطاقة (Power)"
+        ],
+        "question": "إذا كان لديك جهاز كمبيوتر مكتبي (الصندوق الكبير أسفل المكتب)، ماذا يحدث إذا قمت بفصله عن الحائط أثناء استخدامه؟",
+        "choices": [
+            "يستمر في العمل لمدة ساعة",
+            "يتحول إلى الطاقة الشمسية",
+            "ينطفئ فوراً",
+            "يحفظ لعبتك تلقائياً"
+        ],
+        "ans_idx": 2,
+        "justification": "على عكس أجهزة الكمبيوتر المحمولة، لا تحتوي أجهزة الكمبيوتر المكتبية القياسية على بطاريات داخلية وستفقد الطاقة فوراً إذا تم فصلها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الاختصارات (Shortcuts)",
+            "الإنتاجية (Productivity)"
+        ],
+        "question": "إذا أردت نسخ صورة من جوجل لوضعها في واجبك المدرسي، فما هو اختصار لوحة المفاتيح الذي تستخدمه عادةً؟",
+        "choices": [
+            "Ctrl + C",
+            "Ctrl + V",
+            "Ctrl + Z",
+            "Ctrl + P"
+        ],
+        "ans_idx": 0,
+        "justification": "Ctrl + C هو الاختصار العالمي لـ \"النسخ\" (Copy). (Ctrl + V هو للصق)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الكاميرا (Camera)"
+        ],
+        "question": "كاميرا الويب (Webcam) هي جهاز يسمح للكمبيوتر برؤيتك، وهو مفيد للدروس عبر الإنترنت أو مكالمات الفيديو.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تلتقط كاميرات الويب (Webcams) مدخلات الفيديو، مما يسمح بعقد مؤتمرات الفيديو والتسجيل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الإنترنت (Internet)"
+        ],
+        "question": "عندما تضع ملفاً من الإنترنت على جهاز الكمبيوتر الخاص بك (مثل الحصول على مثبت لعبة جديد)، يسمى هذا ________.",
+        "choices": [
+            "الرفع (Uploading)",
+            "التنزيل (Downloading)",
+            "البث (Streaming)",
+            "التخزين المؤقت (Buffering)"
+        ],
+        "ans_idx": 1,
+        "justification": "التنزيل (Downloading) هو عملية استقبال البيانات من نظام بعيد (الإنترنت) إلى نظام محلي (جهاز الكمبيوتر الخاص بك)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المنافذ (Ports)"
+        ],
+        "question": "تريد توصيل سماعات الرأس بالكمبيوتر. ما هو شكل الثقب (المنفذ) الذي تبحث عنه عادةً؟",
+        "choices": [
+            "مستطيل كبير",
+            "دائرة مستديرة صغيرة",
+            "مثلث",
+            "مربع"
+        ],
+        "ans_idx": 1,
+        "justification": "مقبس الصوت 3.5 مم (Audio Jack) هو منفذ دائري صغير يستخدم لتوصيل سماعات الرأس والميكروفونات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "التفاعل (Interaction)",
+            "الماوس (Mouse)"
+        ],
+        "question": "النقر المزدوج (Double-clicking) على أيقونة التطبيق يفتح التطبيق عادةً، بينما النقر المفرد يحدده فقط.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "في معظم أنظمة التشغيل، يعد النقر المزدوج أمر التشغيل لتنفيذ/فتح ملف أو برنامج."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "أنواع التخزين (Storage Types)"
+        ],
+        "question": "أنت تشتري جهاز كمبيوتر جديد للألعاب. تريد أن يتم تحميل ألعابك بسرعة كبيرة. أي نوع من التخزين يجب أن تختار؟",
+        "choices": [
+            "محرك الأقراص الصلبة (HDD)",
+            "محرك الحالة الثابتة (SSD)",
+            "محرك أقراص دي في دي (DVD Drive)",
+            "القرص المرن (Floppy Disk)"
+        ],
+        "ans_idx": 1,
+        "justification": "تعد محركات الحالة الثابتة (SSD) أسرع بكثير من محركات الأقراص الصلبة التقليدية (HDD) لأنها تستخدم ذاكرة فلاش بدلاً من الأطباق المغناطيسية الدوارة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "إدارة الملفات (File Management)"
+        ],
+        "question": "عندما تحذف ملفاً على جهاز الكمبيوتر الخاص بك، فإنه لا يختفي إلى الأبد فوراً. بل ينتقل أولاً إلى ________.",
+        "choices": [
+            "لوحة التحكم (Control Panel)",
+            "سلة المحذوفات / المهملات (Recycle Bin / Trash)",
+            "صندوق الوارد (Inbox)",
+            "السحابة (Cloud)"
+        ],
+        "ans_idx": 1,
+        "justification": "تحتفظ سلة المحذوفات (في ويندوز) أو سلة المهملات (في ماك) بالملفات المحذوفة مؤقتاً، مما يسمح لك باستعادتها إذا ارتكبت خطأ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "وحدة معالجة الرسوميات (GPU)"
+        ],
+        "question": "إذا كانت لعبة الفيديو الخاصة بك تبدو متقطعة أو ضبابية أو بطيئة عندما يكون هناك الكثير من الحركة، فما هو المكون الذي يحتاج إلى ترقية على الأرجح؟",
+        "choices": [
+            "لوحة المفاتيح (Keyboard)",
+            "بطاقة الرسوميات (GPU)",
+            "بطاقة الصوت (Sound Card)",
+            "الطابعة (Printer)"
+        ],
+        "ans_idx": 1,
+        "justification": "وحدة معالجة الرسوميات (GPU) مسؤولة عن عرض الصور والفيديو؛ وتؤدي وحدة معالجة الرسوميات الضعيفة إلى ضعف أداء اللعبة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الاتصال (Connectivity)",
+            "بلوتوث (Bluetooth)"
+        ],
+        "question": "بلوتوث (Bluetooth) هي تقنية تستخدم لتوصيل الأجهزة مثل وحدات التحكم وسماعات الرأس عبر مسافات طويلة جداً (مثل عبر مدينة).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "بلوتوث (Bluetooth) هي تقنية لاسلكية قصيرة المدى، تعمل عادةً بفعالية داخل غرفة فقط (حوالي 10 أمتار)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الحوسبة السحابية (Cloud Computing)",
+            "التخزين (Storage)"
+        ],
+        "question": "بدأت بكتابة مستند على جهاز كمبيوتر مدرسي وأنهيته على هاتفك في المنزل. كيف يمكن ذلك؟",
+        "choices": [
+            "لديك كابل طويل جداً",
+            "تم حفظ الملف في السحابة (Cloud) (مثل جوجل درايف)",
+            "أجهزة الكمبيوتر يمكنها قراءة أفكارك",
+            "استخدمت قرصاً مرناً"
+        ],
+        "ans_idx": 1,
+        "justification": "يحفظ التخزين السحابي (Cloud Storage) البيانات على خوادم الإنترنت، مما يجعلها قابلة للوصول من أي جهاز متصل بالإنترنت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "إدارة المهام (Task Management)"
+        ],
+        "question": "تجمد تطبيق على جهاز الكمبيوتر الخاص بك ولن يغلق عند النقر فوق \"X\". ما الأداة التي يمكنك استخدامها لإغلاقه بالقوة؟",
+        "choices": [
+            "مدير المهام (Task Manager)",
+            "الرسام (Paint)",
+            "الآلة الحاسبة (Calculator)",
+            "مستكشف الملفات (File Explorer)"
+        ],
+        "ans_idx": 0,
+        "justification": "يسمح مدير المهام (Task Manager) (في ويندوز) أو مراقب النشاط (في ماك) للمستخدمين بعرض العمليات الجارية وإغلاق التطبيقات غير المستجيبة بالقوة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "الوحدات (Units)"
+        ],
+        "question": "في تخزين الكمبيوتر، الجيجابايت (GB) أكبر من الميجابايت (MB)، ولكنها أصغر من ________.",
+        "choices": [
+            "كيلوبايت (KB)",
+            "بايت (Byte)",
+            "تيرا بايت (TB)",
+            "بت (Bit)"
+        ],
+        "ans_idx": 2,
+        "justification": "عادةً ما يكون تسلسل وحدات التخزين: بايت -> كيلوبايت -> ميجابايت -> جيجابايت -> تيرابايت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "امتدادات الملفات (File Extensions)"
+        ],
+        "question": "أي من أنواع الملفات هذه هو ملف \"قابل للتنفيذ\" (Executable) (برنامج يقوم بتثبيت أو تشغيل شيء ما)، والذي يجب أن تكون حذراً عند فتحه؟",
+        "choices": [
+            ".jpg",
+            ".mp3",
+            ".exe",
+            ".txt"
+        ],
+        "ans_idx": 2,
+        "justification": ".exe تعني قابل للتنفيذ (Executable). تقوم هذه الملفات بتشغيل البرامج ويمكنها تغيير إعدادات الكمبيوتر الخاص بك، لذا يمكن أن تكون خطيرة إذا كانت من مصادر غير معروفة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "المتصفح (Browser)",
+            "الخصوصية (Privacy)"
+        ],
+        "question": "استخدام \"وضع التصفح المتخفي\" (Incognito Mode) أو \"التصفح الخاص\" يجعلك غير مرئي للإنترنت بحيث لا يمكن لأحد رؤية ما تزوره.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "يمنع وضع التصفح المتخفي جهاز الكمبيوتر *المحلي* فقط من حفظ السجل. لا يزال بإمكان مزود الإنترنت ومواقع الويب التي تزورها رؤيتك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "إخراج الفيديو (Video Output)"
+        ],
+        "question": "تريد توصيل الكمبيوتر المحمول بجهاز تلفزيون كبير لمشاهدة فيلم. أي كابل يُستخدم بشكل شائع لإرسال كل من الفيديو والصوت عالي الجودة؟",
+        "choices": [
+            "يو إس بي (USB)",
+            "إتش دي إم آي (HDMI)",
+            "إيثرنت (Ethernet)",
+            "كابل الطاقة (Power Cable)"
+        ],
+        "ans_idx": 1,
+        "justification": "إتش دي إم آي (HDMI) (واجهة الوسائط المتعددة عالية الوضوح) تنقل إشارات الفيديو والصوت عالية الجودة بين الأجهزة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الاختصارات (Shortcuts)"
+        ],
+        "question": "لقد حذفت فقرة في مقالك عن طريق الخطأ! ما هو الاختصار العالمي \"للتراجع\" (Undo) عن خطئك؟",
+        "choices": [
+            "Ctrl + S",
+            "Ctrl + Z",
+            "Ctrl + U",
+            "Ctrl + Alt + Delete"
+        ],
+        "ans_idx": 1,
+        "justification": "Ctrl + Z (أو Command + Z في ماك) هو الاختصار القياسي للتراجع عن الإجراء الأخير."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الضغط (Compression)"
+        ],
+        "question": "إذا كان لديك 50 صورة لإرسالها بالبريد الإلكتروني إلى صديق، فمن الأسهل وضعها جميعاً في مجلد ________ واحد (مثل ملف .zip) لجعل حجمها أصغر.",
+        "choices": [
+            "محذوف",
+            "مضغوط (Compressed / Zipped)",
+            "مخفي",
+            "تالف"
+        ],
+        "ans_idx": 1,
+        "justification": "الضغط (Compression) يقلل من حجم الملف ويجمع ملفات متعددة في حزمة واحدة لتسهيل المشاركة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التعريفات (Drivers)"
+        ],
+        "question": "\"التعريف\" (Driver) هو برنامج صغير يخبر الكمبيوتر بكيفية التحدث إلى قطعة معينة من الأجهزة، مثل الطابعة أو بطاقة الرسوميات.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "التعريفات (Drivers) هي مكونات برمجية أساسية تسمح لنظام التشغيل بالتواصل مع أجهزة معينة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "سرعة الشبكة (Network Speed)"
+        ],
+        "question": "إذا كنت تشاهد فيلماً بدقة 4K على نتفليكس، فأنت بحاجة إلى سرعة ________ جيدة. وإذا كنت تنشر فيديو على تيك توك، فأنت بحاجة إلى سرعة ________ جيدة.",
+        "choices": [
+            "رفع؛ تنزيل",
+            "تنزيل (Download)؛ رفع (Upload)",
+            "كتابة؛ قراءة",
+            "معالجة؛ تخزين"
+        ],
+        "ans_idx": 1,
+        "justification": "التنزيل (Downloading) هو سحب البيانات إليك (المشاهدة)، والرفع (Uploading) هو إرسال البيانات منك (النشر)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الأجهزة الطرفية (Peripherals)"
+        ],
+        "question": "أي مما يلي يعتبر \"محرك أقراص ضوئي\" (Optical Drive) لأنه يستخدم الليزر لقراءة البيانات؟",
+        "choices": [
+            "ذاكرة يو إس بي (USB Stick)",
+            "مشغل دي في دي / بلو راي (DVD/Blu-ray Player)",
+            "قرص صلب (Hard Drive)",
+            "بطاقة ذاكرة (SD Card)"
+        ],
+        "ans_idx": 1,
+        "justification": "تقرأ محركات الأقراص الضوئية البيانات وتكتبها على الأقراص (CDs, DVDs, Blu-rays) باستخدام ضوء الليزر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "المتصفحات (Browsers)"
+        ],
+        "question": "لتتبع مواقع الويب المفضلة لديك حتى تتمكن من زيارتها بسرعة لاحقاً، يجب عليك إنشاء ________.",
+        "choices": [
+            "لقطة شاشة (Screenshot)",
+            "إشارة مرجعية (Bookmark)",
+            "ملف تعريف ارتباط (Cookie)",
+            "فيروس (Virus)"
+        ],
+        "ans_idx": 1,
+        "justification": "تسمح الإشارات المرجعية (Bookmarks) (أو المفضلة) للمستخدمين بحفظ عنوان URL لصفحة ويب للوصول السريع إليها مستقبلاً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "الإعدادات (Settings)"
+        ],
+        "question": "تريد تغيير صورة الخلفية (Wallpaper) لسطح المكتب. أين تجد هذا الإعداد عادةً؟",
+        "choices": [
+            "في سلة المهملات",
+            "في معالج النصوص",
+            "في الإعدادات > إضفاء طابع شخصي (Settings > Personalization)",
+            "في البيوس (BIOS)"
+        ],
+        "ans_idx": 2,
+        "justification": "يتم التحكم في الخلفيات والسمات في قسم إضفاء الطابع الشخصي أو العرض في إعدادات النظام."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الترخيص (Licensing)"
+        ],
+        "question": "البرمجيات \"مفتوحة المصدر\" (Open Source) تعني أن الكود مجاني لأي شخص للاطلاع عليه وتغييره، على عكس البرمجيات \"المملوكة\" (Proprietary) التي تغلقها الشركة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح البرمجيات مفتوحة المصدر للمجتمع بالوصول إلى الكود المصدري، بينما تكون البرمجيات المملوكة ملكاً للمنشئ ومقيدة من قبله."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمان (Security)",
+            "الوصول (Access)"
+        ],
+        "question": "ما هو الغرض من \"المصادقة الثنائية\" (2FA) عند تسجيل الدخول إلى بريدك الإلكتروني؟",
+        "choices": [
+            "لجعل تسجيل الدخول أسرع",
+            "لتطلب خطوة ثانية (مثل رمز على هاتفك) لمزيد من الأمان",
+            "لمشاركة كلمة المرور الخاصة بك مع الأصدقاء",
+            "لحذف حسابك"
+        ],
+        "ans_idx": 1,
+        "justification": "تضيف المصادقة الثنائية (2FA) طبقة من الأمان من خلال طلب نوعين من التعريف (كلمة المرور + الرمز) لمنع الوصول غير المصرح به."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "ذاكرة الوصول العشوائي (RAM)"
+        ],
+        "question": "إذا كان لديك 50 علامة تبويب مفتوحة في كروم وبدأ جهاز الكمبيوتر في العمل ببطء شديد، فما هو المورد الذي نفد منك على الأرجح؟",
+        "choices": [
+            "مساحة القرص الصلب",
+            "ذاكرة الوصول العشوائي (RAM)",
+            "بيانات الإنترنت",
+            "الكهرباء"
+        ],
+        "ans_idx": 1,
+        "justification": "تعيش البرامج النشطة وعلامات تبويب المتصفح في ذاكرة الوصول العشوائي (RAM). عندما تمتلئ الذاكرة، يتباطأ الكمبيوتر بشكل ملحوظ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "إدارة الطاقة (Power Management)",
+            "وضع السكون (Sleep Mode)"
+        ],
+        "question": "عندما تضع الكمبيوتر المحمول في 'وضع السكون (Sleep Mode)' بدلاً من إيقاف تشغيله، ما الذي يحدث بالداخل؟",
+        "choices": [
+            "ينطفئ تماماً لتوفير الطاقة بنسبة 100%",
+            "يحتفظ بالتطبيقات المفتوحة حالياً في ذاكرة الوصول العشوائي (RAM) باستخدام القليل من الطاقة",
+            "يقوم بحذف جميع ملفاتك",
+            "يقوم بتثبيت نظام تشغيل جديد"
+        ],
+        "ans_idx": 1,
+        "justification": "يحافظ وضع السكون (Sleep Mode) على نشاط ذاكرة الوصول العشوائي (RAM) حتى يتمكن الكمبيوتر من الاستيقاظ فوراً من حيث توقفت."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المعالجات (Processors)"
+        ],
+        "question": "وحدة المعالجة المركزية (CPU) التي تحتوي على عدد أكبر من 'الأنوية (Cores)' (مثل رباعي النواة أو ثماني النواة) يمكنها عموماً القيام بأشياء أكثر في نفس الوقت مقارنة بوحدة المعالجة المركزية أحادية النواة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح الأنوية المتعددة للمعالج بالتعامل مع مهام متعددة في وقت واحد (تعدد المهام) بكفاءة أكبر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنتاجية (Productivity)",
+            "لقطات الشاشة (Screenshots)"
+        ],
+        "question": "رأيت خللاً مضحكاً في لعبة وتريد حفظ صورة لشاشتك فوراً. ماذا يسمى هذا عادة؟",
+        "choices": [
+            "تسجيل الشاشة (Screen-recording)",
+            "لقطة شاشة (Screenshot)",
+            "تنزيل (Download)",
+            "صورة مصغرة (Thumbnail)"
+        ],
+        "ans_idx": 1,
+        "justification": "تلتقط لقطة الشاشة (Screenshot) صورة ثابتة لأي شيء معروض حالياً على الشاشة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات (Networking)",
+            "الأجهزة (Hardware)"
+        ],
+        "question": "الجهاز الموجود في منزلك والذي يأخذ إشارة الإنترنت من مزود خدمة الإنترنت (ISP) ويبث إشارة واي فاي (Wi-Fi) يسمى ________.",
+        "choices": [
+            "مودم / راوتر (Modem/Router)",
+            "ماسح ضوئي (Scanner)",
+            "خادم (Server)",
+            "جدار حماية (Firewall)"
+        ],
+        "ans_idx": 0,
+        "justification": "يدير الراوتر (Router) (الذي غالباً ما يتم دمجه مع مودم) حركة مرور الشبكة ويوفر نقاط وصول واي فاي (Wi-Fi)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمان (Security)",
+            "البرمجيات الخبيثة (Malware)"
+        ],
+        "question": "تلقيت بريداً إلكترونياً يقول 'لقد ربحت جهاز آيفون مجانياً! اضغط هنا!'. هذا على الأرجح نوع من الاحتيال يسمى:",
+        "choices": [
+            "التصيد الاحتيالي (Phishing)",
+            "تصحيح الأخطاء (Debugging)",
+            "البرمجة (Coding)",
+            "الشبكات (Networking)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن التصيد الاحتيالي (Phishing) خداع المستخدمين للنقر على روابط ضارة أو الكشف عن معلومات شخصية من خلال التظاهر بأنهم مصدر شرعي."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "أنظمة الملفات (File Systems)",
+            "الأدلة (Directories)"
+        ],
+        "question": "'المسار (Path)' (مثل C:\\Users\\Name\\Documents) يخبر الكمبيوتر بالعنوان الدقيق لمكان وجود الملف.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يحدد مسار الملف الموقع الفريد للملف في هيكل الدليل لنظام الملفات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "استكشاف الأخطاء وإصلاحها (Troubleshooting)",
+            "الصوت (Audio)"
+        ],
+        "question": "لا يمكنك سماع أي صوت من فيديو يوتيوب. تحققت من أن مكبرات الصوت تعمل. ما الذي يجب عليك التحقق منه في نظام التشغيل بعد ذلك؟",
+        "choices": [
+            "التحقق مما إذا كان هناك حبر في الطابعة",
+            "التحقق مما إذا كان مازج الصوت (Volume Mixer) مكتوماً",
+            "التحقق مما إذا كان الماوس متصلاً",
+            "التحقق مما إذا كانت لغة لوحة المفاتيح صحيحة"
+        ],
+        "ans_idx": 1,
+        "justification": "يتحكم مازج الصوت (Volume Mixer) في نظام التشغيل في مستويات الصوت للتطبيقات الفردية ومستوى الصوت الرئيسي للنظام."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الدقة (Resolution)"
+        ],
+        "question": "غالباً ما تقاس جودة شاشتك بـ ________. على سبيل المثال، 1920x1080 (1080p).",
+        "choices": [
+            "بوصات",
+            "الدقة (Resolution)",
+            "الوزن",
+            "الحجم"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير الدقة (Resolution) إلى عدد البكسلات على شاشة العرض؛ الأرقام الأعلى تعني صوراً أكثر وضوحاً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "النطاقات (Domains)"
+        ],
+        "question": "في عنوان موقع الويب 'www.google.com'، ماذا يسمى الجزء '.com'؟",
+        "choices": [
+            "اسم المستخدم",
+            "كلمة المرور",
+            "امتداد النطاق (Domain Extension)",
+            "مصطلح البحث"
+        ],
+        "ans_idx": 2,
+        "justification": ".com و .org و .edu هي أمثلة على نطاقات المستوى الأعلى (TLDs) أو امتدادات النطاق."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "بيتا (Beta)"
+        ],
+        "question": "إذا كانت اللعبة في مرحلة 'بيتا (Beta)'، فهذا يعني أن اللعبة انتهت بنسبة 100% وليس بها أخطاء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "برمجيات بيتا (Beta) هي نسخة ما قبل الإصدار تستخدم للاختبار؛ ومن المتوقع أن تحتوي على أخطاء وأن تكون غير مكتملة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "عامل الشكل (Form Factor)"
+        ],
+        "question": "أي من أجهزة الكمبيوتر هذه يعتبر 'الكل في واحد' (All-in-One)؟",
+        "choices": [
+            "برج كبير مع شاشة منفصلة",
+            "كمبيوتر حيث تم دمج الشاشة وأجزاء الكمبيوتر في وحدة واحدة",
+            "كمبيوتر محمول بدون شاشة",
+            "هاتف"
+        ],
+        "ans_idx": 1,
+        "justification": "تدمج أجهزة الكمبيوتر الكل في واحد (All-in-One) (مثل iMac) المكونات الداخلية في نفس الهيكل الذي توجد به الشاشة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "اتفاقية ترخيص المستخدم النهائي (EULA)"
+        ],
+        "question": "عندما تقوم بتثبيت لعبة جديدة، عادة ما يتعين عليك النقر فوق 'أوافق' على مستند طويل لا يقرأه أحد. ما هو هذا المستند؟",
+        "choices": [
+            "دليل المستخدم",
+            "شروط الخدمة / اتفاقية ترخيص المستخدم النهائي (EULA)",
+            "رموز الغش",
+            "الإيصال"
+        ],
+        "ans_idx": 1,
+        "justification": "تحدد اتفاقية ترخيص المستخدم النهائي (EULA) أو شروط الخدمة القواعد القانونية لاستخدام البرنامج."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "النسخ الاحتياطي (Backup)"
+        ],
+        "question": "لحماية مشروعك المدرسي المهم من الضياع في حالة تعطل جهاز الكمبيوتر الخاص بك، يجب عليك إنشاء ________.",
+        "choices": [
+            "اختصار",
+            "نسخة احتياطية (Backup)",
+            "فيروس",
+            "مجلد"
+        ],
+        "ans_idx": 1,
+        "justification": "النسخة الاحتياطية (Backup) هي نسخة من البيانات المخزنة بشكل منفصل لاستعادة الأصل في حالة فقدانه أو تلفه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "استكشاف الأخطاء وإصلاحها (Troubleshooting)",
+            "الاتصال (Connectivity)"
+        ],
+        "question": "توقف الماوس اللاسلكي عن العمل. أي مما يلي هو السبب الأقل احتمالاً؟",
+        "choices": [
+            "البطارية فارغة",
+            "سقط مستقبل USB",
+            "ليس لديك اتصال بالإنترنت",
+            "الماوس مغلق"
+        ],
+        "ans_idx": 2,
+        "justification": "يتصل الماوس اللاسلكي مباشرة بالكمبيوتر عبر البلوتوث أو الترددات اللاسلكية؛ ولا يتطلب اتصالاً بالإنترنت ليعمل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "حقوق المسؤول (Admin Rights)"
+        ],
+        "question": "يتمتع حساب 'المسؤول' (Administrator) بإذن لتثبيت برامج جديدة وتغيير إعدادات النظام، بينما لا يتمتع حساب 'الضيف' (Guest) بذلك عادةً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تتمتع حسابات المسؤول (Administrator) بامتيازات النظام الكاملة، بينما تكون حسابات الضيف أو القياسية مقيدة لحماية النظام."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "بيئة العمل (Ergonomics)"
+        ],
+        "question": "الجلوس بوضعية جيدة وجعل شاشتك في مستوى العين هو جزء من ________ الكمبيوتر، مما يحافظ على صحتك.",
+        "choices": [
+            "بيئة العمل (Ergonomics)",
+            "الإلكترونيات",
+            "الاقتصاد",
+            "المهندسين"
+        ],
+        "ans_idx": 0,
+        "justification": "بيئة العمل (Ergonomics) هي دراسة تصميم المعدات (مثل الكراسي والمكاتب) لتناسب جسم الإنسان وتمنع الإصابة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "نقل الملفات (File Transfer)",
+            "يو إس بي (USB)"
+        ],
+        "question": "تريد نقل ملف فيديو كبير من جهاز كمبيوتر شخصي (PC) إلى جهاز ماك (Mac). ما هي الطريقة المادية للقيام بذلك؟",
+        "choices": [
+            "استخدام محرك أقراص فلاش USB (USB Flash Drive)",
+            "استخدام طابعة",
+            "استخدام كاميرا ويب",
+            "هز الشاشة"
+        ],
+        "ans_idx": 0,
+        "justification": "تعد محركات أقراص فلاش USB أجهزة تخزين محمولة متوافقة مع كل من أنظمة ويندوز (PC) وماك (macOS)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "البرمجيات المنتفخة (Bloatware)"
+        ],
+        "question": "غالباً ما تأتي أجهزة الكمبيوتر الجديدة ببرامج مثبتة مسبقاً لا تحتاجها (مثل الألعاب التجريبية). غالباً ما تسمى هذه البرامج غير المرغوب فيها ________.",
+        "choices": [
+            "أجهزة (Hardware)",
+            "برامج تجسس (Spyware)",
+            "برمجيات منتفخة (Bloatware)",
+            "برامج الفدية (Ransomware)"
+        ],
+        "ans_idx": 2,
+        "justification": "تشير البرمجيات المنتفخة (Bloatware) إلى البرامج غير المرغوب فيها المثبتة مسبقاً على جهاز جديد والتي تستهلك مساحة وموارد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإدخال (Input)",
+            "القياسات الحيوية (Biometrics)"
+        ],
+        "question": "إلغاء قفل هاتفك باستخدام وجهك (FaceID) أو بصمة إصبعك هو استخدام لأي نوع من التكنولوجيا؟",
+        "choices": [
+            "القياسات الحيوية (Biometrics)",
+            "الروبوتات (Robotics)",
+            "الميكانيكا (Mechanics)",
+            "التحليلات (Analytics)"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم القياسات الحيوية (Biometrics) خصائص بيولوجية فريدة (بصمات الأصابع، الوجه، القزحية) للمصادقة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "التاريخ (History)",
+            "آدا لوفلايس (Ada Lovelace)"
+        ],
+        "question": "غالباً ما تعتبر آدا لوفلايس أول مبرمجة كمبيوتر، على الرغم من أنها عاشت في القرن التاسع عشر.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "كتبت آدا لوفلايس أول خوارزمية مخصصة لآلة (المحرك التحليلي لتشارلز باباج)، مما جعلها أول مبرمجة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "نظام الإدخال والإخراج الأساسي (BIOS)"
+        ],
+        "question": "عند الضغط لأول مرة على زر التشغيل، يتم تشغيل برنامج صغير *قبل* بدء تشغيل ويندوز للتحقق من الأجهزة. ماذا يسمى هذا؟",
+        "choices": [
+            "كروم (Chrome)",
+            "نظام الإدخال والإخراج الأساسي (BIOS) / واجهة البرنامج الثابت الموحدة (UEFI)",
+            "مايكروسوفت وورد",
+            "الإنترنت"
+        ],
+        "ans_idx": 1,
+        "justification": "نظام الإدخال والإخراج الأساسي (BIOS) أو UEFI هو برنامج ثابت يقوم بتهيئة الأجهزة قبل إقلاع نظام التشغيل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networking)",
+            "عنوان بروتوكول الإنترنت (IP Address)"
+        ],
+        "question": "كل جهاز على الشبكة له تسمية رقمية فريدة، مثل 192.168.1.1، تسمى ________.",
+        "choices": [
+            "عنوان بريد إلكتروني",
+            "عنوان بروتوكول الإنترنت (IP Address)",
+            "عنوان المنزل",
+            "رابط (URL)"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدد عنوان بروتوكول الإنترنت (IP) الجهاز بشكل فريد على الشبكة، مما يسمح له بالتواصل مع الآخرين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "عنق الزجاجة (Bottlenecking)"
+        ],
+        "question": "إذا كان لديك بطاقة رسوميات فائقة السرعة ولكن وحدة معالجة مركزية قديمة وبطيئة جداً، فقد تظل ألعابك تعمل بشكل سيء. ماذا تسمى هذه المشكلة؟",
+        "choices": [
+            "عنق الزجاجة (Bottlenecking)",
+            "كسر السرعة (Overclocking)",
+            "الشاشة الزرقاء (Blue Screening)",
+            "الاختراق (Hacking)"
+        ],
+        "ans_idx": 0,
+        "justification": "يحدث عنق الزجاجة (Bottleneck) عندما يحد أحد المكونات من أداء النظام بأكمله لأنه لا يستطيع مواكبة المكونات الأخرى."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الآلة الافتراضية (Virtual Machine)"
+        ],
+        "question": "تسمح لك 'الآلة الافتراضية (Virtual Machine)' بتشغيل كمبيوتر وهمي (مثل تشغيل ويندوز داخل نافذة على جهاز ماك) دون شراء أجهزة جديدة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم الآلات الافتراضية (VMs) البرمجيات لمحاكاة جهاز كمبيوتر مادي، مما يسمح لك بتشغيل أنظمة تشغيل مختلفة في وقت واحد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الخنق الحراري (Thermal Throttling)"
+        ],
+        "question": "إذا أصبح جهاز الكمبيوتر المحمول ساخناً جداً أثناء لعب لعبة، فقد يتباطأ فجأة عن قصد لتبريد نفسه. ماذا تسمى ميزة الأمان هذه؟",
+        "choices": [
+            "الخنق الحراري (Thermal Throttling)",
+            "التعطل (Crashing)",
+            "الإسبات (Hibernating)",
+            "التخزين المؤقت (Buffering)"
+        ],
+        "ans_idx": 0,
+        "justification": "يقلل الخنق الحراري (Thermal Throttling) من سرعة وحدة المعالجة المركزية / وحدة معالجة الرسوميات (معدل الساعة) لخفض درجة الحرارة ومنع تلف الأجهزة الدائم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networking)",
+            "نظام أسماء النطاقات (DNS)"
+        ],
+        "question": "عندما تكتب 'youtube.com'، يحتاج جهاز الكمبيوتر الخاص بك إلى العثور على عنوان IP الخاص بالخادم. أي نظام يعمل كدليل هاتف لترجمة الاسم إلى أرقام؟",
+        "choices": [
+            "نظام تحديد المواقع (GPS)",
+            "نظام أسماء النطاقات (DNS)",
+            "وحدة المعالجة المركزية (CPU)",
+            "الرابط (URL)"
+        ],
+        "ans_idx": 1,
+        "justification": "يترجم نظام أسماء النطاقات (DNS) أسماء النطاقات التي يمكن للبشر قراءتها (مثل google.com) إلى عناوين IP التي تستخدمها أجهزة الكمبيوتر للتعرف على بعضها البعض."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "التخزين (Storage)",
+            "الصيانة (Maintenance)"
+        ],
+        "question": "يجب عليك 'إلغاء تجزئة (Defragment)' محرك الحالة الثابتة (SSD) بانتظام تماماً كما تفعل مع القرص الصلب القديم لجعله أسرع.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "إلغاء التجزئة مفيد لمحركات الأقراص الصلبة الدوارة (HDDs) ولكنه غير ضروري وضار بعمر محركات الحالة الثابتة (SSDs) بسبب طريقة تخزينها للبيانات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "العرض (Display)"
+        ],
+        "question": "الشاشة التي تقوم بتحديث الصورة 144 مرة كل ثانية يقال إن لديها ________ يبلغ 144 هرتز.",
+        "choices": [
+            "دقة (Resolution)",
+            "معدل تحديث (Refresh Rate)",
+            "كثافة بكسل (Pixel Density)",
+            "سطوع (Brightness)"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير معدل التحديث (Refresh Rate)، الذي يقاس بالهرتز (Hz)، إلى عدد المرات التي ترسم فيها الشاشة صورة جديدة في الثانية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمان (Security)",
+            "التشفير (Encryption)"
+        ],
+        "question": "عندما ترى أيقونة قفل بجوار رابط موقع ويب (HTTPS)، ماذا يعني ذلك؟",
+        "choices": [
+            "الموقع مغلق",
+            "الاتصال مشفر (Encryption) (خاص)",
+            "أنت مقفل خارج حسابك",
+            "لا يمكن اختراق الموقع"
+        ],
+        "ans_idx": 1,
+        "justification": "يضمن HTTPS أن البيانات المرسلة بين متصفحك والموقع مشفرة، بحيث لا يتمكن المتسللون من قراءتها بسهولة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networking)",
+            "بينج (Ping)"
+        ],
+        "question": "في الألعاب عبر الإنترنت، غالباً ما يحدث 'التأخر' (Lag) بسبب ارتفاع وقت الاستجابة (Latency). ما الوحدة التي نستخدمها لقياس هذا التأخير؟",
+        "choices": [
+            "ميجابايت (MB)",
+            "ميلي ثانية (ms)",
+            "هرتز (Hz)",
+            "بكسل (px)"
+        ],
+        "ans_idx": 1,
+        "justification": "وقت الاستجابة (Latency) (أو Ping) هو الوقت الذي تستغرقه البيانات للانتقال إلى الخادم والعودة، ويقاس بالميلي ثانية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجيات (Software)",
+            "النواة (Kernel)"
+        ],
+        "question": " 'النواة (Kernel)' هي الجزء الأساسي من نظام التشغيل الذي يتمتع بسيطرة كاملة على كل شيء في النظام.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "النواة (Kernel) هي المكون المركزي لنظام التشغيل، حيث تدير الذاكرة وعمليات وحدة المعالجة المركزية وأجهزة الهاردوير."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networking)",
+            "الأجهزة (Hardware)"
+        ],
+        "question": "يمكن أن يتغير عنوان IP الخاص بك، لكن بطاقة الشبكة الخاصة بك تحتوي على معرف مادي دائم مطبوع عليها في المصنع. ماذا يسمى هذا؟",
+        "choices": [
+            "عنوان التحكم في الوصول إلى الوسائط (MAC Address)",
+            "عنوان بريد إلكتروني",
+            "عنوان المنزل",
+            "الرمز البريدي"
+        ],
+        "ans_idx": 0,
+        "justification": "عنوان MAC (التحكم في الوصول إلى الوسائط) هو معرف أجهزة فريد مخصص لوحدة تحكم واجهة الشبكة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "النظام الثنائي (Binary)"
+        ],
+        "question": "يسمى الصفر أو الواحد المفرد 'بت (Bit)'. وتسمى المجموعة المكونة من 8 بتات ________.",
+        "choices": [
+            "نيبل (Nibble)",
+            "بايت (Byte)",
+            "قطعة (Chunk)",
+            "بكسل (Pixel)"
+        ],
+        "ans_idx": 1,
+        "justification": "في الحوسبة، تشكل 8 بتات بايت (Byte) واحداً، وهو الوحدة القياسية لتشفير حرف واحد من النص."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجيات (Software)",
+            "أنواع أنظمة التشغيل (OS Types)"
+        ],
+        "question": "يختلف لينكس (Linux) عن ويندوز وماك لأنه عادة ما يكون:",
+        "choices": [
+            "أكثر تكلفة",
+            "مفتوح المصدر (Open Source) ومجاني",
+            "للعب الألعاب فقط",
+            "مستحيل التثبيت"
+        ],
+        "ans_idx": 1,
+        "justification": "لينكس هو نظام تشغيل مفتوح المصدر (Open Source)، مما يعني أن الكود الخاص به متاح مجاناً لأي شخص لاستخدامه وتعديله وتوزيعه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "استكشاف الأخطاء وإصلاحها (Troubleshooting)",
+            "الوضع الآمن (Safe Mode)"
+        ],
+        "question": "إذا قمت بتثبيت تعريف وتعطل جهاز الكمبيوتر الخاص بك في كل مرة يبدأ فيها التشغيل، فيجب عليك الإقلاع إلى ________ لحذف التعريف السيئ.",
+        "choices": [
+            "الوضع المظلم (Dark Mode)",
+            "الوضع الآمن (Safe Mode)",
+            "وضع الطائرة (Airplane Mode)",
+            "وضع السكون (Sleep Mode)"
+        ],
+        "ans_idx": 1,
+        "justification": "يبدأ الوضع الآمن (Safe Mode) تشغيل الكمبيوتر باستخدام البرامج والتعريفات الأكثر أهمية فقط، مما يسمح لك بإصلاح المشكلات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "البيانات الوصفية (Metadata)"
+        ],
+        "question": "يحتوي ملف الصورة على أكثر من مجرد الصورة؛ فهو يحتوي أيضاً على 'بيانات وصفية (Metadata)' بداخلها، والتي يمكن أن تتضمن التاريخ وطراز الكاميرا وحتى موقع GPS.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات الوصفية (Metadata) هي 'بيانات عن البيانات'، حيث تخزن تفاصيل مخفية مثل بيانات EXIF في الصور."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمان (Security)",
+            "شبكة خاصة افتراضية (VPN)"
+        ],
+        "question": "ما هي الوظيفة الأساسية لشبكة VPN (الشبكة الخاصة الافتراضية)؟",
+        "choices": [
+            "لجعل سرعة الإنترنت لديك أسرع",
+            "لإخفاء عنوان IP الخاص بك وتشفير حركة مرور الإنترنت الخاصة بك",
+            "لمنحك شبكة واي فاي مجانية",
+            "لتنظيف الفيروسات"
+        ],
+        "ans_idx": 1,
+        "justification": "تنشئ الشبكة الخاصة الافتراضية (VPN) نفقاً آمناً لبياناتك وتخفي موقعك الحقيقي (عنوان IP) عن مواقع الويب ومزودي خدمة الإنترنت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المنافذ (Ports)"
+        ],
+        "question": "موصل USB الحديث بيضاوي الشكل الذي يمكن توصيله بالمقلوب أو بالاتجاه الصحيح يسمى USB Type-________.",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "X"
+        ],
+        "ans_idx": 2,
+        "justification": "USB Type-C هو معيار الموصل القابل للعكس الشائع الآن في أجهزة الكمبيوتر المحمولة والهواتف الذكية الحديثة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "ذاكرة التخزين المؤقت (Cache)"
+        ],
+        "question": "عند زيارة موقع ويب، يحفظ متصفحك الصور والبيانات محلياً بحيث يتم تحميل الصفحة بشكل أسرع في المرة القادمة. ماذا يسمى هذا التخزين؟",
+        "choices": [
+            "ذاكرة التخزين المؤقت (Cache)",
+            "السحابة (Cloud)",
+            "السجل (Registry)",
+            "سلة المحذوفات"
+        ],
+        "ans_idx": 0,
+        "justification": "تخزن ذاكرة التخزين المؤقت للمتصفح (Browser Cache) موارد صفحة الويب محلياً لتقليل أوقات التحميل في الزيارات اللاحقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "وحدة تزويد الطاقة (PSU)"
+        ],
+        "question": "إذا قمت ببناء جهاز كمبيوتر مزود بوحدة معالجة مركزية ووحدة معالجة رسومات قويتين، ولكنه ينطفئ عشوائياً عند تشغيل الألعاب، فما هو المكون الذي قد يكون ضعيفاً جداً؟",
+        "choices": [
+            "الماوس",
+            "وحدة تزويد الطاقة (PSU)",
+            "لوحة المفاتيح",
+            "بطاقة الصوت"
+        ],
+        "ans_idx": 1,
+        "justification": "إذا كانت وحدة تزويد الطاقة (PSU) عموماً لا تستطيع توفير ما يكفي من القوة الكهربائية لتشغيل المكونات تحت الحمل، فسيصبح النظام غير مستقر أو ينطفئ."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمان (Security)",
+            "جدار الحماية (Firewall)"
+        ],
+        "question": "'جدار الحماية (Firewall)' هو جدار معدني مادي تضعه داخل صندوق الكمبيوتر لمنعه من الاشتعال.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "جدار الحماية (Firewall) هو نظام أمان للشبكة (برنامج أو جهاز) يراقب ويحجب حركة المرور غير المصرح بها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التقسيم (Partitioning)"
+        ],
+        "question": "لديك محرك أقراص صلبة مادي واحد، ولكن في 'هذا الكمبيوتر' يظهر كمحرك الأقراص C: ومحرك الأقراص D:. ما الذي تم فعله بالمحرك؟",
+        "choices": [
+            "تم كسره",
+            "تم تقسيمه (Partitioned)",
+            "تم تنزيله",
+            "تم كسر سرعته"
+        ],
+        "ans_idx": 1,
+        "justification": "التقسيم (Partitioning) يقسم محرك تخزين مادي واحد إلى عدة محركات أقراص منطقية (وحدات تخزين)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "ملفات تعريف الارتباط (Cookies)"
+        ],
+        "question": "الملفات النصية الصغيرة التي تحفظها مواقع الويب لتذكر هويتك (مثل إبقائك مسجلاً للدخول) تسمى ________.",
+        "choices": [
+            "بسكويت",
+            "ملفات تعريف الارتباط (Cookies)",
+            "أجهزة التتبع (Trackers)",
+            "أخطاء (Bugs)"
+        ],
+        "ans_idx": 1,
+        "justification": "ملفات تعريف الارتباط (Cookies) هي كتل صغيرة من البيانات ينشئها خادم الويب وتوضع على جهاز كمبيوتر المستخدم للحفاظ على حالة الجلسة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمان (Security)",
+            "برامج الفدية (Ransomware)"
+        ],
+        "question": "أي نوع من البرمجيات الخبيثة يقفل ملفاتك ويطلب المال لإعادتها؟",
+        "choices": [
+            "برامج التجسس (Spyware)",
+            "برامج الإعلانات (Adware)",
+            "برامج الفدية (Ransomware)",
+            "دودة (Worm)"
+        ],
+        "ans_idx": 2,
+        "justification": "تقوم برامج الفدية (Ransomware) بتشفير ملفات المستخدم وتطلب الدفع (فدية) مقابل مفتاح فك التشفير."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "سرعة الساعة (Clock Speed)"
+        ],
+        "question": "عادة ما تقاس سرعة وحدة المعالجة المركزية (CPU) بالجيجاهرتز (GHz). ماذا تعني 3.0 جيجاهرتز؟",
+        "choices": [
+            "لديها 3.0 جيجابايت من الذاكرة",
+            "تزن 3.0 جرام",
+            "تدور 3 مليارات مرة في الثانية",
+            "تكلف 3000 دولار"
+        ],
+        "ans_idx": 2,
+        "justification": "الهرتز الواحد هو دورة واحدة في الثانية. جيجا تعني مليار. 3.0 جيجاهرتز هي 3 مليارات دورة في الثانية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجيات (Software)",
+            "واجهة برمجة التطبيقات (API)"
+        ],
+        "question": "تسمح واجهة برمجة التطبيقات (API) لبرنامجين مختلفين بالتحدث مع بعضهما البعض، مثل لعبة تستخدم ديسكورد (Discord) لإظهار ما تلعبه.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "توفر واجهات برمجة التطبيقات (APIs) تعريفات وبروتوكولات لبناء ودمج برامج التطبيقات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "عرض النطاق الترددي (Bandwidth)"
+        ],
+        "question": "إذا كان اتصال الإنترنت الخاص بك عبارة عن 'أنبوب'، فإن ________ هو مدى اتساع الأنبوب (كمية البيانات التي يمكن أن تتدفق في وقت واحد).",
+        "choices": [
+            "وقت الاستجابة (Latency)",
+            "عرض النطاق الترددي (Bandwidth)",
+            "واي فاي (Wi-Fi)",
+            "التخزين (Storage)"
+        ],
+        "ans_idx": 1,
+        "justification": "يصف عرض النطاق الترددي (Bandwidth) أقصى معدل لنقل البيانات للشبكة أو اتصال الإنترنت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "كسر السرعة (Overclocking)"
+        ],
+        "question": "إجبار أحد المكونات على العمل بشكل أسرع مما كانت الشركة المصنعة تنوي الحصول على أداء أفضل يسمى ________.",
+        "choices": [
+            "القرصنة النشطة (Hacktivism)",
+            "كسر السرعة (Overclocking)",
+            "تصحيح الأخطاء (Debugging)",
+            "الخنق (Throttling)"
+        ],
+        "ans_idx": 1,
+        "justification": "يزيد كسر السرعة (Overclocking) من معدل ساعة المكون ليتجاوز سرعته المعتمدة، مما يزيد من الأداء ولكن أيضاً الحرارة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "الحافظة (Clipboard)"
+        ],
+        "question": "عند نسخ نص، يتم تخزينه في مخزن ذاكرة مؤقت يسمى:",
+        "choices": [
+            "ملاحظة",
+            "الحافظة (Clipboard)",
+            "حقيبة ظهر",
+            "محفظة"
+        ],
+        "ans_idx": 1,
+        "justification": "الحافظة (Clipboard) هي مخزن مؤقت يوفره نظام التشغيل للتخزين قصير المدى ونقل البيانات (نسخ/لصق) بين المستندات أو التطبيقات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "ذاكرة الفيديو (GPU VRAM)"
+        ],
+        "question": "تماماً كما يحتوي الكمبيوتر على ذاكرة وصول عشوائي (RAM) رئيسية، تحتوي بطاقة الرسوميات على ذاكرة فيديو خاصة بها تسمى:",
+        "choices": [
+            "ذاكرة الوصول العشوائي للفيديو (VRAM)",
+            "ذاكرة الوصول العشوائي الديناميكية (D-RAM)",
+            "مساحة جي (G-Space)",
+            "ميجا ميموري (MegaMemory)"
+        ],
+        "ans_idx": 0,
+        "justification": "ذاكرة الوصول العشوائي للفيديو (VRAM) هي ذاكرة مخصصة على بطاقة الرسوميات تستخدم لتخزين بيانات الصورة للعرض."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "الأمان (Safety)"
+        ],
+        "question": "يجب عليك مشاركة كلمة مرورك مع أفضل صديق لك حتى يتمكن من اللعب على حسابك أثناء غيابك.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "لا يجب عليك أبداً مشاركة كلمات المرور الخاصة بك مع أي شخص، حتى الأصدقاء، للحفاظ على أمان حساباتك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "أجهزة الإدخال (Input Devices)"
+        ],
+        "question": "أي من الأجهزة التالية يُستخدم لمسح ورقة مادية ضوئياً وتحويلها إلى صورة رقمية على جهاز الكمبيوتر الخاص بك؟",
+        "choices": [
+            "الطابعة (Printer)",
+            "الماسح الضوئي (Scanner)",
+            "الشاشة (Monitor)",
+            "مكبر الصوت (Speaker)"
+        ],
+        "ans_idx": 1,
+        "justification": "الماسح الضوئي (Scanner) هو جهاز إدخال يقوم بمسح الصور أو النصوص ضوئياً وتحويلها إلى ملفات رقمية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "المتصفحات (Browsers)"
+        ],
+        "question": "تعتبر جوجل كروم (Google Chrome) وموزيلا فايرفوكس (Mozilla Firefox) ومايكروسوفت إيدج (Microsoft Edge) أمثلة على ________ ويب.",
+        "choices": [
+            "خادم (Server)",
+            "متصفح (Browser)",
+            "موقع (Site)",
+            "محرك (Drive)"
+        ],
+        "ans_idx": 1,
+        "justification": "متصفح الويب (Web Browser) هو تطبيق برمجي للوصول إلى شبكة الويب العالمية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "التخزين (Storage)"
+        ],
+        "question": "أي مما يلي يُعد جهاز تخزين محمول يمكنك حمله في جيبك؟",
+        "choices": [
+            "اللوحة الأم (Motherboard)",
+            "ذاكرة فلاش يو إس بي (USB Flash Drive)",
+            "صندوق البرج (Tower Case)",
+            "مزود الطاقة (Power Supply)"
+        ],
+        "ans_idx": 1,
+        "justification": "ذاكرة الفلاش (USB Flash Drive) هي جهاز تخزين بيانات صغير ومحمول."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأساسيات (Basics)",
+            "المصطلحات (Terminology)"
+        ],
+        "question": "تم تصميم الكمبيوتر \"المكتبي\" (Desktop) ليكون متنقلاً وسهل الاستخدام في حضنك.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "تم تصميم أجهزة الكمبيوتر المكتبية للاستخدام المنتظم في مكان واحد على أو قرب مكتب، على عكس أجهزة الكمبيوتر المحمولة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "أجهزة الإخراج (Output Devices)"
+        ],
+        "question": "أي جهاز يسمح لك برؤية ما يفعله الكمبيوتر؟",
+        "choices": [
+            "لوحة المفاتيح (Keyboard)",
+            "الميكروفون (Microphone)",
+            "الشاشة (Monitor)",
+            "القرص الصلب (Hard Drive)"
+        ],
+        "ans_idx": 2,
+        "justification": "الشاشة (Monitor) هي جهاز الإخراج الأساسي الذي يعرض واجهة المستخدم والبرامج."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأساسيات (Basics)",
+            "الطاقة (Power)"
+        ],
+        "question": "لإيقاف تشغيل الكمبيوتر تماماً عبر القائمة، يجب عليك اختيار ________.",
+        "choices": [
+            "سكون (Sleep)",
+            "إيقاف التشغيل (Shut Down)",
+            "إعادة التشغيل (Restart)",
+            "تسجيل الخروج (Log Off)"
+        ],
+        "ans_idx": 1,
+        "justification": "الخيار 'إيقاف التشغيل' (Shut Down) يقطع الطاقة عن الكمبيوتر تماماً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التطبيقات (Applications)"
+        ],
+        "question": "ما نوع البرنامج الذي يساعدك في كتابة المستندات، مثل المقالات أو الرسائل؟",
+        "choices": [
+            "جدول بيانات (Spreadsheet)",
+            "معالج نصوص (Word Processor)",
+            "محرر صور (Photo Editor)",
+            "مشغل فيديو (Video Player)"
+        ],
+        "ans_idx": 1,
+        "justification": "معالج النصوص (مثل MS Word أو Google Docs) مصمم لإنشاء وتحرير المستندات النصية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "البريد الإلكتروني (Email)"
+        ],
+        "question": "يمكن أن يحتوي مرفق البريد الإلكتروني أحياناً على فيروس، لذا يجب أن تكون حذراً عند فتح الملفات من الغرباء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "غالباً ما يتم توزيع البرمجيات الخبيثة عبر مرفقات البريد الإلكتروني، لذا الحذر مطلوب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المنافذ (Ports)"
+        ],
+        "question": "ماذا يعني اختصار USB؟",
+        "choices": [
+            "الناقل التسلسلي العام (Universal Serial Bus)",
+            "مجلس الولايات المتحدة (United State Board)",
+            "بطارية فائقة السرعة (Ultra Speed Battery)",
+            "زر تحت الشاشة (Under Screen Button)"
+        ],
+        "ans_idx": 0,
+        "justification": "USB يعني الناقل التسلسلي العام، وهو معيار لمقابس التوصيل على أجهزة الكمبيوتر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات (Networks)",
+            "الاتصال (Connectivity)"
+        ],
+        "question": "جهاز ________ هو جهاز يربط شبكتك المنزلية بمزود خدمة الإنترنت (ISP).",
+        "choices": [
+            "الماوس (Mouse)",
+            "المودم (Modem)",
+            "الشاشة (Monitor)",
+            "الذاكرة (Memory)"
+        ],
+        "ans_idx": 1,
+        "justification": "المودم (Modem) يجلب اتصال الإنترنت إلى منزلك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "التخزين (Storage)"
+        ],
+        "question": "أي مما يلي يمثل أكبر كمية من البيانات؟",
+        "choices": [
+            "1 ميجابايت (Megabyte)",
+            "1 جيجابايت (Gigabyte)",
+            "1 كيلوبايت (Kilobyte)",
+            "1 تيرابايت (Terabyte)"
+        ],
+        "ans_idx": 3,
+        "justification": "1 تيرابايت (TB) = 1000 جيجابايت، وهي أكبر من الميجابايت والكيلوبايت."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمان (Security)",
+            "البرمجيات الخبيثة (Malware)"
+        ],
+        "question": "فيروس الكمبيوتر هو جرثومة بيولوجية يمكن أن تجعلك مريضاً إذا لمست لوحة المفاتيح.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "فيروس الكمبيوتر هو برنامج ضار (كود)، وليس كائناً بيولوجياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "نظام التشغيل (OS)",
+            "واجهة المستخدم (Interface)"
+        ],
+        "question": "ما هو الشريط الطويل الموجود عادةً أسفل الشاشة في نظام ويندوز؟",
+        "choices": [
+            "مسافة (Space bar)",
+            "شريط المهام (Taskbar)",
+            "شريط العنوان (Title bar)",
+            "شريط القوائم (Menu bar)"
+        ],
+        "ans_idx": 1,
+        "justification": "يعرض شريط المهام (Taskbar) في ويندوز التطبيقات الجارية وقائمة ابدأ وأيقونات النظام."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الأجهزة الطرفية (Peripherals)"
+        ],
+        "question": "أي مفتاح على لوحة المفاتيح يسمح لك بجعل الحروف كبيرة (Capital)؟",
+        "choices": [
+            "إدخال (Enter)",
+            "عالي (Shift)",
+            "هروب (Esc)",
+            "جدولة (Tab)"
+        ],
+        "ans_idx": 1,
+        "justification": "الضغط باستمرار على 'Shift' أثناء كتابة حرف يجعله كبيراً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "العناوين (Addressing)"
+        ],
+        "question": "كل موقع ويب له عنوان فريد يسمى ________ (مثل www.google.com).",
+        "choices": [
+            "رابط (URL)",
+            "يو إس بي (USB)",
+            "معالج (CPU)",
+            "بي دي إف (PDF)"
+        ],
+        "ans_idx": 0,
+        "justification": "URL تعني محدد موقع الموارد الموحد، وهو عنوان مورد على الويب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "داخلي (Internal)"
+        ],
+        "question": "أي مكون يزود اللوحة الأم والأجزاء الأخرى بالكهرباء؟",
+        "choices": [
+            "القرص الصلب (Hard Drive)",
+            "وحدة مزود الطاقة (PSU)",
+            "المروحة (Fan)",
+            "الصندوق (Case)"
+        ],
+        "ans_idx": 1,
+        "justification": "وحدة مزود الطاقة (PSU) تحول طاقة المخرج إلى طاقة تيار مستمر منخفضة الجهد تحتاجها مكونات الكمبيوتر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الاستخدام (Usage)",
+            "بيئة العمل (Ergonomics)"
+        ],
+        "question": "من الصحي التحديق في الشاشة لمدة 10 ساعات متواصلة دون أن ترمش أو تأخذ استراحة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "أخذ فترات راحة ضروري لمنع إجهاد العين والتعب البدني."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الامتدادات (Extensions)"
+        ],
+        "question": "الملف الذي ينتهي بـ .mp3 عادة ما يكون:",
+        "choices": [
+            "فيلم",
+            "ملف صوتي",
+            "صورة",
+            "مستند نصي"
+        ],
+        "ans_idx": 1,
+        "justification": ".mp3 هو تنسيق ملف شائع للصوت الرقمي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإدخال (Input)"
+        ],
+        "question": "الجهاز الذي تحركه بيدك للإشارة والنقر على الأشياء يسمى ________.",
+        "choices": [
+            "لوحة المفاتيح (Keyboard)",
+            "الماوس (Mouse)",
+            "الشاشة (Screen)",
+            "الطابعة (Printer)"
+        ],
+        "ans_idx": 1,
+        "justification": "الماوس هو جهاز تأشير محمول باليد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networks)",
+            "واي فاي (Wifi)"
+        ],
+        "question": "ماذا يحدث إذا ابتعدت كثيراً عن جهاز توجيه الواي فاي (Wi-Fi Router) الخاص بك؟",
+        "choices": [
+            "تصبح سرعة الإنترنت أسرع",
+            "ينفجر جهاز الكمبيوتر الخاص بك",
+            "تضعف الإشارة وتبطئ سرعة الإنترنت",
+            "لا شيء يتغير"
+        ],
+        "ans_idx": 2,
+        "justification": "تتدهور إشارات الواي فاي عبر المسافة ومن خلال الحواجز، مما يقلل السرعة واستقرار الاتصال."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمان (Security)",
+            "كلمات المرور (Passwords)"
+        ],
+        "question": "'Password123' هي كلمة مرور قوية وآمنة جداً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "كلمات المرور البسيطة والشائعة مثل 'Password123' يسهل تخمينها من قبل المهاجمين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "نظام التشغيل (OS)"
+        ],
+        "question": "أي مما يلي **ليس** نظام تشغيل؟",
+        "choices": [
+            "ويندوز 10 (Windows 10)",
+            "ماك (macOS)",
+            "لينكس (Linux)",
+            "مايكروسوفت وورد (Microsoft Word)"
+        ],
+        "ans_idx": 3,
+        "justification": "مايكروسوفت وورد (Microsoft Word) هو برنامج تطبيق وليس نظام تشغيل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الذاكرة (Memory)"
+        ],
+        "question": "ROM تعني ذاكرة ________ فقط.",
+        "choices": [
+            "الوضع (Mode)",
+            "القراءة (Read-Only Memory)",
+            "الوسائط (Media)",
+            "النموذج (Model)"
+        ],
+        "ans_idx": 1,
+        "justification": "ROM تعني ذاكرة القراءة فقط (Read-Only Memory)، والتي تخزن التعليمات الدائمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "النظام الثنائي (Binary)"
+        ],
+        "question": "يُطلق على الـ 0 أو الـ 1 المفرد في الكود الثنائي اسم:",
+        "choices": [
+            "بايت (Byte)",
+            "بت (Bit)",
+            "خطأ (Bug)",
+            "روبوت (Bot)"
+        ],
+        "ans_idx": 1,
+        "justification": "البت (Bit) (الرقم الثنائي) هو أصغر وحدة بيانات في الكمبيوتر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "السحابة (Cloud)"
+        ],
+        "question": "تقوم مستندات جوجل (Google Docs) بحفظ تغييراتك تلقائياً في السحابة أثناء الكتابة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "التطبيقات القائمة على السحابة مثل Google Docs تحفظ البيانات باستمرار على خوادم بعيدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإدخال (Input)"
+        ],
+        "question": "أي جهاز يسمح لك بتسجيل صوتك على الكمبيوتر؟",
+        "choices": [
+            "مكبر الصوت (Speaker)",
+            "الميكروفون (Microphone)",
+            "سماعات الرأس (Headphones)",
+            "الطابعة (Printer)"
+        ],
+        "ans_idx": 1,
+        "justification": "الميكروفون هو جهاز إدخال صوتي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "الاتصال (Communication)"
+        ],
+        "question": "ما هو 'البريد العشوائي' (Spam) فيما يتعلق بالبريد الإلكتروني؟",
+        "choices": [
+            "لحم لذيذ",
+            "بريد إلكتروني غير مرغوب فيه أو مهملات",
+            "نوع من الفيروسات",
+            "كلمة مرور آمنة"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير البريد العشوائي (Spam) إلى رسائل البريد الإلكتروني غير المرغوب فيها، والتي غالباً ما تكون مجمعة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "البرمجيات الخبيثة (Malware)"
+        ],
+        "question": "البرامج المصممة لإيذاء جهاز الكمبيوتر الخاص بك، مثل الفيروسات وبرامج التجسس، تسمى مجتمعة ________.",
+        "choices": [
+            "البرامج الثابتة (Firmware)",
+            "البرمجيات الخبيثة (Malware)",
+            "الأجهزة (Hardware)",
+            "البرمجيات المجانية (Freeware)"
+        ],
+        "ans_idx": 1,
+        "justification": "البرمجيات الخبيثة (Malware) هي اختصار لـ 'malicious software'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المنافذ (Ports)"
+        ],
+        "question": "أي منفذ يُستخدم لتوصيل كابل إيثرنت للإنترنت السلكي؟",
+        "choices": [
+            "يو إس بي (USB)",
+            "آر جي 45 (RJ-45 (LAN port))",
+            "مقبس الصوت (Audio Jack)",
+            "إتش دي إم آي (HDMI)"
+        ],
+        "ans_idx": 1,
+        "justification": "منفذ RJ-45 هو الواجهة القياسية للشبكات السلكية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "النسخ الاحتياطي (Backup)"
+        ],
+        "question": "من الجيد الاحتفاظ بنسخة احتياطية من ملفاتك المهمة على محرك أقراص مختلف.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تمنع النسخ الاحتياطية فقدان البيانات في حالة فشل القرص الأساسي أو تلف الملفات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الترخيص (Licensing)"
+        ],
+        "question": "البرمجيات التي يمكنك تنزيلها واستخدامها مجاناً تسمى غالباً:",
+        "choices": [
+            "برمجيات مجانية (Freeware)",
+            "برمجيات تجسس (Spyware)",
+            "برمجيات مدفوعة (Paidware)",
+            "أجهزة (Hardware)"
+        ],
+        "ans_idx": 0,
+        "justification": "البرمجيات المجانية (Freeware) هي برامج متاحة للاستخدام دون أي تكلفة مالية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الاستخدام (Usage)",
+            "أساسي (Basic)"
+        ],
+        "question": "ماذا تظهر أيقونة البطارية عادةً على الكمبيوتر المحمول؟",
+        "choices": [
+            "مقدار الإنترنت لديك",
+            "كمية الطاقة المتبقية",
+            "مدى سرعة الكمبيوتر",
+            "مستوى الصوت"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير أيقونة البطارية إلى مستوى الشحن المتبقي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإخراج (Output)"
+        ],
+        "question": "تساعدك مكبرات الصوت في سماع الصوت، مما يجعلها جهاز ________.",
+        "choices": [
+            "إدخال (Input)",
+            "إخراج (Output)",
+            "تخزين (Storage)",
+            "معالجة (Processing)"
+        ],
+        "ans_idx": 1,
+        "justification": "تخرج مكبرات الصوت المعلومات الصوتية من الكمبيوتر إلى المستخدم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "البحث (Search)"
+        ],
+        "question": "\"محرك البحث\" (Search Engine) هو موقع ويب يُستخدم لـ:",
+        "choices": [
+            "جعل الإنترنت أسرع",
+            "العثور على المعلومات عبر الويب",
+            "رسم الصور",
+            "تشغيل الموسيقى دون اتصال"
+        ],
+        "ans_idx": 1,
+        "justification": "محركات البحث (مثل Google و Bing) تفهرس محتوى الويب وتساعد المستخدمين في العثور على معلومات محددة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "وحدة المعالجة المركزية (CPU)"
+        ],
+        "question": "غالباً ما يُسمى المعالج (CPU) بـ \"قلب\" الكمبيوتر لأنه يضخ الكهرباء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "يُسمى المعالج (CPU) بـ \"الدماغ\" لأنه يعالج المعلومات، وليس القلب (وحدة مزود الطاقة هي التي تضخ الطاقة)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الملفات (Files)"
+        ],
+        "question": "أي إجراء يسمح لك بنقل ملف من مجلد إلى آخر دون الاحتفاظ بنسخة في المجلد الأصلي؟",
+        "choices": [
+            "نسخ ولصق (Copy and Paste)",
+            "قص ولصق (Cut and Paste)",
+            "حذف (Delete)",
+            "إعادة تسمية (Rename)"
+        ],
+        "ans_idx": 1,
+        "justification": "القص (Cut) يزيل العنصر من الموقع الأصلي، واللصق (Paste) يضعه في الموقع الجديد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networks)",
+            "مزود الخدمة (ISP)"
+        ],
+        "question": "ماذا يعني اختصار ISP؟",
+        "choices": [
+            "مزود خدمة الإنترنت (Internet Service Provider)",
+            "معالج النظام الداخلي (Internal System Processor)",
+            "بروتوكول الفضاء الدولي (International Space Protocol)",
+            "قوة سرعة الإنترنت (Internet Speed Power)"
+        ],
+        "ans_idx": 0,
+        "justification": "ISP يعني مزود خدمة الإنترنت، وهي الشركة التي تمنحك الوصول إلى الإنترنت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإدخال (Input)"
+        ],
+        "question": "________ هو جهاز إدخال يُستخدم عادةً لممارسة ألعاب الفيديو.",
+        "choices": [
+            "الماسح الضوئي (Scanner)",
+            "عصا التحكم / المتحكم (Joystick / Controller)",
+            "الطابعة (Printer)",
+            "مكبر الصوت (Speaker)"
+        ],
+        "ans_idx": 1,
+        "justification": "أذرع التحكم (Joysticks) ووحدات التحكم في الألعاب هي أجهزة إدخال مصممة للتحكم في الألعاب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "SSD vs HDD"
+        ],
+        "question": "أي مما يلي لا يحتوي على أجزاء متحركة؟",
+        "choices": [
+            "محرك الأقراص الصلبة (HDD)",
+            "محرك الحالة الثابتة (SSD)",
+            "محرك أقراص دي في دي (DVD Drive)",
+            "مروحة التبريد (Cooling Fan)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم محركات SSD خلايا ذاكرة فلاش ولا تحتوي على أجزاء ميكانيكية متحركة، مما يجعلها أكثر متانة وهدوءاً."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الألعاب (Games)"
+        ],
+        "question": "تعتبر ألعاب الفيديو نوعاً من البرمجيات.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "ألعاب الفيديو هي برامج (كود) وبالتالي تندرج ضمن فئة البرمجيات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "الروابط التشعبية (Hyperlinks)"
+        ],
+        "question": "عندما يتحول مؤشر الماوس إلى يد صغيرة، فهذا يعني عادةً أنك تحوم فوق:",
+        "choices": [
+            "فيروس (Virus)",
+            "رابط (Link)",
+            "مربع نص (Text box)",
+            "قائمة (Menu)"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير مؤشر اليد إلى أن العنصر قابل للنقر، وعادة ما يكون رابطاً تشعبياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "التنظيم (Organization)"
+        ],
+        "question": "ماذا يسمى المجلد ذو المستوى الأعلى على محرك أقراص ويندوز عادةً؟",
+        "choices": [
+            "السقف (The Roof)",
+            "الجذر (The Root)",
+            "السقف (The Ceiling)",
+            "العلية (The Attic)"
+        ],
+        "ans_idx": 1,
+        "justification": "تسمى نقطة البداية لهيكل الدليل بالدليل الجذري (root directory)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التحديثات (Updates)"
+        ],
+        "question": "يصدر المطورون ________ لإصلاح خطأ معين في البرنامج.",
+        "choices": [
+            "رقعة / تصحيح (Patch)",
+            "فيروس (Virus)",
+            "خلل (Glitch)",
+            "تعطل (Crash)"
+        ],
+        "ans_idx": 0,
+        "justification": "التصحيح (Patch) هو قطعة صغيرة من البرمجيات مصممة لتحديث برنامج كمبيوتر أو البيانات الداعمة له لإصلاحه أو تحسينه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "اللوحة الأم (Motherboard)"
+        ],
+        "question": "أين يتم توصيل المعالج (CPU) على اللوحة الأم؟",
+        "choices": [
+            "منفذ يو إس بي (The USB port)",
+            "مقبس المعالج (The CPU Socket)",
+            "فتحة الذاكرة العشوائية (The RAM slot)",
+            "قابس الطاقة (The Power plug)"
+        ],
+        "ans_idx": 1,
+        "justification": "مقبس المعالج (CPU socket) يمنع الضرر ويضمن التوصيل الصحيح للمعالج باللوحة الأم."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "التصيد (Phishing)"
+        ],
+        "question": "إذا تلقيت رسالة بريد إلكتروني تقول إنك ربحت مليون دولار ولكنك تحتاج إلى دفع رسوم أولاً، فمن المحتمل أن تكون عملية احتيال.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "هذا مثال كلاسيكي على عملية احتيال التصيد أو الاحتيال بدفع رسوم مسبقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "التشفير (Encryption)"
+        ],
+        "question": "يسمى خلط البيانات بحيث لا يمكن لأحد قراءتها بدون مفتاح:",
+        "choices": [
+            "الحذف (Deleting)",
+            "التشفير (Encryption)",
+            "التنظيم (Organizing)",
+            "البث (Broadcasting)"
+        ],
+        "ans_idx": 1,
+        "justification": "يحول التشفير البيانات إلى 'نص مشفر' غير قابل للقراءة لحماية السرية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الدقة (Resolution)"
+        ],
+        "question": "تشير 1080p و 4K إلى ________ الشاشة:",
+        "choices": [
+            "وزن (Weight)",
+            "دقة (Resolution)",
+            "سعر (Price)",
+            "صوت (Sound)"
+        ],
+        "ans_idx": 1,
+        "justification": "تصف الدقة (Resolution) عدد البكسلات على الشاشة (الحدة)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "نظام التشغيل (OS)"
+        ],
+        "question": "الشاشة الرئيسية التي تراها بعد تسجيل الدخول إلى ويندوز حيث توجد خلفيتك، تسمى ________.",
+        "choices": [
+            "لوحة القيادة (Dashboard)",
+            "سطح المكتب (Desktop)",
+            "طاولة (Table)",
+            "نافذة (Window)"
+        ],
+        "ans_idx": 1,
+        "justification": "سطح المكتب (Desktop) هو بيئة واجهة المستخدم الأساسية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "BIOS"
+        ],
+        "question": "أول برنامج يعمل عند تشغيل جهاز الكمبيوتر، قبل تحميل ويندوز حتى، هو:",
+        "choices": [
+            "الآلة الحاسبة (Calculator)",
+            "بيوس / واجهة البرامج الثابتة الموسعة (BIOS / UEFI)",
+            "كروم (Chrome)",
+            "وورد (Word)"
+        ],
+        "ans_idx": 1,
+        "justification": "BIOS (نظام الإدخال/الإخراج الأساسي) أو UEFI يجهز الأجهزة أثناء عملية الإقلاع."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "التبريد (Cooling)"
+        ],
+        "question": "إذا بدأت مروحة الكمبيوتر في إصدار ضجيج عالٍ جداً، فقد يعني ذلك:",
+        "choices": [
+            "أنها سعيدة",
+            "أنها تعاني من ارتفاع الحرارة أو الغبار",
+            "أن الذاكرة نفدت",
+            "أنها تقوم بتنزيل ملف"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير ضجيج المروحة العالي غالباً إلى أن المراوح تعمل بقوة لتبريد المكونات الساخنة أو أنها مسدودة بالغبار."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "البرمجة (Coding)"
+        ],
+        "question": "مجموعة التعليمات التي يكتبها المبرمج والتي تخبر الكمبيوتر بما يجب أن يفعله تسمى كوداً أو ________.",
+        "choices": [
+            "برنامج (Program)",
+            "شاشة (Monitor)",
+            "كابل (Cable)",
+            "بكسل (Pixel)"
+        ],
+        "ans_idx": 0,
+        "justification": "البرنامج (أو التطبيق البرمجي) يتكون من تعليمات الكود."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "البصمة الرقمية (Digital Footprint)"
+        ],
+        "question": "بمجرد حذف صورة من وسائل التواصل الاجتماعي، فمن المؤكد أنها ستختفي إلى الأبد من الإنترنت بالكامل.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "يمكن التقاط لقطة شاشة للمحتوى، أو أرشفته، أو حفظه من قبل الآخرين قبل الحذف، مما يترك بصمة رقمية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "امتدادات الملفات (File Extensions)"
+        ],
+        "question": "أي من أنواع الملفات هذه ستستخدمه لصورة عالية الجودة؟",
+        "choices": [
+            ".txt",
+            ".exe",
+            ".jpg / .png",
+            ".mp3"
+        ],
+        "ans_idx": 2,
+        "justification": ".jpg و .png هي تنسيقات ملفات صور قياسية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "وحدة المعالجة المركزية (CPU)"
+        ],
+        "question": "ماذا يقيس \"GHz\" في معالج الكمبيوتر؟",
+        "choices": [
+            "الوزن (Weight)",
+            "السرعة (معدل الساعة) (Speed / Clock Rate)",
+            "مساحة التخزين (Storage Space)",
+            "السعر (Price)"
+        ],
+        "ans_idx": 1,
+        "justification": "يقيس الجيجاهرتز (GHz) سرعة ساعة المعالج، مما يشير إلى عدد الدورات التي يمكنه إجراؤها في الثانية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأساسيات (Basics)",
+            "التفاعل (Interaction)"
+        ],
+        "question": "المفاتيح المادية التي تضغط عليها لكتابة الحروف مرتبة عادةً في تخطيط يسمى ________.",
+        "choices": [
+            "QWERTY",
+            "MOUSE",
+            "SCREEN",
+            "ABCDEF"
+        ],
+        "ans_idx": 0,
+        "justification": "QWERTY هو تخطيط لوحة المفاتيح القياسي للأبجديات اللاتينية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "عنوان IP (IP Address)"
+        ],
+        "question": "كل جهاز متصل بالإنترنت له ملصق عددي فريد يسمى عنوان IP.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "عنوان IP (بروتوكول الإنترنت) يحدد بشكل فريد جهازاً على الشبكة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "إمكانية الوصول (Accessibility)"
+        ],
+        "question": "تم تصميم ميزات مثل \"تحويل النص إلى كلام\" و \"وضع التباين العالي\" من أجل:",
+        "choices": [
+            "جعل الألعاب أصعب",
+            "إمكانية الوصول (مساعدة الأشخاص ذوي الإعاقة)",
+            "توفير البطارية",
+            "تنظيف الشاشة"
+        ],
+        "ans_idx": 1,
+        "justification": "تساعد ميزات إمكانية الوصول المستخدمين الذين يعانون من إعاقات بصرية أو سمعية أو حركية على استخدام أجهزة الكمبيوتر بفعالية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الجوال (Mobile)"
+        ],
+        "question": "ما المكون الذي يسمح للهاتف الذكي بمعرفة الاتجاه \"للأعلى\" وتدوير الشاشة؟",
+        "choices": [
+            "مقياس الحرارة (Thermometer)",
+            "مقياس التسارع / الجيروسكوب (Accelerometer / Gyroscope)",
+            "مقياس الضغط الجوي (Barometer)",
+            "الميكروفون (Microphone)"
+        ],
+        "ans_idx": 1,
+        "justification": "تكتشف مقاييس التسارع والجيروسكوبات الاتجاه والحركة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "النسخ الاحتياطي (Backups)"
+        ],
+        "question": "يسمى تخزين ملفاتك على خادم بعيد حتى تتمكن من الوصول إليها من أي مكان بالتخزين ________.",
+        "choices": [
+            "السحابي (Cloud)",
+            "المطري (Rain)",
+            "الضبابي (Mist)",
+            "السماوي (Sky)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن التخزين السحابي حفظ البيانات في نظام تخزين خارج الموقع تديره جهة خارجية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "إنترنت الأشياء (IoT)"
+        ],
+        "question": "ماذا نسمي الأشياء اليومية مثل المصابيح أو الثلاجات المتصلة بالإنترنت؟",
+        "choices": [
+            "الأجهزة الذكية / إنترنت الأشياء (Smart Devices / IoT)",
+            "المحطات الغبية (Dumb Terminals)",
+            "أجهزة الكمبيوتر العملاقة (Supercomputers)",
+            "الأجهزة المركزية (Mainframes)"
+        ],
+        "ans_idx": 0,
+        "justification": "يشير إنترنت الأشياء (IoT) إلى الأشياء المادية المزودة بأجهزة استشعار واتصال."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "مفتوح المصدر (Open Source)"
+        ],
+        "question": "البرمجيات مفتوحة المصدر تعني أن الكود مرئي للجميع وعادة ما يكون حراً للتعديل.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تصدر البرمجيات مفتوحة المصدر كود المصدر بموجب ترخيص يمنح المستخدمين حقوق دراسة وتغيير وتوزيع البرنامج."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "التخزين (Storage)"
+        ],
+        "question": "أي مما يلي **ليس** مكاناً لحفظ ملف؟",
+        "choices": [
+            "القرص الصلب (Hard Drive)",
+            "ذاكرة يو إس بي (USB Stick)",
+            "شاشة الكمبيوتر (Computer Monitor)",
+            "بطاقة SD (SD Card)"
+        ],
+        "ans_idx": 2,
+        "justification": "تعرض الشاشة البيانات ولكن ليس لديها سعة تخزين للملفات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمان (Security)",
+            "المصادقة (Authentication)"
+        ],
+        "question": "يسمى استخدام بصمة إصبعك أو وجهك لفتح قفل هاتفك:",
+        "choices": [
+            "القياسات الحيوية (Biometrics)",
+            "رمز المرور (Passcode)",
+            "النمط (Pattern)",
+            "وضع الضيف (Guest Mode)"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم المصادقة البيومترية خصائص بيولوجية فريدة لتحديد الهوية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الأخطاء (Bugs)"
+        ],
+        "question": "يسمى الخطأ في برنامج الكمبيوتر الذي يجعله بتعطل أو ينتج نتائج غير صحيحة ________.",
+        "choices": [
+            "ميزة (Feature)",
+            "خطأ برمجي / بق (Bug)",
+            "دودة (Worm)",
+            "حيوان (Animal)"
+        ],
+        "ans_idx": 1,
+        "justification": "خطأ البرنامج (Bug) هو خطأ أو عيب أو فشل في برنامج كمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "عامل الشكل (Form Factor)"
+        ],
+        "question": "يسمى الكمبيوتر الصغير الذي ترتديه على معصمك:",
+        "choices": [
+            "ساعة ذكية (Smartwatch)",
+            "كمبيوتر مكتبي (Desktop)",
+            "خادم (Server)",
+            "كمبيوتر محمول (Laptop)"
+        ],
+        "ans_idx": 0,
+        "justification": "الساعات الذكية هي أجهزة كمبيوتر قابلة للارتداء على شكل ساعة يد."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "آداب التعامل (Etiquette)"
+        ],
+        "question": "تعتبر الكتابة بأحرف كبيرة (ALL CAPS) في البريد الإلكتروني أو الدردشة غالباً بمثابة صراخ.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "في الاتصالات الرقمية، يتم تفسير الأحرف الكبيرة على نطاق واسع على أنها صراخ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "التنسيقات (Formats)"
+        ],
+        "question": "أي تنسيق ملف هو الأفضل لمستند تريد أن يبدو كما هو على كل كمبيوتر (ومن الصعب تعديله)؟",
+        "choices": [
+            ".mp4",
+            ".pdf",
+            ".txt",
+            ".html"
+        ],
+        "ans_idx": 1,
+        "justification": "يحافظ PDF (تنسيق المستند المحمول) على تنسيق المستند عبر منصات مختلفة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "البروتوكولات (Protocols)"
+        ],
+        "question": "يشير 'http' أو 'https' في بداية عنوان موقع الويب إلى:",
+        "choices": [
+            "بروتوكول نقل النص التشعبي (HyperText Transfer Protocol)",
+            "مسار نقل التقنية العالية",
+            "برنامج نوع النص المنزلي",
+            "أداة فائقة للطباعة"
+        ],
+        "ans_idx": 0,
+        "justification": "HTTPS (بروتوكول نقل النص التشعبي الآمن) هو البروتوكول للاتصال الآمن عبر الويب."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الشبكة (Network)"
+        ],
+        "question": "جهاز ________ هو جهاز شبكات يعيد توجيه حزم البيانات بين شبكات الكمبيوتر (مثل الجهاز الموجود في منزلك).",
+        "choices": [
+            "الموجه / الراوتر (Router)",
+            "الطابعة (Printer)",
+            "الماسح الضوئي (Scanner)",
+            "القرص (Disc)"
+        ],
+        "ans_idx": 0,
+        "justification": "يوجه الراوتر حركة المرور بين شبكتك المحلية والإنترنت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الاستخدام (Usage)",
+            "الاختصارات (Shortcuts)"
+        ],
+        "question": "أي مفتاح يسمح لك بالخروج من وضع ملء الشاشة أو إلغاء إجراء؟",
+        "choices": [
+            "إدخال (Enter)",
+            "هروب (Esc / Escape)",
+            "مسافة (Spacebar)",
+            "عالي (Shift)"
+        ],
+        "ans_idx": 1,
+        "justification": "يُستخدم مفتاح الهروب (Escape) لتوليد حرف الهروب، ويستخدم عادةً لإيقاف أو الخروج من وظيفة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "المعالجة (Processing)"
+        ],
+        "question": "يمكن لجهاز الكمبيوتر الذي يحتوي على ذاكرة وصول عشوائي (RAM) أكبر تشغيل المزيد من البرامج في نفس الوقت دون إبطاء بشكل عام.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "توفر ذاكرة الوصول العشوائي مساحة عمل مؤقتة لتشغيل التطبيقات؛ وتسمح المزيد من الذاكرة بتعدد مهام أفضل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "حقوق النشر (Copyright)"
+        ],
+        "question": "يسمى استخدام العمل الإبداعي لشخص آخر (مثل رسم أو أغنية) دون إذن:",
+        "choices": [
+            "انتهاك حقوق النشر (Copyright Infringement)",
+            "الاستخدام العادل (Fair Use)",
+            "المشاع الإبداعي (Creative Commons)",
+            "التنزيل (Downloading)"
+        ],
+        "ans_idx": 0,
+        "justification": "ينتهك انتهاك حقوق النشر الحقوق الحصرية لصاحب حقوق النشر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "البطاريات (Batteries)"
+        ],
+        "question": "ما الوحدة التي تقيس عادةً سعة بطارية الهاتف أو الكمبيوتر المحمول؟",
+        "choices": [
+            "مللي أمبير في الساعة (mAh)",
+            "جيجابايت (GB)",
+            "جيجاهرتز (GHz)",
+            "باوند لكل بوصة مربعة (PSI)"
+        ],
+        "ans_idx": 0,
+        "justification": "تقيس mAh شحنة الطاقة التي ستحتفظ بها البطارية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمان (Security)",
+            "الشبكة (Network)"
+        ],
+        "question": "جهاز ________ هو نظام أمان يتحكم في حركة مرور الشبكة الواردة والصادرة (مثل الجدار).",
+        "choices": [
+            "جدار الحماية (Firewall)",
+            "مدخل (Doorway)",
+            "نافذة (Window)",
+            "سياج (Fence)"
+        ],
+        "ans_idx": 0,
+        "justification": "يراقب جدار الحماية ويتحكم في حركة مرور الشبكة بناءً على قواعد الأمان."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "المتصفحات (Browsers)"
+        ],
+        "question": "ما هو 'ملف تعريف الارتباط' (Cookie) في متصفح الويب؟",
+        "choices": [
+            "وجبة خفيفة حلوة",
+            "ملف صغير تحفظه المواقع لتذكرك",
+            "فيروس",
+            "نوع من الماوس"
+        ],
+        "ans_idx": 1,
+        "justification": "ملفات تعريف الارتباط هي كتل صغيرة من البيانات ينشئها خادم ويب أثناء تصفح المستخدم لموقع ويب، وتستخدم لتذكر المعلومات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأساسيات (Basics)",
+            "العناية (Care)"
+        ],
+        "question": "يجب عليك استخدام الماء والصابون لتنظيف اللوحة الأم للكمبيوتر أثناء توصيلها بالكهرباء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "السوائل والكهرباء لا يختلطان؛ يمكن أن يسبب الماء دوائر قصيرة ويدمر الإلكترونيات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الطابعات (Printers)"
+        ],
+        "question": "أي نوع من الطابعات يستخدم خراطيش الحبر السائل؟",
+        "choices": [
+            "طابعة الليزر (Laser Printer)",
+            "طابعة نفث الحبر (Inkjet Printer)",
+            "طابعة ثلاثية الأبعاد (3D Printer)",
+            "مصفوفة نقطية (Dot Matrix)"
+        ],
+        "ans_idx": 1,
+        "justification": "تدفع طابعات نفث الحبر قطرات الحبر على الورق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات (Data)",
+            "الخوارزمية (Algorithm)"
+        ],
+        "question": "قائمة التعليمات خطوة بخطوة لحل مشكلة تسمى:",
+        "choices": [
+            "خوارزمية (Algorithm)",
+            "الجناس الناقص (Anagram)",
+            "عنكبوت (Arachnid)",
+            "ألبوم (Album)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخوارزمية هي تسلسل محدود من التعليمات المحددة جيداً لحل فئة من المشاكل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "وسائل التواصل الاجتماعي (Social Media)"
+        ],
+        "question": "الرمز # المستخدم لوسم المواضيع على وسائل التواصل الاجتماعي يسمى ________.",
+        "choices": [
+            "هاشتاج / وسم (Hashtag)",
+            "شرطة مائلة (Slash)",
+            "نجمة (Star)",
+            "اقتباس (Quote)"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم الهاشتاجات لتصنيف المحتوى وجعله قابلاً للاكتشاف."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "المنافذ (Ports)"
+        ],
+        "question": "أي منفذ يُستخدم لشحن معظم هواتف أندرويد الحديثة؟",
+        "choices": [
+            "يو إس بي-سي (USB-C)",
+            "في جي إيه (VGA)",
+            "إيثرنت (Ethernet)",
+            "بي إس/2 (PS/2)"
+        ],
+        "ans_idx": 0,
+        "justification": "USB-C هو الموصل القياسي الحديث للصناعة لنقل البيانات والطاقة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الذكاء الاصطناعي (AI)"
+        ],
+        "question": "الذكاء الاصطناعي (AI) يسمح لأجهزة الكمبيوتر بأداء المهام التي تتطلب عادةً ذكاءً بشرياً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يشير الذكاء الاصطناعي إلى محاكاة الذكاء البشري في الآلات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الاستخدام (Usage)",
+            "الأساسيات (Basics)"
+        ],
+        "question": "أين يمكنك تغيير التاريخ والوقت على جهاز الكمبيوتر الخاص بك؟",
+        "choices": [
+            "في الرسام (Paint)",
+            "في الإعدادات / تفضيلات النظام (Settings / System Preferences)",
+            "في سلة المحذوفات (Recycle Bin)",
+            "في مستند وورد (Word document)"
+        ],
+        "ans_idx": 1,
+        "justification": "تسمح إعدادات النظام للمستخدمين بتكوين خيارات الأجهزة والبرامج، بما في ذلك التاريخ والوقت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "جداول البيانات (Spreadsheets)"
+        ],
+        "question": "أي برنامج هو الأفضل لإنشاء المخططات وإجراء العمليات الحسابية بالصفوف والأعمدة؟",
+        "choices": [
+            "باوربوينت (PowerPoint)",
+            "إكسل / شيتس (Excel / Sheets)",
+            "فوتوشوب (Photoshop)",
+            "المفكرة (Notepad)"
+        ],
+        "ans_idx": 1,
+        "justification": "تم تصميم برامج جداول البيانات (Excel, Google Sheets) لتنظيم البيانات وتحليلها."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "داخلي (Internal)"
+        ],
+        "question": "يُعرف القرص الصلب أو SSD باسم التخزين ________ لأنه يحتفظ بالبيانات حتى بدون طاقة.",
+        "choices": [
+            "غير المتطاير (Non-volatile)",
+            "المتطاير (Volatile)",
+            "المؤقت (Temporary)",
+            "السائل (Liquid)"
+        ],
+        "ans_idx": 0,
+        "justification": "تحتفظ الذاكرة غير المتطايرة بالبيانات حتى في حالة انقطاع التيار الكهربائي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "السحابة (Cloud)"
+        ],
+        "question": "أي من هؤلاء هو خدمة تخزين سحابي شائعة؟",
+        "choices": [
+            "جوجل درايف (Google Drive)",
+            "ويندوز الرسام (Windows Paint)",
+            "إنتل (Intel)",
+            "نفيديا (Nvidia)"
+        ],
+        "ans_idx": 0,
+        "justification": "Google Drive هي خدمة تخزين ومزامنة ملفات طورتها Google."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الاستخدام (Usage)",
+            "البطارية (Battery)"
+        ],
+        "question": "يمكن أن يساعد خفض سطوع الشاشة في إطالة عمر بطارية الكمبيوتر المحمول.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستهلك إضاءة الشاشة طاقة كبيرة؛ وتعتيمها يوفر الطاقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "الضغط (Compression)"
+        ],
+        "question": "ماذا يفعل ملف 'Zip'؟",
+        "choices": [
+            "يجعل الملفات تعمل بشكل أسرع",
+            "يجمع الملفات ويضغطها لتكون أصغر",
+            "يحذف الملفات",
+            "يشغل الموسيقى"
+        ],
+        "ans_idx": 1,
+        "justification": "ملفات ZIP هي أرشيفات تضغط البيانات لتقليل الحجم وتجميع الملفات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإدخال (Input)"
+        ],
+        "question": "أي مفتاح يحذف الحرف الموجود إلى يسار المؤشر؟",
+        "choices": [
+            "حذف (Delete)",
+            "مسافة للخلف (Backspace)",
+            "مسافة (Spacebar)",
+            "جدولة (Tab)"
+        ],
+        "ans_idx": 1,
+        "justification": "تحذف مسافة للخلف (Backspace) الحرف قبل المؤشر؛ ويحذف Delete الحرف بعده."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "المتصفح (Browser)"
+        ],
+        "question": "الميزة التي تحتفظ بقائمة بجميع مواقع الويب التي زرتها مؤخراً تسمى ________.",
+        "choices": [
+            "السجل (History)",
+            "الذاكرة (Memory)",
+            "التخزين (Storage)",
+            "الجدول الزمني (Timeline)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتتبع سجل المتصفح (History) عناوين URL التي تمت زيارتها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الاتصال (Connectivity)"
+        ],
+        "question": "أي أيقونة تمثل عادةً 'الإعدادات' أو 'الخيارات'؟",
+        "choices": [
+            "سلة مهملات",
+            "ترس / عجلة مسننة (Gear / cogwheel)",
+            "قلم رصاص",
+            "قرص مرن"
+        ],
+        "ans_idx": 1,
+        "justification": "تُستخدم أيقونة الترس عالمياً لتمثيل الإعدادات أو قوائم التكوين."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمان (Security)",
+            "المصادقة الثنائية (2FA)"
+        ],
+        "question": "تجعل المصادقة الثنائية (2FA) حسابك أكثر أماناً من خلال طلب رمز من هاتفك بالإضافة إلى كلمة المرور الخاصة بك.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تضيف المصادقة الثنائية طبقة إضافية من الأمان تتجاوز مجرد كلمة المرور."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجيات (Software)",
+            "المحاكاة الافتراضية (Virtualization)"
+        ],
+        "question": "يسمى تشغيل جهاز كمبيوتر 'وهمي' داخل جهاز الكمبيوتر الحقيقي (مثل تشغيل ويندوز على جهاز ماك):",
+        "choices": [
+            "آلة افتراضية (Virtual Machine - VM)",
+            "حلم (Dreaming)",
+            "إقلاع مزدوج (Double Booting)",
+            "قرصنة (Hacking)"
+        ],
+        "ans_idx": 0,
+        "justification": "تحاكي الآلات الافتراضية أنظمة الكمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الأجهزة القابلة للارتداء (Wearables)"
+        ],
+        "question": "أي مما يلي هو سماعة رأس للواقع الافتراضي (VR)؟",
+        "choices": [
+            "أوكولوس / ميتا كويست (Oculus / Meta Quest)",
+            "آيفون (iPhone)",
+            "كيندال (Kindle)",
+            "جو برو (GoPro)"
+        ],
+        "ans_idx": 0,
+        "justification": "Meta Quest هو خط سماعات رأس VR شهير."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات (Data)",
+            "النسخ الاحتياطي (Backup)"
+        ],
+        "question": "لاستعادة ملف من سلة المحذوفات، تختار الخيار ________.",
+        "choices": [
+            "استعادة (Restore)",
+            "إعادة استخدام (Reuse)",
+            "إعادة تشغيل (Replay)",
+            "إرجاع (Return)"
+        ],
+        "ans_idx": 0,
+        "justification": "الاستعادة (Restore) تعيد الملف إلى موقعه الأصلي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإنترنت (Internet)",
+            "المصطلحات (Terms)"
+        ],
+        "question": "ماذا يعني 'www'؟",
+        "choices": [
+            "شبكة الويب العالمية (World Wide Web)",
+            "شبكة ويب واسعة",
+            "عالم ويب واسع",
+            "ويب عالمي واسع"
+        ],
+        "ans_idx": 0,
+        "justification": "www تعني شبكة الويب العالمية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "البرمجيات (Software)",
+            "بيتا (Beta)"
+        ],
+        "question": "إصدار 'بيتا' (Beta) من لعبة هو الإصدار النهائي والمثالي بدون أخطاء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "برنامج بيتا هو إصدار ما قبل الإصدار يُستخدم للاختبار وعادة ما يحتوي على أخطاء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأجهزة (Hardware)",
+            "الإدخال (Input)"
+        ],
+        "question": "تعتبر 'المسافة' (Spacebar) منطقياً أكبر مفتاح على لوحة المفاتيح لأن:",
+        "choices": [
+            "هو المفتاح الأكثر استخداماً",
+            "يبدو رائعاً",
+            "يربط الجانبين",
+            "مخصص لراحة الإبهام"
+        ],
+        "ans_idx": 0,
+        "justification": "المسافة هي المفتاح الأكثر استخداماً للكتابة وحجمها مناسب لسهولة وصول الإبهام."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات (Networks)",
+            "زمن الانتقال (Latency)"
+        ],
+        "question": "في الألعاب، يشير 'Ping' إلى:",
+        "choices": [
+            "صوت الكرة",
+            "التأخير (زمن الانتقال) بين جهاز الكمبيوتر والخادم",
+            "النتيجة",
+            "اسم الشخصية"
+        ],
+        "ans_idx": 1,
+        "justification": "يقيس Ping الوقت (زمن الانتقال) الذي تستغرقه البيانات للذهاب والعودة بين العميل والخادم."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Computer Fundamentals",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأساسيات (Basics)",
+            "تحديد الهوية (Identification)"
+        ],
+        "question": "الاسم الفريد الذي تستخدمه لتعريف نفسك على جهاز كمبيوتر أو موقع ويب يسمى ________.",
+        "choices": [
+            "كلمة مرور (Password)",
+            "اسم مستخدم (Username)",
+            "رمز (Code)",
+            "مفتاح (Key)"
+        ],
+        "ans_idx": 1,
+        "justification": "اسم المستخدم هو المعرف الفريد لحساب المستخدم."
+    }
+]

@@ -1,0 +1,4096 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الاستبيانات (Surveys)",
+            "جمع البيانات (Data Collection)"
+        ],
+        "question": "أنت تسأل جميع زملائك في الفصل، 'ما هي نكهة الآيس كريم المفضلة لديك؟' وتكتب إجاباتهم. يسمى هذا النشاط إجراء ________.",
+        "choices": [
+            "اختبار (Test)",
+            "استبيان (Survey)",
+            "تخمين (Guess)",
+            "سباق (Race)"
+        ],
+        "ans_idx": 1,
+        "justification": "الاستبيان (Survey) هو طريقة لجمع المعلومات (البيانات) عن طريق طرح أسئلة على الناس."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "البيانات (Data)",
+            "التعريف (Definition)"
+        ],
+        "question": "في تحليل البيانات، 'البيانات' (Data) هي مجرد كلمة أخرى للمعلومات، مثل الأرقام أو الكلمات أو القياسات التي نجمعها.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تشير البيانات (Data) إلى الحقائق والإحصاءات الأولية التي تم جمعها للرجوع إليها أو تحليلها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "المخطط الشريطي (Bar Chart)"
+        ],
+        "question": "أي نوع من المخططات يستخدم أشرطة مستطيلة طويلة لإظهار أي عنصر حصل على أكبر عدد من الأصوات (أطول شريط)؟",
+        "choices": [
+            "مخطط دائري (Pie Chart)",
+            "مخطط شريطي (Bar Chart)",
+            "خريطة (Map)",
+            "سحابة الكلمات (Word Cloud)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم المخططات الشريطية (Bar charts) ارتفاع (أو طول) الأشرطة لمقارنة كميات الفئات المختلفة بصرياً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الفرز (Sorting)",
+            "التنظيم (Organization)"
+        ],
+        "question": "إذا قمت بترتيب قائمة أسماء من الألف إلى الياء، فأنت تقوم بـ ________ البيانات.",
+        "choices": [
+            "حذف (Deleting)",
+            "فرز (Sorting)",
+            "إخفاء (Hiding)",
+            "رسم (Drawing)"
+        ],
+        "ans_idx": 1,
+        "justification": "الفرز (Sorting) هو عملية ترتيب البيانات بترتيب معين، مثل الترتيب الأبجدي أو الرقمي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "المخطط الدائري (Pie Chart)"
+        ],
+        "question": "أي مخطط يبدو مثل بيتزا مقطعة إلى شرائح، ويوضح كيف ينقسم الشيء الكامل إلى أجزاء؟",
+        "choices": [
+            "رسم بياني خطي (Line Graph)",
+            "مخطط شريطي (Bar Chart)",
+            "مخطط دائري (Pie Chart)",
+            "مسطرة (Ruler)"
+        ],
+        "ans_idx": 2,
+        "justification": "المخطط الدائري (Pie Chart) هو رسم دائري مقسم إلى شرائح لتوضيح النسبة العددية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "جداول البيانات (Spreadsheets)",
+            "الخلايا (Cells)"
+        ],
+        "question": "في برنامج جداول البيانات مثل Excel أو Google Sheets، يسمى المربع المستطيل الصغير حيث تكتب رقماً:",
+        "choices": [
+            "خلية (Cell)",
+            "غرفة (Room)",
+            "قفص (Cage)",
+            "جيب (Pocket)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخلية (Cell) هي تقاطع صف وعمود في جدول بيانات حيث يتم إدخال البيانات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "العد (Counting)",
+            "العلامات (Tally)"
+        ],
+        "question": "يستخدم 'جدول العلامات' (Tally Chart) علامات بسيطة (مثل ||||) لمساعدتك في عد الأشياء بسرعة أثناء جمع البيانات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "علامات العد (Tally marks) هي نظام عددي أحادي يستخدم للعد، حيث يتم تجميع العلامات في خمسات لسهولة القراءة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "قراءة البيانات (Reading Data)"
+        ],
+        "question": "إذا كان شريط 'البيتزا' أطول من شريط 'البرجر' في المخطط، فماذا يعني ذلك؟",
+        "choices": [
+            "البرجر ألذ طعماً",
+            "صوّت عدد أكبر من الناس للبيتزا مقارنة بالبرجر",
+            "البيتزا تكلف أموالاً أكثر",
+            "المخطط مكسور"
+        ],
+        "ans_idx": 1,
+        "justification": "في المخطط الشريطي (bar chart)، يمثل الشريط الأطول قيمة أو تكراراً أعلى (المزيد من الأصوات)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "جداول البيانات (Spreadsheets)",
+            "الأعمدة (Columns)"
+        ],
+        "question": "في الجدول، تسمى خطوط البيانات التي تتجه للأعلى والأسفل (رأسياً) ________.",
+        "choices": [
+            "الصفوف (Rows)",
+            "الأعمدة (Columns)",
+            "الطوابق (Floors)",
+            "الفقرات (Paragraphs)"
+        ],
+        "ans_idx": 1,
+        "justification": "الأعمدة (Columns) تمتد رأسياً (لأعلى ولأسفل)، بينما الصفوف (Rows) تمتد أفقياً (من اليسار إلى اليمين)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "أنواع البيانات (Data Types)",
+            "الأرقام (Numbers)"
+        ],
+        "question": "أي مما يلي يعد مثالاً على البيانات 'الكمية' (Quantitative) (البيانات التي تكون عبارة عن رقم)؟",
+        "choices": [
+            "لون عينيك",
+            "اسم حيوانك الأليف",
+            "طولك بالسنتيمتر",
+            "أغنيتك المفضلة"
+        ],
+        "ans_idx": 2,
+        "justification": "تتعامل البيانات الكمية (Quantitative data) مع الأرقام والأشياء التي يمكنك قياسها. الطول هو قياس (رقم)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "العناوين (Titles)"
+        ],
+        "question": "يجب أن يحتوي كل مخطط جيد على 'عنوان' (Title) في الأعلى لإخبار الناس بما يدور حوله المخطط.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "العنوان هو سياق أساسي؛ بدونه، لا يعرف المشاهد البيانات التي يتم عرضها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الجداول (Tables)",
+            "التنظيم (Organization)"
+        ],
+        "question": "قائمة الطلاب ودرجاتهم المنظمة في شبكة ذات صفوف وأعمدة تسمى:",
+        "choices": [
+            "قصة (Story)",
+            "جدول (Table)",
+            "لوحة (Painting)",
+            "دائرة (Circle)"
+        ],
+        "ans_idx": 1,
+        "justification": "الجدول (Table) هو ترتيب منظم للبيانات في صفوف وأعمدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "الرسم البياني الخطي (Line Graph)"
+        ],
+        "question": "إذا كنت تريد توضيح كيف نما نبات بشكل أطول على مدار 10 أيام، فما هو المخطط الذي يربط النقاط بخط لإظهار النمو؟",
+        "choices": [
+            "مخطط دائري (Pie Chart)",
+            "رسم بياني خطي (Line Graph)",
+            "خريطة (Map)",
+            "كتاب ملصقات (Sticker Book)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم الرسوم البيانية الخطية (Line graphs) لتتبع التغييرات على مدار فترات زمنية قصيرة وطويلة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "جداول البيانات (Spreadsheets)",
+            "الصفوف (Rows)"
+        ],
+        "question": "في جدول البيانات، تسمى الخطوط التي تمتد من جانب إلى آخر (أفقياً) مثل الجملة ________.",
+        "choices": [
+            "الأعمدة (Columns)",
+            "الصفوف (Rows)",
+            "الأبراج (Towers)",
+            "السلالم (Ladders)"
+        ],
+        "ans_idx": 1,
+        "justification": "تمتد الصفوف (Rows) أفقياً عبر الجدول."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المقارنات (Comparisons)",
+            "الحد الأقصى (Maximum)"
+        ],
+        "question": "إذا كنت تنظر إلى قائمة نتائج الألعاب: 10، 50، 20، 90. أي رقم هو 'الحد الأقصى' (Maximum) (الأكبر)؟",
+        "choices": [
+            "10",
+            "50",
+            "20",
+            "90"
+        ],
+        "ans_idx": 3,
+        "justification": "يشير الحد الأقصى (Maximum) إلى أعلى قيمة في مجموعة البيانات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "أنواع البيانات (Data Types)",
+            "النص (Text)"
+        ],
+        "question": "يمكن أن تكون البيانات كلمات، وليس مجرد أرقام. على سبيل المثال، قائمة 'الألوان المفضلة' هي بيانات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات النوعية (Qualitative) (أو الفئوية Categorical) تصف الصفات أو الخصائص باستخدام الكلمات (مثل الأحمر، الأزرق، الأخضر)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "المفتاح (Legend)"
+        ],
+        "question": "على الخريطة أو المخطط، ماذا يسمى المربع الصغير الذي يشرح ما تعنيه الألوان أو الرموز؟",
+        "choices": [
+            "المفتاح / الدليل (Legend / Key)",
+            "الباب (The Door)",
+            "السر (The Secret)",
+            "كلمة المرور (The Password)"
+        ],
+        "ans_idx": 0,
+        "justification": "يسرد المفتاح (Legend) المتغيرات التي تظهر في المخطط والرمز/اللون المستخدم لتمثيلها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الملاحظة (Observation)",
+            "العد (Counting)"
+        ],
+        "question": "أنت تقف بجانب الطريق وتحصي عدد السيارات الحمراء مقابل السيارات الزرقاء التي تمر. هذا يسمى جمع البيانات عن طريق:",
+        "choices": [
+            "الملاحظة (Observation)",
+            "سؤال السيارات (Asking the cars)",
+            "التخمين (Guessing)",
+            "قراءة كتاب (Reading a book)"
+        ],
+        "ans_idx": 0,
+        "justification": "تتضمن الملاحظة (Observation) مراقبة وتسجيل السلوك أو الأحداث فور حدوثها."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المقارنة (Comparison)",
+            "الحد الأدنى (Minimum)"
+        ],
+        "question": "'الحد الأدنى' (Minimum) هو الرقم ________ في مجموعة من الأرقام.",
+        "choices": [
+            "الأصغر (Smallest)",
+            "الأكبر (Biggest)",
+            "الأوسط (Middle)",
+            "الإجمالي (Total)"
+        ],
+        "ans_idx": 0,
+        "justification": "يشير الحد الأدنى (Minimum) إلى أقل قيمة في مجموعة البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الأدوات (Tools)",
+            "جداول البيانات (Spreadsheets)"
+        ],
+        "question": "أي برنامج كمبيوتر هو الأكثر شهرة لعمل الجداول والمخططات؟",
+        "choices": [
+            "مايكروسوفت وورد (Microsoft Word)",
+            "مايكروسوفت إكسل / جوجل شيتس (Microsoft Excel / Google Sheets)",
+            "الرسام (Paint)",
+            "فورتنايت (Fortnite)"
+        ],
+        "ans_idx": 1,
+        "justification": "إكسل (Excel) وجوجل شيتس (Google Sheets) هي برامج جداول بيانات مصممة خصيصاً لتنظيم وتحليل البيانات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "المرئيات (Visuals)"
+        ],
+        "question": "المخططات مفيدة لأنها تجعل رؤية الأنماط في البيانات أسهل من مجرد النظر إلى قائمة ضخمة من الأرقام غير المرتبة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يحول تمثيل البيانات (Data visualization) البيانات الأولية إلى سياق مرئي، مما يجعل من السهل اكتشاف الأنماط والاتجاهات والقيم المتطرفة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "المحاور (Axes)"
+        ],
+        "question": "في المخطط الشريطي، يسمى الخط الموجود في الأسفل (الأفقي) والخط الموجود في الجانب (الرأسي):",
+        "choices": [
+            "المحاور (س وص) (Axes (X and Y))",
+            "الحواف (Edges)",
+            "الأسوار (Fences)",
+            "الجدران (Walls)"
+        ],
+        "ans_idx": 0,
+        "justification": "المحور السيني (X-axis) (الأفقي) والمحور الصادي (Y-axis) (الرأسي) يؤطران المخطط ويحددان مقياس القياس."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الأنماط (Patterns)",
+            "الاتجاهات (Trends)"
+        ],
+        "question": "إذا نظرت إلى رسم بياني خطي لطولك وكان الخط يستمر في الصعود، فماذا يعني ذلك؟",
+        "choices": [
+            "أنت تصبح أقصر",
+            "حجمك يبقى كما هو",
+            "أنت تزداد طولاً",
+            "أنت تتحول إلى شجرة"
+        ],
+        "ans_idx": 2,
+        "justification": "يشير الاتجاه الصعودي في الرسم البياني الخطي إلى زيادة في القيمة التي يتم قياسها بمرور الوقت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الرياضيات (Math)",
+            "الإجمالي (Total)"
+        ],
+        "question": "لإيجاد العدد 'الإجمالي' (Total) للتفاح الذي لديك، تقوم بـ ________ كل التفاح معاً.",
+        "choices": [
+            "طرح (Subtract)",
+            "قسمة (Divide)",
+            "جمع (Add)",
+            "حذف (Delete)"
+        ],
+        "ans_idx": 2,
+        "justification": "جمع (Summing) أو إضافة (Adding) القيم يعطيك العدد أو الكمية الإجمالية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المصادر (Sources)",
+            "الثقة (Trust)"
+        ],
+        "question": "لماذا من المهم معرفة مصدر بياناتك؟",
+        "choices": [
+            "للتأكد من أنها صحيحة وجديرة بالثقة",
+            "لا يهم",
+            "حتى تتمكن من حذفها",
+            "لأن الأرقام مخيفة"
+        ],
+        "ans_idx": 0,
+        "justification": "موثوقية مصدر البيانات أمر بالغ الأهمية؛ فالبيانات من مصادر غير جديرة بالثقة يمكن أن تكون غير صحيحة، مما يؤدي إلى استنتاجات خاطئة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "الرسوم التوضيحية (Pictographs)"
+        ],
+        "question": "المخطط الذي يستخدم صوراً صغيرة (مثل صورة تفاحة) لتمثيل الأرقام يسمى:",
+        "choices": [
+            "رسم توضيحي (Pictograph)",
+            "صورة فوتوغرافية (Photograph)",
+            "رسم بياني شريطي (Bar Graph)",
+            "رسم بياني خطي (Line Graph)"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم الرسوم التوضيحية (Pictographs) أيقونات أو صوراً لتمثيل قيم البيانات، مما يجعل قراءتها سهلة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "المخططات (Charts)",
+            "المحاور (Axes)"
+        ],
+        "question": "على الرسم البياني القياسي، المحور الصادي (Y-axis) هو الخط الذي يسير أفقياً (من اليسار إلى اليمين).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المحور الصادي (Y-axis) هو رأسي (لأعلى ولأسفل). المحور السيني (X-axis) هو أفقي (من اليسار إلى اليمين)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "جداول البيانات (Spreadsheets)",
+            "نقطة البيانات (Data Point)"
+        ],
+        "question": "قطعة واحدة من المعلومات، مثل تصويت شخص واحد في استبيان، تسمى غالباً ________ بيانات.",
+        "choices": [
+            "نقطة (Dot)",
+            "نقطة (Point)",
+            "مربع (Square)",
+            "خط (Line)"
+        ],
+        "ans_idx": 1,
+        "justification": "'نقطة البيانات' (Data Point) هي وحدة منفصلة من المعلومات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الرياضيات (Math)",
+            "الطرح (Subtraction)"
+        ],
+        "question": "إذا كان شريط 'البيتزا' عند 10 أصوات وشريط 'السلطة' عند صوتين، فكم عدد الأصوات الإضافية التي حصلت عليها البيتزا؟",
+        "choices": [
+            "12",
+            "5",
+            "8",
+            "20"
+        ],
+        "ans_idx": 2,
+        "justification": "تجد الفرق عن طريق الطرح: 10 - 2 = 8."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "الاستبيانات (Surveys)",
+            "العينة (Sample)"
+        ],
+        "question": "إذا كنت تريد معرفة رأي المدرسة بأكملها، ولكنك سألت 5 أشخاص فقط، فإن 'حجم العينة' (Sample Size) الخاص بك هو:",
+        "choices": [
+            "كبير جداً (Too big)",
+            "مثالي (Perfect)",
+            "صغير جداً (Very small)",
+            "غير مرئي (Invisible)"
+        ],
+        "ans_idx": 2,
+        "justification": "حجم عينة (sample size) مكون من 5 أفراد من المحتمل أن يكون صغيراً جداً لتمثيل مدرسة بأكملها بدقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "الوسط الحسابي (Mean)"
+        ],
+        "question": "ما هو 'الوسط الحسابي' (Mean) لهذه الأرقام: 2، 3، 4؟ (تلميح: اجمعهم واقسم على عددهم).",
+        "choices": [
+            "2",
+            "3",
+            "9",
+            "4"
+        ],
+        "ans_idx": 1,
+        "justification": "2 + 3 + 4 = 9. هناك 3 أرقام. 9 مقسومة على 3 تساوي 3."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "المنوال (Mode)"
+        ],
+        "question": "الرقم الذي يظهر في القائمة في أغلب الأحيان يسمى ________. (مثال: في 1، 2، 2، 5، الإجابة هي 2).",
+        "choices": [
+            "المعدل (Average)",
+            "المنوال (Mode)",
+            "المدى (Range)",
+            "الوسيط (Median)"
+        ],
+        "ans_idx": 1,
+        "justification": "المنوال (Mode) هو القيمة التي تظهر بشكل متكرر في مجموعة البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "الصيغ (Formulas)"
+        ],
+        "question": "في جدول البيانات، ما هي الصيغة التي ستستخدمها لجمع كل الأرقام في الخلايا من A1 إلى A5؟",
+        "choices": [
+            "=ADD(A1:A5)",
+            "=SUM(A1:A5)",
+            "=PLUS(A1:A5)",
+            "=COUNT(A1:A5)"
+        ],
+        "ans_idx": 1,
+        "justification": "`=SUM()` هي دالة جدول البيانات القياسية لجمع نطاق من الخلايا."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "القيم المتطرفة (Outliers)"
+        ],
+        "question": "إذا كانت لديك قائمة أعمار: 10، 11، 12، و 100. فإن الرقم 100 سيسحب 'المعدل' (Average) لأعلى مما ينبغي.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تؤثر القيم المتطرفة (Outliers) (القيم الشاذة) بشكل كبير على الوسط الحسابي (Mean)، مما يجعله في كثير من الأحيان لا يمثل القيمة 'النموذجية' بشكل جيد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "المدى (Range)"
+        ],
+        "question": "لإيجاد 'المدى' (Range) لمجموعة بيانات، ما العملية الحسابية التي تقوم بها؟",
+        "choices": [
+            "حساب معدل الأرقام",
+            "طرح أصغر رقم من أكبر رقم",
+            "جمعهم كلهم",
+            "اختيار الرقم الأوسط"
+        ],
+        "ans_idx": 1,
+        "justification": "المدى (Range) هو الفرق بين القيمتين العظمى والصغرى (الحد الأقصى - الحد الأدنى)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "الفرز (Sorting)"
+        ],
+        "question": "إذا قمت بفرز قائمة أرقام بترتيب 'تصاعدي' (Ascending)، كيف ستبدو؟",
+        "choices": [
+            "من الأكبر إلى الأصغر (10، 9، 8...)",
+            "من الأصغر إلى الأكبر (1، 2، 3...)",
+            "عشوائي",
+            "أبجدي"
+        ],
+        "ans_idx": 1,
+        "justification": "تصاعدي (Ascending) يعني الصعود، بدءاً من القيمة الأقل وتزايداً إلى الأعلى."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "الوسيط (Median)"
+        ],
+        "question": "________ هو الرقم الموجود بالضبط في منتصف قائمة مرتبة.",
+        "choices": [
+            "الوسط الحسابي (Mean)",
+            "الوسيط (Median)",
+            "المنوال (Mode)",
+            "الإجمالي (Total)"
+        ],
+        "ans_idx": 1,
+        "justification": "الوسيط (Median) هو القيمة المتوسطة التي تفصل بين النصف الأكبر والنصف الأصغر من مجموعة البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الارتباط (Correlation)",
+            "المنطق (Logic)"
+        ],
+        "question": "إذا أظهرت دراسة أن 'الطلاب الذين يدرسون ساعات أكثر يحصلون على درجات أفضل'، فهذا مثال على:",
+        "choices": [
+            "ارتباط سلبي (Negative Correlation)",
+            "ارتباط إيجابي (Positive Correlation)",
+            "لا يوجد ارتباط (No Correlation)",
+            "حظ سيء (Bad Luck)"
+        ],
+        "ans_idx": 1,
+        "justification": "الارتباط الإيجابي (Positive correlation) يعني أنه كلما زاد متغير واحد (وقت الدراسة)، زاد المتغير الآخر أيضاً (الدرجات)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات (Charts)",
+            "النسب المئوية (Percentages)"
+        ],
+        "question": "في المخطط الدائري، إذا جمعت النسب المئوية لجميع الشرائح، فيجب أن تساوي 100%.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يمثل المخطط الدائري (Pie Chart) كلاً كاملاً، لذا يجب أن يساوي مجموع أجزائه (الشرائح) 100%."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "التحيز (Bias)",
+            "الاستبيانات (Surveys)"
+        ],
+        "question": "أنت تريد معرفة ما هو 'الطعام المفضل' لجميع الأطفال، لكنك قمت فقط بمسح الأطفال داخل ماكدونالدز. لماذا تعتبر هذه البيانات سيئة؟",
+        "choices": [
+            "لأنها 'متحيزة' (Biased) لأن هؤلاء الأطفال يفضلون البرجر على الأرجح",
+            "ماكدونالدز صاخب جداً",
+            "إنها بيانات مثالية",
+            "أنت لم تسأل البالغين"
+        ],
+        "ans_idx": 0,
+        "justification": "يحدث تحيز الاختيار (Selection bias) عندما لا يكون المشاركون ممثلين للمجموعة الكاملة التي تدرسها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات (Charts)",
+            "مخطط التشتت (Scatter Plot)"
+        ],
+        "question": "أي مخطط يستخدم الكثير من النقاط المتناثرة عبر الرسم البياني لمعرفة ما إذا كان هناك شيئان مرتبطان (مثل الطول مقابل مقاس الحذاء)؟",
+        "choices": [
+            "مخطط دائري (Pie Chart)",
+            "مخطط التشتت (Scatter Plot)",
+            "مخطط شريطي (Bar Chart)",
+            "خط زمني (Timeline)"
+        ],
+        "ans_idx": 1,
+        "justification": "تعرض مخططات التشتت (Scatter plots) قيماً لمتغيرين كمجموعة من النقاط، وهي مثالية لإيجاد الارتباطات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "التصفية (Filtering)"
+        ],
+        "question": "إذا كانت لديك قائمة ضخمة من الحيوانات ولكنك تريد فقط رؤية تلك التي هي 'كلاب'، فيجب عليك استخدام ________.",
+        "choices": [
+            "تصفية / فلتر (Filter)",
+            "ممحاة (Eraser)",
+            "آلة حاسبة (Calculator)",
+            "طابعة (Printer)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح لك التصفية (Filtering) بإخفاء البيانات غير المرغوب فيها وعرض الصفوف التي تلبي معايير محددة فقط (مثل الحيوان = كلب)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "الصيغ (Formulas)"
+        ],
+        "question": "ما هي دالة جدول البيانات التي ستجد أكبر رقم في القائمة؟",
+        "choices": [
+            "=BIG()",
+            "=MAX()",
+            "=HUGE()",
+            "=TOP()"
+        ],
+        "ans_idx": 1,
+        "justification": "`=MAX()` هي الدالة القياسية لإرجاع القيمة القصوى (maximum) في نطاق من الخلايا."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أنواع البيانات (Data Types)",
+            "فئوي (Categorical)"
+        ],
+        "question": "البيانات الرقمية هي أرقام (مثل العمر)، بينما البيانات الفئوية هي مجموعات/كلمات (مثل 'قطة'، 'كلب'، 'طائر').",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "هذا هو الفرق الأساسي بين البيانات الكمية (الرقمية) والنوعية (الفئوية)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "التصور (Visualization)",
+            "خطوط الاتجاه (Trend Lines)"
+        ],
+        "question": "'خط الاتجاه' (Trend Line) على الرسم البياني يساعدك على:",
+        "choices": [
+            "جعل الرسم البياني يبدو جميلاً",
+            "رؤية الاتجاه العام الذي تسير فيه البيانات (لأعلى أو لأسفل)",
+            "محو الأخطاء",
+            "توصيل النقاط مثل اللغز"
+        ],
+        "ans_idx": 1,
+        "justification": "تظهر خطوط الاتجاه (Trend lines) (أو خطوط أفضل مطابقة) المسار العام أو ميل البيانات بمرور الوقت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "الأوراق (Sheets)"
+        ],
+        "question": "في Excel أو Google Sheets، يمكن أن يحتوي ملف واحد على عدة 'صفحات' أو علامات تبويب في الأسفل. ماذا تسمى هذه؟",
+        "choices": [
+            "كتب (Books)",
+            "أوراق / أوراق عمل (Sheets / Worksheets)",
+            "شرائح (Slices)",
+            "ملاحظات (Notes)"
+        ],
+        "ans_idx": 1,
+        "justification": "يمكن أن يحتوي ملف جدول البيانات (مصنف Workbook) على أوراق عمل (Worksheets) متعددة (علامات تبويب) لتنظيم البيانات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تنظيف البيانات (Data Cleaning)",
+            "التكرارات (Duplicates)"
+        ],
+        "question": "إذا سألت نفس الشخص نفس سؤال الاستبيان مرتين، فستحصل على بيانات ________، والتي يجب عليك حذفها.",
+        "choices": [
+            "صحيحة (Correct)",
+            "مكررة (Duplicate)",
+            "سريعة (Fast)",
+            "جديدة (New)"
+        ],
+        "ans_idx": 1,
+        "justification": "البيانات المكررة (Duplicate data) تشوه النتائج عن طريق عد نفس المدخلات عدة مرات؛ لذا يجب إزالتها (تنظيفها)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الاستبيانات (Surveys)",
+            "المجتمع الإحصائي (Population)"
+        ],
+        "question": "في الإحصاء، يشير 'المجتمع الإحصائي' (Population) إلى:",
+        "choices": [
+            "فقط الأشخاص الذين يعيشون في منزلك",
+            "المجموعة الكاملة التي تريد التعرف عليها (مثال: 'جميع طلاب الصف الخامس')",
+            "عدد الحيوانات الأليفة التي لديك",
+            "الأشخاص الذين أجابوا على الاستبيان"
+        ],
+        "ans_idx": 1,
+        "justification": "المجتمع الإحصائي (Population) هو المجموعة الإجمالية التي تتم دراستها. 'العينة' (Sample) هي المجموعة الأصغر التي تتحدث إليها بالفعل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات (Charts)",
+            "المدرج التكراري (Histogram)"
+        ],
+        "question": "المدرج التكراري (Histogram) يشبه المخطط الشريطي، لكنه يجمع الأرقام في نطاقات (مثل 'الأعمار 0-10'، 'الأعمار 11-20'). ما هو الفرق الرئيسي في مظهره؟",
+        "choices": [
+            "الأشرطة عادة ما تكون متلامسة (لا توجد فجوات)",
+            "إنه دائري",
+            "دائماً ما يكون أحمر",
+            "يستخدم الصور"
+        ],
+        "ans_idx": 0,
+        "justification": "تعرض المدرجات التكرارية (Histograms) توزيع البيانات المستمرة، لذلك تتلامس الأشرطة لتظهر أن النطاقات تتدفق إلى بعضها البعض."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "الارتباط مقابل السببية (Correlation vs Causation)"
+        ],
+        "question": "فقط لأن شيئين يحدثان في نفس الوقت (ارتباط Correlation)، فهذا لا يعني أن أحدهما تسبب في الآخر (سببية Causation).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الارتباط لا يعني السببية. على سبيل المثال، ترتبط مبيعات المظلات والمطر، لكن شراء مظلة لا *يسبب* المطر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "المتوسط (Average)"
+        ],
+        "question": "أي صيغة في جداول البيانات تحسب المتوسط (Average/Mean) للأرقام الموجودة في الخلايا من B1 إلى B10؟",
+        "choices": [
+            "=MEAN(B1:B10)",
+            "=AVERAGE(B1:B10)",
+            "=MIDDLE(B1:B10)",
+            "=MATH(B1:B10)"
+        ],
+        "ans_idx": 1,
+        "justification": "بينما يقول الإحصائيون 'Mean' (المتوسط الحسابي)، فإن برامج جداول البيانات مثل إكسيل (Excel) تستخدم الدالة `=AVERAGE()`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "المحور السيني (X-Axis)"
+        ],
+        "question": "في الرسم البياني الخطي الذي يظهر درجة الحرارة بمرور الوقت، عادة ما يوضع \"الوقت\" على الخط الأفقي السفلي، وهو المحور ________.",
+        "choices": [
+            "Y",
+            "X",
+            "Z",
+            "Q"
+        ],
+        "ans_idx": 1,
+        "justification": "المحور السيني (X-axis) (الأفقي) يستخدم عادة للمتغير المستقل (Independent Variable)، مثل الوقت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أنواع البيانات (Data Types)",
+            "مستمرة (Continuous)"
+        ],
+        "question": "البيانات التي يمكن قياسها بدقة شديدة باستخدام الكسور العشرية (مثل الطول: 150.5 سم، 150.6 سم) تسمى:",
+        "choices": [
+            "بيانات مستمرة (Continuous Data)",
+            "بيانات منفصلة (Discrete Data)",
+            "بيانات نصية (Text Data)",
+            "بيانات مكسورة (Broken Data)"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات المستمرة (Continuous Data) يمكن أن تأخذ أي قيمة ضمن نطاق معين (مثل الطول، الوزن، الوقت)، بينما البيانات المنفصلة (Discrete Data) يتم عدها بأرقام صحيحة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "التصور (Visualization)",
+            "اللون (Color)"
+        ],
+        "question": "إنها فكرة جيدة أن تستخدم 50 لوناً مختلفاً في مخطط واحد لجعله يبدو مثيراً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "استخدام الكثير من الألوان يجعل المخطط مربكاً وصعب القراءة. البساطة أفضل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "العد (Count)"
+        ],
+        "question": "لديك قائمة بالأسماء. أي دالة تحسب عدد الأشخاص الموجودين في القائمة؟",
+        "choices": [
+            "=SUM()",
+            "=COUNT() / =COUNTA()",
+            "=ADD()",
+            "=WHO()"
+        ],
+        "ans_idx": 1,
+        "justification": "الدالة `=COUNTA()` تحسب الخلايا غير الفارغة (مفيدة للأسماء/النصوص)، بينما `=COUNT()` تحسب الأرقام فقط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "المتغيرات (Variables)"
+        ],
+        "question": "في تجربة علمية لقياس مدى نمو النبات مع كميات مختلفة من الماء: \"كمية الماء\" هي الشيء الذي تقوم بتغييره. إنه:",
+        "choices": [
+            "المتغير المستقل (Independent Variable)",
+            "المتغير التابع (Dependent Variable)",
+            "الثابت (Constant)",
+            "خطأ (Mistake)"
+        ],
+        "ans_idx": 0,
+        "justification": "المتغير المستقل (Independent Variable) هو الذي تتحكم فيه أو تغيره لاختبار تأثيراته."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "المقارنة (Comparison)"
+        ],
+        "question": "المخطط ________ جيد لمقارنة مجموعتين من البيانات في وقت واحد، مثل درجات \"الأولاد مقابل البنات\" في نفس المخطط.",
+        "choices": [
+            "فردي (Single)",
+            "شريطي مجمّع (Grouped / Clustered Bar)",
+            "دائري (Pie)",
+            "نقطي (Dot)"
+        ],
+        "ans_idx": 1,
+        "justification": "المخطط الشريطي المجمّع (Clustered Bar Chart) يضع الأشرطة لمجموعات مختلفة جنباً إلى جنب للمقارنة السهلة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الاحتمالية (Probability)",
+            "النرد (Dice)"
+        ],
+        "question": "إذا رميت حجر نرد قياسي ذو 6 جوانب، ما هي فرصة (احتمالية) الحصول على الرقم 7؟",
+        "choices": [
+            "100% (مؤكد)",
+            "50% (ربما)",
+            "0% (مستحيل)",
+            "10% (غير محتمل)"
+        ],
+        "ans_idx": 2,
+        "justification": "حجر النرد القياسي يحتوي فقط على الأرقام من 1 إلى 6، لذا فإن الحصول على 7 أمر مستحيل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الأخلاقيات (Ethics)",
+            "التلاعب (Manipulation)"
+        ],
+        "question": "يمكنك جعل الرسم البياني يبدو مضللاً عن طريق التكبير كثيراً في المحور الصادي (Y-axis) لجعل فرق صغير يبدو ضخماً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "هذه طريقة شائعة للتلاعب بتصور البيانات (Data Visuals): قص المحور الصادي (Y-axis) يبالغ في الفروق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أنواع البيانات (Data Types)",
+            "ترتيبي (Ordinal)"
+        ],
+        "question": "البيانات التي لها ترتيب محدد (مثل قمصان \"صغير\"، \"وسط\"، \"كبير\") تسمى:",
+        "choices": [
+            "بيانات ترتيبية (Ordinal Data)",
+            "بيانات اسمية (Nominal Data)",
+            "بيانات عشوائية (Random Data)",
+            "بيانات ثنائية (Binary Data)"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات الترتيبية (Ordinal Data) هي بيانات فئوية حيث يكون للقيم ترتيب أو تصنيف ذو معنى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "التنسيق (Formatting)"
+        ],
+        "question": "إذا كانت أرقامك تبدو مثل '0.5' لكنك تريدها أن تظهر مثل '50%'، فأنت بحاجة إلى تغيير:",
+        "choices": [
+            "الخط (Font)",
+            "تنسيق الأرقام (Number Format)",
+            "ارتفاع الصف (Row Height)",
+            "اسم الملف (File Name)"
+        ],
+        "ans_idx": 1,
+        "justification": "التنسيق يغير كيفية عرض البيانات (على سبيل المثال، كعملة، أو تاريخ، أو نسبة مئوية) دون تغيير القيمة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "ملف قيم مفصولة بفواصل (CSV)"
+        ],
+        "question": "تنسيق ملف بسيط يستخدم لحفظ البيانات كنص عادي مفصول بفواصل يسمى ملف ________.",
+        "choices": [
+            "MP3",
+            "CSV",
+            "PDF",
+            "JPG"
+        ],
+        "ans_idx": 1,
+        "justification": "CSV تعني القيم المفصولة بفواصل (Comma-Separated Values)، وهو تنسيق عالمي لبيانات جداول البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "التصور (Visualization)",
+            "السياق (Context)"
+        ],
+        "question": "لماذا من المهم تسمية المحاور (إخبار الناس بما تعنيه X و Y)؟",
+        "choices": [
+            "حتى يعرف الناس ما إذا كنت تقيس \"دولارات\" أم \"كعك محلى\"",
+            "لأن المعلم قال ذلك",
+            "لاستخدام المزيد من الحبر",
+            "إنه ليس مهماً"
+        ],
+        "ans_idx": 0,
+        "justification": "بدون تسميات، الأرقام الموجودة على الرسم البياني ليس لها معنى أو سياق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "الاستدلال (Inference)"
+        ],
+        "question": "بناءً على البيانات التي تفيد بأن \"مبيعات الآيس كريم هي الأعلى في شهر يوليو\"، ماذا يمكنك أن تستنتج؟",
+        "choices": [
+            "الناس يكرهون الآيس كريم في يوليو",
+            "من المحتمل أن يكون الجو حاراً في يوليو، لذا يشتري الناس حلويات باردة",
+            "الآيس كريم مجاني في يوليو",
+            "يوليو به 50 يوماً"
+        ],
+        "ans_idx": 1,
+        "justification": "الاستدلال (Inference) يتضمن استخدام البيانات + المنطق للوصول إلى استنتاج محتمل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "القفل/التجميد (Locking)"
+        ],
+        "question": "يمكنك \"تجميد\" (Freeze) الصف العلوي من جدول البيانات بحيث تظل العناوين مرئية عند التمرير لأسفل.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تجميد الألواح (أو الصفوف/الأعمدة) يبقي العناوين المهمة في العرض أثناء التنقل في مجموعات البيانات الكبيرة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الاستطلاعات (Surveys)",
+            "اختيار من متعدد (Multiple Choice)"
+        ],
+        "question": "أي نوع من أسئلة الاستطلاع أسهل في التحليل باستخدام الكمبيوتر؟",
+        "choices": [
+            "مفتوحة النهاية (\"احكِ لي قصة عن يومك...\")",
+            "اختيار من متعدد (\"اختر أ أو ب أو ج\")",
+            "ارسم صورة",
+            "غنِ أغنية"
+        ],
+        "ans_idx": 1,
+        "justification": "بيانات الاختيار من متعدد مهيكلة وسهلة العد/الرسم البياني. النص المفتوح غير مهيكل وصعب التحليل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "التكرار (Frequency)"
+        ],
+        "question": "\"التكرار\" (Frequency) لنقطة بيانات يخبرك:",
+        "choices": [
+            "مدى ارتفاع الصوت",
+            "كم مرة يحدث (العد)",
+            "مدى سرعة حركته",
+            "مدى تكلفته"
+        ],
+        "ans_idx": 1,
+        "justification": "في الإحصاء، يشير التكرار (Frequency) إلى عدد المرات التي يحدث فيها حدث أو قيمة ما."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "التصور (Visualization)",
+            "إنفوجرافيك (Infographic)"
+        ],
+        "question": "ملصق رائع يجمع بين المخططات والأيقونات والنصوص لسرد قصة بالبيانات يسمى ________.",
+        "choices": [
+            "بريد إلكتروني (Email)",
+            "إنفوجرافيك (Infographic)",
+            "مقال (Essay)",
+            "كتاب صوتي (Audiobook)"
+        ],
+        "ans_idx": 1,
+        "justification": "الإنفوجرافيك (Infographics) هي تمثيلات مرئية للمعلومات تهدف إلى تقديم البيانات بسرعة وبشكل واضح."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "شريطي مكدس (Stacked Bar)"
+        ],
+        "question": "\"المخطط الشريطي المكدس\" (Stacked Bar Chart) يضع شرائح مختلفة (مثل \"الفريق الأحمر\"، \"الفريق الأزرق\") فوق بعضها البعض في شريط واحد. هذا يظهر:",
+        "choices": [
+            "الحجم الكلي للشريط وكيفية تقسيمه",
+            "أن الفرق تتقاتل",
+            "لا شيء مفيد",
+            "دائرة"
+        ],
+        "ans_idx": 0,
+        "justification": "الأشرطة المكدسة تسمح لك بمقارنة مجاميع الفئات مع رؤية تفاصيل الفئات الفرعية أيضاً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "الاستيفاء (Interpolation)"
+        ],
+        "question": "لديك بيانات لعامي 2010 و 2012. قمت بتخمين ما حدث في عام 2011 برسم خط بينهما. هذا هو:",
+        "choices": [
+            "الاستيفاء (Interpolation) (التخمين داخل البيانات)",
+            "الاستقراء (Extrapolation) (التخمين خارج البيانات)",
+            "سحر",
+            "غش"
+        ],
+        "ans_idx": 0,
+        "justification": "الاستيفاء (Interpolation) هو تقدير قيمة ضمن نطاق نقاط البيانات المعروفة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الأدوات (Tools)",
+            "الجداول المحورية (Pivot Tables)"
+        ],
+        "question": "لديك قائمة بـ 1000 عملية بيع. تريد تلخيص إجمالي المبيعات بسرعة لـ \"المنتج أ\" مقابل \"المنتج ب\". أفضل أداة في إكسيل (Excel) لهذا هي:",
+        "choices": [
+            "جدول محوري (Pivot Table)",
+            "آلة حاسبة",
+            "تنسيق",
+            "تدقيق إملائي"
+        ],
+        "ans_idx": 0,
+        "justification": "الجداول المحورية (Pivot Tables) هي أدوات قوية لتلخيص وتجميع وتحليل مجموعات البيانات الكبيرة دون كتابة صيغ معقدة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "الانحراف (Skew)"
+        ],
+        "question": "إذا دخل مليارديرات مثل إيلون ماسك إلى غرفة بها أشخاص عاديون، فإن \"المتوسط\" (Mean) للدخل سيرتفع بشكل كبير، لكن \"الوسيط\" (Median) (المنتصف) سيبقى كما هو تقريباً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "المتوسط (Mean) حساس للقيم المتطرفة (الأرقام العالية جداً ترفعه). الوسيط (Median) مقاوم للقيم المتطرفة لأنه ينظر فقط إلى الشخص الأوسط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "العملية (Process)",
+            "الفرضية (Hypothesis)"
+        ],
+        "question": "قبل أن تنظر إلى بياناتك، تقوم بتخمين ذكي مثل: \"أعتقد أن الطلاب الأطول قامة يقفزون أعلى\". هذا التخمين يسمى:",
+        "choices": [
+            "حقيقة (Fact)",
+            "استنتاج (Conclusion)",
+            "فرضية (Hypothesis)",
+            "كذبة (Lie)"
+        ],
+        "ans_idx": 2,
+        "justification": "الفرضية (Hypothesis) هي تفسير مقترح أو نقطة انطلاق لمزيد من التحقيق (تخمين مدروس)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "انحياز العينة (Sample Bias)"
+        ],
+        "question": "إذا كنت ترغب في معرفة لعبة الفيديو الأكثر شعبية عالمياً، لكنك سألت الأولاد فقط في الولايات المتحدة الأمريكية، فإن بياناتك تعاني من انحياز ________.",
+        "choices": [
+            "الاختيار / المعاينة (Selection / Sampling)",
+            "جيد (Good)",
+            "كمبيوتر (Computer)",
+            "رياضيات (Math)"
+        ],
+        "ans_idx": 0,
+        "justification": "انحياز المعاينة (Sampling Bias) يحدث عندما لا تمثل المجموعة التي شملتها الدراسة المجتمع الكامل الذي تحاول التعلم عنه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "معامل الارتباط (Correlation Coefficient)"
+        ],
+        "question": "يستخدم الإحصائيون رقماً بين -1 و 1 لإظهار مدى قوة الارتباط بين شيئين. هذا يسمى:",
+        "choices": [
+            "رقم الحظ",
+            "معامل الارتباط (Correlation Coefficient (r))",
+            "الرمز البريدي",
+            "المجموع الكلي"
+        ],
+        "ans_idx": 1,
+        "justification": "معامل الارتباط (Correlation Coefficient) يقيس قوة واتجاه العلاقة الخطية. 1 هو ارتباط إيجابي تام، -1 هو ارتباط سلبي تام."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أنواع البيانات (Data Types)",
+            "أولي مقابل ثانوي (Primary vs Secondary)"
+        ],
+        "question": "إذا قمت شخصياً بقياس طول كل طالب في فصلك، فأنت تجمع بيانات ________.",
+        "choices": [
+            "ثانوية (Secondary)",
+            "أولية (Primary)",
+            "مزيفة (Fake)",
+            "قديمة (Old)"
+        ],
+        "ans_idx": 1,
+        "justification": "البيانات الأولية (Primary Data) هي البيانات التي يتم جمعها مباشرة من قبل الباحث لغرض محدد."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "المخططات الدائرية (Pie Charts)"
+        ],
+        "question": "المخطط الدائري (Pie Chart) هو الخيار الأفضل إذا كان لديك 50 فئة مختلفة لعرضها (مثل 50 نكهة آيس كريم مختلفة).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "تصبح المخططات الدائرية غير قابلة للقراءة مع وجود شرائح كثيرة جداً. المخطط الشريطي أو الجدول سيكون أفضل لـ 50 فئة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "دالة البحث العمودي (VLOOKUP)"
+        ],
+        "question": "في إكسيل (Excel)، لديك رقم تعريف الطالب (Student ID) في جدول وتريد العثور على اسم ذلك الطالب في جدول مختلف. أي مفهوم أداة يساعدك على \"البحث\" (Look up) عن الاسم؟",
+        "choices": [
+            "دوال البحث (VLOOKUP / XLOOKUP)",
+            "حذف (DELETE)",
+            "جمع (SUM)",
+            "مخطط (CHART)"
+        ],
+        "ans_idx": 0,
+        "justification": "VLOOKUP (البحث العمودي) تبحث عن قيمة في العمود الأول من الجدول وتعيد قيمة في نفس الصف من عمود محدد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "المدى (Range)"
+        ],
+        "question": "إذا كانت أقل درجة هي 10 وأعلى درجة هي 90، فإن ________ هو 80.",
+        "choices": [
+            "المتوسط (Average)",
+            "المدى (Range)",
+            "الوسيط (Median)",
+            "المجموع (Total)"
+        ],
+        "ans_idx": 1,
+        "justification": "يتم حساب المدى (Range) عن طريق طرح القيمة الدنيا من القيمة القصوى (90 - 10 = 80)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "التصور (Visualization)",
+            "محور مزدوج (Dual Axis)"
+        ],
+        "question": "مخطط \"المحور المزدوج\" (Dual Axis) يحتوي على محورين صاديين (Y-axes) (واحد على اليسار، وواحد على اليمين). لماذا؟",
+        "choices": [
+            "لإرباك الناس",
+            "لمقارنة متغيرين بمقاييس مختلفة جداً (مثل درجة الحرارة مقابل هطول الأمطار)",
+            "إنه خطأ",
+            "لجعل المخطط ثلاثي الأبعاد"
+        ],
+        "ans_idx": 1,
+        "justification": "مخططات المحور المزدوج تسمح لك برسم سلاسل بيانات ذات وحدات أو مقادير مختلفة على نفس الرسم البياني."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "التنسيق الشرطي (Conditional Formatting)"
+        ],
+        "question": "تريد أن تتحول جميع الدرجات التي تقل عن 50 تلقائياً إلى اللون الأحمر في جدول البيانات الخاص بك. ما هي الميزة التي تستخدمها؟",
+        "choices": [
+            "التدقيق الإملائي (Spell Check)",
+            "التنسيق الشرطي (Conditional Formatting)",
+            "إعادة تسمية (Rename)",
+            "حفظ باسم (Save As)"
+        ],
+        "ans_idx": 1,
+        "justification": "التنسيق الشرطي (Conditional Formatting) يغير مظهر الخلايا (مثل لون الخلفية) بناءً على قواعد محددة أو قيم الخلايا."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جودة البيانات (Data Quality)",
+            "الصلاحية (Validity)"
+        ],
+        "question": "إذا استخدمت مسطرة مكسورة لقياس الطول، قد تكون بياناتك \"موثوقة\" (Reliable) (نتائج متسقة) ولكنها ليست \"صالحة\" (Valid) (نتائج صحيحة/حقيقية).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "الصلاحية (Validity) تشير إلى الدقة (قياس ما تنوي قياسه)، بينما الموثوقية (Reliability) تشير إلى الاتساق. المسطرة المكسورة تعطي قياساً خاطئاً بشكل متسق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "الانحياز التأكيدي (Confirmation Bias)"
+        ],
+        "question": "أنت تعتقد أن \"القطط أذكى من الكلاب\"، لذا تقوم فقط بتدوين البيانات التي تثبت صحة رأيك وتتجاهل البيانات التي تثبت خطأك. هذا هو:",
+        "choices": [
+            "الانحياز التأكيدي (Confirmation Bias)",
+            "علم جيد",
+            "عينة عشوائية",
+            "تعلم الآلة"
+        ],
+        "ans_idx": 0,
+        "justification": "الانحياز التأكيدي (Confirmation Bias) هو الميل للبحث عن المعلومات أو تفسيرها أو تذكرها بطريقة تؤكد معتقدات الفرد المسبقة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "إدارة البيانات (Data Management)",
+            "البيانات الوصفية (Metadata)"
+        ],
+        "question": "المعلومات *حول* بياناتك، مثل \"تاريخ الإنشاء\" أو \"اسم المؤلف\" المرفقة بملف، تسمى ________.",
+        "choices": [
+            "البيانات الضخمة (Big Data)",
+            "البيانات الوصفية (Metadata)",
+            "بيانات تجريبية (Beta Data)",
+            "بيانات دقيقة (Micro Data)"
+        ],
+        "ans_idx": 1,
+        "justification": "البيانات الوصفية (Metadata) هي \"بيانات عن البيانات\"، توفر سياقاً ومعلومات حول محتوى ملف أو مجموعة بيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "الاتجاه (Trend)"
+        ],
+        "question": "في المخطط المبعثر (Scatter Plot)، إذا كانت النقاط تتجه لأسفل من اليسار إلى اليمين، فهذا يظهر:",
+        "choices": [
+            "اتجاه إيجابي (Positive Trend)",
+            "اتجاه سلبي (Negative Trend)",
+            "لا يوجد اتجاه (No Trend)",
+            "دائرة"
+        ],
+        "ans_idx": 1,
+        "justification": "الاتجاه السلبي يشير إلى أنه كلما زاد متغير واحد (المحور السيني)، انخفض الآخر (المحور الصادي)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "التحقق (Validation)"
+        ],
+        "question": "لمنع الناس من كتابة \"موز\" في خلية يجب أن تحتوي فقط على أرقام، تستخدم ________ البيانات.",
+        "choices": [
+            "التحقق من صحة (Validation)",
+            "تحويل (Transformation)",
+            "ضرب (Multiplication)",
+            "تصور (Visualization)"
+        ],
+        "ans_idx": 0,
+        "justification": "التحقق من صحة البيانات (Data Validation) يقيد نوع البيانات أو القيم التي يمكن للمستخدمين إدخالها في الخلية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أنواع البيانات (Data Types)",
+            "قيمة فارغة (Null)"
+        ],
+        "question": "في مجموعة البيانات، القيمة \"Null\" (فارغة) هي بالضبط نفس الرقم صفر (0).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "Null تمثل بيانات مفقودة أو غير معرفة. الصفر هو قيمة رقمية محددة. هما يعنيان أشياء مختلفة في التحليل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "مخطط الصندوق (Box Plot)"
+        ],
+        "question": "أي مخطط متقدم يظهر \"الوسيط\" (Median)، و\"الربيعيات\" (Quartiles)، و\"القيم المتطرفة\" (Outliers) باستخدام شكل صندوق وشعيرات؟",
+        "choices": [
+            "مخطط دائري (Pie Chart)",
+            "مخطط الصندوق (Box Plot / Box and Whisker)",
+            "خريطة (Map)",
+            "رسم بياني خطي (Line Graph)"
+        ],
+        "ans_idx": 1,
+        "justification": "مخططات الصندوق توفر ملخصاً إحصائياً للبيانات، حيث تعرض التوزيع، والنزعة المركزية، والتباين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "السببية (Causation)"
+        ],
+        "question": "أي مما يلي هو الوحيد الذي يظهر بالتأكيد \"السببية\" (Causation) (شيء يسبب الآخر)؟",
+        "choices": [
+            "صياح الديكة يسبب شروق الشمس",
+            "شراء الآيس كريم يسبب حروق الشمس",
+            "لمس موقد ساخن يسبب حروقاً",
+            "ارتداء معطف واق من المطر يسبب المطر"
+        ],
+        "ans_idx": 2,
+        "justification": "هذه علاقة سبب ونتيجة مباشرة، على عكس الارتباطات في الخيارات الأخرى."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "دالة الربط (Concatenate)"
+        ],
+        "question": "إذا كنت تريد دمج \"John\" في الخلية A1 و \"Smith\" في الخلية B1 لإنشاء \"John Smith\"، فإنك تستخدم دالة تسمى ________.",
+        "choices": [
+            "تقسيم (Split)",
+            "ربط (Concatenate)",
+            "طرح (Subtract)",
+            "قسمة (Divide)"
+        ],
+        "ans_idx": 1,
+        "justification": "الربط (Concatenation) هو عملية ضم سلسلتين من الأحرف أو أكثر من النهاية إلى النهاية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "المئين (Percentile)"
+        ],
+        "question": "إذا أحرزت نتيجة في \"المئين 90\" (90th Percentile) في اختبار، ماذا يعني ذلك؟",
+        "choices": [
+            "لقد أجبت بشكل صحيح على 90% من الأسئلة",
+            "لقد سجلت درجة أعلى من 90% من الطلاب الآخرين",
+            "لقد أخطأت في 90 سؤالاً",
+            "عمرك 90 سنة"
+        ],
+        "ans_idx": 1,
+        "justification": "المئينات (Percentiles) تقارن نتيجتك ببقية المجموعة. الوجود في المئين 90 يعني أنك أديت أفضل من 90% من المتقدمين للاختبار."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "أشرطة الخطأ (Error Bars)"
+        ],
+        "question": "خطوط صغيرة على شكل حرف 'I' أعلى المخططات الشريطية تظهر مدى عدم اليقين أو التباين في البيانات تسمى:",
+        "choices": [
+            "زينة",
+            "أشرطة الخطأ (Error Bars)",
+            "هوائيات",
+            "قمم"
+        ],
+        "ans_idx": 1,
+        "justification": "أشرطة الخطأ (Error Bars) تشير إلى التباين أو عدم اليقين في القياس المبلغ عنه (مثل الانحراف المعياري)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "المرجع المطلق (Absolute Reference)"
+        ],
+        "question": "في صيغة جدول البيانات، استخدام علامات مثل `$A$1` \"يقفل\" الخلية بحيث لا تتغير عند نسخ الصيغة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "علامة الدولار `$` تشير إلى مرجع خلية مطلق (Absolute Reference)، مما يبقي الصف و/أو العمود ثابتاً أثناء النسخ واللصق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جودة البيانات (Data Quality)",
+            "عدم الاتساق (Inconsistency)"
+        ],
+        "question": "أنت تقوم بتحليل المدن. شخص كتب \"NYC\"، وآخر كتب \"N.Y.C.\"، وآخر \"New York\". هذه مشكلة:",
+        "choices": [
+            "اتساق البيانات (Data Consistency)",
+            "أخطاء رياضية",
+            "فشل في الأجهزة",
+            "سفر عبر الزمن"
+        ],
+        "ans_idx": 0,
+        "justification": "إدخال البيانات غير المتسق يجعل من الصعب تجميع أو عد العناصر بشكل صحيح. تنظيف البيانات ضروري لتوحيد هذه القيم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "الفرز (Sorting)"
+        ],
+        "question": "تريد فرز قائمة بقمصان أولاً حسب \"المقاس\" (S, M, L) ثم حسب \"اللون\". هذا يسمى:",
+        "choices": [
+            "الفرز متعدد المستويات (Multi-level Sorting)",
+            "الفرز العكسي (Reverse Sorting)",
+            "الحذف (Deleting)",
+            "الطباعة (Printing)"
+        ],
+        "ans_idx": 0,
+        "justification": "الفرز متعدد المستويات (Multi-level Sorting) يسمح لك بتنظيم البيانات باستخدام أكثر من معيار/عمود واحد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الإحصاء (Statistics)",
+            "العينة (Sample)"
+        ],
+        "question": "الـ ________ هو جزء صغير من مجموعة تقوم بدراستها للتعرف على المجموعة بأكملها.",
+        "choices": [
+            "المجتمع (Population)",
+            "العينة (Sample)",
+            "تعداد (Census)",
+            "رقم (Number)"
+        ],
+        "ans_idx": 1,
+        "justification": "العينة (Sample) هي مجموعة فرعية من المجتمع يتم اختيارها للقياس أو الملاحظة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المنطق (Logic)",
+            "مفارقة سيمبسون (Simpson's Paradox)"
+        ],
+        "question": "أحياناً يظهر اتجاه في مجموعات مختلفة من البيانات ولكنه يختفي عندما يتم دمج هذه المجموعات. هذه الظاهرة الرياضية الخادعة تسمى:",
+        "choices": [
+            "مفارقة سيمبسون (Simpson's Paradox)",
+            "المصفوفة (The Matrix)",
+            "تأثير المخطط الدائري",
+            "خطأ القيمة الفارغة"
+        ],
+        "ans_idx": 0,
+        "justification": "مفارقة سيمبسون (Simpson's Paradox) هي ظاهرة في الاحتمالات والإحصاء حيث يظهر اتجاه في عدة مجموعات من البيانات ولكنه يختفي أو ينعكس عند دمج المجموعات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "المخططات البيانية (Charts)",
+            "الخريطة الحرارية (Heat Map)"
+        ],
+        "question": "مخطط يستخدم درجات الألوان (مثل الأخضر الفاتح إلى الأخضر الداكن) لإظهار القيم على خريطة أو شبكة يسمى:",
+        "choices": [
+            "خريطة حرارية (Heat Map)",
+            "مخطط دائري (Pie Chart)",
+            "رسم بياني خطي (Line Graph)",
+            "مخطط مبعثر (Scatter Plot)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخرائط الحرارية (Heat Maps) تستخدم كثافة اللون لتمثيل حجم ظاهرة أو قيمة في بعدين."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أنواع البيانات (Data Types)",
+            "بوليان (Boolean)"
+        ],
+        "question": "نوع البيانات \"بوليان\" (Boolean) يمكن أن يحمل أي رقم من 0 إلى 100.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "البيانات المنطقية/بوليان (Boolean) هي ثنائية؛ يمكن أن تحمل فقط قيمتين محتملتين، عادة صواب/خطأ (True/False) أو 1/0."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جداول البيانات (Spreadsheets)",
+            "دالة If (If Function)"
+        ],
+        "question": "أي دالة في جداول البيانات تتحقق من شرط (مثل \"هل الدرجة > 50؟\") وتقوم بشيء واحد إذا كان صواباً وشيء آخر إذا كان خطأ؟",
+        "choices": [
+            "=IF()",
+            "=CHECK()",
+            "=MAYBE()",
+            "=WHEN()"
+        ],
+        "ans_idx": 0,
+        "justification": "`=IF(condition, value_if_true, value_if_false)` هي دالة منطقية أساسية في جداول البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أنواع البيانات (Data Types)",
+            "البيانات الفئوية (Categorical Data)",
+            "أساسيات (Basics)"
+        ],
+        "question": "أي مما يلي يعد مثالاً على البيانات 'الفئوية' (Categorical) (البيانات التي تضع الأشياء في مجموعات)؟",
+        "choices": [
+            "الطول بالسنتيمتر (Height in cm)",
+            "الوزن بالكيلوجرام (Weight in kg)",
+            "نوع الفاكهة (تفاح، موز، برتقال) (Type of Fruit)",
+            "عدد الأشقاء (Number of siblings)"
+        ],
+        "ans_idx": 2,
+        "justification": "تصف البيانات الفئوية (Categorical data) الفئات أو المجموعات، مثل أنواع الفاكهة، بدلاً من القيم العددية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "جمع البيانات (Data Collection)",
+            "الملاحظة (Observation)",
+            "أساسيات (Basics)"
+        ],
+        "question": "يمكنك جمع البيانات فقط من خلال مشاهدة الطيور في الحديقة وتدوين أي منها تراه.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يسمى هذا جمع البيانات بالملاحظة، حيث تسجل ما تراه دون تدخل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "المخططات (Charts)",
+            "مخطط شريطي (Bar Chart)",
+            "التمثيل المرئي (Visualization)"
+        ],
+        "question": "المخطط ________ هو الأفضل لمقارنة عدد الطلاب الذين يحبون ألواناً مختلفة (مثل الأحمر مقابل الأزرق مقابل الأخضر).",
+        "choices": [
+            "خطي (Line)",
+            "شريطي (Bar)",
+            "مبعثر (Scatter)",
+            "خريطة (Map)"
+        ],
+        "ans_idx": 1,
+        "justification": "المخططات الشريطية ممتازة لمقارنة الكميات عبر فئات متميزة مثل الألوان."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "التعرف على الأنماط (Pattern Recognition)",
+            "الاتجاهات (Trends)"
+        ],
+        "question": "إذا رأيت أن مبيعات الآيس كريم ترتفع في كل مرة ترتفع فيها درجة الحرارة، فهذا يسمى:",
+        "choices": [
+            "نمط (Pattern)",
+            "خطأ (Mistake)",
+            "رمز (Code)",
+            "خطأ مطبعي (Typo)"
+        ],
+        "ans_idx": 0,
+        "justification": "النمط أو الاتجاه هو علاقة متسقة بين معلومتين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "تنظيف البيانات (Data Cleaning)",
+            "الجودة (Quality)",
+            "أساسيات (Basics)"
+        ],
+        "question": "ماذا يجب أن تفعل إذا وجدت خطأ في بياناتك (مثل شخص أدخل 'قطة' كعمره)؟",
+        "choices": [
+            "اتركه كما هو (Leave it alone)",
+            "أصلحه أو احذفه (نظف البيانات) (Fix or remove it)",
+            "أخفه (Hide it)",
+            "ابكي (Cry)"
+        ],
+        "ans_idx": 1,
+        "justification": "يتضمن تنظيف البيانات تحديد الأخطاء وتصحيحها لضمان دقة التحليل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أنواع البيانات (Data Types)",
+            "أرقام (Numbers)",
+            "أساسيات (Basics)"
+        ],
+        "question": "رقم الهاتف (مثل 555-0199) يعامل عادة كـ 'نص' أو 'معرف' بدلاً من رقم تقوم بعمليات حسابية عليه.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "أرقام الهواتف هي معرفات؛ لا تقوم بجمعها أو طرحها، لذا غالباً ما تعامل كنص/بيانات فئوية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "رسم بياني خطي (Line Graph)",
+            "سلسلة زمنية (Time Series)"
+        ],
+        "question": "ما هو أفضل مخطط لإظهار كيفية تغير درجة الحرارة ساعة بساعة طوال يوم واحد؟",
+        "choices": [
+            "مخطط دائري (Pie Chart)",
+            "رسم بياني خطي (Line Graph)",
+            "مخطط شريطي (Bar Chart)",
+            "مخطط فن (Venn Diagram)"
+        ],
+        "ans_idx": 1,
+        "justification": "الرسوم البيانية الخطية مثالية لإظهار التغييرات على مدار فترة زمنية مستمرة (سلسلة زمنية)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "خصوصية البيانات (Data Privacy)",
+            "الأخلاقيات (Ethics)",
+            "الأمان (Security)"
+        ],
+        "question": "يجب ألا تشارك أبداً ________ الشخصية الخاصة لشخص ما، مثل عنوان منزله، في مجموعة بيانات عامة.",
+        "choices": [
+            "معلومات (Information)",
+            "موسيقى (Music)",
+            "حيوان أليف (Pet)",
+            "نكات (Jokes)"
+        ],
+        "ans_idx": 0,
+        "justification": "يجب حماية المعلومات الشخصية (PII) لضمان الخصوصية والسلامة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "جداول البيانات (Spreadsheets)",
+            "خلايا (Cells)",
+            "أساسيات (Basics)"
+        ],
+        "question": "في Excel، 'C5' هو اسم:",
+        "choices": [
+            "روبوت (Robot)",
+            "عنوان خلية (Cell Address)",
+            "صيغة (Formula)",
+            "لعبة (Game)"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير C5 إلى الخلية عند تقاطع العمود C والصف 5."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "استبيان (Survey)",
+            "أسئلة (Questions)",
+            "جمع البيانات (Data Collection)"
+        ],
+        "question": "أي سؤال هو الأفضل لاستبيان للحصول على بيانات مفيدة؟",
+        "choices": [
+            "هل تحب الأشياء؟ (Do you like stuff?)",
+            "على مقياس من 1-5، كم تحب البيتزا؟ (On a scale of 1-5...)",
+            "البيتزا رائعة، أليس كذلك؟ (Pizza is great, right?)",
+            "مرحباً (Hello)"
+        ],
+        "ans_idx": 1,
+        "justification": "يوفر السؤال القائم على مقياس بيانات محددة وقابلة للقياس مناسبة للتحليل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي للبيانات (Data Visualization)",
+            "المخططات (Charts)",
+            "التفسير (Interpretation)"
+        ],
+        "question": "خط شديد الانحناء للأعلى في الرسم البياني يعني أن القيمة تزداد ببطء شديد.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير المنحدر الصاعد الحاد إلى زيادة سريعة، وليست بطيئة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "العد (Counting)",
+            "التكرار (Frequency)",
+            "أساسيات (Basics)"
+        ],
+        "question": "إذا قمت بحساب عدد المرات التي يظهر فيها 'الأحمر' في قائمة ألوان السيارات، فأنت تجد:",
+        "choices": [
+            "التكرار (Frequency)",
+            "الحجم (Volume)",
+            "الوزن (Weight)",
+            "السرعة (Speed)"
+        ],
+        "ans_idx": 0,
+        "justification": "التكرار (Frequency) هو عدد المرات التي تحدث فيها قيمة معينة في مجموعة البيانات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "المعدل (Average)",
+            "الرياضيات (Math)"
+        ],
+        "question": "اسم شائع آخر لـ 'المعدل' (Average) هو ________.",
+        "choices": [
+            "الوسط الحسابي (Mean)",
+            "الوسيط (Median)",
+            "المنوال (Mode)",
+            "المدى (Range)"
+        ],
+        "ans_idx": 0,
+        "justification": "عند إيجاد المعدل، نقوم بحساب الوسط الحسابي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التحليل التنبؤي (Predictive Analysis)",
+            "المستقبل (Future)",
+            "علوم البيانات (Data Science)"
+        ],
+        "question": "استخدام بيانات الطقس السابقة لتخمين ما إذا كانت ستمطر غداً يسمى:",
+        "choices": [
+            "سحر (Magic)",
+            "تنبؤ (Prediction / Forecasting)",
+            "تاريخ (History)",
+            "رسم (Drawing)"
+        ],
+        "ans_idx": 1,
+        "justification": "يستخدم التنبؤ (Prediction) البيانات التاريخية لتقدير الأحداث المستقبلية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "تخزين البيانات (Data Storage)",
+            "الملفات (Files)",
+            "أساسيات (Basics)"
+        ],
+        "question": "أي من أنواع الملفات هذه هو الأكثر استخداماً لتخزين جداول البيانات البسيطة؟",
+        "choices": [
+            ".mp3",
+            ".csv (قيم مفصولة بفواصل)",
+            ".jpg",
+            ".exe"
+        ],
+        "ans_idx": 1,
+        "justification": "يعني CSV قيماً مفصولة بفواصل وهو تنسيق قياسي للبيانات المجدولة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "أسئلة (Questions)",
+            "استفسار (Inquiry)"
+        ],
+        "question": "الخطوة الأولى في تحليل البيانات هي غالباً طرح سؤال تريد الإجابة عليه.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "عادة ما يبدأ تحليل البيانات ببيان المشكلة أو سؤال لتوجيه التحقيق."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "مخطط دائري (Pie Chart)",
+            "أجزاء من الكل (Parts of Whole)"
+        ],
+        "question": "المخططات الدائرية سيئة في إظهار:",
+        "choices": [
+            "أجزاء من كل (الكسور) (Parts of a whole)",
+            "التغييرات بمرور الوقت (Changes over time)",
+            "النسب المئوية (Percentages)",
+            "تقسيم الميزانية (Budget splits)"
+        ],
+        "ans_idx": 1,
+        "justification": "المخططات الدائرية ثابتة وتلتقط لحظة واحدة؛ فهي سيئة لإظهار الاتجاهات أو التغييرات بمرور الوقت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "أساسيات تحليل البيانات (Data Analysis Basics)",
+            "تجميع (Grouping)",
+            "تصنيف (Classification)"
+        ],
+        "question": "عندما تضع البيانات في مجموعات بناءً على خصائص مشتركة (مثل 'فاكهة' مقابل 'خضروات')، فأنت تقوم بـ ________.",
+        "choices": [
+            "تصنيفها (Classifying)",
+            "حذفها (Deleting)",
+            "ضربها (Multiplying)",
+            "ضغطها (Compacting)"
+        ],
+        "ans_idx": 0,
+        "justification": "التصنيف (Classifying) يعني ترتيب البيانات في مجموعات بناءً على خصائص مشتركة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أدوات (Tools)",
+            "رقمي (Digital)",
+            "أساسيات (Basics)"
+        ],
+        "question": "أي مما يلي يعتبر أداة رقمية؟",
+        "choices": [
+            "قلم رصاص (A pencil)",
+            "جدول بيانات على الكمبيوتر (A spreadsheet on a computer)",
+            "مسطرة (A ruler)",
+            "دفتر ملاحظات (A notebook)"
+        ],
+        "ans_idx": 1,
+        "justification": "جدول البيانات على الكمبيوتر هو أداة برمجية رقمية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "حجم البيانات (Data Size)",
+            "البيانات الضخمة (Big Data)",
+            "مقدمة (Intro)"
+        ],
+        "question": "ماذا نسمي الأمر عندما يكون لدينا بيانات كثيرة جداً لدرجة أن الكمبيوتر العادي يواجه صعوبة في التعامل معها؟",
+        "choices": [
+            "بيانات صغيرة (Tiny Data)",
+            "بيانات ضخمة (Big Data)",
+            "بيانات سريعة (Fast Data)",
+            "بيانات مفقودة (Lost Data)"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير البيانات الضخمة (Big Data) إلى مجموعات البيانات الكبيرة جداً أو المعقدة بالنسبة لبرامج معالجة البيانات التقليدية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "مخطط التشتت (Scatter Plot)",
+            "الارتباط (Correlation)"
+        ],
+        "question": "إذا كانت النقاط في مخطط التشتت تنخفض من اليسار إلى اليمين، فهذا يعني عادة:",
+        "choices": [
+            "ارتباط إيجابي (Positive Correlation)",
+            "ارتباط سلبي (Negative Correlation)",
+            "لا يوجد ارتباط (No Correlation)",
+            "أنها تسقط (They are falling)"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير الاتجاه الهبوطي إلى ارتباط سلبي، مما يعني أنه كلما زاد متغير واحد، انخفض الآخر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "مدرج تكراري (Histogram)",
+            "توزيع (Distribution)"
+        ],
+        "question": "يشبه المدرج التكراري المخطط الشريطي ولكنه يستخدم لإظهار عدد المرات التي تقع فيها البيانات في نطاقات محددة (مثل الفئات العمرية 0-10، 11-20).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تعرض المدرجات التكرارية (Histograms) توزيع البيانات الرقمية عن طريق تجميعها في صناديق أو نطاقات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "قيم متطرفة (Outliers)",
+            "تحليل (Analysis)"
+        ],
+        "question": "نقطة البيانات البعيدة جداً عن جميع النقاط الأخرى (مثل طالب عمره 200 عام) تسمى ________.",
+        "choices": [
+            "قيمة متطرفة (Outlier)",
+            "من الداخل (Insider)",
+            "عدو (Enemy)",
+            "معدل (Average)"
+        ],
+        "ans_idx": 0,
+        "justification": "القيمة المتطرفة (outlier) هي نقطة ملاحظة بعيدة عن الملاحظات الأخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "المحاور (Axes)",
+            "المتغيرات (Variables)"
+        ],
+        "question": "في مخطط التشتت الذي يظهر 'ساعات الدراسة' مقابل 'درجات الاختبار'، عادة ما تكون 'ساعات الدراسة' هي:",
+        "choices": [
+            "المتغير المستقل (المحور س) (Independent Variable (X-axis))",
+            "المتغير التابع (المحور ص) (Dependent Variable (Y-axis))",
+            "العنوان (Title)",
+            "اللون (Color)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتم رسم المتغير المستقل (السبب) عادة على المحور السيني (X-axis)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "خريطة حرارية (Heatmap)",
+            "اللون (Color)"
+        ],
+        "question": "أي مخطط يستخدم الألوان (مثل الأحمر للساخن، والأزرق للبارد) لتمثيل قيم البيانات في شبكة؟",
+        "choices": [
+            "خريطة حرارية (Heatmap)",
+            "مخطط دائري (Pie Chart)",
+            "رسم بياني خطي (Line Graph)",
+            "كتاب مدرسي (Text Book)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخريطة الحرارية (heatmap) هي تقنية لتصور البيانات تظهر حجم الظاهرة كلون في بعدين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "الوسط الحسابي (Mean)",
+            "حساب (Calculation)"
+        ],
+        "question": "احسب الوسط الحسابي لـ: 5، 5، 10، 20.",
+        "choices": [
+            "10",
+            "40",
+            "5",
+            "15"
+        ],
+        "ans_idx": 0,
+        "justification": "المجموع = 5+5+10+20 = 40. العدد = 4. الوسط الحسابي = 40 / 4 = 10."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "المنوال (Mode)",
+            "التكرار (Frequency)"
+        ],
+        "question": "في القائمة [قطة، كلب، قطة، سمكة، قطة]، المنوال هو ________.",
+        "choices": [
+            "قطة (Cat)",
+            "كلب (Dog)",
+            "سمكة (Fish)",
+            "طائر (Bird)"
+        ],
+        "ans_idx": 0,
+        "justification": "'قطة' تظهر بشكل متكرر أكثر (3 مرات)، لذا فهي المنوال."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "الوسيط (Median)",
+            "حساب (Calculation)"
+        ],
+        "question": "ما هو الوسيط لهذه المجموعة: 2، 9، 100؟ (تذكر: رتب ثم جد المنتصف).",
+        "choices": [
+            "9",
+            "2",
+            "100",
+            "37"
+        ],
+        "ans_idx": 0,
+        "justification": "القائمة مرتبة بالفعل (2، 9، 100). الرقم الأوسط هو 9."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "جودة البيانات (Data Quality)",
+            "بيانات مفقودة (Missing Data)",
+            "تنظيف (Cleaning)"
+        ],
+        "question": "إذا كان لديك 'Null' أو 'NaN' في مجموعة البيانات الخاصة بك، فهذا يعني عادةً أن البيانات مفقودة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "Null و NaN (ليس رقماً) هي علامات قياسية للبيانات المفقودة أو غير المحددة في الحوسبة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "مخطط الصندوق (Box Plot)",
+            "الإحصاء (Statistics)"
+        ],
+        "question": "أي مخطط يظهر 'الوسيط' و 'المدى' و 'الربيعيات' باستخدام صندوق وشوارب؟",
+        "choices": [
+            "مخطط الصندوق (Box Plot)",
+            "مخطط الدائرة (Circle Plot)",
+            "مخطط النجمة (Star Chart)",
+            "مخطط النقاط (Dot Plot)"
+        ],
+        "ans_idx": 0,
+        "justification": "يعرض مخطط الصندوق (أو مخطط الصندوق والشارب) بصرياً توزيع البيانات من خلال الربيعيات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "المدى (Range)",
+            "الانتشار (Spread)"
+        ],
+        "question": "أوجد المدى لـ: 10، 2، 8، 6. (الحد الأقصى - الحد الأدنى).",
+        "choices": [
+            "8",
+            "10",
+            "2",
+            "12"
+        ],
+        "ans_idx": 0,
+        "justification": "الحد الأقصى هو 10. الحد الأدنى هو 2. المدى = 10 - 2 = 8."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "الفرز (Sorting)",
+            "الترتيب (Order)"
+        ],
+        "question": "الفرز من الأكبر إلى الأصغر (10، 9، 8...) يسمى ترتيباً ________.",
+        "choices": [
+            "تنازلياً (Descending)",
+            "تصاعدياً (Ascending)",
+            "صاعداً (Rising)",
+            "هابطاً (Falling)"
+        ],
+        "ans_idx": 0,
+        "justification": "الترتيب التنازلي يعني ترتيب البيانات من القيمة الأعلى إلى الأدنى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "محور مزدوج (Dual Axis)",
+            "متقدم (Advanced)"
+        ],
+        "question": "هل يمكن للمخطط أن يحتوي على محورين صاديين (Y-axes) (واحد على اليسار وواحد على اليمين)؟",
+        "choices": [
+            "نعم، يسمى مخطط المحور المزدوج (Yes, it's called a Dual-Axis chart)",
+            "لا، هذا غير قانوني (No, that's illegal)",
+            "فقط أيام الثلاثاء (Only on Tuesdays)",
+            "نعم، ولكن للألوان فقط (Yes, but only for colors)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح لك مخططات المحور المزدوج برسم بيانات بوحدات أو مقاييس مختلفة على نفس الرسم البياني."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "الاحتمالات (Probability)",
+            "أساسيات (Basics)"
+        ],
+        "question": "احتمال رمي عملة معدنية والحصول على 'وجه' هو 50% (أو 0.5).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "هناك نتيجتان متساويتان في الاحتمال (وجه، كتابة)، لذا الاحتمال هو 1/2 أو 50%."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "العلاقات (Relationships)",
+            "السببية (Causation)"
+        ],
+        "question": "فقط لأن شيئين مرتبطين (يتحركان معاً) لا يعني أن أحدهما تسبب في الآخر. هذا يعرف بـ:",
+        "choices": [
+            "الارتباط لا يعني السببية (Correlation does not imply Causation)",
+            "القاعدة الذهبية (The Golden Rule)",
+            "البيانات الضخمة (Big Data)",
+            "قانون الجاذبية (The Law of Gravity)"
+        ],
+        "ans_idx": 0,
+        "justification": "هذا مبدأ أساسي في الإحصاء؛ الصدفة أو متغير ثالث قد يفسر الرابط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "أنواع البيانات (Data Types)",
+            "منفصل مقابل مستمر (Discrete vs Continuous)",
+            "متقدم (Advanced)"
+        ],
+        "question": "أي البيانات هي 'منفصلة' (Discrete) (يمكن عدها)؟",
+        "choices": [
+            "عدد البيض في علبة كرتون (Number of eggs in a carton)",
+            "ارتفاع شجرة (Height of a tree)",
+            "الوقت المستغرق لركض سباق (Time it takes to run a race)",
+            "وزن سيارة (Weight of a car)"
+        ],
+        "ans_idx": 0,
+        "justification": "تأخذ البيانات المنفصلة قيماً محددة وقابلة للعد (أعداد صحيحة). لا يمكنك الحصول على 2.5 بيضة في معنى العد في علبة الكرتون."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "جداول البيانات (Spreadsheets)",
+            "جدول محوري (Pivot Table)",
+            "ملخص (Summary)"
+        ],
+        "question": "الجدول ________ هو أداة في Excel تستخدم لتلخيص كميات كبيرة من البيانات بسرعة.",
+        "choices": [
+            "المحوري (Pivot)",
+            "الدوران (Spin)",
+            "القفز (Jump)",
+            "الملخص (Summary)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح لك الجداول المحورية (Pivot tables) بإعادة تنظيم وتلخيص الأعمدة والصفوف المحددة من البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "النسب المئوية (Percentiles)",
+            "التصنيف (Ranking)"
+        ],
+        "question": "إذا كنت في 'الشريحة المئوية 90' بالنسبة للطول، فهذا يعني:",
+        "choices": [
+            "أنك أطول من 90% من الناس (You are taller than 90% of people)",
+            "طولك 90 سم",
+            "عمرك 90 سنة",
+            "أنت في الـ 10% الأقصر"
+        ],
+        "ans_idx": 0,
+        "justification": "تشير رتبة الشريحة المئوية (Percentile rank) إلى النسبة المئوية للدرجات التي تقع تحت درجة معينة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Data Visualization)",
+            "إنفوجرافيك (Infographics)",
+            "تواصل (Communication)"
+        ],
+        "question": "تجمع الإنفوجرافيك بين النصوص والصور والمخططات لسر قصة باستخدام البيانات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الإنفوجرافيك هي تمثيلات مرئية رسومية للمعلومات تهدف إلى تقديم المعلومات بسرعة ووضوح."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أخذ العينات (Sampling)",
+            "تحيز (Bias)"
+        ],
+        "question": "يساعد أخذ العينات العشوائي على:",
+        "choices": [
+            "تقليل التحيز (Reduce bias)",
+            "جعل البيانات أصعب في الفهم",
+            "خلق أنماط",
+            "زيادة التحيز"
+        ],
+        "ans_idx": 0,
+        "justification": "يضمن أخذ العينات العشوائي أن يكون لكل فرد من السكان فرصة متساوية في الاختيار، مما يقلل من تحيز الاختيار."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "جمع البيانات (Data Collection)",
+            "استبيانات (Surveys)",
+            "أخلاقيات (Ethics)"
+        ],
+        "question": "أي مما يلي هو مثال على 'سؤال موجه' (الذي يدفع إلى إجابة محددة)؟",
+        "choices": [
+            "ألا توافق على أن الصيف هو الأفضل؟ (Don't you agree that summer is the best?)",
+            "ما هو فصلك المفضل؟ (What is your favorite season?)",
+            "كم عمرك؟ (How old are you?)",
+            "هل لديك حيوان أليف؟ (Do you have a pet?)"
+        ],
+        "ans_idx": 0,
+        "justification": "يحث هذا السؤال المستجيب على الموافقة على رأي القائم بالمقابلة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تخزين البيانات (Data Storage)",
+            "سحابة (Cloud)",
+            "وصول (Access)"
+        ],
+        "question": "يتيح لك التخزين السحابي حفظ بياناتك على الإنترنت حتى تتمكن من الوصول إليها من أجهزة كمبيوتر مختلفة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يحفظ التخزين السحابي البيانات على خوادم بعيدة يتم الوصول إليها عبر الإنترنت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "لوحة القيادة (Dashboard)",
+            "ملخص (Summary)"
+        ],
+        "question": "________ هو عرض مرئي لجميع مخططات البيانات الرئيسية الخاصة بك في مكان واحد، مثل لوحة التحكم في السيارة.",
+        "choices": [
+            "لوحة القيادة (Dashboard)",
+            "رواية (Novel)",
+            "فيلم (Movie)",
+            "قائمة طعام (Menu)"
+        ],
+        "ans_idx": 0,
+        "justification": "توفر لوحات معلومات البيانات (Data dashboards) نظرة سريعة على مؤشرات الأداء الرئيسية والبيانات ذات الصلة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "انحراف معيارية (Standard Deviation)",
+            "انتشار (Spread)"
+        ],
+        "question": "يقيس الانحراف المعياري:",
+        "choices": [
+            "مدى انتشار الأرقام (How spread out the numbers are)",
+            "المجموع الكلي (The total sum)",
+            "أكبر رقم (The biggest number)",
+            "لون المخطط (The color of the chart)"
+        ],
+        "ans_idx": 0,
+        "justification": "يحدد الانحراف المعياري كمية التباين أو التشتت لمجموعة من قيم البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "مقارنة (Comparison)",
+            "سياق (Context)"
+        ],
+        "question": "توفر مقارنة درجة اختبارك بمتوسط الفصل:",
+        "choices": [
+            "سياقاً (Context)",
+            "ارتباكاً (Confusion)",
+            "فقدان بيانات (Data Loss)",
+            "خصوصية (Privacy)"
+        ],
+        "ans_idx": 0,
+        "justification": "توفر المقارنة السياق، مما يسمح لك بتفسير معنى نقطة بيانات واحدة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تنظيف (Cleaning)",
+            "تكرارات (Duplicates)"
+        ],
+        "question": "يجب عليك التحقق من الإدخالات المكررة (نفس الشخص مدرج مرتين) قبل تحليل البيانات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يجب إزالة التكرارات لمنع تحريف النتائج (على سبيل المثال، احتساب صوت واحد مرتين)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أنواع البيانات (Data Types)",
+            "منطقي (Boolean)",
+            "منطق (Logic)"
+        ],
+        "question": "أي نوع بيانات يمكن أن يكون فقط 'صواب' أو 'خطأ'؟",
+        "choices": [
+            "منطقي (Boolean)",
+            "سلسلة نصية (String)",
+            "عدد صحيح (Integer)",
+            "عدد عشري (Float)"
+        ],
+        "ans_idx": 0,
+        "justification": "تمثل أنواع البيانات المنطقية (Boolean) إحدى قيمتين: صواب/خطأ (أو 1/0)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "جداول البيانات (Spreadsheets)",
+            "فرز (Sort)",
+            "إدارة البيانات (Data Management)"
+        ],
+        "question": "يمكنك استخدام مستويات متعددة من ________، على سبيل المثال أولاً حسب 'اسم العائلة'، ثم حسب 'الاسم الأول'.",
+        "choices": [
+            "الفرز (Sorting)",
+            "المسح (Erasing)",
+            "الرسم (Painting)",
+            "الغناء (Singing)"
+        ],
+        "ans_idx": 0,
+        "justification": "يسمح الفرز متعدد المستويات بتنظيم البيانات بشكل هرمي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "مخطط مساحي (Area Chart)",
+            "اتجاهات (Trends)"
+        ],
+        "question": "المخطط المساحي يشبه الرسم البياني الخطي ولكن:",
+        "choices": [
+            "المساحة أسفل الخط مملوءة باللون (The space below the line is filled with color)",
+            "ليس له خطوط",
+            "إنه للبيتزا فقط",
+            "إنه غير مرئي"
+        ],
+        "ans_idx": 0,
+        "justification": "تعرض المخططات المساحية البيانات الكمية رسومياً وتملأ المنطقة بين المحور والخط للتأكيد على الحجم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "عينة (Sample)",
+            "مجتمع إحصائي (Population)"
+        ],
+        "question": "المجموعة الكاملة التي تريد دراستها (مثل كل البشر) هي 'المجتمع الإحصائي' (Population). جزء صغير منها هو:",
+        "choices": [
+            "عينة (Sample)",
+            "كسر (Fraction)",
+            "قطعة (Piece)",
+            "كعكة (Cookie)"
+        ],
+        "ans_idx": 0,
+        "justification": "في الإحصاء، العينة هي مجموعة من البيانات تم جمعها و/أو اختيارها من مجتمع إحصائي بواسطة إجراء محدد."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "اتجاهات (Trends)",
+            "موسمي (Seasonal)"
+        ],
+        "question": "تكون مبيعات الآيس كريم أعلى في الصيف وأقل في الشتاء هو اتجاه 'موسمي'.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "التغيرات الموسمية هي أنماط تتكرر على فترات منتظمة بمرور الوقت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "اتخاذ القرار (Decision Making)",
+            "قيمة (Value)"
+        ],
+        "question": "يعني اتخاذ القرار القائم على البيانات:",
+        "choices": [
+            "اتخاذ قرارات بناءً على حقائق وبيانات (Making decisions based on facts and data)",
+            "التخمين (Guessing)",
+            "سؤال كرة 8 سحرية (Asking a magic 8-ball)",
+            "رمي عملة معدنية (Flipping a coin)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن ذلك استخدام تحليل البيانات وتفسيرها لتوجيه القرارات والتحقق من صحتها."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "مجموع (Sum)",
+            "رياضيات (Math)"
+        ],
+        "question": "الرمز Σ (سيجما) في الرياضيات يعني عادة ________ الأرقام.",
+        "choices": [
+            "جمع (Sum)",
+            "طرح (Subtract)",
+            "ضرب (Multiply)",
+            "قسمة (Divide)"
+        ],
+        "ans_idx": 0,
+        "justification": "سيجما (Σ) هو التدوين الرياضي للجمع."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "أدوات (Tools)",
+            "برمجة (Programming)",
+            "بايثون (Python)"
+        ],
+        "question": "أي لغة برمجة مشهورة جداً لعلوم البيانات؟",
+        "choices": [
+            "بايثون (Python)",
+            "HTML",
+            "كراتش (Scratch)",
+            "الإنجليزية (English)"
+        ],
+        "ans_idx": 0,
+        "justification": "بايثون هي اللغة السائدة في علوم البيانات بسبب نظامها البيئي الغني بالمكتبات مثل Pandas و NumPy."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "فرضية (Hypothesis)",
+            "علم (Science)"
+        ],
+        "question": "'الفرضية' (Hypothesis) هي:",
+        "choices": [
+            "تخمين مدروس تريد اختباره (An educated guess you want to test)",
+            "حقيقة (A fact)",
+            "كذبة (A lie)",
+            "مخطط (A chart)"
+        ],
+        "ans_idx": 0,
+        "justification": "الفرضية هي تفسير مقترح لظاهرة ما، تستخدم كنقطة انطلاق للتحقيق."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "مخطط فقاعي (Bubble Chart)",
+            "ثلاثي الأبعاد (3D)"
+        ],
+        "question": "يشبه المخطط الفقاعي مخطط التشتت، لكن حجم النقطة يضيف بعداً/متغيراً ثالثاً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تمثل المخططات الفقاعية ثلاثة أبعاد: الموضع السيني، والموضع الصادي، وحجم الفقاعة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "كمي (Quantitative)",
+            "نوعي (Qualitative)"
+        ],
+        "question": "أي مما يلي يعتبر بيانات 'نوعية' (Qualitative)؟",
+        "choices": [
+            "جيد / سيء / مقبول (Good / Bad / Okay)",
+            "10.5",
+            "100%",
+            "50kg"
+        ],
+        "ans_idx": 0,
+        "justification": "تصف البيانات النوعية الصفات أو الخصائص (ذاتية أو فئوية) بدلاً من الكميات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "خط زمني (Timeline)",
+            "وقت (Time)"
+        ],
+        "question": "________ هو طريقة رسومية لعرض قائمة بالأحداث بترتيب زمني.",
+        "choices": [
+            "الخط الزمني (Timeline)",
+            "مخطط دائري (Pie chart)",
+            "خريطة (Map)",
+            "جدول (Table)"
+        ],
+        "ans_idx": 0,
+        "justification": "الجداول الزمنية تصور الأحداث بالترتيب الذي وقعت به."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تخزين البيانات (Data Storage)",
+            "قاعدة بيانات (Database)",
+            "منظم (Structured)"
+        ],
+        "question": "تنظم قاعدة بيانات SQL البيانات في:",
+        "choices": [
+            "جداول بصفوف وأعمدة (Tables with rows and columns)",
+            "أكوام من الورق (Piles of paper)",
+            "نص عشوائي (Random text)",
+            "فيديوهات (Videos)"
+        ],
+        "ans_idx": 0,
+        "justification": "قواعد بيانات SQL علائقية وتخزن البيانات في جداول منظمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "ملاحظات (Feedback)",
+            "دورة (Cycle)"
+        ],
+        "question": "لماذا تقوم الشركات بتحليل بيانات ملاحظات العملاء؟",
+        "choices": [
+            "لتحسين منتجاتهم (To improve their products)",
+            "لتجاهلها (To ignore it)",
+            "لإغضاب العملاء (To make customers angry)",
+            "لملء محركات الأقراص الصلبة (To fill hard drives)"
+        ],
+        "ans_idx": 0,
+        "justification": "يساعد تحليل الملاحظات في تحديد مجالات التحسين وتلبية احتياجات العملاء بشكل أفضل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "أخلاقيات البيانات (Data Ethics)",
+            "حقوق النشر (Copyright)",
+            "ملكية (Ownership)"
+        ],
+        "question": "إذا وجدت مجموعة بيانات رائعة على الإنترنت، هل يمكنك فقط استخدامها لأي شيء تريده؟",
+        "choices": [
+            "نعم، إنها على الإنترنت (Yes, it's on the internet)",
+            "لا، يجب عليك التحقق من الترخيص/القواعد (No, you must check the license/rules)",
+            "فقط إذا طبعتها",
+            "فقط في عطلات نهاية الأسبوع"
+        ],
+        "ans_idx": 1,
+        "justification": "تحدد ملكية البيانات والترخيص كيف يمكنك استخدام البيانات بشكل قانوني."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "ذكاء اصطناعي (AI)",
+            "تدريب (Training)"
+        ],
+        "question": "يتعلم الذكاء الاصطناعي (AI) الأنماط من البيانات، على غرار كيفية تعلم البشر من التجربة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن التعلم الآلي (مجموعة فرعية من الذكاء الاصطناعي) تدريب النماذج على البيانات للتعرف على الأنماط."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "إخفاء الهوية (Anonymization)",
+            "خصوصية (Privacy)"
+        ],
+        "question": "تسمى إزالة الأسماء والعناوين من مجموعة البيانات لحماية هوية الأشخاص بـ ________.",
+        "choices": [
+            "إخفاء الهوية (Anonymization)",
+            "الحذف (Deleting)",
+            "الإخفاء (Hiding)",
+            "التنسيق (Formatting)"
+        ],
+        "ans_idx": 0,
+        "justification": "إخفاء الهوية هو عملية إزالة معلومات التعريف الشخصية من مجموعات البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Data Visualization)",
+            "عمى الألوان (Color Blindness)",
+            "إمكانية الوصول (Accessibility)"
+        ],
+        "question": "لماذا يجب أن تكون حذراً عند استخدام الأحمر والأخضر معاً في المخطط؟",
+        "choices": [
+            "إنها ألوان قبيحة",
+            "بعض الناس مصابون بعمى الألوان ولا يمكنهم التمييز بينها (Some people are color blind)",
+            "إنها تكلف أموالاً إضافية",
+            "شاشات الكمبيوتر تكره الأحمر"
+        ],
+        "ans_idx": 1,
+        "justification": "عمى الألوان الأحمر والأخضر شائع؛ استخدامها معاً يمكن أن يجعل المخططات غير قابلة للقراءة لكثير من الناس."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "خوارزمية (Algorithm)",
+            "منطق (Logic)"
+        ],
+        "question": "تسمى مجموعة التعليمات خطوة بخطوة للكمبيوتر لحل مشكلة ما:",
+        "choices": [
+            "خوارزمية (Algorithm)",
+            "رأي (Opinion)",
+            "نكتة (Joke)",
+            "قصة (Story)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخوارزمية هي تسلسل محدد من التعليمات واضحة المعالم لحل فئة من المشاكل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "تحيز العينة (Sample Bias)",
+            "أخطاء (Errors)"
+        ],
+        "question": "إذا سألت أصدقائك فقط عن أفضل فيلم، فإن بياناتك تكون:",
+        "choices": [
+            "متحيزة (Biased)",
+            "مثالية (Perfect)",
+            "عالمية (Universal)",
+            "علمية (Scientific)"
+        ],
+        "ans_idx": 0,
+        "justification": "هذه عينة ملائمة وهي متحيزة لأنها لا تمثل عامة السكان."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "بيانات وصفية (Metadata)",
+            "بيانات عن البيانات (Data about Data)"
+        ],
+        "question": "البيانات الوصفية هي 'بيانات عن البيانات'، مثل تاريخ التقاط الصورة أو مؤلف المستند.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "توفر البيانات الوصفية معلومات حول بيانات أخرى، مثل الأصل والحجم والتنسيق."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "بيانات التدريب (Training Data)",
+            "تعلم الآلة (ML)"
+        ],
+        "question": "البيانات المستخدمة لتعليم نموذج التعلم الآلي تسمى بيانات ________.",
+        "choices": [
+            "التدريب (Training)",
+            "النوم (Sleeping)",
+            "الأكل (Eating)",
+            "المشي (Walking)"
+        ],
+        "ans_idx": 0,
+        "justification": "بيانات التدريب هي مجموعة البيانات الأولية المستخدمة لتعليم النموذج كيفية معالجة المعلومات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "خط الاتجاه (Trend Line)",
+            "تنبؤ (Forecasting)"
+        ],
+        "question": "الخط المرسوم عبر النقاط في مخطط التشتت لإظهار الاتجاه العام يسمى:",
+        "choices": [
+            "خط الاتجاه / خط الأفضل مطابقة (Trend Line / Line of Best Fit)",
+            "خط متعرج (Squiggly Line)",
+            "دائرة (Circle)",
+            "حدود (Border)"
+        ],
+        "ans_idx": 0,
+        "justification": "يساعد خط الاتجاه في تصور الاتجاه العام أو الارتباط لنقاط البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تخزين البيانات (Data Storage)",
+            "نسخ احتياطي (Backup)",
+            "أمان (Security)"
+        ],
+        "question": "يسمى عمل نسخة من بياناتك في حالة فقدان النسخة الأصلية:",
+        "choices": [
+            "نسخ احتياطي (Backup)",
+            "قليد (Copycat)",
+            "توأم (Twin)",
+            "إعادة تشغيل (Replay)"
+        ],
+        "ans_idx": 0,
+        "justification": "النسخ الاحتياطي هو نسخة من البيانات مأخوذة ومخزنة في مكان آخر لاستعادة النسخة الأصلية بعد حدث فقدان البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "قمامة في، قمامة خارج (Garbage In Garbage Out)",
+            "جودة (Quality)"
+        ],
+        "question": "عبارة 'قمامة تدخل، قمامة تخرج' (GIGO) تعني:",
+        "choices": [
+            "إذا أدخلت بيانات سيئة، ستحصل على نتائج سيئة (If you put bad data in, you get bad results out)",
+            "أجهزة الكمبيوتر تأكل القمامة",
+            "رائحة البيانات كريهة",
+            "يجب عليك إعادة التدوير"
+        ],
+        "ans_idx": 0,
+        "justification": "تعبر GIGO عن فكرة أن بيانات الإدخال غير الصحيحة أو ذات الجودة الرديئة تنتج مخرجات خاطئة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "أتمتة (Automation)",
+            "كفاءة (Efficiency)"
+        ],
+        "question": "يمكن لعلوم البيانات المساعدة في أتمتة المهام المملة حتى يتمكن البشر من التركيز على عمل أكثر تشويقاً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "أتمتة المهام المتكررة هي فائدة رئيسية لعلوم البيانات التطبيقية والذكاء الاصطناعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "مقياس (Scale)",
+            "عامل الكذب (Lie Factor)"
+        ],
+        "question": "إذا بدأ المخطط الشريطي عند 50 بدلاً من 0، فيمكن أن يجعل الاختلافات الصغيرة تبدو:",
+        "choices": [
+            "أكبر بكثير (مضللة) (Much bigger (Misleading))",
+            "أصغر (Smaller)",
+            "غير مرئية (Invisible)",
+            "زرقاء (Blue)"
+        ],
+        "ans_idx": 0,
+        "justification": "قطع المحور الصادي هو طريقة شائعة للمبالغة في الاختلافات، مما قد يكون مضللاً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "متغير (Variable)",
+            "رياضيات (Math)"
+        ],
+        "question": "الكمية التي يمكن أن تتغير أو تختلف، مثل 'درجة الحرارة' أو 'الوقت'، تسمى ________.",
+        "choices": [
+            "متغيراً (Variable)",
+            "ثابتاً (Constant)",
+            "فترة (Period)",
+            "فاصلة (Comma)"
+        ],
+        "ans_idx": 0,
+        "justification": "المتغير هو قيمة يمكن أن تتغير، اعتماداً على الظروف أو المعلومات التي يتم تمريرها إلى البرنامج."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "تصنيف (Classification)",
+            "مهام (Tasks)"
+        ],
+        "question": "تعليم الكمبيوتر التمييز بين صور القطط والكلاب هو مهمة ________.",
+        "choices": [
+            "تصنيف (Classification)",
+            "رياضيات (Math)",
+            "تهجئة (Spelling)",
+            "طبخ (Cooking)"
+        ],
+        "ans_idx": 0,
+        "justification": "يساعد تصنيف الصور أجهزة الكمبيوتر على تصنيف الصور إلى فئات (مثل قطة مقابل كلب)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تعداد (Census)",
+            "مجتمع إحصائي (Population)"
+        ],
+        "question": "العد الرسمي أو المسح السكاني، الذي يسجل عادةً تفاصيل مختلفة للأفراد، هو:",
+        "choices": [
+            "تعداد (Census)",
+            "اختبار قصير (Quiz)",
+            "لعبة (Game)",
+            "اجتماع (Meeting)"
+        ],
+        "ans_idx": 0,
+        "justification": "التعداد هو إجراء الحصول المنهجي وتسجيل المعلومات حول أفراد مجموعة سكانية معينة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "بيانات مفتوحة (Open Data)",
+            "وصول (Access)"
+        ],
+        "question": "'البيانات المفتوحة' هي بيانات يمكن لأي شخص الوصول إليها واستخدامها ومشاركتها.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات المفتوحة هي فكرة أن بعض البيانات يجب أن تكون متاحة للجميع مجاناً لاستخدامها وإعادة نشرها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "توزيع طبيعي (Normal Distribution)",
+            "منحنى الجرس (Bell Curve)"
+        ],
+        "question": "يصف 'منحنى الجرس' البيانات حيث:",
+        "choices": [
+            "معظم القيم في المنتصف، مع عدد أقل في الأطراف (Most values are in the middle)",
+            "كل شيء متماثل",
+            "يبدو مثل تاكو",
+            "لا ينتهي أبداً"
+        ],
+        "ans_idx": 0,
+        "justification": "يظهر التوزيع الطبيعي (منحنى الجرس) أن البيانات القريبة من المتوسط أكثر تكراراً في الحدوث من البيانات البعيدة عن المتوسط."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "وحدات (Units)",
+            "قياس (Measurement)"
+        ],
+        "question": "من المهم دائماً تسمية بياناتك بـ ________، مثل 'كجم' أو 'أمتار' أو 'ثواني'.",
+        "choices": [
+            "الوحدات (Units)",
+            "الوجوه الضاحكة (Smileys)",
+            "الملصقات (Stickers)",
+            "الألوان (Colors)"
+        ],
+        "ans_idx": 0,
+        "justification": "وحدات القياس ضرورية لفهم حجم وطبيعة البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "بيانات خام (Raw Data)",
+            "أساسيات (Basics)"
+        ],
+        "question": "البيانات التي لم تتم معالجتها أو تنظيفها بعد تسمى:",
+        "choices": [
+            "بيانات خام (Raw Data)",
+            "بيانات مطبوخة (Cooked Data)",
+            "بيانات طازجة (Fresh Data)",
+            "بيانات نظيفة (Clean Data)"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات الخام (أو البيانات الأولية) هي البيانات التي لم تتم معالجتها للاستخدام."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "تجميع (Cluster)",
+            "تجميع (Grouping)"
+        ],
+        "question": "في علوم البيانات، يسمى تجميع العناصر المتشابهة معاً دون إخبارك ماهي المجموعات:",
+        "choices": [
+            "تجميع (Clustering)",
+            "ملاكم (Boxer)",
+            "تسمية (Labeling)",
+            "فرز (Sorting)"
+        ],
+        "ans_idx": 0,
+        "justification": "التجميع هو تقنية لتجميع نقاط البيانات المتشابهة معاً بناءً على ميزاتها."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "تفاعلي (Interactive)",
+            "ويب (Web)"
+        ],
+        "question": "تسمح لك المخططات التفاعلية بتمرير مؤشر الماوس فوق النقاط لرؤية المزيد من التفاصيل.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يعزز التفاعل تصور البيانات من خلال السماح للمستخدمين باستكشاف البيانات بعمق أكبر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "خطأ (Error)",
+            "دقة (Accuracy)"
+        ],
+        "question": "يسمى الفرق بين القيمة المقاسة والقيمة الحقيقية:",
+        "choices": [
+            "خطأ (Error)",
+            "تصحيح (Correction)",
+            "مكافأة (Bonus)",
+            "فوز (Win)"
+        ],
+        "ans_idx": 0,
+        "justification": "خطأ القياس هو الفرق بين الكمية المقاسة وقيمتها الحقيقية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "ثنائي (Binary)",
+            "رقمي (Digital)"
+        ],
+        "question": "تخزن أجهزة الكمبيوتر جميع البيانات كسلسلة من الأصفار والآحاد، والتي تسمى رمزاً ________.",
+        "choices": [
+            "ثنائياً (Binary)",
+            "مورس (Morse)",
+            "سرياً (Secret)",
+            "عشرياً (Decimal)"
+        ],
+        "ans_idx": 0,
+        "justification": "يمثل الكود الثنائي النص أو تعليمات معالج الكمبيوتر أو أي بيانات أخرى باستخدام نظام ثنائي الرموز."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "CSV",
+            "تنسيق (Format)"
+        ],
+        "question": "ماذا يعني الاختصار CSV؟",
+        "choices": [
+            "قيم مفصولة بفواصل (Comma Separated Values)",
+            "عرض شاشة الكمبيوتر (Computer Screen View)",
+            "فيديو رائع جداً (Cool Super Video)",
+            "سرعة السيارة (Car Speed Velocity)"
+        ],
+        "ans_idx": 0,
+        "justification": "CSV هو تنسيق ملف نصي يستخدم الفواصل لفصل القيم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "اختبار A/B (A/B Testing)",
+            "تجارب (Experiments)"
+        ],
+        "question": "يسمى عرض نسختين مختلفتين من موقع ويب للمستخدمين لمعرفة أيهما يعمل بشكل أفضل:",
+        "choices": [
+            "اختبار A/B (A/B Testing)",
+            "اختبار C/D (C/D Testing)",
+            "اختبار لعبة (Game Testing)",
+            "اختبار تجريبي (Beta Testing)"
+        ],
+        "ans_idx": 0,
+        "justification": "يقارن اختبار A/B (الاختبار المنقسم) بين نسختين من متغير واحد لتحديد أيهما يسمح بأداء أفضل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "استعلام (Query)",
+            "قاعدة بيانات (Database)"
+        ],
+        "question": "'الاستعلام' (Query) هو طلب للحصول على بيانات أو معلومات من جدول قاعدة بيانات أو مجموعة من الجداول.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الاستعلام هو الطريقة الأساسية لاسترداد بيانات محددة من قاعدة بيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تفسير (Interpretation)",
+            "سياق (Context)"
+        ],
+        "question": "يسمى سرد قصة ببياناتك لمساعدة الآخرين على فهمها:",
+        "choices": [
+            "سرد قصص البيانات (Data Storytelling)",
+            "بيانات مخفية (Data Hidden)",
+            "سحر البيانات (Data Magic)",
+            "نوم البيانات (Data Sleeping)"
+        ],
+        "ans_idx": 0,
+        "justification": "يوصل سرد قصص البيانات رؤى من تحليل البيانات إلى الجماهير غير التقنية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "نسبة (Ratio)",
+            "مقارنة (Comparison)"
+        ],
+        "question": "تسمى مقارنة رقمين عن طريق القسمة (مثل 2:1) ________.",
+        "choices": [
+            "نسبة (Ratio)",
+            "مجموع (Sum)",
+            "منتج (Product)",
+            "فرق (Difference)"
+        ],
+        "ans_idx": 0,
+        "justification": "تشير النسبة إلى كم مرة يحتوي رقم واحد على آخر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "كمي (Quantitative)",
+            "قياس (Measurement)"
+        ],
+        "question": "أي مما يلي يعتبر بيانات كمية؟",
+        "choices": [
+            "25 درجة مئوية",
+            "حار جداً",
+            "غائم",
+            "صيف"
+        ],
+        "ans_idx": 0,
+        "justification": "25 درجة هو قياس رقمي، مما يجعله كمياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "متغيرات (Variables)",
+            "مستقل (Independent)"
+        ],
+        "question": "في تجربة علمية تقيس نمو النبات، كمية الماء التي تعطيها لكل نبات هي:",
+        "choices": [
+            "المتغير المستقل (Independent Variable)",
+            "المتغير التابع (Dependent Variable)",
+            "ثابت (Constant)",
+            "خطأ (Mistake)"
+        ],
+        "ans_idx": 0,
+        "justification": "المتغير المستقل هو الذي تقوم بتغييره أو التحكم فيه في التجربة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "متغيرات (Variables)",
+            "تابع (Dependent)"
+        ],
+        "question": "الارتفاع الذي ينمو إليه النبات هو المتغير التابع لأنه يعتمد على الماء.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "المتغير التابع هو ما تقيسه؛ يتغير استجابة للمتغير المستقل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "حجم العينة (Sample Size)",
+            "دقة (Accuracy)"
+        ],
+        "question": "بشكل عام، يجعل حجم العينة الأكبر نتائجك:",
+        "choices": [
+            "أكثر دقة وموثوقية (More accurate and reliable)",
+            "أقل دقة (Less accurate)",
+            "أسرع في الحساب",
+            "أصعب في القراءة"
+        ],
+        "ans_idx": 0,
+        "justification": "تقلل أحجام العينات الكبيرة من هامش الخطأ وتوفر نتائج أكثر موثوقية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "قائمة مرجعية (Checklist)",
+            "تنظيم (Organization)"
+        ],
+        "question": "أداة بسيطة تستخدم للتحقق من تنفيذ عدد من الخطوات المطلوبة هي ________.",
+        "choices": [
+            "قائمة مرجعية (Checklist)",
+            "رواية (Novel)",
+            "راديو (Radio)",
+            "مطرقة (Hammer)"
+        ],
+        "ans_idx": 0,
+        "justification": "تضمن القوائم المرجعية الاتساق والاكتمال في تنفيذ المهمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "المخططات (Charts)",
+            "مخطط جانت (Gantt Chart)",
+            "إدارة المشاريع (Project Management)"
+        ],
+        "question": "أي مخطط يساعدك على جدولة المهام بمرور الوقت لمشروع ما؟",
+        "choices": [
+            "مخطط جانت (Gantt Chart)",
+            "مخطط دائري (Pie Chart)",
+            "مخطط النقاط (Dot Plot)",
+            "مخطط العين (Eye Chart)"
+        ],
+        "ans_idx": 0,
+        "justification": "توضح مخططات جانت الجدول الزمني للمشروع، وتظهر تواريخ البدء والانتهاء للعناصر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "أنواع البيانات (Data Types)",
+            "صورة (Image)",
+            "غير منظم (Unstructured)"
+        ],
+        "question": "الصورة أو ملف الفيديو هو مثال على:",
+        "choices": [
+            "بيانات غير منظمة (Unstructured Data)",
+            "بيانات منظمة (Structured Data)",
+            "بيانات نصية (Text Data)",
+            "بيانات رقمية (Numerical Data)"
+        ],
+        "ans_idx": 0,
+        "justification": "عادة ما تشير البيانات غير المنظمة إلى المعلومات التي لا توجد في قاعدة بيانات تقليدية مكونة من صفوف وأعمدة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "لوغاريتم (Logarithm)",
+            "مقياس (Scale)"
+        ],
+        "question": "المقياس اللوغاريتمي مفيد عندما تغطي البيانات نطاقاً هائلاً من القيم (مثل 1 إلى 1,000,000).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح المقاييس اللوغاريتمية بعرض نطاق كبير من القيم بطريقة مدمجة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "نمط (Pattern)",
+            "تعرف (Recognition)"
+        ],
+        "question": "البرنامج الذي يمكنه التعرف على الوجه في الصورة يستخدم:",
+        "choices": [
+            "التعرف على الأنماط (Pattern Recognition)",
+            "تعاويذ سحرية",
+            "تخمين",
+            "رياضيات بسيطة"
+        ],
+        "ans_idx": 0,
+        "justification": "تحدد خوارزميات التعرف على الأنماط الانتظام والتشابه في البيانات (مثل ميزات الوجه)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "الاحتمالات (Probability)",
+            "فرصة (Chance)"
+        ],
+        "question": "إذا رميت حجر نرد قياسياً من 6 جوانب، ما هي فرصة الحصول على 7؟",
+        "choices": [
+            "0% (مستحيل) (Impossible)",
+            "50%",
+            "100%",
+            "16%"
+        ],
+        "ans_idx": 0,
+        "justification": "حجر النرد القياسي يحتوي على أرقام 1-6. الحصول على 7 مستحيل."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جدول بيانات (Spreadsheet)",
+            "دمج (Merge)"
+        ],
+        "question": "يسمى دمج خليتين في خلية واحدة أكبر في جدول البيانات بـ ________.",
+        "choices": [
+            "الدمج (Merging)",
+            "التقسيم (Splitting)",
+            "النسخ (Copying)",
+            "الحذف (Deleting)"
+        ],
+        "ans_idx": 0,
+        "justification": "يدمج دمج الخلايا خليتين مختارتين أو أكثر في خلية واحدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Data Visualization)",
+            "فوضى (Clutter)",
+            "تصميم (Design)"
+        ],
+        "question": "ما هي 'فوضى المخطط' (Chart Junk)؟",
+        "choices": [
+            "زخرفة عديمة الفائدة تجعل المخطط صعب القراءة (Useless decoration)",
+            "مخطط مكسور",
+            "بيانات القمامة",
+            "نوع من القوارب"
+        ],
+        "ans_idx": 0,
+        "justification": "تشير فوضى المخطط إلى العناصر المرئية في المخططات والرسوم البيانية التي ليست ضرورية لفهم المعلومات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "ارتباط (Correlation)",
+            "سلبي (Negative)"
+        ],
+        "question": "الارتباط السلبي يعني أن متغيراً واحداً يرتفع بينما ينخفض الآخر.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يشير الارتباط السلبي إلى علاقة عكسية بين متغيرين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "رؤى (Insights)",
+            "معرفة (Knowledge)"
+        ],
+        "question": "الهدف من تحليل البيانات هو تحويل الأرقام الخام إلى:",
+        "choices": [
+            "رؤى ومعرفة (Insights and Knowledge)",
+            "المزيد من الأرقام",
+            "صور مربكة",
+            "هدر الورق"
+        ],
+        "ans_idx": 0,
+        "justification": "الهدف النهائي هو استخراج رؤى ذات مغزى يمكن أن تفيد القرارات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تخزين البيانات (Data Storage)",
+            "خادم (Server)",
+            "أجهزة (Hardware)"
+        ],
+        "question": "جهاز كمبيوتر قوي مصمم لتخزين وإدارة البيانات للعديد من المستخدمين هو:",
+        "choices": [
+            "خادم (Server)",
+            "كمبيوتر محمول (Laptop)",
+            "هاتف (Phone)",
+            "آلة حاسبة (Calculator)"
+        ],
+        "ans_idx": 0,
+        "justification": "يوفر الخادم وظائف (مثل تخزين البيانات) للأجهزة أو البرامج الأخرى."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "معدل (Average)",
+            "وسط حسابي (Mean)"
+        ],
+        "question": "لإيجاد الوسط الحسابي، تقوم بجمع كل الأرقام و ________ على عدد الأرقام.",
+        "choices": [
+            "القسمة (Divide)",
+            "الضرب (Multiply)",
+            "الطرح (Subtract)",
+            "الجمع (Add)"
+        ],
+        "ans_idx": 0,
+        "justification": "الوسط الحسابي = مجموع القيم / عدد القيم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تقريب (Rounding)",
+            "رياضيات (Math)"
+        ],
+        "question": "إذا قمت بتقريب 10.8 إلى أقرب عدد صحيح، ستحصل على:",
+        "choices": [
+            "11",
+            "10",
+            "10.5",
+            "20"
+        ],
+        "ans_idx": 0,
+        "justification": "10.8 أقرب إلى 11 منه إلى 10."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Data Visualization)",
+            "سحابة الكلمات (Word Cloud)",
+            "نص (Text)"
+        ],
+        "question": "المخطط الذي يظهر الكلمات الأكثر شيوعاً في النص بجعلها أكبر هو:",
+        "choices": [
+            "سحابة الكلمات (Word Cloud)",
+            "خريطة النص (Text Map)",
+            "عاصفة الرسائل (Letter Storm)",
+            "حساء الحروف (Alphabet Soup)"
+        ],
+        "ans_idx": 0,
+        "justification": "تمثل سحابة الكلمات تكرار الكلمات بصرياً، حيث تظهر الكلمات الأكثر تكراراً بشكل أكبر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "الوقت الحقيقي (Real-time)",
+            "سرعة (Speed)"
+        ],
+        "question": "التحليلات في الوقت الحقيقي تعني تحليل البيانات بمجرد دخولها النظام.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تتضمن التحليلات في الوقت الحقيقي معالجة البيانات فور جمعها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تشفير (Encryption)",
+            "أمان (Security)"
+        ],
+        "question": "يسمى خلط البيانات بحيث لا يتمكن سوى الأشخاص المصرح لهم من قراءتها:",
+        "choices": [
+            "تشفير (Encryption)",
+            "خلط (Mixing)",
+            "طبخ (Cooking)",
+            "مزج (Blending)"
+        ],
+        "ans_idx": 0,
+        "justification": "يقوم التشفير بترميز المعلومات بحيث لا تتمكن إلا الأطراف المصرح لها من الوصول إليها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإحصاء (Statistics)",
+            "عينة (Sample)",
+            "تمثيل (Representation)"
+        ],
+        "question": "تبدو 'العينة الممثلة' كما يلي:",
+        "choices": [
+            "بناءً على السكان، تحتوي على مزيج من جميع أنواع الأشخاص فيها (mix of all types)",
+            "نوع واحد فقط من الأشخاص",
+            "فقط الأشخاص طوال القامة",
+            "لا أحد"
+        ],
+        "ans_idx": 0,
+        "justification": "تعكس العينة الممثلة بدقة خصائص المجتمع الأكبر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "تكرار (Duplicate)",
+            "تنظيف (Cleaning)"
+        ],
+        "question": "إذا ظهرت نفس البيانات مرتين، فهي ________.",
+        "choices": [
+            "نسخة مكررة (Duplicate)",
+            "خطأ (Mistake)",
+            "توأم (Twin)",
+            "نسخة (Copy)"
+        ],
+        "ans_idx": 0,
+        "justification": "النسخة المكررة هي نسخة طبق الأصل من السجل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "أرقام عشرية (Decimals)",
+            "دقة (Precision)"
+        ],
+        "question": "أي رقم أكثر دقة؟",
+        "choices": [
+            "3.14159",
+            "3.14",
+            "3",
+            "حوالي 3"
+        ],
+        "ans_idx": 0,
+        "justification": "تشير المنازل العشرية الأكثر إلى مستوى أعلى من الدقة أو الضبط."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "التمثيل المرئي (Visualization)",
+            "مقياس (Scale)",
+            "خريطة (Map)"
+        ],
+        "question": "على الخريطة، يخبرك 'المقياس' (Scale):",
+        "choices": [
+            "كم تمثل المسافة على الخريطة المسافة في الحياة الواقعية (How much distance...)",
+            "كم ثقل الخريطة",
+            "درجة الحرارة",
+            "الوقت"
+        ],
+        "ans_idx": 0,
+        "justification": "تمثل نسبة المقياس العلاقة بين مسافة الخريطة والمسافة الأرضية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "شريط الخطأ (Error Bar)",
+            "عدم يقين (Uncertainty)"
+        ],
+        "question": "تظهر أشرطة الخطأ في المخطط مدى عدم يقين البيانات أو تباينها.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تشير أشرطة الخطأ رسومياً إلى تباين البيانات وتستخدم للإشارة إلى الخطأ أو عدم اليقين في القياس المبلغ عنه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "استبيان (Survey)",
+            "مفتوح النهاية (Open-ended)"
+        ],
+        "question": "السؤال الذي يمكنك فيه كتابة أي إجابة تريدها (بدلاً من اختيار أ، ب، ج) هو:",
+        "choices": [
+            "مفتوح النهاية (Open-ended)",
+            "اختيار من متعدد (Multiple Choice)",
+            "صواب/خطأ (True/False)",
+            "مغلق (Closed)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح الأسئلة المفتوحة للمستجيبين بالإجابة بكلماتهم الخاصة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "أدوات (Tools)",
+            "برمجة (Programming)",
+            "R"
+        ],
+        "question": "بجانب بايثون، أي لغة أخرى تستخدم بشكل شهير للإحصاء؟",
+        "choices": [
+            "R",
+            "ABC",
+            "Z",
+            "Q"
+        ],
+        "ans_idx": 0,
+        "justification": "R هي لغة برمجة وبيئة برمجية مجانية للحوسبة الإحصائية والرسومات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "نسبة مئوية (Percentage)",
+            "رياضيات (Math)"
+        ],
+        "question": "الرمز % يرمز إلى ________.",
+        "choices": [
+            "بالمائة (Percent)",
+            "دولار (Dollar)",
+            "هاشتاج (Hashtag)",
+            "في (At)"
+        ],
+        "ans_idx": 0,
+        "justification": "النسبة المئوية تعني 'لكل 100'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "استنتاج (Conclusion)",
+            "نتيجة (Result)"
+        ],
+        "question": "بعد تحليل بياناتك، ترسم ________.",
+        "choices": [
+            "استنتاجاً (Conclusion)",
+            "صورة (Picture)",
+            "حماماً (Bath)",
+            "قشة (Straw)"
+        ],
+        "ans_idx": 0,
+        "justification": "الاستنتاج هو القرار النهائي أو الحكم الذي يتم التوصل إليه عن طريق الاستدلال من البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "تحليل البيانات (Data Analysis)",
+            "جدول تكراري (Frequency Table)",
+            "عد (Counting)"
+        ],
+        "question": "الجدول الذي يسرد العناصر ويتحقق من عدد مرات ظهورها هو:",
+        "choices": [
+            "جدول تكراري (Frequency Table)",
+            "جدول الضرب (Times Table)",
+            "طاولة طعام (Dining Table)",
+            "جدول مياه (Water Table)"
+        ],
+        "ans_idx": 0,
+        "justification": "يعرض الجدول التكراري تكرار النتائج المختلفة في العينة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "علوم البيانات (Data Science)",
+            "التمثيل المرئي (Visualization)",
+            "بيانات (Data)"
+        ],
+        "question": "الصورة تساوي ألف كلمة - لهذا السبب نقوم بتصور البيانات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يجعل التصور البيانات المعقدة أكثر سهولة في الوصول إليها وفهمها واستخدامها."
+    }
+]

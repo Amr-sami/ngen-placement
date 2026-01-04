@@ -1,0 +1,3777 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "بناء الجملة (Syntax)",
+            "الإخراج (Output)"
+        ],
+        "question": "في بايثون (Python)، أي دالة (Function) تستخدمها لعرض النص 'Game Over' على الشاشة؟",
+        "choices": [
+            "display()",
+            "show()",
+            "print()",
+            "write()"
+        ],
+        "ans_idx": 2,
+        "justification": "الدالة (Function) `print()` هي الأمر القياسي في بايثون (Python) لإخراج النص أو البيانات إلى وحدة التحكم (Console)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "التعيين (Assignment)"
+        ],
+        "question": "لحفظ نتيجة لعبتك البالغة 100 في متغير (Variable)، يجب أن تكتب: `score = 100`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "في بايثون (Python)، علامة التساوي المفردة `=` تستخدم لتعيين قيمة لاسم متغير (Variable)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "أنواع البيانات (Data Types)",
+            "السلاسل النصية (Strings)"
+        ],
+        "question": "أي مما يلي يعد مثالاً صحيحاً لـ 'سلسلة نصية (String)' (نص) في بايثون (Python)؟",
+        "choices": [
+            "Hello World",
+            "\"Hello World\"",
+            "100",
+            "True"
+        ],
+        "ans_idx": 1,
+        "justification": "السلاسل النصية (Strings) في بايثون (Python) يجب أن تكون محاطة إما بعلامات اقتباس مفردة (' ') أو علامات اقتباس مزدوجة (\" \") ليتم التعرف عليها كنص."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "التعليقات (Comments)",
+            "قراءة الكود (Code Readability)"
+        ],
+        "question": "إذا كنت تريد كتابة ملاحظة لنفسك في الكود يجب أن يتجاهلها الكمبيوتر، تبدأ السطر برمز ________.",
+        "choices": [
+            "@",
+            "#",
+            "//",
+            "%"
+        ],
+        "ans_idx": 1,
+        "justification": "رمز الشباك (Hash Symbol) `#` يبدأ تعليقاً (Comment) في بايثون (Python). المفسر (Interpreter) يتجاهل كل شيء بعده في ذلك السطر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "قواعد التسمية (Naming Rules)"
+        ],
+        "question": "أي مما يلي يعد اسم متغير (Variable) صالح لاسم مستخدم اللاعب؟",
+        "choices": [
+            "player name",
+            "2player",
+            "player_name",
+            "player-name"
+        ],
+        "ans_idx": 2,
+        "justification": "أسماء المتغيرات (Variable names) لا يمكن أن تحتوي على مسافات أو تبدأ بأرقام، والواصلات (Hyphens) غير مسموح بها (هي للطرح). الشرطة السفلية (Underscores) `_` هي الطريقة الصحيحة لفصل الكلمات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "أنواع البيانات (Data Types)",
+            "الأعداد الصحيحة (Integers)"
+        ],
+        "question": "يتعامل الكمبيوتر مع الرقم `50` والنص `\"50\"` بنفس الطريقة تماماً.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "`50` هو عدد صحيح (Integer) يستخدم للحساب، بينما `\"50\"` هو سلسلة نصية (String). لا يمكنك القيام بعمليات حسابية مباشرة على النسخة النصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الرياضيات (Math)",
+            "المعاملات (Operators)"
+        ],
+        "question": "شخصيتك تجد جرعة. تريد إضافة 20 إلى المتغير (Variable) `health`. أي رمز تستخدم؟",
+        "choices": [
+            "*",
+            "-",
+            "+",
+            "/"
+        ],
+        "ans_idx": 2,
+        "justification": "رمز الزائد `+` هو معامل الجمع (Addition Operator) في بايثون (Python)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "عمليات السلاسل النصية (String Operations)",
+            "دمج السلاسل (Concatenation)"
+        ],
+        "question": "ما هي نتيجة هذا الكود: `print(\"Super\" + \"Man\")`؟",
+        "choices": [
+            "Super Man",
+            "SuperMan",
+            "Super+Man",
+            "Error"
+        ],
+        "ans_idx": 1,
+        "justification": "استخدام `+` بين سلسلتين نصيتين (Strings) يجمعهما معاً مباشرة دون إضافة مسافة (دمج السلاسل (Concatenation))."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الإدخال (Input)",
+            "التفاعل (Interaction)"
+        ],
+        "question": "لسؤال المستخدم سؤالاً مثل 'What is your name?' وحفظ إجابته، تستخدم الدالة (Function) ________.",
+        "choices": [
+            "ask()",
+            "input()",
+            "get()",
+            "scan()"
+        ],
+        "ans_idx": 1,
+        "justification": "الدالة (Function) `input()` توقف البرنامج مؤقتاً وتنتظر من المستخدم كتابة شيء ما والضغط على Enter."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "بناء الجملة (Syntax)",
+            "حساسية حالة الأحرف (Case Sensitivity)"
+        ],
+        "question": "في بايثون (Python)، المتغيرات (Variables) `Score` و `score` تعتبر متغيرين مختلفين.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "بايثون (Python) حساسة لحالة الأحرف (Case-sensitive)، مما يعني أن الأحرف الكبيرة والأحرف الصغيرة تعامل كأحرف مختلفة تماماً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "أنواع البيانات (Data Types)",
+            "الأعداد العشرية (Floats)"
+        ],
+        "question": "أي من هذه الأرقام يعتبر 'عدد عشري (Float)' (رقم بفاصلة عشرية)؟",
+        "choices": [
+            "10",
+            "500",
+            "3.14",
+            "\"2.5\""
+        ],
+        "ans_idx": 2,
+        "justification": "العدد العشري (Float) هو رقم يحتوي على نقطة عشرية. `10` هو عدد صحيح (Integer)، و `\"2.5\"` هو سلسلة نصية (String)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "عمليات السلاسل النصية (String Operations)",
+            "التكرار (Repetition)"
+        ],
+        "question": "ماذا يحدث إذا قمت بتشغيل `print(\"Ha\" * 3)`؟",
+        "choices": [
+            "Ha3",
+            "Ha Ha Ha",
+            "HaHaHa",
+            "Error"
+        ],
+        "ans_idx": 2,
+        "justification": "ضرب سلسلة نصية (String) في عدد صحيح (Integer) يكرر السلسلة ذلك العدد من المرات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الأخطاء (Errors)",
+            "بناء الجملة (Syntax)"
+        ],
+        "question": "إذا نسيت إغلاق علامة اقتباس، مثل `print(\"Hello)`، سيتوقف بايثون (Python) ويظهر خطأ ________ (Error).",
+        "choices": [
+            "إملائي (Spelling)",
+            "بناء الجملة (Syntax)",
+            "منطقي (Logic)",
+            "أجهزة (Hardware)"
+        ],
+        "ans_idx": 1,
+        "justification": "خطأ بناء الجملة (Syntax Error) يحدث عندما تكسر قواعد اللغة (Language Grammar) (مثل نسيان علامة اقتباس مغلقة أو قوس)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "أنواع البيانات (Data Types)",
+            "القيم المنطقية (Booleans)"
+        ],
+        "question": "المتغير المنطقي (Boolean Variable) يمكن أن يحمل قيمة واحدة فقط من قيمتين. ما هما؟",
+        "choices": [
+            "نعم و لا (Yes and No)",
+            "صواب و خطأ (True and False)",
+            "1 و 2",
+            "تشغيل و إيقاف (On and Off)"
+        ],
+        "ans_idx": 1,
+        "justification": "في بايثون (Python)، نوع البيانات المنطقي (Boolean Data Type) يمثل قيم الحقيقة: `True` أو `False` (بأحرف كبيرة)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "إعادة التعيين (Reassignment)"
+        ],
+        "question": "بمجرد تعيين `points = 10`، لا يمكنك تغيير قيمة `points` لاحقاً في الكود.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المتغيرات (Variables) قابلة للتغيير (Mutable)، مما يعني أنه يمكنك تحديث أو تغيير قيمتها عدة مرات كما تريد (مثلاً، `points = 20`)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الرياضيات (Math)",
+            "المعاملات (Operators)"
+        ],
+        "question": "أي رمز يستخدم للقسمة في بايثون (Python)؟",
+        "choices": [
+            "%",
+            "#",
+            "/",
+            "\\"
+        ],
+        "ans_idx": 2,
+        "justification": "الشرطة المائلة للأمام (Forward Slash) `/` هي المعامل القياسي للقسمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الدوال (Functions)",
+            "فحص النوع (Type Checking)"
+        ],
+        "question": "إذا لم تكن متأكداً مما إذا كان المتغير (Variable) سلسلة نصية (String) أو عدداً صحيحاً (Integer)، أي دالة (Function) تخبرك بنوعه؟",
+        "choices": [
+            "check()",
+            "whatis()",
+            "id()",
+            "type()"
+        ],
+        "ans_idx": 3,
+        "justification": "`type(variable_name)` ترجع نوع الفئة (Class Type) للكائن (مثلاً، `<class 'int'>` أو `<class 'str'>`)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الرياضيات (Math)",
+            "المعاملات (Operators)"
+        ],
+        "question": "لمعرفة عدد العناصر التي لديك إجمالاً، تستخدم `total_items = apples ________ oranges`.",
+        "choices": [
+            "-",
+            "*",
+            "+",
+            "/"
+        ],
+        "ans_idx": 2,
+        "justification": "لحساب المجموع الكلي، تستخدم معامل الجمع (Addition Operator) `+`."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المنطق (Logic)",
+            "المقارنة (Comparison)"
+        ],
+        "question": "الكود `print(10 > 5)` سيعرض `True` على الشاشة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "معامل المقارنة (Comparison Operator) `>` (أكبر من) يتحقق مما إذا كانت 10 أكبر من 5. بما أنها كذلك، النتيجة هي القيمة المنطقية (Boolean) `True`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الدوال (Functions)",
+            "التحويل (Conversion)"
+        ],
+        "question": "لديك سلسلة نصية `\"5\"` ولكنك تحتاج لإجراء عمليات حسابية بها. أي دالة (Function) تحولها إلى عدد صحيح (Integer)؟",
+        "choices": [
+            "str()",
+            "int()",
+            "float()",
+            "num()"
+        ],
+        "ans_idx": 1,
+        "justification": "الدالة (Function) `int()` تأخذ سلسلة نصية (String) أو عدداً عشرياً (Float) وتحوله إلى عدد صحيح (Integer)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "بناء الجملة (Syntax)",
+            "فواصل الأسطر (Line Breaks)"
+        ],
+        "question": "كيف يعرف بايثون (Python) عادة متى ينتهي أمر ويبدأ التالي؟",
+        "choices": [
+            "باستخدام فاصلة منقوطة ; (By using a semicolon ;)",
+            "باستخدام نقطة . (By using a period .)",
+            "بالانتقال إلى سطر جديد (By going to a new line)",
+            "إنه يخمن فقط (It just guesses)"
+        ],
+        "ans_idx": 2,
+        "justification": "بايثون (Python) يستخدم الأسطر الجديدة (Newlines) لفصل العبارات. بينما يمكن استخدام الفواصل المنقوطة، يعتمد أسلوب بايثون (Python) القياسي على فواصل الأسطر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "السلاسل النصية (Strings)",
+            "علامات الاقتباس (Quotes)"
+        ],
+        "question": "يمكنك استخدام علامات اقتباس مفردة `'` أو علامات اقتباس مزدوجة `\"` لإنشاء سلسلة نصية (String)، طالما أنك تطابقها في البداية والنهاية.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "بايثون (Python) يسمح بكلا الأسلوبين `'text'` و `\"text\"` للسلاسل النصية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المنطق (Logic)",
+            "المساواة (Equality)"
+        ],
+        "question": "للتحقق مما إذا كان شيئان متساويين تماماً، تستخدم معامل ________ (علامتي يساوي).",
+        "choices": [
+            "=",
+            "==",
+            "<>",
+            "!="
+        ],
+        "ans_idx": 1,
+        "justification": "يساوي مزدوج `==` يستخدم للمقارنة (فحص المساواة)، بينما يساوي مفرد `=` يستخدم للتعيين (وضع قيمة)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "القيم (Values)"
+        ],
+        "question": "إذا كانت `apples = 3` و `pears = 2`، ماذا يعرض `print(apples * pears)`؟",
+        "choices": [
+            "5",
+            "6",
+            "32",
+            "Error"
+        ],
+        "ans_idx": 1,
+        "justification": "إنه يضرب القيم المخزنة في المتغيرات: 3 مضروبة في 2 تساوي 6."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "السلاسل النصية (Strings)",
+            "أحرف الهروب (Escape Characters)"
+        ],
+        "question": "ما الكود الخاص الذي يمكنك وضعه داخل سلسلة نصية (String) لجعلها تنتقل إلى السطر التالي؟",
+        "choices": [
+            "\\t",
+            "\\n",
+            "/n",
+            "(enter)"
+        ],
+        "ans_idx": 1,
+        "justification": "تسلسل الهروب (Escape Sequence) `\\n` يمثل حرف سطر جديد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "السلاسل النصية (Strings)",
+            "الحالة (Case)"
+        ],
+        "question": "إذا كنت تريد تحويل السلسلة النصية \"hello\" إلى \"HELLO\"، أي طريقة (Method) تستخدم؟",
+        "choices": [
+            ".big()",
+            ".upper()",
+            ".capitals()",
+            ".shout()"
+        ],
+        "ans_idx": 1,
+        "justification": "الطريقة (Method) `.upper()` تحول جميع الأحرف الصغيرة في السلسلة النصية إلى أحرف كبيرة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "بناء الجملة (Syntax)",
+            "علامات الاقتباس (Quotes)"
+        ],
+        "question": "الكود `print('It's a sunny day')` سيعمل بشكل مثالي بدون أخطاء.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "هذا يسبب خطأ في بناء الجملة (Syntax Error) لأن الفاصلة العليا في 'It's' تغلق السلسلة النصية مبكراً. يجب عليك استخدام علامات اقتباس مزدوجة `\"It's...\"` أو استخدام الهروب للفاصلة العليا."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الرياضيات (Math)",
+            "باقي القسمة (Modulo)"
+        ],
+        "question": "رمز النسبة المئوية `%` في بايثون (Python) يسمى معامل باقي القسمة (Modulo). إنه يعطيك ________ لعملية القسمة.",
+        "choices": [
+            "الإجابة (Answer)",
+            "الباقي (Remainder)",
+            "عشري (Decimal)",
+            "نسبة مئوية (Percent)"
+        ],
+        "ans_idx": 1,
+        "justification": "باقي القسمة (Modulo) (`%`) يرجع الباقي (Remainder) المتبقي بعد القسمة (مثلاً، `10 % 3` هو `1`)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "التحديث (Updating)"
+        ],
+        "question": "تريد زيادة متغير `coins` الخاص بك بمقدار 1. ما هي الطريقة المختصرة لكتابة `coins = coins + 1`؟",
+        "choices": [
+            "coins++",
+            "coins += 1",
+            "coins + 1",
+            "add 1 to coins"
+        ],
+        "ans_idx": 1,
+        "justification": "`+=` هو معامل التعيين بالجمع (Addition Assignment Operator). `coins++` تعمل في لغات مثل C++ أو Java، لكن ليس في بايثون (Python)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الدوال (Functions)",
+            "الطول (Len)"
+        ],
+        "question": "أي دالة (Function) تحسب عدد الأحرف الموجودة في السلسلة النصية \"Supercalifragilistic\"؟",
+        "choices": [
+            "count()",
+            "size()",
+            "len()",
+            "long()"
+        ],
+        "ans_idx": 2,
+        "justification": "`len()` ترجع الطول (Length) (عدد العناصر/الأحرف) لكائن ما."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)"
+        ],
+        "question": "لديك قائمة أصدقاء: `friends = [\"Amy\", \"Bob\", \"Charlie\"]`. كيف تطبع \"Amy\" فقط؟",
+        "choices": [
+            "print(friends[1])",
+            "print(friends[0])",
+            "print(friends[\"Amy\"])",
+            "print(friends)"
+        ],
+        "ans_idx": 1,
+        "justification": "قوائم بايثون (Python Lists) 'مفهرسة من الصفر (Zero-indexed)'، مما يعني أن العنصر الأول يكون عند المؤشر 0."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "بناء الجملة (Syntax)",
+            "المسافة البادئة (Indentation)"
+        ],
+        "question": "في بايثون (Python)، استخدام المسافة البادئة (Indentation) الصحيحة (مسافات في بداية السطر) مطلوب لكي يعمل الكود بشكل صحيح.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "على عكس العديد من اللغات الأخرى التي تستخدم الأقواس `{ }`، يستخدم بايثون (Python) المسافة البادئة (Indentation) لتحديد كتل الكود (مثل داخل `if` أو `loop`)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "تدفق التحكم (Control Flow)",
+            "جمل الشرط (If Statements)"
+        ],
+        "question": "ماذا سيطبع هذا الكود؟\n`age = 12`\n`if age >= 13:`\n`  print(\"Teen\")`\n`else:`\n`  print(\"Kid\")`",
+        "choices": [
+            "Teen",
+            "Kid",
+            "TeenKid",
+            "Nothing"
+        ],
+        "ans_idx": 1,
+        "justification": "الشرط `12 >= 13` هو خطأ (False)، لذا يتخطى الكود كتلة `if` ويشغل كتلة `else`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "المدى (Range)"
+        ],
+        "question": "لتكرار كتلة من الكود 5 مرات بالضبط، يجب أن تستخدم: `for i in ________(5):`.",
+        "choices": [
+            "list",
+            "count",
+            "range",
+            "repeat"
+        ],
+        "ans_idx": 2,
+        "justification": "الدالة (Function) `range(n)` تولد سلسلة من الأرقام من 0 إلى n-1، وهي مثالية للتكرار لعدد محدد من المرات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)"
+        ],
+        "question": "أي أمر يضيف عنصراً جديداً إلى نهاية القائمة (List)؟",
+        "choices": [
+            ".add()",
+            ".plus()",
+            ".append()",
+            ".insert()"
+        ],
+        "ans_idx": 2,
+        "justification": "الطريقة (Method) `.append()` تضيف عنصراً إلى نهاية قائمة موجودة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "تدفق التحكم (Control Flow)",
+            "إل إف (Elif)"
+        ],
+        "question": "إذا كنت تريد التحقق من شروط متعددة (مثل if score > 90, else if score > 80, else...)، أي كلمة مفتاحية تستخدم لجزء 'else if'؟",
+        "choices": [
+            "else if",
+            "elseif",
+            "elif",
+            "otherwise"
+        ],
+        "ans_idx": 2,
+        "justification": "بايثون (Python) يستخدم الكلمة المفتاحية `elif` كاختصار لـ 'else if'."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المنطق (Logic)",
+            "المعاملات (Operators)"
+        ],
+        "question": "المعامل 'not' يقلب القيمة المنطقية (Boolean). لذا `not True` تصبح `False`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "المعامل `not` هو نفي منطقي. إنه يعكس قيمة الحقيقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الوحدات (Modules)",
+            "الاستيراد (Import)"
+        ],
+        "question": "تريد استخدام دوال رياضية خاصة مثل `sqrt` (الجذر التربيعي) أو `pi`. ماذا يجب أن تفعل أولاً؟",
+        "choices": [
+            "شراء توسعة الرياضيات (Buy the Math Expansion)",
+            "import math",
+            "لا شيء، هي موجودة دائماً (Nothing, they are always there)",
+            "define math"
+        ],
+        "ans_idx": 1,
+        "justification": "الدوال الرياضية المتقدمة مخزنة في وحدة (Module) `math`، التي يجب استيرادها باستخدام `import math` قبل الاستخدام."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "بينما (While)"
+        ],
+        "question": "حلقة ________ (Loop) تستمر في العمل طالما أن شرطاً معيناً هو True (مثلاً، while the player is still alive).",
+        "choices": [
+            "for",
+            "while",
+            "if",
+            "when"
+        ],
+        "ans_idx": 1,
+        "justification": "حلقة `while` تنفذ عبارة مستهدفة بشكل متكرر طالما أن الشرط المحدد صحيح."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)"
+        ],
+        "question": "إذا كانت `numbers = [10, 20, 30]`، ماذا يحدث إذا حاولت طباعة `numbers[3]`؟",
+        "choices": [
+            "يطبع 30 (It prints 30)",
+            "يطبع 0 (It prints 0)",
+            "IndexError (فهرس خارج النطاق) (IndexError (Index out of range))",
+            "يعطل الكمبيوتر (It crashes the computer)"
+        ],
+        "ans_idx": 2,
+        "justification": "القائمة تحتوي على 3 عناصر بالمؤشرات 0، 1، و 2. المؤشر 3 غير موجود، مما يسبب خطأ في الفهرس (IndexError)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المنطق (Logic)",
+            "و أو (And Or)"
+        ],
+        "question": "أي عبارة تكون True فقط إذا كان كلا الشرطين True؟\nمثال: `if has_key == True ________ door_is_open == True:`",
+        "choices": [
+            "or",
+            "and",
+            "plus",
+            "with"
+        ],
+        "ans_idx": 1,
+        "justification": "المعامل `and` يتطلب أن يكون كلا المعاملين True لكي تكون النتيجة True."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "التعريف (Definition)"
+        ],
+        "question": "لإنشاء أمر أو دالة (Function) مخصصة خاصة بك، تبدأ بالكلمة المفتاحية `def`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "في بايثون (Python)، `def` (اختصار لـ define) هي الكلمة المفتاحية المستخدمة للتصريح عن دالة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "التقطيع (Slicing)"
+        ],
+        "question": "لديك قائمة `colors = ['red', 'blue', 'green', 'yellow']`. ماذا يعطيك `colors[1:3]`؟",
+        "choices": [
+            "['red', 'blue', 'green']",
+            "['blue', 'green']",
+            "['blue', 'green', 'yellow']",
+            "['red', 'yellow']"
+        ],
+        "ans_idx": 1,
+        "justification": "التقطيع (Slicing) `[start:stop]` يشمل مؤشر البداية (1: 'blue') ولكنه يتوقف *قبل* مؤشر التوقف (3: 'yellow')، لذا فهو يرجع المؤشرات 1 و 2."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الوحدات (Modules)",
+            "عشوائي (Random)"
+        ],
+        "question": "لعمل لعبة يختار فيها الكمبيوتر رقماً عشوائياً، تحتاج إلى استيراد وحدة (Module) ________.",
+        "choices": [
+            "shuffle",
+            "chance",
+            "random",
+            "dice"
+        ],
+        "ans_idx": 2,
+        "justification": "الوحدة `random` توفر دوالاً مثل `randint()` لتوليد أرقام عشوائية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "كسر (Break)"
+        ],
+        "question": "أنت في حلقة `while` لكنك تريد إيقافها فوراً لأن اللاعب ضغط على 'Quit'. أي كلمة تكسر وتخرج من الحلقة؟",
+        "choices": [
+            "stop",
+            "end",
+            "exit",
+            "break"
+        ],
+        "ans_idx": 3,
+        "justification": "العبارة `break` تنهي فوراً الحلقة التي بداخلها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "تدفق التحكم (Control Flow)",
+            "التداخل (Nesting)"
+        ],
+        "question": "ماذا يسمى عندما تضع جملة `if` داخل جملة `if` أخرى؟",
+        "choices": [
+            "فحص مزدوج (Double Checking)",
+            "If متداخلة (Nested If)",
+            "كود مكسور (Broken Code)",
+            "تكرار (Looping)"
+        ],
+        "ans_idx": 1,
+        "justification": "وضع هيكل تحكم (مثل if) داخل آخر يسمى 'تداخل (Nesting)'."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "أنواع البيانات (Data Types)",
+            "التحويل (Casting)"
+        ],
+        "question": "الكود `print(\"Score: \" + 100)` يعمل لأن بايثون (Python) يحول الرقم تلقائياً إلى نص.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "بايثون (Python) لا يحول الأعداد الصحيحة إلى سلاسل نصية ضمنياً أثناء الدمج. يجب عليك استخدام `str(100)` وإلا ستحصل على خطأ في النوع (TypeError)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "المعاملات (Parameters)"
+        ],
+        "question": "عندما تعرف دالة `def greet(name):`، المتغير `name` داخل الأقواس يسمى:",
+        "choices": [
+            "كلمة مرور (Password)",
+            "معامل / وسيط (Parameter / Argument)",
+            "حلقة (Loop)",
+            "إخراج (Output)"
+        ],
+        "ans_idx": 1,
+        "justification": "المعاملات (Parameters) (أو الوسائط) هي المتغيرات المدرجة داخل الأقواس في تعريف الدالة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "الإدخال (Input)"
+        ],
+        "question": "الدالة `input()` ترجع البيانات دائماً كـ ________، حتى لو كتب المستخدم رقماً.",
+        "choices": [
+            "عدد صحيح (Integer)",
+            "سلسلة نصية (String)",
+            "عدد عشري (Float)",
+            "قيمة منطقية (Boolean)"
+        ],
+        "ans_idx": 1,
+        "justification": "البيانات الملتقطة عبر `input()` تعامل دائماً كنوع سلسلة نصية (string type) مبدئياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المنطق (Logic)",
+            "عدم المساواة (Inequality)"
+        ],
+        "question": "أي معامل يتحقق مما إذا كانت قيمتان غير متساويتين؟",
+        "choices": [
+            "==",
+            "<>",
+            "!=",
+            "not ="
+        ],
+        "ans_idx": 2,
+        "justification": "`!=` هو معامل عدم المساواة (Not Equal Operator) في بايثون (Python)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "التنسيق (Formatting)"
+        ],
+        "question": "ما هي الطريقة الحديثة والسهلة لإدراج المتغيرات مباشرة داخل سلسلة نصية، مثل `f\"Score: {points}\"`؟",
+        "choices": [
+            "سلاسل f (f-strings)",
+            "g-strings",
+            "v-strings",
+            "x-strings"
+        ],
+        "ans_idx": 0,
+        "justification": "`f-strings` (السلاسل النصية المنسقة - Formatted String Literals) تسمح لك بتضمين التعبيرات داخل السلاسل الحرفية باستخدام الأقواس المعقوفة `{}`."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)"
+        ],
+        "question": "يمكنك الحصول على قائمة تحتوي على أرقام وسلاسل نصية معاً، مثل `data = [10, \"Hello\", 3.5]`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "قوائم بايثون (Python lists) متعددة الاستخدامات ويمكنها الاحتفاظ بأنواع بيانات مختلطة في نفس القائمة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "المنطق (Logic)"
+        ],
+        "question": "إذا كنت تريد التحقق مما إذا كان الحرف 'a' موجوداً داخل الكلمة 'apple'، فإنك تستخدم الكلمة المفتاحية ________.",
+        "choices": [
+            "has",
+            "inside",
+            "in",
+            "find"
+        ],
+        "ans_idx": 2,
+        "justification": "تتحقق الكلمة المفتاحية `in` من العضوية، وترجع `True` إذا تم العثور على قيمة في تسلسل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "طرق (Methods)"
+        ],
+        "question": "لديك قائمة `items = ['sword', 'shield']`. أي أمر يزيل (REMOVES) العنصر 'sword'؟",
+        "choices": [
+            "items.delete('sword')",
+            "items.minus('sword')",
+            "items.remove('sword')",
+            "items.kill('sword')"
+        ],
+        "ans_idx": 2,
+        "justification": "طريقة `.remove(value)` تزيل أول ظهور للقيمة المحددة من القائمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "الإرجاع (Return)"
+        ],
+        "question": "إذا كانت الدالة تحسب النتيجة ولكن لا ترسل الإجابة مرة أخرى إلى البرنامج الرئيسي، فما هي الكلمة المفتاحية المفقودة؟",
+        "choices": [
+            "send",
+            "return",
+            "print",
+            "output"
+        ],
+        "ans_idx": 1,
+        "justification": "بيان `return` يُستخدم لإرسال نتيجة من دالة والعودة بها إلى المستدعي."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "طرق (Methods)"
+        ],
+        "question": "الطريقة `.lower()` تغير السلسلة النصية الأصلية بشكل دائم.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "السلاسل النصية في بايثون غير قابلة للتغيير (immutable). تعيد `.lower()` نسخة *جديدة* من السلسلة؛ ولا تغير المتغير الأصلي إلا إذا قمت بإعادة تعيينه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "الصفوف (Tuples)"
+        ],
+        "question": "الصفوف (Tuples) تشبه القوائم (Lists)، لكنك تستخدم الأقواس العادية `(1, 2)` بدلاً من الأقواس المعقوفة `[1, 2]`. ما هو الفرق الرئيسي؟",
+        "choices": [
+            "الصفوف (Tuples) يمكنها الاحتفاظ بالنصوص فقط",
+            "لا يمكن تغيير الصفوف (Tuples) (غير قابلة للتغيير - immutable)",
+            "الصفوف (Tuples) أبطأ",
+            "الصفوف (Tuples) غير قانونية"
+        ],
+        "ans_idx": 1,
+        "justification": "الصفوف (Tuples) هي تسلسلات غير قابلة للتغيير (immutable sequences)، مما يعني أنه بمجرد إنشائها، لا يمكنك إضافة أو إزالة أو تغيير العناصر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الرياضيات (Math)",
+            "الاختصارات (Shortcuts)"
+        ],
+        "question": "لإيجاد أس عدد (مثل $5^2$)، تستخدم معامل النجمة المزدوجة: `5 ________ 2`.",
+        "choices": [
+            "^",
+            "**",
+            "^^",
+            "xx"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم بايثون `**` للرفع إلى أس (exponentiation)، وليس `^` (الذي يُستخدم لعملية XOR البتية - bitwise XOR)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "المنطق (Logic)"
+        ],
+        "question": "ماذا يحدث إذا كتبت `while True:` بدون بيان توقف (break statement)؟",
+        "choices": [
+            "يعمل مرة واحدة ويتوقف",
+            "ينشئ حلقة لا نهائية (Infinite Loop) (لا تتوقف أبداً)",
+            "يحذف الكود الخاص بك",
+            "يغلق جهاز الكمبيوتر"
+        ],
+        "ans_idx": 1,
+        "justification": "`while True` هو شرط صحيح دائماً، لذا تتكرر الحلقة إلى الأبد ما لم تتم مقاطعتها بواسطة كود (break) أو بواسطة المستخدم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "الإزالة (Stripping)"
+        ],
+        "question": "كتب المستخدم \"  password  \" بمسافات عرضية. أي طريقة تنظف المسافات من البداية والنهاية؟",
+        "choices": [
+            ".clean()",
+            ".cut()",
+            ".strip()",
+            ".trim()"
+        ],
+        "ans_idx": 2,
+        "justification": "تقوم طريقة `.strip()` بإزالة المسافات البيضاء البادئة واللاحقة من السلسلة النصية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "التعليقات (Comments)",
+            "متعدد الأسطر (Multi-line)"
+        ],
+        "question": "يمكنك استخدام علامات الاقتباس الثلاثية `\"\"\"` لكتابة تعليق يمتد لعدة أسطر.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح علامات الاقتباس الثلاثية بالسلاسل متعددة الأسطر، والتي تُستخدم غالباً كسلاسل توثيق (docstrings) أو تعليقات متعددة الأسطر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الأخطاء (Errors)",
+            "المنطق (Logic)"
+        ],
+        "question": "يعمل الكود الخاص بك دون تعطل، لكنه يعطي إجابة رياضية خاطئة. ما نوع هذا الخطأ؟",
+        "choices": [
+            "خطأ في بناء الجملة (Syntax Error)",
+            "خطأ منطقي / خطأ برمجي (Logic Error / Bug)",
+            "خطأ في الأجهزة (Hardware Error)",
+            "خطأ مطبعي (Typo)"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدث الخطأ المنطقي (Logic Error) عندما يعمل البرنامج ولكنه ينتج نتائج غير صحيحة بسبب تفكير خاطئ في الكود."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "المركم (Accumulator)"
+        ],
+        "question": "تريد جمع قائمة من الأرقام. تبدأ بـ `total = 0`. ماذا تضع داخل الحلقة؟",
+        "choices": [
+            "total = number",
+            "total += number",
+            "total = total * number",
+            "total == number"
+        ],
+        "ans_idx": 1,
+        "justification": "هذا هو نمط المركم (Accumulator pattern): تقوم بإضافة الرقم الحالي إلى المجموع الجاري في كل تكرار."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "النطاق (Range)"
+        ],
+        "question": "تعطيك الدالة `range(1, 5)` الأرقام: 1، 2، 3، و ________.",
+        "choices": [
+            "4",
+            "5",
+            "6",
+            "0"
+        ],
+        "ans_idx": 0,
+        "justification": "`range(start, stop)` تصل إلى رقم التوقف، لكنها لا تتضمنه (NOT include)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المنطق (Logic)",
+            "ترتيب العمليات (Order of Operations)"
+        ],
+        "question": "تماماً كما في حصة الرياضيات، تتبع بايثون ترتيب العمليات (PEMDAS). ما هي نتيجة `2 + 3 * 4`؟",
+        "choices": [
+            "20",
+            "14",
+            "24",
+            "10"
+        ],
+        "ans_idx": 1,
+        "justification": "الضرب يحدث قبل الجمع. 3 * 4 = 12، ثم 12 + 2 = 14."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "الفرز (Sorting)"
+        ],
+        "question": "كيف تنظم قائمة من النتائج `[50, 10, 90]` من الأصغر إلى الأكبر؟",
+        "choices": [
+            "scores.organize()",
+            "scores.sort()",
+            "scores.order()",
+            "scores.rank()"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم طريقة `.sort()` بفرز عناصر القائمة بترتيب تصاعدي (في مكانها)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المتغيرات (Variables)",
+            "عام (Global)"
+        ],
+        "question": "المتغير الذي يتم إنشاؤه داخل دالة (متغير محلي - local variable) يمكن استخدامه في أي مكان في البرنامج.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المتغيرات المحلية (Local variables) موجودة فقط داخل الدالة التي تم إنشاؤها فيها. يتم تدميرها عند انتهاء الدالة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "الاستبدال (Replacement)"
+        ],
+        "question": "لديك سلسلة نصية `text = \"I hate cats\"`. كيف تغير \"hate\" إلى \"love\"؟",
+        "choices": [
+            "text.swap(\"hate\", \"love\")",
+            "text.replace(\"hate\", \"love\")",
+            "text.change(\"hate\", \"love\")",
+            "text.switch(\"hate\", \"love\")"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم طريقة `.replace(old, new)` باستبدال تكرارات عبارة محددة بعبارة أخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المنطق (Logic)",
+            "إلّا (Else)"
+        ],
+        "question": "في حلقة `for`، يمكنك فعلياً إضافة كتلة `else` في النهاية. متى تعمل؟",
+        "choices": [
+            "في كل مرة تعمل فيها الحلقة",
+            "أبداً",
+            "فقط إذا انتهت الحلقة بشكل طبيعي (بدون break)",
+            "عند حدوث خطأ"
+        ],
+        "ans_idx": 2,
+        "justification": "تنفذ كتلة `else` الخاصة بالحلقة فقط إذا أكملت الحلقة جميع التكرارات دون مواجهة بيان `break`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "المعاملات (Arguments)"
+        ],
+        "question": "إذا قمت بتعريف `def add(a, b):`، فإن `a` و `b` هما وسائط (parameters). عندما تستدعي `add(5, 10)`، تسمى الأرقام 5 و 10 ________.",
+        "choices": [
+            "معاملات (Arguments)",
+            "عوامل (Factors)",
+            "أعداد صحيحة (Integers)",
+            "مخرجات (Outputs)"
+        ],
+        "ans_idx": 0,
+        "justification": "المعاملات (Arguments) هي القيم الفعلية التي يتم تمريرها إلى الدالة عند استدعائها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)"
+        ],
+        "question": "القاموس (Dictionary) يخزن البيانات في أزواج. ماذا تسمى هذه الأزواج؟",
+        "choices": [
+            "قائمة وعنصر (List and Item)",
+            "مفتاح وقيمة (Key and Value)",
+            "قفل وفتح (Lock and Open)",
+            "أول وأخير (First and Last)"
+        ],
+        "ans_idx": 1,
+        "justification": "تعتمد القواميس على أزواج المفتاح والقيمة (Key-Value pairs)، حيث يُستخدم مفتاح فريد للبحث عن قيمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "متداخلة (Nested)"
+        ],
+        "question": "إذا كان لديك حلقة تعمل 3 مرات، وداخلها حلقة أخرى تعمل 3 مرات، فكم مرة يعمل الكود الداخلي في المجموع؟",
+        "choices": [
+            "3",
+            "6",
+            "9",
+            "0"
+        ],
+        "ans_idx": 2,
+        "justification": "هذه حلقة متداخلة (nested loop). 3 (الخارجية) مضروبة في 3 (الداخلية) تساوي 9 عمليات تنفيذ إجمالية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الاستثناءات (Exceptions)",
+            "الأخطاء (Errors)"
+        ],
+        "question": "يمكنك منع برنامجك من التعطل عند حدوث خطأ (مثل القسمة على صفر) باستخدام كتل `try` و `except`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "معالجة الاستثناءات (Exception handling) باستخدام (`try-except`) تسمح للبرنامج بالتقاط الأخطاء والتعامل معها بسلاسة بدلاً من الإنهاء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)"
+        ],
+        "question": "كيف تحصل على قيمة 'score' من هذا القاموس: `player = {'name': 'Mario', 'score': 100}`؟",
+        "choices": [
+            "player[1]",
+            "player('score')",
+            "player['score']",
+            "player.get_score()"
+        ],
+        "ans_idx": 2,
+        "justification": "يتم الوصول إلى قيم القاموس بوضع المفتاح (Key) داخل أقواس مربعة، على سبيل المثال `dict['key']`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "التقطيع (Slicing)"
+        ],
+        "question": "لعكس سلسلة نصية `text` باستخدام التقطيع (slicing)، تستخدم قيمة الخطوة: `text[::________]`.",
+        "choices": [
+            "0",
+            "1",
+            "-1",
+            "end"
+        ],
+        "ans_idx": 2,
+        "justification": "بناء الجملة `[start:stop:step]`. خطوة بقيمة `-1` تكرر عبر التسلسل إلى الوراء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)"
+        ],
+        "question": "تريد سرد جميع المفاتيح (keys) في قاموسك `inventory = {'sword': 1, 'shield': 1}`. أي طريقة تساعدك؟",
+        "choices": [
+            "inventory.list()",
+            "inventory.keys()",
+            "inventory.get_all()",
+            "inventory.items()"
+        ],
+        "ans_idx": 1,
+        "justification": "تعيد طريقة `.keys()` كائن عرض يعرض قائمة بجميع المفاتيح في القاموس."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "استمرار (Continue)"
+        ],
+        "question": "بيان `continue` داخل الحلقة يوقف الحلقة تماماً، تماماً مثل `break`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "`continue` تتخطى *بقية التكرار الحالي* وتقفز مرة أخرى إلى أعلى الحلقة للجولة التالية؛ لا توقف الحلقة تماماً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "النطاق (Scope)"
+        ],
+        "question": "إذا كنت تريد تغيير متغير عام (global variable) داخل دالة، فما الكلمة المفتاحية التي يجب عليك استخدامها أولاً؟",
+        "choices": [
+            "outside",
+            "global",
+            "super",
+            "import"
+        ],
+        "ans_idx": 1,
+        "justification": "لتعديل متغير محدد خارج نطاق الدالة، يجب التصريح عنه كـ `global variable_name` داخل الدالة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "فك حزم الصفوف (Tuple Unpacking)"
+        ],
+        "question": "يمكنك تعيين قيم لمتغيرات متعددة في وقت واحد: `x, y = (10, 20)`. يسمى هذا ________ الصف (Tuple ________).",
+        "choices": [
+            "حزم (Packing)",
+            "فك الحزم (Unpacking)",
+            "تغليف (Wrapping)",
+            "تقسيم (Splitting)"
+        ],
+        "ans_idx": 1,
+        "justification": "فك حزم الصفوف (Tuple unpacking) يسمح لك باستخراج قيم الصف (أو القائمة) إلى متغيرات فردية في عبارة واحدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "القوائم (Lists)",
+            "الفهرس (Index)"
+        ],
+        "question": "لديك قائمة `grades = [90, 85, 70]`. تريد معرفة مكان وجود '85'. أي أمر يعطيك الفهرس `1`؟",
+        "choices": [
+            "grades.find(85)",
+            "grades.search(85)",
+            "grades.index(85)",
+            "grades.locate(85)"
+        ],
+        "ans_idx": 2,
+        "justification": "تبحث طريقة `.index(value)` عن القيمة وتعيد الفهرس (index) لأول ظهور لها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "وسيطات افتراضية (Default Arguments)"
+        ],
+        "question": "في `def spawn_enemy(type=\"Goblin\"):`، ماذا يمثل `\"Goblin\"`؟",
+        "choices": [
+            "العدو الوحيد المسموح به",
+            "وسيطة افتراضية (Default Argument) (تستخدم في حال عدم إعطاء قيمة)",
+            "خطأ في بناء الجملة (Syntax Error)",
+            "كلمة مرور"
+        ],
+        "ans_idx": 1,
+        "justification": "تسمح لك الوسيطات الافتراضية (Default arguments) باستدعاء دالة دون تحديد تلك المعلمة، وفي هذه الحالة يتم استخدام القيمة الافتراضية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "المجموعات (Sets)"
+        ],
+        "question": "المجموعة (Set) في بايثون، مثل `{1, 2, 3}`، تسمح لك بالحصول على قيم مكررة (على سبيل المثال، `{1, 2, 2}`).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المجموعات (Sets) هي مجموعات غير مرتبة من العناصر *الفريدة*. تتم إزالة التكرارات تلقائياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "تقسيم (Split)"
+        ],
+        "question": "لديك جملة \"Python is fun\". كيف تحولها إلى قائمة `['Python', 'is', 'fun']`؟",
+        "choices": [
+            "sentence.break()",
+            "sentence.split()",
+            "sentence.list()",
+            "sentence.cut()"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم طريقة `.split()` بتقسيم السلسلة النصية إلى قائمة من السلاسل الفرعية، حيث يتم التقسيم حسب المسافات بشكل افتراضي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الملفات (Files)",
+            "أوضاع (Modes)"
+        ],
+        "question": "عند فتح ملف باستخدام `open(\"score.txt\", \"w\")`، ماذا يمثل الحرف \"w\"؟",
+        "choices": [
+            "مراقبة (Watch) (النظر في الملف)",
+            "كتابة (Write) (الكتابة فوق الملف)",
+            "انتظار (Wait) (إيقاف البرنامج مؤقتاً)",
+            "ويب (Web) (الحفظ على الإنترنت)"
+        ],
+        "ans_idx": 1,
+        "justification": "وضع \"w\" يفتح ملفاً للكتابة. كن حذراً: فهو يمسح الملف الموجود تماماً قبل الكتابة!"
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "متداخلة (Nested)"
+        ],
+        "question": "لطباعة شبكة ثنائية الأبعاد (2D grid) من النجوم، تحتاج عادةً إلى حلقة ________ (حلقة داخل حلقة).",
+        "choices": [
+            "مكسورة (Broken)",
+            "متداخلة (Nested)",
+            "متوازية (Parallel)",
+            "فردية (Single)"
+        ],
+        "ans_idx": 1,
+        "justification": "الحلقات المتداخلة (Nested loops) مطلوبة للتكرار عبر الصفوف (الحلقة الخارجية) والأعمدة (الحلقة الداخلية) لإنشاء أنماط الشبكة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "دمج (Join)"
+        ],
+        "question": "لديك قائمة `['a', 'b', 'c']`. أي أمر يدمجها في سلسلة نصية واحدة \"a-b-c\"؟",
+        "choices": [
+            "list.join(\"-\")",
+            "\"-\".join(['a', 'b', 'c'])",
+            "join(['a', 'b', 'c'], \"-\")",
+            "combine(\"-\")"
+        ],
+        "ans_idx": 1,
+        "justification": "طريقة `.join()` هي طريقة خاصة بالسلاسل النصية. تقوم باستدعائها على السلسلة الفاصلة وتمرير القائمة كوسيطة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "أنواع البيانات (Data Types)",
+            "عدم (None)"
+        ],
+        "question": "`None` هي كلمة مفتاحية خاصة في بايثون تمثل غياب القيمة أو قيمة فارغة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "`None` هو المعادل لـ 'null' في اللغات الأخرى، ويمثل 'لا شيء' أو 'لا قيمة'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "وحدات (Modules)",
+            "الوقت (Time)"
+        ],
+        "question": "ما هي الوحدة (module) التي تسمح لك بإيقاف برنامجك مؤقتاً لبضع ثوانٍ (مثل `sleep(2)`)؟",
+        "choices": [
+            "wait",
+            "pause",
+            "time",
+            "clock"
+        ],
+        "ans_idx": 2,
+        "justification": "تحتوي وحدة `time` على دالة `sleep()` المستخدمة لتأخير التنفيذ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الاستثناءات (Exceptions)",
+            "أخطاء محددة (Specific Errors)"
+        ],
+        "question": "إذا حاولت الوصول إلى مفتاح قاموس غير موجود، فإن بايثون تثير:",
+        "choices": [
+            "KeyError",
+            "NameError",
+            "ValueError",
+            "DictionaryError"
+        ],
+        "ans_idx": 0,
+        "justification": "يتم إثارة `KeyError` تحديداً عندما لا يتم العثور على مفتاح القاموس."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الرياضيات (Math)",
+            "القيمة المطلقة (Absolute Value)"
+        ],
+        "question": "لتحويل رقم سالب إلى رقم موجب (مثل -5 إلى 5)، تستخدم الدالة ________.",
+        "choices": [
+            "pos()",
+            "abs()",
+            "neg()",
+            "plus()"
+        ],
+        "ans_idx": 1,
+        "justification": "تعيد الدالة `abs()` القيمة المطلقة (absolute value) للرقم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "القوائم (Lists)",
+            "إخراج (Pop)"
+        ],
+        "question": "أي طريقة من طرق القائمة تزيل العنصر في فهرس محدد وتسمح لك بحفظه في متغير؟ (مثال `item = list.________(0)`)",
+        "choices": [
+            "remove",
+            "delete",
+            "pop",
+            "take"
+        ],
+        "ans_idx": 2,
+        "justification": "`.pop(index)` تزيل العنصر في الفهرس المحدد و *تعيده* (returns) بحيث يمكن استخدامه أو تخزينه."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المنطق (Logic)",
+            "دائرة قصيرة (Short Circuit)"
+        ],
+        "question": "في عبارة `or`، إذا كان الشرط الأول صحيحاً (True)، فإن بايثون لا تكلف نفسها عناء التحقق من الشرط الثاني.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يسمى هذا التقييم 'قصير الدائرة' (Short-Circuit evaluation). بما أن هناك حاجة لـ `True` واحد فقط لـ `or`، فإن العثور على واحد يوقف الفحص فوراً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الحلقات (Loops)",
+            "خطوة (Step)"
+        ],
+        "question": "كيف تنشئ حلقة تعد تنازلياً (counts DOWN) من 10 إلى 1؟",
+        "choices": [
+            "range(10, 1, 1)",
+            "range(1, 10)",
+            "range(10, 0, -1)",
+            "range(10, 1, -1)"
+        ],
+        "ans_idx": 2,
+        "justification": "`range(start, stop, step)`. ابدأ عند 10. توقف قبل 0 (أي عند 1). الخطوة هي -1."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "القوائم (Lists)",
+            "قوائم ثنائية الأبعاد (2D Lists)"
+        ],
+        "question": "لديك قائمة من القوائم (مصفوفة - matrix): `grid = [[1, 2], [3, 4]]`. كيف تحصل على الرقم 3؟",
+        "choices": [
+            "grid[1][0]",
+            "grid[0][1]",
+            "grid[2][1]",
+            "grid[3]"
+        ],
+        "ans_idx": 0,
+        "justification": "الشبكة تعتمد الفهرسة الصفرية (0-indexed). `[3, 4]` موجودة في الفهرس 1. داخل تلك القائمة، 3 موجود في الفهرس 0. لذا `grid[1][0]`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "الدوال (Functions)",
+            "العودية (Recursion)"
+        ],
+        "question": "عندما تستدعي دالة نفسها (calls ITSELF) لحل مشكلة (مثل العد التنازلي)، تسمى هذه التقنية ________.",
+        "choices": [
+            "تكرار (Looping)",
+            "العودية (Recursion)",
+            "استهلال (Inception)",
+            "نسخ متطابق (Mirroring)"
+        ],
+        "ans_idx": 1,
+        "justification": "العودية (Recursion) تحدث عندما تستدعي دالة نفسها كروتين فرعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)"
+        ],
+        "question": "ماذا يحدث إذا حاولت إضافة مفتاح إلى قاموس موجود بالفعل؟ `data['score'] = 10` ثم `data['score'] = 20`.",
+        "choices": [
+            "يضيف نتيجة ثانية",
+            "يقوم بالكتابة فوق/تحديث القيمة القديمة",
+            "يتعطل",
+            "يتجاهل القيمة الجديدة"
+        ],
+        "ans_idx": 1,
+        "justification": "يجب أن تكون مفاتيح القاموس فريدة. التعيين لمفتاح موجود يكتب فوق القيمة السابقة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المعاملات (Operators)",
+            "القسمة الأرضية (Floor Division)"
+        ],
+        "question": "يقوم المشغل `//` بالقسمة ولكنه يقرب الإجابة لأسفل إلى أقرب عدد صحيح (integer).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "`//` هو مشغل القسمة الأرضية (Floor Division operator). `5 // 2` يساوي `2` (بدلاً من 2.5)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "السلاسل النصية (Strings)",
+            "أحرف الهروب (Escape Characters)"
+        ],
+        "question": "كيف تطبع شرطة مائلة عكسية حرفية (literal backslash) `\\` على الشاشة؟",
+        "choices": [
+            "print(\"\\\")",
+            "print(\"\\\\\")",
+            "print(\"/\")",
+            "print(\"|\")"
+        ],
+        "ans_idx": 1,
+        "justification": "بما أن `\\` هو حرف الهروب (escape character)، فأنت بحاجة إلى اثنين منه `\\\\` لطباعة شرطة مائلة عكسية حرفية واحدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "المكتبات (Libraries)",
+            "الرياضيات (Math)"
+        ],
+        "question": "أي دالة من مكتبة `math` تقرب الرقم لأعلى (rounds UP) إلى أقرب عدد صحيح؟ (مثال 2.1 يصبح 3)",
+        "choices": [
+            "math.floor()",
+            "math.round()",
+            "math.ceil()",
+            "math.up()"
+        ],
+        "ans_idx": 2,
+        "justification": "`math.ceil()` (السقف - ceiling) تقرب الرقم لأعلى. `math.floor()` تقرب لأسفل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "برمجة بايثون (Python Programming)",
+            "هياكل البيانات (Data Structures)",
+            "قابلية التغيير (Mutability)"
+        ],
+        "question": "أي من أنواع البيانات هذه 'قابل للتغيير' (Mutable) (يمكن تغييره بعد الإنشاء)؟",
+        "choices": [
+            "سلسلة نصية (String)",
+            "صف (Tuple)",
+            "قائمة (List)",
+            "عدد صحيح (Integer)"
+        ],
+        "ans_idx": 2,
+        "justification": "القوائم قابلة للتغيير (mutable) (يمكنك إلحاق، إزالة، تغيير العناصر). السلاسل النصية، والصفوف، والأعداد الصحيحة غير قابلة للتغيير (immutable)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الإخراج (Output)",
+            "طباعة (Print)"
+        ],
+        "question": "أي أمر يطبع 'Hello, Python!' بنجاح على الشاشة؟",
+        "choices": [
+            "echo('Hello, Python!')",
+            "print('Hello, Python!')",
+            "System.out.println('Hello, Python!')",
+            "console.log('Hello, Python!')"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم بايثون (Python) الدالة `print()` لإرسال الإخراج إلى جهاز الإخراج القياسي (الشاشة)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "بناء الجملة (Syntax)",
+            "حساسية حالة الأحرف (Case Sensitivity)"
+        ],
+        "question": "في بايثون (Python)، `print` و `Print` و `PRINT` كلها نفس الأمر.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "بايثون (Python) حساسة لحالة الأحرف. الدالة المدمجة الصحيحة هي `print()` بأحرف صغيرة تماماً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "التعليقات (Comments)",
+            "بناء الجملة (Syntax)"
+        ],
+        "question": "لإضافة تعليق يتجاهله الكمبيوتر، تكتب الرمز ________ في بداية التعليق.",
+        "choices": [
+            "//",
+            "#",
+            "/*",
+            "<!--"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم بايثون (Python) رمز الشباك `#` للتعليقات ذات السطر الواحد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "التعيين (Assignment)"
+        ],
+        "question": "أي سطر ينشئ متغيراً باسم `score` ويضبطه على 50 بشكل صحيح؟",
+        "choices": [
+            "score == 50",
+            "int score = 50",
+            "score = 50",
+            "50 = score"
+        ],
+        "ans_idx": 2,
+        "justification": "في بايثون (Python)، تقوم بتعيين القيم باستخدام الاسم = القيمة. لا حاجة للتصريح عن النوع (مثل `int`)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "أنواع البيانات (Data Types)",
+            "السلاسل النصية (Strings)"
+        ],
+        "question": "أي مما يلي يعتبر سلسلة نصية (String)؟",
+        "choices": [
+            "100",
+            "3.14",
+            "\"100\"",
+            "True"
+        ],
+        "ans_idx": 2,
+        "justification": "البيانات المحاطة بعلامات اقتباس (مفردة أو مزدوجة) هي سلسلة نصية (نص)، حتى لو كانت تحتوي على أرقام."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "التسمية (Naming)"
+        ],
+        "question": "يمكن أن يبدأ اسم المتغير في بايثون (Python) برقم، مثل `1st_place`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "يجب أن تبدأ أسماء المتغيرات بحرف أو شرطة سفلية، ولا تبدأ أبداً برقم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المعاملات (Operators)",
+            "الرياضيات (Math)"
+        ],
+        "question": "ما هي نتيجة `10 + 5 * 2`؟",
+        "choices": [
+            "30",
+            "20",
+            "25",
+            "15"
+        ],
+        "ans_idx": 1,
+        "justification": "تتبع بايثون (Python) ترتيب العمليات (PEMDAS). الضرب `5 * 2 = 10` يحدث قبل الجمع `10 + 10 = 20`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الإدخال (Input)",
+            "التفاعل (Interaction)"
+        ],
+        "question": "تُستخدم الدالة ________() لقراءة النص الذي يكتبه المستخدم على لوحة المفاتيح.",
+        "choices": [
+            "read",
+            "scan",
+            "input",
+            "get"
+        ],
+        "ans_idx": 2,
+        "justification": "`input()` توقف البرنامج مؤقتاً وترجع ما يكتبه المستخدم كسلسلة نصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "أنواع البيانات (Data Types)",
+            "القيم المنطقية (Booleans)"
+        ],
+        "question": "ما هو نوع بيانات القيمة `False`؟",
+        "choices": [
+            "سلسلة نصية (String)",
+            "عدد صحيح (Integer)",
+            "قيمة منطقية (Boolean)",
+            "عدد عشري (Float)"
+        ],
+        "ans_idx": 2,
+        "justification": "`True` و `False` هما القيمتان لنوع البيانات المنطقي (Boolean)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المعاملات (Operators)",
+            "الرياضيات (Math)"
+        ],
+        "question": "أي معامل يستخدم للأس (power)، على سبيل المثال، 2 أس 3؟",
+        "choices": [
+            "^",
+            "**",
+            "^^",
+            "exp"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم بايثون (Python) النجمتين `**` للأسس. `2 ** 3` يساوي 8. (`^` هو في الواقع لـ XOR البتي)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "السلاسل النصية (Strings)",
+            "الهروب (Escaping)"
+        ],
+        "question": "يمكنك طباعة علامة اقتباس مزدوجة داخل سلسلة نصية بوضع شرطة مائلة عكسية قبلها، مثل `print(\"He said \\\"Hi\\\"\")`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الشرطة المائلة العكسية `\\` هي حرف الهروب، مما يسمح بتضمين أحرف خاصة مثل علامات الاقتباس في السلاسل النصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "القوائم (Lists)",
+            "فهرسة (Indexing)",
+            "الوصول (Access)"
+        ],
+        "question": "بافتراض `fruits = ['Apple', 'Banana', 'Cherry']`، ما هو `fruits[1]`؟",
+        "choices": [
+            "Apple",
+            "Banana",
+            "Cherry",
+            "Error"
+        ],
+        "ans_idx": 1,
+        "justification": "مؤشرات القوائم تبدأ من 0. 'Apple' هو 0، و 'Banana' هو 1."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "الحلقات (Loops)",
+            "من أجل (For)"
+        ],
+        "question": "للمرور عبر كل عنصر في قائمة تسمى `items`، تكتب: `for item ________ items:`.",
+        "choices": [
+            "on",
+            "at",
+            "in",
+            "from"
+        ],
+        "ans_idx": 2,
+        "justification": "تستخدم الكلمة المفتاحية `in` للتكرار عبر التسلسلات مثل القوائم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "جمل الشرط (If Statements)",
+            "المنطق (Logic)"
+        ],
+        "question": "أي كود يتحقق مما إذا كان `age` لا يساوي 10؟",
+        "choices": [
+            "if age <> 10:",
+            "if age != 10:",
+            "if age not 10:",
+            "if age ! 10:"
+        ],
+        "ans_idx": 1,
+        "justification": "`!=` هو معامل عدم المساواة في بايثون (Python)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "الطرق (Methods)"
+        ],
+        "question": "كيف تزيل العنصر الأخير من قائمة؟",
+        "choices": [
+            ".delete()",
+            ".remove()",
+            ".pop()",
+            ".push()"
+        ],
+        "ans_idx": 2,
+        "justification": "`pop()` يزيل ويرجع العنصر الأخير افتراضياً. `remove()` تحتاج إلى قيمة العنصر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "التحويل (Conversion)",
+            "تحويل النوع (Type Casting)"
+        ],
+        "question": "الكود `int(\"5\") + int(\"5\")` سينتج عنه `10`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "`int(\"5\")`  يحول السلسلة النصية إلى الرقم 5. 5 + 5 = 10."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "السلاسل النصية (Strings)",
+            "التقطيع (Slicing)"
+        ],
+        "question": "ما هو ناتج `'Python'[0]`؟",
+        "choices": [
+            "P",
+            "y",
+            "n",
+            "Python"
+        ],
+        "ans_idx": 0,
+        "justification": "المؤشر 0 يصل إلى الحرف الأول من السلسلة النصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "المقارنة (Comparison)",
+            "المنطق (Logic)"
+        ],
+        "question": "أي من المقارنات التالية تقيم بـ `True`؟",
+        "choices": [
+            "5 > 10",
+            "10 == '10'",
+            "5 <= 5",
+            "True == False"
+        ],
+        "ans_idx": 2,
+        "justification": "`<=` تعني أقل من أو يساوي. بما أن 5 تساوي 5، فهي True. الأعداد الصحيحة والسلاسل النصية غير متساوية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "المنطق (Logic)",
+            "الكلمات المفتاحية (Keywords)"
+        ],
+        "question": "في جملة الشرط (if-statement)، إذا كنت تريد حدوث شيء ما عندما يكون الشرط False، تستخدم الكلمة المفتاحية ________.",
+        "choices": [
+            "then",
+            "else",
+            "stop",
+            "change"
+        ],
+        "ans_idx": 1,
+        "justification": "تعمل كتلة `else` إذا كان شرط `if` (وأي شروط `elif`) هو False."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "الحلقات (Loops)",
+            "بينما (While)"
+        ],
+        "question": "ما هو خطر حلقة `while` التي لا يصبح شرطها False أبداً؟",
+        "choices": [
+            "خطأ في بناء الجملة (Syntax Error)",
+            "حلقة لا نهائية (Infinite Loop)",
+            "شاشة زرقاء (Blue Screen)",
+            "لا شيء يحدث"
+        ],
+        "ans_idx": 1,
+        "justification": "إذا لم يصبح الشرط False أبداً، ستعمل الحلقة إلى الأبد (حلقة لا نهائية)، مما قد يؤدي إلى تجميد البرنامج."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "بناء الجملة (Syntax)",
+            "الهيكل (Structure)"
+        ],
+        "question": "ما هو المفقود من تعريف الدالة هذا؟\n`def say_hello()`\n`    print('Hi')`",
+        "choices": [
+            "فاصلة منقوطة ;",
+            "نقطتان رأسيتان :",
+            "أقواس {}",
+            "لا شيء"
+        ],
+        "ans_idx": 1,
+        "justification": "تعريفات الدوال (وجميع الكتل في بايثون) يجب أن تنهي سطر الرأس بنقطتين رأسيتين `:`."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "السلاسل النصية (Strings)",
+            "الدمج (Concatenation)"
+        ],
+        "question": "يمكنك جمع رقم وسلسلة نصية معاً مباشرة، مثل `print(\"Level: \" + 5)`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "هذا يسبب خطأ في النوع (TypeError). يجب عليك تحويل الرقم إلى سلسلة نصية أولاً: `print(\"Level: \" + str(5))`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الوحدات (Modules)",
+            "الاستيراد (Import)",
+            "المكتبة القياسية (Standard Library)"
+        ],
+        "question": "أي وحدة تسمح لك بتوليد أرقام عشوائية؟",
+        "choices": [
+            "math",
+            "random",
+            "numbers",
+            "chance"
+        ],
+        "ans_idx": 1,
+        "justification": "تحتوي وحدة `random` على دوال مثل `randint()` و `choice()`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المعاملات (Operators)",
+            "المنطق (Logic)",
+            "منطقي (Boolean)"
+        ],
+        "question": "ما هي نتيجة `True or False`؟",
+        "choices": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "ans_idx": 0,
+        "justification": "يرجع المعامل `or` القيمة True إذا كان أحد المعاملين على الأقل True."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "الدوال (Functions)",
+            "طباعة (Print)"
+        ],
+        "question": "لطباعة المتغيرين `x` و `y` مفصولين بفاصلة، يمكنك تمريرهما كمعاملات منفصلة: `print(x, y)`. الفاصل الافتراضي هو ________.",
+        "choices": [
+            "فاصلة (comma)",
+            "مسافة (space)",
+            "سطر جديد (newline)",
+            "شرطة (dash)"
+        ],
+        "ans_idx": 1,
+        "justification": "عند تمرير معاملات متعددة إلى `print()`، يفصل بايثون (Python) بينها بمسافة واحدة افتراضياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "الطول (Length)"
+        ],
+        "question": "إذا كانت `my_list = [1, 2, 3]`، فما هو `len(my_list)`؟",
+        "choices": [
+            "2",
+            "3",
+            "4",
+            "0"
+        ],
+        "ans_idx": 1,
+        "justification": "تحتوي القائمة على 3 عناصر، لذا طولها هو 3."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "إرجاع (Return)",
+            "الإخراج (Output)"
+        ],
+        "question": "يمكن للدالة إرجاع قيمة مرة أخرى إلى الكود الذي استدعاها باستخدام الكلمة المفتاحية `return`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "`return` تخرج من الدالة وتمرر القيمة المحددة مرة أخرى إلى المستدعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الهيكل (Structure)",
+            "المسافة البادئة (Indentation)",
+            "النطاق (Scope)"
+        ],
+        "question": "لماذا تعتبر المسافة البادئة مهمة في حلقات بايثون (Python)؟",
+        "choices": [
+            "تبدو لطيفة",
+            "تحدد الكود الموجود داخل الحلقة",
+            "تجعل الكود أسرع",
+            "ليست مهمة"
+        ],
+        "ans_idx": 1,
+        "justification": "تحدد المسافة البادئة نطاق أو كتلة الكود الناتج عن إعلان الحلقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المعاملات (Operators)",
+            "باقي القسمة (Modulo)",
+            "الباقي (Remainder)"
+        ],
+        "question": "ماذا يرجع `15 % 4`؟",
+        "choices": [
+            "3.75",
+            "15",
+            "3",
+            "0"
+        ],
+        "ans_idx": 2,
+        "justification": "15 مقسومة على 4 تساوي 3 والباقي 3. باقي القسمة `%` يرجع الباقي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "القوائم (Lists)",
+            "الحلقات (Loops)",
+            "التدفق (Flow)"
+        ],
+        "question": "توقف الكلمة المفتاحية ________ الحلقة فوراً وتخرج منها بشكل فعال.",
+        "choices": [
+            "exit",
+            "stop",
+            "break",
+            "end"
+        ],
+        "ans_idx": 2,
+        "justification": "`break` تنهي الحلقة الحالية على الفور."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المعاملات (Operators)",
+            "المقارنة (Comparison)",
+            "سلسلة نصية (String)"
+        ],
+        "question": "هل `'apple' == 'Apple'`؟",
+        "choices": [
+            "نعم",
+            "لا",
+            "ربما",
+            "خطأ (Error)"
+        ],
+        "ans_idx": 1,
+        "justification": "المقارنة حساسة لحالة الأحرف. 'a' الصغيرة تطابق فقط 'a'، وليس 'A'. لذا فهما غير متساويين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "السلاسل النصية (Strings)",
+            "الطرق (Methods)",
+            "التنسيق (Formatting)"
+        ],
+        "question": "أي طريقة سلسلة نصية تستبدل أجزاء من السلسلة؟ مثال: تحويل 'I like cats' إلى 'I like dogs'.",
+        "choices": [
+            ".switch()",
+            ".replace()",
+            ".swap()",
+            ".change()"
+        ],
+        "ans_idx": 1,
+        "justification": "`string.replace(old, new)` ترجع سلسلة نصية جديدة مع إجراء الاستبدالات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المتغيرات (Variables)",
+            "النطاق (Scope)"
+        ],
+        "question": "يمكنك فصل الكلمات الأساسية في اسم المتغير بمسافات، مثل `my score = 10`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المسافات غير مسموح بها في أسماء المتغيرات. يجب عليك استخدام الشرطة السفلية `my_score` أو CamelCase."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الحلقات (Loops)",
+            "المدى (Range)",
+            "المعاملات (Parameters)"
+        ],
+        "question": "ما الأرقام التي يولدها `range(2, 5)`؟",
+        "choices": [
+            "2, 3, 4, 5",
+            "2, 3, 4",
+            "2, 3, 4, 5, 6",
+            "3, 4"
+        ],
+        "ans_idx": 1,
+        "justification": "`range(start, stop)` يشمل البداية (2) ولكنه يستثني التوقف (5). لذلك: 2, 3, 4."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "القوائم (Lists)",
+            "الطرق (Methods)",
+            "الفرز (Sorting)"
+        ],
+        "question": "لفرز قائمة من الأرقام من الأصغر إلى الأكبر، تستخدم الطريقة ________().",
+        "choices": [
+            "order",
+            "arrange",
+            "sort",
+            "align"
+        ],
+        "ans_idx": 2,
+        "justification": "تقوم طريقة `.sort()` بتنظيم عناصر القائمة بترتيب تصاعدي افتراضياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)",
+            "الوصول (Access)"
+        ],
+        "question": "بافتراض `scores = {'Amy': 10, 'Bob': 5}`، كيف تحصل على درجة Bob؟",
+        "choices": [
+            "scores[1]",
+            "scores['Bob']",
+            "scores.Bob",
+            "scores(Bob)"
+        ],
+        "ans_idx": 1,
+        "justification": "يتم الوصول إلى قيم القاموس بواسطة مفتاحها (Key)، مثال: `dict['key']`."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "المجموعات المرتبة (Tuples)",
+            "غير قابلية التغيير (Immutability)"
+        ],
+        "question": "بمجرد إنشاء مجموعة مرتبة (Tuple) مثل `coords = (10, 20)`، يمكنك تغيير قيمها لاحقاً (مثلاً، `coords[0] = 15`).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "المجموعات المرتبة (Tuples) غير قابلة للتغيير (Immutable)، أي لا يمكن تغيير عناصرها بعد إنشائها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "المعاملات (Arguments)",
+            "التعريف (Definition)"
+        ],
+        "question": "كيف تعرف دالة باسم `jump` تأخذ متغيراً واحداً كمدخل `height`؟",
+        "choices": [
+            "def jump(height):",
+            "function jump(height) {",
+            "void jump(int height)",
+            "def jump[height]:"
+        ],
+        "ans_idx": 0,
+        "justification": "تعريف الدالة القياسي في بايثون: `def name(parameters):`"
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "العمليات (Operations)"
+        ],
+        "question": "لمعرفة ما إذا كان الرقم 5 موجوداً داخل قائمة تسمى `numbers`، تستخدم الكلمة المفتاحية ________. (مثال، `if 5 ________ numbers:`)",
+        "choices": [
+            "has",
+            "exists",
+            "in",
+            "find"
+        ],
+        "ans_idx": 2,
+        "justification": "الكلمة المفتاحية `in` تستخدم للتحقق من العضوية في تسلسل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الدوال (Functions)",
+            "النطاق (Scope)",
+            "المتغيرات (Variables)"
+        ],
+        "question": "المتغير الذي يتم إنشاؤه *داخل* الدالة يسمى متغيراً ________.",
+        "choices": [
+            "عام (Global)",
+            "محلي (Local)",
+            "عالمي (Universal)",
+            "سري (Secret)"
+        ],
+        "ans_idx": 1,
+        "justification": "المتغيرات المعرفة داخل دالة تكون محلية (Local) لتلك الدالة ولا يمكن الوصول إليها من خارجها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)",
+            "المفاتيح (Keys)"
+        ],
+        "question": "أي طريقة (Method) تجلب جميع المفاتيح (الأسماء) من القاموس؟",
+        "choices": [
+            ".keys()",
+            ".names()",
+            ".list()",
+            ".get()"
+        ],
+        "ans_idx": 0,
+        "justification": "الطريقة `.keys()` ترجع كائن عرض يحتوي على مفاتيح القاموس."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "المسافة البادئة (Indentation)",
+            "الكتل (Blocks)"
+        ],
+        "question": "لا بأس بخلط علامات الجدولة (Tabs) والمسافات (Spaces) للمسافة البادئة في نفس ملف بايثون.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "خلط علامات الجدولة والمسافات يمكن أن يسبب `IndentationError` وهو أمر غير مستحسن بشدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الحلقات (Loops)",
+            "متداخلة (Nested)",
+            "المنطق (Logic)"
+        ],
+        "question": "ماذا يحدث إذا وضعت حلقة (Loop) داخل حلقة أخرى؟",
+        "choices": [
+            "يتعطل البرنامج",
+            "يشغل الحلقة الداخلية بالكامل لكل خطوة واحدة من الحلقة الخارجية",
+            "يعملان في نفس الوقت",
+            "خطأ في بناء الجملة (Syntax Error)"
+        ],
+        "ans_idx": 1,
+        "justification": "هذا يسمى حلقة متداخلة (Nested Loop). تكمل الحلقة الداخلية دورتها الكاملة لكل تكرار للحلقة الخارجية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "التقطيع (Slicing)"
+        ],
+        "question": "إذا كنت تريد أول 3 عناصر من قائمة `L`، يمكنك تقطيعها باستخدام `L[________]`.",
+        "choices": [
+            "0-3",
+            ":3",
+            "1:3",
+            "3:"
+        ],
+        "ans_idx": 1,
+        "justification": "`L[:3]` تقطع القائمة من البداية حتى (ولكن لا تشمل) المؤشر 3."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "المعاملات الافتراضية (Default Arguments)",
+            "المعاملات (Parameters)"
+        ],
+        "question": "إذا عرفت `def greet(name='Guest'):`، ماذا يحدث إذا استدعيت `greet()` بدون أي معاملات؟",
+        "choices": [
+            "خطأ (Error)",
+            "يستخدم 'Guest' كاسم",
+            "لا يطبع شيئاً",
+            "يطلب إدخالاً"
+        ],
+        "ans_idx": 1,
+        "justification": "هذه قيمة معامل افتراضية. إذا لم يتم توفير أي معامل، يتم استخدام 'Guest'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "المجموعات (Sets)",
+            "التفرد (Uniqueness)"
+        ],
+        "question": "أي هيكل بيانات هو الأفضل لتخزين مجموعة من العناصر الفريدة (بدون تكرار)؟",
+        "choices": [
+            "قائمة (List)",
+            "قاموس (Dictionary)",
+            "مجموعة (Set)",
+            "مجموعة مرتبة (Tuple)"
+        ],
+        "ans_idx": 2,
+        "justification": "المجموعات (Sets) هي مجموعات غير مرتبة من العناصر الفريدة. تتم إزالة التكرارات تلقائياً."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "مرر (Pass)",
+            "عنصر نائب (Placeholder)"
+        ],
+        "question": "تسمح لك الكلمة المفتاحية `pass` بكتابة دالة أو حلقة فارغة دون التسبب في خطأ.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "`pass` هي عملية فارغة؛ لا يحدث شيء عند تنفيذها. تستخدم كعنصر نائب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)",
+            "إضافة (Adding)"
+        ],
+        "question": "كيف تضيف زوج مفتاح-قيمة جديد `color: red` إلى قاموس موجود `car`؟",
+        "choices": [
+            "car.add('color', 'red')",
+            "car['color'] = 'red'",
+            "car.append('color': 'red')",
+            "car + {'color': 'red'}"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم بتعيين قيمة لمفتاح جديد باستخدام `dict['new_key'] = value`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "إرجاع (Return)",
+            "لا شيء (None)"
+        ],
+        "question": "إذا لم يكن للدالة عبارة `return`، فماذا ترجع افتراضياً؟",
+        "choices": [
+            "0",
+            "False",
+            "None",
+            "Error"
+        ],
+        "ans_idx": 2,
+        "justification": "دوال بايثون ترجع `None` ضمنياً إذا لم يتم تنفيذ عبارة إرجاع."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "سلسلة نصية (String)",
+            "الطرق (Methods)",
+            "التنسيق (Formatting)"
+        ],
+        "question": "لإزالة المسافات الزائدة من بداية ونهاية سلسلة نصية، استخدم الطريقة ________().",
+        "choices": [
+            "clean",
+            "trim",
+            "strip",
+            "cut"
+        ],
+        "ans_idx": 2,
+        "justification": "الطريقة `.strip()` تزيل المسافات البيضاء البادئة واللاحقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الحلقات (Loops)",
+            "المدى (Range)",
+            "الخطوة (Step)"
+        ],
+        "question": "أي قائمة أرقام يتم توليدها بواسطة `range(0, 10, 2)`؟",
+        "choices": [
+            "0, 1, 2, 3, 4...",
+            "0, 2, 4, 6, 8",
+            "0, 2, 4, 6, 8, 10",
+            "2, 4, 6, 8"
+        ],
+        "ans_idx": 1,
+        "justification": "`range(start, stop, step)` يعد بمقدار الخطوة. يتوقف *قبل* 10."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المتغيرات (Variables)",
+            "تعيين متعدد (Multiple Assignment)",
+            "بناء الجملة (Syntax)"
+        ],
+        "question": "يمكنك تعيين قيم لمتغيرات متعددة في سطر واحد، مثل `x, y = 10, 20`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "هذا يسمى تفريغ المجموعة المرتبة (Tuple unpacking) أو التعيين المتعدد وهو صالح في بايثون."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "مؤشر (Index)"
+        ],
+        "question": "كيف تجد رقم مؤشر العنصر 'Dog' في قائمة؟",
+        "choices": [
+            ".find('Dog')",
+            ".location('Dog')",
+            ".index('Dog')",
+            ".search('Dog')"
+        ],
+        "ans_idx": 2,
+        "justification": "الطريقة `.index(value)` ترجع أول مؤشر للقيمة إذا كانت موجودة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الاستثناءات (Exceptions)",
+            "معالجة الأخطاء (Error Handling)",
+            "محاولة-استثناء (Try-Except)"
+        ],
+        "question": "أي كتلة تلتقط الأخطاء حتى لا يتعطل البرنامج؟",
+        "choices": [
+            "try...except",
+            "do...catch",
+            "check...error",
+            "if...fail"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم بايثون `try` لتغليف الكود الخطر و `except` لمعالجة الأخطاء إذا حدثت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "السلاسل النصية (Strings)",
+            "الطول (Length)"
+        ],
+        "question": "السلسلة النصية الفارغة `\"\"` لها طول ________.",
+        "choices": [
+            "1",
+            "0",
+            "None",
+            "-1"
+        ],
+        "ans_idx": 1,
+        "justification": "إنها تحتوي على صفر من الأحرف، لذا `len(\"\")` هو 0."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المعاملات (Operators)",
+            "المنطق (Logic)",
+            "الترتيب (Order)"
+        ],
+        "question": "أي معامل منطقي له الأولوية القصوى (يتم تقييمه أولاً) في حالة عدم استخدام أقواس؟",
+        "choices": [
+            "or",
+            "and",
+            "not",
+            "متساوون"
+        ],
+        "ans_idx": 2,
+        "justification": "أسبقية المعاملات المنطقية هي `not`، ثم `and`، ثم `or`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "عكس (Reversing)"
+        ],
+        "question": "كيف يمكنك عكس ترتيب العناصر في قائمة `nums`؟",
+        "choices": [
+            "nums.backward()",
+            "nums.reverse()",
+            "nums.flip()",
+            "nums.turn()"
+        ],
+        "ans_idx": 1,
+        "justification": "الطريقة `.reverse()` تعكس عناصر القائمة في مكانها."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "العودية (Recursion)",
+            "المفاهيم (Concepts)"
+        ],
+        "question": "يسمح للدالة باستدعاء نفسها. هذا يسمى العودية (Recursion).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تحدث العودية عندما تستدعي دالة نفسها لحل نسخة أصغر من المشكلة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "السلاسل النصية (Strings)",
+            "الحالة (Case)",
+            "الطرق (Methods)"
+        ],
+        "question": "ماذا ترجع `'hello world'.title()`؟",
+        "choices": [
+            "HELLO WORLD",
+            "Hello world",
+            "Hello World",
+            "hELLO wORLD"
+        ],
+        "ans_idx": 2,
+        "justification": "الطريقة `.title()` تجعل الحرف الأول من كل كلمة كبيراً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الدوال (Functions)",
+            "لامبدا (Lambda)",
+            "مجهول (Anonymous)"
+        ],
+        "question": "غالباً ما تسمى الدالة الصغيرة ذات السطر الواحد والتي ليس لها اسم بدالة ________.",
+        "choices": [
+            "gamma",
+            "lambda",
+            "theta",
+            "ghost"
+        ],
+        "ans_idx": 1,
+        "justification": "دوال لامبدا (المعرفة بـ `lambda`) هي دوال مجهولة صغيرة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "الحلقات (Loops)",
+            "استمر (Continue)"
+        ],
+        "question": "الكلمة المفتاحية ________ تتخطى بقية تكرار الحلقة الحالي وتقفز إلى التكرار التالي.",
+        "choices": [
+            "skip",
+            "next",
+            "continue",
+            "pass"
+        ],
+        "ans_idx": 2,
+        "justification": "`continue` تبدأ فوراً التكرار التالي للحلقة، متخطية الكود اللاحق في الكتلة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)",
+            "حذف (Deletion)"
+        ],
+        "question": "كيف تحذف زوج مفتاح-قيمة من قاموس؟",
+        "choices": [
+            "del dict[key]",
+            "dict.delete(key)",
+            "dict.remove(key)",
+            "dict.minus(key)"
+        ],
+        "ans_idx": 0,
+        "justification": "الكلمة المفتاحية `del` تتطلب تحديد العنصر المراد حذفه، مثال: `del my_dict['key']`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "المقارنة (Comparison)",
+            "التسلسل (Chaining)"
+        ],
+        "question": "ما نتيجة تقييم `10 < 20 < 30`؟",
+        "choices": [
+            "True",
+            "False",
+            "Error",
+            "20"
+        ],
+        "ans_idx": 0,
+        "justification": "تدعم بايثون المقارنات المتسلسلة. تتحقق مما إذا كانت 10 < 20 و 20 < 30. كلاهما True."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "أساسيات بايثون (Python Basics)",
+            "قابل للتغيير (Mutable)",
+            "غير قابل للتغيير (Immutable)"
+        ],
+        "question": "السلاسل النصية في بايثون قابلة للتغيير، مما يعني أنه يمكنك تغيير حرف واحد دون إنشاء سلسلة جديدة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "السلاسل النصية غير قابلة للتغيير. لا يمكنك فعل `s[0] = 'a'`. يجب إنشاء سلسلة جديدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الوحدات (Modules)",
+            "الرياضيات (Math)",
+            "الأرضية (Floor)"
+        ],
+        "question": "أي دالة رياضية تقرب الرقم لأسفل إلى أقرب عدد صحيح؟",
+        "choices": [
+            "ceil()",
+            "round()",
+            "floor()",
+            "down()"
+        ],
+        "ans_idx": 2,
+        "justification": "`math.floor()` تقرب لأسفل. `ceil()` تقرب لأعلى. `round()` تقرب للأقرب."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الإدخال (Input)",
+            "أنواع البيانات (Data Types)",
+            "التحويل (Casting)"
+        ],
+        "question": "الإدخال من المستخدم يكون دائماً سلسلة نصية. إذا كنت تريد رقماً عشرياً، يجب تحويله باستخدام ________().",
+        "choices": [
+            "int",
+            "float",
+            "decimal",
+            "num"
+        ],
+        "ans_idx": 1,
+        "justification": "`float()` تحول السلسلة النصية/الرقم إلى رقم عشري (Floating point)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "السلاسل النصية (Strings)",
+            "العمليات (Operations)",
+            "تقسيم (Split)"
+        ],
+        "question": "أي طريقة تقسم الجملة إلى قائمة كلمات؟ مثال \"Hi there\" -> ['Hi', 'there']",
+        "choices": [
+            ".slice()",
+            ".cut()",
+            ".split()",
+            ".divide()"
+        ],
+        "ans_idx": 2,
+        "justification": "`string.split()` تكسر السلسلة عند كل مسافة (افتراضياً) وترجع قائمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "إرجاع (Returns)",
+            "المجموعات المرتبة (Tuples)"
+        ],
+        "question": "هل يمكن لدالة بايثون إرجاع قيم متعددة في وقت واحد؟",
+        "choices": [
+            "لا",
+            "فقط إذا كانت في قائمة",
+            "نعم، كمجموعة مرتبة (Tuple)",
+            "نعم، ولكن فقط في بايثون 3.10+"
+        ],
+        "ans_idx": 2,
+        "justification": "يمكنك إرجاع قيم متعددة مثل `return x, y`. تقوم بايثون بتجميعها في مجموعة مرتبة (Tuple) تلقائياً."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "النطاق (Scope)",
+            "عام (Global)",
+            "كلمة مفتاحية (Keyword)"
+        ],
+        "question": "لتغيير متغير عام داخل دالة، يجب أولاً التصريح عنه باستخدام الكلمة المفتاحية `global`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "بدون `global x`، يؤدي التعيين إلى `x` داخل الدالة إلى إنشاء متغير محلي جديد بدلاً من تعديل المتغير العام."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "مسح (Clear)"
+        ],
+        "question": "كيف تفرغ قائمة تماماً؟",
+        "choices": [
+            "list.delete_all()",
+            "list.clear()",
+            "list.empty()",
+            "list.void()"
+        ],
+        "ans_idx": 1,
+        "justification": "الطريقة `.clear()` تزيل كافة العناصر من القائمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجة كائنية التوجه (OOP)",
+            "الأصناف (Classes)",
+            "التعريف (Definition)"
+        ],
+        "question": "أي كلمة مفتاحية تستخدم لتعريف صنف (Class) (مخطط للكائنات)؟",
+        "choices": [
+            "struct",
+            "class",
+            "object",
+            "define"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم الكلمة المفتاحية `class` لتعريف صنف جديد في بايثون."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجة كائنية التوجه (OOP)",
+            "الكائنات (Objects)",
+            "المثيلات (Instances)"
+        ],
+        "question": "الكائن هو مثيل صالح ومحدد من الصنف (Class).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الأصناف هي المخططات؛ الكائنات هي المنازل المبنية منها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجة كائنية التوجه (OOP)",
+            "الطرق (Methods)",
+            "التهيئة (Init)"
+        ],
+        "question": "ما هو الاسم الخاص لطريقة البناء (Constructor Method) التي تقوم بتهيئة الكائن؟",
+        "choices": [
+            "__start__",
+            "__init__",
+            "__create__",
+            "__new__"
+        ],
+        "ans_idx": 1,
+        "justification": "`__init__` هي طريقة البناء التي يتم استدعاؤها عند إنشاء كائن جديد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجة كائنية التوجه (OOP)",
+            "الطرق (Methods)",
+            "الذات (Self)"
+        ],
+        "question": "المعامل الأول لأي طريقة في صنف يسمى عادة ________.",
+        "choices": [
+            "this",
+            "me",
+            "self",
+            "it"
+        ],
+        "ans_idx": 2,
+        "justification": "`self` يمثل مثيل الصنف مما يسمح بالوصول إلى سماته."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الوحدات (Modules)",
+            "إدخال/إخراج الملفات (File I/O)",
+            "الوضع (Mode)"
+        ],
+        "question": "أي سلسلة وضع تسمح لك بـ 'قراءة' ملف؟",
+        "choices": [
+            "'w'",
+            "'r'",
+            "'a'",
+            "'x'"
+        ],
+        "ans_idx": 1,
+        "justification": "'r' يرمز إلى وضع القراءة (Read). 'w' للكتابة (Write)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الاستثناءات (Exceptions)",
+            "رفع (Raise)",
+            "الأخطاء (Errors)"
+        ],
+        "question": "كيف تثير خطأ متعمداً باستخدام الكود؟",
+        "choices": [
+            "trigger ValueError",
+            "throw ValueError",
+            "raise ValueError",
+            "cast ValueError"
+        ],
+        "ans_idx": 2,
+        "justification": "تستخدم الكلمة المفتاحية `raise` لرفع الاستثناءات/الأخطاء."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الوحدات (Modules)",
+            "الوقت (Time)",
+            "انتظار (Wait)"
+        ],
+        "question": "الدالة `time.sleep(5)` توقف البرنامج مؤقتاً لمدة 5 مللي ثانية.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "`time.sleep(n)` تطلب من البرنامج الانتظار لمدة n من الثواني، وليس مللي ثانية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "المعاملات (Args)",
+            "عشوائي (Arbitrary)"
+        ],
+        "question": "كيف تعرف دالة تقبل أي عدد من المعاملات؟",
+        "choices": [
+            "def func(args[]):",
+            "def func(*args):",
+            "def func(...):",
+            "def func(any):"
+        ],
+        "ans_idx": 1,
+        "justification": "بناء الجملة `*args` يسمح بتمرير عدد متغير من المعاملات غير المسماة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "فهم القائمة (List Comprehension)",
+            "بناء الجملة (Syntax)"
+        ],
+        "question": "أي مما يلي هو 'فهم قائمة (List Comprehension)' صالح لإنشاء `[0, 1, 2, 3]`؟",
+        "choices": [
+            "[x for x in range(4)]",
+            "(x for x in range(4))",
+            "{x for x in range(4)}",
+            "[x loop range(4)]"
+        ],
+        "ans_idx": 0,
+        "justification": "فهم القائمة يستخدم أقواس مربعة `[]` وبناء الجملة `expression for item in iterable`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القواميس (Dictionaries)",
+            "القيم (Values)"
+        ],
+        "question": "للحصول على قيمة معينة من قاموس دون التسبب في خطأ إذا كانت مفقودة، استخدم طريقة ________().",
+        "choices": [
+            "fetch",
+            "find",
+            "get",
+            "take"
+        ],
+        "ans_idx": 2,
+        "justification": "`.get(key)` ترجع `None` (أو افتراضي) إذا كان المفتاح غير موجود، مما يمنع حدوث KeyError."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "البرمجة كائنية التوجه (OOP)",
+            "الوراثة (Inheritance)",
+            "الأب (Parent)"
+        ],
+        "question": "إذا تم تعريف `class Car(Vehicle):`، فأي صنف هو الصنف الأب (Parent)؟",
+        "choices": [
+            "Car",
+            "Vehicle",
+            "كلاهما",
+            "لا شيء"
+        ],
+        "ans_idx": 1,
+        "justification": "Vehicle هو الصنف الأب (أو الأساس/السوبر)، و Car يرث منه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الوحدات (Modules)",
+            "الرئيسي (Main)",
+            "التنفيذ (Execution)"
+        ],
+        "question": "ما هو الكود المتخصص الذي يوضع عادة في أسفل الملف للتشغيل فقط إذا تم تنفيذ الملف مباشرة؟",
+        "choices": [
+            "if __name__ == '__main__':",
+            "if __file__ == 'start':",
+            "void main():",
+            "run()"
+        ],
+        "ans_idx": 0,
+        "justification": "هذا الشرط يتحقق مما إذا كان السكربت يعمل بشكل مستقل مقابل استيراده كوحدة نمطية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "المجموعات (Sets)",
+            "الرياضيات (Math)"
+        ],
+        "question": "يمكنك إجراء الاتحاد والتقاطع الرياضي على المجموعات (Sets).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تدعم المجموعات العمليات الرياضية القياسية مثل الاتحاد `|` والتقاطع `&`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "إدخال/إخراج الملفات (File I/O)",
+            "مديرو السياق (Context Managers)",
+            "مع (With)"
+        ],
+        "question": "ما هي أفضل طريقة لفتح ملف بحيث يغلق تلقائياً؟",
+        "choices": [
+            "open('file.txt')",
+            "with open('file.txt') as f:",
+            "using('file.txt'):",
+            "file = open('file.txt')"
+        ],
+        "ans_idx": 1,
+        "justification": "عبارة `with` (مدير السياق) تضمن إغلاق الملف بشكل صحيح حتى في حالة حدوث أخطاء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "السلاسل النصية (Strings)",
+            "العمليات (Operations)",
+            "ضم (Join)"
+        ],
+        "question": "كيف تدمج قائمة كلمات `['a', 'b', 'c']` في سلسلة نصية واحدة \"a-b-c\"؟",
+        "choices": [
+            "'-'.join(['a', 'b', 'c'])",
+            "['a', 'b', 'c'].join('-')",
+            "combine('-', ['a', 'b', 'c'])",
+            "merge(['a', 'b', 'c'])"
+        ],
+        "ans_idx": 0,
+        "justification": "`join()` هي طريقة سلسلة نصية. تستدعيها على السلسلة الفاصلة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "التنسيق (Formatting)",
+            "سلاسل F (F-strings)"
+        ],
+        "question": "تسمح لك سلسلة f-string بوضع متغيرات مباشرة في النص باستخدام `{}`. تبدأ بالحرف ________.",
+        "choices": [
+            "f",
+            "s",
+            "p",
+            "r"
+        ],
+        "ans_idx": 0,
+        "justification": "سلاسل F (سلاسل نصية منسقة) مسبوقة بـ 'f'، مثال: `f\"Hello {name}\"`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الوحدات (Modules)",
+            "نظام التشغيل (OS)",
+            "النظام (System)"
+        ],
+        "question": "أي وحدة تساعدك على التفاعل مع نظام التشغيل (مثل مسارات الملفات)؟",
+        "choices": [
+            "sys",
+            "os",
+            "computer",
+            "windows"
+        ],
+        "ans_idx": 1,
+        "justification": "توفر وحدة `os` وظائف محمولة للتفاعل مع نظام التشغيل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "المتغيرات (Variables)",
+            "المرجع (Reference)",
+            "النسخ (Copying)"
+        ],
+        "question": "إذا كانت `A = [1, 2]` و `B = A`، ماذا يحدث إذا غيرت `B`؟",
+        "choices": [
+            "B فقط يتغير",
+            "كلا من A و B يتغيران",
+            "لا أحد يتغير",
+            "خطأ (Error)"
+        ],
+        "ans_idx": 1,
+        "justification": "التعيينات في بايثون تنسخ *المرجع* (عنوان الذاكرة)، وليس الكائن الفعلي. `A` و `B` يشيران إلى نفس القائمة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "الصحة (Truthiness)",
+            "لا شيء (None)"
+        ],
+        "question": "في الفحص المنطقي، يعتبر `None` بمثابة `False`.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "`None`، و `0`، و `\"\"`، و `[]` كلها قيم 'زائفة' (falsy) في بايثون."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "الفرز (Sorting)",
+            "عكس (Reverse)"
+        ],
+        "question": "كيف تفرز قائمة `[1, 3, 2]` بترتيب تنازلي (من الكبير للصغير)؟",
+        "choices": [
+            ".sort(descending=True)",
+            ".sort(reverse=True)",
+            ".sort(backwards=True)",
+            ".sort(-1)"
+        ],
+        "ans_idx": 1,
+        "justification": "المعامل `reverse=True` يخبر طريقة الفرز بعكس الترتيب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الرياضيات (Math)",
+            "مطلق (Absolute)",
+            "مدمج (Built-in)"
+        ],
+        "question": "أي دالة تعطيك النسخة الموجبة من الرقم (مثلاً -5 تصبح 5)؟",
+        "choices": [
+            "plus()",
+            "pos()",
+            "abs()",
+            "neg()"
+        ],
+        "ans_idx": 2,
+        "justification": "`abs()` ترجع القيمة المطلقة لرقم."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الدوال (Functions)",
+            "المدى (Range)",
+            "توقف (Stop)"
+        ],
+        "question": "إذا كتبت `range(10)`، ستبدأ الأرقام من 0 وتتوقف عند ________.",
+        "choices": [
+            "9",
+            "10",
+            "11",
+            "1"
+        ],
+        "ans_idx": 0,
+        "justification": "المدى يصل إلى قيمة التوقف ولكنه لا يشملها. 0 إلى 9."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "السلاسل النصية (Strings)",
+            "العمليات (Operations)",
+            "يحتوي (Contains)"
+        ],
+        "question": "ماذا يرجع `'fun' in 'Python is fun'`؟",
+        "choices": [
+            "True",
+            "False",
+            "Error",
+            "Index"
+        ],
+        "ans_idx": 0,
+        "justification": "المعامل `in` يتحقق مما إذا كانت السلسلة الفرعية موجودة داخل السلسلة النصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "النوع (Type)",
+            "الفحص (Checking)"
+        ],
+        "question": "ما هي الطريقة المفضلة للتحقق مما إذا كان المتغير `x` قائمة؟",
+        "choices": [
+            "type(x) == list",
+            "isinstance(x, list)",
+            "x.is_list()",
+            "check(x, list)"
+        ],
+        "ans_idx": 1,
+        "justification": "`isinstance()` مفضلة لأنها تتعامل مع الوراثة بشكل صحيح."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "التعليقات (Comments)",
+            "سلاسل التوثيق (Docstrings)",
+            "التوثيق (Documentation)"
+        ],
+        "question": "غالباً ما تستخدم علامات الاقتباس الثلاثية `\"\"\"` للتعليقات متعددة الأسطر أو سلاسل التوثيق (docstrings).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح علامات الاقتباس الثلاثية للسلاسل بالامتداد لعدة أسطر وتشكيل سلاسل توثيق عند وضعها في بداية دالة/صنف."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القاموس (Dictionary)",
+            "العناصر (Items)"
+        ],
+        "question": "أي طريقة تعطيك أزواج (مفتاح، قيمة) من قاموس؟",
+        "choices": [
+            ".pairs()",
+            ".items()",
+            ".contents()",
+            ".both()"
+        ],
+        "ans_idx": 1,
+        "justification": "`.items()` ترجع كائن عرض يعرض قائمة بأزواج (مفتاح-قيمة) للقاموس."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "تدفق التحكم (Control Flow)",
+            "الحلقات (Loops)",
+            "تعداد (Enumerate)"
+        ],
+        "question": "أي حلقة تعطيك كلاً من المؤشر والعنصر؟ مثال 0 'Apple'، 1 'Banana'",
+        "choices": [
+            "for i, x in enumerate(list):",
+            "for i, x in list:",
+            "for i, x in range(list):",
+            "for item in list.index():"
+        ],
+        "ans_idx": 0,
+        "justification": "`enumerate()` تضيف عداداً إلى كائن قابل للتكرار وترجعه ككائن تعداد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "السلاسل النصية (Strings)",
+            "الأسطر الجديدة (Newlines)",
+            "المسافة البيضاء (Whitespace)"
+        ],
+        "question": "تسلسل الأحرف `\\t` يمثل ________.",
+        "choices": [
+            "سطر جديد (newline)",
+            "علامة جدولة (tab)",
+            "مسافة (space)",
+            "اقتباس (quote)"
+        ],
+        "ans_idx": 1,
+        "justification": "\\t هو حرف الهروب لعلامة الجدولة الأفقية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "المجموعات المرتبة (Tuples)",
+            "إنشاء (Creation)"
+        ],
+        "question": "كيف تنشئ مجموعة مرتبة (Tuple) بعنصر واحد فقط؟",
+        "choices": [
+            "(1)",
+            "(1,)",
+            "[1]",
+            "{1}"
+        ],
+        "ans_idx": 1,
+        "justification": "تحتاج إلى فاصلة لاحقة `(1,)` للتمييز بين المجموعة المرتبة والقوس الرياضي `(1)`."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 3,
+        "concepts": [
+            "الدوال (Functions)",
+            "المعاملات (Args)",
+            "الكلمات المفتاحية (Keywords)"
+        ],
+        "question": "كيف تعرف دالة تقبل معاملات كلمات مفتاحية عشوائية (مثل `a=1, b=2`)؟",
+        "choices": [
+            "**kwargs",
+            "*args",
+            "&&keys",
+            "??input"
+        ],
+        "ans_idx": 0,
+        "justification": "`**kwargs` تجمع معاملات الكلمات المفتاحية في قاموس."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "الاستثناءات (Exceptions)",
+            "وإلا (Else)",
+            "المنطق (Logic)"
+        ],
+        "question": "يمكنك استخدام كتلة `else` بعد كتلة `try-except`. تعمل إذا لم تحدث أخطاء.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "تنفذ كتلة `else` الاختيارية في معالجة الاستثناءات إذا لم تثير كتلة try استثناءً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "هياكل البيانات (Data Structures)",
+            "القوائم (Lists)",
+            "نسخ (Copy)"
+        ],
+        "question": "ما هي الطريقة الصحيحة لعمل نسخة سطحية من قائمة `L`؟",
+        "choices": [
+            "L.copy()",
+            "L[:]",
+            "list(L)",
+            "كل ما سبق"
+        ],
+        "ans_idx": 3,
+        "justification": "كل هذه الطرق تنشئ قائمة جديدة تحتوي على نفس العناصر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Python Programming",
+        "difficulty_level": 2,
+        "concepts": [
+            "المعاملات (Operators)",
+            "الرياضيات (Math)",
+            "القسمة الصحيحة (Int Division)"
+        ],
+        "question": "ماذا يفعل `//`؟ (مثال `7 // 2`)",
+        "choices": [
+            "تعليقات (Comments)",
+            "قسمة الأرضية (قسمة صحيحة) (Floor Division)",
+            "باقي (Remainder)",
+            "أس (Exponent)"
+        ],
+        "ans_idx": 1,
+        "justification": "`//` تقسم وترمي الباقي، مرجعة نتيجة عدد صحيح (3 في هذه الحالة)."
+    }
+]

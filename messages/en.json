@@ -157,6 +157,18 @@
       },
       "warnings": {
         "existingUser": "An account with this email already exists."
+      },
+      "trackSelection": {
+        "label": "Select Exam Track",
+        "options": {
+          "general": "General (All Tracks)",
+          "data_science": "Data Science",
+          "computer_fundamentals": "Computer Fundamentals",
+          "cybersecurity": "Cybersecurity",
+          "data_analysis": "Data Analysis",
+          "python_programming": "Python Programming",
+          "robotics": "Robotics"
+        }
       }
     }
   },

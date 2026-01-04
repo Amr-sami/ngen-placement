@@ -60,14 +60,15 @@ export default function TestMain() {
         const res = await fetch('/api/generate-questions', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ 
+          body: JSON.stringify({
             survey_results: surveyResults,
-            language: locale
+            language: locale,
+            selectedTrack: sessionStorage.getItem('selectedTrack') || 'general'
           }),
         })
 
         const text = await res.text()
-        let data: { 
+        let data: {
           questions?: ApiQuestion[]
           partial?: boolean
           failed_tracks?: string[]
@@ -194,7 +195,7 @@ export default function TestMain() {
   const progress = ((currentQuestion + 1) / questions.length) * 100
 
   return (
-    <div 
+    <div
       className={`min-h-screen w-full bg-[#1a0b2e] relative flex flex-col p-4 md:p-6 lg:p-8 overflow-hidden`}
       dir={isRTL ? 'rtl' : 'ltr'}
     >

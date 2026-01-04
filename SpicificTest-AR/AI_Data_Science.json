@@ -1,0 +1,4390 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التعريفات (Definitions)",
+            "الاختصارات (Acronyms)"
+        ],
+        "question": "ماذا يعني الاختصار 'AI'؟",
+        "choices": [
+            "هاتف أبل آيفون (Apple iPhone)",
+            "الذكاء الاصطناعي (Artificial Intelligence)",
+            "غزو فضائي (Alien Invasion)",
+            "إنترنت تلقائي (Auto Internet)"
+        ],
+        "ans_idx": 1,
+        "justification": "يرمز AI إلى الذكاء الاصطناعي (Artificial Intelligence)، وهو يشير إلى أنظمة الكمبيوتر القادرة على أداء المهام التي تتطلب عادةً ذكاءً بشرياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التطبيقات (Applications)",
+            "التوصيات (Recommendations)"
+        ],
+        "question": "كيف تعرف نتفليكس (Netflix) أو يوتيوب (YouTube) أي الأفلام أو مقاطع الفيديو التي يجب اقتراحها عليك؟",
+        "choices": [
+            "إنه يخمن بشكل عشوائي",
+            "يستخدم الذكاء الاصطناعي (AI) لتحليل ما شاهدته من قبل",
+            "يسأل صديقك المفضل",
+            "يقترح نفس الشيء على الجميع"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم محركات التوصية (Recommendation Engines) بتحليل سجل المشاهدة الخاص بك ومقارنته مع مستخدمين آخرين للتنبؤ بما قد يعجبك تالياً."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "البيانات (Data)",
+            "التعريف (Definition)"
+        ],
+        "question": "في عالم الذكاء الاصطناعي (AI)، تشير 'البيانات (Data)' إلى المعلومات (مثل الصور أو النصوص أو الأرقام) التي يتعلم منها الكمبيوتر.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات (Data) هي المادة الخام المستخدمة لتدريب نماذج الذكاء الاصطناعي (AI Models)؛ بدون البيانات، لا يستطيع الذكاء الاصطناعي تعلم الأنماط."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الخوارزميات (Algorithms)",
+            "التشبيه (Analogy)"
+        ],
+        "question": "________ تشبه الوصفة أو مجموعة من التعليمات التي يتبعها الكمبيوتر لحل مشكلة ما.",
+        "choices": [
+            "الخوارزمية (Algorithm)",
+            "أندرويد (Android)",
+            "هوائي (Antenna)",
+            "ألبوم (Album)"
+        ],
+        "ans_idx": 0,
+        "justification": "الخوارزمية (Algorithm) هي إجراء تدريجي أو مجموعة من القواعد التي يجب اتباعها في العمليات الحسابية أو عمليات حل المشكلات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الرؤية الحاسوبية (Computer Vision)",
+            "وسائل التواصل الاجتماعي (Social Media)"
+        ],
+        "question": "عندما تستخدم فلتر وجه مضحك على سناب شات (Snapchat) أو إنستغرام (Instagram) يضيف أذني كلب إلى رأسك، ما هي التقنية التي تعثر على وجهك؟",
+        "choices": [
+            "فحص الميكروفون (Microphone Check)",
+            "الرؤية الحاسوبية / اكتشاف الوجه (Computer Vision / Face Detection)",
+            "تتبع نظام تحديد المواقع العالمي (GPS Tracking)",
+            "البلوتوث (Bluetooth)"
+        ],
+        "ans_idx": 1,
+        "justification": "الرؤية الحاسوبية (Computer Vision) هي مجال الذكاء الاصطناعي الذي يمكن أجهزة الكمبيوتر من 'رؤية' وتفسير الصور، مما يسمح لها باكتشاف ملامح الوجه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "المساعدات الصوتية (Voice Assistants)",
+            "معالجة اللغات الطبيعية (NLP)"
+        ],
+        "question": "تعد سيري (Siri) وأليكسا (Alexa) ومساعد جوجل (Google Assistant) أمثلة على أي نوع من تقنيات الذكاء الاصطناعي؟",
+        "choices": [
+            "المساعدات الصوتية (Voice Assistants)",
+            "ألعاب الفيديو (Video Games)",
+            "الآلات الحاسبة (Calculators)",
+            "كاميرات الويب (Webcams)"
+        ],
+        "ans_idx": 0,
+        "justification": "هذه مساعدات صوتية (Voice Assistants) (أو مساعدات افتراضية (Virtual Assistants)) تستخدم التعرف على الكلام (Speech Recognition) لفهم الأوامر الصوتية والاستجابة لها."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الروبوتات (Robotics)",
+            "الأجهزة مقابل البرمجيات (Hardware vs Software)"
+        ],
+        "question": "جسم الروبوت هو العتاد (Hardware)، لكن كود الذكاء الاصطناعي الذي يعمل بداخله يعمل بمثابة 'دماغه'.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "الروبوت المادي هو مجرد آلة؛ بينما توفر برمجيات الذكاء الاصطناعي (AI Software) الذكاء والتعليمات حول كيفية التحرك والتفاعل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التطبيقات (Applications)",
+            "البريد الإلكتروني (Email)"
+        ],
+        "question": "كيف يقرر مزود البريد الإلكتروني الخاص بك أي الرسائل يضعها في مجلد 'البريد العشوائي (Spam)' أو 'غير الهام (Junk)'؟",
+        "choices": [
+            "يضع كل الرسائل الواردة من أصدقائك في البريد العشوائي",
+            "يقوم بقلب عملة معدنية",
+            "يستخدم الذكاء الاصطناعي للتعرف على أنماط الرسائل الاحتيالية",
+            "يحتفظ فقط بالرسائل التي تحتوي على صور"
+        ],
+        "ans_idx": 2,
+        "justification": "تستخدم فلاتر البريد العشوائي (Spam Filters) تعلم الآلة (Machine Learning) لتحديد الخصائص الشائعة للبريد غير الهام (مثل الروابط المشبوهة أو الكلمات الرئيسية) لحماية صندوق الوارد الخاص بك."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "أجهزة الاستشعار (Sensors)",
+            "الإدخال (Input)"
+        ],
+        "question": "لكي تتمكن السيارة ذاتية القيادة (Self-Driving Car) من 'رؤية' الطريق وإشارات المرور والمشاة، فإنها تستخدم ________ مثل الكاميرات والرادار.",
+        "choices": [
+            "مكبرات الصوت (Speakers)",
+            "أجهزة استشعار (Sensors)",
+            "طابعات (Printers)",
+            "لوحات مفاتيح (Keyboards)"
+        ],
+        "ans_idx": 1,
+        "justification": "أجهزة الاستشعار (Sensors) هي أجهزة تكتشف الأحداث أو التغييرات في البيئة (مثل الضوء أو المسافة) وترسل تلك المعلومات إلى الكمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "تعلم الآلة (Machine Learning)",
+            "التشبيه (Analogy)"
+        ],
+        "question": "يشبه تدريب نموذج الذكاء الاصطناعي (AI Model):",
+        "choices": [
+            "بناء مجموعة ليغو (LEGO) باتباع التعليمات بدقة",
+            "تعليم حيوان أليف خدعة من خلال مكافأته عندما يفعلها بشكل صحيح",
+            "كتابة كتاب",
+            "طلاء جدار"
+        ],
+        "ans_idx": 1,
+        "justification": "غالباً ما يتضمن تعلم الآلة (Machine Learning) عرض العديد من الأمثلة (التدريب) على الكمبيوتر حتى يتعلم الأنماط، تماماً مثل تدريب حيوان أليف من خلال التكرار."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الطبيعة (Nature)",
+            "الإنسان مقابل الذكاء الاصطناعي (Human vs AI)"
+        ],
+        "question": "أجهزة كمبيوتر الذكاء الاصطناعي حالياً أذكى بكثير من البشر في كل شيء، بما في ذلك امتلاك المشاعر وفهم العواطف.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "الذكاء الاصطناعي الحالي هو 'ذكاء اصطناعي ضيق (Narrow AI)'، مما يعني أنه جيد في مهام محددة (مثل الشطرنج أو الرياضيات)، لكنه لا يمتلك مشاعر أو وعياً أو فهماً بشرياً عاماً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التنبؤ بالنص (Text Prediction)",
+            "الجوال (Mobile)"
+        ],
+        "question": "عندما تكتب رسالة على هاتفك ويقترح الكلمة التالية قبل الانتهاء من الكتابة، ماذا يسمى هذا؟",
+        "choices": [
+            "التصحيح التلقائي / النص التنبؤي (Autocorrect / Predictive Text)",
+            "الحذف التلقائي (Auto-delete)",
+            "التدقيق الإملائي (Spell Check)",
+            "نسخ ولصق (Copy Paste)"
+        ],
+        "ans_idx": 0,
+        "justification": "يستخدم النص التنبؤي (Predictive Text) ذكاءً اصطناعيًا بسيطًا (نماذج لغوية) لتخمين الكلمة التالية الأكثر احتمالاً بناءً على ما كتبته حتى الآن."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الإدخال (Input)",
+            "الصوت (Audio)"
+        ],
+        "question": "أي جزء من مكبر الصوت الذكي (مثل أمازون إيكو (Amazon Echo)) يعمل مثل 'الأذن' للاستماع إلى صوتك؟",
+        "choices": [
+            "مكبر الصوت (The Speaker)",
+            "البطارية (The Battery)",
+            "الميكروفون (The Microphone)",
+            "حلقة الضوء (The Light Ring)"
+        ],
+        "ans_idx": 2,
+        "justification": "الميكروفون (Microphone) هو جهاز الإدخال الذي يلتقط الموجات الصوتية ويحولها إلى إشارات رقمية ليعالجها الذكاء الاصطناعي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "القياسات الحيوية (Biometrics)",
+            "الأمن (Security)"
+        ],
+        "question": "يستخدم فتح قفل هاتفك عن طريق النظر إليه ________ الوجه.",
+        "choices": [
+            "رسم (Painting)",
+            "التعرف على (Recognition)",
+            "جراحة (Surgery)",
+            "تعبير (Expression)"
+        ],
+        "ans_idx": 1,
+        "justification": "يقوم التعرف على الوجه (Facial Recognition) بمسح هندسة وجهك للتحقق من هويتك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الترجمة (Translation)",
+            "اللغة (Language)"
+        ],
+        "question": "رأيت لافتة باللغة اليابانية ووجهت كاميرا ترجمة جوجل (Google Translate) نحوها لقراءتها باللغة الإنجليزية. ما هي التقنية التي تجعل هذا ممكناً؟",
+        "choices": [
+            "الترجمة بالذكاء الاصطناعي (AI Translation)",
+            "رؤية الأشعة السينية (X-Ray Vision)",
+            "النقل الآني (Teleportation)",
+            "السحر (Magic)"
+        ],
+        "ans_idx": 0,
+        "justification": "تجمع الترجمة بالذكاء الاصطناعي (AI Translation) بين التعرف على الأحرف (قراءة النص) ومعالجة اللغات الطبيعية (تحويل اللغة) بشكل فوري."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الألعاب (Gaming)",
+            "شخصيات غير قابلة للعب (NPCs)"
+        ],
+        "question": "في ألعاب الفيديو، يتم التحكم في الأعداء الذين يطاردونك أو يقاتلونك بواسطة الذكاء الاصطناعي الخاص بالكمبيوتر.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم الشخصيات غير القابلة للعب (NPCs) نصوص الذكاء الاصطناعي لتحديد كيفية التنقل في الخريطة، أو مهاجمة اللاعب، أو التفاعل مع الأحداث."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "البيانات (Data)",
+            "الأنواع (Types)"
+        ],
+        "question": "أي مما يلي لا يُعد مثالاً على البيانات التي قد يتعلم منها الذكاء الاصطناعي؟",
+        "choices": [
+            "مجموعة من 10,000 صورة قطة",
+            "قائمة بدرجات الحرارة من السنوات الـ 50 الماضية",
+            "شطيرة تناولتها على الغداء (ولم تقم بتسجيلها)",
+            "نص كل كتاب في المكتبة"
+        ],
+        "ans_idx": 2,
+        "justification": "يجب تسجيل البيانات أو رقمنتها (تحويلها إلى معلومات) حتى يتمكن الكمبيوتر من الوصول إليها. لا يمكن استخدام حدث غير مسجل كبيانات تدريب (Training Data)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "المنزل الذكي (Smart Home)",
+            "إنترنت الأشياء (IoT)"
+        ],
+        "question": "يمكن لجهاز 'تنظيم الحرارة الذكي (Smart Thermostat)' في المنزل توفير الطاقة عن طريق:",
+        "choices": [
+            "جعل المنزل أكثر برودة من القارة القطبية الجنوبية",
+            "تعلم متى يكون الناس في المنزل وضبط درجة الحرارة تلقائياً",
+            "إيقاف تشغيل الواي فاي",
+            "الصراخ عليك لترتدي سترة"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم منظمات الحرارة الذكية (Smart Thermostats) التعرف على الأنماط لتعلم جدولك الزمني وتفضيلاتك، مما يحسن التدفئة/التبريد فقط عند الحاجة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التنبؤ (Prediction)",
+            "الطقس (Weather)"
+        ],
+        "question": "يستخدم خبراء الأرصاد الجوية نماذج الكمبيوتر للنظر في بيانات الطقس السابقة لعمل ________ حول ما إذا كانت ستمطر غداً.",
+        "choices": [
+            "تاريخ (History)",
+            "تنبؤ (Prediction)",
+            "تصحيح (Correction)",
+            "رسم (Drawing)"
+        ],
+        "ans_idx": 1,
+        "justification": "التنبؤ (Prediction) (أو التكهن) هو مهمة أساسية في علم البيانات، حيث يستخدم البيانات السابقة لتقدير النتائج المستقبلية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التعلم (Learning)",
+            "الأمثلة (Examples)"
+        ],
+        "question": "لتعليم الكمبيوتر كيف يبدو 'الكلب'، تحتاج فقط إلى إظهار صورة واحدة لكلب.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "يحتاج الذكاء الاصطناعي عادةً إلى مئات أو آلاف الأمثلة (بيانات التدريب (Training Data)) لتعلم الميزات العامة بدقة والتعرف على أنواع مختلفة من الكلاب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "روبوتات الدردشة (Chatbots)",
+            "الخدمة (Service)"
+        ],
+        "question": "عندما تذهب إلى موقع ويب وتظهر نافذة دردشة صغيرة تسأل 'كيف يمكنني مساعدتك؟'، فمن المحتمل أنك تتحدث إلى:",
+        "choices": [
+            "روبوت دردشة (Chatbot)",
+            "كلب آلي (Robot Dog)",
+            "مشغل فيديو (Video Player)",
+            "مخترق (Hacker)"
+        ],
+        "ans_idx": 0,
+        "justification": "روبوتات الدردشة (Chatbots) هي برامج ذكاء اصطناعي مصممة لمحاكاة المحادثة مع المستخدمين البشريين، وغالباً ما تستخدم لدعم العملاء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "محركات البحث (Search Engines)",
+            "الترتيب (Ranking)"
+        ],
+        "question": "عندما تبحث عن 'قطط مضحكة' على جوجل (Google)، كيف يقرر أي الصور يعرضها أولاً؟",
+        "choices": [
+            "يختار أقدم الصور",
+            "يستخدم خوارزمية لترتيب النتائج الأكثر صلة وشعبية",
+            "يعرض صوراً عشوائية",
+            "يعرض فقط الصور التي تم التقاطها اليوم"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم محركات البحث خوارزميات ترتيب (Ranking Algorithms) معقدة تأخذ في الاعتبار الملاءمة والشعبية والجودة لترتيب نتائج البحث."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "السلامة (Safety)",
+            "القيادة (Driving)"
+        ],
+        "question": "تستخدم السيارات ذاتية القيادة الذكاء الاصطناعي لاتخاذ القرارات، مثل التوقف عند رؤية إشارة حمراء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تعتمد المركبات ذاتية القيادة (Autonomous Vehicles) على الذكاء الاصطناعي لتفسير بيانات المستشعر واتخاذ قرارات القيادة في الوقت الفعلي من أجل السلامة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "التزييف العميق (Deepfakes)",
+            "الأخلاقيات (Ethics)"
+        ],
+        "question": "________ هو فيديو تم تعديله باستخدام الذكاء الاصطناعي ليبدو وكأن شخصاً ما قال أو فعل شيئاً لم يفعله في الواقع.",
+        "choices": [
+            "تزييف عميق (Deepfake)",
+            "صورة ذاتية (Selfie)",
+            "مدونة فيديو (Vlog)",
+            "خلل (Glitch)"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن التزييف العميق (Deepfakes) استخدام الذكاء الاصطناعي للتلاعب بالوسائط، وغالباً ما يتم تبديل الوجوه أو تجميع الكلام، مما يخلق محتوى واقعياً ولكنه مزيف."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "وسائل التواصل الاجتماعي (Social Media)",
+            "الخلاصات (Feeds)"
+        ],
+        "question": "لماذا تبدو خلاصة تيك توك (TikTok) أو إنستغرام (Instagram) الخاصة بك مختلفة عن خلاصة صديقك؟",
+        "choices": [
+            "هاتفك مكسور",
+            "تقوم الخوارزمية بتخصيص الخلاصة بناءً على ما يعجبك أنت",
+            "هناك 10 مقاطع فيديو فقط في التطبيق بالكامل",
+            "الأمر محض صدفة"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم خوارزميات وسائل التواصل الاجتماعي بتنسيق خلاصات مخصصة من خلال تتبع تفاعل المستخدم (الإعجابات، وقت المشاهدة) لعرض محتوى ذي صلة بذلك المستخدم المحدد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الأتمتة (Automation)",
+            "الروبوتات (Robots)"
+        ],
+        "question": "غالباً ما تستخدم الروبوتات في مصانع السيارات للقيام بوظائف:",
+        "choices": [
+            "ممتعة وإبداعية",
+            "خطيرة، أو متكررة، أو ثقيلة",
+            "متعلقة بالطبخ فقط",
+            "غير مرئية"
+        ],
+        "ans_idx": 1,
+        "justification": "تم تصميم الروبوتات الصناعية (Industrial Robots) لأتمتة المهام غير الآمنة أو المملة أو الصعبة جسدياً على البشر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الخلفيات الافتراضية (Virtual Backgrounds)",
+            "الرؤية الحاسوبية (Computer Vision)"
+        ],
+        "question": "عندما تستخدم 'خلفية افتراضية (Virtual Background)' في فصل دراسي على زووم (Zoom)، يتم استخدام الذكاء الاصطناعي لمعرفة أي جزء من الفيديو هو أنت وأي جزء هو الغرفة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "هذه التقنية (تقسيم الصور (Image Segmentation)) تفصل المقدمة (أنت) عن الخلفية بكسل تلو الآخر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الأجهزة القابلة للارتداء (Wearables)",
+            "جمع البيانات (Data Collection)"
+        ],
+        "question": "تحسب الساعة الذكية (مثل Fitbit أو Apple Watch) خطواتك عن طريق تحليل البيانات من:",
+        "choices": [
+            "كاميرا صغيرة تراقب قدميك",
+            "أجهزة استشعار الحركة (مقاييس التسارع (Accelerometers)) على معصمك",
+            "أقمار GPS الصناعية فقط",
+            "نبضات قلبك"
+        ],
+        "ans_idx": 1,
+        "justification": "تكتشف مقاييس التسارع (Accelerometers) الحركة والاهتزاز، والتي يفسرها برنامج الساعة على أنها خطوات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "النموذج (Model)",
+            "المصطلحات (Terminology)"
+        ],
+        "question": "بعد أن ينتهي الذكاء الاصطناعي من التعلم من البيانات، يسمى 'الدماغ' الذي نحفظه ونستخدمه ________ ذكاء اصطناعي.",
+        "choices": [
+            "لعبة (Toy)",
+            "نموذج (Model)",
+            "صورة (Picture)",
+            "لعبة (Game)"
+        ],
+        "ans_idx": 1,
+        "justification": "'النموذج (Model)' هو الأداة أو الملف الذي تم إنشاؤه بعد تدريب خوارزمية تعلم الآلة على البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أساسيات الذكاء الاصطناعي (AI Basics)",
+            "الموسقى (Music)",
+            "البث (Streaming)"
+        ],
+        "question": "ينشئ سبوتيفاي (Spotify) قائمة تشغيل 'المزيج اليومي (Daily Mix)' لك. هذا مثال على:",
+        "choices": [
+            "خلط عشوائي",
+            "توصيات الذكاء الاصطناعي الشخصية (Personalized AI Recommendations)",
+            "منسق موسيقى يختار الأغاني مباشرة",
+            "خلل في الكمبيوتر"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم خدمات البث الذكاء الاصطناعي لتحليل عادات الاستماع الخاصة بك واقتراح الأغاني التي تناسب ذوقك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التدريب مقابل الاختبار (Training vs Testing)",
+            "التشبيه (Analogy)"
+        ],
+        "question": "تخيل أنك تعلم روبوتًا التعرف على التفاح. تعرض عليه 100 صورة للتفاح ليتعلم (التدريب). ثم تعرض عليه صورة جديدة لتر هل سيعمل. هذه الصورة الجديدة جزء من:",
+        "choices": [
+            "بيانات التدريب (Training Data)",
+            "بيانات الاختبار (Testing Data)",
+            "بيانات المهملات (Trash Data)",
+            "بيانات تالفة (Broken Data)"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم بيانات الاختبار (Testing Data) لتقييم أداء النموذج على أمثلة لم يرها من قبل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الرؤية الحاسوبية (Computer Vision)",
+            "البكسل (Pixels)"
+        ],
+        "question": "ترى أجهزة الكمبيوتر الصور كشبكة من نقاط ملونة صغيرة تسمى 'بكسل (Pixels)'.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تتكون الصور الرقمية من بكسلات (Pixels)، يتم تمثيل كل منها بقيم عددية للألوان (الأحمر، الأخضر، الأزرق)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التحيز (Bias)",
+            "العدالة (Fairness)"
+        ],
+        "question": "إذا علمت الذكاء الاصطناعي فقط كيف تبدو 'الأحذية' باستخدام صور أحذية رياضية، فماذا سيحدث إذا عرضت عليه حذاءً بكعب عالٍ؟",
+        "choices": [
+            "سيعرف أنه حذاء تماماً",
+            "قد لا يتعرف عليه لأن بيانات التدريب كانت 'متحيزة (Biased)' (محدودة)",
+            "سينفجر",
+            "سيطلب منك شراء الحذاء"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدث التحيز (Bias) عندما لا تمثل بيانات التدريب العالم الحقيقي بشكل صحيح، مما يتسبب في فشل الذكاء الاصطناعي في الأمثلة غير المألوفة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التصنيف (Classification)",
+            "المهام (Tasks)"
+        ],
+        "question": "عندما ينظر الذكاء الاصطناعي إلى بريد إلكتروني ويقرر ما إذا كان 'بريداً عشوائياً (Spam)' أو 'ليس عشوائياً (Not Spam)'، تسمى هذه المهمة ________.",
+        "choices": [
+            "رسم (Drawing)",
+            "تصنيف (Classification)",
+            "قيادة (Driving)",
+            "غناء (Singing)"
+        ],
+        "ans_idx": 1,
+        "justification": "التصنيف (Classification) هو مهمة تعيين تسمية أو فئة (مثل 'قطة' مقابل 'كلب' أو 'بريد عشوائي' مقابل 'ليس عشوائياً') لمدخل ما."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الجودة (Quality)",
+            "القمامة تدخل قمامة تخرج (Garbage In Garbage Out)"
+        ],
+        "question": "ماذا تعني عبارة 'القمامة تدخل، القمامة تخرج (Garbage In, Garbage Out)' في علم البيانات؟",
+        "choices": [
+            "أجهزة الكمبيوتر تأكل القمامة",
+            "إذا أعطيت الذكاء الاصطناعي بيانات سيئة أو فوضوية، فسيعطيك نتائج سيئة",
+            "يجب عليك تنظيف شاشة الكمبيوتر",
+            "الذكاء الاصطناعي مصنوع من البلاستيك المعاد تدويره"
+        ],
+        "ans_idx": 1,
+        "justification": "تتحدد جودة المخرجات بجودة المدخلات. بيانات التدريب السيئة تؤدي إلى نموذج سيء."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الميزات (Features)",
+            "التعرف على الأنماط (Pattern Recognition)"
+        ],
+        "question": "عندما يتعلم الذكاء الاصطناعي التعرف على 'قطة'، فإنه يبحث عن أنماط محددة مثل الأذنين المدببة والشوارب والذيل. تسمى هذه الأنماط:",
+        "choices": [
+            "ميزات (Features)",
+            "أخطاء (Glitches)",
+            "بكسلات (Pixels)",
+            "فيروسات (Viruses)"
+        ],
+        "ans_idx": 0,
+        "justification": "الميزات (Features) هي الخصائص أو السمات المحددة (مثل الشكل أو اللون أو الملمس) التي يستخدمها الذكاء الاصطناعي لتحديد الأشياء."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "السحابة (The Cloud)",
+            "المعالجة (Processing)"
+        ],
+        "question": "تقوم المساعدات الصوتية مثل أليكسا (Alexa) بكل تفكيرها داخل مكبر الصوت البلاستيكي الموجود على مكتبك.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "ترسل معظم مكبرات الصوت الذكية تسجيل صوتك إلى 'السحابة (The Cloud)' (خوادم قوية على الإنترنت) لتتم معالجته، ثم ترسل الإجابة مرة أخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التعرف على الكلام (Speech Recognition)",
+            "تحويل الكلام إلى نص (STT)"
+        ],
+        "question": "ما هي التقنية التي تحول الكلمات التي تتحدث بها إلى نص مكتوب يمكن للكمبيوتر فهمه؟",
+        "choices": [
+            "تحويل النص إلى كلام (Text-to-Speech (TTS))",
+            "تحويل الكلام إلى نص (Speech-to-Text (STT))",
+            "التعرف على الصور (Image Recognition)",
+            "معرف الوجه (Face ID)"
+        ],
+        "ans_idx": 1,
+        "justification": "تحويل الكلام إلى نص (Speech-to-Text (STT)) أو التعرف التلقائي على الكلام (ASR) يحول إشارات الصوت المنطوقة إلى بيانات نصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الشبكات العصبية (Neural Networks)",
+            "التشبيه (Analogy)"
+        ],
+        "question": "ابتكر العلماء طريقة لتعلم أجهزة الكمبيوتر مستوحاة من كيفية عمل الدماغ البشري. تسمى:",
+        "choices": [
+            "صندوق الدماغ (Brain Box)",
+            "شبكة عصبية (Neural Network)",
+            "شبكة الجمجمة (Skull Net)",
+            "شبكة التفكير (Thought Web)"
+        ],
+        "ans_idx": 1,
+        "justification": "الشبكات العصبية (Neural Networks) هي أنظمة حوسبة مستوحاة بشكل غامض من الشبكات العصبية البيولوجية (الخلايا العصبية والتشابكات) التي تشكل أدمغة الحيوانات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التدريب (Training)",
+            "التعلم تحت الإشراف (Supervised Learning)"
+        ],
+        "question": "عندما تعطي الذكاء الاصطناعي صورًا لقطط وتخبره 'هذه قطة'، فأنت تستخدم بيانات ________.",
+        "choices": [
+            "سرية (Secret)",
+            "موسومة (Labeled)",
+            "مخفية (Hidden)",
+            "مفقودة (Missing)"
+        ],
+        "ans_idx": 1,
+        "justification": "تتكون البيانات الموسومة (Labeled Data) من عينات إدخال (صور) مقترنة بتسميات الإخراج الصحيحة ('قطة')، وتستخدم في التعلم تحت الإشراف (Supervised Learning)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "علم البيانات (Data Science)",
+            "التصور (Visualization)"
+        ],
+        "question": "يريد عالم بيانات (Data Scientist) إظهار كيف تغيرت درجة الحرارة خلال العام الماضي. ما هي أفضل طريقة لإظهار ذلك؟",
+        "choices": [
+            "كتابة مقال طويل",
+            "استخدام رسم بياني خطي (Line Graph)",
+            "سرد 365 رقماً في صف واحد",
+            "رسم صورة للشمس"
+        ],
+        "ans_idx": 1,
+        "justification": "الرسوم البيانية الخطية (Line Graphs) هي الأداة القياسية لتصور التغيرات في البيانات على مدى فترات زمنية (الاتجاهات)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الذكاء الاصطناعي العام (General AI)",
+            "القدرة (Capability)"
+        ],
+        "question": "لدينا حالياً 'ذكاء اصطناعي عام (General AI / AGI)' يمكنه فعل أي شيء يستطيع الإنسان فعله، مثل طهي العشاء، وكتابة قصيدة، وقيادة سيارة، كل ذلك في روبوت واحد.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "لدينا حالياً فقط 'ذكاء اصطناعي ضيق (Narrow AI)'، وهو جيد في مهمة محددة واحدة. الذكاء الاصطناعي العام (AGI) لا يزال مفهوماً مستقبلياً نظرياً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "اختبار تورينج (Turing Test)",
+            "التاريخ (History)"
+        ],
+        "question": "'اختبار تورينج (Turing Test)' هو تجربة شهيرة صممت لمعرفة ما إذا كان:",
+        "choices": [
+            "الكمبيوتر مقاوم للماء",
+            "يمكن للكمبيوتر خداع الإنسان للاعتقاد بأنه إنسان أيضًا",
+            "يمكن للكمبيوتر حساب الرياضيات أسرع من الآلة الحاسبة",
+            "يمكن للروبوت رفع أوزان ثقيلة"
+        ],
+        "ans_idx": 1,
+        "justification": "يقيم الاختبار، الذي اقترحه آلان تورينج (Alan Turing)، قدرة الآلة على إظهار سلوك ذكي مكافئ لسلوك الإنسان أو لا يمكن تمييزه عنه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "خصوصية البيانات (Data Privacy)",
+            "الأخلاقيات (Ethics)"
+        ],
+        "question": "لماذا يقلق بعض الناس بشأن تقنية التعرف على الوجه (Facial Recognition) في الأماكن العامة؟",
+        "choices": [
+            "تستخدم الكثير من الكهرباء",
+            "قد تنتهك خصوصية الناس من خلال تتبع أماكن ذهابهم",
+            "تجعل الناس يبدون قبيحين",
+            "الكاميرات مخيفة"
+        ],
+        "ans_idx": 1,
+        "justification": "تنشأ مخاوف الخصوصية لأن المراقبة الجماعية يمكن أن تتبع تحركات الأفراد دون موافقتهم."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "مجموعة البيانات (Dataset)",
+            "المصطلحات (Terminology)"
+        ],
+        "question": "مجموعة كبيرة من البيانات المنظمة ليقوم الكمبيوتر بتحليلها تسمى ________.",
+        "choices": [
+            "رف كتب (Bookshelf)",
+            "مجموعة بيانات (Dataset)",
+            "قائمة تشغيل (Playlist)",
+            "دلو (Bucket)"
+        ],
+        "ans_idx": 1,
+        "justification": "مجموعة البيانات (Dataset) هي مجموعة منظمة من البيانات تستخدم للتحليل أو تدريب نماذج الذكاء الاصطناعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الذكاء الاصطناعي التوليدي (Generative AI)",
+            "الإبداع (Creativity)"
+        ],
+        "question": "تعد أدوات مثل ChatGPT أو Midjourney (التي تصنع الفن) أمثلة على:",
+        "choices": [
+            "الذكاء الاصطناعي القديم (Old Fashioned AI)",
+            "الذكاء الاصطناعي التوليدي (Generative AI)",
+            "الذكاء الاصطناعي الحاسب (Calculator AI)",
+            "الذكاء الاصطناعي السلبي (Passive AI)"
+        ],
+        "ans_idx": 1,
+        "justification": "يمكن للذكاء الاصطناعي التوليدي (Generative AI) إنشاء محتوى *جديد* (نص، صور، صوت) بدلاً من مجرد تحليل البيانات الموجودة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الثقة (Confidence)",
+            "الاحتمالية (Probability)"
+        ],
+        "question": "عندما يقوم الذكاء الاصطناعي بالتخمين، فإنه يكون دائمًا متأكدًا بنسبة 100% من الإجابة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "تأتي مخرجات الذكاء الاصطناعي عادةً مع 'درجة ثقة (Confidence Score)' أو احتمالية (على سبيل المثال، 'أنا متأكد بنسبة 85% أن هذا كلب'). نادراً ما يكون مؤكداً بنسبة 100%."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الأخلاقيات (Ethics)",
+            "غرف الصدى (Echo Chambers)"
+        ],
+        "question": "إذا كانت الخوارزمية تعرض لك فقط الأخبار التي توافق عليها، فقد يؤدي ذلك إلى إنشاء 'غرفة صدى (Echo Chamber)'. لماذا هذا سيء؟",
+        "choices": [
+            "إنها صاخبة جداً",
+            "لا تتعلم أبداً عن الآراء المختلفة أو الحقيقة الكاملة",
+            "تكسر هاتفك",
+            "تكلفتها عالية جداً"
+        ],
+        "ans_idx": 1,
+        "justification": "تعزل غرف الصدى (Echo Chambers) المستخدمين عن وجهات النظر المعارضة، مما يعزز معتقداتهم الحالية ويحتمل أن ينشر معلومات مضللة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "القيادة الذاتية (Self-Driving)",
+            "ليدار (Lidar)"
+        ],
+        "question": "غالباً ما تستخدم السيارات ذاتية القيادة مستشعراً دواراً على السقف يسمى LIDAR. ماذا يفعل؟",
+        "choices": [
+            "يبقي السيارة باردة",
+            "يطلق أشعة الليزر لقياس المسافات إلى الأشياء القريبة",
+            "يستقبل موسيقى الراديو",
+            "يطير السيارة"
+        ],
+        "ans_idx": 1,
+        "justification": "يستخدم LIDAR (الكشف عن الضوء وتحديد المدى (Light Detection and Ranging)) نبضات الليزر لإنشاء خريطة دقيقة ثلاثية الأبعاد لمحيط السيارة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "تنظيف البيانات (Data Cleaning)",
+            "التحضير (Preparation)"
+        ],
+        "question": "قبل إعطاء البيانات للذكاء الاصطناعي، غالباً ما يتعين على البشر إصلاح الأخطاء وإزالة التكرارات. تسمى هذه العملية ________ البيانات.",
+        "choices": [
+            "تنظيف (Cleaning)",
+            "أكل (Eating)",
+            "إخفاء (Hiding)",
+            "كسر (Breaking)"
+        ],
+        "ans_idx": 0,
+        "justification": "تنظيف البيانات (Data Cleaning) (أو الفرك) هو عملية تصحيح أو إزالة البيانات الفاسدة أو غير الصحيحة أو غير الكاملة من مجموعة البيانات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "علوم البيانات (Data Science)",
+            "القيم المتطرفة (Outliers)"
+        ],
+        "question": "في مجموعة بيانات لأعمار الطلاب: 10، 11، 10، 12، و 95. الرقم 95 مختلف جداً عن البقية. ماذا نسمي هذا؟",
+        "choices": [
+            "خطأ (Mistake)",
+            "قيمة متطرفة (Outlier)",
+            "خلل (Glitch)",
+            "متوسط (Average)"
+        ],
+        "ans_idx": 1,
+        "justification": "القيمة المتطرفة (Outlier) هي نقطة بيانات تختلف بشكل كبير عن الملاحظات الأخرى في مجموعة البيانات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التعلم المعزز (Reinforcement Learning)",
+            "الألعاب (Gaming)"
+        ],
+        "question": "التعلم المعزز (Reinforcement Learning) هو نوع من تدريب الذكاء الاصطناعي حيث يتعلم الكمبيوتر من خلال لعب لعبة مراراً وتكراراً، حيث يحصل على نقاط عند الفوز ويفقد نقاطاً عند الخسارة.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يعتمد التعلم المعزز (Reinforcement Learning) على نظام من المكافآت والعقوبات لتعليم الوكيل (Agent) كيفية التصرف في بيئة ما."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "معالجة اللغات الطبيعية (NLP)",
+            "تحليل المشاعر (Sentiment Analysis)"
+        ],
+        "question": "تستخدم الشركات الذكاء الاصطناعي لقراءة آلاف التغريدات حول منتجها الجديد لمعرفة ما إذا كان الناس سعداء أم غاضبين. يسمى هذا:",
+        "choices": [
+            "تحليل المشاعر (Sentiment Analysis)",
+            "تدقيق إملائي (Spell Checking)",
+            "إخفاء البيانات (Data Hiding)",
+            "تسجيل الصوت (Voice Recording)"
+        ],
+        "ans_idx": 0,
+        "justification": "يستخدم تحليل المشاعر (Sentiment Analysis) معالجة اللغات الطبيعية (NLP) لتحديد النبرة العاطفية (إيجابية، سلبية، أو محايدة) وراء نص معين."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "علوم البيانات (Data Science)",
+            "المتوسط (Average)"
+        ],
+        "question": "لإيجاد درجة 'المتوسط (Average)' للفصل، تقوم بجمع كل الدرجات و ________ على عدد الطلاب.",
+        "choices": [
+            "تضرب (Multiply)",
+            "تقسم (Divide)",
+            "تطرح (Subtract)",
+            "تستخدم الأس (Power)"
+        ],
+        "ans_idx": 1,
+        "justification": "يتم حساب الوسط الحسابي (المتوسط - Average) عن طريق جمع جميع القيم والقسمة على عدد القيم."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التعلم العميق (Deep Learning)",
+            "الطبقات (Layers)"
+        ],
+        "question": "يسمى التعلم العميق (Deep Learning) بـ 'العميق' لأنه:",
+        "choices": [
+            "يحدث في أعماق البحار",
+            "يستخدم طبقات (Layers) عديدة من الخلايا العصبية الاصطناعية لتعلم أنماط معقدة",
+            "يفكر في أفكار فلسفية عميقة جداً",
+            "مدفون تحت الأرض"
+        ],
+        "ans_idx": 1,
+        "justification": "تتكون نماذج التعلم العميق (Deep Learning) من طبقات (Layers) متعددة (عميقة) من الشبكات العصبية التي تعالج البيانات في مراحل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الرؤية الحاسوبية (Computer Vision)",
+            "كشف الكائنات (Object Detection)"
+        ],
+        "question": "ما الفرق بين 'تصنيف الصور (Image Classification)' و 'كشف الكائنات (Object Detection)'؟",
+        "choices": [
+            "إنهما نفس الشيء",
+            "التصنيف يسمي الصورة بأكملها (مثل 'قطة')؛ الكشف يرسم مربعاً حول مكان القطة",
+            "الكشف مخصص للفيديوهات فقط",
+            "التصنيف للروبوتات فقط"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدد التصنيف (Classification) الموضوع الرئيسي للصورة، بينما يحدد كشف الكائنات (Object Detection) مواقع كائنات متعددة داخل الصورة ويضع تسميات لها."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "خصوصية البيانات (Data Privacy)",
+            "إخفاء الهوية (Anonymization)"
+        ],
+        "question": "لحماية الخصوصية، غالباً ما يقوم علماء البيانات بإزالة الأسماء والعناوين من مجموعة البيانات قبل استخدامها. يسمى هذا إخفاء الهوية (Anonymization).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يقوم إخفاء الهوية (Anonymization) بإزالة معلومات التعريف الشخصية (PII) بحيث لا يمكن تتبع البيانات للوصول إلى أفراد محددين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الأخلاقيات (Ethics)",
+            "إزاحة الوظائف (Job Displacement)"
+        ],
+        "question": "أحد المخاوف الأخلاقية الرئيسية حول الذكاء الاصطناعي هو أنه:",
+        "choices": [
+            "قد يقوم بأتمتة وظائف كثيرة جداً، مما يترك بعض الناس بدون عمل",
+            "سيأكل كل طعامنا",
+            "سيجعل ألعاب الفيديو سهلة للغاية",
+            "يستخدم الكثير من الورق"
+        ],
+        "ans_idx": 0,
+        "justification": "تعد الأتمتة (Automation) وإزاحة الوظائف (Job Displacement) مخاوف اقتصادية كبيرة حيث يصبح الذكاء الاصطناعي قادراً على أداء المهام التي كان يقوم بها البشر سابقاً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التعلم غير الخاضع للإشراف (Unsupervised Learning)",
+            "التجميع (Clustering)"
+        ],
+        "question": "إذا أعطيت ذكاءً اصطناعياً سلة فواكه دون إخباره بأسمائها، وقام بتجميعها حسب اللون والشكل من تلقاء نفسه، يسمى هذا ________.",
+        "choices": [
+            "التعلم الخاضع للإشراف (Supervised Learning)",
+            "التجميع (Clustering)",
+            "التسمية (Labeling)",
+            "التقييم (Grading)"
+        ],
+        "ans_idx": 1,
+        "justification": "التجميع (Clustering) هو تقنية تعلم غير خاضع للإشراف (Unsupervised Learning) حيث يقوم الذكاء الاصطناعي بتجميع نقاط البيانات المتشابهة معاً دون وجود تسميات مسبقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "علوم البيانات (Data Science)",
+            "الارتباط (Correlation)"
+        ],
+        "question": "إذا ارتفعت مبيعات الآيس كريم عندما ترتفع درجة الحرارة، نقول أن هذين الأمرين:",
+        "choices": [
+            "مرتبطان / متصلان (Correlated / Linked)",
+            "متضادان (Opposites)",
+            "عشوائيان (Random)",
+            "أخطاء (Mistakes)"
+        ],
+        "ans_idx": 0,
+        "justification": "يصف الارتباط (Correlation) علاقة يتحرك فيها متغيران بالتنسيق مع بعضهما البعض (على سبيل المثال، كلما زاد أحدهما، زاد الآخر)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "النموذج (Model)",
+            "الدقة (Accuracy)"
+        ],
+        "question": "لقد اختبرت نموذج الذكاء الاصطناعي الخاص بك وحصل على 90 إجابة صحيحة من أصل 100. نقول أن ________ هي 90%.",
+        "choices": [
+            "السرعة (Speed)",
+            "الدقة (Accuracy)",
+            "الوزن (Weight)",
+            "السعر (Price)"
+        ],
+        "ans_idx": 1,
+        "justification": "الدقة (Accuracy) هي المقياس المستخدم لقياس عدد المرات التي يتنبأ فيها نموذج الذكاء الاصطناعي بالنتيجة الصحيحة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "البيانات الضخمة (Big Data)",
+            "التعريف (Definition)"
+        ],
+        "question": "'البيانات الضخمة (Big Data)' تعني فقط أن لديك قرصاً صلباً كبيراً جداً؛ ولا علاقة لها بتحليل المعلومات.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير البيانات الضخمة (Big Data) إلى مجموعات بيانات كبيرة ومعقدة لدرجة أن برامج المعالجة التقليدية لا تستطيع إدارتها، مما يتطلب تقنيات متخصصة للتحليل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التاريخ (History)",
+            "كاسباروف (Kasparov)"
+        ],
+        "question": "في عام 1997، اشتهر كمبيوتر يسمى Deep Blue بهزيمة بطل العالم في أي لعبة؟",
+        "choices": [
+            "فورتنايت (Fortnite)",
+            "الشطرنج (Chess)",
+            "كرة القدم (Soccer)",
+            "تيك تاك تو (Tic-Tac-Toe)"
+        ],
+        "ans_idx": 1,
+        "justification": "هزم Deep Blue التابع لشركة IBM غاري كاسباروف (Garry Kasparov) في عام 1997، مما يمثل علامة فارقة رئيسية في قدرة الذكاء الاصطناعي على التعامل مع الألعاب الاستراتيجية المعقدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الروبوتات (Robotics)",
+            "أجهزة الاستشعار (Sensors)"
+        ],
+        "question": "أي مستشعر يساعد المكنسة الروبوتية (مثل Roomba) على معرفة متى توشك على الاصطدام بالحائط؟",
+        "choices": [
+            "مستشعر الحرارة (Temperature Sensor)",
+            "مستشعر القرب / الاصطدام (Proximity / Bump Sensor)",
+            "ميكروفون (Microphone)",
+            "مستشعر التذوق (Taste Sensor)"
+        ],
+        "ans_idx": 1,
+        "justification": "تكتشف مستشعرات القرب (بالأشعة تحت الحمراء أو الموجات فوق الصوتية) أو مستشعرات الاصطدام المادية العوائق لمنع التصادم."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الأنواع (Types)",
+            "القوي مقابل الضعيف (Strong vs Weak)"
+        ],
+        "question": "الذكاء الاصطناعي المصمم للقيام بمهمة واحدة محددة فقط بشكل جيد جداً (مثل لعب الشطرنج) يسمى الذكاء الاصطناعي الضيق (Narrow) أو ________.",
+        "choices": [
+            "القوي (Strong)",
+            "الضعيف (Weak)",
+            "الفائق (Super)",
+            "الضخم (Mega)"
+        ],
+        "ans_idx": 1,
+        "justification": "الذكاء الاصطناعي الضعيف (Weak AI) (أو الذكاء الاصطناعي الضيق - Narrow AI) يقتصر على نطاق محدد، على عكس الذكاء الاصطناعي القوي (Strong AI) الذي يعادل الذكاء البشري."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "علوم البيانات (Data Science)",
+            "الرسوم البيانية (Graphs)"
+        ],
+        "question": "أي نوع من المخططات هو الأفضل لمقارنة عدد الطلاب الذين يحبون البيتزا مقابل التاكو مقابل البرغر؟",
+        "choices": [
+            "مخطط شريطي (Bar Chart)",
+            "رسم بياني خطي (Line Graph)",
+            "مخطط تشتت (Scatter Plot)",
+            "خريطة (Map)"
+        ],
+        "ans_idx": 0,
+        "justification": "المخططات الشريطية (Bar Charts) مثالية لمقارنة الكميات عبر فئات مختلفة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "التدريب (Training)",
+            "الإنترنت (Internet)"
+        ],
+        "question": "بمجرد تدريب الذكاء الاصطناعي وتثبيته على روبوت، فإنه يحتاج دائماً إلى الإنترنت ليعمل.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "في حين أن التدريب غالباً ما يتطلب خوادم كبيرة، فإن النموذج النهائي يمكنه غالباً العمل 'محلياً' على الجهاز (Edge AI) بدون إنترنت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "الرؤية الحاسوبية (Computer Vision)",
+            "البكسلات (Pixels)"
+        ],
+        "question": "إذا كانت الصورة ذات 'دقة' (Resolution) منخفضة جداً، فكيف تبدو للذكاء الاصطناعي؟",
+        "choices": [
+            "واضحة تماماً",
+            "ضبابية أو مبكسلة (Blurry or Pixelated)",
+            "أبيض وأسود",
+            "ثلاثية الأبعاد"
+        ],
+        "ans_idx": 1,
+        "justification": "تعني الدقة المنخفضة عدداً أقل من البكسلات، مما ينتج عنه صورة مكسرة أو ضبابية يصعب تحليلها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "المنطق (Logic)",
+            "القواعد (Rules)"
+        ],
+        "question": "أنظمة الذكاء الاصطناعي القديمة لم تكن 'ذكية'؛ بل كانت تتبع قواعد صارمة مثل: `IF ball is red THEN kick it`. يسمى هذا:",
+        "choices": [
+            "الذكاء الاصطناعي القائم على القواعد (Rule-Based AI)",
+            "التعلم العميق (Deep Learning)",
+            "الشبكات العصبية (Neural Networks)",
+            "الذكاء الاصطناعي التوليدي (Generative AI)"
+        ],
+        "ans_idx": 0,
+        "justification": "تعتمد الأنظمة القائمة على القواعد (Rule-based systems) على منطق 'إذا-ثم' (if-then) المبرمج يدوياً بدلاً من تعلم الأنماط من البيانات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "مفاهيم الذكاء الاصطناعي (AI Concepts)",
+            "البيانات (Data)",
+            "التحيز (Bias)"
+        ],
+        "question": "إذا كان نظام التعرف على الوجه يعمل بشكل جيد مع درجات البشرة الفاتحة ولكنه يفشل مع درجات البشرة الداكنة، فإننا نقول أن النموذج لديه ________.",
+        "choices": [
+            "فيروس (Virus)",
+            "تحيز (Bias)",
+            "ميزة (Feature)",
+            "خلل (Glitch)"
+        ],
+        "ans_idx": 1,
+        "justification": "غالباً ما ينتج التحيز (Bias) في الذكاء الاصطناعي عن بيانات تدريب غير ممثلة للواقع، مما يؤدي إلى نتائج غير عادلة أو غير دقيقة لمجموعات معينة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الفرط في التوافق (Overfitting)",
+            "تشبيه مدرسي (School Analogy)"
+        ],
+        "question": "تخيل طالباً يحفظ إجابات الاختبار التجريبي ولكنه يفشل في الامتحان الحقيقي لأن الأسئلة مختلفة قليلاً. في الذكاء الاصطناعي، يسمى هذا:",
+        "choices": [
+            "نقص التوافق (Underfitting)",
+            "الفرط في التوافق (Overfitting)",
+            "تعلم جيد (Good Learning)",
+            "غش (Cheating)"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدث الفرط في التوافق (Overfitting) عندما يتعلم الذكاء الاصطناعي بيانات التدريب بشكل *جيد جداً* (يحفظ الضوضاء)، فلا يستطيع التعميم على بيانات جديدة غير مرئية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "المنطق (Logic)",
+            "التقييم (Evaluation)"
+        ],
+        "question": "لقد بنيت ذكاءً اصطناعياً لإنذار الحريق. من الأفضل أن يكون لديك 'إيجابية كاذبة' (يرن المنبه، ولكن لا يوجد حريق) بدلاً من 'سلبية كاذبة' (يوجد حريق، لكن المنبه صامت). لماذا؟",
+        "choices": [
+            "لأن الضوضاء ممتعة",
+            "لأن السلبية الكاذبة (False Negative) خطيرة ويمكن أن تؤذي الناس",
+            "لأن الإيجابيات الكاذبة أرخص",
+            "لا يهم"
+        ],
+        "ans_idx": 1,
+        "justification": "في الأنظمة الحساسة للسلامة، يعد تفويت خطر حقيقي (سلبية كاذبة - False Negative) أسوأ بكثير من الإنذار الكاذب (إيجابية كاذبة - False Positive)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "علوم البيانات (Data Science)",
+            "التقسيم (Split)"
+        ],
+        "question": "عند تدريب الذكاء الاصطناعي، يجب عليك استخدام 100% من بياناتك للتدريب و 0% للاختبار.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 1,
+        "justification": "يجب عليك حفظ بعض البيانات (عادةً 20%) للاختبار. إذا تدربت على كل شيء، فلن يكون لديك طريقة لإثبات أن الذكاء الاصطناعي يعمل بالفعل على بيانات جديدة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الأخلاقيات (Ethics)",
+            "مشكلة العربة (Trolley Problem)"
+        ],
+        "question": "يجب على مصممي السيارات ذاتية القيادة أن يقرروا: 'إذا كان الاصطدام لا مفر منه، هل يجب أن تنحرف السيارة لتصطدم بشجرة (مما يؤذي الراكب) أو تصطدم بأحد المشاة؟' يُعرف هذا بـ:",
+        "choices": [
+            "الفشل الميكانيكي (The Mechanical Fail)",
+            "المعضلة الأخلاقية (مشكلة العربة - Trolley Problem)",
+            "ازدحام المرور (The Traffic Jam)",
+            "اختبار السرعة (The Speed Test)"
+        ],
+        "ans_idx": 1,
+        "justification": "هذه تجربة فكرية أخلاقية كلاسيكية تم تكييفها للذكاء الاصطناعي، وتتساءل كيف ينبغي للآلات اتخاذ قرارات أخلاقية تتعلق بالحياة والموت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الكود الزائف (Pseudocode)",
+            "المنطق (Logic)"
+        ],
+        "question": "انظر إلى هذا المنطق البسيط: `IF (email contains \"Winner\") AND (email contains \"Click Here\") THEN predict = \"Spam\"`. يعتمد هذا النموذج على ________.",
+        "choices": [
+            "السحر (Magic)",
+            "الكلمات المفتاحية (Keywords)",
+            "الألوان (Colors)",
+            "الوقت (Time)"
+        ],
+        "ans_idx": 1,
+        "justification": "يتحقق هذا المنطق من كلمات محددة (كلمات مفتاحية - Keywords) ترتبط عادةً برسائل البريد الإلكتروني العشوائية (Spam)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الشبكات العصبية (Neural Networks)",
+            "الطبقات (Layers)"
+        ],
+        "question": "تتكون الشبكة العصبية من طبقات. الطبقة الأولى تأخذ بكسلات الصورة (الإدخال - Input)، والطبقة الأخيرة تعطي الإجابة (الإخراج - Output). ماذا تسمى الطبقات الموجودة في المنتصف؟",
+        "choices": [
+            "طبقات الساندويتش",
+            "الطبقات المخفية (Hidden Layers)",
+            "الطبقات السرية",
+            "الطبقات السحرية"
+        ],
+        "ans_idx": 1,
+        "justification": "تقع الطبقات المخفية (Hidden Layers) بين طبقات الإدخال والإخراج، حيث تحدث المعالجة المعقدة واستخراج الميزات."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "معالجة اللغات الطبيعية (NLP)",
+            "الترميز (Tokenization)"
+        ],
+        "question": "قبل أن يقرأ الذكاء الاصطناعي جملة، يقوم بتقسيمها إلى أجزاء أصغر (مثل كلمات أو أجزاء من كلمات). تسمى هذه الأجزاء ________.",
+        "choices": [
+            "رموز (Tokens)",
+            "حروف",
+            "فتات",
+            "بتات"
+        ],
+        "ans_idx": 0,
+        "justification": "الترميز (Tokenization) هو عملية تقسيم النص إلى وحدات أصغر (رموز - Tokens) مثل الكلمات أو الكلمات الفرعية ليعالجها الذكاء الاصطناعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "البرمجة (Coding)",
+            "المكتبات (Libraries)"
+        ],
+        "question": "في بايثون (Python)، ما المكتبة الشهيرة التي يستخدمها علماء البيانات غالباً لإنشاء المخططات والرسوم البيانية؟",
+        "choices": [
+            "Matplotlib",
+            "GamePy",
+            "MathBot",
+            "ChartMaster"
+        ],
+        "ans_idx": 0,
+        "justification": "تعد Matplotlib مكتبة رسم بياني شائعة في بايثون لإنشاء تصورات ثابتة ومتحركة وتفاعلية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الرؤية الحاسوبية (Computer Vision)",
+            "شبكة عصبية تلافيفية (CNN)"
+        ],
+        "question": "الشبكة العصبية التلافيفية (CNN) هي نوع محدد من الذكاء الاصطناعي مصمم ليكون جيداً جداً في فهم الصور.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "الشبكات العصبية التلافيفية (CNNs) هي شبكات عصبية متخصصة تستخدم الالتفاف (Convolution) لتحليل الصور المرئية، مما يجعلها مثالية للتعرف على الصور."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التدريب (Training)",
+            "الحقب (Epochs)"
+        ],
+        "question": "عند تدريب الذكاء الاصطناعي، تسمى الدورة الكاملة الواحدة عبر مجموعة البيانات بأكملها:",
+        "choices": [
+            "عصر (Era)",
+            "حقبة (Epoch)",
+            "دهر (Eon)",
+            "حلقة (Episode)"
+        ],
+        "ans_idx": 1,
+        "justification": "الحقبة (Epoch) هي دورة كاملة واحدة عبر مجموعة بيانات التدريب الكاملة أثناء عملية تدريب التعلم الآلي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التزييف العميق (Deepfakes)",
+            "الشبكات التوليدية التنافسية (GANs)"
+        ],
+        "question": "غالباً ما يتم إنشاء التزييف العميق (Deepfakes) باستخدام اثنين من الذكاء الاصطناعي يتقاتلان ضد بعضهما البعض: أحدهما ينشئ التزييف، والآخر يحاول اكتشاف التزييف. يسمى هذا:",
+        "choices": [
+            "GAN (شبكة توليدية تنافسية - Generative Adversarial Network)",
+            "PVP (لاعب ضد لاعب)",
+            "WWE (محرك مصارعة)",
+            "CNN (شبكة تلافيفية)"
+        ],
+        "ans_idx": 0,
+        "justification": "تتكون الشبكات التوليدية التنافسية (GANs) من مولّد (Generator) (المُنشئ) ومميّز (Discriminator) (القاضي) يتنافسان، مما يؤدي إلى محتوى تم إنشاؤه واقعي للغاية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "علوم البيانات (Data Science)",
+            "الوسيط (Median)"
+        ],
+        "question": "________ هو الرقم 'الأوسط' في قائمة مرتبة من البيانات (على سبيل المثال، في [1، 3، 5، 7، 9]، يكون هو 5).",
+        "choices": [
+            "المتوسط (Average)",
+            "الوسيط (Median)",
+            "المنوال (Mode)",
+            "المجموع (Total)"
+        ],
+        "ans_idx": 1,
+        "justification": "الوسيط (Median) هو القيمة التي تفصل النصف الأعلى عن النصف الأدنى من عينة البيانات؛ إنها القيمة الوسطى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التعلم المعزز (Reinforcement Learning)",
+            "دالة المكافأة (Reward Function)"
+        ],
+        "question": "في التعلم المعزز (Reinforcement Learning)، كيف يعرف الذكاء الاصطناعي ما إذا كان قد قام بعمل جيد؟",
+        "choices": [
+            "يحصل على 'مكافأة' (نقاط) (Reward)",
+            "يحصل على كعكة",
+            "يرسل بريداً إلكترونياً",
+            "يخمن"
+        ],
+        "ans_idx": 0,
+        "justification": "تحدد دالة المكافأة (Reward Function) الهدف؛ يحاول الذكاء الاصطناعي تعظيم المكافأة التراكمية التي يتلقاها بمرور الوقت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "المنطق (Logic)",
+            "الثقة (Confidence)"
+        ],
+        "question": "انظر إلى هذا الكود الزائف:\n`if confidence < 0.5: ask_human_for_help()`\nما الذي يفعله هذا الذكاء الاصطناعي؟",
+        "choices": [
+            "إنه كسول",
+            "يتعامل مع عدم اليقين من خلال سؤال إنسان عندما لا يكون متأكداً",
+            "إنه يغلق التشغيل",
+            "يقوم بحذف البيانات"
+        ],
+        "ans_idx": 1,
+        "justification": "هذه استراتيجية 'إنسان في الحلقة' (Human-in-the-loop). إذا كانت درجة ثقة الذكاء الاصطناعي منخفضة (أقل من 50%)، فإنه يرجع إلى الإنسان للتأكد من الدقة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "البيانات (Data)",
+            "التطبيع (Normalization)"
+        ],
+        "question": "يعني قياس البيانات (Data Scaling) أو التطبيع (Normalization) تغيير جميع أرقامك لتكون على نفس المقياس (مثل 0 إلى 1) حتى يتعلم الذكاء الاصطناعي بشكل أفضل.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "يعدل التطبيع (Normalization) الأعمدة الرقمية في مجموعة البيانات إلى مقياس مشترك، مما يساعد الشبكات العصبية على التقارب (التعلم) بشكل أسرع."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "المعاملات (Parameters)",
+            "الأوزان (Weights)"
+        ],
+        "question": "داخل الشبكة العصبية، تحتوي الروابط بين الخلايا العصبية على أرقام تحدد مدى أهمية هذا الرابط. تسمى هذه الأرقام:",
+        "choices": [
+            "الأوزان (Weights)",
+            "الارتفاعات (Heights)",
+            "الأطوال (Lengths)",
+            "الأسعار (Prices)"
+        ],
+        "ans_idx": 0,
+        "justification": "الأوزان (Weights) هي المعاملات القابلة للتعلم في الشبكة العصبية والتي تحول بيانات الإدخال داخل طبقات الشبكة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التقييم (Evaluation)",
+            "مصفوفة الارتباك (Confusion Matrix)"
+        ],
+        "question": "للتحقق من الأماكن التي يرتكب فيها الذكاء الاصطناعي أخطاء (على سبيل المثال، الخلط بين الكلب والذئب)، يستخدم العلماء جدولاً يسمى:",
+        "choices": [
+            "جدول الضرب",
+            "الجدول الدوري",
+            "مصفوفة الارتباك (Confusion Matrix)",
+            "طاولة العشاء"
+        ],
+        "ans_idx": 2,
+        "justification": "مصفوفة الارتباك (Confusion Matrix) هي جدول يستخدم لوصف أداء نموذج التصنيف، حيث يظهر الإيجابيات الحقيقية والإيجابيات الكاذبة، وما إلى ذلك."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التعلم (Learning)",
+            "الضبط الدقيق (Fine-Tuning)"
+        ],
+        "question": "أخذ ذكاء اصطناعي يعرف بالفعل كيفية التحدث باللغة الإنجليزية وتدريبه قليلاً أكثر على المستندات *الطبية* يسمى ________.",
+        "choices": [
+            "إعادة التشغيل",
+            "الضبط الدقيق (Fine-Tuning)",
+            "المسح",
+            "التهيئة"
+        ],
+        "ans_idx": 1,
+        "justification": "يتضمن الضبط الدقيق (Fine-tuning) أخذ نموذج مدرب مسبقاً وتدريبه بشكل أكبر على مجموعة بيانات محددة لتكييفه لمهمة محددة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الروبوتات (Robotics)",
+            "المشغلات (Actuators)"
+        ],
+        "question": "تسمح أجهزة الاستشعار للروبوت بـ 'الشعور'، لكن ________ هي المحركات والأجزاء التي تسمح للروبوت بـ 'التحرك'.",
+        "choices": [
+            "المشغلات (Actuators)",
+            "الآلات الحاسبة",
+            "الشاشات",
+            "الأسلاك"
+        ],
+        "ans_idx": 0,
+        "justification": "المشغلات (Actuators) هي المكونات المسؤولة عن تحريك والتحكم في آلية أو نظام (مثل ذراع الروبوت أو العجلة)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الخوارزمية (Algorithm)",
+            "الصندوق الأسود (Black Box)"
+        ],
+        "question": "أحياناً، تسمى نماذج التعلم العميق بـ 'الصناديق السوداء' (Black Boxes). لماذا؟",
+        "choices": [
+            "لأنها مطلية باللون الأسود",
+            "لأنها معقدة لدرجة أنه حتى البشر لا يفهمون تماماً *كيف* توصلت إلى قرار معين",
+            "لأنها تعمل فقط في الليل",
+            "لأنها معطلة"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير مشكلة 'الصندوق الأسود' (Black Box) إلى نقص القابلية للتفسير في النماذج المعقدة؛ نرى المدخلات والمخرجات، لكن المنطق الداخلي غامض."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "البيانات (Data)",
+            "اصطناعية (Synthetic)"
+        ],
+        "question": "البيانات الاصطناعية (Synthetic Data) هي بيانات وهمية تم إنشاؤها بواسطة الكمبيوتر للمساعدة في تدريب الذكاء الاصطناعي عندما لا يكون لدينا ما يكفي من البيانات الحقيقية.",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "البيانات الاصطناعية (Synthetic data) هي معلومات تم إنشاؤها بشكل مصطنع تحاكي خصائص العالم الحقيقي، وتستخدم لزيادة مجموعات بيانات التدريب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الكود (Code)",
+            "الاستدلال (Inference)"
+        ],
+        "question": "عندما تنتهي من التدريب وتستخدم الذكاء الاصطناعي فعلياً لعمل تنبؤ على صورة جديدة، تسمى هذه المرحلة:",
+        "choices": [
+            "الاستدلال (Inference)",
+            "التدريب (Training)",
+            "النوم",
+            "التحميل"
+        ],
+        "ans_idx": 0,
+        "justification": "الاستدلال (Inference) هو المرحلة التي يتم فيها استخدام نموذج مدرب لاستنتاج/توقع قيم من بيانات حية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التحيز (Bias)",
+            "تاريخي (Historical)"
+        ],
+        "question": "إذا تعلم الذكاء الاصطناعي من كتب التاريخ المكتوبة قبل 100 عام، فقد يتعلم أن يكون متحيزاً جنسياً أو عنصرياً. لماذا؟",
+        "choices": [
+            "الذكاء الاصطناعي لئيم",
+            "يتعلم الذكاء الاصطناعي التحيزات التي كانت موجودة في البيانات البشرية التي تم تغذيته بها",
+            "الكمبيوتر معطل",
+            "كتب التاريخ فارغة"
+        ],
+        "ans_idx": 1,
+        "justification": "تعكس نماذج الذكاء الاصطناعي التحيزات الموجودة في بيانات التدريب الخاصة بها. غالباً ما تحتوي البيانات التاريخية على تحيزات اجتماعية من تلك الحقبة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "التعلم غير الخاضع للإشراف (Unsupervised Learning)",
+            "الشذوذ (Anomalies)"
+        ],
+        "question": "تستخدم البنوك الذكاء الاصطناعي للعثور على سرقة بطاقات الائتمان من خلال البحث عن أنماط غريبة لا تتطابق مع إنفاقك العادي. هذا هو ________ الشذوذ.",
+        "choices": [
+            "إنشاء (Creation)",
+            "كشف (Detection)",
+            "حذف (Deletion)",
+            "دفع (Payment)"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدد كشف الشذوذ (Anomaly Detection) نقاط البيانات التي تنحرف بشكل كبير عن المعيار، وغالباً ما يستخدم للكشف عن الاحتيال."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "المنطق (Logic)",
+            "الشروط (Conditions)"
+        ],
+        "question": "في شجرة القرار (Decision Tree) الخاصة بالذكاء الاصطناعي، يطرح الكمبيوتر سلسلة من أسئلة نعم/لا للعثور على الإجابة. هذا يشبه:",
+        "choices": [
+            "مخطط انسيابي (Flowchart)",
+            "دائرة",
+            "فيلم",
+            "خط مستقيم"
+        ],
+        "ans_idx": 0,
+        "justification": "تقسم أشجار القرار (Decision Trees) البيانات إلى فروع بناءً على الشروط، وتشبه بصرياً هيكل المخطط الانسيابي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "معالجة اللغات الطبيعية (NLP)",
+            "السياق (Context)"
+        ],
+        "question": "كلمة 'Bat' تعني شيئاً مختلفاً في البيسبول (مضرب) مقابل الكهف (خفاش). لكي يعرف الذكاء الاصطناعي أيهما تقصد، يحتاج إلى النظر في:",
+        "choices": [
+            "السياق (Context)",
+            "التهجئة",
+            "حجم الخط",
+            "اللون"
+        ],
+        "ans_idx": 0,
+        "justification": "يشير السياق (Context) إلى الكلمات والجمل المحيطة التي تساعد في توضيح معنى المصطلحات الغامضة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "بايثون (Python)",
+            "بانداس (Pandas)"
+        ],
+        "question": "في كود بايثون، يقوم `import pandas as pd` بتحميل مكتبة تستخدم لتنظيم البيانات في جداول (DataFrames).",
+        "choices": [
+            "صواب (True)",
+            "خطأ (False)"
+        ],
+        "ans_idx": 0,
+        "justification": "بانداس (Pandas) هي المكتبة الأساسية في بايثون لمعالجة البيانات وتحليلها، باستخدام هياكل مثل إطارات البيانات (DataFrames)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الأجهزة (Hardware)",
+            "وحدة معالجة الرسوميات (GPU)"
+        ],
+        "question": "لماذا يستخدم باحثو الذكاء الاصطناعي وحدات معالجة الرسوميات (GPUs) بدلاً من وحدات المعالجة المركزية (CPUs) فقط لتدريب النماذج؟",
+        "choices": [
+            "وحدات GPU لديها ألوان أفضل",
+            "وحدات GPU أفضل في القيام بآلاف المسائل الحسابية البسيطة في نفس الوقت (المعالجة المتوازية - Parallel Processing)",
+            "وحدات GPU أرخص",
+            "وحدات GPU لاسلكية"
+        ],
+        "ans_idx": 1,
+        "justification": "يتضمن تدريب الشبكة العصبية ضرب المصفوفات، وهو أمر قابل للتوازي بشكل كبير. تم تصميم وحدات GPU لهذا النوع الدقيق من الحساب المتوازي."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "الكود (Code)",
+            "المتغيرات (Variables)"
+        ],
+        "question": "في هذا الكود: `prediction = model.predict(new_data)`. الإجابة التي يعطيها الذكاء الاصطناعي مخزنة في المتغير المسمى ________.",
+        "choices": [
+            "model",
+            "predict",
+            "new_data",
+            "prediction"
+        ],
+        "ans_idx": 3,
+        "justification": "المتغير الموجود على الجانب الأيسر من علامة `=` (`prediction`) يخزن نتيجة استدعاء الدالة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تفكير الذكاء الاصطناعي (AI Thinking)",
+            "المستقبل (Future)",
+            "التفرد (Singularity)"
+        ],
+        "question": "اللحظة المستقبلية الافتراضية التي يصبح فيها الذكاء الاصطناعي أذكى من البشر ويحسن نفسه بشكل لا يمكن السيطرة عليه تسمى:",
+        "choices": [
+            "الانفجار العظيم (The Big Bang)",
+            "التفرد (The Singularity)",
+            "الإغلاق (The Shutdown)",
+            "الخلل (The Glitch)"
+        ],
+        "ans_idx": 1,
+        "justification": "التفرد التكنولوجي (Technological Singularity) هو نقطة زمنية افتراضية يصبح فيها النمو التكنولوجي غير قابل للسيطرة ولا رجعة فيه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+            "التحيز (Bias)",
+            "العدالة (Fairness)"
+        ],
+        "question": "إذا تم تدريب نظام ذكاء اصطناعي فقط على صور لعلماء من الرجال، فما الخطأ الذي قد يرتكبه؟",
+        "choices": [
+            "سيصبح عالماً",
+            "قد لا يتعرف على النساء كعلماء",
+            "سيعمل فقط في الليل",
+            "سيطلب معطف مختبر"
+        ],
+        "ans_idx": 1,
+        "justification": "هذا مثال على التحيز في بيانات التدريب. إذا لم ير الذكاء الاصطناعي أمثلة لمجموعات متنوعة، فلن يتعرف عليها بشكل صحيح."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+            "التزييف العميق (Deepfakes)",
+            "المعلومات المضللة (Misinformation)"
+        ],
+        "question": "التزييف العميق (Deepfakes) هي فيديوهات ينشئها الذكاء الاصطناعي لتبدو وكأن أشخاصاً يقولون أشياء لم يقولوها في الواقع.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يستخدم التزييف العميق التعلم العميق للتلاعب بالفيديو والصوت، مما يخلق وسائط مقنعة ولكنها ملفقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+            "الخصوصية (Privacy)",
+            "حماية البيانات (Data Protection)"
+        ],
+        "question": "لماذا من المهم حماية بياناتك الشخصية عند استخدام تطبيقات الذكاء الاصطناعي؟",
+        "choices": [
+            "لأن الذكاء الاصطناعي يجوع",
+            "لمنع الغرباء أو الشركات من معرفة الكثير عنك دون إذن",
+            "لكي تدوم بطارية هاتفك لفترة أطول",
+            "لجعل الإنترنت أسرع"
+        ],
+        "ans_idx": 1,
+        "justification": "الخصوصية هي مصدر قلق أخلاقي رئيسي ؛ يجب حماية البيانات الشخصية لمنع سوء الاستخدام أو التتبع غير المصرح به."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+            "المسؤولية (Responsibility)",
+            "الأمان (Safety)"
+        ],
+        "question": "يجب على المطورين التأكد من أن الذكاء الاصطناعي آمن و ________، مما يعني أنه يعامل الجميع بالتساوي ولا يسبب ضرراً.",
+        "choices": [
+            "سريع (Fast)",
+            "عادل (Fair)",
+            "غالي (Expensive)",
+            "صاخب (Loud)"
+        ],
+        "ans_idx": 1,
+        "justification": "العدالة مبدأ أساسي للذكاء الاصطناعي المسؤول، مما يضمن أن الأنظمة لا تميز ضد أي مجموعة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+            "القرارات (Decisions)",
+            "الاستقلالية (Autonomy)"
+        ],
+        "question": "من يجب أن يكون مسؤولاً إذا تعرضت سيارة ذاتية القيادة لحادث؟",
+        "choices": [
+            "السيارة نفسها",
+            "الراكب النائم في الخلف",
+            "هذه مسألة قانونية وأخلاقية معقدة لا تزال قيد المناقشة",
+            "الطريق"
+        ],
+        "ans_idx": 2,
+        "justification": "المسؤولية القانونية للأنظمة المستقلة هي تحدٍ أخلاقي وقانوني رئيسي لم يتم حله بعد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "تعلم الآلة (Machine Learning)",
+            "التدريب (Training)",
+            "البيانات (Data)"
+        ],
+        "question": "البيانات المستخدمة لتعليم نموذج الذكاء الاصطناعي في البداية تسمى بيانات ________.",
+        "choices": [
+            "الاختبار (Testing)",
+            "التدريب (Training)",
+            "خاطئة (False)",
+            "مكسورة (Broken)"
+        ],
+        "ans_idx": 1,
+        "justification": "بيانات التدريب هي مجموعة البيانات المستخدمة لتدريب النموذج، بينما تستخدم بيانات الاختبار لتقييمه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تعلم الآلة (Machine Learning)",
+            "فرط التخصيص (Overfitting)",
+            "التعميم (Generalization)"
+        ],
+        "question": "ماذا يحدث إذا حفظ الذكاء الاصطناعي بيانات التدريب الخاصة به بشكل مثالي ولكنه فشل في التعامل مع البيانات الجديدة؟",
+        "choices": [
+            "نقص التخصيص (Underfitting)",
+            "فرط التخصيص (Overfitting)",
+            "تخصيص مثالي (Perfect Fitting)",
+            "تعلم فائق (Super Learning)"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدث فرط التخصيص عندما يتعلم النموذج بيانات التدريب (بما في ذلك الضوضاء) جيداً لدرجة أنه لا يستطيع التعميم على بيانات جديدة غير مرئية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تعلم الآلة (Machine Learning)",
+            "التعلم المعزز (Reinforcement Learning)",
+            "الأنواع (Types)"
+        ],
+        "question": "الذكاء الاصطناعي الذي يتعلم لعب لعبة فيديو عن طريق التجربة والخطأ، والحصول على نقاط للفوز وخسارة نقاط للموت، يستخدم:",
+        "choices": [
+            "التعلم تحت الإشراف (Supervised Learning)",
+            "التعلم غير الخاضع للإشراف (Unsupervised Learning)",
+            "التعلم المعزز (Reinforcement Learning)",
+            "التعلم من الكتب (Book Learning)"
+        ],
+        "ans_idx": 2,
+        "justification": "يتضمن التعلم المعزز وكيلاً يتعلم اتخاذ القرارات من خلال أداء الإجراءات وتلقي المكافآت أو العقوبات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "تعلم الآلة (Machine Learning)",
+            "تحت الإشراف (Supervised)",
+            "غير خاضع للإشراف (Unsupervised)"
+        ],
+        "question": "في التعلم غير الخاضع للإشراف، يتم إعطاء الذكاء الاصطناعي بيانات بدون أي تسميات أو إجابات صحيحة ويجب عليه العثور على الأنماط بمفرده.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن التعلم غير الخاضع للإشراف العثور على الهياكل المخفية في البيانات غير المسماة (مثل التجميع)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "تعلم الآلة (Machine Learning)",
+            "البيانات (Data)",
+            "التسميات (Labels)"
+        ],
+        "question": "صورة لقطة مع كلمة 'قطة' مرفقة بها هي مثال على بيانات ________.",
+        "choices": [
+            "فوضوية (Messy)",
+            "موسومة (Labeled)",
+            "غير مرئية (Invisible)",
+            "صوتية (Audio)"
+        ],
+        "ans_idx": 1,
+        "justification": "توفر البيانات الموسومة 'الحقيقة الأساسية' أو مفتاح الإجابة ليتعلم النموذج منه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "علم البيانات (Data Science)",
+            "التصور (Visualization)",
+            "الرسوم البيانية (Charts)"
+        ],
+        "question": "أي مخطط هو الأفضل لإظهار أجزاء من الكل (مثل نسب إضافات البيتزا)؟",
+        "choices": [
+            "رسم بياني خطي (Line Graph)",
+            "مخطط دائري (Pie Chart)",
+            "مخطط مبعثر (Scatter Plot)",
+            "خريطة (Map)"
+        ],
+        "ans_idx": 1,
+        "justification": "تم تصميم المخططات الدائرية لتمثيل النسب أو النسب المئوية للكل."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "علم البيانات (Data Science)",
+            "التنظيف (Cleaning)",
+            "التحضير (Preparation)"
+        ],
+        "question": "تنظيف البيانات يعني غسل شاشة الكمبيوتر بالصابون والماء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "تنظيف البيانات هو عملية اكتشاف وتصحيح (أو إزالة) السجلات الفاسدة أو غير الدقيقة من مجموعة السجلات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "علم البيانات (Data Science)",
+            "الارتباط (Correlation)",
+            "المنطق (Logic)"
+        ],
+        "question": "مجرد أن مبيعات الآيس كريم وحروق الشمس تحدثان في الصيف لا يعني أن أكل الآيس كريم يسبب حروق الشمس. هذا يذكرنا بأن:",
+        "choices": [
+            "الارتباط لا يعني السببية (Correlation is not Causation)",
+            "الآيس كريم خطير",
+            "الصيف سيء",
+            "البيانات دائماً خاطئة"
+        ],
+        "ans_idx": 0,
+        "justification": "الارتباط يعني حدوث شيئين معاً؛ السببية تعني أن أحدهما يسبب الآخر. غالباً ما يتم الخلط بينهما."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "علم البيانات (Data Science)",
+            "القيم المتطرفة (Outliers)",
+            "الإحصاء (Statistics)"
+        ],
+        "question": "نقطة البيانات التي تختلف كثيراً عن جميع النقاط الأخرى (مثل عاصفة ثلجية في يوليو) تسمى ________.",
+        "choices": [
+            "متوسط (Average)",
+            "قيمة متطرفة (Outlier)",
+            "خطأ (Error)",
+            "خوارزمية (Algorithm)"
+        ],
+        "ans_idx": 1,
+        "justification": "القيمة المتطرفة هي نقطة بيانات تختلف بشكل كبير عن الملاحظات الأخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "علم البيانات (Data Science)",
+            "إخفاء الهوية (Anonymization)",
+            "الخصوصية (Privacy)"
+        ],
+        "question": "لحماية الخصوصية، يقوم علماء البيانات غالباً بإزالة الأسماء والعناوين من البيانات. تسمى هذه العملية:",
+        "choices": [
+            "الحذف (Deleting)",
+            "إخفاء الهوية (Anonymization)",
+            "القرصنة (Hacking)",
+            "البث (Broadcasting)"
+        ],
+        "ans_idx": 1,
+        "justification": "يزيل إخفاء الهوية المعلومات التعريفية الشخصية بحيث يظل الأشخاص الذين تصفهم البيانات مجهولي الهوية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الرؤية الحاسوبية (Computer Vision)",
+            "الصور (Images)",
+            "رقمي (Digital)"
+        ],
+        "question": "تتكون الصورة الرقمية من شبكة من المربعات الصغيرة تسمى ________.",
+        "choices": [
+            "ذرات (Atoms)",
+            "بكسلات (Pixels)",
+            "خلايا (Cells)",
+            "بايتات (Bytes)"
+        ],
+        "ans_idx": 1,
+        "justification": "البكسلات (عناصر الصورة) هي أصغر وحدة في الصورة الرقمية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الرؤية الحاسوبية (Computer Vision)",
+            "اكتشاف الكائنات (Object Detection)",
+            "مربع الإحاطة (Bounding Box)"
+        ],
+        "question": "اكتشاف الكائنات لا يتعرف فقط على ما هو موجود في الصورة ولكن أيضاً مكانه عن طريق رسم مربع حوله.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن اكتشاف الكائنات تحديد الكائنات وإيجاد موقعها (مربع الإحاطة) داخل الصورة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الرؤية الحاسوبية (Computer Vision)",
+            "التعرف على الوجه (Facial Recognition)",
+            "الأمان (Security)"
+        ],
+        "question": "ما هي التقنية التي تسمح لك بفتح هاتفك بمجرد النظر إليه؟",
+        "choices": [
+            "التحكم الصوتي",
+            "التعرف على الوجه (Facial Recognition)",
+            "مسح بصمات الأصابع",
+            "نظام تحديد المواقع (GPS)"
+        ],
+        "ans_idx": 1,
+        "justification": "يطابق التعرف على الوجه وجه المستخدم مع قالب مخزن لمنح الوصول."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الرؤية الحاسوبية (Computer Vision)",
+            "التجزئة (Segmentation)",
+            "التحليل (Analysis)"
+        ],
+        "question": "إذا قام الذكاء الاصطناعي بتلوين جميع بكسلات 'السماء' باللون الأزرق وجميع بكسلات 'العشب' باللون الأخضر في صورة ما، فإنه يقوم بـ:",
+        "choices": [
+            "تجزئة الصورة (Image Segmentation)",
+            "ضغط الصورة",
+            "حذف الصورة",
+            "طباعة الصورة"
+        ],
+        "ans_idx": 0,
+        "justification": "تقسم تجزئة الصورة الصورة إلى أجزاء (مجموعات من البكسلات)، وتصنف كل بكسل فعلياً."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الرؤية الحاسوبية (Computer Vision)",
+            "الفلاتر (Filters)",
+            "الواقع المعزز (Augmented Reality)"
+        ],
+        "question": "تستخدم ________ إنستغرام غالباً الرؤية الحاسوبية لتتبع وجهك وإضافة تأثيرات مثل النظارات الشمسية.",
+        "choices": [
+            "فلاتر (Filters)",
+            "تعليقات (Comments)",
+            "إعجابات (Likes)",
+            "منشورات (Posts)"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم الفلاتر (تحديداً فلاتر الواقع المعزز) اكتشاف ملامح الوجه لتراكب الرسومات بشكل صحيح."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "معالجة اللغات الطبيعية (NLP)",
+            "المشاعر (Sentiment)",
+            "العواطف (Emotions)"
+        ],
+        "question": "إذا قام الذكاء الاصطناعي بتحليل مراجعة لفيلم وقال إنها 'سلبية' لأنه وجد كلمات مثل 'ممل' و 'سيء'، فإنه يقوم بـ:",
+        "choices": [
+            "تدقيق إملائي",
+            "تحليل المشاعر (Sentiment Analysis)",
+            "عد الكلمات",
+            "ترجمة"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدد تحليل المشاعر ويستخرج المعلومات الذاتية (إيجابية/سلبية/محايدة) من المواد المصدر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "معالجة اللغات الطبيعية (NLP)",
+            "روبوتات الدردشة (Chatbots)",
+            "المحاكاة (Simulation)"
+        ],
+        "question": "روبوت الدردشة هو برنامج كمبيوتر مصمم لمحاكاة المحادثة مع المستخدمين البشر.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم روبوتات الدردشة NLP لفهم استفسارات المستخدم والاستجابة بطريقة محادثة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "معالجة اللغات الطبيعية (NLP)",
+            "الترجمة (Translation)",
+            "اللغات (Languages)"
+        ],
+        "question": "تستخدم ترجمة جوجل ________ الآلي (Machine Translation) لتحويل النص من لغة إلى أخرى.",
+        "choices": [
+            "ترجمة (Translation)",
+            "تعلم (Learning)",
+            "كتابة (Writing)",
+            "تحدث (Speaking)"
+        ],
+        "ans_idx": 0,
+        "justification": "الترجمة الآلية هي مجال فرعي من الذكاء الاصطناعي يركز على ترجمة النص أو الكلام من لغة إلى أخرى."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "معالجة اللغات الطبيعية (NLP)",
+            "المساعدات الصوتية (Voice Assistants)",
+            "التفاعل (Interaction)"
+        ],
+        "question": "أي مما يلي ليس مساعداً صوتياً ذكياً مشهوراً؟",
+        "choices": [
+            "سيري (Siri)",
+            "أليكسا (Alexa)",
+            "كورتانا (Cortana)",
+            "مايكروسوفت وورد (Microsoft Word)"
+        ],
+        "ans_idx": 3,
+        "justification": "مايكروسوفت وورد هو معالج نصوص، وليس مساعداً صوتياً، على الرغم من أنه قد يحتوي على بعض ميزات الذكاء الاصطناعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "معالجة اللغات الطبيعية (NLP)",
+            "الترميز (Tokenization)",
+            "المعالجة (Processing)"
+        ],
+        "question": "قبل أن يفهم الذكاء الاصطناعي الجملة، يقوم بتقسيمها إلى قطع أصغر (كلمات أو أجزاء من الكلمات) تسمى:",
+        "choices": [
+            "رموز (Tokens)",
+            "فتات (Crumbs)",
+            "بكسلات (Pixels)",
+            "أحرف (Letters)"
+        ],
+        "ans_idx": 0,
+        "justification": "الترميز هو عملية تقسيم دفق النص إلى كلمات أو عبارات أو رموز أو عناصر أخرى ذات مغزى تسمى الرموز."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الروبوتات (Robotics)",
+            "التعريف (Definition)",
+            "العتاد (Hardware)"
+        ],
+        "question": "ما الفرق الرئيسي بين آلة بسيطة (مثل محمصة الخبز) والروبوت؟",
+        "choices": [
+            "الروبوتات مصنوعة من المعدن",
+            "يمكن للروبوتات استشعار بيئتها، والتفكير (المعالجة)، والتصرف",
+            "محمصة الخبز أذكى",
+            "الروبوتات دائماً لها أرجل"
+        ],
+        "ans_idx": 1,
+        "justification": "يتم تعريف الروبوتات من خلال دورة الاستشعار والتفكير والتصرف، بينما تتبع الآلات البسيطة آلية ثابتة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الروبوتات (Robotics)",
+            "أجهزة الاستشعار (Sensors)",
+            "الإدخال (Input)"
+        ],
+        "question": "لقياس المسافة أو اكتشاف الجدران، يستخدم روبوت المكنسة الكهربائية ________، والتي تعمل مثل عينيه.",
+        "choices": [
+            "عجلات (Wheels)",
+            "أجهزة استشعار (Sensors)",
+            "فرش (Brushes)",
+            "مغناطيس (Magnets)"
+        ],
+        "ans_idx": 1,
+        "justification": "تسمح أجهزة الاستشعار للروبوتات بإدراك بيئتها المادية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الروبوتات (Robotics)",
+            "المشغلات (Actuators)",
+            "الحركة (Movement)"
+        ],
+        "question": "أي جزء من الروبوت مسؤول عن تحريك ذراعه أو عجلاته؟",
+        "choices": [
+            "المستشعر (The Sensor)",
+            "البطارية (The Battery)",
+            "المشغل / المحرك (The Actuator / Motor)",
+            "الكاميرا (The Camera)"
+        ],
+        "ans_idx": 2,
+        "justification": "تحول المشغلات (مثل المحركات أو الهيدروليكا) الطاقة إلى حركة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الروبوتات (Robotics)",
+            "القوانين (Laws)",
+            "السلامة (Safety)"
+        ],
+        "question": "ينص قانون الروبوتات الأول لإسحاق عظيموف على أن:",
+        "choices": [
+            "يجب على الروبوت دائماً أداء واجبه المنزلي",
+            "لا يجوز للروبوت أن يؤذي بشرياً أو يسمح بإيذاء بشري",
+            "يجب أن يتصرف الروبوت مثل البشر",
+            "يجب طلاء الروبوت باللون الأحمر"
+        ],
+        "ans_idx": 1,
+        "justification": "يؤكد القانون الأول على السلامة: منع الأذى عن البشر هو الأولوية القصوى."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الروبوتات (Robotics)",
+            "الروبوتات التعاونية (Cobots)",
+            "التعاون (Collaboration)"
+        ],
+        "question": "'الكوبوت (Cobot)' هو روبوت تعاوني مصمم للعمل بأمان جنباً إلى جنب مع البشر، على عكس الروبوتات الصناعية الخطرة الكبيرة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تم تجهيز الكوبوتات بأجهزة استشعار للإبطاء أو التوقف إذا لمست إنساناً، مما يسمح بالتعاون الآمن."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات الضخمة (Big Data)",
+            "الخصائص (Characteristics)",
+            "3Vs"
+        ],
+        "question": "غالباً ما توصف البيانات الضخمة بـ '3 Vs'. أي منها يعني 'مدى سرعة إنشاء البيانات'؟",
+        "choices": [
+            "الحجم (Volume)",
+            "التنوع (Variety)",
+            "السرعة (Velocity)",
+            "خضروات (Vegetables)"
+        ],
+        "ans_idx": 2,
+        "justification": "تشير السرعة (Velocity) إلى السرعة التي يتم بها إنشاء البيانات ومعالجتها."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات الضخمة (Big Data)",
+            "الحوسبة السحابية (Cloud Computing)",
+            "الإنترنت (Internet)"
+        ],
+        "question": "بدلاً من تخزين الملفات الضخمة على الكمبيوتر المحمول الخاص بك، يمكنك تخزينها على الإنترنت باستخدام الحوسبة ________.",
+        "choices": [
+            "السحابية (Cloud)",
+            "الممطرة (Rain)",
+            "السماوية (Sky)",
+            "الرياح (Wind)"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح الحوسبة السحابية بتخزين البيانات والبرامج والوصول إليها عبر الإنترنت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "البيانات الضخمة (Big Data)",
+            "البنية التحتية (Infrastructure)",
+            "العتاد (Hardware)"
+        ],
+        "question": "أين تعيش 'السحابة' فعلياً؟",
+        "choices": [
+            "في السماء",
+            "في مباني ضخمة مليئة بالخوادم تسمى مراكز البيانات",
+            "داخل هاتفك",
+            "في الفضاء الخارجي"
+        ],
+        "ans_idx": 1,
+        "justification": "مراكز البيانات هي مرافق مادية تضم الخوادم وأنظمة التخزين للخدمات السحابية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "البيانات الضخمة (Big Data)",
+            "التخزين (Storage)",
+            "السعة (Capacity)"
+        ],
+        "question": "تشغل رسالة نصية واحدة مساحة تخزين كبيرة مثل فيلم مدته ساعتان بدقة 4K.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "ملفات الفيديو (جيجابايت) أكبر بكثير من الملفات النصية البسيطة (بايت أو كيلوبايت)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "البيانات الضخمة (Big Data)",
+            "التحليل (Analysis)",
+            "التنقيب (Mining)"
+        ],
+        "question": "تُعرف عملية اكتشاف الأنماط في مجموعات البيانات الكبيرة باسم:",
+        "choices": [
+            "التنقيب في البيانات (Data Mining)",
+            "التنقيب عن الذهب",
+            "إخفاء البيانات",
+            "نوم البيانات"
+        ],
+        "ans_idx": 0,
+        "justification": "يتضمن التنقيب في البيانات استخدام الإحصائيات والذكاء الاصطناعي لاكتشاف الأنماط والعلاقات في البيانات الضخمة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "تاريخ الذكاء الاصطناعي (AI History)",
+            "الرواد (Pioneers)",
+            "تورينج (Turing)"
+        ],
+        "question": "يعتبر آلان تورينج أب علوم الكمبيوتر النظرية والذكاء الاصطناعي. ساعد في فك شفرة enigma خلال:",
+        "choices": [
+            "الحرب العالمية الأولى",
+            "الحرب العالمية الثانية",
+            "الحرب الأهلية",
+            "حروب الاستنساخ"
+        ],
+        "ans_idx": 1,
+        "justification": "كان عمل آلان تورينج في Bletchley Park خلال الحرب العالمية الثانية حاسماً في كسر شفرة Enigma الألمانية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "تاريخ الذكاء الاصطناعي (AI History)",
+            "الألعاب (Games)",
+            "الشطرنج (Chess)"
+        ],
+        "question": "في عام 1997، هزم كمبيوتر IBM المسمى Deep ________ بطل العالم في الشطرنج غاري كاسباروف.",
+        "choices": [
+            "Red (أحمر)",
+            "Blue (أزرق)",
+            "Green (أخضر)",
+            "White (أبيض)"
+        ],
+        "ans_idx": 1,
+        "justification": "كان Deep Blue أول نظام كمبيوتر يلعب الشطرنج يفوز بمباراة شطرنج ضد بطل عالم حالي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تاريخ الذكاء الاصطناعي (AI History)",
+            "الدورات (Cycles)",
+            "التمويل (Funding)"
+        ],
+        "question": "يطلق على الفترة الزمنية التي يختفي فيها الاهتمام والتمويل لأبحاث الذكاء الاصطناعي لأن الناس يشعرون بخيبة أمل من النتائج اسم:",
+        "choices": [
+            "صيف الذكاء الاصطناعي",
+            "شتاء الذكاء الاصطناعي (AI Winter)",
+            "حفلة الذكاء الاصطناعي",
+            "قيلولة الذكاء الاصطناعي"
+        ],
+        "ans_idx": 1,
+        "justification": "يشير شتاء الذكاء الاصطناعي إلى فترات انخفاض التمويل والاهتمام بأبحاث الذكاء الاصطناعي بعد فشل الضجيج في التحقق."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "تاريخ الذكاء الاصطناعي (AI History)",
+            "الرواد (Pioneers)",
+            "آدا لوفلايس (Ada Lovelace)"
+        ],
+        "question": "غالباً ما تعتبر آدا لوفلايس، التي عاشت في القرن التاسع عشر، أول مبرمجة كمبيوتر.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "كتبت أول خوارزمية تهدف إلى معالجتها بواسطة آلة (المحرك التحليلي لتشارلز باباج)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "تاريخ الذكاء الاصطناعي (AI History)",
+            "الأصول (Origins)",
+            "دارتموث (Dartmouth)"
+        ],
+        "question": "تمت صياغة مصطلح 'الذكاء الاصطناعي' لأول مرة في مؤتمر شهير عقد عام 1956 في:",
+        "choices": [
+            "عالم ديزني",
+            "كلية دارتموث (Dartmouth College)",
+            "هوجورتس",
+            "القمر"
+        ],
+        "ans_idx": 1,
+        "justification": "تعتبر ورشة عمل دارتموث على نطاق واسع الحدث التأسيسي للذكاء الاصطناعي كمجال."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "إنترنت الأشياء (IoT)",
+            "الاتصال (Connectivity)",
+            "الشبكة (Network)"
+        ],
+        "question": "IoT يرمز إلى إنترنت ________.",
+        "choices": [
+            "الهواتف",
+            "الأشياء (Things)",
+            "الأفكار",
+            "النمور"
+        ],
+        "ans_idx": 1,
+        "justification": "IoT (إنترنت الأشياء) يشير إلى شبكة الكائنات المادية المضمنة بأجهزة استشعار وبرامج."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "إنترنت الأشياء (IoT)",
+            "الأمثلة (Examples)",
+            "المنزل الذكي (Smart Home)"
+        ],
+        "question": "أي مما يلي يعد مثالاً على جهاز إنترنت الأشياء؟",
+        "choices": [
+            "صخرة عادية",
+            "مصباح ذكي يمكنك التحكم فيه بهاتفك",
+            "كتاب ورقي",
+            "كرسي خشبي"
+        ],
+        "ans_idx": 1,
+        "justification": "تتصل المصابيح الذكية بالإنترنت / الشبكة ليتم التحكم فيها عن بعد، مما يجعلها أجهزة إنترنت الأشياء."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "إنترنت الأشياء (IoT)",
+            "الأمن (Security)",
+            "المخاطر (Risks)"
+        ],
+        "question": "نظراً لأن أجهزة إنترنت الأشياء متصلة بالإنترنت، فمن المحتمل أن يتم اختراقها إذا لم يتم تأمينها بشكل صحيح.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يعد الأمان مصدر قلق كبير لإنترنت الأشياء؛ يمكن أن تكون الأجهزة غير الآمنة نقاط دخول للهجمات الإلكترونية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "النماذج اللغوية الكبيرة (LLMs)",
+            "روبوتات الدردشة (Chatbots)"
+        ],
+        "question": "ماذا يعني الاختصار 'LLM' في سياق أنظمة مثل ChatGPT؟",
+        "choices": [
+            "نموذج لغوي كبير (Large Language Model)",
+            "آلة تعلم طويلة",
+            "صانع منطق صغير",
+            "صانع ليمون ضائع"
+        ],
+        "ans_idx": 0,
+        "justification": "يرمز LLM إلى نموذج لغوي كبير، وهو نوع من الذكاء الاصطناعي مدرب على كميات هائلة من البيانات النصية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "توليد الصور (Image Generation)",
+            "الانتشار (Diffusion)"
+        ],
+        "question": "تعمل أدوات الذكاء الاصطناعي مثل Midjourney أو DALL-E على إنشاء ________ جديدة من الأوصاف النصية.",
+        "choices": [
+            "موسيقى",
+            "صور (Images)",
+            "طعام",
+            "سيارات"
+        ],
+        "ans_idx": 1,
+        "justification": "ينشئ الذكاء الاصطناعي التوليدي مثل DALL-E صوراً بناءً على مطالبات نصية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "الهلوسة (Hallucinations)",
+            "الأخطاء (Errors)"
+        ],
+        "question": "عندما يقدم الذكاء الاصطناعي إجابة خاطئة بثقة أو يختلق حقائق، يسمى هذا غالباً:",
+        "choices": [
+            "حلم",
+            "هلوسة (Hallucination)",
+            "كذب",
+            "نوم"
+        ],
+        "ans_idx": 1,
+        "justification": "تشير هلوسة الذكاء الاصطناعي إلى توليد مخرجات قد تبدو معقولة ولكنها غير صحيحة من الناحية الواقعية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "الإبداع (Creativity)",
+            "حقوق الطبع والنشر (Copyright)"
+        ],
+        "question": "إذا كتب الذكاء الاصطناعي قصيدة، فإنه يمتلك دائماً حقوق الطبع والنشر لتلك القصيدة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "قوانين حقوق الطبع والنشر للأعمال التي ينشئها الذكاء الاصطناعي معقدة، وعمومًا، لا يمكن للمبدعين غير البشر الاحتفاظ بحقوق الطبع والنشر في العديد من الولايات القضائية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "المطالبات (Prompts)",
+            "الإدخال (Input)"
+        ],
+        "question": "يسمى النص الذي تكتبه في ChatGPT لتخبره بما يجب القيام به:",
+        "choices": [
+            "سطر الأوامر",
+            "مطالبة (Prompt)",
+            "نصي",
+            "بريد إلكتروني"
+        ],
+        "ans_idx": 1,
+        "justification": "'المطالبة (Prompt)' هي استعلام الإدخال أو التعليمات المقدمة لنموذج ذكاء اصطناعي توليدي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "المكتبات (Libraries)",
+            "بانداس (Pandas)"
+        ],
+        "question": "أي مكتبة بايثون تستخدم بشكل شائع للعمل مع جداول البيانات (DataFrames)؟",
+        "choices": [
+            "Pandas",
+            "PyGame",
+            "Turtle",
+            "Requests"
+        ],
+        "ans_idx": 0,
+        "justification": "Pandas هي المكتبة القياسية لمعالجة البيانات وتحليلها في بايثون."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "المكتبات (Libraries)",
+            "NumPy"
+        ],
+        "question": "تم تصميم مكتبة بايثون 'NumPy' لإجراء عمليات حسابية على ________ كبيرة من الأرقام.",
+        "choices": [
+            "قوائم",
+            "مصفوفات (Arrays)",
+            "قواميس",
+            "أشجار"
+        ],
+        "ans_idx": 1,
+        "justification": "تتخصص NumPy في العمليات عالية الأداء على المصفوفات متعددة الأبعاد."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "التصور (Visualization)",
+            "Matplotlib"
+        ],
+        "question": "إذا كنت تريد رسم رسم بياني أو مخطط في بايثون، فأي مكتبة ستستخدم؟",
+        "choices": [
+            "Matplotlib",
+            "Math",
+            "Random",
+            "OS"
+        ],
+        "ans_idx": 0,
+        "justification": "Matplotlib هي مكتبة شاملة لإنشاء تصورات ثابتة ومتحركة وتفاعلية في بايثون."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "بايثون (Python)",
+            "بناء الجملة (Syntax)",
+            "المسافة البادئة (Indentation)"
+        ],
+        "question": "في بايثون، يعد استخدام المسافة البادئة الصحيحة (مسافات في بداية السطر) مطلوباً لكي يعمل الكود بشكل صحيح.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم بايثون المسافة البادئة لتحديد كتل التعليمات البرمجية (مثل داخل الحلقات أو الوظائف)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "بايثون (Python)",
+            "أطر عمل الذكاء الاصطناعي (AI Frameworks)",
+            "TensorFlow"
+        ],
+        "question": "أي مما يلي مكتبة مفتوحة المصدر شهيرة طورتها جوجل لبناء نماذج تعلم الآلة؟",
+        "choices": [
+            "TensorFlow",
+            "Excel",
+            "Photoshop",
+            "Chrome"
+        ],
+        "ans_idx": 0,
+        "justification": "TensorFlow هي منصة مفتوحة المصدر تستخدم على نطاق واسع لتعلم الآلة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "المحولات (Transformers)",
+            "البنية (Architecture)"
+        ],
+        "question": "يرمز 'GPT' في ChatGPT إلى ________ مدرب مسبقاً توليدي.",
+        "choices": [
+            "معلم",
+            "محول (Transformer)",
+            "مترجم",
+            "شاحنة"
+        ],
+        "ans_idx": 1,
+        "justification": "المحول (Transformer) هو بنية الشبكة العصبية التي أحدثت ثورة في البرمجة اللغوية العصبية الحديثة و LLMs."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "نقل الأسلوب (Style Transfer)",
+            "الفن (Art)"
+        ],
+        "question": "ماذا يسمى عندما يأخذ الذكاء الاصطناعي أسلوب لوحة (مثل فان جوخ) ويطبقه على صورة، مما يعيد رسمها فعلياً؟",
+        "choices": [
+            "نقل الأسلوب العصبي (Neural Style Transfer)",
+            "نسخ الفلتر",
+            "تحرير الصور",
+            "تتبع"
+        ],
+        "ans_idx": 0,
+        "justification": "يستخدم نقل الأسلوب العصبي لدمج صورتين معاً بحيث تبدو الصورة الناتجة مثل صورة المحتوى، ولكن 'مرسومة' بأسلوب الصورة المرجعية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "بايثون (Python)",
+            "Jupyter",
+            "أدوات (Tools)"
+        ],
+        "question": "ما اسم دفتر الملاحظات التفاعلي المستند إلى الويب والذي يستخدمه علماء البيانات غالباً لكتابة التعليمات البرمجية ورؤية النتائج فوراً؟",
+        "choices": [
+            "NotePad",
+            "Jupyter Notebook",
+            "WordPad",
+            "Sticky Notes"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم دفاتر Jupyter على نطاق واسع في علم البيانات للتحليل الاستكشافي والتصور."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "تكلفة التدريب (Training Cost)",
+            "البيئة (Environment)"
+        ],
+        "question": "يتطلب تدريب نموذج ذكاء اصطناعي ضخم مثل ChatGPT القليل جداً من الكهرباء.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "تدريب النماذج الكبيرة مكلف للغاية من الناحية الحسابية ويستهلك كميات هائلة من الطاقة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "متعدد الوسائط (Multimodal)",
+            "الأنواع (Types)"
+        ],
+        "question": "نموذج الذكاء الاصطناعي الذي يمكنه فهم كل من النص والصور (مثل النظر إلى صورة ووصفها) يسمى:",
+        "choices": [
+            "متعدد الوسائط (Multimodal)",
+            "ثنائي اللغة",
+            "رؤية مزدوجة",
+            "ذكي"
+        ],
+        "ans_idx": 0,
+        "justification": "يعالج الذكاء الاصطناعي متعدد الوسائط المعلومات من طرائق متعددة (نص، صور، صوت) ويربط بينها."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "بايثون (Python)",
+            "المتغيرات (Variables)",
+            "أنواع البيانات (Data Types)"
+        ],
+        "question": "في بايثون، إذا كتبت `x = 5`، فإن `x` هو ________ (عدد صحيح).",
+        "choices": [
+            "سلسلة نصية",
+            "عدد صحيح (Integer)",
+            "عائم",
+            "قائمة"
+        ],
+        "ans_idx": 1,
+        "justification": "الأعداد الصحيحة (Integers) هي أرقام كاملة بدون كسور عشرية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "الكود (Code)",
+            "الحلقات (Loops)"
+        ],
+        "question": "أي كلمة مفتاحية في بايثون تستخدم لتكرار كتلة من الكود عدة مرات؟",
+        "choices": [
+            "for",
+            "try",
+            "if",
+            "import"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم حلقة `for` (وحلقة `while`) للتكرار."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "التعلم العميق (Deep Learning)",
+            "GANs"
+        ],
+        "question": "تتكون كأن (GAN) من ذكاءين اصطناعيين يتنافسان ضد بعضهما البعض. أحدهما يصنع التزييف، والآخر:",
+        "choices": [
+            "يحذفها",
+            "يحاول اكتشاف ما إذا كانت مزيفة",
+            "يصفق",
+            "يطبعها"
+        ],
+        "ans_idx": 1,
+        "justification": "في GAN، ينشئ المولد البيانات ويحاول المميز التمييز بين البيانات الحقيقية والبيانات المزيفة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "الأخطاء (Errors)",
+            "تصحيح الأخطاء (Debugging)"
+        ],
+        "question": "يعني 'خطأ في بناء الجملة (Syntax Error)' أن الكمبيوتر تعطل بسبب ارتفاع درجة الحرارة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "يعني خطأ بناء الجملة أن الكود ينتهك القواعد النحوية لغة البرمجة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "البيانات (Data)",
+            "السلاسل النصية (Strings)"
+        ],
+        "question": "يجب أن يكون النص في كود بايثون محاطاً بعلامات ________.",
+        "choices": [
+            "استفهام",
+            "اقتباس (Quotation)",
+            "تعجب",
+            "مربع"
+        ],
+        "ans_idx": 1,
+        "justification": "يتم تعريف السلاسل النصية (Strings) باستخدام علامات اقتباس مفردة أو مزدوجة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "النص (Text)",
+            "التطبيقات (Applications)"
+        ],
+        "question": "أي مما يلي يعد استخداماً شائعاً للذكاء الاصطناعي المولد للنصوص؟",
+        "choices": [
+            "كتابة مسودات البريد الإلكتروني",
+            "غسل الأطباق",
+            "قيادة السيارة",
+            "تثبيت النوافذ"
+        ],
+        "ans_idx": 0,
+        "justification": "تتميز LLMs بصياغة محتوى نصي مثل رسائل البريد الإلكتروني والمقالات والملخصات."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "بايثون (Python)",
+            "الشروط (Conditionals)",
+            "المنطق (Logic)"
+        ],
+        "question": "ماذا تفعل عبارة `if` في الكود؟",
+        "choices": [
+            "تتخذ قراراً بناءً على شرط",
+            "توقف البرنامج",
+            "تدور إلى الأبد",
+            "تستورد مكتبة"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح عبارات `if` للبرنامج بتنفيذ كتل تعليمات برمجية معينة فقط إذا كان شرط معين صحيحاً."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "الصوت (Voice)",
+            "الاستنساخ (Cloning)"
+        ],
+        "question": "يمكن للذكاء الاصطناعي الآن استنساخ صوت شخص ما ببضع ثوانٍ فقط من التسجيل الصوتي.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تطورت تقنية استنساخ الصوت إلى الحد الذي يمكن فيه للعينات القصيرة توليد كلام اصطناعي واقعي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "بايثون (Python)",
+            "الوظائف (Functions)",
+            "النمطية (Modularity)"
+        ],
+        "question": "كتلة قابلة لإعادة الاستخدام من التعليمات البرمجية تؤدي مهمة محددة تسمى:",
+        "choices": [
+            "وظيفة (Function)",
+            "متغير",
+            "حلقة",
+            "تعليق"
+        ],
+        "ans_idx": 0,
+        "justification": "تسمح الوظائف (Functions) بإعادة استخدام الكود وتنظيمه."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الذكاء الاصطناعي التوليدي (GenAI)",
+            "الضبط الدقيق (Fine-Tuning)",
+            "التدريب (Training)"
+        ],
+        "question": "أخذ نموذج ذكاء اصطناعي مدرب مسبقاً وتدريبه بشكل أكبر على موضوع معين (مثل السجلات الطبية) يسمى ________.",
+        "choices": [
+            "البدء من جديد",
+            "الضبط الدقيق (Fine-tuning)",
+            "محو",
+            "كسر"
+        ],
+        "ans_idx": 1,
+        "justification": "يعدل الضبط الدقيق معلمات نموذج مدرب مسبقاً ليناسب مهمة أو مجموعة بيانات محددة بشكل أفضل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الخلايا العصبية (Neurons)",
+            "البنية (Structure)"
+        ],
+        "question": "تتكون الشبكة العصبية من طبقات من وحدات الحوسبة الصغيرة تسمى:",
+        "choices": [
+            "خلايا عصبية (أو عقد)",
+            "بروتونات",
+            "خلايا",
+            "بكسلات"
+        ],
+        "ans_idx": 0,
+        "justification": "الخلايا العصبية الاصطناعية هي الوحدات الأساسية للشبكة العصبية، وتحاكي الخلايا العصبية البيولوجية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الطبقات (Layers)",
+            "الإدخال (Input)"
+        ],
+        "question": "الطبقة الأولى من الشبكة العصبية التي تتلقى البيانات الخام (مثل بكسلات الصورة) تسمى طبقة ________.",
+        "choices": [
+            "الإخراج",
+            "المخفية",
+            "الإدخال (Input)",
+            "العليا"
+        ],
+        "ans_idx": 2,
+        "justification": "طبقة الإدخال هي نقطة دخول البيانات إلى الشبكة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الطبقات المخفية (Hidden Layers)",
+            "المعالجة (Processing)"
+        ],
+        "question": "الطبقات الموجودة بين طبقتي الإدخال والإخراج حيث يحدث 'السحر' والحساب تسمى:",
+        "choices": [
+            "طبقات سرية",
+            "طبقات مخفية (Hidden Layers)",
+            "أرض وسطى",
+            "طبقات مظلمة"
+        ],
+        "ans_idx": 1,
+        "justification": "تقوم الطبقات المخفية بالحسابات الوسيطة واستخراج الميزات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "التعلم العميق (Deep Learning)",
+            "العمق (Depth)"
+        ],
+        "question": "'التعلم العميق' هو مجرد اسم للشبكات العصبية التي تحتوي على العديد من الطبقات المخفية (العميقة).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يشير التعلم العميق إلى الشبكات العصبية ذات الطبقات المخفية المتعددة (غالباً ما تكون كثيرة)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الأوزان (Weights)",
+            "المعلمات (Parameters)"
+        ],
+        "question": "يتم تمثيل قوة الاتصال بين نورونين برقم يسمى:",
+        "choices": [
+            "وزن (Weight)",
+            "ارتفاع",
+            "نغمة",
+            "كتلة"
+        ],
+        "ans_idx": 0,
+        "justification": "تحدد الأوزان أهمية أو تأثير مخرجات إحدى الخلايا العصبية على مدخلات الخلية العصبية التالية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "دالة التنشيط (Activation Function)",
+            "ReLU"
+        ],
+        "question": "تقرر دالة ________ (مثل ReLU أو Sigmoid) ما إذا كان يجب 'إطلاق' الخلية العصبية أم البقاء غير نشطة.",
+        "choices": [
+            "تنشيط (Activation)",
+            "إضافة",
+            "رسوم متحركة",
+            "عمل"
+        ],
+        "ans_idx": 0,
+        "justification": "تقدم دوال التنشيط اللاخطية وتقرر إخراج الخلية العصبية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "التدريب (Training)",
+            "الانتشار العكسي (Backpropagation)"
+        ],
+        "question": "عملية الرجوع عبر الشبكة لإصلاح الأخطاء وضبط الأوزان تسمى:",
+        "choices": [
+            "الشقلبة الخلفية",
+            "الانتشار العكسي (Backpropagation)",
+            "الرجوع للخلف",
+            "تراجع"
+        ],
+        "ans_idx": 1,
+        "justification": "الانتشار العكسي هو الخوارزمية المستخدمة لحساب التدرجات وتحديث الأوزان لتقليل الخطأ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "دالة الخسارة (Loss Function)",
+            "الخطأ (Error)"
+        ],
+        "question": "ما الذي يقيس مدى 'خطأ' تنبؤ الذكاء الاصطناعي مقارنة بالإجابة الصحيحة؟",
+        "choices": [
+            "دالة الخسارة (Loss Function)",
+            "لوحة النتائج",
+            "المعلم",
+            "المسطرة"
+        ],
+        "ans_idx": 0,
+        "justification": "تحدد دالة الخسارة الفرق بين الإخراج المتوقع والهدف الفعلي."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "CNN",
+            "الصور (Images)"
+        ],
+        "question": "الشبكة العصبية التلافيفية (CNN) هي نوع خاص من الذكاء الاصطناعي جيد جداً في فهم الصور.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم شبكات CNN عمليات الالتفاف لمعالجة البيانات الشبيهة بالشبكة مثل الصور بشكل فعال."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الحقبة (Epoch)",
+            "التدريب (Training)"
+        ],
+        "question": "تمريرة كاملة واحدة عبر مجموعة بيانات التدريب بأكملها تسمى ________.",
+        "choices": [
+            "عصر",
+            "حقبة (Epoch)",
+            "ساعة",
+            "حدث"
+        ],
+        "ans_idx": 1,
+        "justification": "تمثل الحقبة (Epoch) تكراراً كاملاً واحداً على بيانات التدريب."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "معدل التعلم (Learning Rate)",
+            "المعلمات الفائقة (Hyperparameters)"
+        ],
+        "question": "يتحكم 'معدل التعلم (Learning Rate)' في:",
+        "choices": [
+            "مدى سرعة دوران مروحة الكمبيوتر",
+            "مدى كبر الخطوة التي يتخذها النموذج عند ضبط أوزانه",
+            "كم عدد الكتب التي يقرأها الذكاء الاصطناعي",
+            "تكلفة الكهرباء"
+        ],
+        "ans_idx": 1,
+        "justification": "يحدد معدل التعلم حجم الخطوة في كل تكرار أثناء التحرك نحو الحد الأدنى لدالة الخسارة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "RNN",
+            "التسلسل (Sequence)"
+        ],
+        "question": "أي نوع من الشبكات العصبية هو الأفضل للبيانات المتسلسلة مثل النصوص أو السلاسل الزمنية؟",
+        "choices": [
+            "RNN (Recurrent Neural Network)",
+            "CNN",
+            "KNN",
+            "ABC"
+        ],
+        "ans_idx": 0,
+        "justification": "تختلف شبكات RNN عن شبكات التغذية الأمامية بوجود حلقات تغذية راجعة، مما يجعلها مناسبة للبيانات المتسلسلة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الصندوق الأسود (Black Box)",
+            "قابلة التفسير (Explainability)"
+        ],
+        "question": "غالباً ما تسمى الشبكات العصبية 'الصناديق السوداء' لأنه من السهل معرفة كيف اتخذت قراراً معيناً بالضبط.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "خطأ. تسمى الصناديق السوداء لأن عملية صنع القرار الداخلية الخاصة بها معقدة وغامضة، مما يجعل من الصعب شرحها."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "التجميع (Pooling)",
+            "CNN"
+        ],
+        "question": "في CNN، تستخدم طبقة 'التجميع (Pooling)' لـ:",
+        "choices": [
+            "إضافة ماء",
+            "تقليص حجم الصورة لتقليل الحساب (اختزال)",
+            "جعل الصورة ملونة",
+            "حذف الصورة"
+        ],
+        "ans_idx": 1,
+        "justification": "تعمل طبقات التجميع على تقليل الأبعاد المكانية لتمثيل الإدخال."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "التشبيه (Analogy)",
+            "علم الأحياء (Biology)"
+        ],
+        "question": "الشبكات العصبية الاصطناعية مستوحاة من ________ البشري.",
+        "choices": [
+            "قلب",
+            "دماغ (Brain)",
+            "رئتين",
+            "أقدام"
+        ],
+        "ans_idx": 1,
+        "justification": "هيكل ووظيفة ANNs مستوحاة بيولوجياً من الدماغ."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الانحدار المتدرج (Gradient Descent)",
+            "التحسين (Optimization)"
+        ],
+        "question": "الانحدار المتدرج (Gradient Descent) يشبه:",
+        "choices": [
+            "تسلق جبل",
+            "المشي أسفل واد للعثور على أدنى نقطة",
+            "الطيران في طائرة",
+            "السباحة في مسبح"
+        ],
+        "ans_idx": 1,
+        "justification": "الانحدار المتدرج هو خوارزمية تحسين تستخدم للعثور على الحد الأدنى للدالة ('أدنى نقطة' للخطأ)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "الاستبعاد (Dropout)",
+            "التنظيم (Regularization)"
+        ],
+        "question": "تقنية تسمى 'الاستبعاد (Dropout)' تقوم بإيقاف تشغيل بعض الخلايا العصبية عشوائياً أثناء التدريب لـ:",
+        "choices": [
+            "توفير الكهرباء",
+            "منع فرط التخصيص (Overfitting)",
+            "جعل الذكاء الاصطناعي ينسى",
+            "تبريد وحدة المعالجة المركزية"
+        ],
+        "ans_idx": 1,
+        "justification": "الاستبعاد هو تقنية تنظيم تمنع فرط التخصيص عن طريق منع التكيفات المشتركة المعقدة على بيانات التدريب."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الشبكات العصبية (Neural Networks)",
+            "التصنيف (Classification)",
+            "الإخراج (Output)"
+        ],
+        "question": "بالنسبة لمصنف بسيط 'قطة مقابل كلب'، عادة ما تحتوي طبقة الإخراج على نيرونين (واحد للقط، وواحد للكلب).",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "في مشكلة التصنيف متعدد الفئات، تحتوي طبقة الإخراج عادةً على عقدة واحدة لكل فئة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الزراعة (Agriculture)",
+            "الطائرات بدون طيار (Drones)"
+        ],
+        "question": "كيف تساعد الطائرات بدون طيار التي تعمل بالذكاء الاصطناعي المزارعين؟",
+        "choices": [
+            "عن طريق إخافة كل الطيور",
+            "من خلال مراقبة صحة المحاصيل ورش المياه/الدواء فقط عند الحاجة",
+            "بأكل الحشرات",
+            "عن طريق حرث الحقول في الليل"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم الزراعة الدقيقة طائرات بدون طيار تعمل بالذكاء الاصطناعي لتحليل ظروف الحقل وتحسين استخدام الموارد."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "المالية (Finance)",
+            "الاحتيال (Fraud)"
+        ],
+        "question": "تستخدم البنوك الذكاء الاصطناعي للكشف عن المعاملات ________ مثل شخص يسرق معلومات بطاقتك الائتمانية.",
+        "choices": [
+            "الاحتيالية (Fraudulent)",
+            "السعيدة",
+            "السريعة",
+            "البطيئة"
+        ],
+        "ans_idx": 0,
+        "justification": "تحلل أنظمة الذكاء الاصطناعي أنماط المعاملات في الوقت الفعلي للإبلاغ عن النشاط المشبوه أو الاحتيالي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "البيئة (Environment)",
+            "المناخ (Climate)"
+        ],
+        "question": "يساعد الذكاء الاصطناعي العلماء على مكافحة تغير المناخ من خلال:",
+        "choices": [
+            "جعل الشمس أكثر برودة",
+            "تحليل بيانات الأقمار الصناعية لتتبع إزالة الغابات وذوبان الجليد",
+            "صنع المزيد من البلاستيك",
+            "إطفاء جميع المصابيح"
+        ],
+        "ans_idx": 1,
+        "justification": "يعالج الذكاء الاصطناعي كميات هائلة من البيانات البيئية لنمذجة الاتجاهات المناخية ومراقبة التغييرات."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "التسوق (Shopping)",
+            "التوصيات (Recommendations)"
+        ],
+        "question": "تستخدم المتاجر عبر الإنترنت الذكاء الاصطناعي لاقتراح منتجات قد تعجبك بناءً على ما اشتريته من قبل.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "محركات التوصية هي تطبيق كلاسيكي للذكاء الاصطناعي في التجارة الإلكترونية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الفضاء (Space)",
+            "علم الفلك (Astronomy)"
+        ],
+        "question": "يساعد الذكاء الاصطناعي علماء الفلك على اكتشاف كواكب جديدة (كواكب خارجية) من خلال:",
+        "choices": [
+            "النظر من خلال التلسكوب يدوياً",
+            "تحليل الانخفاض الطفيف في سطوع النجوم عندما يمر كوكب أمامها (طريقة العبور)",
+            "الطيران إلى هناك",
+            "التخمين"
+        ],
+        "ans_idx": 1,
+        "justification": "تحلل خوارزميات الذكاء الاصطناعي منحنيات الضوء من التلسكوبات لتحديد عبور الكواكب الخارجية المحتملة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الرعاية الصحية (Healthcare)",
+            "الأدوية (Drugs)"
+        ],
+        "question": "يسرع الذكاء الاصطناعي اكتشاف ________ جديدة من خلال التنبؤ بكيفية تفاعل الجزيئات مع الفيروسات.",
+        "choices": [
+            "كواكب",
+            "أدوية (Medicines)",
+            "ألعاب",
+            "أطعمة"
+        ],
+        "ans_idx": 1,
+        "justification": "يسرع الذكاء الاصطناعي اكتشاف الأدوية من خلال محاكاة التفاعلات الجزيئية، مما يوفر سنوات من العمل المعملي."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "النقل (Transportation)",
+            "المرور (Traffic)"
+        ],
+        "question": "كيف تستخدم خرائط جوجل الذكاء الاصطناعي؟",
+        "choices": [
+            "لرسم الخريطة",
+            "للتنبؤ بالازدحام المروري وإيجاد أسرع طريق",
+            "لقيادة سيارتك",
+            "لالتقاط الصور"
+        ],
+        "ans_idx": 1,
+        "justification": "يحلل الذكاء الاصطناعي بيانات حركة المرور في الوقت الفعلي من ملايين المستخدمين لتحسين التوجيه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الترفيه (Entertainment)",
+            "الأفلام (Movies)"
+        ],
+        "question": "في الأفلام، يستخدم الذكاء الاصطناعي لـ:",
+        "choices": [
+            "كتابة نصوص أفضل فقط",
+            "إنشاء شخصيات CGI واقعية وإزالة الشيخوخة من الممثلين",
+            "بيع التذاكر",
+            "تنظيف السينما"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم المؤثرات البصرية القائمة على الذكاء الاصطناعي لالتقاط الحركة، وإزالة الشيخوخة، وإنشاء بيئات رقمية واقعية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "وسائل التواصل الاجتماعي (Social Media)",
+            "التصفية (Filtering)"
+        ],
+        "question": "تستخدم تطبيقات الوسائط الاجتماعية الذكاء الاصطناعي للكشف التلقائي عن التنمر أو التعليقات البغيضة وحظرها.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يقوم الذكاء الاصطناعي للإشراف على المحتوى بمسح النصوص والصور بحثاً عن انتهاكات السياسة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "التعليم (Education)",
+            "المعلمون (Tutors)"
+        ],
+        "question": "________ الذكاء الاصطناعي هم مساعدون دراسيون مخصصون يمكنهم شرح مسائل الرياضيات خطوة بخطوة.",
+        "choices": [
+            "معلمو (Tutors)",
+            "أصدقاء",
+            "أعداء",
+            "لاعبو"
+        ],
+        "ans_idx": 0,
+        "justification": "يتكيف معلمو الذكاء الاصطناعي مع وتيرة تعلم الطالب ويقدمون إرشادات مخصصة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الرياضة (Sports)",
+            "التحليلات (Analytics)"
+        ],
+        "question": "في الرياضات مثل كرة القدم أو كرة السلة، يحلل الذكاء الاصطناعي لقطات الفيديو لـ:",
+        "choices": [
+            "المشاهدة للمتعة",
+            "تتبع حركات اللاعبين وإحصائيات الاستراتيجية",
+            "تشجيع الفريق",
+            "بيع النقانق"
+        ],
+        "ans_idx": 1,
+        "justification": "تتتبع الرؤية الحاسوبية مقاييس أداء اللاعب لمساعدة المدربين على اتخاذ قرارات استراتيجية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "إمكانية الوصول (Accessibility)",
+            "الإعاقة (Disability)"
+        ],
+        "question": "تطبيقات الذكاء الاصطناعي التي تصف المناطق المحيطة للمكفوفين تستخدم:",
+        "choices": [
+            "الرؤية الحاسوبية (Computer Vision)",
+            "الروبوتات",
+            "السحر",
+            "الموجات الصوتية"
+        ],
+        "ans_idx": 0,
+        "justification": "يمكن لتقنيات الرؤية الحاسوبية سرد العالم المرئي للمستخدمين ضعاف البصر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الطاقة (Energy)",
+            "الشبكة (Grid)"
+        ],
+        "question": "يساعد الذكاء الاصطناعي في إدارة شبكات الطاقة الكهربائية لمنع انقطاع التيار الكهربائي من خلال التنبؤ باستخدام الطاقة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم الشبكات الذكية الذكاء الاصطناعي لموازنة العرض والطلب، ودمج مصادر الطاقة المتجددة بكفاءة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "اللغة (Language)",
+            "الترجمة (Translation)"
+        ],
+        "question": "تسمح سماعات الأذن للترجمة الفورية للأشخاص الذين يتحدثون لغات مختلفة بالتحدث. هذا يستخدم:",
+        "choices": [
+            "تحويل الكلام إلى نص والترجمة الآلية",
+            "تحرير الفيديو",
+            "بث الموسيقى",
+            "نظام تحديد المواقع (GPS)"
+        ],
+        "ans_idx": 0,
+        "justification": "يجمع بين التعرف على الكلام والترجمة وتوليف تحويل النص إلى كلام."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الألعاب (Gaming)",
+            "شخصيات غير قابلة للعب (NPC)"
+        ],
+        "question": "في ألعاب الفيديو، يتحكم الذكاء الاصطناعي في ________ (الشخصيات غير القابلة للعب) التي تتفاعل معك.",
+        "choices": [
+            "اللاعبين",
+            "NPCs",
+            "وحدات التحكم",
+            "أجهزة التحكم"
+        ],
+        "ans_idx": 1,
+        "justification": "الشخصيات غير القابلة للعب (NPCs) هي شخصيات اللعبة التي يتحكم فيها منطق الذكاء الاصطناعي للكمبيوتر."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الأمن السيبراني (Cybersecurity)",
+            "التصيد الاحتيالي (Phishing)"
+        ],
+        "question": "يساعد الذكاء الاصطناعي مزودي البريد الإلكتروني في حظر رسائل 'التصيد الاحتيالي'. التصيد الاحتيالي هو:",
+        "choices": [
+            "الذهاب للصيد على متن قارب",
+            "رسائل بريد إلكتروني احتيالية تحاول سرقة كلمة مرورك",
+            "حذف رسائل البريد الإلكتروني القديمة",
+            "إرسال الصور"
+        ],
+        "ans_idx": 1,
+        "justification": "يتضمن التصيد الاحتيالي رسائل بريد إلكتروني خادعة تهدف إلى خداع المستخدمين للكشف عن معلومات حساسة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "التصنيع (Manufacturing)",
+            "الجودة (Quality)"
+        ],
+        "question": "تستخدم الكاميرات الموجودة على خطوط تجميع المصانع الذكاء الاصطناعي لـ:",
+        "choices": [
+            "التقاط صور سيلفي للعمال",
+            "اكتشاف العيوب أو الأجزاء المكسورة في المنتجات",
+            "مشاهدة الأفلام",
+            "إطفاء الأنوار"
+        ],
+        "ans_idx": 1,
+        "justification": "تستخدم أنظمة الفحص البصري الذكاء الاصطناعي لاكتشاف عيوب التصنيع بشكل أسرع وأكثر دقة من البشر."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الموسيقى (Music)",
+            "التأليف (Composition)"
+        ],
+        "question": "يمكن للذكاء الاصطناعي الآن تأليف مقاطع موسيقية أصلية بأساليب مختلفة مثل الجاز أو البوب.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يمكن لنماذج الذكاء الاصطناعي التوليدية تأليف الموسيقى من خلال تعلم الأنماط من مجموعات البيانات الصوتية الهائلة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "المدن الذكية (Smart Cities)",
+            "النفايات (Waste)"
+        ],
+        "question": "في المدينة الذكية، يمكن لأجهزة استشعار الذكاء الاصطناعي في سلات القمامة إخبار شاحنات القمامة:",
+        "choices": [
+            "نكات",
+            "عندما تكون ممتلئة وتحتاج إلى تفريغها",
+            "ما بداخلها",
+            "لا شيء"
+        ],
+        "ans_idx": 1,
+        "justification": "تعمل إدارة النفايات الذكية على تحسين طرق الجمع بناءً على مستويات الملء، مما يوفر الوقود والوقت."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "القانون (Law)",
+            "العقود (Contracts)"
+        ],
+        "question": "يستخدم المحامون الذكاء الاصطناعي لمسح آلاف ________ بسرعة للعثور على بنود مهمة.",
+        "choices": [
+            "الصور",
+            "العقود (Contracts)",
+            "الوصفات",
+            "الأحذية"
+        ],
+        "ans_idx": 1,
+        "justification": "تراجع أدوات الذكاء الاصطناعي القانونية العقود والمستندات القانونية لاستخراج المعلومات والمخاطر الرئيسية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "خدمة العملاء (Customer Service)",
+            "الدعم (Support)"
+        ],
+        "question": "عندما تتصل بشركة وتتحدث إلى روبوت يفهم ما تقوله، فهذا:",
+        "choices": [
+            "استجابة صوتية تفاعلية (IVR) مع ذكاء اصطناعي",
+            "جهاز رد آلي",
+            "راديو",
+            "مكالمة مقلب"
+        ],
+        "ans_idx": 0,
+        "justification": "تستخدم أنظمة IVR الحديثة الذكاء الاصطناعي للمحادثة لفهم وحل استفسارات العملاء."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الموضة (Fashion)",
+            "التصميم (Design)"
+        ],
+        "question": "تستخدم العلامات التجارية للأزياء الذكاء الاصطناعي للتنبؤ بالاتجاهات القادمة وتصميم ملابس جديدة.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "يحلل الذكاء الاصطناعي وسائل التواصل الاجتماعي وبيانات المبيعات للتنبؤ باتجاهات الموضة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "اللوجستيات (Logistics)",
+            "التوصيل (Delivery)"
+        ],
+        "question": "تستخدم شركات توصيل الطلبات الذكاء الاصطناعي لـ:",
+        "choices": [
+            "القيادة ببطء",
+            "حساب الطريق الأكثر كفاءة للسائقين لتوفير الوقود",
+            "تضييع الطرود",
+            "طلاء الشاحنات"
+        ],
+        "ans_idx": 1,
+        "justification": "توفر خوارزميات تحسين المسار التكاليف وتحسن أوقات التسليم."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "شخصي (Personal)",
+            "مساعدون (Assistants)"
+        ],
+        "question": "سيري وأليكسا أمثلة على المساعدين ________ الشخصيين.",
+        "choices": [
+            "للتسوق",
+            "الرقميين (Digital)",
+            "القيادة",
+            "الطبخ"
+        ],
+        "ans_idx": 1,
+        "justification": "تساعد المساعدات الرقمية الافتراضية (PDAs) في المهام اليومية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "التطبيقات (Applications)",
+            "الصحافة (Journalism)",
+            "الأخبار (News)"
+        ],
+        "question": "تستخدم الصحافة الآلية الذكاء الاصطناعي لكتابة تقارير إخبارية بسيطة حول موضوعات مثل:",
+        "choices": [
+            "آراء سياسية معقدة",
+            "النتائج الرياضية وتحديثات سوق الأسهم",
+            "رسائل حب",
+            "روايات"
+        ],
+        "ans_idx": 1,
+        "justification": "يستخدم الذكاء الاصطناعي على نطاق واسع لإنشاء تقارير روتينية بناءً على البيانات المنظمة (الرياضة، التمويل)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "المنطق (Logic)",
+            "الخوارزمية (Algorithm)",
+            "الفرز (Sorting)"
+        ],
+        "question": "إذا كان لديك مجموعة من البطاقات وتريد ترتيبها من 1 إلى 10، فإن الطريقة المتدرجة التي تستخدمها تسمى:",
+        "choices": [
+            "أمنية",
+            "خوارزمية فرز (Sorting Algorithm)",
+            "خدعة بالبطاقات",
+            "خلط"
+        ],
+        "ans_idx": 1,
+        "justification": "خوارزميات الفرز (مثل Bubble Sort أو Merge Sort) هي إجراءات محددة لطلب العناصر."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "ثنائي (Binary)",
+            "البيانات (Data)"
+        ],
+        "question": "في النهاية، تفهم أجهزة الكمبيوتر رقمين فقط، 0 و 1. يسمى هذا النظام الكود ________.",
+        "choices": [
+            "مورس",
+            "الثنائي (Binary)",
+            "السري",
+            "العشري"
+        ],
+        "ans_idx": 1,
+        "justification": "يمثل الكود الثنائي النص أو تعليمات المعالج أو أي بيانات أخرى باستخدام نظام من رمزين."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "كلمة المرور (Password)",
+            "الأمان (Safety)"
+        ],
+        "question": "أي من هؤلاء هي أقوى كلمة مرور؟",
+        "choices": [
+            "123456",
+            "password",
+            "Tr0ub4dor&3",
+            "myname"
+        ],
+        "ans_idx": 2,
+        "justification": "تستخدم كلمات المرور القوية مزيجاً من الأحرف الكبيرة والصغيرة والأرقام والرموز وليست كلمات يسهل تخمينها."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "البرامج الضارة (Malware)",
+            "الفيروس (Virus)"
+        ],
+        "question": "فيروس الكمبيوتر هو جرثومة بيولوجية تجعل الكمبيوتر المحمول يعطس.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "فيروس الكمبيوتر هو برنامج ضار يتم تحميله على كمبيوتر المستخدم دون علمه."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "المخطط الانسيابي (Flowchart)",
+            "الرسم التخطيطي (Diagram)"
+        ],
+        "question": "الرسم التخطيطي الذي يستخدم الأشكال والسهام لإظهار خطوات عملية أو خوارزمية يسمى:",
+        "choices": [
+            "المخطط الانسيابي (Flowchart)",
+            "مخطط دائري",
+            "لوحة",
+            "خريطة"
+        ],
+        "ans_idx": 0,
+        "justification": "تمثل المخططات الانسيابية بيانياً تدفق البيانات أو الخطوات في الخوارزمية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "القرصنة (Hacking)",
+            "القبعة البيضاء (White Hat)"
+        ],
+        "question": "قرصان القبعة ________ هو 'شخص جيد' يخترق الأنظمة للعثور على ثغرات أمنية مشروعة لإصلاحها.",
+        "choices": [
+            "السوداء",
+            "البيضاء (White)",
+            "الحمراء",
+            "الزرقاء"
+        ],
+        "ans_idx": 1,
+        "justification": "يعمل قراصنة القبعة البيضاء على زيادة الأمان من خلال العثور على نقاط الضعف قبل الأشرار."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "المنطق (Logic)",
+            "بوليان (Boolean)",
+            "المعاملات (Operators)"
+        ],
+        "question": "في المنطق، إذا كان A صحيحاً و B خاطئاً، فما هو 'A و B'؟",
+        "choices": [
+            "صواب",
+            "خطأ",
+            "ربما",
+            "كلاهما"
+        ],
+        "ans_idx": 1,
+        "justification": "يرجع عامل التشغيل AND القيمة True فقط إذا كان كلا المعاملين True."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "الهوية (Identity)",
+            "MFA"
+        ],
+        "question": "المصادقة الثنائية (2FA) أكثر أماناً لأنها:",
+        "choices": [
+            "تتطلب كلمتي مرور",
+            "تتطلب كلمة مرور وشيئاً آخر (مثل رمز مرسل إلى هاتفك)",
+            "تستغرق وقتاً أطول بمرتين",
+            "مجانية"
+        ],
+        "ans_idx": 1,
+        "justification": "تضيف المصادقة متعددة العوامل (MFA) طبقة من الأمان من خلال طلب نوعين مختلفين من التعريف."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "حلقة لا نهائية (Infinite Loop)",
+            "خطأ برمجي (Bug)"
+        ],
+        "question": "'الحلقة اللانهائية' هي جزء من الكود يستمر في العمل إلى الأبد ولا يتوقف أبداً.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تحدث الحلقات اللانهائية عندما لا يتم استيفاء شرط إنهاء الحلقة أبداً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "الهندسة الاجتماعية (Social Engineering)",
+            "الناس (People)"
+        ],
+        "question": "خداع شخص ما للتخلي عن كلمة المرور الخاصة به من خلال التظاهر بأنه دعم فني يسمى:",
+        "choices": [
+            "الهندسة الاجتماعية (Social Engineering)",
+            "القرصنة",
+            "البرمجة",
+            "تصحيح الأخطاء"
+        ],
+        "ans_idx": 0,
+        "justification": "تعتمد الهندسة الاجتماعية على التلاعب بالناس بدلاً من القرصنة التقنية."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "المنطق (Logic)",
+            "التشفير (Encryption)",
+            "سري (Secret)"
+        ],
+        "question": "يسمى خلط البيانات بحيث لا يتمكن سوى الأشخاص الذين لديهم مفتاح سري من قراءتها ________.",
+        "choices": [
+            "الحذف",
+            "التشفير (Encryption)",
+            "الرسم",
+            "الفرز"
+        ],
+        "ans_idx": 1,
+        "justification": "يحول التشفير المعلومات إلى رمز سري لمنع الوصول غير المصرح به."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "VPN",
+            "الخصوصية (Privacy)"
+        ],
+        "question": "ماذا تفعل VPN (الشبكة الخاصة الافتراضية)؟",
+        "choices": [
+            "تسرع الإنترنت الخاص بك",
+            "تخفي موقعك وتشفر حركة المرور الخاصة بك على الإنترنت",
+            "تحميل الأفلام",
+            "تحجب الإعلانات"
+        ],
+        "ans_idx": 1,
+        "justification": "تخلق شبكات VPN نفقاً آمناً ومشفرً لبياناتك وتخفي عنوان IP الخاص بك."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "المنطق (Logic)",
+            "العودية (Recursion)",
+            "البرمجة (Programming)"
+        ],
+        "question": "عندما تستدعي دالة نفسها لحل مشكلة، يسمى هذا:",
+        "choices": [
+            "تكرار",
+            "عودية (Recursion)",
+            "انعكاس",
+            "رفض"
+        ],
+        "ans_idx": 1,
+        "justification": "العودية هي طريقة يعتمد فيها حل المشكلة على حلول لمثيلات أصغر من نفس المشكلة."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "واي فاي (Wi-Fi)",
+            "عام (Public)"
+        ],
+        "question": "من الآمن تماماً إجراء معاملاتك المصرفية عبر الإنترنت على شبكة Wi-Fi عامة مجانية في مقهى بدون VPN.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 1,
+        "justification": "غالباً ما تكون شبكة Wi-Fi العامة غير آمنة، مما يسمح للمتسللين باعتراض البيانات الحساسة المحتملة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "تصحيح الأخطاء (Debugging)",
+            "التاريخ (History)"
+        ],
+        "question": "كان أول 'خطأ (Bug)' كمبيوتر حرفياً:",
+        "choices": [
+            "عنكبوت",
+            "عثة عالقة في مرحل",
+            "بابة",
+            "دودة"
+        ],
+        "ans_idx": 1,
+        "justification": "في عام 1947، وجدت جريس هوبر عثة محاصرة في مرحل لجهاز كمبيوتر Harvard Mark II."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "جدار الحماية (Firewall)",
+            "الدفاع (Defense)"
+        ],
+        "question": "يعمل ________ كحاجز حارس أمن بين جهاز الكمبيوتر الخاص بك والإنترنت.",
+        "choices": [
+            "الباب",
+            "جدار الحماية (Firewall)",
+            "النافذة",
+            "السقف"
+        ],
+        "ans_idx": 1,
+        "justification": "يراقب جدار الحماية ويتحكم في حركة مرور الشبكة الواردة والصادرة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "التحسين (Optimization)",
+            "الكفاءة (Efficiency)"
+        ],
+        "question": "إذا كنت ترغب في العثور على أسرع طريق للمنزل أثناء حركة المرور، فأنت تريد خوارزمية تكون:",
+        "choices": [
+            "إبداعية",
+            "محسنة (Optimized)",
+            "مضحكة",
+            "بطيئة"
+        ],
+        "ans_idx": 1,
+        "justification": "يتضمن التحسين اختيار أفضل عنصر (أقصر مسار) من مجموعة من البدائل المتاحة."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "برامج الفدية (Ransomware)",
+            "هجوم (Attack)"
+        ],
+        "question": "تسمى البرامج الضارة التي تقفل ملفاتك وتطلب المال لفتحها:",
+        "choices": [
+            "برامج الفدية (Ransomware)",
+            "برامج التجسس",
+            "برامج الإعلانات",
+            "برامج مجانية"
+        ],
+        "ans_idx": 0,
+        "justification": "تقوم برامج الفدية بتشفير ملفات الضحية، وتطلب الدفع مقابل مفتاح فك التشفير."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "حتمي (Deterministic)",
+            "يمكن التنبؤ به (Predictable)"
+        ],
+        "question": "ستنتج الخوارزمية 'الحتمية' دائماً نفس الناتج بالضبط إذا تم إعطاؤها نفس المدخلات.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "حتمي يعني أنه لا توجد عشوائية؛ العملية يمكن التنبؤ بها تماماً."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "التحديثات (Updates)",
+            "التصحيح (Patching)"
+        ],
+        "question": "لماذا يجب عليك تحديث برنامج هاتفك أو جهاز الكمبيوتر الخاص بك عندما يطلب منك ذلك؟",
+        "choices": [
+            "لتغيير الألوان",
+            "لإصلاح الثغرات الأمنية (التصحيحات) والحفاظ على سلامته",
+            "لإبطائه",
+            "لاستخدام المزيد من البطارية"
+        ],
+        "ans_idx": 1,
+        "justification": "غالباً ما تحتوي تحديثات البرامج على تصحيحات أمنية مهمة للحماية من التهديدات الجديدة."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "المنطق (Logic)",
+            "التجريد (Abstraction)",
+            "التعقيد (Complexity)"
+        ],
+        "question": "إخفاء التفاصيل المعقدة وراء واجهة بسيطة (مثل عجلة القيادة التي تخفي محرك السيارة) يسمى ________.",
+        "choices": [
+            "إخفاء",
+            "التجريد (Abstraction)",
+            "للكذب",
+            "زخرفة"
+        ],
+        "ans_idx": 1,
+        "justification": "التجريد هو مفهوم أساسي في علوم الكمبيوتر، حيث يدير التعقيد عن طريق إخفاء التفاصيل."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "شبكات الروبوت (Botnets)",
+            "الزومبي (Zombies)"
+        ],
+        "question": "مجموعة من أجهزة الكمبيوتر المخترقة التي يتحكم فيها مهاجم واحد لمهاجمة موقع ويب تسمى:",
+        "choices": [
+            "جيش الروبوتات",
+            "شبكة الروبوتات (Botnet)",
+            "تعاونية",
+            "حفلة"
+        ],
+        "ans_idx": 1,
+        "justification": "شبكة الروبوتات (Botnet) هي شبكة من الأجهزة المخترقة ('الزومبي') التي يتحكم فيها سيد الروبوت."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 3,
+        "concepts": [
+            "المنطق (Logic)",
+            "التعقيد (Complexity)",
+            "Big O"
+        ],
+        "question": "يقيس علماء الكمبيوتر مدى سرعة الخوارزمية باستخدام شيء يسمى:",
+        "choices": [
+            "تدوين بيج أوه (Big O Notation)",
+            "تدوين سريع",
+            "عداد السرعة",
+            "ساعة توقيت"
+        ],
+        "ans_idx": 0,
+        "justification": "يصف تدوين Big O أداء أو تعقيد الخوارزمية."
+    },
+    {
+        "question_type": "true_false",
+        "track": "AI & Data Science",
+        "difficulty_level": 1,
+        "concepts": [
+            "الأمن السيبراني (Cybersecurity)",
+            "النسخ الاحتياطي (Backup)",
+            "البيانات (Data)"
+        ],
+        "question": "يعني نسخ بياناتك احتياطياً حفظ نسخة منها في مكان آمن ثانٍ.",
+        "choices": [
+            "صواب",
+            "خطأ"
+        ],
+        "ans_idx": 0,
+        "justification": "تضمن النسخ الاحتياطية توفر البيانات في حالة فقدان البيانات الأصلية."
+    },
+    {
+        "question_type": "mcq",
+        "track": "AI & Data Science",
+        "difficulty_level": 2,
+        "concepts": [
+            "المنطق (Logic)",
+            "الشرط (Conditional)",
+            "التدفق (Flow)"
+        ],
+        "question": "في المخطط الانسيابي، يمثل الشكل الماسي عادةً:",
+        "choices": [
+            "بداية / نهاية",
+            "قرار (نعم / لا)",
+            "عملية",
+            "إدخال / إخراج"
+        ],
+        "ans_idx": 1,
+        "justification": "الأشكال الماسية في المخططات الانسيابية هي رموز قياسية للقرارات."
+    }
+]

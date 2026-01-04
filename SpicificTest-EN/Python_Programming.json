@@ -1,0 +1,4096 @@
+[
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Surveys",
+            "Data Collection"
+        ],
+        "question": "You ask all your classmates, 'What is your favorite ice cream flavor?' and write down their answers. This activity is called doing a ________.",
+        "choices": [
+            "Test",
+            "Survey",
+            "Guess",
+            "Race"
+        ],
+        "ans_idx": 1,
+        "justification": "A survey is a method of gathering information (data) by asking people questions."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Data",
+            "Definition"
+        ],
+        "question": "In data analysis, 'Data' is just another word for information, like numbers, words, or measurements that we collect.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Data refers to raw facts and statistics collected for reference or analysis."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Bar Chart"
+        ],
+        "question": "Which type of chart uses tall rectangular bars to show which item has the most votes (the tallest bar)?",
+        "choices": [
+            "Pie Chart",
+            "Bar Chart",
+            "Map",
+            "Word Cloud"
+        ],
+        "ans_idx": 1,
+        "justification": "Bar charts use the height (or length) of bars to visually compare quantities of different categories."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Sorting",
+            "Organization"
+        ],
+        "question": "If you arrange a list of names from A to Z, you are ________ the data.",
+        "choices": [
+            "Deleting",
+            "Sorting",
+            "Hiding",
+            "Drawing"
+        ],
+        "ans_idx": 1,
+        "justification": "Sorting is the process of arranging data in a specific order, such as alphabetically or numerically."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Pie Chart"
+        ],
+        "question": "Which chart looks like a pizza cut into slices, showing how a whole thing is divided into parts?",
+        "choices": [
+            "Line Graph",
+            "Bar Chart",
+            "Pie Chart",
+            "Ruler"
+        ],
+        "ans_idx": 2,
+        "justification": "A Pie Chart is a circular graphic divided into slices to illustrate numerical proportion."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Spreadsheets",
+            "Cells"
+        ],
+        "question": "In a spreadsheet program like Excel or Google Sheets, the little rectangular box where you type a number is called a:",
+        "choices": [
+            "Cell",
+            "Room",
+            "Cage",
+            "Pocket"
+        ],
+        "ans_idx": 0,
+        "justification": "A Cell is the intersection of a row and a column in a spreadsheet where data is entered."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Counting",
+            "Tally"
+        ],
+        "question": "A 'Tally Chart' uses simple marks (like ||||) to help you count things quickly while you are collecting data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Tally marks are a unary numeral system used for counting, grouping marks by five for easy reading."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Reading Data"
+        ],
+        "question": "If the 'Pizza' bar is taller than the 'Burger' bar on a chart, what does that mean?",
+        "choices": [
+            "Burgers are tastier",
+            "More people voted for Pizza than Burgers",
+            "Pizza costs more money",
+            "The chart is broken"
+        ],
+        "ans_idx": 1,
+        "justification": "In a bar chart, a taller bar represents a higher value or frequency (more votes)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Spreadsheets",
+            "Columns"
+        ],
+        "question": "In a table, the lines of data that go up and down (vertical) are called ________.",
+        "choices": [
+            "Rows",
+            "Columns",
+            "Floors",
+            "Paragraphs"
+        ],
+        "ans_idx": 1,
+        "justification": "Columns run vertically (up and down), while Rows run horizontally (left to right)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Data Types",
+            "Numbers"
+        ],
+        "question": "Which of these is an example of 'Quantitative' data (data that is a number)?",
+        "choices": [
+            "The color of your eyes",
+            "The name of your pet",
+            "Your height in centimeters",
+            "Your favorite song"
+        ],
+        "ans_idx": 2,
+        "justification": "Quantitative data deals with numbers and things you can measure. Height is a measurement (number)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Titles"
+        ],
+        "question": "Every good chart should have a 'Title' at the top to tell people what the chart is about.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "A title is essential context; without it, the viewer does not know what data is being presented."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Tables",
+            "Organization"
+        ],
+        "question": "A list of students and their grades organized in a grid with rows and columns is called a:",
+        "choices": [
+            "Story",
+            "Table",
+            "Painting",
+            "Circle"
+        ],
+        "ans_idx": 1,
+        "justification": "A table is a structured arrangement of data in rows and columns."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Line Graph"
+        ],
+        "question": "If you want to show how a plant grew taller over 10 days, which chart connects dots with a line to show the growth?",
+        "choices": [
+            "Pie Chart",
+            "Line Graph",
+            "Map",
+            "Sticker Book"
+        ],
+        "ans_idx": 1,
+        "justification": "Line graphs are used to track changes over short and long periods of time."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Spreadsheets",
+            "Rows"
+        ],
+        "question": "In a spreadsheet, the lines that go side-to-side (horizontal) like a sentence are called ________.",
+        "choices": [
+            "Columns",
+            "Rows",
+            "Towers",
+            "Ladders"
+        ],
+        "ans_idx": 1,
+        "justification": "Rows run horizontally across the table."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Comparisons",
+            "Maximum"
+        ],
+        "question": "If you are looking at a list of game scores: 10, 50, 20, 90. Which number is the 'Maximum' (the biggest)?",
+        "choices": [
+            "10",
+            "50",
+            "20",
+            "90"
+        ],
+        "ans_idx": 3,
+        "justification": "Maximum refers to the highest value in a dataset."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Data Types",
+            "Text"
+        ],
+        "question": "Data can be words, not just numbers. For example, a list of 'Favorite Colors' is data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Qualitative (or Categorical) data describes qualities or characteristics using words (e.g., Red, Blue, Green)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Legend"
+        ],
+        "question": "On a map or a chart, what is the little box called that explains what the colors or symbols mean?",
+        "choices": [
+            "The Legend / Key",
+            "The Door",
+            "The Secret",
+            "The Password"
+        ],
+        "ans_idx": 0,
+        "justification": "A Legend (or Key) lists the variables appearing in the chart and the symbol/color used to represent them."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Observation",
+            "Counting"
+        ],
+        "question": "You stand by the road and count how many red cars vs. blue cars go by. This is collecting data by:",
+        "choices": [
+            "Observation",
+            "Asking the cars",
+            "Guessing",
+            "Reading a book"
+        ],
+        "ans_idx": 0,
+        "justification": "Observation involves monitoring and recording behavior or events as they happen."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Comparison",
+            "Minimum"
+        ],
+        "question": "The 'Minimum' is the ________ number in a group of numbers.",
+        "choices": [
+            "Smallest",
+            "Biggest",
+            "Middle",
+            "Total"
+        ],
+        "ans_idx": 0,
+        "justification": "Minimum refers to the lowest value in a dataset."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Tools",
+            "Spreadsheets"
+        ],
+        "question": "Which computer program is most famous for making tables and charts?",
+        "choices": [
+            "Microsoft Word",
+            "Microsoft Excel / Google Sheets",
+            "Paint",
+            "Fortnite"
+        ],
+        "ans_idx": 1,
+        "justification": "Excel and Google Sheets are spreadsheet software designed specifically for organizing and analyzing data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Visuals"
+        ],
+        "question": "Charts are useful because they make it easier to see patterns in data than just looking at a huge list of messy numbers.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Data visualization transforms raw data into visual context, making patterns, trends, and outliers easier to spot."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Axes"
+        ],
+        "question": "In a bar chart, the line at the bottom (horizontal) and the line at the side (vertical) are called the:",
+        "choices": [
+            "Axes (X and Y)",
+            "Edges",
+            "Fences",
+            "Walls"
+        ],
+        "ans_idx": 0,
+        "justification": "The X-axis (horizontal) and Y-axis (vertical) frame the chart and define the scale of measurement."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Patterns",
+            "Trends"
+        ],
+        "question": "If you look at a line graph of your height and the line keeps going UP, what does that mean?",
+        "choices": [
+            "You are getting shorter",
+            "You are staying the same size",
+            "You are growing taller",
+            "You are turning into a tree"
+        ],
+        "ans_idx": 2,
+        "justification": "An upward trend in a line graph indicates an increase in the value being measured over time."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Math",
+            "Total"
+        ],
+        "question": "To find the 'Total' number of apples you have, you ________ all the apples together.",
+        "choices": [
+            "Subtract",
+            "Divide",
+            "Add",
+            "Delete"
+        ],
+        "ans_idx": 2,
+        "justification": "Summing or Adding values gives you the total count or quantity."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Sources",
+            "Trust"
+        ],
+        "question": "Why is it important to know where your data came from?",
+        "choices": [
+            "To make sure it is true and trustworthy",
+            "It doesn't matter",
+            "So you can delete it",
+            "Because numbers are scary"
+        ],
+        "ans_idx": 0,
+        "justification": "Data source reliability is crucial; data from untrustworthy sources can be incorrect, leading to wrong conclusions."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Pictographs"
+        ],
+        "question": "A chart that uses little pictures (like a picture of an apple) to represent numbers is called a:",
+        "choices": [
+            "Pictograph",
+            "Photograph",
+            "Bar Graph",
+            "Line Graph"
+        ],
+        "ans_idx": 0,
+        "justification": "Pictographs use icons or images to represent data values, making them easy to read."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Charts",
+            "Axes"
+        ],
+        "question": "On a standard graph, the Y-axis is the line that goes horizontal (left to right).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "The Y-axis is vertical (up and down). The X-axis is horizontal (left to right)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Spreadsheets",
+            "Data Point"
+        ],
+        "question": "A single piece of information, like one person's vote in a survey, is often called a Data ________.",
+        "choices": [
+            "Dot",
+            "Point",
+            "Square",
+            "Line"
+        ],
+        "ans_idx": 1,
+        "justification": "A 'Data Point' is a discrete unit of information."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Math",
+            "Subtraction"
+        ],
+        "question": "If the 'Pizza' bar is at 10 votes and the 'Salad' bar is at 2 votes, how many more votes did Pizza get?",
+        "choices": [
+            "12",
+            "5",
+            "8",
+            "20"
+        ],
+        "ans_idx": 2,
+        "justification": "You find the difference by subtracting: 10 - 2 = 8."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Surveys",
+            "Sample"
+        ],
+        "question": "If you want to know what the whole school thinks, but you only ask 5 people, your 'Sample Size' is:",
+        "choices": [
+            "Too big",
+            "Perfect",
+            "Very small",
+            "Invisible"
+        ],
+        "ans_idx": 2,
+        "justification": "A sample size of 5 is likely too small to represent an entire school accurately."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Mean"
+        ],
+        "question": "What is the 'Mean' of these numbers: 2, 3, 4? (Hint: Add them up and divide by how many there are).",
+        "choices": [
+            "2",
+            "3",
+            "9",
+            "4"
+        ],
+        "ans_idx": 1,
+        "justification": "2 + 3 + 4 = 9. There are 3 numbers. 9 divided by 3 is 3."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Mode"
+        ],
+        "question": "The number that appears most often in a list is called the ________. (Example: in 1, 2, 2, 5, the answer is 2).",
+        "choices": [
+            "Average",
+            "Mode",
+            "Range",
+            "Median"
+        ],
+        "ans_idx": 1,
+        "justification": "The Mode is the value that appears most frequently in a data set."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Formulas"
+        ],
+        "question": "In a spreadsheet, which formula would you use to add up all the numbers in cells A1 to A5?",
+        "choices": [
+            "=ADD(A1:A5)",
+            "=SUM(A1:A5)",
+            "=PLUS(A1:A5)",
+            "=COUNT(A1:A5)"
+        ],
+        "ans_idx": 1,
+        "justification": "`=SUM()` is the standard spreadsheet function to add a range of cells."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Outliers"
+        ],
+        "question": "If you have a list of ages: 10, 11, 12, and 100. The number 100 will pull the 'Average' up higher than it should be.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Outliers (extreme values) significantly affect the Mean (average), often making it not represent the 'typical' value very well."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Range"
+        ],
+        "question": "To find the 'Range' of a dataset, what math do you do?",
+        "choices": [
+            "Average the numbers",
+            "Subtract the smallest number from the biggest number",
+            "Add them all up",
+            "Pick the middle number"
+        ],
+        "ans_idx": 1,
+        "justification": "The Range is the difference between the Maximum and Minimum values (Max - Min)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Sorting"
+        ],
+        "question": "If you sort a list of numbers from 'Ascending' order, how will they look?",
+        "choices": [
+            "Biggest to Smallest (10, 9, 8...)",
+            "Smallest to Biggest (1, 2, 3...)",
+            "Random",
+            "Alphabetical"
+        ],
+        "ans_idx": 1,
+        "justification": "Ascending means going up, starting from the lowest value and increasing to the highest."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Median"
+        ],
+        "question": "The ________ is the number exactly in the middle of a sorted list.",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Total"
+        ],
+        "ans_idx": 1,
+        "justification": "The Median is the middle value separating the greater and lesser halves of a data set."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Correlation",
+            "Logic"
+        ],
+        "question": "If a study shows that 'Students who study more hours get better grades', this is an example of:",
+        "choices": [
+            "A Negative Correlation",
+            "A Positive Correlation",
+            "No Correlation",
+            "Bad Luck"
+        ],
+        "ans_idx": 1,
+        "justification": "Positive correlation means as one variable increases (study time), the other variable also increases (grades)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Percentages"
+        ],
+        "question": "In a Pie Chart, if you add up the percentages of all the slices, it should equal 100%.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "A Pie Chart represents a whole, so the sum of its parts (slices) must equal 100%."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Bias",
+            "Surveys"
+        ],
+        "question": "You want to find out what the 'Favorite Food' of all kids is, but you only survey kids inside a McDonald's. Why is this data bad?",
+        "choices": [
+            "It is 'Biased' because those kids likely prefer burgers",
+            "McDonald's is too loud",
+            "It is perfect data",
+            "You didn't ask adults"
+        ],
+        "ans_idx": 0,
+        "justification": "Selection bias occurs when the participants are not representative of the whole group you are studying."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Scatter Plot"
+        ],
+        "question": "Which chart uses lots of dots scattered across the graph to see if two things are related (like height vs. shoe size)?",
+        "choices": [
+            "Pie Chart",
+            "Scatter Plot",
+            "Bar Chart",
+            "Timeline"
+        ],
+        "ans_idx": 1,
+        "justification": "Scatter plots display values for two variables as a collection of points, ideal for finding correlations."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Filtering"
+        ],
+        "question": "If you have a huge list of animals but you only want to see the ones that are 'Dogs', you should use a ________.",
+        "choices": [
+            "Filter",
+            "Eraser",
+            "Calculator",
+            "Printer"
+        ],
+        "ans_idx": 0,
+        "justification": "Filtering allows you to hide unwanted data and display only the rows that meet specific criteria (like Animal = Dog)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Formulas"
+        ],
+        "question": "Which spreadsheet function would find the biggest number in a list?",
+        "choices": [
+            "=BIG()",
+            "=MAX()",
+            "=HUGE()",
+            "=TOP()"
+        ],
+        "ans_idx": 1,
+        "justification": "`=MAX()` is the standard function to return the maximum value in a range of cells."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Data Types",
+            "Categorical"
+        ],
+        "question": "Numerical data is numbers (like age), while Categorical data is groups/words (like 'Cat', 'Dog', 'Bird').",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is the fundamental difference between quantitative (numerical) and qualitative (categorical) data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Visualization",
+            "Trend Lines"
+        ],
+        "question": "A 'Trend Line' on a graph helps you to:",
+        "choices": [
+            "Make the graph look pretty",
+            "See the general direction the data is going (up or down)",
+            "Erase mistakes",
+            "Connect the dots like a puzzle"
+        ],
+        "ans_idx": 1,
+        "justification": "Trend lines (or lines of best fit) show the general course or tendency of data over time."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Sheets"
+        ],
+        "question": "In Excel or Google Sheets, a single file can contain multiple 'pages' or tabs at the bottom. What are these called?",
+        "choices": [
+            "Books",
+            "Sheets / Worksheets",
+            "Slices",
+            "Notes"
+        ],
+        "ans_idx": 1,
+        "justification": "A spreadsheet file (Workbook) can contain multiple Worksheets (tabs) to organize data."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Data Cleaning",
+            "Duplicates"
+        ],
+        "question": "If you ask the same person the same survey question twice, you will get ________ data, which you should delete.",
+        "choices": [
+            "Correct",
+            "Duplicate",
+            "Fast",
+            "New"
+        ],
+        "ans_idx": 1,
+        "justification": "Duplicate data skews results by counting the same input multiple times; it needs to be removed (cleaned)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Surveys",
+            "Population"
+        ],
+        "question": "In statistics, the 'Population' refers to:",
+        "choices": [
+            "Just the people who live in your house",
+            "The entire group you want to learn about (e.g., 'All 5th graders')",
+            "The number of pets you have",
+            "The people who answered the survey"
+        ],
+        "ans_idx": 1,
+        "justification": "Population is the total group being studied. The 'Sample' is the smaller group you actually talk to."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Histogram"
+        ],
+        "question": "A Histogram looks like a bar chart, but it groups numbers into ranges (like 'Ages 0-10', 'Ages 11-20'). What is the main difference in how it looks?",
+        "choices": [
+            "The bars are usually touching (no gaps)",
+            "It is circular",
+            "It is always red",
+            "It uses pictures"
+        ],
+        "ans_idx": 0,
+        "justification": "Histograms display the distribution of continuous data, so the bars touch to show that the ranges flow into one another."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Correlation vs Causation"
+        ],
+        "question": "Just because two things happen at the same time (Correlation), it doesn't mean one caused the other (Causation).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Correlation does not imply causation. For example, umbrella sales and rain correlate, but buying an umbrella doesn't *cause* rain."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Average"
+        ],
+        "question": "Which spreadsheet formula calculates the average (mean) of the numbers in cells B1 to B10?",
+        "choices": [
+            "=MEAN(B1:B10)",
+            "=AVERAGE(B1:B10)",
+            "=MIDDLE(B1:B10)",
+            "=MATH(B1:B10)"
+        ],
+        "ans_idx": 1,
+        "justification": "While statisticians say 'Mean', spreadsheet programs like Excel use the function `=AVERAGE()`."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "X-Axis"
+        ],
+        "question": "In a line graph showing temperature over time, 'Time' is usually put on the bottom horizontal line, which is the ________ Axis.",
+        "choices": [
+            "Y",
+            "X",
+            "Z",
+            "Q"
+        ],
+        "ans_idx": 1,
+        "justification": "The X-axis (horizontal) is typically used for the independent variable, such as time."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Data Types",
+            "Continuous"
+        ],
+        "question": "Data that can be measured very precisely with decimals (like height: 150.5cm, 150.6cm) is called:",
+        "choices": [
+            "Continuous Data",
+            "Discrete Data",
+            "Text Data",
+            "Broken Data"
+        ],
+        "ans_idx": 0,
+        "justification": "Continuous data can take any value within a range (like height, weight, time), whereas discrete data is counted in whole numbers."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Visualization",
+            "Color"
+        ],
+        "question": "It is a good idea to use 50 different colors in a single chart to make it look exciting.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Using too many colors makes a chart confusing and hard to read. Simple is better."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Count"
+        ],
+        "question": "You have a list of names. Which function counts how many people are in the list?",
+        "choices": [
+            "=SUM()",
+            "=COUNT() / =COUNTA()",
+            "=ADD()",
+            "=WHO()"
+        ],
+        "ans_idx": 1,
+        "justification": "`=COUNTA()` counts cells that are not empty (useful for names/text), while `=COUNT()` counts numbers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Variables"
+        ],
+        "question": "In a science experiment measuring how much a plant grows with different amounts of water: 'Amount of Water' is the thing you change. It is the:",
+        "choices": [
+            "Independent Variable",
+            "Dependent Variable",
+            "Constant",
+            "Mistake"
+        ],
+        "ans_idx": 0,
+        "justification": "The Independent Variable is the one you control or change to test its effects."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Comparison"
+        ],
+        "question": "A ________ chart is good for comparing two groups of data at once, like 'Boys vs Girls' scores in the same chart.",
+        "choices": [
+            "Single",
+            "Grouped / Clustered Bar",
+            "Pie",
+            "Dot"
+        ],
+        "ans_idx": 1,
+        "justification": "A Clustered (or Grouped) Bar Chart places bars for different groups side-by-side for easy comparison."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Probability",
+            "Dice"
+        ],
+        "question": "If you roll a standard 6-sided die, what is the chance (probability) of rolling a 7?",
+        "choices": [
+            "100% (Certain)",
+            "50% (Maybe)",
+            "0% (Impossible)",
+            "10% (Unlikely)"
+        ],
+        "ans_idx": 2,
+        "justification": "A standard die only has numbers 1 through 6, so rolling a 7 is impossible."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Ethics",
+            "Manipulation"
+        ],
+        "question": "You can make a graph look misleading by zooming in too much on the Y-axis to make a small difference look huge.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is a common way to manipulate data visuals: truncating the Y-axis exaggerates differences."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Data Types",
+            "Ordinal"
+        ],
+        "question": "Data that has a set order (like 'Small', 'Medium', 'Large' T-shirts) is called:",
+        "choices": [
+            "Ordinal Data",
+            "Nominal Data",
+            "Random Data",
+            "Binary Data"
+        ],
+        "ans_idx": 0,
+        "justification": "Ordinal data is categorical data where the values have a meaningful order or ranking."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Formatting"
+        ],
+        "question": "If your numbers look like '0.5' but you want them to look like '50%', you need to change the:",
+        "choices": [
+            "Font",
+            "Number Format",
+            "Row Height",
+            "File Name"
+        ],
+        "ans_idx": 1,
+        "justification": "Formatting changes how the data is displayed (e.g., as currency, date, or percentage) without changing the value."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "CSV"
+        ],
+        "question": "A simple file format used to save data as plain text separated by commas is called a ________ file.",
+        "choices": [
+            "MP3",
+            "CSV",
+            "PDF",
+            "JPG"
+        ],
+        "ans_idx": 1,
+        "justification": "CSV stands for Comma-Separated Values, a universal format for spreadsheet data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Visualization",
+            "Context"
+        ],
+        "question": "Why is it important to label your axes (tell people what X and Y mean)?",
+        "choices": [
+            "So people know if you are measuring 'Dollars' or 'Donuts'",
+            "Because the teacher said so",
+            "To use more ink",
+            "It isn't important"
+        ],
+        "ans_idx": 0,
+        "justification": "Without labels, the numbers on a graph have no meaning or context."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Inference"
+        ],
+        "question": "Based on the data that 'Ice cream sales are highest in July', what can you infer?",
+        "choices": [
+            "People hate ice cream in July",
+            "It is likely hot in July, so people buy cold treats",
+            "Ice cream is free in July",
+            "July has 50 days"
+        ],
+        "ans_idx": 1,
+        "justification": "Inference involves using data + logic to draw a likely conclusion."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Locking"
+        ],
+        "question": "You can 'Freeze' the top row of a spreadsheet so the headers stay visible when you scroll down.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Freezing panes (or rows/columns) keeps important headers in view while navigating large datasets."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Surveys",
+            "Multiple Choice"
+        ],
+        "question": "Which type of survey question is easier to analyze with a computer?",
+        "choices": [
+            "Open-ended ('Tell me a story about your day...')",
+            "Multiple Choice ('Pick A, B, or C')",
+            "Draw a picture",
+            "Sing a song"
+        ],
+        "ans_idx": 1,
+        "justification": "Multiple choice data is structured and easy to count/graph. Open-ended text is unstructured and hard to analyze."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Frequency"
+        ],
+        "question": "The 'Frequency' of a data point tells you:",
+        "choices": [
+            "How loud it is",
+            "How often it happens (the count)",
+            "How fast it moves",
+            "How expensive it is"
+        ],
+        "ans_idx": 1,
+        "justification": "In statistics, frequency refers to the number of times an event or value occurs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Visualization",
+            "Infographic"
+        ],
+        "question": "A cool poster that combines charts, icons, and text to tell a story with data is called an ________.",
+        "choices": [
+            "Email",
+            "Infographic",
+            "Essay",
+            "Audiobook"
+        ],
+        "ans_idx": 1,
+        "justification": "Infographics are visual representations of information intended to present data quickly and clearly."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Stacked Bar"
+        ],
+        "question": "A 'Stacked Bar Chart' puts different segments (like 'Red Team', 'Blue Team') on top of each other in one single bar. This shows:",
+        "choices": [
+            "The total size of the bar AND how it is divided",
+            "That the teams are fighting",
+            "Nothing useful",
+            "A circle"
+        ],
+        "ans_idx": 0,
+        "justification": "Stacked bars allow you to compare the totals of categories while also seeing the breakdown of sub-categories."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Interpolation"
+        ],
+        "question": "You have data for the year 2010 and 2012. You guess what happened in 2011 by drawing a line between them. This is:",
+        "choices": [
+            "Interpolation (Guessing inside the data)",
+            "Extrapolation (Guessing outside the data)",
+            "Magic",
+            "Cheating"
+        ],
+        "ans_idx": 0,
+        "justification": "Interpolation is estimating a value within the range of known data points."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Tools",
+            "Pivot Tables"
+        ],
+        "question": "You have a list of 1,000 sales. You want to quickly summarize the total sales for 'Product A' vs 'Product B'. The best tool in Excel for this is:",
+        "choices": [
+            "A Pivot Table",
+            "A Calculator",
+            "Formatting",
+            "Spell Check"
+        ],
+        "ans_idx": 0,
+        "justification": "Pivot Tables are powerful tools for summarizing, grouping, and analyzing large datasets without writing complex formulas."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Skew"
+        ],
+        "question": "If billionaires like Elon Musk walked into a room of regular people, the 'Mean' (average) income would go up huge, but the 'Median' (middle) would stay mostly the same.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "The Mean is sensitive to outliers (super high numbers pull it up). The Median is resistant to outliers because it just looks at the middle person."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Process",
+            "Hypothesis"
+        ],
+        "question": "Before you look at your data, you make a smart guess like: 'I think taller students jump higher'. This guess is called a:",
+        "choices": [
+            "Fact",
+            "Conclusion",
+            "Hypothesis",
+            "Lie"
+        ],
+        "ans_idx": 2,
+        "justification": "A hypothesis is a proposed explanation or starting point for further investigation (an educated guess)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Sample Bias"
+        ],
+        "question": "If you want to know which video game is most popular globally, but you only ask boys in the USA, your data suffers from ________ Bias.",
+        "choices": [
+            "Selection / Sampling",
+            "Good",
+            "Computer",
+            "Math"
+        ],
+        "ans_idx": 0,
+        "justification": "Sampling Bias occurs when the group you surveyed does not represent the entire population you are trying to learn about."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Correlation Coefficent"
+        ],
+        "question": "Statisticians use a number between -1 and 1 to show how strongly two things are linked. This is called the:",
+        "choices": [
+            "Lucky Number",
+            "Correlation Coefficient (r)",
+            "Zip Code",
+            "Total Sum"
+        ],
+        "ans_idx": 1,
+        "justification": "The Correlation Coefficient (r) measures the strength and direction of a linear relationship. 1 is perfect positive correlation, -1 is perfect negative."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Data Types",
+            "Primary vs Secondary"
+        ],
+        "question": "If you personally measure the height of every student in your class, you are collecting ________ Data.",
+        "choices": [
+            "Secondary",
+            "Primary",
+            "Fake",
+            "Old"
+        ],
+        "ans_idx": 1,
+        "justification": "Primary data is data collected firsthand by the researcher for a specific purpose."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Pie Charts"
+        ],
+        "question": "A Pie Chart is the best choice if you have 50 different categories to show (like 50 different ice cream flavors).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Pie charts become unreadable with too many slices. A bar chart or table would be better for 50 categories."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "VLOOKUP"
+        ],
+        "question": "In Excel, you have a Student ID in one table and want to find that student's name in a different table. Which tool concept helps you 'look up' the name?",
+        "choices": [
+            "VLOOKUP / XLOOKUP",
+            "DELETE",
+            "SUM",
+            "CHART"
+        ],
+        "ans_idx": 0,
+        "justification": "VLOOKUP (Vertical Lookup) searches for a value in the first column of a table and returns a value in the same row from a specified column."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Range"
+        ],
+        "question": "If the lowest score is 10 and the highest score is 90, the ________ is 80.",
+        "choices": [
+            "Average",
+            "Range",
+            "Median",
+            "Total"
+        ],
+        "ans_idx": 1,
+        "justification": "The Range is calculated by subtracting the minimum value from the maximum value (90 - 10 = 80)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Visualization",
+            "Dual Axis"
+        ],
+        "question": "A 'Dual Axis' chart has two Y-axes (one on the left, one on the right). Why?",
+        "choices": [
+            "To confuse people",
+            "To compare two variables with very different scales (like Temperature vs. Rainfall)",
+            "It is a mistake",
+            "To make the chart 3D"
+        ],
+        "ans_idx": 1,
+        "justification": "Dual axis charts allow you to plot data series with different units or magnitudes on the same graph."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Conditional Formatting"
+        ],
+        "question": "You want all scores below 50 to automatically turn RED in your spreadsheet. What feature do you use?",
+        "choices": [
+            "Spell Check",
+            "Conditional Formatting",
+            "Rename",
+            "Save As"
+        ],
+        "ans_idx": 1,
+        "justification": "Conditional Formatting changes the appearance of cells (like background color) based on specific rules or cell values."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Data Quality",
+            "Validity"
+        ],
+        "question": "If you use a broken ruler to measure height, your data might be 'Reliable' (consistent results) but not 'Valid' (correct/true results).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Validity refers to accuracy (measuring what you intend to), while reliability refers to consistency. A broken ruler consistently gives the wrong measure."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Confirmation Bias"
+        ],
+        "question": "You believe that 'Cats are smarter than Dogs', so you only write down data that proves you right and ignore data that proves you wrong. This is:",
+        "choices": [
+            "Confirmation Bias",
+            "Good Science",
+            "Random Sampling",
+            "Machine Learning"
+        ],
+        "ans_idx": 0,
+        "justification": "Confirmation bias is the tendency to search for, interpret, or recall information in a way that confirms one's preexisting beliefs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Data Management",
+            "Metadata"
+        ],
+        "question": "Information *about* your data, like 'Date Created' or 'Author Name' attached to a file, is called ________.",
+        "choices": [
+            "Big Data",
+            "Metadata",
+            "Beta Data",
+            "Micro Data"
+        ],
+        "ans_idx": 1,
+        "justification": "Metadata is 'data about data', providing context and information about the content of a file or dataset."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Trend"
+        ],
+        "question": "In a scatter plot, if the dots go downwards from left to right, it shows a:",
+        "choices": [
+            "Positive Trend",
+            "Negative Trend",
+            "No Trend",
+            "Circle"
+        ],
+        "ans_idx": 1,
+        "justification": "A negative trend indicates that as one variable increases (X-axis), the other decreases (Y-axis)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Validation"
+        ],
+        "question": "To stop people from typing 'Banana' into a cell that should only have numbers, you use Data ________.",
+        "choices": [
+            "Validation",
+            "Transformation",
+            "Multiplication",
+            "Visualization"
+        ],
+        "ans_idx": 0,
+        "justification": "Data Validation restricts the type of data or the values that users can enter into a cell."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Data Types",
+            "Null"
+        ],
+        "question": "In a dataset, a 'Null' value is exactly the same as the number Zero (0).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Null represents missing or undefined data. Zero is a specific numerical value. They mean different things in analysis."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Box Plot"
+        ],
+        "question": "Which advanced chart shows the 'Median', 'Quartiles', and 'Outliers' using a box and whiskers shape?",
+        "choices": [
+            "Pie Chart",
+            "Box Plot (Box and Whisker)",
+            "Map",
+            "Line Graph"
+        ],
+        "ans_idx": 1,
+        "justification": "Box plots provide a statistical summary of data, displaying the distribution, central tendency, and variability."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Causation"
+        ],
+        "question": "Which of these is the only one that definitely shows 'Causation' (one thing causes the other)?",
+        "choices": [
+            "Roosters crowing causes the sun to rise",
+            "Buying ice cream causes sunburns",
+            "Touching a hot stove causes a burn",
+            "Wearing a raincoat causes rain"
+        ],
+        "ans_idx": 2,
+        "justification": "This is a direct cause-and-effect relationship, unlike the correlations in the other options."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Concatenate"
+        ],
+        "question": "If you want to join 'John' in cell A1 and 'Smith' in cell B1 to make 'John Smith', you use a function called ________.",
+        "choices": [
+            "Split",
+            "Concatenate",
+            "Subtract",
+            "Divide"
+        ],
+        "ans_idx": 1,
+        "justification": "Concatenation is the operation of joining two or more character strings end-to-end."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Percentile"
+        ],
+        "question": "If you scored in the '90th Percentile' on a test, what does that mean?",
+        "choices": [
+            "You got 90% of the questions right",
+            "You scored higher than 90% of the other students",
+            "You got 90 questions wrong",
+            "You are 90 years old"
+        ],
+        "ans_idx": 1,
+        "justification": "Percentiles compare your score to the rest of the group. Being in the 90th percentile means you performed better than 90% of test-takers."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Error Bars"
+        ],
+        "question": "Little 'I' shaped lines on top of bar charts that show how uncertain or variable the data is are called:",
+        "choices": [
+            "Decorations",
+            "Error Bars",
+            "Antennas",
+            "Tops"
+        ],
+        "ans_idx": 1,
+        "justification": "Error bars indicate the variability or uncertainty of the reported measurement (e.g., standard deviation)."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Absolute Reference"
+        ],
+        "question": "In a spreadsheet formula, using signs like `$A$1` 'locks' the cell so it doesn't change when you copy the formula.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "The dollar sign `$` denotes an absolute cell reference, keeping the row and/or column constant during copy-paste."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Data Quality",
+            "Inconsistency"
+        ],
+        "question": "You are analyzing cities. One person wrote 'NYC', another 'N.Y.C.', and another 'New York'. This is a problem of:",
+        "choices": [
+            "Data Consistency",
+            "Math Errors",
+            "Hardware Failure",
+            "Time Travel"
+        ],
+        "ans_idx": 0,
+        "justification": "Inconsistent data entry makes it difficult to group or count items correctly. Data cleaning is needed to standardize these values."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "Sorting"
+        ],
+        "question": "You want to sort a list of T-shirts first by 'Size' (S, M, L) and THEN by 'Color'. This is called:",
+        "choices": [
+            "Multi-level Sorting",
+            "Reverse Sorting",
+            "Deleting",
+            "Printing"
+        ],
+        "ans_idx": 0,
+        "justification": "Multi-level sorting allows you to organize data using more than one criteria/column."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Statistics",
+            "Sample"
+        ],
+        "question": "A ________ is a small part of a group that you study to learn about the whole group.",
+        "choices": [
+            "Population",
+            "Sample",
+            "Census",
+            "Number"
+        ],
+        "ans_idx": 1,
+        "justification": "A sample is a subset of the population selected for measurement or observation."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Logic",
+            "Simpson's Paradox"
+        ],
+        "question": "Sometimes a trend appears in different groups of data but disappears when these groups are combined. This tricky math phenomenon is called:",
+        "choices": [
+            "Simpson's Paradox",
+            "The Matrix",
+            "The Pie Chart Effect",
+            "The Null Error"
+        ],
+        "ans_idx": 0,
+        "justification": "Simpson's Paradox is a phenomenon in probability and statistics where a trend appears in several groups of data but disappears or reverses when the groups are combined."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Charts",
+            "Heat Map"
+        ],
+        "question": "A chart that uses shades of color (like light green to dark green) to show values on a map or grid is called a:",
+        "choices": [
+            "Heat Map",
+            "Pie Chart",
+            "Line Graph",
+            "Scatter Plot"
+        ],
+        "ans_idx": 0,
+        "justification": "Heat maps use color intensity to represent the magnitude of a phenomenon or value in two dimensions."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Data Types",
+            "Boolean"
+        ],
+        "question": "A 'Boolean' data type can hold any number from 0 to 100.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "Boolean data is binary; it can only hold two possible values, typically True/False or 1/0."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheets",
+            "If Function"
+        ],
+        "question": "Which spreadsheet function checks a condition (like 'Is score > 50?') and does one thing if True and another if False?",
+        "choices": [
+            "=IF()",
+            "=CHECK()",
+            "=MAYBE()",
+            "=WHEN()"
+        ],
+        "ans_idx": 0,
+        "justification": "`=IF(condition, value_if_true, value_if_false)` is a fundamental logical function in spreadsheets."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Types",
+            "Categorical Data",
+            "Basics"
+        ],
+        "question": "Which of these is an example of 'Categorical' data (data that puts things into groups)?",
+        "choices": [
+            "Height in cm",
+            "Weight in kg",
+            "Type of Fruit (Apple, Banana, Orange)",
+            "Number of siblings"
+        ],
+        "ans_idx": 2,
+        "justification": "Categorical data describes categories or groups, like types of fruit, rather than numerical values."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Collection",
+            "Observation",
+            "Basics"
+        ],
+        "question": "You can collect data just by watching birds in a park and writing down which ones you see.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "This is called observational data collection, where you record what you see without interfering."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Charts",
+            "Bar Chart",
+            "Visualization"
+        ],
+        "question": "A ________ chart is best for comparing the number of students who like different colors (e.g., Red vs. Blue vs. Green).",
+        "choices": [
+            "Line",
+            "Bar",
+            "Scatter",
+            "Map"
+        ],
+        "ans_idx": 1,
+        "justification": "Bar charts are excellent for comparing quantities across distinct categories like colors."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Pattern Recognition",
+            "Trends"
+        ],
+        "question": "If you see that ice cream sales go up every time the temperature goes up, this is a:",
+        "choices": [
+            "Pattern",
+            "Mistake",
+            "Code",
+            "Typo"
+        ],
+        "ans_idx": 0,
+        "justification": "A pattern or trend is a consistent relationship between two pieces of data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Cleaning",
+            "Quality",
+            "Basics"
+        ],
+        "question": "What should you do if you find a mistake in your data (like someone entered 'Cat' for their age)?",
+        "choices": [
+            "Leave it alone",
+            "Fix or remove it (Clean the data)",
+            "Hide it",
+            "Cry"
+        ],
+        "ans_idx": 1,
+        "justification": "Data cleaning involves identifying and correcting errors to ensure accurate analysis."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Types",
+            "Numbers",
+            "Basics"
+        ],
+        "question": "A phone number (like 555-0199) is usually treated as 'Text' or 'ID' rather than a number you do math with.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Phone numbers are identifiers; you wouldn't add or subtract them, so they are often treated as text/categorical data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Line Graph",
+            "Time Series"
+        ],
+        "question": "What is the best chart to show how the temperature changes hour by hour throughout one day?",
+        "choices": [
+            "Pie Chart",
+            "Line Graph",
+            "Bar Chart",
+            "Venn Diagram"
+        ],
+        "ans_idx": 1,
+        "justification": "Line graphs are perfect for showing changes over a continuous period of time (time series)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Privacy",
+            "Ethics",
+            "Security"
+        ],
+        "question": "You should never share someone's private personal ________, like their home address, in a public dataset.",
+        "choices": [
+            "Information",
+            "Music",
+            "Pet",
+            "Jokes"
+        ],
+        "ans_idx": 0,
+        "justification": "Personal Information (PII) must be protected to ensure privacy and safety."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Spreadsheets",
+            "Cells",
+            "Basics"
+        ],
+        "question": "In Excel, 'C5' is the name of a:",
+        "choices": [
+            "Robot",
+            "Cell Address",
+            "Formula",
+            "Game"
+        ],
+        "ans_idx": 1,
+        "justification": "C5 refers to the cell at the intersection of Column C and Row 5."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Survey",
+            "Questions",
+            "Data Collection"
+        ],
+        "question": "Which question is better for a survey to get useful data?",
+        "choices": [
+            "Do you like stuff?",
+            "On a scale of 1-5, how much do you like Pizza?",
+            "Pizza is great, right?",
+            "Hello"
+        ],
+        "ans_idx": 1,
+        "justification": "A scaled question provides specific, measurable data suitable for analysis."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Visualization",
+            "Charts",
+            "Interpretation"
+        ],
+        "question": "A steep line going up on a graph means the value is increasing very slowly.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 1,
+        "justification": "A steep upward slope indicates a rapid or fast increase, not a slow one."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Counting",
+            "Frequency",
+            "Basics"
+        ],
+        "question": "If you count how many times 'Red' appears in a list of car colors, you are finding the:",
+        "choices": [
+            "Frequency",
+            "Volume",
+            "Weight",
+            "Speed"
+        ],
+        "ans_idx": 0,
+        "justification": "Frequency is the number of times a specific value occurs in a dataset."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Average",
+            "Math"
+        ],
+        "question": "Another common name for the 'Average' is the ________.",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Range"
+        ],
+        "ans_idx": 0,
+        "justification": "In finding the average, we calculate the arithmetic mean."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Predictive Analysis",
+            "Future",
+            "Data Science"
+        ],
+        "question": "Using past weather data to guess if it will rain tomorrow is called:",
+        "choices": [
+            "Magic",
+            "Prediction / Forecasting",
+            "History",
+            "Drawing"
+        ],
+        "ans_idx": 1,
+        "justification": "Prediction or forecasting uses historical data to estimate future events."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Storage",
+            "Files",
+            "Basics"
+        ],
+        "question": "Which of these file types is most commonly used for storing simple data tables?",
+        "choices": [
+            ".mp3",
+            ".csv (Comma Separated Values)",
+            ".jpg",
+            ".exe"
+        ],
+        "ans_idx": 1,
+        "justification": "CSV implies Comma Separated Values and is a standard format for tabular data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Analysis Basics",
+            "Questions",
+            "Inquiry"
+        ],
+        "question": "The first step in data analysis is often asking a question you want to answer.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Data analysis usually begins with a problem statement or a question to guide the investigation."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Pie Chart",
+            "Parts of Whole"
+        ],
+        "question": "Pie charts are BAD at showing:",
+        "choices": [
+            "Parts of a whole (fractions)",
+            "Changes over time",
+            "Percentages",
+            "Budget splits"
+        ],
+        "ans_idx": 1,
+        "justification": "Pie charts are static and capture one moment; they are poor for showing trends or changes over time."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis Basics",
+            "Grouping",
+            "Classification"
+        ],
+        "question": "When you put data into groups based on shared characteristics (like 'Fruit' vs 'Vegetables'), you are ________ it.",
+        "choices": [
+            "Classifying",
+            "Deleting",
+            "Multiplying",
+            "Compacting"
+        ],
+        "ans_idx": 0,
+        "justification": "Classifying means categorizing data into groups based on common properties."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Tools",
+            "Digital",
+            "Basics"
+        ],
+        "question": "Which of these is a digital tool?",
+        "choices": [
+            "A pencil",
+            "A spreadsheet on a computer",
+            "A ruler",
+            "A notebook"
+        ],
+        "ans_idx": 1,
+        "justification": "A spreadsheet on a computer is a digital software tool."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Size",
+            "Big Data",
+            "Intro"
+        ],
+        "question": "What do we call it when we have SO MUCH data that a normal computer has trouble handling it?",
+        "choices": [
+            "Tiny Data",
+            "Big Data",
+            "Fast Data",
+            "Lost Data"
+        ],
+        "ans_idx": 1,
+        "justification": "Big Data refers to datasets that are too large or complex for traditional data-processing software."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Scatter Plot",
+            "Correlation"
+        ],
+        "question": "If points on a scatter plot go down from left to right, it usually means:",
+        "choices": [
+            "Positive Correlation",
+            "Negative Correlation",
+            "No Correlation",
+            "They are falling"
+        ],
+        "ans_idx": 1,
+        "justification": "A downward trend indicates a negative correlation, meaning as one variable increases, the other decreases."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Histogram",
+            "Distribution"
+        ],
+        "question": "A Histogram looks like a Bar Chart but is used to show how often data falls into specific ranges (like age groups 0-10, 11-20).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Histograms display the distribution of numerical data by grouping it into bins or ranges."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Outliers",
+            "Analysis"
+        ],
+        "question": "A data point that is extremely far away from all the other points (like a student who is 200 years old) is called an ________.",
+        "choices": [
+            "Outlier",
+            "Insider",
+            "Enemy",
+            "Average"
+        ],
+        "ans_idx": 0,
+        "justification": "An outlier is an observation point that is distant from other observations."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Axes",
+            "Variables"
+        ],
+        "question": "On a scatter plot showing 'Hours Studied' vs 'Test Score', 'Hours Studied' is usually the:",
+        "choices": [
+            "Independent Variable (X-axis)",
+            "Dependent Variable (Y-axis)",
+            "Title",
+            "Color"
+        ],
+        "ans_idx": 0,
+        "justification": "The independent variable (cause) is typically plotted on the X-axis."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Heatmap",
+            "Color"
+        ],
+        "question": "Which chart uses colors (like red for hot, blue for cold) to represent data values in a grid?",
+        "choices": [
+            "Heatmap",
+            "Pie Chart",
+            "Line Graph",
+            "Text Book"
+        ],
+        "ans_idx": 0,
+        "justification": "A heatmap is a data visualization technique that shows magnitude of a phenomenon as color in two dimensions."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Mean",
+            "Calculation"
+        ],
+        "question": "Calculate the mean of: 5, 5, 10, 20.",
+        "choices": [
+            "10",
+            "40",
+            "5",
+            "15"
+        ],
+        "ans_idx": 0,
+        "justification": "Sum = 5+5+10+20 = 40. Count = 4. Mean = 40 / 4 = 10."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Mode",
+            "Frequency"
+        ],
+        "question": "In the list [Cat, Dog, Cat, Fish, Cat], the Mode is ________.",
+        "choices": [
+            "Cat",
+            "Dog",
+            "Fish",
+            "Bird"
+        ],
+        "ans_idx": 0,
+        "justification": "'Cat' appears most frequently (3 times), so it is the Mode."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Statistics",
+            "Median",
+            "Calculation"
+        ],
+        "question": "What is the median of this set: 2, 9, 100? (Remember: Sort then find the middle).",
+        "choices": [
+            "9",
+            "2",
+            "100",
+            "37"
+        ],
+        "ans_idx": 0,
+        "justification": "The list is already sorted (2, 9, 100). The middle number is 9."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Quality",
+            "Missing Data",
+            "Cleaning"
+        ],
+        "question": "If you have 'Null' or 'NaN' in your dataset, it usually means the data is missing.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Null and NaN (Not a Number) are standard markers for missing or undefined data in computing."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Box Plot",
+            "Statistics"
+        ],
+        "question": "Which chart shows the 'Median', 'Range', and 'Quartiles' using a box and whiskers?",
+        "choices": [
+            "Box Plot",
+            "Circle Plot",
+            "Star Chart",
+            "Dot Plot"
+        ],
+        "ans_idx": 0,
+        "justification": "A Box Plot (or Box and Whisker Plot) visually displays the distribution of data through quartiles."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Range",
+            "Spread"
+        ],
+        "question": "Find the Range of: 10, 2, 8, 6. (Max - Min).",
+        "choices": [
+            "8",
+            "10",
+            "2",
+            "12"
+        ],
+        "ans_idx": 0,
+        "justification": "Max is 10. Min is 2. Range = 10 - 2 = 8."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Sorting",
+            "Order"
+        ],
+        "question": "Sorting from Largest to Smallest (10, 9, 8...) is called ________ order.",
+        "choices": [
+            "Descending",
+            "Ascending",
+            "Rising",
+            "Falling"
+        ],
+        "ans_idx": 0,
+        "justification": "Descending order means arranging data from the highest value to the lowest."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Dual Axis",
+            "Advanced"
+        ],
+        "question": "Can a chart have TWO Y-axes (one on the left, one on the right)?",
+        "choices": [
+            "Yes, it's called a Dual-Axis chart",
+            "No, that's illegal",
+            "Only on Tuesdays",
+            "Yes, but only for colors"
+        ],
+        "ans_idx": 0,
+        "justification": "Dual-Axis charts allow you to plot data with different units or scales on the same graph."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Probability",
+            "Basics"
+        ],
+        "question": "The probability of flipping a coin and getting Heads is 50% (or 0.5).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "There are two equally likely outcomes (Heads, Tails), so the probability is 1/2 or 50%."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Relationships",
+            "Causation"
+        ],
+        "question": "Just because two things are correlated (move together) DOES NOT mean one caused the other. This is known as:",
+        "choices": [
+            "Correlation does not imply Causation",
+            "The Golden Rule",
+            "Big Data",
+            "The Law of Gravity"
+        ],
+        "ans_idx": 0,
+        "justification": "This is a fundamental principle in statistics; coincidence or a third variable might explain the link."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Types",
+            "Discrete vs Continuous",
+            "Advanced"
+        ],
+        "question": "Which data is 'Discrete' (can be counted)?",
+        "choices": [
+            "Number of eggs in a carton",
+            "Height of a tree",
+            "Time it takes to run a race",
+            "Weight of a car"
+        ],
+        "ans_idx": 0,
+        "justification": "Discrete data takes specific, countable values (integers). You can't have 2.5 eggs in a carton counting sense."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Spreadsheets",
+            "Pivot Table",
+            "Summary"
+        ],
+        "question": "A ________ Table is a tool in Excel used to summarize large amounts of data quickly.",
+        "choices": [
+            "Pivot",
+            "Spin",
+            "Jump",
+            "Summary"
+        ],
+        "ans_idx": 0,
+        "justification": "Pivot tables allow you to reorganize and summarize selected columns and rows of data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Statistics",
+            "Percentiles",
+            "Ranking"
+        ],
+        "question": "If you are in the '90th Percentile' for height, it means:",
+        "choices": [
+            "You are taller than 90% of people",
+            "You are 90cm tall",
+            "You are 90 years old",
+            "You are in the top 10% shorter"
+        ],
+        "ans_idx": 0,
+        "justification": "Percentile rank indicates the percentage of scores that fall below a given score."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Visualization",
+            "Infographics",
+            "Communication"
+        ],
+        "question": "Infographics combine text, images, and charts to tell a story with data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Infographics are graphic visual representations of information aimed at presenting information quickly and clearly."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Sampling",
+            "Bias"
+        ],
+        "question": "Random Sampling helps to:",
+        "choices": [
+            "Reduce bias",
+            "Make data harder to understand",
+            "Create patterns",
+            "Increase bias"
+        ],
+        "ans_idx": 0,
+        "justification": "Random sampling ensures every member of the population has an equal chance of selection, minimizing selection bias."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Collection",
+            "Surveys",
+            "Ethics"
+        ],
+        "question": "Which is an example of a 'Leading Question' (one that pushes for a specific answer)?",
+        "choices": [
+            "Don't you agree that summer is the best?",
+            "What is your favorite season?",
+            "How old are you?",
+            "Do you have a pet?"
+        ],
+        "ans_idx": 0,
+        "justification": "This question prompts the respondent to agree with the interviewer's opinion."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Storage",
+            "Cloud",
+            "Access"
+        ],
+        "question": "Cloud storage allows you to save your data on the internet so you can access it from different computers.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Cloud storage saves data on remote servers accessed via the internet."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Dashboard",
+            "Summary"
+        ],
+        "question": "A ________ is a visual display of all your key data charts in one place, like a car's control panel.",
+        "choices": [
+            "Dashboard",
+            "Novel",
+            "Movie",
+            "Menu"
+        ],
+        "ans_idx": 0,
+        "justification": "Data dashboards provide an at-a-glance view of key performance indicators and relevant data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Standard Deviation",
+            "Spread"
+        ],
+        "question": "Standard Deviation measures:",
+        "choices": [
+            "How spread out the numbers are",
+            "The total sum",
+            "The biggest number",
+            "The color of the chart"
+        ],
+        "ans_idx": 0,
+        "justification": "Standard deviation quantifies the amount of variation or dispersion of a set of data values."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Comparison",
+            "Context"
+        ],
+        "question": "Comparing your test score to the class average provides:",
+        "choices": [
+            "Context",
+            "Confusion",
+            "Data Loss",
+            "Privacy"
+        ],
+        "ans_idx": 0,
+        "justification": "Comparison provides context, allowing you to interpret the meaning of a single data point."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Cleaning",
+            "Duplicates"
+        ],
+        "question": "You should check for duplicate entries (the same person listed twice) before analyzing data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Duplicates need to be removed to prevent skewing the results (e.g., counting one vote twice)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Types",
+            "Boolean",
+            "Logic"
+        ],
+        "question": "Which data type can only be True or False?",
+        "choices": [
+            "Boolean",
+            "String",
+            "Integer",
+            "Float"
+        ],
+        "ans_idx": 0,
+        "justification": "Boolean data types represents one of two values: true/false (or 1/0)."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Spreadsheets",
+            "Sort",
+            "Data Management"
+        ],
+        "question": "You can use multiple levels of ________, for example first by 'Last Name', then by 'First Name'.",
+        "choices": [
+            "Sorting",
+            "Erasing",
+            "Painting",
+            "Singing"
+        ],
+        "ans_idx": 0,
+        "justification": "Multi-level sorting allows for organizing data hierarchically."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Area Chart",
+            "Trends"
+        ],
+        "question": "An Area Chart is like a Line Graph but:",
+        "choices": [
+            "The space below the line is filled with color",
+            "It has no lines",
+            "It is only for pizza",
+            "It is invisible"
+        ],
+        "ans_idx": 0,
+        "justification": "Area charts display quantitative data graphically and fill the area between the axis and the line to emphasize volume."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Sample",
+            "Population"
+        ],
+        "question": "The entire group you want to study (e.g., all humans) is the 'Population'. A small part of it is a:",
+        "choices": [
+            "Sample",
+            "Fraction",
+            "Piece",
+            "Cookie"
+        ],
+        "ans_idx": 0,
+        "justification": "In statistics, a sample is a set of data collected and/or selected from a statistical population by a defined procedure."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Trends",
+            "Seasonal"
+        ],
+        "question": "Sales of ice cream being higher in summer and lower in winter is a 'Seasonal' trend.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Seasonal variations are patterns that repeat at regular intervals over time."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Decision Making",
+            "Value"
+        ],
+        "question": "Data-Driven Decision Making means:",
+        "choices": [
+            "Making decisions based on facts and data",
+            "Guessing",
+            "Asking a magic 8-ball",
+            "Flipping a coin"
+        ],
+        "ans_idx": 0,
+        "justification": "It involves using data analysis and interpretation to guide and validate decisions."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Sum",
+            "Math"
+        ],
+        "question": "The symbol Σ (Sigma) in math usually means to ________ numbers.",
+        "choices": [
+            "Sum (Add)",
+            "Subtract",
+            "Multiply",
+            "Divide"
+        ],
+        "ans_idx": 0,
+        "justification": "Sigma (Σ) is the mathematical notation for summation."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Tools",
+            "Programming",
+            "Python"
+        ],
+        "question": "Which programming language is very famous for Data Science?",
+        "choices": [
+            "Python",
+            "HTML",
+            "Scratch",
+            "English"
+        ],
+        "ans_idx": 0,
+        "justification": "Python is the dominant language in data science due to its rich ecosystem of libraries like Pandas and NumPy."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Hypothesis",
+            "Science"
+        ],
+        "question": "A 'Hypothesis' is:",
+        "choices": [
+            "An educated guess you want to test",
+            "A fact",
+            "A lie",
+            "A chart"
+        ],
+        "ans_idx": 0,
+        "justification": "A hypothesis is a proposed explanation for a phenomenon, used as a starting point for investigation."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Bubble Chart",
+            "3D"
+        ],
+        "question": "A Bubble Chart is like a scatter plot, but the size of the dot adds a third dimension/variable.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Bubble charts represent three dimensions: x-position, y-position, and bubble size."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Quantitative",
+            "Qualitative"
+        ],
+        "question": "Which is 'Qualitative' data?",
+        "choices": [
+            "Good / Bad / Okay",
+            "10.5",
+            "100%",
+            "50kg"
+        ],
+        "ans_idx": 0,
+        "justification": "Qualitative data describes qualities or characteristics (subjective or categorical) rather than quantities."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Timeline",
+            "Time"
+        ],
+        "question": "A ________ is a graphical way of displaying a list of events in chronological order.",
+        "choices": [
+            "Timeline",
+            "Pie chart",
+            "Map",
+            "Table"
+        ],
+        "ans_idx": 0,
+        "justification": "Timelines visualize events in the order they occurred."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Storage",
+            "Database",
+            "Structured"
+        ],
+        "question": "A SQL Database organizes data into:",
+        "choices": [
+            "Tables with rows and columns",
+            "Piles of paper",
+            "Random text",
+            "Videos"
+        ],
+        "ans_idx": 0,
+        "justification": "SQL databases are relational and store data in structured tables."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Feedback",
+            "Cycle"
+        ],
+        "question": "Why do companies analyze customer feedback data?",
+        "choices": [
+            "To improve their products",
+            "To ignore it",
+            "To make customers angry",
+            "To fill hard drives"
+        ],
+        "ans_idx": 0,
+        "justification": "Analyzing feedback helps identify areas for improvement and better meet customer needs."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Ethics",
+            "Copyright",
+            "Ownership"
+        ],
+        "question": "If you find a cool dataset on the internet, can you just use it for anything you want?",
+        "choices": [
+            "Yes, it's on the internet",
+            "No, you must check the license/rules",
+            "Only if you print it",
+            "Only on weekends"
+        ],
+        "ans_idx": 1,
+        "justification": "Data ownership and licensing determine how you can legally usage data."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "AI",
+            "Training"
+        ],
+        "question": "Artificial Intelligence (AI) learns patterns from data, similar to how humans learn from experience.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Machine Learning (a subset of AI) involves training models on data to recognize patterns."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Anonymization",
+            "Privacy"
+        ],
+        "question": "Removing names and addresses from a dataset to protect people's identity is called ________.",
+        "choices": [
+            "Anonymization",
+            "Deleting",
+            "Hiding",
+            "Formatting"
+        ],
+        "ans_idx": 0,
+        "justification": "Anonymization is the process of removing personally identifiable information from data sets."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Visualization",
+            "Color Blindness",
+            "Accessibility"
+        ],
+        "question": "Why should you be careful when using Red and Green together in a chart?",
+        "choices": [
+            "They are ugly colors",
+            "Some people are color blind and can't tell them apart",
+            "They cost extra money",
+            "Computer screens hate red"
+        ],
+        "ans_idx": 1,
+        "justification": "Red-green color blindness is common; using them together can make charts unreadable for many people."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Algorithm",
+            "Logic"
+        ],
+        "question": "A set of step-by-step instructions for a computer to solve a problem is called an:",
+        "choices": [
+            "Algorithm",
+            "Opinion",
+            "Joke",
+            "Story"
+        ],
+        "ans_idx": 0,
+        "justification": "An algorithm is a finite sequence of well-defined instructions to solve a class of problems."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Sample Bias",
+            "Errors"
+        ],
+        "question": "If you only ask your friends what the best movie is, your data is:",
+        "choices": [
+            "Biased",
+            "Perfect",
+            "Universal",
+            "Scientific"
+        ],
+        "ans_idx": 0,
+        "justification": "This is a convenience sample and is biased because it doesn't represent the general population."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Metadata",
+            "Data about Data"
+        ],
+        "question": "Metadata is 'data about data', like the date a photo was taken or the author of a document.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Metadata provides information about other data, such as origin, size, and format."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Training Data",
+            "ML"
+        ],
+        "question": "The data used to teach a machine learning model is called ________ data.",
+        "choices": [
+            "Training",
+            "Sleeping",
+            "Eating",
+            "Walking"
+        ],
+        "ans_idx": 0,
+        "justification": "Training data is the initial dataset used to teach the model how to process information."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Trend Line",
+            "Forecasting"
+        ],
+        "question": "A line drawn through points on a scatter plot to show the general direction is called a:",
+        "choices": [
+            "Trend Line / Line of Best Fit",
+            "Squiggly Line",
+            "Circle",
+            "Border"
+        ],
+        "ans_idx": 0,
+        "justification": "A trend line helps visualize the general direction or correlation of the data points."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Storage",
+            "Backup",
+            "Security"
+        ],
+        "question": "Making a copy of your data in case the original gets lost is called a:",
+        "choices": [
+            "Backup",
+            "Copycat",
+            "Twin",
+            "Replay"
+        ],
+        "ans_idx": 0,
+        "justification": "A backup is a copy of data taken and stored elsewhere to restore the original after a data loss event."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Garbage In Garbage Out",
+            "Quality"
+        ],
+        "question": "The phrase 'Garbage In, Garbage Out' (GIGO) means:",
+        "choices": [
+            "If you put bad data in, you get bad results out",
+            "Computers eat trash",
+            "Data smells bad",
+            "You should recycle"
+        ],
+        "ans_idx": 0,
+        "justification": "GIGO expresses the idea that incorrect or poor-quality input data produces faulty output."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Automation",
+            "Efficiency"
+        ],
+        "question": "Data Science can help automate boring tasks so humans can focus on more interesting work.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Automation of repetitive tasks is a key benefit of applied data science and AI."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Scale",
+            "Lie Factor"
+        ],
+        "question": "If a bar chart starts at 50 instead of 0, it can make small differences look:",
+        "choices": [
+            "Much bigger (Misleading)",
+            "Smaller",
+            "Invisible",
+            "Blue"
+        ],
+        "ans_idx": 0,
+        "justification": "Truncating the Y-axis is a common way to exaggerate differences, which can be misleading."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Variable",
+            "Math"
+        ],
+        "question": "A quantity that can change or vary, like 'Temperature' or 'Time', is called a ________.",
+        "choices": [
+            "Variable",
+            "Constant",
+            "Period",
+            "Comma"
+        ],
+        "ans_idx": 0,
+        "justification": "A variable is a value that can change, depending on conditions or on information passed to the program."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Classification",
+            "Tasks"
+        ],
+        "question": "Teaching a computer to tell the difference between pictures of Cats and Dogs is a ________ task.",
+        "choices": [
+            "Classification",
+            "Math",
+            "Spelling",
+            "Cooking"
+        ],
+        "ans_idx": 0,
+        "justification": "Image classification helps computers categorize images into classes (e.g., Cat vs. Dog)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Census",
+            "Population"
+        ],
+        "question": "An official count or survey of a population, typically recording various details of individuals, is a:",
+        "choices": [
+            "Census",
+            "Quiz",
+            "Game",
+            "Meeting"
+        ],
+        "ans_idx": 0,
+        "justification": "A census is the procedure of systematically acquiring and recording information about the members of a given population."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Open Data",
+            "Access"
+        ],
+        "question": "'Open Data' is data that anyone can access, use, and share.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Open data is the idea that some data should be freely available to everyone to use and republish."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Normal Distribution",
+            "Bell Curve"
+        ],
+        "question": "A 'Bell Curve' describes data where:",
+        "choices": [
+            "Most values are in the middle, with fewer at the extremes",
+            "Everything is the same",
+            "It looks like a taco",
+            "It never ends"
+        ],
+        "ans_idx": 0,
+        "justification": "Normal distribution (bell curve) shows that data near the mean are more frequent in occurrence than data far from the mean."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Units",
+            "Measurement"
+        ],
+        "question": "It is important to always label your data with ________, like 'kg', 'meters', or 'seconds'.",
+        "choices": [
+            "Units",
+            "Smileys",
+            "Stickers",
+            "Colors"
+        ],
+        "ans_idx": 0,
+        "justification": "Units of measurement are critical for understanding the magnitude and nature of the data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Raw Data",
+            "Basics"
+        ],
+        "question": "Data that has not been processed or cleaned yet is called:",
+        "choices": [
+            "Raw Data",
+            "Cooked Data",
+            "Fresh Data",
+            "Clean Data"
+        ],
+        "ans_idx": 0,
+        "justification": "Raw data (or primary data) is data that has not been processed for use."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Cluster",
+            "Grouping"
+        ],
+        "question": "In data science, grouping similar items together without being told what the groups are is called:",
+        "choices": [
+            "Clustering",
+            "Boxer",
+            "Labeling",
+            "Sorting"
+        ],
+        "ans_idx": 0,
+        "justification": "Clustering is a technique to group similar data points together based on their features."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Interactive",
+            "Web"
+        ],
+        "question": "Interactive charts allow you to hover over points to see more details.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Interactivity enhances data visualization by allowing users to explore the data in more depth."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Error",
+            "Accuracy"
+        ],
+        "question": "The difference between the measured value and the true value is called:",
+        "choices": [
+            "Error",
+            "Correction",
+            "Bonus",
+            "Win"
+        ],
+        "ans_idx": 0,
+        "justification": "Measurement error is the difference between a measured quantity and its true value."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Binary",
+            "Digital"
+        ],
+        "question": "Computers store all data as a series of 0s and 1s, which is called ________ code.",
+        "choices": [
+            "Binary",
+            "Morse",
+            "Secret",
+            "Decimal"
+        ],
+        "ans_idx": 0,
+        "justification": "Binary code represents text, computer processor instructions, or any other data using a two-symbol system."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "CSV",
+            "Format"
+        ],
+        "question": "What does CSV stand for?",
+        "choices": [
+            "Comma Separated Values",
+            "Computer Screen View",
+            "Cool Super Video",
+            "Car Speed Velocity"
+        ],
+        "ans_idx": 0,
+        "justification": "CSV is a text file format that uses commas to separate values."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 3,
+        "concepts": [
+            "Data Science",
+            "A/B Testing",
+            "Experiments"
+        ],
+        "question": "Showing two different versions of a website to users to see which one works better is called:",
+        "choices": [
+            "A/B Testing",
+            "C/D Testing",
+            "Game Testing",
+            "Beta Testing"
+        ],
+        "ans_idx": 0,
+        "justification": "A/B testing (split testing) compares two versions of a single variable to determine which allows for better performance."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Query",
+            "Database"
+        ],
+        "question": "A 'Query' is a request for data or information from a database table or combination of tables.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Querying is the primary method of retrieving specific data from a database."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Interpretation",
+            "Context"
+        ],
+        "question": "Telling a story with your data to help others understand it is called:",
+        "choices": [
+            "Data Storytelling",
+            "Data Hidden",
+            "Data Magic",
+            "Data Sleeping"
+        ],
+        "ans_idx": 0,
+        "justification": "Data storytelling communicates insights from data analysis to non-technical audiences."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Ratio",
+            "Comparison"
+        ],
+        "question": "A comparison of two numbers by division (like 2:1) is called a ________.",
+        "choices": [
+            "Ratio",
+            "Sum",
+            "Product",
+            "Difference"
+        ],
+        "ans_idx": 0,
+        "justification": "A ratio indicates how many times one number contains another."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Quantitative",
+            "Measurement"
+        ],
+        "question": "Which of these is quantitative data?",
+        "choices": [
+            "25 degrees Celsius",
+            "Very hot",
+            "Cloudy",
+            "Summer"
+        ],
+        "ans_idx": 0,
+        "justification": "25 degrees is a numerical measurement, making it quantitative."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Variables",
+            "Independent"
+        ],
+        "question": "In a science experiment measuring plant growth, the amount of water you give each plant is the:",
+        "choices": [
+            "Independent Variable",
+            "Dependent Variable",
+            "Constant",
+            "Mistake"
+        ],
+        "ans_idx": 0,
+        "justification": "The independent variable is the one you change or control in an experiment."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Variables",
+            "Dependent"
+        ],
+        "question": "The height the plant grows to is the Dependent Variable because it depends on the water.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "The dependent variable is what you measure; it changes in response to the independent variable."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Sample Size",
+            "Accuracy"
+        ],
+        "question": "Generally, a larger sample size makes your results:",
+        "choices": [
+            "More accurate and reliable",
+            "Less accurate",
+            "Faster to calculate",
+            "Harder to read"
+        ],
+        "ans_idx": 0,
+        "justification": "Larger sample sizes reduce the margin of error and provide more reliable results."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Checklist",
+            "Organization"
+        ],
+        "question": "A simple tool used to verify that a number of required steps have been performed is a ________.",
+        "choices": [
+            "Checklist",
+            "Novel",
+            "Radio",
+            "Hammer"
+        ],
+        "ans_idx": 0,
+        "justification": "Checklists ensure consistency and completeness in carrying out a task."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Charts",
+            "Gantt Chart",
+            "Project Management"
+        ],
+        "question": "Which chart helps you schedule tasks over time for a project?",
+        "choices": [
+            "Gantt Chart",
+            "Pie Chart",
+            "Dot Plot",
+            "Eye Chart"
+        ],
+        "ans_idx": 0,
+        "justification": "Gantt charts illustrate a project schedule, showing start and finish dates of elements."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 1,
+        "concepts": [
+            "Data Types",
+            "Image",
+            "Unstructured"
+        ],
+        "question": "An image or a video file is an example of:",
+        "choices": [
+            "Unstructured Data",
+            "Structured Data",
+            "Text Data",
+            "Numerical Data"
+        ],
+        "ans_idx": 0,
+        "justification": "Unstructured data usually refers to information that doesn't reside in a traditional row-column database."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Logarithm",
+            "Scale"
+        ],
+        "question": "A Logarithmic Scale is useful when data covers a huge range of values (like 1 to 1,000,000).",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Log scales allow a large range of values to be displayed in a compact way."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Pattern",
+            "Recognition"
+        ],
+        "question": "Software that can recognize a face in a photo is using:",
+        "choices": [
+            "Pattern Recognition",
+            "Magic Spells",
+            "Guesswork",
+            "Simple Math"
+        ],
+        "ans_idx": 0,
+        "justification": "Pattern recognition algorithms identify regularities and similarities in data (like facial features)."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Probability",
+            "Chance"
+        ],
+        "question": "If you roll a standard 6-sided die, what is the chance of rolling a 7?",
+        "choices": [
+            "0% (Impossible)",
+            "50%",
+            "100%",
+            "16%"
+        ],
+        "ans_idx": 0,
+        "justification": "A standard die has numbers 1-6. Rolling a 7 is impossible."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Spreadsheet",
+            "Merge"
+        ],
+        "question": "Combining two cells into one larger cell in a spreadsheet is called ________.",
+        "choices": [
+            "Merging",
+            "Splitting",
+            "Copying",
+            "Deleting"
+        ],
+        "ans_idx": 0,
+        "justification": "Merging cells combines two or more selected cells into a single cell."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Visualization",
+            "Clutter",
+            "Design"
+        ],
+        "question": "What is 'Chart Junk'?",
+        "choices": [
+            "Useless decoration that makes a chart hard to read",
+            "A broken chart",
+            "Trash data",
+            "A type of boat"
+        ],
+        "ans_idx": 0,
+        "justification": "Chart junk refers to visual elements in charts and graphs that are not necessary to comprehend the information."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Correlation",
+            "Negative"
+        ],
+        "question": "A negative correlation means one variable goes UP while the other goes DOWN.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Negative correlation implies an inverse relationship between two variables."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Insights",
+            "Knowledge"
+        ],
+        "question": "The goal of analyzing data is to turn raw numbers into:",
+        "choices": [
+            "Insights and Knowledge",
+            "More numbers",
+            "Confusing pictures",
+            "Paper waste"
+        ],
+        "ans_idx": 0,
+        "justification": "The ultimate goal is to extract meaningful insights that can inform decisions."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Storage",
+            "Server",
+            "Hardware"
+        ],
+        "question": "A powerful computer designed to store and manage data for many users is a:",
+        "choices": [
+            "Server",
+            "Laptop",
+            "Phone",
+            "Calculator"
+        ],
+        "ans_idx": 0,
+        "justification": "A server provides functionality (like data storage) for other devices or programs."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Average",
+            "Mean"
+        ],
+        "question": "To find the mean, you add up all numbers and ________ by the count of numbers.",
+        "choices": [
+            "Divide",
+            "Multiply",
+            "Subtract",
+            "Add"
+        ],
+        "ans_idx": 0,
+        "justification": "Mean = Sum of values / Number of values."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Rounding",
+            "Math"
+        ],
+        "question": "If you round 10.8 to the nearest whole number, you get:",
+        "choices": [
+            "11",
+            "10",
+            "10.5",
+            "20"
+        ],
+        "ans_idx": 0,
+        "justification": "10.8 is closer to 11 than to 10."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Visualization",
+            "Word Cloud",
+            "Text"
+        ],
+        "question": "A chart that shows the most common words in a text by making them bigger is a:",
+        "choices": [
+            "Word Cloud",
+            "Text Map",
+            "Letter Storm",
+            "Alphabet Soup"
+        ],
+        "ans_idx": 0,
+        "justification": "Word clouds visually represent word frequency, with more frequent words appearing larger."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Real-time",
+            "Speed"
+        ],
+        "question": "Real-time analytics means analyzing data as soon as it enters the system.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Real-time analytics involves processing data immediately upon collection."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Encryption",
+            "Security"
+        ],
+        "question": "Scrambling data so only authorized people can read it is called:",
+        "choices": [
+            "Encryption",
+            "Mixing",
+            "Cooking",
+            "Blending"
+        ],
+        "ans_idx": 0,
+        "justification": "Encryption encodes information so that only authorized parties can access it."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Statistics",
+            "Sample",
+            "Representation"
+        ],
+        "question": "A 'Representative Sample' looks like:",
+        "choices": [
+            "Depending on the population, it has a mix of all types of people in it",
+            "Only one type of person",
+            "Only tall people",
+            "Nobody"
+        ],
+        "ans_idx": 0,
+        "justification": "A representative sample accurately reflects the characteristics of the larger population."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Duplicate",
+            "Cleaning"
+        ],
+        "question": "If the same data appears twice, it is a ________.",
+        "choices": [
+            "Duplicate",
+            "Mistake",
+            "Twin",
+            "Copy"
+        ],
+        "ans_idx": 0,
+        "justification": "A duplicate is an exact copy of a record."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Decimals",
+            "Precision"
+        ],
+        "question": "Which number is more precise?",
+        "choices": [
+            "3.14159",
+            "3.14",
+            "3",
+            "Around 3"
+        ],
+        "ans_idx": 0,
+        "justification": "More decimal places indicate a higher level of precision or exactness."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Visualization",
+            "Scale",
+            "Map"
+        ],
+        "question": "On a map, the 'Scale' tells you:",
+        "choices": [
+            "How much distance on the map represents distance in real life",
+            "How heavy the map is",
+            "The temperature",
+            "The time"
+        ],
+        "ans_idx": 0,
+        "justification": "The scale ratio represents the relationship between map distance and ground distance."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Error Bar",
+            "Uncertainty"
+        ],
+        "question": "Error bars on a chart show how uncertain or variable the data is.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Error bars graphically indicate the variability of data and are used to indicate the error or uncertainty in a reported measurement."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Survey",
+            "Open-ended"
+        ],
+        "question": "A question where you can write any answer you want (instead of picking A, B, C) is:",
+        "choices": [
+            "Open-ended",
+            "Multiple Choice",
+            "True/False",
+            "Closed"
+        ],
+        "ans_idx": 0,
+        "justification": "Open-ended questions allow respondents to answer in their own words."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Tools",
+            "Programming",
+            "R"
+        ],
+        "question": "Besides Python, which other language is famously used for Statistics?",
+        "choices": [
+            "R",
+            "ABC",
+            "Z",
+            "Q"
+        ],
+        "ans_idx": 0,
+        "justification": "R is a programming language and free software environment for statistical computing and graphics."
+    },
+    {
+        "question_type": "fill_the_blank",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Percentage",
+            "Math"
+        ],
+        "question": "The symbol % stands for ________.",
+        "choices": [
+            "Percent",
+            "Dollar",
+            "Hashtag",
+            "At"
+        ],
+        "ans_idx": 0,
+        "justification": "Percent means 'per 100'."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Conclusion",
+            "Result"
+        ],
+        "question": "After analyzing your data, you draw a ________.",
+        "choices": [
+            "Conclusion",
+            "Picture",
+            "Bath",
+            "Straw"
+        ],
+        "ans_idx": 0,
+        "justification": "The conclusion is the final decision or judgment reached by reasoning from the data."
+    },
+    {
+        "question_type": "mcq",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Analysis",
+            "Frequency Table",
+            "Counting"
+        ],
+        "question": "A table that lists items and checks how many times they appear is a:",
+        "choices": [
+            "Frequency Table",
+            "Times Table",
+            "Dining Table",
+            "Water Table"
+        ],
+        "ans_idx": 0,
+        "justification": "A frequency table displays the frequency of various outcomes in a sample."
+    },
+    {
+        "question_type": "true_false",
+        "track": "Data Analysis",
+        "difficulty_level": 2,
+        "concepts": [
+            "Data Science",
+            "Visualization",
+            "Data"
+        ],
+        "question": "A picture is worth a thousand words - this is why we visualize data.",
+        "choices": [
+            "True",
+            "False"
+        ],
+        "ans_idx": 0,
+        "justification": "Visualization makes complex data more accessible, understandable, and usable."
+    }
+]

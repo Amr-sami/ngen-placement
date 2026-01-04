@@ -18,6 +18,7 @@ import {
   Globe,
   AlertTriangle,
   LogIn,
+  Layers,
 } from 'lucide-react'
 import type { SurveyFormData } from './types'
 import InputField from './InputField'
@@ -42,6 +43,7 @@ export default function SurveyForm() {
     heardAboutUs: '',
     phone: '',
     email: '',
+    selectedTrack: 'general',
   })
 
   // State for existing user warning
@@ -228,6 +230,7 @@ export default function SurveyForm() {
     )
 
     sessionStorage.setItem('surveyData', JSON.stringify(formData))
+    sessionStorage.setItem('selectedTrack', formData.selectedTrack)
 
     router.push(`/${locale}/placement-test/test`)
   }
@@ -461,6 +464,38 @@ export default function SurveyForm() {
                     value={formData.schoolName}
                     onChange={handleChange('schoolName')}
                   />
+
+                  {/* Track Selection */}
+                  <div className="relative group">
+                    <Layers className="absolute start-4 top-1/2 -translate-y-1/2 text-purple-300 w-5 h-5 pointer-events-none rtl:scale-x-[-1]" />
+                    <select
+                      value={formData.selectedTrack}
+                      onChange={handleChange('selectedTrack')}
+                      className="w-full ps-12 pe-4 py-4 bg-black/20 border border-white/10 rounded-2xl text-white/90 placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:bg-black/40 transition-all appearance-none cursor-pointer"
+                    >
+                      <option value="general" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.general')}
+                      </option>
+                      <option value="data_science" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.data_science')}
+                      </option>
+                      <option value="computer_fundamentals" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.computer_fundamentals')}
+                      </option>
+                      <option value="cybersecurity" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.cybersecurity')}
+                      </option>
+                      <option value="data_analysis" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.data_analysis')}
+                      </option>
+                      <option value="python_programming" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.python_programming')}
+                      </option>
+                      <option value="robotics" className="bg-[#1a0b2e]">
+                        {t('trackSelection.options.robotics')}
+                      </option>
+                    </select>
+                  </div>
 
                   {/* Tech Toggle */}
                   <div className="bg-white/5 p-5 rounded-2xl border border-white/10">
