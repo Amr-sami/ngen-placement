@@ -2313,5 +2313,32 @@
         ]
       }
     }
+  },
+  "terms": {
+    "page": {
+      "title": "Terms and Conditions",
+      "description": "Terms and conditions for using NGen Schools services"
+    },
+    "refundPolicy": {
+      "title": "Refund Policy",
+      "liveCourses": {
+        "title": "Live/Onsite Courses",
+        "fullRefund": "Full refund if the cancellation request is made at least 7 days before the course start date.",
+        "partialRefund": "If canceled less than 7 days before the course start date, 20% of the fee will be deducted as administrative charges.",
+        "noRefund": "Once the program has started or the user has attended any session, no refund will be granted."
+      },
+      "recordedCourses": {
+        "title": "Recorded Courses",
+        "fullRefund": "Full refund if the user has not accessed or viewed any content.",
+        "noRefund": "Once content has been accessed or downloaded, no refund will be granted."
+      },
+      "processingTime": "Refunds will be issued to the original payment method within 7 to 30 working days depending on the bank or payment provider."
+    },
+    "cancellationPolicy": {
+      "title": "Cancellation & Replacement Policy",
+      "replacement": "Users are entitled to request replacing the course with another of equal or lower value, provided the request is made before the course begins.",
+      "priceDifference": "In case of a price difference (if the replacement course is higher in price), the user must pay the difference before switching.",
+      "noCancellation": "If a course has no cancellation/replacement policy, this must be clearly communicated prior to payment."
+    }
   }
 }
