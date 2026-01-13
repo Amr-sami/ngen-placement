@@ -76,17 +76,35 @@ const Policies = () => {
         <h5 className='font-bold text-sm lg:text-xl text-purple-dark mb-3 lg:mb-4 mt-4 lg:mt-6'>7. Changes to This Privacy Policy</h5>
         <p className='text-gray-tertiary leading-6'>We may update this Privacy Policy from time to time. Any significant changes will be communicated via email or a notice on our website. Continued use of our services after updates means acceptance of the revised policy.</p>
       </div>
-      {/* <div className='mb-4 lg:mb-10'>
-        <h3 className="font-bold text-xl text-pumpkin md:text-2xl xl:text-3xl mb-4 lg:mb-6">Cookie Policy</h3>
-        <h5 className='font-bold text-sm lg:text-xl text-purple-dark mb-3 lg:mb-4'>Course Fees</h5>
-        <p className='text-gray-tertiary leading-6'>Course NameCourse Fees iOS for Object Oriented Programmers 3000LE Web Development using PHP 3000LE Mobile Startups 3000LE An Introduction to Data Science 3000LE</p>
-        
-        <h5 className='font-bold text-sm lg:text-xl text-purple-dark mb-3 lg:mb-4 mt-4 lg:mt-6'>Refund Policy</h5>
+
+      <div className='mb-4 lg:mb-10'>
+        <h3 className="font-bold text-xl text-pumpkin md:text-2xl xl:text-3xl mb-4 lg:mb-6">Refund Policy</h3>
+
+        <h5 className='font-bold text-sm lg:text-xl text-purple-dark mb-3 lg:mb-4'>Live/Onsite Courses</h5>
         <ul>
-          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>Cancellation after receiving the final acceptance and paying the course fees are not allowed and full course fees are not refundable.</li>
-          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>In case the course is cancelled by GUC, participants are entitled to full refund of the course fees.</li>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>Full refund if the cancellation request is made at least 7 days before the course start date.</li>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>If canceled less than 7 days before the course start date, 20% of the fee will be deducted as administrative charges.</li>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>Once the program has started or the user has attended any session, no refund will be granted.</li>
         </ul>
-      </div> */}
+
+        <h5 className='font-bold text-sm lg:text-xl text-purple-dark mb-3 lg:mb-4 mt-4 lg:mt-6'>Recorded Courses</h5>
+        <ul>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>Full refund if the user has not accessed or viewed any content.</li>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>Once content has been accessed or downloaded, no refund will be granted.</li>
+        </ul>
+
+        <h5 className='font-bold text-sm lg:text-xl text-purple-dark mb-3 lg:mb-4 mt-4 lg:mt-6'>Refund Processing</h5>
+        <p className='text-gray-tertiary leading-6'>Refunds will be issued to the original payment method within 7 to 30 working days depending on the bank or payment provider.</p>
+      </div>
+
+      <div className='mb-4 lg:mb-10'>
+        <h3 className="font-bold text-xl text-pumpkin md:text-2xl xl:text-3xl mb-4 lg:mb-6">Cancellation & Replacement Policy</h3>
+        <ul>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>Users are entitled to request replacing the course with another of equal or lower value, provided the request is made before the course begins.</li>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>In case of a price difference (if the replacement course is higher in price), the user must pay the difference before switching.</li>
+          <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>If a course has no cancellation/replacement policy, this must be clearly communicated prior to payment.</li>
+        </ul>
+      </div>
     </main>
   )
 }
