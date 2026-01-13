@@ -2340,5 +2340,123 @@
       "priceDifference": "In case of a price difference (if the replacement course is higher in price), the user must pay the difference before switching.",
       "noCancellation": "If a course has no cancellation/replacement policy, this must be clearly communicated prior to payment."
     }
+  },
+  "policies": {
+    "title": "Policies",
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "intro": {
+        "title": "1. Introduction",
+        "content": "Welcome to NGen! These Terms and Conditions govern your use of our website, accessible at www.ngenschools.com. By using this Website, you agree to comply with these Terms. If you do not agree with any part of these Terms, please refrain from using our services."
+      },
+      "intellectualProperty": {
+        "title": "2. Intellectual Property Rights",
+        "content": "Unless otherwise stated, NGen and/or its licensors own all intellectual property rights to the content and materials on this Website. Users are granted a limited license to view the materials but are not permitted to: Republish, sell, or sub-license Website content. Modify, distribute, or commercially exploit any Website material. Use this Website in a way that may harm its functionality or restrict access for others."
+      },
+      "userRestrictions": {
+        "title": "3. User Restrictions",
+        "content": "When using our Website, you must not: Publish or distribute Website content in any media. Engage in illegal or harmful activities that may damage the Website or its users. Perform data mining, scraping, or any automated data collection processes. Use the Website for unauthorized advertising or marketing. NGen reserves the right to restrict access to certain areas of the Website at any time. Any user credentials (such as login details) must remain confidential."
+      },
+      "userContent": {
+        "title": "4. User Content",
+        "content": "By submitting or displaying any content on NGen, you grant us a non-exclusive, worldwide, and sublicensable license to use, modify, and distribute your content across our platform. You must ensure that: You own the rights to your content. Your content does not violate any third-party rights. NGen reserves the right to remove any content that does not comply with these Terms."
+      },
+      "noWarranties": {
+        "title": "5. No Warranties",
+        "content": "This Website is provided \"as is\", and NGen makes no guarantees regarding its accuracy, reliability, or availability. Users access and use the Website at their own risk."
+      },
+      "limitation": {
+        "title": "6. Limitation of Liability",
+        "content": "NGen, its directors, employees, and affiliates shall not be held liable for: Any indirect, incidental, or consequential damages resulting from Website use. Loss of data, business, or profits due to service interruptions or technical failures."
+      },
+      "severability": {
+        "title": "7. Severability",
+        "content": "If any part of these Terms is found to be invalid or unenforceable under applicable law, the rest of the Terms will remain unaffected."
+      },
+      "modifications": {
+        "title": "8. Modifications to Terms",
+        "content": "NGen reserves the right to update or modify these Terms at any time. Continued use of the Website after updates signifies acceptance of the new Terms."
+      },
+      "assignment": {
+        "title": "9. Assignment",
+        "content": "NGen may assign or transfer its rights and obligations under these Terms without notice. However, users may not transfer their rights or obligations."
+      },
+      "entireAgreement": {
+        "title": "10. Entire Agreement",
+        "content": "These Terms constitute the entire agreement between NGen and users regarding the Website and supersede any prior agreements."
+      }
+    },
+    "termsConditions": {
+      "title": "Terms & Conditions",
+      "intro": {
+        "title": "Introduction",
+        "content": "At NGen, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our website and services."
+      },
+      "infoCollect": {
+        "title": "1. Information We Collect",
+        "intro": "When you use NGen, we may collect the following types of information:",
+        "personal": "✅ Personal Information – Name, email address, phone number, age, and other details you provide during registration.",
+        "usage": "✅ Usage Data – Information about how you interact with our website, including pages visited, time spent, and activities performed.",
+        "device": "✅ Device & Technical Data – IP address, browser type, operating system, and cookies to improve your experience."
+      },
+      "howWeUse": {
+        "title": "2. How We Use Your Information",
+        "intro": "We use the collected data to:",
+        "provide": "Provide and improve our educational services.",
+        "personalize": "Personalize your learning experience.",
+        "communicate": "Communicate updates, offers, and important announcements.",
+        "security": "Ensure the security and functionality of our platform.",
+        "legal": "Comply with legal requirements.",
+        "noSell": "We do not sell or share your personal data with third parties for marketing purposes."
+      },
+      "cookies": {
+        "title": "3. Cookies & Tracking Technologies",
+        "content": "We use cookies and similar technologies to enhance user experience and analyze site performance. You can manage cookie preferences through your browser settings."
+      },
+      "dataProtection": {
+        "title": "4. Data Protection & Security",
+        "content": "We implement strict security measures to protect your personal information from unauthorized access, misuse, or loss. However, no online platform can be 100% secure, so we encourage users to take precautions when sharing personal data online."
+      },
+      "thirdParty": {
+        "title": "5. Third-Party Links & Services",
+        "content": "Our website may contain links to external sites. NGen is not responsible for the privacy practices of third-party websites. We recommend reviewing their policies before providing any information."
+      },
+      "yourRights": {
+        "title": "6. Your Rights & Choices",
+        "intro": "Depending on your location, you may have rights regarding your personal data, including:",
+        "access": "✅ Accessing, updating, or deleting your personal information.",
+        "optOut": "✅ Opting out of marketing emails.",
+        "copy": "✅ Requesting a copy of the data we hold about you.",
+        "contact": "To exercise these rights, contact us at Info@ngenschools.com."
+      },
+      "changes": {
+        "title": "7. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. Any significant changes will be communicated via email or a notice on our website. Continued use of our services after updates means acceptance of the revised policy."
+      }
+    },
+    "refundPolicy": {
+      "title": "Refund Policy",
+      "liveCourses": {
+        "title": "Live/Onsite Courses",
+        "fullRefund": "Full refund if the cancellation request is made at least 7 days before the course start date.",
+        "partialRefund": "If canceled less than 7 days before the course start date, 20% of the fee will be deducted as administrative charges.",
+        "noRefund": "Once the program has started or the user has attended any session, no refund will be granted."
+      },
+      "recordedCourses": {
+        "title": "Recorded Courses",
+        "fullRefund": "Full refund if the user has not accessed or viewed any content.",
+        "noRefund": "Once content has been accessed or downloaded, no refund will be granted."
+      },
+      "processing": {
+        "title": "Refund Processing",
+        "content": "Refunds will be issued to the original payment method within 7 to 30 working days depending on the bank or payment provider."
+      }
+    },
+    "cancellationPolicy": {
+      "title": "Cancellation & Replacement Policy",
+      "replacement": "Users are entitled to request replacing the course with another of equal or lower value, provided the request is made before the course begins.",
+      "priceDifference": "In case of a price difference (if the replacement course is higher in price), the user must pay the difference before switching.",
+      "noCancellation": "If a course has no cancellation/replacement policy, this must be clearly communicated prior to payment."
+    }
   }
 }
