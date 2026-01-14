@@ -159,14 +159,15 @@ function Navbar() {
               if (item.type === 'section' && item.sectionId) {
                 return (
                   <NavigationMenuItem key={item.key}>
-                    <Link href={item.href} legacyBehavior passHref>
-                      <NavigationMenuLink
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={item.href}
                         className={navigationMenuTriggerStyle()}
                         onClick={(e) => handleSectionClick(e, item.sectionId!)}
                       >
                         {item.label}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 );
               }
@@ -174,11 +175,11 @@ function Navbar() {
               // Handle regular routes
               return (
                 <NavigationMenuItem key={item.key}>
-                  <Link href={item.href!} legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink asChild>
+                    <Link href={item.href!} className={navigationMenuTriggerStyle()}>
                       {item.label}
-                    </NavigationMenuLink>
-                  </Link>
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               );
             })}

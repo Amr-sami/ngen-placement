@@ -124,6 +124,12 @@ const Policies = () => {
           <li className='list-disc list-inside ms-1 text-gray-tertiary leading-6'>{t('cancellationPolicy.noCancellation')}</li>
         </ul>
       </div>
+
+      <div className='mt-8 pt-8 border-t border-gray-100'>
+        <p className='text-gray-tertiary text-sm'>
+          {t('trn')}
+        </p>
+      </div>
     </main>
   )
 }

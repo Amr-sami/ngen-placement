@@ -5,7 +5,6 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { IoLogoWhatsapp } from 'react-icons/io';
-import { useParams } from 'next/navigation';
 import {
   getHomeRoute,
   getAboutRoute,
@@ -15,44 +14,33 @@ import {
   getNgenForCorporatesRoute,
   getNgenForParentsRoute,
 } from '@/lib/routes';
+import { useTranslations, useLocale } from 'next-intl';
 import type { Locale } from '@/i18n';
 
-// ✅ import messages
-import enMessages from '@/messages/en.json';
-import arMessages from '@/messages/ar.json';
-
-const MESSAGES = {
-  en: enMessages,
-  ar: arMessages,
-} as const;
-
 function Footer() {
-  const params = useParams();
-  const locale = ((params?.locale as Locale) || 'en') as keyof typeof MESSAGES;
+  const locale = useLocale() as Locale;
   const isRTL = locale === 'ar';
 
-  // ✅ footer translations from JSON
-  const t = MESSAGES[locale]?.footer ?? MESSAGES.en.footer;
+  const t = useTranslations('footer');
 
-  // ✅ offices from JSON
   const offices = [
     {
-      country: t.offices.egypt.country,
-      address: t.offices.egypt.address,
-      phone: t.offices.egypt.phone,
-      hasWhatsapp: t.offices.egypt.hasWhatsapp,
+      country: t('offices.egypt.country'),
+      address: t('offices.egypt.address'),
+      phone: t('offices.egypt.phone'),
+      hasWhatsapp: t.raw('offices.egypt.hasWhatsapp'),
     },
     {
-      country: t.offices.uae.country,
-      address: t.offices.uae.address,
-      phone: t.offices.uae.phone,
-      hasWhatsapp: t.offices.uae.hasWhatsapp,
+      country: t('offices.uae.country'),
+      address: t('offices.uae.address'),
+      phone: t('offices.uae.phone'),
+      hasWhatsapp: t.raw('offices.uae.hasWhatsapp'),
     },
     {
-      country: t.offices.syria.country,
-      address: t.offices.syria.address,
-      phones: t.offices.syria.phones,
-      hasWhatsapp: t.offices.syria.hasWhatsapp,
+      country: t('offices.syria.country'),
+      address: t('offices.syria.address'),
+      phones: t.raw('offices.syria.phones'),
+      hasWhatsapp: t.raw('offices.syria.hasWhatsapp'),
     },
   ];
 
@@ -119,21 +107,21 @@ function Footer() {
 
           {/* Quick Links */}
           <div className="lg:col-span-2">
-            <h6 className="font-bold text-lg mb-4 md:mb-6 text-white">{t.quickLinks}</h6>
+            <h6 className="font-bold text-lg mb-4 md:mb-6 text-white">{t('quickLinks')}</h6>
             <ul className="flex flex-col gap-2 md:gap-4">
               <li>
                 <Link href={getAboutRoute(locale)} className="text-white/90 hover:text-white transition-all duration-200 inline-block hover:translate-x-1">
-                  {t.aboutUs}
+                  {t('aboutUs')}
                 </Link>
               </li>
               <li>
                 <Link href={getTracksRoute(locale)} className="text-white/90 hover:text-white transition-all duration-200 inline-block hover:translate-x-1">
-                  {t.tracks}
+                  {t('tracks')}
                 </Link>
               </li>
               <li>
                 <Link href={getPoliciesRoute(locale)} className="text-white/90 hover:text-white transition-all duration-200 inline-block hover:translate-x-1">
-                  {t.policies}
+                  {t('policies')}
                 </Link>
               </li>
             </ul>
@@ -141,21 +129,21 @@ function Footer() {
 
           {/* NGen For */}
           <div className="lg:col-span-2">
-            <h6 className="font-bold text-lg mb-4 md:mb-6 text-white">{t.ngenFor}</h6>
+            <h6 className="font-bold text-lg mb-4 md:mb-6 text-white">{t('ngenFor')}</h6>
             <ul className="flex flex-col gap-2 md:gap-4">
               <li>
                 <Link href={getNgenForSchoolsRoute(locale)} className="text-white/90 hover:text-white transition-all duration-200 inline-block hover:translate-x-1">
-                  {t.forSchools}
+                  {t('forSchools')}
                 </Link>
               </li>
               <li>
                 <Link href={getNgenForCorporatesRoute(locale)} className="text-white/90 hover:text-white transition-all duration-200 inline-block hover:translate-x-1">
-                  {t.forCorporates}
+                  {t('forCorporates')}
                 </Link>
               </li>
               <li>
                 <Link href={getNgenForParentsRoute(locale)} className="text-white/90 hover:text-white transition-all duration-200 inline-block hover:translate-x-1">
-                  {t.forParents}
+                  {t('forParents')}
                 </Link>
               </li>
             </ul>
@@ -163,7 +151,7 @@ function Footer() {
 
           {/* Contact Information */}
           <div className="lg:col-span-5 col-span-2">
-            <h6 className="font-bold text-lg mb-4 md:mb-6 text-white text-center md:text-left">{t.getInTouch}</h6>
+            <h6 className="font-bold text-lg mb-4 md:mb-6 text-white text-center md:text-left">{t('getInTouch')}</h6>
 
             {/* Global Email */}
             <div className="mb-6">
@@ -218,7 +206,7 @@ function Footer() {
                     </div>
                   )}
 
-                  {office.phones?.map((phone, phoneIdx) => (
+                  {(office.phones as string[])?.map((phone: string, phoneIdx: number) => (
                     <div key={phoneIdx} className="flex items-start gap-3 group">
                       <Image
                         src="/assets/images/icons/phone-icon.svg"
@@ -255,8 +243,11 @@ function Footer() {
       {/* Copyright Bar */}
       <div className="relative z-10 pt-6 pb-4 border-t border-white/20">
         <div className="container mx-auto px-5">
-          <p className="text-center text-white/80 text-sm">
-            © {new Date().getFullYear()} {t.copyright}
+          <p className="text-center text-white/80 text-sm" suppressHydrationWarning>
+            © {new Date().getFullYear()} {t('copyright')}
+          </p>
+          <p className="text-center text-white/60 text-xs mt-1">
+            {t('trn')}
           </p>
         </div>
       </div>
