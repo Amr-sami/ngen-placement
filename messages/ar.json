@@ -21,6 +21,7 @@
     },
     "profile": {
       "myProfile": "ملفي الشخصي",
+      "dashboard": "لوحة التحكم",
       "settings": "الإعدادات",
       "signOut": "تسجيل الخروج"
     }

@@ -5,7 +5,7 @@ import { useSession, signOut } from 'next-auth/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { User, LogOut, Settings, ChevronDown } from 'lucide-react';
+import { User, LogOut, Settings, ChevronDown, LayoutDashboard } from 'lucide-react';
 import type { Locale } from '@/i18n';
 
 interface UserProfileDropdownProps {
@@ -89,6 +89,16 @@ export function UserProfileDropdown({ locale }: UserProfileDropdownProps) {
 
                     {/* Menu Items */}
                     <div className="py-1">
+                        {user.role === 'superadmin' && (
+                            <Link
+                                href={`/${locale}/admin`}
+                                className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                <LayoutDashboard className="w-4 h-4" />
+                                {t('dashboard')}
+                            </Link>
+                        )}
                         <Link
                             href={`/${locale}/profile`}
                             className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"

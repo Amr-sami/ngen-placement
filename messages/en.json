@@ -21,6 +21,7 @@
     },
     "profile": {
       "myProfile": "My Profile",
+      "dashboard": "Dashboard",
       "settings": "Settings",
       "signOut": "Sign Out"
     }
