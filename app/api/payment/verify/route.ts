@@ -121,18 +121,12 @@ export async function GET(request: NextRequest) {
             });
         }
 
-        // Verify HMAC (optional in dev mode if secret not configured)
+        // Verify HMAC
         const hmacValid = verifyRedirectHmac(params, hmac);
 
         if (!hmacValid && PAYMOB_HMAC_SECRET) {
-            console.error('❌ Payment return HMAC verification failed');
-            return NextResponse.json({
-                verified: false,
-                success: false,
-                error: 'HMAC verification failed',
-                redirectTo: 'error',
-                reason: 'hmac_invalid',
-            });
+            console.warn('⚠️ Payment return HMAC verification failed, relying on Backend Inquiry for security.');
+            // We don't return here anymore, we let the inquiry decide the truth
         }
 
         // Connect to database
@@ -159,10 +153,11 @@ export async function GET(request: NextRequest) {
         }
 
         // 2. Perform a Transaction Inquiry for the most reliable status
-        // We use the merchant_order_id (which is our order._id) to find the latest transaction
+        // Prefer using the Paymob Order ID if available, or our Merchant Order ID
         let inquiryData = null;
         try {
             inquiryData = await getTransactionInquiry({
+                paymobOrderId: order.paymobOrderId || paymobOrderId || undefined,
                 merchantOrderId: order._id.toString(),
             });
             console.log(`✅ Inquiry success for order ${order._id}:`, inquiryData.success);
