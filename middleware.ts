@@ -35,68 +35,67 @@ const ADMIN_ALLOWED_PUBLIC_ROUTES = [
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Skip middleware for API routes, static files, and Next.js internals
+  // 1. Skip middleware for critical paths
   if (
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next') ||
-    pathname.includes('.') // Static files
+    pathname.includes('.')
   ) {
     return NextResponse.next();
   }
 
-  // Get token for auth checks
+  // 2. Get auth state
   const token = await getToken({
     req: request,
     secret: process.env.NEXTAUTH_SECRET,
   });
 
-  // Check if this is an admin route
+  // 3. Identify route types
   const isAdminRoute = pathname.includes('/admin');
-
-  // Check if this is an allowed public route (login, auth routes)
   const isAllowedPublicRoute = ADMIN_ALLOWED_PUBLIC_ROUTES.some(route =>
     pathname.startsWith(route) || pathname === route
   );
+  const isPreviewMode = request.nextUrl.searchParams.get('preview') === 'true';
 
   // ═══════════════════════════════════════════════════════════════
-  // ADMIN ROUTE HANDLING
+  // SECURITY CHECKS
   // ═══════════════════════════════════════════════════════════════
+
   if (isAdminRoute) {
-    // Not logged in → redirect to login
+    // A. Not logged in → redirect to login
     if (!token) {
       const loginUrl = new URL('/en/auth/login', request.url);
       loginUrl.searchParams.set('callbackUrl', pathname);
       return NextResponse.redirect(loginUrl);
     }
 
-    // Not super admin → return 404 response (security through obscurity)
+    // B. Not super admin → 404
     if (token.role !== 'superadmin') {
-      // Return a proper 404 response
       return new NextResponse('Not Found', { status: 404 });
     }
 
-    // Super admin accessing admin routes → allow
-    const response = NextResponse.next();
-    response.headers.set('x-pathname', pathname);
-    return response;
+    // C. Authorized Super Admin accessing Admin Route → FALL THROUGH TO INTL
   }
 
-  // Check if preview mode is requested
-  const isPreviewMode = request.nextUrl.searchParams.get('preview') === 'true';
+  // ═══════════════════════════════════════════════════════════════
+  // SUPER ADMIN REDIRECTS (FORCE DASHBOARD FOR PUBLIC PAGES)
+  // ═══════════════════════════════════════════════════════════════
 
-  // ═══════════════════════════════════════════════════════════════
-  // SUPER ADMIN ACCESSING PUBLIC ROUTES
-  // ═══════════════════════════════════════════════════════════════
-  if (token?.role === 'superadmin' && !isAllowedPublicRoute && !isPreviewMode) {
-    // Super admin trying to access public pages → redirect to admin dashboard
+  if (
+    token?.role === 'superadmin' &&
+    !isAdminRoute &&
+    !isAllowedPublicRoute &&
+    !isPreviewMode
+  ) {
     const pathLocale = pathname.split('/')[1] || 'en';
     const validLocale = locales.includes(pathLocale as typeof locales[number]) ? pathLocale : 'en';
     return NextResponse.redirect(new URL(`/${validLocale}/admin`, request.url));
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // REGULAR USERS / GUESTS - PUBLIC ROUTES
+  // FINAL STEP: INTERNATIONALIZATION
   // ═══════════════════════════════════════════════════════════════
+  // Always call intlMiddleware for authorized traffic to avoid loops and normalize URLs
   return intlMiddleware(request);
 }
 
