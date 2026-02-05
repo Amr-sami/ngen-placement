@@ -259,6 +259,7 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                     customerPhone: formData.customerPhone.trim(),
                     paymentMethod: formData.paymentMethod,
                     currency,
+                    locale,
                 }),
             });
 

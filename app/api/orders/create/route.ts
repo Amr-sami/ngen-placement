@@ -48,6 +48,7 @@ const createOrderSchema = z.object({
     countryCode: z.string().length(2).optional().default('EG'),
     // Optional: if user is logged in
     userId: z.string().optional(),
+    locale: z.string().optional().default('en'),
 });
 
 export async function POST(request: NextRequest) {
@@ -86,6 +87,7 @@ export async function POST(request: NextRequest) {
             currency,
             countryCode,
             userId,
+            locale: userLocale,
         } = validationResult.data;
 
         // Connect to database
@@ -147,7 +149,7 @@ export async function POST(request: NextRequest) {
         }
 
         const appBaseUrl = process.env.APP_BASE_URL || 'http://localhost:3000';
-        const redirectionUrl = `${appBaseUrl}/api/payment/verify`;
+        const redirectionUrl = `${appBaseUrl}/${userLocale}/payment/return`;
         const notificationUrl = `${appBaseUrl}/api/webhooks/paymob`;
 
         const intention = await createPaymentIntention({
