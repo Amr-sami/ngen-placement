@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import crypto from 'crypto';
+import * as crypto from 'crypto';
 import { connectToDatabase } from '@/lib/mongodb';
 import Order from '@/lib/models/Order';
 import Transaction from '@/lib/models/Transaction';
@@ -37,15 +37,19 @@ function verifyRedirectHmac(params: URLSearchParams, receivedHmac: string): bool
     }
 
     try {
-        // Fields used for HMAC calculation in redirect (alphabetical order)
-        // Based on Paymob documentation for transaction response
+        // Fields used for HMAC calculation in redirect exactly as specified:
+        // amount_cents, created_at, currency, error_occured, has_parent_transaction, id, 
+        // integration_id, is_3d_secure, is_auth, is_capture, is_refunded, 
+        // is_standalone_payment, is_voided, order, owner, pending, 
+        // source_data.pan, source_data.sub_type, source_data.type, success
+
         const hmacFields = [
             'amount_cents',
             'created_at',
             'currency',
             'error_occured',
             'has_parent_transaction',
-            'id',
+            'id', // Paymob sends 'id' for transaction ID in redirects
             'integration_id',
             'is_3d_secure',
             'is_auth',
@@ -53,7 +57,7 @@ function verifyRedirectHmac(params: URLSearchParams, receivedHmac: string): bool
             'is_refunded',
             'is_standalone_payment',
             'is_voided',
-            'order',
+            'order', // Paymob sends 'order' for order ID in redirects
             'owner',
             'pending',
             'source_data.pan',
@@ -64,19 +68,7 @@ function verifyRedirectHmac(params: URLSearchParams, receivedHmac: string): bool
 
         // Build the concatenated string
         const dataToHash = hmacFields.map(field => {
-            if (field.includes('.')) {
-                const [parent, child] = field.split('.');
-                const parentVal = params.get(parent);
-                if (parentVal) {
-                    try {
-                        const parsed = JSON.parse(parentVal);
-                        return parsed[child] ?? '';
-                    } catch {
-                        return '';
-                    }
-                }
-                return '';
-            }
+            // Paymob flat parameters in redirect: source_data.pan, etc. are literal keys
             return params.get(field) ?? '';
         }).join('');
 
@@ -85,7 +77,16 @@ function verifyRedirectHmac(params: URLSearchParams, receivedHmac: string): bool
             .update(dataToHash)
             .digest('hex');
 
-        return calculatedHmac === receivedHmac;
+        const isValid = calculatedHmac === receivedHmac;
+
+        if (!isValid) {
+            console.error('❌ Redirect HMAC verification failed');
+            console.debug('Data to hash:', dataToHash);
+            console.debug('Calculated HMAC:', calculatedHmac);
+            console.debug('Received HMAC:', receivedHmac);
+        }
+
+        return isValid;
     } catch (error) {
         console.error('HMAC verification error:', error);
         return false;

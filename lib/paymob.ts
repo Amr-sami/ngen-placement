@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+import * as crypto from 'crypto';
 
 /**
  * Paymob Payment Gateway Integration
@@ -352,30 +352,33 @@ export function verifyWebhookHmac(
     try {
         const obj = payload.obj;
 
-        // Build the string to hash according to Paymob's specification
-        // Order matters! Follow Paymob documentation exactly
-        // TODO: Verify exact field order with Paymob documentation
+        // Build the string to hash according to Paymob's exactly specified order:
+        // amount_cents, created_at, currency, error_occured, has_parent_transaction, id, 
+        // integration_id, is_3d_secure, is_auth, is_capture, is_refunded, 
+        // is_standalone_payment, is_voided, order.id, owner, pending, 
+        // source_data.pan, source_data.sub_type, source_data.type, success
+
         const dataToHash = [
-            obj.amount_cents,
-            obj.created_at,
-            obj.currency,
-            obj.error_occured,
-            obj.has_parent_transaction,
-            obj.id,
-            obj.integration_id,
-            obj.is_3d_secure,
-            obj.is_auth,
-            obj.is_capture,
-            obj.is_refunded,
-            obj.is_standalone_payment,
-            obj.is_voided,
-            obj.order.id,
-            obj.owner,
-            obj.pending,
-            obj.source_data.pan,
-            obj.source_data.sub_type,
-            obj.source_data.type,
-            obj.success,
+            String(obj.amount_cents),
+            String(obj.created_at),
+            String(obj.currency),
+            String(obj.error_occured),
+            String(obj.has_parent_transaction),
+            String(obj.id),
+            String(obj.integration_id),
+            String(obj.is_3d_secure),
+            String(obj.is_auth),
+            String(obj.is_capture),
+            String(obj.is_refunded),
+            String(obj.is_standalone_payment),
+            String(obj.is_voided),
+            String(obj.order.id),
+            String(obj.owner),
+            String(obj.pending),
+            String(obj.source_data.pan),
+            String(obj.source_data.sub_type),
+            String(obj.source_data.type),
+            String(obj.success),
         ].join('');
 
         const calculatedHmac = crypto
@@ -383,7 +386,16 @@ export function verifyWebhookHmac(
             .update(dataToHash)
             .digest('hex');
 
-        return calculatedHmac === receivedHmac;
+        const isValid = calculatedHmac === receivedHmac;
+
+        if (!isValid) {
+            console.error('❌ HMAC verification failed');
+            console.debug('Data to hash:', dataToHash);
+            console.debug('Calculated HMAC:', calculatedHmac);
+            console.debug('Received HMAC:', receivedHmac);
+        }
+
+        return isValid;
     } catch (error) {
         console.error('HMAC verification error:', error);
         return false;
