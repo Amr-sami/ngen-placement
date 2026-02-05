@@ -157,8 +157,11 @@ export default async function OrderDetailPage({ params }: PageProps) {
                                         </div>
 
                                         {txn.errorMessage && (
-                                            <div className="mt-3 p-2 bg-red-500/20 rounded text-sm text-red-300">
-                                                <strong>Error:</strong> {txn.errorMessage}
+                                            <div className={`mt-3 p-2 rounded text-sm ${txn.success
+                                                ? 'bg-green-500/10 text-green-300 border border-green-500/20'
+                                                : 'bg-red-500/10 text-red-300 border border-red-500/20'
+                                                }`}>
+                                                <strong>{txn.success ? 'Message:' : 'Error:'}</strong> {txn.errorMessage}
                                             </div>
                                         )}
                                     </div>
