@@ -18,7 +18,8 @@ import { getLocalizedValue } from '@/lib/localization';
 /**
  * POST /api/orders/create
  * 
- * Create a new order and initiate Paymob payment flow
+ * Create a new order and initiate Paymob Unified Checkout (Intention API) flow.
+ * Migrated from legacy initiatePayment flow for a more modern checkout experience.
  * 
  * Request Body:
  * - beltId: string (required) - MongoDB ObjectId of the belt to purchase
