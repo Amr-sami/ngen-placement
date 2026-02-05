@@ -104,6 +104,34 @@ export interface PaymentIntentionArgs {
     redirectionUrl?: string;
 }
 
+export interface IntentionInquiryResponse {
+    id: string;
+    status: 'Pending' | 'Success' | 'Fail';
+    amount: number;
+    currency: string;
+    payment_methods: Array<{
+        id: number;
+        name: string;
+        method_type: string;
+    }>;
+    special_reference?: string;
+    created: string;
+    [key: string]: any;
+}
+
+export interface TransactionInquiryResponse {
+    id: number;
+    success: boolean;
+    pending: boolean;
+    amount_cents: number;
+    currency: string;
+    order: {
+        id: number;
+        merchant_order_id?: string;
+    };
+    [key: string]: any;
+}
+
 export interface PaymentIntentionResponse {
     id: string;
     client_secret: string;
@@ -543,6 +571,42 @@ export function getUnifiedCheckoutUrl(clientSecret: string): string {
     }
 
     return `https://accept.paymob.com/unifiedcheckout/?publicKey=${NEXT_PUBLIC_PAYMOB_PUBLIC_KEY}&clientSecret=${clientSecret}`;
+}
+
+/**
+ * Transaction Inquiry API
+ * 
+ * Get the latest status of a transaction using the Paymob Order ID or Merchant Order ID.
+ * This is the most reliable way to verify a payment status on the backend.
+ * 
+ * @see POST /api/ecommerce/orders/transaction_inquiry
+ */
+export async function getTransactionInquiry(args: {
+    paymobOrderId?: string;
+    merchantOrderId?: string;
+}): Promise<TransactionInquiryResponse> {
+    if (!PAYMOB_API_KEY) {
+        throw new PaymobError('PAYMOB_API_KEY is not configured');
+    }
+
+    // First authenticate to get a token
+    const { token } = await authenticate();
+
+    const response = await paymobRequest<TransactionInquiryResponse>(
+        '/ecommerce/orders/transaction_inquiry',
+        {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                order_id: args.paymobOrderId,
+                merchant_order_id: args.merchantOrderId,
+            }),
+        }
+    );
+
+    return response;
 }
 
 /**

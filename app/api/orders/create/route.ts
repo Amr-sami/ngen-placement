@@ -146,12 +146,18 @@ export async function POST(request: NextRequest) {
             throw new Error(`Integration ID for ${paymentMethod} not found`);
         }
 
+        const appBaseUrl = process.env.APP_BASE_URL || 'http://localhost:3000';
+        const redirectionUrl = `${appBaseUrl}/api/payment/verify`;
+        const notificationUrl = `${appBaseUrl}/api/webhooks/paymob`;
+
         const intention = await createPaymentIntention({
             amountCents,
             currency,
             paymentMethods: [parseInt(integrationId, 10)],
             billingData,
             specialReference: order._id.toString(),
+            notificationUrl,
+            redirectionUrl,
             items: [
                 {
                     name: beltNameEn,

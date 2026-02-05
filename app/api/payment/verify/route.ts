@@ -3,6 +3,7 @@ import * as crypto from 'crypto';
 import { connectToDatabase } from '@/lib/mongodb';
 import Order from '@/lib/models/Order';
 import Transaction from '@/lib/models/Transaction';
+import { getTransactionInquiry, verifyWebhookHmac } from '@/lib/paymob';
 
 /**
  * GET /api/payment/verify
@@ -134,10 +135,10 @@ export async function GET(request: NextRequest) {
             });
         }
 
-        // Connect to database and find order
+        // Connect to database
         await connectToDatabase();
 
-        // Find order by our order ID or Paymob order ID
+        // 1. First, search for the order by merchantOrderId or paymobOrderId
         let order = null;
         if (merchantOrderId) {
             order = await Order.findById(merchantOrderId);
@@ -147,6 +148,7 @@ export async function GET(request: NextRequest) {
         }
 
         if (!order) {
+            console.error('Order not found in verify route:', { merchantOrderId, paymobOrderId });
             return NextResponse.json({
                 verified: true,
                 success: false,
@@ -156,15 +158,37 @@ export async function GET(request: NextRequest) {
             });
         }
 
-        // Determine final status
+        // 2. Perform a Transaction Inquiry for the most reliable status
+        // We use the merchant_order_id (which is our order._id) to find the latest transaction
+        let inquiryData = null;
+        try {
+            inquiryData = await getTransactionInquiry({
+                merchantOrderId: order._id.toString(),
+            });
+            console.log(`✅ Inquiry success for order ${order._id}:`, inquiryData.success);
+        } catch (inquiryError) {
+            console.warn('⚠️ Transaction inquiry failed, falling back to URL params:', inquiryError);
+        }
+
+        // 3. Determine final status (Prefer inquiry data, fallback to URL params)
+        let isSuccess = success;
+        let isPendingStatus = isPending;
+        let finalTxnId = transactionId;
+
+        if (inquiryData) {
+            isSuccess = inquiryData.success;
+            isPendingStatus = inquiryData.pending;
+            finalTxnId = inquiryData.id.toString();
+        }
+
         let status: 'pending' | 'paid' | 'failed' = 'failed';
-        if (success && !isPending) {
+        if (isSuccess && !isPendingStatus) {
             status = 'paid';
-        } else if (isPending) {
+        } else if (isPendingStatus) {
             status = 'pending';
         }
 
-        // Check for transaction response codes that indicate decline
+        // Map decline reasons if available
         const declineReasons: Record<string, string> = {
             'DECLINED': 'card_declined',
             'INSUFFICIENT_FUNDS': 'insufficient_funds',
@@ -175,25 +199,25 @@ export async function GET(request: NextRequest) {
         // Idempotency: Don't downgrade from 'paid' status
         if (order.status !== 'paid') {
             order.status = status;
-            if (transactionId) {
-                order.transactionId = transactionId;
+            if (finalTxnId) {
+                order.transactionId = finalTxnId;
             }
             await order.save();
-            console.log(`✅ Order ${order._id} status updated to: ${status}`);
+            console.log(`✅ Order ${order._id} status updated via ${inquiryData ? 'Inquiry' : 'URL Params'} to: ${status}`);
         }
 
-        // Create/update transaction record if we have transaction data
-        if (transactionId) {
-            const existingTxn = await Transaction.findOne({ paymobTxnId: transactionId });
+        // Create/update transaction record
+        if (finalTxnId) {
+            const existingTxn = await Transaction.findOne({ paymobTxnId: finalTxnId });
             if (!existingTxn) {
                 await Transaction.create({
                     orderId: order._id,
-                    paymobTxnId: transactionId,
+                    paymobTxnId: finalTxnId,
                     amount: amountCents / 100,
                     currency,
                     success: status === 'paid',
                     pending: status === 'pending',
-                    responseData: Object.fromEntries(params.entries()),
+                    responseData: inquiryData || Object.fromEntries(params.entries()),
                     errorMessage: txnResponseCode !== '0' ? txnResponseCode : undefined,
                 });
             }
@@ -204,7 +228,7 @@ export async function GET(request: NextRequest) {
             success: status === 'paid',
             pending: status === 'pending',
             orderId: order._id.toString(),
-            transactionId: transactionId || undefined,
+            transactionId: finalTxnId || undefined,
             status,
             redirectTo: status === 'paid' || status === 'pending' ? 'success' : 'error',
             reason,

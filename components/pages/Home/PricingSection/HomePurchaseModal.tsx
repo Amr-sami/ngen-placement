@@ -270,10 +270,9 @@ export default function HomePurchaseModal({ isOpen, onClose, item, pricing, curr
                 return;
             }
 
-            // Redirect to checkout page with iframe
-            if (data.iframeUrl && data.orderId) {
-                const checkoutUrl = `/${locale}/payment/checkout?orderId=${encodeURIComponent(data.orderId)}&iframeUrl=${encodeURIComponent(data.iframeUrl)}`;
-                router.push(checkoutUrl);
+            // Direct redirect to Paymob for the "Enhanced Unified Checkout" experience
+            if (data.iframeUrl) {
+                window.location.href = data.iframeUrl;
             } else {
                 throw new Error('No payment URL received');
             }
