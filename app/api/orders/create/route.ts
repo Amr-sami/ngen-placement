@@ -148,7 +148,11 @@ export async function POST(request: NextRequest) {
             throw new Error(`Integration ID for ${paymentMethod} not found`);
         }
 
-        const appBaseUrl = process.env.APP_BASE_URL || 'http://localhost:3000';
+        // Dynamically detect the app base URL from the request headers
+        const host = request.headers.get('host') || 'localhost:3000';
+        const protocol = request.headers.get('x-forwarded-proto') || (host.includes('localhost') ? 'http' : 'https');
+        const appBaseUrl = `${protocol}://${host}`;
+
         const redirectionUrl = `${appBaseUrl}/${userLocale}/payment/return`;
         const notificationUrl = `${appBaseUrl}/api/webhooks/paymob`;
 
