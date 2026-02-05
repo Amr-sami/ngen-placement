@@ -95,7 +95,7 @@ export interface PaymentIntentionArgs {
     billingData: BillingData;
     items?: Array<{
         name: string;
-        amount_cents: number;
+        amount: number; // Intention API uses 'amount' for items
         description?: string;
         quantity: number;
     }>;
@@ -525,38 +525,49 @@ export async function createPaymentIntention(
         redirectionUrl
     } = args;
 
-    const response = await paymobRequest<PaymentIntentionResponse>(
-        '/acceptance/payment_intentions',
-        {
-            method: 'POST',
-            headers: {
-                'Authorization': `Token ${PAYMOB_SECRET_KEY}`
-            },
-            body: JSON.stringify({
-                amount: amountCents,
-                currency,
-                payment_methods: paymentMethods,
-                billing_data: {
-                    apartment: 'NA',
-                    floor: 'NA',
-                    street: 'NA',
-                    building: 'NA',
-                    shipping_method: 'NA',
-                    postal_code: 'NA',
-                    city: 'NA',
-                    country: 'EG',
-                    state: 'NA',
-                    ...billingData,
-                },
-                items,
-                special_reference: specialReference,
-                notification_url: notificationUrl,
-                redirection_url: redirectionUrl,
-            }),
-        }
-    );
+    // Note: The Intention API endpoint is NOT under the /api prefix
+    const url = 'https://accept.paymob.com/v1/intention';
 
-    return response;
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${PAYMOB_SECRET_KEY}`
+        },
+        body: JSON.stringify({
+            amount: amountCents,
+            currency,
+            payment_methods: paymentMethods,
+            billing_data: {
+                apartment: 'NA',
+                floor: 'NA',
+                street: 'NA',
+                building: 'NA',
+                shipping_method: 'NA',
+                postal_code: 'NA',
+                city: 'NA',
+                country: 'EG',
+                state: 'NA',
+                ...billingData,
+            },
+            items,
+            special_reference: specialReference,
+            notification_url: notificationUrl,
+            redirection_url: redirectionUrl,
+        }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+        throw new PaymobError(
+            data.message || data.detail || 'Paymob Intention API request failed',
+            response.status,
+            data
+        );
+    }
+
+    return data as PaymentIntentionResponse;
 }
 
 /**

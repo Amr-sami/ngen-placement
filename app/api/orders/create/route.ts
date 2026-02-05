@@ -153,7 +153,7 @@ export async function POST(request: NextRequest) {
         const intention = await createPaymentIntention({
             amountCents,
             currency,
-            paymentMethods: [parseInt(integrationId, 10)],
+            paymentMethods: [paymentMethod], // Use 'card' or 'wallet' strings directly
             billingData,
             specialReference: order._id.toString(),
             notificationUrl,
@@ -161,7 +161,7 @@ export async function POST(request: NextRequest) {
             items: [
                 {
                     name: beltNameEn,
-                    amount_cents: amountCents,
+                    amount: amountCents, // Use 'amount' as required by Intention API items
                     description: `NGen Schools - ${beltNameEn} Belt`,
                     quantity: 1,
                 },
