@@ -4,7 +4,8 @@ import { connectToDatabase } from '@/lib/mongodb';
 import Belt from '@/lib/models/Belt';
 import Order from '@/lib/models/Order';
 import {
-    initiatePayment,
+    createPaymentIntention,
+    getUnifiedCheckoutUrl,
     isPaymobConfigured,
     PaymobError,
     BillingData,
@@ -118,9 +119,9 @@ export async function POST(request: NextRequest) {
         };
 
         // Create local order (pending status)
+        const beltNameEn = getLocalizedValue(belt.name, 'en');
         const order = await Order.create({
             userId: userId || undefined,
-            // trackId removed as belts are global/shared
             beltId: belt._id,
             amount,
             currency,
@@ -130,21 +131,26 @@ export async function POST(request: NextRequest) {
             customerEmail,
             customerPhone,
             metadata: {
-                beltName: getLocalizedValue(belt.name, 'en'), // Store English name in records
+                beltName: beltNameEn,
                 beltCode: belt.code,
             },
         });
 
-        // Get belt name in English for payment (Paymob needs consistent format)
-        const beltNameEn = getLocalizedValue(belt.name, 'en');
+        // Initiate Paymob Unified Checkout (Intention API)
+        const integrationId = paymentMethod === 'wallet'
+            ? process.env.PAYMOB_INTEGRATION_ID_WALLET
+            : process.env.PAYMOB_INTEGRATION_ID_CARD;
 
-        // Initiate Paymob payment flow
-        const paymobResult = await initiatePayment({
+        if (!integrationId) {
+            throw new Error(`Integration ID for ${paymentMethod} not found`);
+        }
+
+        const intention = await createPaymentIntention({
             amountCents,
             currency,
-            merchantOrderId: order._id.toString(),
+            paymentMethods: [parseInt(integrationId, 10)],
             billingData,
-            paymentMethod,
+            specialReference: order._id.toString(),
             items: [
                 {
                     name: beltNameEn,
@@ -155,9 +161,11 @@ export async function POST(request: NextRequest) {
             ],
         });
 
-        // Update order with Paymob order ID
-        order.paymobOrderId = paymobResult.paymobOrderId.toString();
+        // Update order with Paymob order ID/Intention ID
+        order.paymobOrderId = intention.id.toString();
         await order.save();
+
+        const iframeUrl = getUnifiedCheckoutUrl(intention.client_secret);
 
         // Send order confirmation email (async, don't wait)
         sendPaymentEmail({
@@ -193,8 +201,8 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({
             success: true,
             orderId: order._id.toString(),
-            paymobOrderId: paymobResult.paymobOrderId,
-            iframeUrl: paymobResult.iframeUrl,
+            paymobOrderId: intention.id,
+            iframeUrl: iframeUrl,
             amount,
             currency,
         });

@@ -21,6 +21,8 @@ import * as crypto from 'crypto';
 
 // Environment configuration
 const PAYMOB_API_KEY = process.env.PAYMOB_API_KEY || '';
+const PAYMOB_SECRET_KEY = process.env.PAYMOB_SECRET_KEY || '';
+const NEXT_PUBLIC_PAYMOB_PUBLIC_KEY = process.env.NEXT_PUBLIC_PAYMOB_PUBLIC_KEY || '';
 const PAYMOB_INTEGRATION_ID_CARD = process.env.PAYMOB_INTEGRATION_ID_CARD || '';
 const PAYMOB_INTEGRATION_ID_WALLET = process.env.PAYMOB_INTEGRATION_ID_WALLET || '';
 const PAYMOB_IFRAME_ID = process.env.PAYMOB_IFRAME_ID || '';
@@ -84,6 +86,30 @@ export interface CreatePaymentKeyArgs {
     billingData: BillingData;
     paymentMethod?: 'card' | 'wallet';
     lockOrderWhenPaid?: boolean;
+}
+
+export interface PaymentIntentionArgs {
+    amountCents: number;
+    currency: string;
+    paymentMethods: Array<number | string>;
+    billingData: BillingData;
+    items?: Array<{
+        name: string;
+        amount_cents: number;
+        description?: string;
+        quantity: number;
+    }>;
+    specialReference?: string;
+    notificationUrl?: string;
+    redirectionUrl?: string;
+}
+
+export interface PaymentIntentionResponse {
+    id: string;
+    client_secret: string;
+    amount: number;
+    currency: string;
+    [key: string]: any;
 }
 
 export interface PaymobWebhookPayload {
@@ -439,11 +465,84 @@ export function getIntegrationId(paymentMethod: 'card' | 'wallet'): string {
  * Check if Paymob is configured
  */
 export function isPaymobConfigured(): boolean {
-    return !!(
-        PAYMOB_API_KEY &&
-        (PAYMOB_INTEGRATION_ID_CARD || PAYMOB_INTEGRATION_ID_WALLET) &&
-        PAYMOB_IFRAME_ID
+    // Check for both legacy and unified checkout credentials
+    const basicConfig = !!(PAYMOB_API_KEY && (PAYMOB_INTEGRATION_ID_CARD || PAYMOB_INTEGRATION_ID_WALLET));
+    const unifiedConfig = !!(PAYMOB_SECRET_KEY && NEXT_PUBLIC_PAYMOB_PUBLIC_KEY);
+
+    return basicConfig || unifiedConfig;
+}
+
+/**
+ * Unified Checkout (Intention API)
+ * 
+ * @see POST /api/acceptance/payment_intentions
+ * @param args - Payment intention arguments
+ * @returns Created intention with client_secret
+ */
+export async function createPaymentIntention(
+    args: PaymentIntentionArgs
+): Promise<PaymentIntentionResponse> {
+    if (!PAYMOB_SECRET_KEY) {
+        throw new PaymobError('PAYMOB_SECRET_KEY is not configured');
+    }
+
+    const {
+        amountCents,
+        currency,
+        paymentMethods,
+        billingData,
+        items,
+        specialReference,
+        notificationUrl,
+        redirectionUrl
+    } = args;
+
+    const response = await paymobRequest<PaymentIntentionResponse>(
+        '/acceptance/payment_intentions',
+        {
+            method: 'POST',
+            headers: {
+                'Authorization': `Token ${PAYMOB_SECRET_KEY}`
+            },
+            body: JSON.stringify({
+                amount: amountCents,
+                currency,
+                payment_methods: paymentMethods,
+                billing_data: {
+                    apartment: 'NA',
+                    floor: 'NA',
+                    street: 'NA',
+                    building: 'NA',
+                    shipping_method: 'NA',
+                    postal_code: 'NA',
+                    city: 'NA',
+                    country: 'EG',
+                    state: 'NA',
+                    ...billingData,
+                },
+                items,
+                special_reference: specialReference,
+                notification_url: notificationUrl,
+                redirection_url: redirectionUrl,
+            }),
+        }
     );
+
+    return response;
+}
+
+/**
+ * Build Unified Checkout URL
+ * 
+ * @param clientSecret - Client secret from createPaymentIntention
+ * @returns Full checkout URL
+ */
+export function getUnifiedCheckoutUrl(clientSecret: string): string {
+    if (!NEXT_PUBLIC_PAYMOB_PUBLIC_KEY) {
+        throw new PaymobError('NEXT_PUBLIC_PAYMOB_PUBLIC_KEY is not configured');
+    }
+
+    return `https://accept.paymob.com/unifiedcheckout/?publicKey=${NEXT_PUBLIC_PAYMOB_PUBLIC_KEY}&clientSecret=${clientSecret}`;
 }
 
 /**
