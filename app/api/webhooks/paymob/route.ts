@@ -43,20 +43,25 @@ export async function POST(request: NextRequest) {
             '';
 
         // Verify HMAC signature
-        if (!verifyWebhookHmac(payload, receivedHmac)) {
-            console.error('❌ Paymob webhook HMAC verification failed');
-            return NextResponse.json(
-                { error: 'Invalid HMAC signature' },
-                { status: 401 }
-            );
+        const isHmacValid = verifyWebhookHmac(payload, receivedHmac);
+
+        if (!isHmacValid) {
+            console.warn(`⚠️ Paymob webhook HMAC verification failed for txn ${payload.obj.id}. Returning 200 to acknowledge but skipping secure processing.`);
+            // We return 200 to stop Paymob retries and "not received" complaints
+            // But we don't proceed with status updates for security
+            return NextResponse.json({
+                success: true,
+                message: 'Webhook received (HMAC check failed)',
+                warning: 'HMAC mismatch - check environment variables'
+            }, { status: 200 });
         }
 
-        console.log('✅ Paymob webhook HMAC verified');
+        console.log(`✅ Paymob webhook verified for transaction: ${payload.obj.id}`);
 
         // Extract transaction data
         const txnData = payload.obj;
-        const paymobOrderId = txnData.order.id.toString();
-        const paymobTxnId = txnData.id.toString();
+        const paymobOrderId = txnData.order?.id?.toString();
+        const paymobTxnId = txnData.id?.toString();
         const amountCents = txnData.amount_cents;
         const amount = amountCents / 100;
         const currency = txnData.currency || 'EGP';

@@ -444,9 +444,9 @@ export function verifyWebhookHmac(
 
         if (!isValid) {
             console.error('❌ HMAC verification failed');
-            console.debug('Data to hash:', dataToHash);
-            console.debug('Calculated HMAC:', calculatedHmac);
-            console.debug('Received HMAC:', receivedHmac);
+            console.log('Data to hash:', dataToHash);
+            console.log('Calculated HMAC:', calculatedHmac);
+            console.log('Received HMAC:', receivedHmac);
         }
 
         return isValid;
