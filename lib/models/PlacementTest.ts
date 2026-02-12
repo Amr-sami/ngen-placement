@@ -21,6 +21,7 @@ export interface IPlacementTest extends Document {
     resultBeltId?: mongoose.Types.ObjectId;
     resultBeltName?: string;
     questions?: IPlacementTestQuestion[];
+    detailedEvaluation?: any; // Stores the complex JSON result from new evaluator
     startedAt?: Date;
     completedAt?: Date;
     createdAt: Date;
@@ -48,6 +49,9 @@ const QuestionSchema = new Schema(
         timeTakenSeconds: {
             type: Number,
         },
+        // We might want to store more context here for re-evaluation if needed
+        belt: { type: String },
+        difficulty: { type: Number },
     },
     { _id: false }
 );
@@ -92,6 +96,9 @@ const PlacementTestSchema = new Schema<IPlacementTest>(
             type: String,
         },
         questions: [QuestionSchema],
+        detailedEvaluation: {
+            type: Schema.Types.Mixed, // Flexible for the complex result object
+        },
         startedAt: {
             type: Date,
         },

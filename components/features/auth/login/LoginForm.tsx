@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useState, ChangeEvent, FormEvent } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { signIn } from 'next-auth/react';
 import { useRTL } from '@/hooks/useRTL';
 
@@ -15,6 +15,7 @@ interface LoginFormProps {
 export function LoginForm({ locale }: LoginFormProps) {
   const t = useTranslations('auth.login');
   const router = useRouter();
+  const searchParams = useSearchParams();
   const isRTL = useRTL();
 
   const [email, setEmail] = useState('');
@@ -59,9 +60,13 @@ export function LoginForm({ locale }: LoginFormProps) {
           return;
         }
 
-        // Regular user - check for stored return URL, otherwise go to home
+        // Regular user - check for callbackUrl or stored return URL
+        const callbackUrl = searchParams.get('callbackUrl');
         const returnUrl = sessionStorage.getItem('returnUrl');
-        if (returnUrl) {
+
+        if (callbackUrl) {
+          router.push(callbackUrl);
+        } else if (returnUrl) {
           sessionStorage.removeItem('returnUrl');
           // Ensure the URL includes locale if it doesn't already
           const redirectPath = returnUrl.startsWith(`/${locale}`)

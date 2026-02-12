@@ -11,6 +11,7 @@ import HomepageNgenWhySection from '@/components/pages/Home/NgenWhySection';
 // import HomepageStudentsSection from '@/components/pages/Home/StudentsSection';
 import HomepagePricingSection from '@/components/pages/Home/PricingSection';
 import CertificationSection from '@/components/pages/Home/Certification';
+import GameSection from '@/components/pages/Home/GameSection';
 
 export const metadata = {
   title: "NGen School Online | Digital Learning for Kids – Programming, AI, Robotics & More",
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <main className="-mt-20">
       <HomepageHero />
+      <GameSection />
       <HomepageAboutSection />
       <HomepageRoadmapSection />
       <JourneySection />
@@ -32,7 +34,7 @@ export default function Home() {
       <HomepageNgenForSection />
       <CertificationSection />
 
-      
+
       {/* <HomePageSocialProofSection /> */}
       <section id="contact-us" className="container mx-auto my-20">
         <ContactUs />

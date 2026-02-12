@@ -8,7 +8,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     const session = await getServerSession(authOptions)
 
     if (!session) {
-        redirect(`/${locale}/auth/login`)
+        redirect(`/${locale}/auth/login?callbackUrl=/${locale}/settings`)
     }
 
     return <SettingsPage locale={locale} />

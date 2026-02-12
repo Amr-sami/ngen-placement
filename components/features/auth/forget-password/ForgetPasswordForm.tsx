@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useRTL } from '@/hooks/useRTL';
 
 interface ForgetPasswordFormProps {
@@ -12,6 +12,7 @@ interface ForgetPasswordFormProps {
 export function ForgetPasswordForm({ locale }: ForgetPasswordFormProps) {
   const t = useTranslations('auth.forgetPassword');
   const router = useRouter();
+  const searchParams = useSearchParams();
   const isRTL = useRTL();
 
   const [email, setEmail] = useState('');
@@ -49,7 +50,9 @@ export function ForgetPasswordForm({ locale }: ForgetPasswordFormProps) {
   };
 
   const handleBack = () => {
-    router.push(`/${locale}/auth/login`);
+    const callbackUrl = searchParams.get('callbackUrl');
+    const loginPath = `/${locale}/auth/login${callbackUrl ? `?callbackUrl=${encodeURIComponent(callbackUrl)}` : ''}`;
+    router.push(loginPath);
   };
 
   return (

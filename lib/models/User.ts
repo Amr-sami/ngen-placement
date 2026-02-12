@@ -32,6 +32,13 @@ export interface IUserProgress {
     completedBelts?: mongoose.Types.ObjectId[];
 }
 
+// Game Progress subdocument interface
+export interface IUserGameProgress {
+    level: number;
+    score: number;
+    lastPlayedAt?: Date;
+}
+
 // PlacementTest summary subdocument interface
 export interface IUserPlacementTest {
     hasTakenAnyPlacementTest: boolean;
@@ -60,6 +67,7 @@ export interface IUser extends Document {
     profile: IUserProfile;
     progress?: IUserProgress;
     placementTest?: IUserPlacementTest;
+    gameProgress?: IUserGameProgress;
     detectedCountry?: string;
     detectedCountryCode?: string;
     signupIP?: string;
@@ -134,6 +142,16 @@ const ProgressSchema = new Schema(
     { _id: false }
 );
 
+// Game Progress subdocument schema
+const GameProgressSchema = new Schema(
+    {
+        level: { type: Number, default: 1 },
+        score: { type: Number, default: 0 },
+        lastPlayedAt: { type: Date },
+    },
+    { _id: false }
+);
+
 // PlacementTest summary subdocument schema
 const PlacementTestSummarySchema = new Schema(
     {
@@ -192,7 +210,8 @@ const UserSchema = new Schema<IUser>(
             required: true,
         },
         progress: ProgressSchema,
-        placementTest: PlacementTestSummarySchema,
+        placementTest: { type: PlacementTestSummarySchema, default: {} },
+        gameProgress: { type: GameProgressSchema, default: {} },
         detectedCountry: { type: String, trim: true },
         detectedCountryCode: { type: String, trim: true, uppercase: true },
         signupIP: { type: String, trim: true },

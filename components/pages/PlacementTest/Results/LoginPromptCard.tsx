@@ -16,13 +16,15 @@ export default function LoginPromptCard(_props: LoginPromptCardProps) {
 
     const handleLogin = () => {
         // Store current path for redirect after login
-        sessionStorage.setItem('returnUrl', '/placement-test/results')
-        router.push('/auth/login')
+        const currentPath = window.location.pathname + window.location.search
+        sessionStorage.setItem('returnUrl', currentPath)
+        router.push(`/auth/login?callbackUrl=${encodeURIComponent(currentPath)}`)
     }
 
     const handleSignup = () => {
-        sessionStorage.setItem('returnUrl', '/placement-test/results')
-        router.push('/auth/signup')
+        const currentPath = window.location.pathname + window.location.search
+        sessionStorage.setItem('returnUrl', currentPath)
+        router.push(`/auth/signup?callbackUrl=${encodeURIComponent(currentPath)}`)
     }
 
     return (

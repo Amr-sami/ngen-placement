@@ -193,7 +193,7 @@ function Navbar() {
             <UserProfileDropdown locale={locale} />
           ) : (
             <Button
-              href={getLoginRoute(locale)}
+              href={`${getLoginRoute(locale)}?callbackUrl=${encodeURIComponent(pathname)}`}
               variant="primary"
             >
               {t('login')}
@@ -293,7 +293,7 @@ function Navbar() {
               {isLoggedIn ? (
                 <UserProfileDropdown locale={locale} />
               ) : (
-                <Button href={getLoginRoute(locale)} variant="primary" takeFullWidth>
+                <Button href={`${getLoginRoute(locale)}?callbackUrl=${encodeURIComponent(pathname)}`} variant="primary" takeFullWidth>
                   {t('login')}
                 </Button>
               )}
@@ -306,7 +306,7 @@ function Navbar() {
           </SheetContent>
         </Sheet>
       </div>
-    </nav>
+    </nav >
   );
 }
 
