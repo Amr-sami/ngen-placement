@@ -14,7 +14,7 @@ function getAgeFileName(age: number): string {
 const GENERAL_BELTS = ['White Belt', 'Yellow Belt', 'Orange Belt'];
 
 export async function loadGeneralQuestions(language: 'en' | 'ar', age: number): Promise<BankQuestion[]> {
-    const baseDir = path.join(process.cwd(), '.next', 'questions_v2');
+    const baseDir = path.join(process.cwd(), 'questions_v2');
     const ageFile = getAgeFileName(age);
 
     let allQuestions: BankQuestion[] = [];

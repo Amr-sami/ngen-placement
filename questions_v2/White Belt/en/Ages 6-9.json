@@ -1,0 +1,1948 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Hardware"
+    ],
+    "question": "A keyboard is hardware because you can touch it! 🎹",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Hardware is anything you can touch on a computer. A keyboard is something you can touch, so it is hardware!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Computer",
+      "Definition"
+    ],
+    "question": "What is a computer? 💻",
+    "choices": [
+      "A pet animal",
+      "A type of food",
+      "A machine that helps us do things",
+      "A toy car"
+    ],
+    "justification": "A computer is a smart machine that helps us do many things like learning, playing games, and talking to friends!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Software"
+    ],
+    "question": "A video game on your computer is software! 🎮",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Software is programs that run inside the computer. Games are programs, so they are software! You can't touch software.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Maximize",
+      "Windows"
+    ],
+    "question": "You want to make a game window fill the whole screen! 🖥️ Which button should you click?",
+    "choices": [
+      "The minimize button (line)",
+      "The keyboard",
+      "The X button",
+      "The maximize button (square)"
+    ],
+    "justification": "The maximize button looks like a square and makes the window fill the whole screen. It's at the top-right corner!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Minimize",
+      "Windows"
+    ],
+    "question": "When you click minimize, the window goes to the _____ of the screen. 📍",
+    "choices": [
+      "bottom",
+      "inside the keyboard",
+      "deleted forever",
+      "top"
+    ],
+    "justification": "Minimize hides the window at the bottom of the screen in the taskbar. It's still there, just hiding!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Hardware",
+      "Computer Parts"
+    ],
+    "question": "Which one is hardware? 🤔",
+    "choices": [
+      "Mouse",
+      "Video game",
+      "Drawing app",
+      "Website"
+    ],
+    "justification": "The mouse is hardware because you can touch it! Games, apps, and websites are all software that runs inside the computer.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Disk C",
+      "Storage"
+    ],
+    "question": "Disk C: is where the computer keeps its important files! 💾",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Disk C: is like a big storage box where the computer keeps its programs and important files!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Close App",
+      "X Button"
+    ],
+    "question": "You finished playing a game and want to close it. What do you click? 🎮",
+    "choices": [
+      "The spacebar",
+      "The mouse wheel",
+      "The screen",
+      "The X button"
+    ],
+    "justification": "The X button at the top-right corner closes the app completely. Always click X when you're done!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Switching Windows",
+      "Alt+Tab"
+    ],
+    "question": "You have a drawing app AND a game open. How can you quickly switch between them? ✨",
+    "choices": [
+      "Buy a new computer",
+      "Close both apps",
+      "Click on the taskbar or use Alt+Tab",
+      "Turn off the computer"
+    ],
+    "justification": "You can click on the app in the taskbar at the bottom, or press Alt+Tab to switch between open windows quickly!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Computers",
+      "Usefulness"
+    ],
+    "question": "Computers help us learn, play games, and talk to friends! 🌟",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Computers are very useful! They help us learn new things, play fun games, and communicate with people we love.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Opening Apps",
+      "Double-click"
+    ],
+    "question": "To open an app on the desktop, you _____ on its icon. 🖱️",
+    "choices": [
+      "double-click",
+      "close your eyes",
+      "shake the mouse",
+      "press the screen hard"
+    ],
+    "justification": "Double-click means clicking the mouse button twice very quickly. This is how we open apps and files!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Hardware",
+      "Software",
+      "Distinction"
+    ],
+    "question": "Your friend says 'A game app is hardware!' Is your friend right? 🤔",
+    "choices": [
+      "Yes, because games are fun",
+      "Yes, because games are on the computer",
+      "No, a game app is software because you cannot touch it",
+      "No, because games are boring"
+    ],
+    "justification": "Your friend is wrong! Hardware is things you can touch (like the keyboard). Software is programs you cannot touch (like games and apps).",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Moving Windows",
+      "Title Bar"
+    ],
+    "question": "To move a window, you click and drag the _____ at the top. 🪟",
+    "choices": [
+      "title bar",
+      "keyboard",
+      "X button",
+      "screen corner"
+    ],
+    "justification": "The title bar is the bar at the very top of a window. Click and drag it to move the window anywhere you want!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Folder",
+      "File",
+      "Difference"
+    ],
+    "question": "What is a folder like? 📁",
+    "choices": [
+      "A song",
+      "A toy box that holds toys",
+      "A single toy",
+      "A picture"
+    ],
+    "justification": "A folder is like a toy box! It holds many things (files) inside it, just like a toy box holds many toys.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Organization",
+      "Importance"
+    ],
+    "question": "Organizing files helps us find things faster! 🔍",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "When we organize files in folders, we can find them easily. It's like keeping your toys in the right places!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Names",
+      "Good Naming"
+    ],
+    "question": "Which is a GOOD name for a file with your drawings? 🎨",
+    "choices": [
+      "stuff",
+      "asdfgh",
+      "My Drawings",
+      "New folder (2)"
+    ],
+    "justification": "Good file names tell you what's inside! 'My Drawings' is clear and easy to understand. The other names are confusing.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Extension",
+      "File Types"
+    ],
+    "question": "The letters after the dot in a file name (like .txt) are called the file _____. 📄",
+    "choices": [
+      "game",
+      "password",
+      "extension",
+      "color"
+    ],
+    "justification": "The file extension (like .txt, .png, .jpg) tells the computer what type of file it is!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Create Folder",
+      "Steps"
+    ],
+    "question": "How do you create a new folder on the desktop? 📁✨",
+    "choices": [
+      "Yell at the computer",
+      "Press all keys at once",
+      "Shake the mouse very fast",
+      "Right-click, then choose New, then Folder"
+    ],
+    "justification": "To create a new folder, right-click on the desktop, click 'New', then click 'Folder'. Then you can name it!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Path",
+      "Address"
+    ],
+    "question": "A file path is like a _____. It tells us where a file lives! 🏠",
+    "choices": [
+      "Home address for files",
+      "Secret password",
+      "Game score",
+      "Pretty picture"
+    ],
+    "justification": "A file path (like C:\\Users\\Student\\Pictures) is like a home address. It tells exactly where to find the file!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Extension",
+      ".txt"
+    ],
+    "question": "A file ending in .txt is a text file! 📝",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! The .txt extension means it's a text file. Like notes you write in Notepad!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Folder",
+      "Container"
+    ],
+    "question": "A _____ holds files and can also hold other _____ inside it! 📁📁",
+    "choices": [
+      "mouse, mice",
+      "game, games",
+      "file, files",
+      "folder, folders"
+    ],
+    "justification": "A folder can hold files AND other folders inside it! It's like a box that can have smaller boxes inside.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Extension",
+      "Picture Files"
+    ],
+    "question": "Which file extension means it's a PICTURE? 🖼️",
+    "choices": [
+      ".mp3",
+      ".png",
+      ".docx",
+      ".txt"
+    ],
+    "justification": "The .png extension (and .jpg) are for picture files! .txt is for text, .docx is for Word documents, and .mp3 is for music.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Path",
+      "Location"
+    ],
+    "question": "C:\\Users\\Ali\\Documents\\homework.txt tells us the homework file is in the Documents folder! 📂",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "The path shows us the file's location step by step: Disk C → Users → Ali → Documents → homework.txt",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Folder",
+      "File",
+      "Relationship"
+    ],
+    "question": "Folders can hold many files inside them! 📁🎉",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! A folder is like a container or box that can hold many files. This helps us stay organized!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "File Names",
+      "Bad Naming"
+    ],
+    "question": "Sara has 4 files. Which name is BAD and will make her confused later? 😵",
+    "choices": [
+      "New folder (3)",
+      "School Project",
+      "Birthday Photos",
+      "Math Homework"
+    ],
+    "justification": "'New folder (3)' is a bad name because it doesn't tell you what's inside! Good names describe what the file or folder contains.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Notepad",
+      "Text Editor"
+    ],
+    "question": "What is Notepad on the computer? 📝",
+    "choices": [
+      "A simple app for writing text",
+      "A music player",
+      "A calculator",
+      "A game with dragons"
+    ],
+    "justification": "Notepad is a simple app that lets you write text. It's like a blank piece of paper on your computer!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Keyboard",
+      "Input Device"
+    ],
+    "question": "The keyboard is used for typing letters and numbers! 🎹",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! The keyboard has keys with letters, numbers, and symbols that we press to type on the computer.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Copy",
+      "Ctrl+C"
+    ],
+    "question": "What does Ctrl+C do? ✨",
+    "choices": [
+      "Copy something",
+      "Close the computer",
+      "Create a folder",
+      "Change the color"
+    ],
+    "justification": "Ctrl+C is the shortcut for COPY! It makes a copy of what you selected, like making a twin of your text or picture.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Paste",
+      "Ctrl+V"
+    ],
+    "question": "You copied a picture of a cat 🐱. Now you want to put it somewhere else. Which shortcut do you use?",
+    "choices": [
+      "Ctrl+C",
+      "Ctrl+X",
+      "Ctrl+V",
+      "Ctrl+Z"
+    ],
+    "justification": "Ctrl+V is PASTE! After you copy something with Ctrl+C, you use Ctrl+V to put it in a new place.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Save",
+      "Ctrl+S"
+    ],
+    "question": "To save your work so you don't lose it, press _____! 💾",
+    "choices": [
+      "Ctrl+P",
+      "Ctrl+D",
+      "Ctrl+S",
+      "Ctrl+Q"
+    ],
+    "justification": "Ctrl+S is the shortcut for SAVE! Always save your work so you can find it later. S is for Save!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Cut",
+      "Ctrl+X"
+    ],
+    "question": "Ctrl+X is called CUT because it moves something to a new place (not copy)! ✂️",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "CUT (Ctrl+X) removes the item from its original place and lets you paste it somewhere else. COPY makes a twin, but CUT moves it!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Copy vs Cut",
+      "Difference"
+    ],
+    "question": "What is the difference between COPY (Ctrl+C) and CUT (Ctrl+X)? 🤔",
+    "choices": [
+      "They are exactly the same",
+      "Copy deletes forever, Cut saves",
+      "Cut makes twins, Copy moves",
+      "Copy makes a twin, Cut moves the original"
+    ],
+    "justification": "COPY keeps the original and makes a copy. CUT removes the original and moves it to a new location when you paste!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Notes",
+      "Purpose"
+    ],
+    "question": "Why do we write notes on a computer? 📝✨",
+    "choices": [
+      "To turn off the screen",
+      "To break the keyboard",
+      "To remember information",
+      "To make the computer angry"
+    ],
+    "justification": "We write notes to remember things! Just like writing in a notebook, but on the computer so we can save and find them easily.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Language Switch",
+      "Alt+Shift"
+    ],
+    "question": "To switch between English and Arabic on the keyboard, press _____! 🌍",
+    "choices": [
+      "Alt+Shift",
+      "Ctrl+V",
+      "Ctrl+C",
+      "Ctrl+S"
+    ],
+    "justification": "Alt+Shift is the magic shortcut that switches your keyboard language between English and Arabic (or other languages)!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Keyboard",
+      "Importance"
+    ],
+    "question": "The keyboard is important for typing AND for using shortcuts! ⌨️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Yes! We use the keyboard to type words AND to use special shortcuts like Ctrl+C and Ctrl+V that make things faster!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "PDF",
+      "File Format"
+    ],
+    "question": "Why do we save files as PDF? 📄",
+    "choices": [
+      "It makes files disappear",
+      "It deletes your pictures",
+      "It only works on phones",
+      "It looks the same on every computer"
+    ],
+    "justification": "PDF files keep the same look everywhere! Whether you open it on a computer, tablet, or phone, it looks exactly the same.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Delete",
+      "Keyboard"
+    ],
+    "question": "You typed 'Helllo' by mistake and want to remove the extra 'l'. What should you do? ❌",
+    "choices": [
+      "Close your eyes",
+      "Turn off the computer",
+      "Press the Delete or Backspace key",
+      "Buy a new keyboard"
+    ],
+    "justification": "The Delete or Backspace key removes letters or characters. Backspace deletes to the left, Delete removes to the right!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Save",
+      "Importance"
+    ],
+    "question": "If you don't save your work (Ctrl+S), you might lose everything if the computer turns off! 😱",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Always save your work! If the computer turns off or the app closes, unsaved work disappears forever. Press Ctrl+S often!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Shortcuts",
+      "Order"
+    ],
+    "question": "To move text from one place to another, first _____ it, then _____ it in the new place!",
+    "choices": [
+      "copy, delete",
+      "paste, cut",
+      "save, delete",
+      "cut (Ctrl+X), paste (Ctrl+V)"
+    ],
+    "justification": "To MOVE something: First CUT it (Ctrl+X) to remove it, then PASTE it (Ctrl+V) in the new location!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Definition"
+    ],
+    "question": "What is a screenshot? 📸",
+    "choices": [
+      "A picture of what's on your screen",
+      "A type of keyboard",
+      "A broken screen",
+      "A game"
+    ],
+    "justification": "A screenshot is like taking a photo of your computer screen! It captures exactly what you see at that moment.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Purpose"
+    ],
+    "question": "Screenshots are useful for saving something you want to remember! 🌟",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! Screenshots help you save important things you see on screen, like game achievements, messages, or information!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Methods"
+    ],
+    "question": "Which button can take a screenshot of your whole screen? 📷",
+    "choices": [
+      "Print Screen (PrtSc)",
+      "Enter",
+      "Spacebar",
+      "Caps Lock"
+    ],
+    "justification": "The Print Screen (PrtSc) button takes a picture of your entire screen! You can find it at the top of your keyboard.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Uses"
+    ],
+    "question": "You got a high score in a game! 🎮🏆 Why might you take a screenshot?",
+    "choices": [
+      "To save and show your achievement",
+      "To make the computer faster",
+      "To change the score",
+      "To delete the game"
+    ],
+    "justification": "Screenshots let you save special moments like high scores! You can show friends or keep it as a memory of your achievement.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Location"
+    ],
+    "question": "Screenshots are usually saved in the _____ folder on your computer. 📁",
+    "choices": [
+      "Trash",
+      "Music",
+      "Games",
+      "Pictures"
+    ],
+    "justification": "Screenshots are pictures, so they go to the Pictures folder! Look in Pictures > Screenshots to find them.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Sharing"
+    ],
+    "question": "You can send a screenshot to a friend or teacher to show them what you see! 👫",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Yes! Screenshots are great for sharing. You can send them to show someone what you're seeing on your screen!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Problem Solving"
+    ],
+    "question": "Your computer shows a strange error message! 🆘 How can a screenshot help?",
+    "choices": [
+      "Change the computer's color",
+      "Make the error go away",
+      "Show the error to an adult who can help fix it",
+      "Make the error bigger"
+    ],
+    "justification": "Taking a screenshot of an error helps! You can show it to a parent or teacher so they know exactly what the problem looks like.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Snipping Tool",
+      "Screenshot"
+    ],
+    "question": "What is the Snipping Tool used for? ✂️📸",
+    "choices": [
+      "Taking screenshots of part of the screen",
+      "Deleting files",
+      "Playing music",
+      "Cutting paper"
+    ],
+    "justification": "The Snipping Tool lets you choose exactly which part of the screen to capture, instead of the whole screen!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Windows Screenshot",
+      "Shortcut"
+    ],
+    "question": "Pressing Windows + Print Screen takes a screenshot AND _____ it automatically! 💾📸",
+    "choices": [
+      "sends to friends",
+      "saves",
+      "deletes",
+      "prints on paper"
+    ],
+    "justification": "Windows + Print Screen is super helpful! It takes the screenshot AND saves it to your Pictures folder automatically.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Screenshot",
+      "Picture"
+    ],
+    "question": "A screenshot captures exactly what you see on your screen at that moment! 👀",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "A screenshot is like a camera for your screen! It captures everything showing at that exact moment.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Copy",
+      "Paste",
+      "Screenshot"
+    ],
+    "question": "You pressed Print Screen. Now you want to put the screenshot in a document. What do you press? 📋",
+    "choices": [
+      "Ctrl+C to copy it again",
+      "Ctrl+V to paste it",
+      "Ctrl+X to cut it",
+      "Ctrl+S to save the document"
+    ],
+    "justification": "When you press Print Screen, the image is copied to the clipboard. Press Ctrl+V to paste it into a document!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Browser",
+      "Definition"
+    ],
+    "question": "What is a browser? 🌐",
+    "choices": [
+      "A program that lets us visit websites",
+      "A type of food",
+      "A keyboard button",
+      "A computer game"
+    ],
+    "justification": "A browser is like a magic door to the internet! It's a program that lets us visit websites and watch videos online.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Browser",
+      "Examples"
+    ],
+    "question": "Which one is a browser? 💻",
+    "choices": [
+      "Chrome",
+      "Notepad",
+      "Calculator",
+      "Paint"
+    ],
+    "justification": "Chrome is a browser made by Google! Other browsers include Firefox, Safari, and Edge. Notepad, Calculator, and Paint are different apps.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Browser",
+      "Purpose"
+    ],
+    "question": "We use a browser to watch YouTube videos and learn new things! 📺🌟",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Yes! Browsers help us visit websites like YouTube to watch videos, play games, and learn amazing things!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Tab",
+      "Browser"
+    ],
+    "question": "What is a tab in a browser? 📑",
+    "choices": [
+      "A type of keyboard",
+      "A way to have many websites open at once",
+      "A game controller",
+      "A computer virus"
+    ],
+    "justification": "Tabs are like bookmarks in a book! Each tab can show a different website, so you can have many pages open at once.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "New Tab",
+      "Ctrl+T"
+    ],
+    "question": "To open a new tab in the browser, you can press _____! 📑✨",
+    "choices": [
+      "Ctrl+V",
+      "Ctrl+C",
+      "Ctrl+T",
+      "Ctrl+S"
+    ],
+    "justification": "Ctrl+T opens a new Tab! The T stands for Tab. You can also click the + button next to your tabs.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Zoom",
+      "Browser"
+    ],
+    "question": "The words on a website are too small! 🔍 How can you make them BIGGER?",
+    "choices": [
+      "Close the browser",
+      "Press Ctrl and the + key",
+      "Shake the mouse",
+      "Turn off the screen"
+    ],
+    "justification": "Ctrl + Plus (+) zooms in and makes things bigger! Ctrl + Minus (-) makes things smaller. Very helpful!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Download",
+      "Definition"
+    ],
+    "question": "Downloading means getting a file from the internet to your computer! ⬇️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Yes! When you download something, you're bringing a copy of it from the internet to save on your computer.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Downloads Folder",
+      "Location"
+    ],
+    "question": "You downloaded a picture from the internet. Where can you find it? 📁🖼️",
+    "choices": [
+      "Under the keyboard",
+      "Music folder",
+      "Trash folder",
+      "Downloads folder"
+    ],
+    "justification": "Downloaded files go to the Downloads folder! That's where your computer saves everything you get from the internet.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Browser History",
+      "Definition"
+    ],
+    "question": "What is browser history? 📜",
+    "choices": [
+      "A type of computer",
+      "A secret password",
+      "A video game",
+      "A list of websites you visited before"
+    ],
+    "justification": "Browser history is like a diary of websites! It remembers all the websites you visited, so you can find them again.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Restore Tab",
+      "Ctrl+Shift+T"
+    ],
+    "question": "Oh no! You accidentally closed a tab! 😱 Press _____ to bring it back!",
+    "choices": [
+      "Ctrl+C",
+      "Ctrl+X",
+      "Ctrl+V",
+      "Ctrl+Shift+T"
+    ],
+    "justification": "Ctrl+Shift+T is the magic rescue shortcut! It brings back the last tab you closed. T for Tab!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Search",
+      "Browser"
+    ],
+    "question": "How do you search for something in a browser? 🔍",
+    "choices": [
+      "Close your eyes and wish",
+      "Unplug the keyboard",
+      "Type what you want to find and press Enter",
+      "Shake the computer"
+    ],
+    "justification": "To search, type your question or what you want to find in the address bar, then press Enter! The browser will show you results.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Pop-ups",
+      "Ads"
+    ],
+    "question": "Pop-up ads are messages that appear suddenly on websites, often trying to sell something! 🪟",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Pop-ups are surprise windows that appear suddenly. Many of them are ads trying to get you to click or buy something.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Ads",
+      "Danger"
+    ],
+    "question": "Why can online ads be dangerous? ⚠️",
+    "choices": [
+      "They help you learn math",
+      "They make the screen colorful",
+      "They make the computer faster",
+      "They might have viruses or trick you into clicking bad things"
+    ],
+    "justification": "Some ads can be dangerous! They might contain viruses, trick you into clicking bad links, or ask for your personal information.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Avoiding Ads",
+      "Safety"
+    ],
+    "question": "A colorful ad pops up saying 'You won a prize! Click here!' 🎁 What should you do?",
+    "choices": [
+      "Click it quickly to get the prize",
+      "Don't click it and ask an adult",
+      "Tell all your friends to click too",
+      "Give them your home address"
+    ],
+    "justification": "Never click on surprise prize ads! They are usually tricks. Always ask a parent or adult before clicking on ads.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Adblock",
+      "Safety"
+    ],
+    "question": "Adblock is a tool that helps stop annoying ads from showing! 🛡️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Adblock is a helpful tool that blocks most ads, making browsing safer and less annoying. Parents can install it!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Definition"
+    ],
+    "question": "What is binary? 🤖",
+    "choices": [
+      "A kind of robot",
+      "A type of video game",
+      "A special language with only 0 and 1",
+      "A color for computers"
+    ],
+    "justification": "Binary is the secret language of computers! It only uses two numbers: 0 and 1. That's how computers understand everything!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Numbers"
+    ],
+    "question": "Binary only has two numbers: 0 and 1! 🔢",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! Binary is super simple - just 0 and 1. But computers use these two numbers to do amazing things!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Why"
+    ],
+    "question": "Why do computers use binary (0 and 1)? 💡",
+    "choices": [
+      "Because 0 and 1 are pretty",
+      "Because computers like small numbers",
+      "Because electricity is either ON or OFF",
+      "Because humans told them to"
+    ],
+    "justification": "Computers run on electricity, which is either ON (1) or OFF (0). Binary matches this perfectly! Like a light switch.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "ON OFF"
+    ],
+    "question": "In binary, 1 means _____ and 0 means _____. 💡",
+    "choices": [
+      "ON, OFF",
+      "No, No",
+      "Yes, Yes",
+      "OFF, ON"
+    ],
+    "justification": "In binary: 1 = ON/YES/TRUE and 0 = OFF/NO/FALSE. Just like a light switch - on or off!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Computer Language",
+      "Binary"
+    ],
+    "question": "Computers understand English and Arabic just like we do! 🗣️",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Computers only understand binary (0 and 1)! Special programs help translate our words into binary so computers can understand.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Problem",
+      "Definition"
+    ],
+    "question": "What is a problem? 🤔",
+    "choices": [
+      "A yummy snack",
+      "A keyboard button",
+      "Something that needs to be fixed or done",
+      "A type of computer game"
+    ],
+    "justification": "A problem is something that needs a solution - like a question that needs an answer or a goal we want to reach!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Problem Solving",
+      "Steps"
+    ],
+    "question": "What is the FIRST step to solve a problem? 🧩",
+    "choices": [
+      "Run away",
+      "Understand the problem",
+      "Give up immediately",
+      "Close your eyes"
+    ],
+    "justification": "Before solving anything, you must understand the problem first! Ask yourself: What is wrong? What do I need to do?",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Problem Solving",
+      "Steps"
+    ],
+    "question": "To solve a problem: 1) Understand it, 2) Think of solutions, 3) Try the best one, 4) _____ if it worked! ✅",
+    "choices": [
+      "Check",
+      "Cry",
+      "Sleep",
+      "Forget"
+    ],
+    "justification": "After trying a solution, always CHECK if it worked! If not, try again with a different idea. That's smart problem solving!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Problem Solving",
+      "Example"
+    ],
+    "question": "Making a sandwich is like solving a problem! What's the correct ORDER? 🥪",
+    "choices": [
+      "Close sandwich → Eat → Get bread → Add cheese",
+      "Get bread → Add cheese → Close sandwich → Eat",
+      "Eat → Get bread → Add cheese → Close sandwich",
+      "Add cheese → Eat → Close sandwich → Get bread"
+    ],
+    "justification": "Steps must be in the right order! First get bread, then add cheese, close the sandwich, and finally eat it. Order matters!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Problem Solving",
+      "Importance"
+    ],
+    "question": "Learning to solve problems helps us in school and in everyday life! 🌟🧠",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Problem solving is a super skill! It helps with homework, finding lost toys, making decisions, and even programming computers!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Programming",
+      "Definition"
+    ],
+    "question": "What is programming? 💻✨",
+    "choices": [
+      "A computer game",
+      "A kind of music",
+      "A type of sandwich",
+      "Giving instructions to a computer"
+    ],
+    "justification": "Programming is telling the computer what to do! We give it instructions, and it follows them to create games, apps, and websites.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Programming",
+      "Importance"
+    ],
+    "question": "Programming is used to create the games and apps we love! 🎮📱",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! All games, apps, and websites are made by programmers who write instructions for computers to follow.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Algorithm",
+      "Definition"
+    ],
+    "question": "What is an algorithm? 📝",
+    "choices": [
+      "A yummy dessert",
+      "A type of robot",
+      "A computer screen",
+      "A set of steps to solve a problem"
+    ],
+    "justification": "An algorithm is like a recipe! It's a set of steps you follow in order to solve a problem or complete a task.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Algorithm",
+      "Example"
+    ],
+    "question": "Which of these is an example of an algorithm? 🤔",
+    "choices": [
+      "A colorful picture",
+      "A keyboard",
+      "Steps to brush your teeth in order",
+      "A computer mouse"
+    ],
+    "justification": "An algorithm is steps in order! Brushing teeth: 1) Get toothbrush, 2) Add toothpaste, 3) Brush teeth, 4) Rinse mouth.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Algorithm",
+      "Recipe"
+    ],
+    "question": "An algorithm is like a _____ for cooking - steps you follow in order! 👨‍🍳",
+    "choices": [
+      "mouse",
+      "keyboard",
+      "screen",
+      "recipe"
+    ],
+    "justification": "An algorithm is like a recipe! Both tell you what to do step by step in the correct order to get the result you want.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Pseudocode",
+      "Definition"
+    ],
+    "question": "What is pseudocode? 📋",
+    "choices": [
+      "A video game character",
+      "A type of computer",
+      "Writing instructions in simple words to plan a program",
+      "A secret password"
+    ],
+    "justification": "Pseudocode is writing your plan in simple words before writing real code. It helps you think about what the program will do!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Pseudocode",
+      "Not Real Code"
+    ],
+    "question": "Pseudocode is NOT real computer code - it's just a plan written in simple words! 📝",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Correct! Pseudocode is like planning in plain language. It helps programmers think before they write the real code.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Pseudocode",
+      "Example"
+    ],
+    "question": "Which one is an example of pseudocode? 🌧️☂️",
+    "choices": [
+      "IF it is raining THEN take umbrella",
+      "A picture of rain",
+      "The number 12345",
+      "A keyboard shortcut"
+    ],
+    "justification": "'IF it is raining THEN take umbrella' is pseudocode! It's a simple plan written in words that describes what to do.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Bug",
+      "Definition"
+    ],
+    "question": "What is a bug in programming? 🐛",
+    "choices": [
+      "A type of computer",
+      "A mistake that makes the program not work correctly",
+      "A video game",
+      "A cute ladybug"
+    ],
+    "justification": "A bug is a mistake in the program that makes it do something wrong! The name comes from a real bug found in an old computer long ago.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Definition"
+    ],
+    "question": "Finding and fixing bugs in a program is called _____! 🔍🐛",
+    "choices": [
+      "eating",
+      "dancing",
+      "sleeping",
+      "debugging"
+    ],
+    "justification": "Debugging means finding bugs (mistakes) and fixing them! It's like being a detective looking for clues to solve a mystery.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Skills"
+    ],
+    "question": "Why is debugging an important skill for programmers? 🦸",
+    "choices": [
+      "It makes the keyboard colorful",
+      "It helps eat lunch faster",
+      "All programs have bugs that need to be fixed",
+      "It makes the computer louder"
+    ],
+    "justification": "Almost all programs have bugs! Good programmers know how to find and fix them. Debugging makes programs work correctly.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Bug",
+      "Origin"
+    ],
+    "question": "The word 'bug' in programming came from a real insect found inside an old computer! 🐛💻",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "True! Long ago, a real moth was found stuck in an old computer causing problems. That's why we call programming mistakes 'bugs'!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Cyber Security",
+      "Definition"
+    ],
+    "question": "What is cyber security? 🛡️",
+    "choices": [
+      "A computer game",
+      "A type of ice cream",
+      "Keeping safe online",
+      "A keyboard button"
+    ],
+    "justification": "Cyber security means staying safe on the internet! It's like locking your door at home, but for your computer and information.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Personal Information",
+      "Examples"
+    ],
+    "question": "Which of these is personal information that should stay PRIVATE? 🔒",
+    "choices": [
+      "Your home address",
+      "The name of a movie",
+      "The weather today",
+      "Your favorite color"
+    ],
+    "justification": "Your home address is personal information! Never share it with strangers online. Favorite colors and movies are safe to share.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Personal Information",
+      "Privacy"
+    ],
+    "question": "Your full name, phone number, and school name are personal information! 📋🔐",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Yes! Your name, phone number, address, school name, and birthday are all personal information. Keep them private online!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Password",
+      "Definition"
+    ],
+    "question": "What is a password? 🔑",
+    "choices": [
+      "A picture on the screen",
+      "A loud sound",
+      "A secret word that opens your accounts",
+      "A type of computer game"
+    ],
+    "justification": "A password is like a secret key! It keeps your accounts safe and only lets you in when you type the right word.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Password",
+      "Strong vs Weak"
+    ],
+    "question": "Which password is the STRONGEST? 💪🔐",
+    "choices": [
+      "ahmed",
+      "Sun7!Moon3@Star",
+      "123456",
+      "password"
+    ],
+    "justification": "Sun7!Moon3@Star is strong because it mixes letters, numbers, and symbols! Simple words like 'password' or '123456' are easy to guess.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Password",
+      "Secret"
+    ],
+    "question": "You should NEVER share your password with anyone except your _____! 🤫",
+    "choices": [
+      "people in games",
+      "parents or guardians",
+      "friends at school",
+      "online strangers"
+    ],
+    "justification": "Only share passwords with your parents or guardians! They help keep you safe. Never share with friends, strangers, or online people.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Password",
+      "Bad Examples"
+    ],
+    "question": "Using your name or '123456' as a password is a BAD idea! ❌",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Yes, these are bad passwords! They're too easy to guess. Good passwords mix letters, numbers, and symbols.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Online Strangers",
+      "Danger"
+    ],
+    "question": "A stranger online says they're a kid and wants to be your friend. What should you do? 🚨",
+    "choices": [
+      "Share your address so they can visit",
+      "Tell them your school name",
+      "Tell a parent or adult immediately",
+      "Send them a photo"
+    ],
+    "justification": "Always tell a parent or adult! Online strangers might not be who they say they are. Never share personal information with them.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Online Strangers",
+      "Meeting"
+    ],
+    "question": "It's okay to meet someone from the internet in real life without telling your parents! 🚫",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "NEVER meet someone from the internet without your parents! Online strangers can be dangerous. Always tell a trusted adult.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Safe Links",
+      "Downloads"
+    ],
+    "question": "A website says 'Click here for FREE games!' 🎮 What should you do?",
+    "choices": [
+      "Type your password to download",
+      "Ask a parent before clicking",
+      "Click immediately to get free games",
+      "Share the link with all your friends"
+    ],
+    "justification": "Always ask a parent before clicking unknown links or downloading! Some 'free' offers can be tricks with viruses.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Online Safety",
+      "Bad Situation"
+    ],
+    "question": "If something scary or bad happens online, the FIRST thing you should do is tell a _____! 🆘",
+    "choices": [
+      "the scary person",
+      "stranger online",
+      "parent or teacher",
+      "your pet"
+    ],
+    "justification": "Always tell a parent or teacher if something bad happens online! They can help keep you safe. Don't respond to scary messages.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Internet Safety",
+      "3 Rules"
+    ],
+    "question": "What is the FIRST rule of internet safety? 🥇🛡️",
+    "choices": [
+      "Share your password with friends",
+      "Keep personal information private",
+      "Talk to all strangers online",
+      "Click on all colorful ads"
+    ],
+    "justification": "Rule 1: Keep personal info private! Never share your name, address, school, phone number, or password with strangers online.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "Internet Safety",
+      "Think Before Click"
+    ],
+    "question": "Rule 3 of internet safety: _____ before you click! 🧠👆",
+    "choices": [
+      "Think",
+      "Eat",
+      "Sleep",
+      "Dance"
+    ],
+    "justification": "Think before you click! Ask yourself: Is this safe? Do I know this website? Should I ask an adult first?",
+    "ans_idx": 0
+  }
+]

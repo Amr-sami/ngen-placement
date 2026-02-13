@@ -1,0 +1,2024 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Story in Programming",
+      "Characters"
+    ],
+    "question": "In Scratch Jr, we can make a cat character walk and talk to tell a story! 🐱✨",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! In Scratch Jr, we can use characters like cats, dogs, and people to create fun stories. We give them actions like walking, talking, and jumping!",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Code Awareness",
+      "Programming Blocks"
+    ],
+    "question": "What are the colorful blocks in Scratch Jr? 🧱🌈",
+    "choices": [
+      "Games to download",
+      "Pictures to print",
+      "Instructions that tell characters what to do",
+      "Songs to play"
+    ],
+    "ans_idx": 2,
+    "justification": "The colorful blocks in Scratch Jr are instructions! Each block tells the character to do something like move, jump, or say something. 🎯",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Understanding Code in Robotics",
+      "Robot Instructions"
+    ],
+    "question": "A robot can only do what we tell it to do with code! 🤖💻",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "That's right! Robots are like helpers that follow our instructions exactly. They cannot think on their own - they need us to give them code!",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "How Robots Help Us",
+      "Real-world Applications"
+    ],
+    "question": "Which robot helper cleans the floor at home? 🏠🧹",
+    "choices": [
+      "Vacuum cleaning robot",
+      "Talking robot",
+      "Flying robot",
+      "Dancing robot"
+    ],
+    "ans_idx": 0,
+    "justification": "Vacuum cleaning robots like Roomba help clean floors! They move around the house and pick up dust and dirt. 🧹✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Run & Reset",
+      "Program Execution"
+    ],
+    "question": "Pressing the 'Run' button makes our robot start moving! ▶️🤖",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! The 'Run' button is like saying 'Go!' to our robot. It tells the robot to start following our instructions! ▶️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Drag and Drop Programming",
+      "Block Assembly"
+    ],
+    "question": "How do we add blocks in Tynker to make a robot move? 🧩🤖",
+    "choices": [
+      "Type words on keyboard",
+      "Blow on the screen",
+      "Shake the tablet",
+      "Drag and drop them together"
+    ],
+    "ans_idx": 3,
+    "justification": "In Tynker, we drag blocks with our finger or mouse and drop them together like puzzle pieces! This is called drag and drop! 🧩",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Direction & Turning",
+      "Basic Movement"
+    ],
+    "question": "A robot can move forward, backward, left, and right! ⬆️⬇️⬅️➡️",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Correct! We can give robots directions to move in all these ways. It's like giving directions to a friend! 🧭",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Animation",
+      "Visual Changes"
+    ],
+    "question": "What is animation in programming? 🎬✨",
+    "choices": [
+      "Making the screen black",
+      "Deleting everything",
+      "Turning off the computer",
+      "Making characters move and change"
+    ],
+    "ans_idx": 3,
+    "justification": "Animation is when we make characters move, dance, grow, or change colors! It's like making your own cartoon! 🎬🌟",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Instruction Order"
+    ],
+    "question": "A cat needs to: 1) Walk to the door 🚪 2) Open the door 3) Go outside. What happens if we do step 3 first? 🐱",
+    "choices": [
+      "The door will disappear",
+      "The cat will fly",
+      "The cat cannot go outside because the door is closed",
+      "Nothing happens"
+    ],
+    "ans_idx": 2,
+    "justification": "The order matters! The cat must walk to the door and open it FIRST before going outside. This is why sequence is important in programming! 📝",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Triggers"
+    ],
+    "question": "When we tap the green flag 🟢, the program _____.",
+    "choices": [
+      "goes to sleep",
+      "turns red",
+      "starts running",
+      "gets deleted"
+    ],
+    "ans_idx": 2,
+    "justification": "The green flag is like a 'Start' button! When we tap it, it tells the program to begin running all our instructions. 🟢▶️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Algorithm",
+      "Step-by-step"
+    ],
+    "question": "What is the correct order to brush your teeth? 🦷✨",
+    "choices": [
+      "Brush teeth → Pick up toothbrush → Rinse mouth → Put toothpaste",
+      "Rinse mouth → Brush teeth → Pick up toothbrush → Put toothpaste",
+      "Pick up toothbrush → Put toothpaste → Brush teeth → Rinse mouth",
+      "Put toothpaste → Rinse mouth → Brush teeth → Pick up toothbrush"
+    ],
+    "ans_idx": 2,
+    "justification": "An algorithm is a list of steps in the right order! First, you need the brush, then toothpaste, then brush, and finally rinse. Just like giving instructions to a computer! 🦷",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Direction & Turning",
+      "Movement Commands"
+    ],
+    "question": "A robot is facing up ⬆️. If it turns right, which way will it face? 🤖",
+    "choices": [
+      "Right ➡️",
+      "Left ⬅️",
+      "Up ⬆️",
+      "Down ⬇️"
+    ],
+    "ans_idx": 0,
+    "justification": "When the robot turns right from facing up, it will face right! Imagine you are the robot - if you face forward and turn right, you'll face right! ➡️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Repeat",
+      "Loops"
+    ],
+    "question": "If we want a robot to jump 5 times, we can use a 'Repeat 5' block instead of putting 5 jump blocks! 🔄🤖",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "That's right! A repeat (loop) block saves time! Instead of adding many blocks, we can tell the computer to repeat an action. It's like magic! 🔄✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Choices",
+      "Conditionals"
+    ],
+    "question": "A robot sees a wall 🧱. What should the smart robot do? 🤖",
+    "choices": [
+      "Keep going and crash",
+      "Fly to the moon",
+      "Stop or turn to not hit the wall",
+      "Jump over the house"
+    ],
+    "ans_idx": 2,
+    "justification": "A smart robot makes choices! IF it sees a wall, THEN it should stop or turn. This is called a conditional - the robot decides what to do based on what it sees! 🧠",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "How Robots Help Us",
+      "Applications"
+    ],
+    "question": "In a factory, robots can help _____ things faster than humans! 🏭🤖",
+    "choices": [
+      "eat",
+      "dream",
+      "sleep",
+      "build"
+    ],
+    "ans_idx": 3,
+    "justification": "Factory robots help build cars, toys, and many other things! They can work all day without getting tired! 🏭🔧",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Animation",
+      "Movement Effects"
+    ],
+    "question": "Which blocks would make a star grow bigger and then smaller? ⭐📏",
+    "choices": [
+      "Say block then Hide block",
+      "Move block then Jump block",
+      "Grow block then Shrink block",
+      "Turn block then Stop block"
+    ],
+    "ans_idx": 2,
+    "justification": "To make animation, we use the Grow block to make things bigger and Shrink block to make them smaller! This creates a cool pulsing effect! ⭐✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Character Interaction"
+    ],
+    "question": "What happens when you tap a character in Scratch Jr that has a 'When Tapped' event? 👆🐱",
+    "choices": [
+      "The game closes",
+      "Nothing happens",
+      "The character does its programmed actions",
+      "The character disappears forever"
+    ],
+    "ans_idx": 2,
+    "justification": "Events are triggers! When you tap a character with a 'When Tapped' event, it starts doing whatever actions you programmed! It's like waking it up! 👆🌟",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Code Awareness",
+      "Programming Purpose"
+    ],
+    "question": "Code is a set of _____ that tells the computer what to do! 💻📝",
+    "choices": [
+      "instructions",
+      "snacks",
+      "songs",
+      "colors"
+    ],
+    "ans_idx": 0,
+    "justification": "Code is made of instructions! Each instruction tells the computer to do one thing. Many instructions together make a program! 📝💻",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sequence",
+      "Problem Solving"
+    ],
+    "question": "A character should: Walk 🚶 → Say 'Hello!' 👋 → Jump 🦘. But it says 'Hello!' first! What's wrong? 🤔",
+    "choices": [
+      "The computer is sleeping",
+      "The blocks are in the wrong order",
+      "The blocks are too colorful",
+      "The character is broken"
+    ],
+    "ans_idx": 1,
+    "justification": "This is a sequence problem! The 'Say Hello' block is placed before the 'Walk' block. We need to fix the order by moving the Walk block to be first! 🔧",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Algorithm",
+      "Multi-step Reasoning"
+    ],
+    "question": "To make a sandwich 🥪, you need: bread, cheese, tomato. What's missing from this algorithm: Get bread → Add cheese → Eat sandwich?",
+    "choices": [
+      "Add dancing step",
+      "Add flying step",
+      "Add tomato step",
+      "Add sleeping step"
+    ],
+    "ans_idx": 2,
+    "justification": "Good algorithms don't skip steps! We said we need bread, cheese, AND tomato, but the tomato step is missing. Always check if all steps are included! 🥪✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Repeat",
+      "Loops",
+      "Counting"
+    ],
+    "question": "A robot claps 🎵 3 times using 'Repeat 3' with one clap inside. If we change it to 'Repeat 5', it will clap _____ times!",
+    "choices": [
+      "8",
+      "3",
+      "5",
+      "2"
+    ],
+    "ans_idx": 2,
+    "justification": "The repeat block tells how many times to do something! 'Repeat 5' means do the clap action 5 times. The number in the repeat block is how many times! 🔢🔄",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Choices",
+      "Conditionals",
+      "Decision Making"
+    ],
+    "question": "A game robot has this rule: IF you touch a star ⭐, THEN get 10 points. IF you touch a monster 👾, THEN lose 5 points. You touched a star and a monster. What happens? 🎮",
+    "choices": [
+      "You only get 10 points",
+      "Nothing happens",
+      "You only lose 5 points",
+      "You get 10 points then lose 5 points (total: 5 points)"
+    ],
+    "ans_idx": 3,
+    "justification": "Both conditions happened! The robot follows ALL the rules that match. Star = +10 points, Monster = -5 points. So 10 - 5 = 5 points total! 🧮",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Direction & Turning",
+      "Path Planning"
+    ],
+    "question": "A robot 🤖 is at the bottom-left of a grid. It needs to reach a star ⭐ at the top-right. Which path works: Move up 2 → Move right 2? 📍",
+    "choices": [
+      "Yes, it will reach the star",
+      "No, it will go the wrong way",
+      "No, it needs to turn first",
+      "No, robots cannot move in grids"
+    ],
+    "ans_idx": 0,
+    "justification": "Let's trace it! Starting bottom-left: Move up 2 = middle-left. Move right 2 = top-right where the star is! The path works! 🎯⭐",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Events",
+      "Animation",
+      "Cause and Effect"
+    ],
+    "question": "In Scratch Jr: 'When Green Flag clicked → Hide → Wait → Show'. The character will first _____, wait, then appear again! 🟢👻",
+    "choices": [
+      "turn blue",
+      "disappear",
+      "jump",
+      "grow"
+    ],
+    "ans_idx": 1,
+    "justification": "The 'Hide' block makes the character disappear (become invisible)! Then it waits, and 'Show' makes it appear again. It's like a magic trick! 🎩✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Understanding Code in Robotics",
+      "Debugging",
+      "Problem Solving"
+    ],
+    "question": "A cleaning robot 🧹 should: sense dirt → move to dirt → clean. But it moves randomly without finding dirt. What block might be missing? 🤔",
+    "choices": [
+      "The 'dance' block",
+      "The 'sense dirt' block",
+      "The 'fly' block",
+      "The 'sing' block"
+    ],
+    "ans_idx": 1,
+    "justification": "If the robot moves randomly, it can't find the dirt! The 'sense dirt' block helps the robot know WHERE the dirt is. Without sensing, the robot is lost! 🔍",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Sequence",
+      "Order of Instructions"
+    ],
+    "question": "In programming, the order of instructions matters! First things go first! 📋✨",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Just like getting dressed - you put on socks before shoes! In programming, the computer follows instructions from top to bottom, in order! 👟🧦",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Story in Programming",
+      "Characters"
+    ],
+    "question": "In Scratch Jr, what can a story character do? 🎭🐰",
+    "choices": [
+      "Cook real food",
+      "Do your homework",
+      "Clean your room",
+      "Move, talk, and dance"
+    ],
+    "ans_idx": 3,
+    "justification": "Story characters in Scratch Jr can move, talk, dance, jump, and do many fun animated actions! But they stay inside the computer - they can't do real-world things! 🎬",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "How Robots Help Us",
+      "Robot Tasks"
+    ],
+    "question": "Some robots can deliver packages to people's homes! 📦🤖",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Delivery robots are real! They roll on sidewalks and bring food or packages to homes. They use sensors to find their way! 📦🛞",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Events",
+      "Start Trigger"
+    ],
+    "question": "What does the green flag 🟢 do in Scratch Jr?",
+    "choices": [
+      "Changes colors",
+      "Turns off the tablet",
+      "Starts the program",
+      "Deletes everything"
+    ],
+    "ans_idx": 2,
+    "justification": "The green flag is the 'GO' button! When you tap it, your program starts running and characters begin their actions! 🟢▶️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Run & Reset",
+      "Program Control"
+    ],
+    "question": "The 'Reset' button brings the robot back to where it started! 🔄🤖",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Correct! Reset is like a 'start over' button. It puts the robot back at the beginning so you can try your program again! 🔄✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Drag and Drop Programming",
+      "Block Assembly"
+    ],
+    "question": "In Tynker, programming blocks connect together like... 🧩",
+    "choices": [
+      "Puzzle pieces",
+      "Real bricks",
+      "Bubbles",
+      "Clouds"
+    ],
+    "ans_idx": 0,
+    "justification": "Programming blocks snap together just like puzzle pieces! Each block fits with others to build your program! 🧩🎮",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Steps"
+    ],
+    "question": "An algorithm is like a... 📝🌟",
+    "choices": [
+      "Random guess",
+      "Recipe with steps to follow",
+      "Magic spell that works alone",
+      "Secret code no one understands"
+    ],
+    "ans_idx": 1,
+    "justification": "An algorithm is like a recipe! It tells you step-by-step what to do. Follow the steps in order and you'll get the result you want! 👨‍🍳📝",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Animation",
+      "Movement"
+    ],
+    "question": "Animation makes pictures move on the screen! 🎬🦋",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Animation is when we make pictures come alive - they can walk, fly, spin, grow, and shrink! Cartoons are made with animation! 🎬✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Direction & Turning",
+      "Movement"
+    ],
+    "question": "To make a robot go the opposite of forward, we use the _____ command! ⬅️🤖",
+    "choices": [
+      "backward",
+      "sleep",
+      "spin",
+      "jump"
+    ],
+    "ans_idx": 0,
+    "justification": "Forward and backward are opposites! If forward makes the robot go ahead, backward makes it go in the opposite direction! ⬆️⬇️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Code Awareness",
+      "Block Functions"
+    ],
+    "question": "Which block would make a bunny say 'Hello!'? 🐰💬",
+    "choices": [
+      "Jump block",
+      "Move block",
+      "Say block with 'Hello!' inside",
+      "Hide block"
+    ],
+    "ans_idx": 2,
+    "justification": "The 'Say' block shows words in a speech bubble! We put the words we want inside it. Say block = talking! 💬🗨️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Story in Programming",
+      "Story Structure"
+    ],
+    "question": "A good story has a beginning, middle, and end. In Scratch Jr, a story about a bear 🐻 finding honey 🍯 should...",
+    "choices": [
+      "Only show the bear standing still",
+      "Have no ending",
+      "Start with the bear already eating honey",
+      "Show the bear walking, looking for honey, then finding it"
+    ],
+    "ans_idx": 3,
+    "justification": "Great stories have parts! Beginning: bear is hungry. Middle: bear searches. End: bear finds honey and is happy! Your program shows all parts! 📖✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Instruction Order"
+    ],
+    "question": "A frog 🐸 needs to: Jump → Land → Ribbit. If the frog ribbits first, the _____ is wrong!",
+    "choices": [
+      "color",
+      "size",
+      "sequence",
+      "name"
+    ],
+    "ans_idx": 2,
+    "justification": "The sequence (order) is wrong! The frog should jump and land BEFORE making a sound. In programming, the right sequence makes the program work correctly! 🐸📋",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Repeat",
+      "Loops"
+    ],
+    "question": "A robot needs to blink its lights 🚨 4 times. Which is easier? 💡",
+    "choices": [
+      "Use only 1 blink block",
+      "Use 'Repeat 4' with one blink inside",
+      "Don't use any blocks",
+      "Put 4 separate blink blocks"
+    ],
+    "ans_idx": 1,
+    "justification": "The 'Repeat' block is a shortcut! Instead of putting 4 blink blocks, we put ONE blink inside 'Repeat 4'. Less work, same result! 🔄💡",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Choices",
+      "Conditionals"
+    ],
+    "question": "A robot can make different choices based on what it sees or touches! 🤖👀",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Robots can use sensors to detect things. IF robot sees red THEN stop. IF robot sees green THEN go. This is called making choices or conditionals! 🚦",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Understanding Code in Robotics",
+      "Following Instructions"
+    ],
+    "question": "You tell a robot: 'Move forward 3 steps'. The robot moves 3 steps. Why? 🤖🚶",
+    "choices": [
+      "Robots follow instructions exactly",
+      "The robot was tired",
+      "The robot was lucky",
+      "The robot guessed"
+    ],
+    "ans_idx": 0,
+    "justification": "Robots are great at following exact instructions! They don't guess or get lucky - they do EXACTLY what the code tells them. That's why we must give clear instructions! 🎯",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Animation",
+      "Character Changes"
+    ],
+    "question": "To make a balloon 🎈 float up on the screen, we use the 'Move _____' block!",
+    "choices": [
+      "backward",
+      "left",
+      "down",
+      "up"
+    ],
+    "ans_idx": 3,
+    "justification": "Balloons float UP! So we use the 'Move up' block to make our balloon animation look real. The direction in the block matches where we want to go! 🎈⬆️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Direction & Turning",
+      "Spatial Awareness"
+    ],
+    "question": "A robot wants to face a flower 🌸 on its left side. What should it do? 🤖",
+    "choices": [
+      "Move backward",
+      "Move forward",
+      "Turn right",
+      "Turn left"
+    ],
+    "ans_idx": 3,
+    "justification": "If the flower is on the LEFT, the robot needs to TURN LEFT to face it! Turning changes which direction the robot is looking. 🌸👈",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Multiple Events"
+    ],
+    "question": "In Scratch Jr, we can have TWO things happen: tap the cat 🐱 = meow, tap the dog 🐶 = bark. What is this? 🎭",
+    "choices": [
+      "Two different events with different actions",
+      "A broken program",
+      "One event only",
+      "No events at all"
+    ],
+    "ans_idx": 0,
+    "justification": "Each character can have its own event! The cat has a 'When tapped' event for meowing, and the dog has a 'When tapped' event for barking. Programs can have many events! 🐱🐶",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "How Robots Help Us",
+      "Safety"
+    ],
+    "question": "Robots can go to dangerous places where people shouldn't go, like inside volcanoes! 🌋🤖",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Robots can explore volcanoes, deep oceans, and even other planets! They keep humans safe by going to dangerous places for us! 🤖🔥🌊",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Algorithm",
+      "Problem Solving"
+    ],
+    "question": "A lost puppy 🐕 needs to find its home 🏠. The algorithm says: Walk straight → Turn right at the tree 🌳 → Walk to the red house. But there are TWO trees! What's wrong? 🤔",
+    "choices": [
+      "Puppies cannot follow algorithms",
+      "Trees cannot be in algorithms",
+      "The algorithm has too many steps",
+      "The algorithm is not specific enough - it should say which tree"
+    ],
+    "ans_idx": 3,
+    "justification": "Good algorithms must be CLEAR! If there are two trees, the puppy doesn't know which one. We should say 'Turn right at the BIG tree' or 'the FIRST tree'! 🌳✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sequence",
+      "Debugging"
+    ],
+    "question": "A magic show 🎩: 1) Say 'Abracadabra!' 2) Wave wand 3) Rabbit appears 🐰. The rabbit appears BEFORE the magician says anything! How do we fix it? 🔧",
+    "choices": [
+      "Add more rabbits",
+      "Delete the rabbit",
+      "Move the 'Rabbit appears' block to the end",
+      "Remove the magic words"
+    ],
+    "ans_idx": 2,
+    "justification": "The sequence is wrong! The rabbit appears too early. We need to MOVE the 'Rabbit appears' block to be LAST - after saying the magic words and waving! 🐰✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Repeat",
+      "Loops",
+      "Pattern Recognition"
+    ],
+    "question": "A dance robot does: Step-Clap-Step-Clap-Step-Clap. The pattern 'Step-Clap' repeats _____ times! 💃🤖",
+    "choices": [
+      "3",
+      "2",
+      "6",
+      "1"
+    ],
+    "ans_idx": 0,
+    "justification": "Let's count! Step-Clap (1), Step-Clap (2), Step-Clap (3). The pattern repeats 3 times! We could use 'Repeat 3' with Step-Clap inside! 🔢🔄",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Choices",
+      "Conditionals",
+      "Multiple Conditions"
+    ],
+    "question": "A robot pet 🐕🤖 has these rules: IF you pet it → wag tail. IF you give treat → bark happily. IF you ignore it → look sad. You pet it AND give a treat. What happens? 🦴",
+    "choices": [
+      "It only wags tail",
+      "It looks sad",
+      "It only barks",
+      "It wags tail AND barks happily"
+    ],
+    "ans_idx": 3,
+    "justification": "Both conditions are true! You pet it (wag tail ✓) AND gave treat (bark ✓). The robot does BOTH actions because both IF conditions happened! 🐕✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Direction & Turning",
+      "Path Planning"
+    ],
+    "question": "A robot 🤖 faces RIGHT ➡️. It needs to reach a star ⭐ that is BEHIND it. What's the shortest way? 🌟",
+    "choices": [
+      "Just keep moving right",
+      "Move backward without turning",
+      "Turn left then turn left then move forward",
+      "Turn around (turn twice) then move forward"
+    ],
+    "ans_idx": 3,
+    "justification": "To face behind, the robot needs to turn around! Two turns (left-left or right-right) = facing backward. Then move forward to the star! Or turn 180 degrees! 🔄⭐",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Events",
+      "Cause and Effect",
+      "Debugging"
+    ],
+    "question": "A program should make a bird 🐦 fly when tapped. But tapping does nothing! The 'When _____' block is probably missing!",
+    "choices": [
+      "tapped",
+      "sleeping",
+      "happy",
+      "green"
+    ],
+    "ans_idx": 0,
+    "justification": "Events tell the program WHEN to do something! If tapping does nothing, the 'When tapped' event block is missing. Without an event, the character doesn't know when to start! 👆❌",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Animation",
+      "Sequence",
+      "Complex Actions"
+    ],
+    "question": "To make a caterpillar 🐛 turn into a butterfly 🦋, what blocks would work best in Scratch Jr? ✨",
+    "choices": [
+      "Just show both at the same time",
+      "Wait → Hide caterpillar → Show butterfly",
+      "Delete the caterpillar character",
+      "Make the butterfly hide forever"
+    ],
+    "ans_idx": 1,
+    "justification": "For a transformation: Wait (pause for effect), Hide the caterpillar (it disappears), Show the butterfly (it appears)! This creates the magical change animation! 🐛→🦋",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Code Awareness",
+      "Instructions"
+    ],
+    "question": "Each colorful block in Scratch Jr tells the character to do ONE thing! 🧱✨",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Each block is one instruction. A blue 'Move' block = move. A purple 'Say' block = talk. One block = one action! 🎯",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "How Robots Help Us",
+      "Robot Jobs"
+    ],
+    "question": "Which job can a robot do in a hospital? 🏥🤖",
+    "choices": [
+      "Deliver medicine to patients",
+      "Take a nap",
+      "Become a doctor",
+      "Eat lunch"
+    ],
+    "ans_idx": 0,
+    "justification": "Hospital robots can deliver medicine, carry supplies, and help move things! They are helpful assistants but cannot replace doctors! 💊🤖",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Story in Programming",
+      "Beginning"
+    ],
+    "question": "Every story in Scratch Jr needs a starting point - just like 'Once upon a time'! 📖🌟",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Stories need a beginning! In Scratch Jr, we use the green flag or 'When tapped' block to start our story. Every adventure needs a start! 🚀",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Sequence",
+      "Order"
+    ],
+    "question": "When we put blocks together, the computer reads them from... 📚",
+    "choices": [
+      "Top to bottom, in order",
+      "Random order",
+      "All at once",
+      "Bottom to top"
+    ],
+    "ans_idx": 0,
+    "justification": "The computer reads blocks from TOP to BOTTOM, one after another! Just like reading a book from top to bottom! 📖⬇️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Understanding Code in Robotics",
+      "Robot Behavior"
+    ],
+    "question": "A robot cannot think by itself. It needs _____ to tell it what to do! 🤖💭",
+    "choices": [
+      "code",
+      "wishes",
+      "magic",
+      "dreams"
+    ],
+    "ans_idx": 0,
+    "justification": "Robots are machines that follow CODE! Code is the instructions we write to tell robots exactly what to do. No code = robot does nothing! 💻",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Animation",
+      "Character Movement"
+    ],
+    "question": "What does the 'Jump' block make a character do? 🐰⬆️",
+    "choices": [
+      "Change color to blue",
+      "Disappear forever",
+      "Hop up in the air",
+      "Say hello"
+    ],
+    "ans_idx": 2,
+    "justification": "The Jump block makes characters hop up! It's perfect for bunnies, frogs, or any character that needs to bounce! 🐸⬆️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Direction & Turning",
+      "Movement Basics"
+    ],
+    "question": "A robot can only move forward - it can never go backward or turn! 🤖❌",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "That's FALSE! Robots can move in many directions - forward, backward, left, right, and they can turn too! We just need to give them the right commands! ⬆️⬇️⬅️➡️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Events",
+      "Starting Programs"
+    ],
+    "question": "What color is the flag that starts programs in Scratch Jr? 🚩",
+    "choices": [
+      "Yellow",
+      "Green",
+      "Blue",
+      "Red"
+    ],
+    "ans_idx": 1,
+    "justification": "The GREEN flag starts programs! Green means GO! When you tap the green flag, your code begins to run! 🟢▶️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Daily Life"
+    ],
+    "question": "Wake up → Get dressed → Eat breakfast → Go to school. This is an _____ for your morning! ☀️📋",
+    "choices": [
+      "alphabet",
+      "airplane",
+      "animal",
+      "algorithm"
+    ],
+    "ans_idx": 3,
+    "justification": "An algorithm is a list of steps in order! Your morning routine is an algorithm - steps you follow every day to get ready! 📝✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Drag and Drop Programming",
+      "Block Connection"
+    ],
+    "question": "Why do programming blocks have bumps and holes that fit together? 🧩🔗",
+    "choices": [
+      "Because they are broken",
+      "To make them harder to use",
+      "Just for decoration",
+      "To show which blocks can connect in the right order"
+    ],
+    "ans_idx": 3,
+    "justification": "The shapes help us! Bumps fit into holes to show blocks connect properly. It's like LEGO - pieces that fit together work together! 🧱✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Story in Programming",
+      "Multiple Characters"
+    ],
+    "question": "In a Scratch Jr story, a princess 👸 meets a dragon 🐉. How do we make BOTH characters move? 🎭",
+    "choices": [
+      "Give each character their own set of blocks",
+      "Use only one block for everything",
+      "Only the princess can have blocks",
+      "Delete one character"
+    ],
+    "ans_idx": 0,
+    "justification": "Each character needs their OWN blocks! The princess has her movement blocks, and the dragon has different blocks. Each character follows its own script! 👸🐉",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Repeat",
+      "Loops"
+    ],
+    "question": "Using 'Repeat 10' with a move block inside is the same as putting 10 move blocks in a row! 🔄🤖",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! 'Repeat 10' does the same thing as 10 separate blocks - but it's much shorter and easier! Loops are like shortcuts! 🔄⚡",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Predicting Output"
+    ],
+    "question": "Blocks say: Move right → Move right → Move up. Where does the character end up? 🎮",
+    "choices": [
+      "Three steps right",
+      "Two steps right and one step up from start",
+      "Back at the start",
+      "One step up only"
+    ],
+    "ans_idx": 1,
+    "justification": "Follow the sequence! Right (1) + Right (2) + Up (1) = two steps right and one step up! We trace each step to find where we end up! 🗺️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Choices",
+      "Conditionals"
+    ],
+    "question": "IF it is raining 🌧️, THEN take an umbrella ☂️. The word 'IF' helps the robot make a _____! 🤔",
+    "choices": [
+      "choice",
+      "sandwich",
+      "color",
+      "friend"
+    ],
+    "ans_idx": 0,
+    "justification": "IF helps make choices! IF something is true, THEN do this action. The robot checks the condition and chooses what to do! 🤖🧠",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Run & Reset",
+      "Testing Programs"
+    ],
+    "question": "You ran your robot program but it went the wrong way! What should you do first? 🤖🔧",
+    "choices": [
+      "Give up and stop coding",
+      "Throw the robot away",
+      "Press Reset, fix the blocks, and try again",
+      "Run it 100 more times hoping it works"
+    ],
+    "ans_idx": 2,
+    "justification": "Reset brings everything back to the start! Then we can look at our blocks, find the mistake, fix it, and try again. Good programmers always try again! 🔄💪",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Animation",
+      "Visual Effects"
+    ],
+    "question": "To make a ghost 👻 slowly fade away (disappear), which animation effect would you use?",
+    "choices": [
+      "Fade out or transparency block",
+      "Move block",
+      "Speed up block",
+      "Grow block"
+    ],
+    "ans_idx": 0,
+    "justification": "Fade makes things slowly become invisible! It's perfect for ghosts, magic spells, or anything that needs to disappear slowly! 👻✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Multiple Triggers"
+    ],
+    "question": "A character can ONLY start moving when we tap the green flag - there's no other way! 🟢❓",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "FALSE! There are many ways to start: green flag, tapping the character, receiving a message, or bumping into another character! Many events can trigger actions! 🎯",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Direction & Turning",
+      "Turning Commands"
+    ],
+    "question": "A robot faces north ⬆️. After 'Turn right', 'Turn right' again, which way does it face? 🧭🤖",
+    "choices": [
+      "South (down) ⬇️",
+      "North (up) ⬆️",
+      "West (left) ⬅️",
+      "East (right) ➡️"
+    ],
+    "ans_idx": 0,
+    "justification": "Let's trace: Start North → Turn right = East → Turn right again = South! Two right turns from North = facing South (opposite direction)! 🧭",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "How Robots Help Us",
+      "Agriculture"
+    ],
+    "question": "On a farm, robots can help _____ the plants and pick fruits! 🌱🤖🍎",
+    "choices": [
+      "talk to",
+      "water",
+      "eat",
+      "play with"
+    ],
+    "ans_idx": 1,
+    "justification": "Farm robots are amazing helpers! They can water plants, pick fruits, and even plant seeds! This helps farmers grow more food! 🚜🌾",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Algorithm",
+      "Missing Steps"
+    ],
+    "question": "Algorithm for making a phone call 📱: Pick up phone → ??? → Talk to friend. What's the missing step? 🤔",
+    "choices": [
+      "Throw the phone",
+      "Dial your friend's number",
+      "Eat breakfast",
+      "Go to sleep"
+    ],
+    "ans_idx": 1,
+    "justification": "You can't talk without dialing first! The missing step is dialing the number. Algorithms need ALL the steps to work correctly! 📱✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Code Awareness",
+      "Block Functions",
+      "Debugging"
+    ],
+    "question": "A fish 🐟 should swim across the screen, but it JUMPS instead! What block was probably used by mistake? 🤔",
+    "choices": [
+      "Say block instead of Hide block",
+      "Jump block instead of Move block",
+      "Green flag instead of red flag",
+      "Grow block instead of Shrink block"
+    ],
+    "ans_idx": 1,
+    "justification": "Fish swim, they don't jump! The Jump block was used when the Move block was needed. We need to swap Jump for Move to fix the swimming animation! 🐟➡️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Story in Programming",
+      "Story Flow"
+    ],
+    "question": "In a story: A knight ⚔️ enters → Dragon appears 🐉 → They become _____. This ending makes the story complete! 👑",
+    "choices": [
+      "friends",
+      "disappeared",
+      "invisible",
+      "blocks"
+    ],
+    "ans_idx": 0,
+    "justification": "Stories need a satisfying ending! The knight and dragon becoming friends is a complete ending - beginning (knight enters), middle (meets dragon), end (become friends)! 📖🎉",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Choices",
+      "Conditionals",
+      "Sensors"
+    ],
+    "question": "A robot car 🚗 has a rule: IF path is clear THEN go forward, IF obstacle detected THEN stop. A ball 🏀 rolls in front. What happens? 🤖",
+    "choices": [
+      "The robot stops because it detected an obstacle",
+      "The robot ignores all rules",
+      "The robot flies over the ball",
+      "The robot keeps going and hits the ball"
+    ],
+    "ans_idx": 0,
+    "justification": "The ball is an obstacle! The sensor detects it, and the IF rule says: obstacle = stop. The robot follows its code and stops safely! 🛑🏀",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sequence",
+      "Multiple Characters",
+      "Timing"
+    ],
+    "question": "Cat 🐱 should say 'Hello!' THEN dog 🐶 says 'Hi!'. But they talk at the SAME time! What's missing? ⏰",
+    "choices": [
+      "A wait block or message block to make them take turns",
+      "Bigger screen",
+      "More characters",
+      "Faster computer"
+    ],
+    "ans_idx": 0,
+    "justification": "For characters to take turns, we need timing! A Wait block pauses one character, OR a Message block tells the second character when to start! ⏰💬",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Repeat",
+      "Loops",
+      "Pattern Analysis"
+    ],
+    "question": "A robot does: ⬆️➡️⬆️➡️⬆️➡️⬆️➡️ (up-right pattern). How can we write this shorter with a loop? 🔄",
+    "choices": [
+      "Repeat 2: (Move up, Move right)",
+      "Repeat 4: (Move right)",
+      "Repeat 8: (Move up)",
+      "Repeat 4: (Move up, Move right)"
+    ],
+    "ans_idx": 3,
+    "justification": "The pattern ⬆️➡️ repeats 4 times! So we put (Move up, Move right) inside 'Repeat 4'. That gives us 4 × (up-right) = ⬆️➡️⬆️➡️⬆️➡️⬆️➡️! 🧮",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Events",
+      "Cause and Effect",
+      "Program Flow"
+    ],
+    "question": "Character A sends a message 💌. Character B has 'When I receive message' block. When A sends, B will _____ its actions! 📬",
+    "choices": [
+      "hide",
+      "delete",
+      "forget",
+      "start"
+    ],
+    "ans_idx": 3,
+    "justification": "Messages connect characters! When Character A sends a message, it triggers Character B to START its actions. It's like passing a note that says 'Your turn!' 💌🎬",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Step Order"
+    ],
+    "question": "An algorithm is like a magic spell that works even if the steps are in the wrong order! 🪄❌",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "FALSE! Algorithms need steps in the CORRECT order to work. If you put on shoes before socks, it won't work! Order matters! 📋✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "How Robots Help Us",
+      "Entertainment"
+    ],
+    "question": "Which robot can play and have fun with kids? 🎮🤖",
+    "choices": [
+      "Toy robot that dances and talks",
+      "Surgery robot in hospital",
+      "Factory robot that builds cars",
+      "Space robot on Mars"
+    ],
+    "ans_idx": 0,
+    "justification": "Toy robots are made to play with kids! They can dance, talk, sing, and be fun friends. Other robots have different important jobs! 🤖🎉",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "concepts": [
+      "Drag and Drop Programming",
+      "Visual Programming"
+    ],
+    "question": "In Scratch Jr and Tynker, we use colorful blocks instead of typing words to program! 🧱🌈",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Scratch Jr and Tynker use colorful blocks we can drag and drop. This makes programming easy and fun for kids - no typing needed! 🎨👆",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI & Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Animation",
+      "Character Actions"
+    ],
+    "question": "To make a character spin around in circles, we use the _____ block! 🔄🩰",
+    "choices": [
+      "stop",
+      "hide",
+      "say",
+      "turn"
+    ],
+    "ans_idx": 3,
+    "justification": "The Turn block makes characters spin around! Perfect for dancing ballerinas, spinning tops, or dizzy characters! 💃🔄",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Debugging"
+    ],
+    "question": "A rocket 🚀 should: Start engines → Countdown → Blast off! But it blasts off with engines off. What's wrong? 💥",
+    "choices": [
+      "The 'Start engines' block is in the wrong place or missing",
+      "The sky is too blue",
+      "The countdown is too slow",
+      "The rocket is too small"
+    ],
+    "ans_idx": 0,
+    "justification": "If the engines aren't on, the 'Start engines' step is either missing or happening AFTER blast off! We need to fix the sequence - engines first! 🔧🚀",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Story in Programming",
+      "Character Dialogue"
+    ],
+    "question": "Two friends 👧👦 are having a conversation in Scratch Jr. To show who is talking, we use... 💬",
+    "choices": [
+      "No blocks needed - they talk automatically",
+      "Only one character talks",
+      "Say blocks with speech bubbles for each character",
+      "Hide blocks for both characters"
+    ],
+    "ans_idx": 2,
+    "justification": "Each character needs their own Say block! Speech bubbles appear above each character showing what THEY say. This makes conversations clear! 💬👥",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Direction & Turning",
+      "Opposite Directions"
+    ],
+    "question": "If a robot turns LEFT and then turns RIGHT, it will face the same direction as before! ⬅️➡️🤖",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Left and right are opposites. Turn left then turn right = back to the same direction you started. They cancel each other out! ↩️↪️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Character Interaction"
+    ],
+    "question": "A bee 🐝 touches a flower 🌸 and makes honey appear 🍯. What type of event is 'touching the flower'? ✨",
+    "choices": [
+      "A bump or collision event",
+      "A wait event",
+      "A green flag event",
+      "A hide event"
+    ],
+    "ans_idx": 0,
+    "justification": "When two characters touch or bump into each other, it's a collision event! The bee touching the flower triggers the honey to appear! 🐝🌸➡️🍯",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Repeat",
+      "Loops",
+      "Efficiency"
+    ],
+    "question": "A loop helps us do the same action many times without putting many _____! 🔄📦",
+    "choices": [
+      "screens",
+      "robots",
+      "colors",
+      "blocks"
+    ],
+    "ans_idx": 3,
+    "justification": "Loops are time-savers! Instead of putting 10 blocks, we put 1 block inside a 'Repeat 10' loop. Fewer blocks, same result! 🔄⚡",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Choices",
+      "Conditionals",
+      "Simple Logic"
+    ],
+    "question": "IF the sun is out ☀️ THEN the flower opens 🌻. When will the flower stay closed? 🌙",
+    "choices": [
+      "When the screen is big",
+      "When the sun is NOT out (like at night)",
+      "When the flower is yellow",
+      "When someone says hello"
+    ],
+    "ans_idx": 1,
+    "justification": "The IF condition is 'sun is out'. When the condition is NOT true (sun is NOT out), the flower doesn't open. No sun = closed flower! 🌙🌷",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Understanding Code in Robotics",
+      "Precise Instructions"
+    ],
+    "question": "You want a robot to move EXACTLY 5 steps. Which instruction is best? 🤖👣",
+    "choices": [
+      "Move forward 5 steps",
+      "Move forward maybe",
+      "Move forward a lot",
+      "Move forward some steps"
+    ],
+    "ans_idx": 0,
+    "justification": "Robots need EXACT instructions! 'Move forward 5 steps' is clear and specific. 'Some' or 'a lot' are not exact - the robot won't understand! 🎯5️⃣",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "concepts": [
+      "Code Awareness",
+      "Testing Programs"
+    ],
+    "question": "Good programmers test their code by running it to see if it works correctly! ▶️✅",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Testing is important! We run our code, watch what happens, and fix any problems. This is called testing and debugging! 🔍🐛",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Animation",
+      "Grow and Shrink"
+    ],
+    "question": "To make a balloon 🎈 get bigger and bigger, which block do we use? 📈",
+    "choices": [
+      "Grow block",
+      "Say block",
+      "Hide block",
+      "Shrink block"
+    ],
+    "ans_idx": 0,
+    "justification": "The Grow block makes things bigger! Use it to inflate balloons, make monsters grow, or show something getting larger! 🎈📈",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Run & Reset",
+      "Starting Over"
+    ],
+    "question": "After testing a robot program, I press _____ to put the robot back at the start position! 🔄🏁",
+    "choices": [
+      "Delete",
+      "Hide",
+      "Close",
+      "Reset"
+    ],
+    "ans_idx": 3,
+    "justification": "Reset is like a 'start over' button! It puts everything back to the beginning so we can test again. Very helpful for fixing mistakes! 🔄✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Events",
+      "Multiple Triggers",
+      "Program Design"
+    ],
+    "question": "A game has: Tap cat 🐱 = score points, Tap dog 🐶 = lose points, Green flag = start game. How many different events does this game have? 🎮",
+    "choices": [
+      "No events",
+      "2 events",
+      "1 event",
+      "3 events (tap cat, tap dog, green flag)"
+    ],
+    "ans_idx": 3,
+    "justification": "Let's count: 1) Tap cat event 2) Tap dog event 3) Green flag event = 3 different events! Games can have many events that trigger different actions! 🎯",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Algorithm",
+      "Problem Solving",
+      "Debugging"
+    ],
+    "question": "Cake recipe 🎂: Mix ingredients → Bake → Put frosting → Take out of oven. This algorithm has a mistake! What's wrong? 🤔",
+    "choices": [
+      "Cakes don't need ovens",
+      "Missing the mix step",
+      "Frosting comes BEFORE taking the cake out - wrong order!",
+      "Too many steps"
+    ],
+    "ans_idx": 2,
+    "justification": "You can't put frosting on a cake while it's still in the oven! The order should be: Bake → Take out → THEN put frosting. Sequence matters! 🎂✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Direction & Turning",
+      "Path Tracing"
+    ],
+    "question": "Robot starts facing UP ⬆️. Commands: Turn right → Turn right → Turn right. The robot now faces _____! 🧭",
+    "choices": [
+      "left ⬅️",
+      "right ➡️",
+      "down ⬇️",
+      "up ⬆️"
+    ],
+    "ans_idx": 0,
+    "justification": "Let's trace: Start Up → Right turn = facing Right → Right turn = facing Down → Right turn = facing Left! Three right turns from Up = Left! ⬆️➡️⬇️⬅️",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sequence",
+      "Debugging",
+      "Missing Steps"
+    ],
+    "question": "A bird 🐦 should: Flap wings → Fly up → Land on tree 🌳. But the bird flies up without flapping! What's wrong? 🔍",
+    "choices": [
+      "The 'Flap wings' block is missing or comes after 'Fly up'",
+      "Flying doesn't need wings",
+      "The tree is too tall",
+      "The bird is too small"
+    ],
+    "ans_idx": 0,
+    "justification": "Birds need to flap BEFORE flying! If flapping is missing or in the wrong place, the animation looks wrong. Fix: Put 'Flap wings' BEFORE 'Fly up'! 🐦✅",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Story in Programming",
+      "Beginning Middle End"
+    ],
+    "question": "A superhero story 🦸: Hero flies in → Saves the day → ??? What's a good ENDING for this story? 🎬",
+    "choices": [
+      "Hero disappears without anything happening",
+      "Everyone cheers and hero waves goodbye",
+      "Story starts over from beginning",
+      "Nothing - leave it unfinished"
+    ],
+    "ans_idx": 1,
+    "justification": "Good stories need happy endings! After the hero saves the day, people should cheer and the hero can wave goodbye. Beginning → Middle → Satisfying End! 🦸🎉",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Choices",
+      "Conditionals",
+      "Sensor Logic"
+    ],
+    "question": "A robot with 'IF wall detected THEN turn' will turn even when there is no wall! 🧱🤖",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "FALSE! The IF statement only happens when the condition is TRUE. No wall = condition is false = robot does NOT turn. It only turns when it sees a wall! 🧱✋",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "concepts": [
+      "Code Awareness",
+      "Block Selection",
+      "Problem Solving"
+    ],
+    "question": "A wizard 🧙 should say 'Abracadabra!' then a rabbit 🐰 should appear. We need TWO things: a _____ block for the wizard and a _____ block for the rabbit.",
+    "choices": [
+      "Say block, Show block",
+      "Shrink block, Grow block",
+      "Hide block, Move block",
+      "Jump block, Turn block"
+    ],
+    "ans_idx": 0,
+    "justification": "The wizard needs 'Say' to speak the magic words, and the rabbit needs 'Show' to appear! Say = talking, Show = becoming visible! 🧙💬🐰✨",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Animation",
+      "Sequence",
+      "Complex Effects"
+    ],
+    "question": "A star ⭐ should: Appear → Spin → Grow → Disappear. Which sequence of blocks is correct? ✨",
+    "choices": [
+      "Turn → Show → Hide → Grow",
+      "Grow → Hide → Show → Turn",
+      "Hide → Shrink → Stop → Turn",
+      "Show → Turn → Grow → Hide"
+    ],
+    "ans_idx": 3,
+    "justification": "Match the actions: Appear=Show, Spin=Turn, Grow=Grow, Disappear=Hide. So the sequence is Show → Turn → Grow → Hide! ⭐📋",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Repeat",
+      "Loops",
+      "Counting Patterns"
+    ],
+    "question": "A robot does: 🔴🔵🔴🔵🔴🔵🔴🔵🔴🔵 (red-blue pattern). Using a loop: 'Repeat _____ : (Red, Blue)' 🔄",
+    "choices": [
+      "10",
+      "2",
+      "5",
+      "3"
+    ],
+    "ans_idx": 2,
+    "justification": "Count the pairs! 🔴🔵(1) 🔴🔵(2) 🔴🔵(3) 🔴🔵(4) 🔴🔵(5) = 5 pairs! So we use 'Repeat 5' with (Red, Blue) inside! 🔢",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "How Robots Help Us",
+      "Problem Solving",
+      "Real Applications"
+    ],
+    "question": "A building is on fire 🔥 and it's too dangerous for firefighters. Which robot could help? 🤖🚒",
+    "choices": [
+      "A dancing robot",
+      "A cooking robot",
+      "A swimming robot",
+      "A firefighting robot that can go into the fire"
+    ],
+    "ans_idx": 3,
+    "justification": "Firefighting robots can go where it's too hot and dangerous for people! They can spray water and find people inside burning buildings. Robots keep humans safe! 🔥🤖🚒",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI & Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Choices",
+      "Conditionals",
+      "Multiple Outcomes"
+    ],
+    "question": "Game rules: IF score > 10 🏆 THEN show 'Winner!', IF score < 5 😢 THEN show 'Try again'. Player has score = 7. What happens? 🎮",
+    "choices": [
+      "Shows 'Try again'",
+      "Nothing shows - score 7 doesn't match either condition",
+      "Shows both messages",
+      "Shows 'Winner!'"
+    ],
+    "ans_idx": 1,
+    "justification": "Score 7 is NOT greater than 10 (so no 'Winner!'). Score 7 is NOT less than 5 (so no 'Try again'). Neither IF condition is true, so nothing happens! 🤔7️⃣",
+    "age_group": "6-9",
+    "belt": "Yellow"
+  }
+]

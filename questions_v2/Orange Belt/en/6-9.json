@@ -1,0 +1,1892 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Artificial vs Natural",
+      "AI Definition"
+    ],
+    "question": "A tree that grows in a garden is AI. 🌳",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "A tree is natural because it grows on its own. AI means things that people make that are smart, like robots and apps!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Definition"
+    ],
+    "question": "What does AI stand for? 🤖",
+    "choices": [
+      "Amazing Ideas",
+      "Automatic Internet",
+      "Animal Information",
+      "Artificial Intelligence"
+    ],
+    "ans_idx": 3,
+    "justification": "AI stands for Artificial Intelligence. Artificial means made by people, and Intelligence means smart!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Machine Learning",
+      "Learning from Examples"
+    ],
+    "question": "Machine Learning means teaching a computer using examples. 📚",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Machine Learning is when we show the computer many examples so it can learn, just like how you learn from pictures in your books!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Computer Vision",
+      "Camera"
+    ],
+    "question": "What tool does a computer use to see? 📷",
+    "choices": [
+      "Microphone",
+      "Keyboard",
+      "Speaker",
+      "Camera"
+    ],
+    "ans_idx": 3,
+    "justification": "A computer uses a camera to see, just like your eyes help you see! The camera takes pictures for the computer.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Definition"
+    ],
+    "question": "Data is information we collect. 📋",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Data is all the information we collect, like counting how many friends like pizza or chocolate! 🍕🍫",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types"
+    ],
+    "question": "Which of these is a type of data? 🎵",
+    "choices": [
+      "All of these",
+      "Music",
+      "Pictures",
+      "Numbers"
+    ],
+    "ans_idx": 0,
+    "justification": "Data can be many things! Numbers, pictures, music, and even words are all types of data we can collect.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Graphs",
+      "Data Visualization"
+    ],
+    "question": "Why do we use graphs? 📊",
+    "choices": [
+      "To see data quickly and easily",
+      "To make loud noises",
+      "To play video games",
+      "To send text messages"
+    ],
+    "ans_idx": 0,
+    "justification": "Graphs help us see information quickly! Instead of reading lots of numbers, we can look at a picture and understand right away!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Sum",
+      "Addition"
+    ],
+    "question": "If you have 3 apples 🍎 and 2 oranges 🍊, what is the sum of all fruits?",
+    "choices": [
+      "5",
+      "3",
+      "2",
+      "1"
+    ],
+    "ans_idx": 0,
+    "justification": "Sum means adding everything together! 3 apples + 2 oranges = 5 fruits in total! 🍎🍎🍎🍊🍊",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "AI Examples",
+      "AI in Daily Life"
+    ],
+    "question": "Which one of these is an example of AI? 🌟",
+    "choices": [
+      "YouTube video suggestions",
+      "A paper book",
+      "A glass of water",
+      "A wooden chair"
+    ],
+    "ans_idx": 0,
+    "justification": "YouTube uses AI to guess which videos you might like! It learns what you enjoy watching and shows you more like that. The other choices are just regular objects.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Types",
+      "Machine Learning"
+    ],
+    "question": "What can we use as data to teach AI? 🎨",
+    "choices": [
+      "Words, numbers, pictures, and music",
+      "Only pictures",
+      "Only sounds",
+      "Only numbers"
+    ],
+    "ans_idx": 0,
+    "justification": "AI can learn from many types of data! Words, numbers, pictures, and music are all examples that help AI learn different things.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Data"
+    ],
+    "question": "The more _____ we show AI, the better it can learn! 📊",
+    "choices": [
+      "examples",
+      "sleep",
+      "toys",
+      "candy"
+    ],
+    "ans_idx": 0,
+    "justification": "AI learns from examples! The more examples we show it, the smarter it becomes. It's like how you get better at drawing when you practice more!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Computer Vision",
+      "Face Sensing"
+    ],
+    "question": "Snapchat filters use Computer Vision to see your face. 🎭",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Snapchat filters use Computer Vision to find your face and add fun things like dog ears or rainbow tongues! 🐶🌈",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Computer Vision",
+      "Data Types"
+    ],
+    "question": "What kind of data does Computer Vision need to learn? 🖼️",
+    "choices": [
+      "Sounds",
+      "Tastes",
+      "Pictures",
+      "Smells"
+    ],
+    "ans_idx": 2,
+    "justification": "Computer Vision learns from pictures! It needs to see many photos to learn how to recognize things like faces, cats, or cars.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Voice Recognition",
+      "Microphone"
+    ],
+    "question": "AI uses a _____ to hear your voice. 🎤",
+    "choices": [
+      "speaker",
+      "screen",
+      "microphone",
+      "camera"
+    ],
+    "ans_idx": 2,
+    "justification": "A microphone helps AI hear your voice, just like your ears help you hear! When you talk to Siri or Google, they use a microphone.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Speech to Text",
+      "Voice Recognition"
+    ],
+    "question": "When you talk to Siri, it changes your voice into _____. 💬",
+    "choices": [
+      "Colors",
+      "Music",
+      "Text (words)",
+      "Pictures"
+    ],
+    "ans_idx": 2,
+    "justification": "Speech to Text changes your voice into words! That's how Siri can understand what you're saying and write it down.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data",
+      "Decision Making"
+    ],
+    "question": "Data helps us make smart _____. 🧠",
+    "choices": [
+      "choices",
+      "noises",
+      "drawings",
+      "dreams"
+    ],
+    "ans_idx": 0,
+    "justification": "When we collect data, we can use it to make smart choices! Like asking your friends what game they want to play, then choosing the most popular one.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Patterns",
+      "Prediction"
+    ],
+    "question": "Every Monday it rains. ☔ What might happen next Monday?",
+    "choices": [
+      "It will snow for sure",
+      "Nothing will happen",
+      "It might rain",
+      "It will be sunny for sure"
+    ],
+    "ans_idx": 2,
+    "justification": "When we see a pattern (rain every Monday), we can predict what might happen next! This is how data helps us guess the future.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pic-Graph",
+      "Data Visualization"
+    ],
+    "question": "Which type of graph uses small pictures to show data? 🖼️",
+    "choices": [
+      "Bar-Graph",
+      "Word-Graph",
+      "Pic-Graph",
+      "Sound-Graph"
+    ],
+    "ans_idx": 2,
+    "justification": "A Pic-Graph (Picture Graph) uses small pictures to show data! For example, using apple pictures 🍎🍎🍎 to show how many apples you have.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech"
+    ],
+    "question": "Text to Speech helps a computer read stories out loud. 📖🔊",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Text to Speech turns written words into sound. So the computer can read a story to you using its speaker, like a robot storyteller! 🤖",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Speech to Text"
+    ],
+    "question": "Which AI tool helps the computer TALK to you? 🔊",
+    "choices": [
+      "Text to Speech",
+      "Machine Learning",
+      "Computer Vision",
+      "Speech to Text"
+    ],
+    "ans_idx": 0,
+    "justification": "Text to Speech helps computers talk! It turns written words into voice using a speaker. Speech to Text does the opposite - it listens to your voice.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Science Definition"
+    ],
+    "question": "Data Science is about collecting data, thinking about it, and making choices. 🔬",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Data Science has three steps: 1) Collect data 📋, 2) Think about what it means 🤔, 3) Make smart choices based on it! ✨",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Count",
+      "Data Analysis"
+    ],
+    "question": "When we ask 'How many stars are there? ⭐', we need to _____.",
+    "choices": [
+      "sing",
+      "draw",
+      "sleep",
+      "count"
+    ],
+    "ans_idx": 3,
+    "justification": "Counting is how we find out 'how many' of something! When we count stars ⭐⭐⭐, we find the answer to 'how many?'",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Analysis"
+    ],
+    "question": "Data analysis means looking at data to find answers. 🔍",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Data analysis is like being a detective 🔍 - you look at the clues (data) to find answers to questions like 'which ice cream flavor is most popular?'",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables"
+    ],
+    "question": "A variable is like a _____ that stores a number that can change. 📦",
+    "choices": [
+      "tree",
+      "box",
+      "bird",
+      "cloud"
+    ],
+    "ans_idx": 1,
+    "justification": "A variable is like a magic box! 📦 You can put a number inside it, and that number can change. Like a box that holds your game score!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Tracking Data"
+    ],
+    "question": "In a video game 🎮, what helps keep track of your score?",
+    "choices": [
+      "A color",
+      "A variable",
+      "A sound",
+      "A picture"
+    ],
+    "ans_idx": 1,
+    "justification": "A variable keeps track of your score! Every time you get a point, the number in the variable goes up. Score: 1 → 2 → 3! 🏆",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Definition",
+      "Smart Things"
+    ],
+    "question": "AI means things we made that are smart. 🤖✨",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! AI stands for Artificial Intelligence. Artificial means we made it, and Intelligence means it's smart! Like smart robots and helpful apps.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Tools",
+      "Speaker"
+    ],
+    "question": "What tool does AI use to talk to you? 🔊",
+    "choices": [
+      "Speaker",
+      "Keyboard",
+      "Microphone",
+      "Camera"
+    ],
+    "ans_idx": 0,
+    "justification": "AI uses a speaker to talk to you! Just like your mouth helps you speak, the speaker helps the computer make sounds and talk.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Artificial vs Natural"
+    ],
+    "question": "Which one is NATURAL and NOT made by people? 🌸",
+    "choices": [
+      "A flower",
+      "A computer",
+      "A phone",
+      "A robot"
+    ],
+    "ans_idx": 0,
+    "justification": "A flower is natural because it grows on its own! Robots, phones, and computers are artificial because people made them.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types"
+    ],
+    "question": "Pictures can be data. 🖼️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Pictures are a type of data. Words, numbers, pictures, and music are all different types of data we can collect!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Count"
+    ],
+    "question": "How many stars are here? ⭐⭐⭐⭐",
+    "choices": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "ans_idx": 0,
+    "justification": "Let's count together! ⭐1 ⭐2 ⭐3 ⭐4 - There are 4 stars! Counting helps us know how many things we have.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Bar-Graph"
+    ],
+    "question": "A Bar-Graph shows data using _____. 📊",
+    "choices": [
+      "animals",
+      "songs",
+      "bars",
+      "games"
+    ],
+    "ans_idx": 2,
+    "justification": "A Bar-Graph uses bars (like rectangles) to show data. Taller bars mean more, shorter bars mean less!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Machine Learning",
+      "Brain"
+    ],
+    "question": "Machine Learning means the computer has a real brain like you. 🧠",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "No! Computers don't have real brains. Machine Learning means teaching computers using examples and data, but they use chips and code, not a real brain!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Collection"
+    ],
+    "question": "Counting your toys is a way to collect _____. 🧸",
+    "choices": [
+      "Dreams",
+      "Music",
+      "Colors",
+      "Data"
+    ],
+    "ans_idx": 3,
+    "justification": "When you count your toys, you're collecting data! Data is information, like knowing you have 5 teddy bears and 3 cars. 🧸🚗",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Human Senses vs AI Tools"
+    ],
+    "question": "You use your EYES to see. What does AI use to see? 👀",
+    "choices": [
+      "Hands",
+      "Nose",
+      "Ears",
+      "Camera"
+    ],
+    "ans_idx": 3,
+    "justification": "Just like you use your eyes to see, AI uses a camera! The camera is like the AI's eyes - it takes pictures so the computer can see.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Human Senses vs AI Tools"
+    ],
+    "question": "You use your EARS to hear. What does AI use to hear? 👂",
+    "choices": [
+      "Printer",
+      "Camera",
+      "Microphone",
+      "Screen"
+    ],
+    "ans_idx": 2,
+    "justification": "Just like you use your ears to hear, AI uses a microphone! The microphone is like the AI's ears - it listens to sounds and voices.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "AI Examples",
+      "Voice Assistants"
+    ],
+    "question": "When you say 'Hey Siri' or 'OK Google', you are talking to _____. 🗣️",
+    "choices": [
+      "A book",
+      "A tree",
+      "AI",
+      "A chair"
+    ],
+    "ans_idx": 2,
+    "justification": "Siri and Google Assistant are AI helpers! They use Voice Recognition to hear you and AI to understand and answer your questions.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Voice Recognition",
+      "Mistakes"
+    ],
+    "question": "Voice Recognition can sometimes make mistakes. 🎤",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Sometimes AI might hear the wrong word, especially if there's noise or you speak very fast. It's still learning, just like you!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Computer Vision",
+      "Applications"
+    ],
+    "question": "Which one uses Computer Vision? 📱",
+    "choices": [
+      "Charging your tablet",
+      "Typing a message",
+      "Playing music",
+      "Face unlock on a phone"
+    ],
+    "ans_idx": 3,
+    "justification": "Face unlock uses Computer Vision! The phone's camera looks at your face and the AI checks if it's really you. It's like magic! ✨",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Examples"
+    ],
+    "question": "A computer cannot learn if it has no _____. 📚",
+    "choices": [
+      "data",
+      "wheels",
+      "wings",
+      "legs"
+    ],
+    "ans_idx": 0,
+    "justification": "Computers need data (examples) to learn! Without pictures, sounds, or words to study, AI cannot learn anything new.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bar-Graph",
+      "Reading Graphs"
+    ],
+    "question": "In a bar graph, the TALLEST bar means _____. 📊",
+    "choices": [
+      "The least",
+      "Nothing",
+      "The most",
+      "The smallest"
+    ],
+    "ans_idx": 2,
+    "justification": "The tallest bar shows the biggest number or the most! If the 'chocolate' bar is tallest, then chocolate is the most popular choice! 🍫",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data",
+      "Human Use"
+    ],
+    "question": "Only computers can use data. People cannot use data. 🤔",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "False! Both people and computers use data. When you count votes to pick a game, you're using data to make a choice!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sum",
+      "Addition"
+    ],
+    "question": "When we add all numbers together, we find the _____. ➕",
+    "choices": [
+      "song",
+      "shape",
+      "color",
+      "sum"
+    ],
+    "ans_idx": 3,
+    "justification": "The sum is the total when we add numbers together! 2 + 3 + 1 = 6, so 6 is the sum.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Analysis",
+      "Graphs"
+    ],
+    "question": "Looking at a graph to find answers is called _____. 🔍",
+    "choices": [
+      "Data sleeping",
+      "Data singing",
+      "Data analysis",
+      "Data jumping"
+    ],
+    "ans_idx": 2,
+    "justification": "Data analysis means looking at data (like graphs) to find answers! It's like being a detective who studies clues. 🕵️",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Speech to Text"
+    ],
+    "question": "Which one LISTENS to your voice and turns it into words? 👂➡️📝",
+    "choices": [
+      "Computer Vision",
+      "Bar-Graph",
+      "Text to Speech",
+      "Speech to Text"
+    ],
+    "ans_idx": 3,
+    "justification": "Speech to Text LISTENS to your voice and writes it as words. Text to Speech does the opposite - it READS words out loud!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "AI Tools",
+      "Complete Understanding"
+    ],
+    "question": "Match the AI tool: Eyes 👀 = Camera, Ears 👂 = Microphone, Mouth 👄 = ? 🔊",
+    "choices": [
+      "Speaker",
+      "Keyboard",
+      "Mouse",
+      "Screen"
+    ],
+    "ans_idx": 0,
+    "justification": "Just like your mouth helps you talk, a speaker helps AI talk! Camera = Eyes (see), Microphone = Ears (hear), Speaker = Mouth (talk).",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Speaker"
+    ],
+    "question": "Text to Speech turns written words into _____ using a speaker. 📝➡️🔊",
+    "choices": [
+      "sound",
+      "smells",
+      "pictures",
+      "colors"
+    ],
+    "ans_idx": 0,
+    "justification": "Text to Speech changes text (written words) into sound so you can hear it! That's how apps can read stories to you.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "AI Helps Us"
+    ],
+    "question": "AI can help us with languages, games, reminders, and maps. 🗺️🎮",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! AI helps us every day - translating languages, playing smart games, reminding us of things, and showing us directions on maps!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Changing Values"
+    ],
+    "question": "Your game score was 5, then you got 2 more points. What should the variable show now? 🎮",
+    "choices": [
+      "3",
+      "7",
+      "5",
+      "2"
+    ],
+    "ans_idx": 1,
+    "justification": "Variables can change! You had 5 points, got 2 more, so now the variable should show 5 + 2 = 7 points! 🏆",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Scratch"
+    ],
+    "question": "In Scratch, we use a _____ to keep track of how many times we click. 🖱️",
+    "choices": [
+      "picture",
+      "costume",
+      "sound",
+      "variable"
+    ],
+    "ans_idx": 3,
+    "justification": "A variable is perfect for counting clicks! Every time you click, the number in the variable goes up: 1, 2, 3, 4... 🖱️✨",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Science Process"
+    ],
+    "question": "What are the 3 steps in Data Science? 📊🤔✅",
+    "choices": [
+      "Sing, Dance, Draw",
+      "Eat, Sleep, Play",
+      "Collect, Think, Choose",
+      "Run, Jump, Swim"
+    ],
+    "ans_idx": 2,
+    "justification": "Data Science has 3 steps: 1) Collect data 📋, 2) Think about what it means 🤔, 3) Make a choice based on it! ✅",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI in Daily Life"
+    ],
+    "question": "AI can help you find your way on a map. 🗺️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Apps like Google Maps use AI to help you find the best way to go somewhere. AI is like a smart helper! 🚗",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Artificial vs Natural"
+    ],
+    "question": "Which one is ARTIFICIAL (made by people)? 🔧",
+    "choices": [
+      "A bird",
+      "A robot",
+      "A river",
+      "A cloud"
+    ],
+    "ans_idx": 1,
+    "justification": "A robot is artificial because people build it! Birds, clouds, and rivers are all natural - they exist without people making them.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types"
+    ],
+    "question": "Which of these is a type of data? 🎶",
+    "choices": [
+      "A wish",
+      "A feeling",
+      "A dream",
+      "Music"
+    ],
+    "ans_idx": 3,
+    "justification": "Music is data! We can record it, save it, and use it. Data includes things we can collect like words, numbers, pictures, and music!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Graphs",
+      "Data Visualization"
+    ],
+    "question": "Graphs help us understand data faster. 📊⚡",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Instead of reading lots of numbers, we can look at a graph and understand quickly. It's like a picture that tells a story!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Definition"
+    ],
+    "question": "AI means Artificial _____. 🧠",
+    "choices": [
+      "Ice cream",
+      "Intelligence",
+      "Insect",
+      "Island"
+    ],
+    "ans_idx": 1,
+    "justification": "AI stands for Artificial Intelligence! Artificial means made by people, and Intelligence means smart. So AI means smart things we make!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Count"
+    ],
+    "question": "How many hearts are here? 💜💜💜",
+    "choices": [
+      "2",
+      "3",
+      "5",
+      "4"
+    ],
+    "ans_idx": 1,
+    "justification": "Let's count! 💜1 💜2 💜3 - There are 3 hearts! Counting is an important way to collect data.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Examples"
+    ],
+    "question": "A wooden table is an example of AI. 🪵",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "No! A wooden table is just a regular object - it's not smart and can't think or learn. AI things are smart, like Siri or video game characters!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Training"
+    ],
+    "question": "If you want AI to learn what a cat looks like, what should you show it? 🐱",
+    "choices": [
+      "Many pictures of cats",
+      "Songs about dogs",
+      "The color blue",
+      "Pictures of cars"
+    ],
+    "ans_idx": 0,
+    "justification": "To learn what cats look like, AI needs to see many pictures of cats! The more cat pictures it sees, the better it gets at finding cats. 🐱🐱🐱",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Speech to Text",
+      "Voice Recognition"
+    ],
+    "question": "When you talk to your phone and it writes what you say, this is called _____. 🗣️📝",
+    "choices": [
+      "Data Science",
+      "Speech to Text",
+      "Computer Vision",
+      "Text to Speech"
+    ],
+    "ans_idx": 1,
+    "justification": "Speech to Text listens to your voice (speech) and turns it into written words (text)! It's how you can send messages by talking.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Computer Vision"
+    ],
+    "question": "Computer Vision teaches a computer to _____ using a camera. 👁️",
+    "choices": [
+      "see",
+      "taste",
+      "smell",
+      "fly"
+    ],
+    "ans_idx": 0,
+    "justification": "Computer Vision is all about teaching computers to SEE! The camera captures pictures, and AI learns to understand what's in them.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Computer Vision",
+      "Face Sensing"
+    ],
+    "question": "Computer Vision needs pictures to learn. 🖼️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Computer Vision learns from pictures, just like you learn to recognize your friends by seeing their faces many times!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "AI Applications",
+      "Daily Life"
+    ],
+    "question": "Which of these uses AI to suggest videos you might like? 📺",
+    "choices": [
+      "A pencil",
+      "A pillow",
+      "YouTube",
+      "A water bottle"
+    ],
+    "ans_idx": 2,
+    "justification": "YouTube uses AI to learn what videos you like, then suggests more videos you might enjoy! The other items don't have AI.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Patterns",
+      "Prediction"
+    ],
+    "question": "When we see a pattern in data, we can make a _____. 🔮",
+    "choices": [
+      "painting",
+      "prediction",
+      "noise",
+      "sandwich"
+    ],
+    "ans_idx": 1,
+    "justification": "When we see patterns, we can predict what might happen next! Like if it rains every Monday, we can predict it might rain next Monday too.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pic-Graph",
+      "Bar-Graph"
+    ],
+    "question": "A graph that uses rectangles (bars) to show data is called a _____. 📊",
+    "choices": [
+      "Circle-Graph",
+      "Star-Graph",
+      "Pic-Graph",
+      "Bar-Graph"
+    ],
+    "ans_idx": 3,
+    "justification": "A Bar-Graph uses bars (rectangles) to show data. Taller bars = more, shorter bars = less. A Pic-Graph uses small pictures instead!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Analysis"
+    ],
+    "question": "Data analysis is guessing answers without looking at any data. 🙈",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "No! Data analysis means LOOKING at data carefully to find answers. We don't guess - we study the information first!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sum",
+      "Count"
+    ],
+    "question": "Ali has 4 red balloons 🎈 and 3 blue balloons 🎈. What is the SUM of all balloons?",
+    "choices": [
+      "1",
+      "7",
+      "4",
+      "3"
+    ],
+    "ans_idx": 1,
+    "justification": "To find the sum, we add everything together! 4 red + 3 blue = 7 balloons in total. 🎈🎈🎈🎈🎈🎈🎈",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data",
+      "Choices"
+    ],
+    "question": "Asking your friends which game they want to play is a way to collect _____. 🎮",
+    "choices": [
+      "clouds",
+      "data",
+      "toys",
+      "food"
+    ],
+    "ans_idx": 1,
+    "justification": "When you ask friends and count their answers, you're collecting data! Then you can use that data to pick the most popular game.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Applications"
+    ],
+    "question": "A reading app that reads stories OUT LOUD to you uses _____. 📖🔊",
+    "choices": [
+      "Text to Speech",
+      "Computer Vision",
+      "Speech to Text",
+      "A camera"
+    ],
+    "ans_idx": 0,
+    "justification": "Text to Speech reads written words out loud! The app looks at text and turns it into voice so you can listen to stories. 📚🎧",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "AI Tools Comparison"
+    ],
+    "question": "Which AI tool turns your VOICE into WRITTEN WORDS? 🗣️➡️📝",
+    "choices": [
+      "Machine Learning",
+      "Text to Speech",
+      "Computer Vision",
+      "Speech to Text"
+    ],
+    "ans_idx": 3,
+    "justification": "Speech to Text takes your voice and turns it into written words. Text to Speech does the opposite - it takes written words and says them out loud!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Speech to Text"
+    ],
+    "question": "Text to Speech and Speech to Text do the same thing. 🔄",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "No, they're opposites! Text to Speech: text → voice (reading aloud). Speech to Text: voice → text (writing what you say).",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Voice Recognition",
+      "Applications"
+    ],
+    "question": "Voice assistants like Siri use _____ to understand what you say. 🎤",
+    "choices": [
+      "Sunglasses",
+      "Voice Recognition",
+      "A paintbrush",
+      "A bicycle"
+    ],
+    "ans_idx": 1,
+    "justification": "Voice Recognition (also called Speech Recognition) helps AI understand spoken words. That's how Siri knows what you're asking!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "AI Tools",
+      "Complete System"
+    ],
+    "question": "A robot that can SEE you, HEAR you, and TALK to you uses which AI tools? 🤖",
+    "choices": [
+      "Only Text to Speech",
+      "Computer Vision, Voice Recognition, and Text to Speech",
+      "Only Voice Recognition",
+      "Only Computer Vision"
+    ],
+    "ans_idx": 1,
+    "justification": "A smart robot uses: Computer Vision (camera) to SEE, Voice Recognition (microphone) to HEAR, and Text to Speech (speaker) to TALK!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Score Tracking"
+    ],
+    "question": "In a game, your score variable shows 10. You lose 3 points. What does the variable show now? 📉",
+    "choices": [
+      "3",
+      "7",
+      "10",
+      "13"
+    ],
+    "ans_idx": 1,
+    "justification": "Variables can go up AND down! You had 10 points, lost 3, so now: 10 - 3 = 7 points. The variable changes to 7!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Storing Data"
+    ],
+    "question": "A variable is like a magic _____ that holds a number that can change. 📦✨",
+    "choices": [
+      "cloud",
+      "song",
+      "rainbow",
+      "box"
+    ],
+    "ans_idx": 3,
+    "justification": "A variable is like a box that holds a number. You can put a number in, take it out, or change it - just like a magic box! 📦",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Changing Values"
+    ],
+    "question": "The number inside a variable can never change. 🔒",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False! The whole point of a variable is that it CAN change. That's why it's called a 'variable' - it varies! Like your game score going up and down.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Examples",
+      "Games"
+    ],
+    "question": "Smart characters in video games can use AI. 🎮🤖",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! Game characters that move, chase you, or play against you often use AI to act smart and make the game fun! 🎮",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Artificial vs Natural"
+    ],
+    "question": "Which one is NATURAL? 🌿",
+    "choices": [
+      "A smart watch",
+      "A tablet",
+      "A robot toy",
+      "A butterfly"
+    ],
+    "ans_idx": 3,
+    "justification": "A butterfly is natural - it's a living creature that wasn't made by people! Tablets, smart watches, and robot toys are all artificial.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Definition"
+    ],
+    "question": "What is data? 📋",
+    "choices": [
+      "Information we collect",
+      "A game",
+      "A color",
+      "A type of food"
+    ],
+    "ans_idx": 0,
+    "justification": "Data is information we collect! Like counting how many kids like apples 🍎 or bananas 🍌. That information is called data!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types"
+    ],
+    "question": "Words, numbers, pictures, and _____ are all types of data. 🎵",
+    "choices": [
+      "music",
+      "magic",
+      "wishes",
+      "dreams"
+    ],
+    "ans_idx": 0,
+    "justification": "Music is a type of data! We can record it, save it, and share it. Words, numbers, pictures, and music are the four main types of data.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Machine Learning",
+      "Data"
+    ],
+    "question": "AI can learn without seeing any examples or data. 🚫📚",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False! AI needs examples and data to learn, just like you need to see pictures of animals to learn what they look like!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Pic-Graph"
+    ],
+    "question": "A Pic-Graph shows data using _____. 🖼️",
+    "choices": [
+      "Only numbers",
+      "Small pictures",
+      "Only words",
+      "Sounds"
+    ],
+    "ans_idx": 1,
+    "justification": "A Pic-Graph (Picture Graph) uses small pictures to show data! Like using 🍎🍎🍎 to show 3 apples. It makes data fun to see!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data",
+      "Numbers"
+    ],
+    "question": "Data is only numbers. Nothing else can be data. 🔢",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False! Data can be many things: numbers, words, pictures, and music! Your favorite color is data, your name is data too!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "AI Senses",
+      "Tools"
+    ],
+    "question": "Which tools help AI see, hear, and talk? 👀👂🗣️",
+    "choices": [
+      "Pencil, Paper, Eraser",
+      "Spoon, Fork, Knife",
+      "Camera, Microphone, Speaker",
+      "Ball, Bat, Net"
+    ],
+    "ans_idx": 2,
+    "justification": "AI uses: Camera to SEE (like eyes) 👀, Microphone to HEAR (like ears) 👂, and Speaker to TALK (like mouth) 🗣️!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning"
+    ],
+    "question": "Machine Learning is teaching a computer using _____. 🎓",
+    "choices": [
+      "examples",
+      "magic wands",
+      "candy",
+      "sleeping"
+    ],
+    "ans_idx": 0,
+    "justification": "Machine Learning works by showing computers many examples! Show it 100 cat photos, and it learns what cats look like. 🐱📸",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Voice Recognition",
+      "Applications"
+    ],
+    "question": "Which of these can you talk to using Voice Recognition? 🗣️",
+    "choices": [
+      "A banana",
+      "A rock",
+      "A book",
+      "Google Assistant"
+    ],
+    "ans_idx": 3,
+    "justification": "Google Assistant uses Voice Recognition to hear and understand what you say! Books, bananas, and rocks can't hear you. 😄",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Computer Vision",
+      "Photos"
+    ],
+    "question": "A computer can see without a camera. 📷❌",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False! A computer needs a camera to see, just like you need your eyes. The camera takes pictures for Computer Vision to work!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Text to Speech"
+    ],
+    "question": "Text to Speech uses a _____ to make sound. 🔊",
+    "choices": [
+      "keyboard",
+      "camera",
+      "speaker",
+      "mouse"
+    ],
+    "ans_idx": 2,
+    "justification": "Text to Speech reads words and uses a speaker to say them out loud! The speaker makes the sound so you can hear it. 🔊",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Graphs",
+      "Understanding"
+    ],
+    "question": "Graphs help us understand data _____ than reading lots of numbers. ⚡",
+    "choices": [
+      "darker",
+      "slower",
+      "faster",
+      "louder"
+    ],
+    "ans_idx": 2,
+    "justification": "Graphs make understanding data faster! Instead of reading 1, 2, 3, 4, 5... you can just look at a bar or picture and know right away!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Count",
+      "Data Analysis"
+    ],
+    "question": "How many animals are here? 🐶🐱🐶🐱🐶",
+    "choices": [
+      "5",
+      "2",
+      "4",
+      "3"
+    ],
+    "ans_idx": 0,
+    "justification": "Let's count! 🐶1 🐱2 🐶3 🐱4 🐶5 - There are 5 animals (3 dogs and 2 cats). Counting is a way to analyze data!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Patterns"
+    ],
+    "question": "If you see a pattern, you can guess what might come next. 🔮",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes! Patterns help us predict. If the pattern is 🔴🔵🔴🔵🔴..., you can guess the next one is 🔵! That's how data science works!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables"
+    ],
+    "question": "A _____ stores a number that can change, like your game score. 📦",
+    "choices": [
+      "picture",
+      "song",
+      "variable",
+      "color"
+    ],
+    "ans_idx": 2,
+    "justification": "A variable is like a container that holds a number. Your score starts at 0, then becomes 1, 2, 3... The variable keeps track!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "AI Complete System"
+    ],
+    "question": "A translator app that LISTENS to English and SPEAKS Arabic uses which AI tools? 🌍",
+    "choices": [
+      "Speech to Text and Text to Speech",
+      "Only a Camera",
+      "Only a Keyboard",
+      "Only Computer Vision"
+    ],
+    "ans_idx": 0,
+    "justification": "A voice translator uses: Speech to Text (to hear and write what you say) + Text to Speech (to say the translation out loud)!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Speech to Text",
+      "Text to Speech"
+    ],
+    "question": "Speech to Text turns your voice into written words, and Text to Speech turns written words into voice. 🔄",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Exactly right! Speech to Text: 🗣️→📝 (voice to words). Text to Speech: 📝→🔊 (words to voice). They're opposites!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Computer Vision",
+      "Face Sensing"
+    ],
+    "question": "What does a phone need to unlock with your FACE? 📱😊",
+    "choices": [
+      "Only a keyboard",
+      "Only a speaker",
+      "A camera and Computer Vision",
+      "Only a microphone"
+    ],
+    "ans_idx": 2,
+    "justification": "Face unlock needs a camera to take a picture of your face, and Computer Vision AI to check if it's really you! 📸🔓",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "AI Learning Process"
+    ],
+    "question": "The more _____ AI sees, the better it learns! 📊📈",
+    "choices": [
+      "wishes",
+      "data",
+      "clouds",
+      "dreams"
+    ],
+    "ans_idx": 1,
+    "justification": "AI learns better with more data! Show it 10 cat pictures = okay. Show it 1000 cat pictures = much better at finding cats! 🐱🐱🐱",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Science Process"
+    ],
+    "question": "Sara wants to know the most popular fruit in her class. What should she do FIRST? 🍎🍌🍇",
+    "choices": [
+      "Make a choice without asking",
+      "Collect data by asking everyone",
+      "Draw a picture",
+      "Go to sleep"
+    ],
+    "ans_idx": 1,
+    "justification": "First, collect data! Ask everyone which fruit they like. Then think about the answers. Finally, you can see which fruit won! 🏆",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Bar-Graph",
+      "Reading Data"
+    ],
+    "question": "In a bar graph, if the 'Pizza' bar is the SHORTEST, what does that mean? 🍕📊",
+    "choices": [
+      "Pizza got the least votes",
+      "Pizza is the biggest",
+      "Pizza is the best",
+      "Pizza got the most votes"
+    ],
+    "ans_idx": 0,
+    "justification": "In a bar graph, shorter bars mean less! If Pizza has the shortest bar, fewer people chose pizza. Taller bar = more, shorter bar = less!",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Counting"
+    ],
+    "question": "In Scratch, we can use a variable to count how many times a sprite is clicked. 🖱️",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! A variable can count clicks. Every time you click the sprite, the variable adds 1: Click! 1... Click! 2... Click! 3! 🖱️✨",
+    "age_group": "6-9",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Analysis",
+      "Sum"
+    ],
+    "question": "To find the total of 5 + 3 + 2, we calculate the _____. ➕",
+    "choices": [
+      "difference",
+      "shape",
+      "color",
+      "sum"
+    ],
+    "ans_idx": 3,
+    "justification": "The sum is what we get when we add numbers together! 5 + 3 + 2 = 10. So 10 is the sum! Adding is part of data analysis.",
+    "age_group": "6-9",
+    "belt": "Orange"
+  }
+]

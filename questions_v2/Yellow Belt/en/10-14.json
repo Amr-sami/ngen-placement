@@ -1,0 +1,1996 @@
+[
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Step-by-step problem solving"
+    ],
+    "question": "You want to make a sandwich. Which is the correct order of steps?",
+    "choices": [
+      "Close sandwich → Get bread → Add filling → Eat",
+      "Eat → Get bread → Add filling → Close sandwich",
+      "Get bread → Add filling → Close sandwich → Eat",
+      "Add filling → Get bread → Close sandwich → Eat"
+    ],
+    "ans_idx": 2,
+    "justification": "An algorithm must follow a logical order. You need to get the bread first, then add filling, close it, and finally eat it. This is the only sequence that makes sense!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Sequence",
+      "Program execution order"
+    ],
+    "question": "In mBlock, the computer runs blocks from top to bottom, one after another.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Programs execute instructions in sequence, starting from the top block and moving down to the bottom. This is how the computer knows what to do first, second, third, and so on.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Data storage"
+    ],
+    "question": "In your game, you create a variable called `score`. What does this variable do?",
+    "choices": [
+      "It deletes your game progress",
+      "It stores and remembers a value like a number",
+      "It makes the character jump",
+      "It changes the background color"
+    ],
+    "ans_idx": 1,
+    "justification": "A variable is like a labeled box that stores information. The variable `score` holds a value (like a number) that can change as the player earns points in the game.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Events",
+      "Program triggers"
+    ],
+    "question": "The \"when green flag clicked\" block starts the program when you click the green flag.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Event blocks like \"when green flag clicked\" act as triggers that tell the program when to start running. Clicking the green flag is the most common way to start a program in mBlock.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Operators",
+      "Arithmetic operations"
+    ],
+    "question": "In mBlock, if you use the block [5 + 3], the result will be _____.",
+    "choices": [
+      "8",
+      "2",
+      "15",
+      "53"
+    ],
+    "ans_idx": 0,
+    "justification": "The + operator performs addition. When you add 5 and 3 together, the result is 8. This is a basic arithmetic operation in programming.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics applications",
+      "Automation"
+    ],
+    "question": "Robots can help doctors perform surgeries more precisely than human hands alone.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Surgical robots help doctors perform very precise operations. They can make tiny movements that are difficult for human hands, making some surgeries safer and more accurate.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Movement commands",
+      "Robot control"
+    ],
+    "question": "Which block would you use to make your VRVEX robot move forward?",
+    "choices": [
+      "Stop motors",
+      "Drive forward",
+      "Turn left",
+      "Wait 1 second"
+    ],
+    "ans_idx": 1,
+    "justification": "The \"Drive forward\" block commands the robot's motors to move it in a forward direction. Turn left rotates the robot, stop motors halts movement, and wait pauses the program.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "VRVEX Interface",
+      "Programming environment"
+    ],
+    "question": "In VRVEX, you can test your robot program in a virtual simulation before running it on a real robot.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "VRVEX provides a virtual simulation environment where you can test your code and see how the robot would behave before using a physical robot. This helps you find and fix errors safely.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Algorithm",
+      "Problem decomposition"
+    ],
+    "question": "You're creating a game where a character walks to a door, opens it, and enters. Which step is MISSING from this algorithm? 1) Walk to door → 2) ??? → 3) Walk through door → 4) Close door",
+    "choices": [
+      "Open the door",
+      "Jump over the door",
+      "Delete the door",
+      "Paint the door"
+    ],
+    "ans_idx": 0,
+    "justification": "Before walking through a door, you must open it first. The logical sequence is: walk to door → open door → walk through → close door. Without opening, the character cannot enter!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Output prediction"
+    ],
+    "question": "Look at this mBlock sequence: [say \"Hello\"] → [wait 1 second] → [say \"Goodbye\"]. What will happen?",
+    "choices": [
+      "The sprite says Hello, waits 1 second, then says Goodbye",
+      "The sprite only says Goodbye",
+      "The sprite waits 1 second, then says Hello and Goodbye",
+      "The sprite says Hello and Goodbye at the same time"
+    ],
+    "ans_idx": 0,
+    "justification": "Blocks execute in sequence from top to bottom. First, the sprite says \"Hello\", then waits for 1 second, and finally says \"Goodbye\". Each block completes before the next one starts.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Value changes"
+    ],
+    "question": "Your game starts with `score = 0`. The player collects a coin and the code runs: [change score by 10]. Then they collect another coin. What is the score now?",
+    "choices": [
+      "20",
+      "0",
+      "10",
+      "100"
+    ],
+    "ans_idx": 0,
+    "justification": "Starting at 0, collecting the first coin adds 10 (score = 10). Collecting the second coin adds another 10 (score = 20). The \"change by\" block adds to the current value each time.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "IF-ELSE logic"
+    ],
+    "question": "Look at this code: [if score > 50 then say \"You win!\" else say \"Keep trying!\"]. If the score is 30, what will the sprite say?",
+    "choices": [
+      "You win!",
+      "Nothing",
+      "Keep trying!",
+      "Both messages"
+    ],
+    "ans_idx": 2,
+    "justification": "The condition checks if score > 50. Since 30 is NOT greater than 50, the condition is false, so the ELSE part runs and the sprite says \"Keep trying!\"",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "Repetition"
+    ],
+    "question": "What does this code do? [repeat 4 times: move 10 steps, turn right 90 degrees]",
+    "choices": [
+      "Draws a square",
+      "Draws a triangle",
+      "Moves in a straight line",
+      "Spins in a circle without moving"
+    ],
+    "ans_idx": 0,
+    "justification": "The sprite moves forward and turns 90° four times. Since a square has 4 sides and 4 corners of 90° each, repeating this pattern 4 times creates a square shape.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "Data storage"
+    ],
+    "question": "You have a list called `fruits` with items: [Apple, Banana, Orange]. The item at position 2 is _____.",
+    "choices": [
+      "Nothing",
+      "Apple",
+      "Banana",
+      "Orange"
+    ],
+    "ans_idx": 2,
+    "justification": "In mBlock lists, positions start at 1. So position 1 = Apple, position 2 = Banana, position 3 = Orange. The item at position 2 is Banana.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Comparison"
+    ],
+    "question": "Which comparison will result in TRUE?",
+    "choices": [
+      "2 > 2",
+      "3 > 7",
+      "10 > 5",
+      "4 = 9"
+    ],
+    "ans_idx": 2,
+    "justification": "The > operator checks if the left number is greater than the right. 10 is greater than 5, so 10 > 5 is TRUE. The other comparisons are all false (3 is not > 7, 4 ≠ 9, 2 is not > 2).",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bumper Sensor",
+      "Touch detection"
+    ],
+    "question": "Your robot has a bumper sensor on the front. What should happen when the robot hits a wall?",
+    "choices": [
+      "The robot speeds up automatically",
+      "The bumper is pressed and the robot can detect the collision",
+      "The bumper sensor measures the wall's color",
+      "The robot passes through the wall"
+    ],
+    "ans_idx": 1,
+    "justification": "A bumper sensor is a touch sensor. When the robot hits an obstacle like a wall, the bumper gets pressed, sending a signal to the program that a collision occurred.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Eye Sensor",
+      "Color detection"
+    ],
+    "question": "The eye sensor on a VRVEX robot can detect different colors and objects in front of it.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The eye sensor acts like a camera that can detect colors and objects. This allows the robot to respond differently based on what it \"sees\" in front of it.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Distance Sensor",
+      "Proximity detection"
+    ],
+    "question": "A robot uses a distance sensor and is programmed: [if distance < 20 cm then stop]. The robot is 15 cm from a wall. What happens?",
+    "choices": [
+      "The robot stops",
+      "The robot turns around",
+      "The robot speeds up",
+      "The robot keeps moving forward"
+    ],
+    "ans_idx": 0,
+    "justification": "The condition checks if distance < 20 cm. Since 15 cm is less than 20 cm, the condition is true, so the robot executes the \"stop\" command.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Algorithm",
+      "Debugging"
+    ],
+    "question": "Your friend's drawing program should draw a triangle, but it draws a square instead. The code is: [repeat 4 times: move 50 steps, turn 90 degrees]. What's the bug?",
+    "choices": [
+      "Should remove the turn block completely",
+      "Should repeat 5 times and turn 72 degrees",
+      "Should repeat 3 times and turn 120 degrees",
+      "Should move 100 steps instead of 50"
+    ],
+    "ans_idx": 2,
+    "justification": "A triangle has 3 sides and 3 corners. To draw a triangle, you need to repeat 3 times and turn 120 degrees (since 360° ÷ 3 = 120°). The current code draws a square (4 sides, 90° turns).",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Output prediction"
+    ],
+    "question": "Look at this code: [set x to 5] → [change x by 3] → [change x by -2] → [say x]. The sprite will say _____.",
+    "choices": [
+      "3",
+      "5",
+      "8",
+      "6"
+    ],
+    "ans_idx": 3,
+    "justification": "Starting with x = 5, then adding 3 gives x = 8, then adding -2 (subtracting 2) gives x = 6. The final value of x is 6.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "Loops",
+      "Logic"
+    ],
+    "question": "This code counts from 1 to 10 but only says even numbers: [set num to 0] → [repeat 10: change num by 1, if (num mod 2 = 0) say num]. Which numbers will be spoken?",
+    "choices": [
+      "0, 2, 4, 6, 8",
+      "1, 3, 5, 7, 9",
+      "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+      "2, 4, 6, 8, 10"
+    ],
+    "ans_idx": 3,
+    "justification": "The mod operator gives the remainder when dividing. Even numbers divided by 2 have remainder 0. So when num is 2, 4, 6, 8, or 10, the condition is true and those numbers are spoken.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "Debugging"
+    ],
+    "question": "A program should add \"Mango\" to a fruits list, then say all items. But it says \"Mango\" before the original fruits. What's wrong?",
+    "choices": [
+      "Mango is spelled incorrectly",
+      "The say block is broken",
+      "The list was empty to begin with",
+      "It used \"insert at position 1\" instead of \"add to end\""
+    ],
+    "ans_idx": 3,
+    "justification": "\"Insert at position 1\" places the new item at the beginning of the list, pushing existing items down. \"Add to end\" would place Mango after all existing fruits, which is the intended behavior.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sensors",
+      "Movement",
+      "Problem solving"
+    ],
+    "question": "Your robot must navigate a maze and stop when it sees a red marker. Which combination of blocks would work best?",
+    "choices": [
+      "Turn left 10 times then stop",
+      "Just drive forward forever",
+      "Forever loop with: if eye sensor detects red → stop, else if bumper pressed → turn, else → drive forward",
+      "Wait until red is detected then start moving"
+    ],
+    "ans_idx": 2,
+    "justification": "A maze-solving robot needs continuous decision-making: check for the goal (red marker), handle obstacles (bumper), and keep moving otherwise. The forever loop with multiple conditions handles all these scenarios.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Location Sensor",
+      "Coordinates"
+    ],
+    "question": "A robot starts at position (0, 0). It moves right 3 units and up 4 units. Its new position is (_____, _____).",
+    "choices": [
+      "3, 4",
+      "7, 0",
+      "0, 7",
+      "4, 3"
+    ],
+    "ans_idx": 0,
+    "justification": "In a coordinate system, moving right increases the X value (first number) and moving up increases the Y value (second number). Starting at (0,0), moving right 3 and up 4 gives position (3, 4).",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Problem solving",
+      "Sensor integration"
+    ],
+    "question": "A robot vacuum cleaner needs to: clean the room, avoid furniture, and return to its charger when battery is low. Which sensors would it need?",
+    "choices": [
+      "Only a bumper sensor",
+      "Distance sensor (obstacles) + Location sensor (navigation) + Battery sensor",
+      "Only a temperature sensor",
+      "Only a color sensor"
+    ],
+    "ans_idx": 1,
+    "justification": "A robot vacuum needs multiple sensors: distance sensor to detect and avoid furniture, location sensor to navigate the room and find the charger, and a battery sensor to know when to return for charging.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Coding Fundamentals",
+      "Block programming"
+    ],
+    "question": "In mBlock, what do you do to make your code run?",
+    "choices": [
+      "Close the program",
+      "Delete all blocks",
+      "Click the green flag",
+      "Turn off your computer"
+    ],
+    "ans_idx": 2,
+    "justification": "In mBlock, clicking the green flag is the standard way to start running your program. It triggers any code connected to the 'when green flag clicked' event block.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Loops",
+      "Forever loop"
+    ],
+    "question": "A 'forever' loop in mBlock will keep running until you stop the program.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "A forever loop repeats the blocks inside it continuously without stopping. The only way to stop it is by clicking the stop button or ending the program.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Events",
+      "User interaction"
+    ],
+    "question": "Which block makes something happen when you press the spacebar?",
+    "choices": [
+      "When space key pressed",
+      "When sprite clicked",
+      "Wait 1 second",
+      "When green flag clicked"
+    ],
+    "ans_idx": 0,
+    "justification": "The 'when space key pressed' event block listens for the spacebar input and triggers the attached code when the user presses it. This is how we add keyboard controls to our programs.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Operators",
+      "Subtraction"
+    ],
+    "question": "In mBlock, the result of [20 - 8] is _____.",
+    "choices": [
+      "12",
+      "20",
+      "8",
+      "28"
+    ],
+    "ans_idx": 0,
+    "justification": "The subtraction operator (-) calculates the difference between two numbers. 20 minus 8 equals 12.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics applications",
+      "Daily life"
+    ],
+    "question": "Robots are only used in factories and cannot help us at home.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "This is false! Robots help us in many places including homes. Robot vacuum cleaners, smart assistants, and lawn mowing robots are examples of robots that help with household tasks.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Movement commands",
+      "Turning"
+    ],
+    "question": "If a robot turns right 90 degrees, which direction will it face if it was originally facing forward?",
+    "choices": [
+      "Right",
+      "Still forward",
+      "Left",
+      "Backward"
+    ],
+    "ans_idx": 0,
+    "justification": "A 90-degree turn is a quarter turn. If the robot was facing forward and turns right 90 degrees, it will now face to the right side.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Conditions",
+      "Decision making"
+    ],
+    "question": "An 'if' block in mBlock helps the program make decisions based on conditions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "The 'if' block checks whether a condition is true or false. If true, the code inside runs. This allows programs to make decisions and respond differently to different situations.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Lists",
+      "Basic concept"
+    ],
+    "question": "What is a list in programming?",
+    "choices": [
+      "A type of loop",
+      "A single number",
+      "A drawing tool",
+      "A collection that stores multiple items"
+    ],
+    "ans_idx": 3,
+    "justification": "A list is a data structure that can hold multiple items in order. Think of it like a shopping list that can store many items like milk, bread, and eggs all in one place.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Algorithm",
+      "Step analysis"
+    ],
+    "question": "You're coding a character to pick up a key and open a door. Which step is UNNECESSARY?",
+    "choices": [
+      "Spin around 5 times",
+      "Pick up the key",
+      "Use key to open door",
+      "Walk to the key"
+    ],
+    "ans_idx": 0,
+    "justification": "Spinning around 5 times doesn't help achieve the goal of picking up a key and opening a door. Good algorithms only include steps that are necessary to solve the problem.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Block ordering"
+    ],
+    "question": "These blocks are in the wrong order: [say \"I win!\"] → [add 10 to score] → [touch goal]. What's the correct order for a game where touching the goal adds points and shows a message?",
+    "choices": [
+      "Add 10 to score → Say \"I win!\" → Touch goal",
+      "Say \"I win!\" → Touch goal → Add 10 to score",
+      "Touch goal → Say \"I win!\" → Add 10 to score",
+      "Touch goal → Add 10 to score → Say \"I win!\""
+    ],
+    "ans_idx": 3,
+    "justification": "The logical sequence is: first detect the goal (cause), then update the score (effect), then celebrate with a message. You can't add points before touching the goal!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Value tracking"
+    ],
+    "question": "A timer variable starts at 60 and decreases by 1 every second. After 15 seconds, the timer value is _____.",
+    "choices": [
+      "45",
+      "75",
+      "15",
+      "60"
+    ],
+    "ans_idx": 0,
+    "justification": "Starting at 60 and subtracting 1 for each of 15 seconds: 60 - 15 = 45. The timer will show 45 after 15 seconds have passed.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Multiple triggers"
+    ],
+    "question": "Your game has two event blocks: 'when green flag clicked → set score to 0' and 'when space pressed → change score by 1'. What happens when you start the game and press space 3 times?",
+    "choices": [
+      "Score stays at 0",
+      "Score becomes 3",
+      "The game crashes",
+      "Score becomes 1"
+    ],
+    "ans_idx": 1,
+    "justification": "When the green flag is clicked, score resets to 0. Each space press adds 1 to the score. After 3 presses: 0 + 1 + 1 + 1 = 3.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Logical AND"
+    ],
+    "question": "The condition (5 > 3) AND (10 < 8) is TRUE because 5 > 3 is true.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "This is false. The AND operator requires BOTH conditions to be true. While 5 > 3 is true, 10 < 8 is false (10 is not less than 8). Since one part is false, the whole AND condition is false.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "Nested conditions"
+    ],
+    "question": "In a quiz game: if answer is correct AND time < 10 seconds, give bonus points. Player answers correctly in 8 seconds. Do they get bonus points?",
+    "choices": [
+      "No, only the answer condition is met",
+      "No, neither condition is met",
+      "Yes, both conditions are met",
+      "No, only the time condition is met"
+    ],
+    "ans_idx": 2,
+    "justification": "The answer is correct (✓) AND the time is 8 seconds which is less than 10 (✓). Both conditions are true, so the AND condition passes and the player gets bonus points!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "Repeat count"
+    ],
+    "question": "This code: [repeat 5 times: say \"Hi\" for 1 second]. How many times will you see \"Hi\" and how long will the whole thing take?",
+    "choices": [
+      "5 times, 1 second total",
+      "5 times, 5 seconds total",
+      "5 times, 25 seconds total",
+      "1 time, 5 seconds total"
+    ],
+    "ans_idx": 1,
+    "justification": "The loop repeats 5 times, showing \"Hi\" each time. Each display lasts 1 second, so total time = 5 repetitions × 1 second = 5 seconds.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "List operations"
+    ],
+    "question": "A list has [Cat, Dog, Bird]. After running [add Fish to list], the list length is _____.",
+    "choices": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "ans_idx": 0,
+    "justification": "The list starts with 3 items (Cat, Dog, Bird). Adding Fish makes it 4 items. The length (number of items) is now 4.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "VRVEX Interface",
+      "Block categories"
+    ],
+    "question": "In VRVEX, motor and movement blocks are found in a different category than sensor blocks.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "VRVEX organizes blocks by function. Motor/movement blocks that control how the robot moves are separate from sensor blocks that detect the environment. This organization helps you find the right blocks quickly.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Path prediction"
+    ],
+    "question": "A robot runs: [drive forward 2 squares] → [turn right 90°] → [drive forward 1 square]. If it started at position A facing up, where does it end up?",
+    "choices": [
+      "2 squares up and 1 square right from A",
+      "Back at position A",
+      "2 squares right from A",
+      "3 squares up from A"
+    ],
+    "ans_idx": 0,
+    "justification": "Starting at A facing up: drive 2 squares up, turn right (now facing right), drive 1 square right. Final position: 2 up + 1 right from the starting point.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bumper Sensor",
+      "Conditional response"
+    ],
+    "question": "Code: [forever: if bumper pressed → turn right 90° and drive forward, else → drive forward]. What does this robot do?",
+    "choices": [
+      "Only spins in circles",
+      "Stays still until bumped",
+      "Drives backward when bumped",
+      "Drives forward and turns right when it hits something"
+    ],
+    "ans_idx": 3,
+    "justification": "The robot continuously drives forward (else condition). When it bumps into something (bumper pressed), it turns right 90° and continues forward. This is basic obstacle avoidance behavior.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Logic errors"
+    ],
+    "question": "A countdown timer should go 3, 2, 1, GO! but shows 3, 2, 1, 0, GO! instead. The bug is in: [set timer to 3] → [repeat until timer = 0: say timer, wait 1 sec, change timer by -1] → [say GO!]. What's wrong?",
+    "choices": [
+      "The repeat block should be removed",
+      "The timer should start at 4",
+      "The wait should be 2 seconds",
+      "The condition should be 'timer < 1' or the say block should come after the change"
+    ],
+    "ans_idx": 3,
+    "justification": "The loop shows the timer value, then decreases it. When timer is 1, it shows 1, then becomes 0. The loop checks the condition after displaying, so 0 is shown. Fix: change condition to 'timer < 1' or move 'say timer' after the decrease.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Multiple variables"
+    ],
+    "question": "Code: [set a to 5] → [set b to a] → [change a by 3] → [say b]. What does the sprite say?",
+    "choices": [
+      "3",
+      "0",
+      "8",
+      "5"
+    ],
+    "ans_idx": 3,
+    "justification": "When 'set b to a' runs, b gets the current value of a (which is 5). Later, a changes to 8, but b still holds 5 because it copied the value, not a link to a. So b remains 5.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Operators",
+      "Order of operations"
+    ],
+    "question": "In mBlock, the expression [2 + 3 × 4] equals _____.",
+    "choices": [
+      "9",
+      "20",
+      "24",
+      "14"
+    ],
+    "ans_idx": 3,
+    "justification": "Following mathematical order of operations (PEMDAS/BODMAS), multiplication comes before addition. So: 3 × 4 = 12, then 2 + 12 = 14.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "Index manipulation"
+    ],
+    "question": "A high scores list is [100, 85, 70]. New score 90 should go between 100 and 85. Which operation is correct?",
+    "choices": [
+      "Add 90 to the list",
+      "Delete item 2 and add 90",
+      "Replace item 1 with 90",
+      "Insert 90 at position 2"
+    ],
+    "ans_idx": 3,
+    "justification": "Position 1 = 100, Position 2 = 85, Position 3 = 70. To place 90 between 100 and 85, insert at position 2. This shifts 85 and 70 down, giving [100, 90, 85, 70].",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "Complex logic"
+    ],
+    "question": "Game rule: Player wins if (score >= 100 OR time >= 60) AND lives > 0. Player has score=80, time=65, lives=2. Do they win?",
+    "choices": [
+      "No, because score < 100",
+      "No, because both score and time conditions must be true",
+      "Yes, because time >= 60 is true and lives > 0 is true",
+      "Yes, only because lives > 0"
+    ],
+    "ans_idx": 2,
+    "justification": "Let's evaluate: score >= 100? No (80 < 100). time >= 60? Yes (65 >= 60). OR needs only one true, so the first part is TRUE. lives > 0? Yes (2 > 0). TRUE AND TRUE = TRUE. Player wins!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Eye Sensor",
+      "Programming logic"
+    ],
+    "question": "A sorting robot should push red objects left and blue objects right. Which code structure is correct?",
+    "choices": [
+      "If eye sees red → turn right, if eye sees blue → turn left",
+      "If eye sees red → turn left and push, else if eye sees blue → turn right and push",
+      "Push everything left regardless of color",
+      "Turn left, turn right, then check color"
+    ],
+    "ans_idx": 1,
+    "justification": "The robot needs to: 1) detect the color first, 2) then act based on what it sees. Red → left, blue → right. The first option correctly checks color before moving and matches the rules.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Distance Sensor",
+      "Conditional logic"
+    ],
+    "question": "Robot code: [if distance > 50 → speed = fast, else if distance > 20 → speed = medium, else → speed = slow]. At distance 35 cm, speed is _____.",
+    "choices": [
+      "slow",
+      "medium",
+      "fast",
+      "stopped"
+    ],
+    "ans_idx": 1,
+    "justification": "At 35 cm: Is distance > 50? No (35 is not > 50). Is distance > 20? Yes (35 > 20). So the second condition matches and speed is set to medium.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Logical steps"
+    ],
+    "question": "What is an algorithm?",
+    "choices": [
+      "A set of step-by-step instructions to solve a problem",
+      "A social media app",
+      "A video game character",
+      "A type of computer virus"
+    ],
+    "ans_idx": 0,
+    "justification": "An algorithm is a sequence of clear, step-by-step instructions designed to solve a specific problem or complete a task. It's like a recipe that tells the computer exactly what to do.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Data storage"
+    ],
+    "question": "A variable can only store numbers, not text or words.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "This is false. Variables can store different types of data including numbers, text (strings), and even true/false values. For example, a variable called 'playerName' could store the text 'Alex'.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Loops",
+      "Repeat block"
+    ],
+    "question": "What does a 'repeat 3 times' block do in mBlock?",
+    "choices": [
+      "Deletes 3 blocks",
+      "Creates 3 new sprites",
+      "Waits for 3 seconds",
+      "Runs the code inside it 3 times"
+    ],
+    "ans_idx": 3,
+    "justification": "The 'repeat' block is a loop that executes all the blocks inside it a specific number of times. 'Repeat 3 times' means the code inside will run three times before moving to the next block.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Operators",
+      "Multiplication"
+    ],
+    "question": "In mBlock, the result of [6 × 7] is _____.",
+    "choices": [
+      "42",
+      "1",
+      "13",
+      "67"
+    ],
+    "ans_idx": 0,
+    "justification": "The multiplication operator (×) multiplies two numbers together. 6 times 7 equals 42.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Sensors",
+      "Robot input"
+    ],
+    "question": "Sensors help robots understand and respond to their environment.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Sensors are like the robot's senses. They collect information from the environment (like distance, color, or touch) and send it to the robot's program so it can make decisions.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Distance Sensor",
+      "Measurement"
+    ],
+    "question": "What does a distance sensor measure?",
+    "choices": [
+      "The color of an object",
+      "The weight of an object",
+      "The temperature of a room",
+      "How far away an object is"
+    ],
+    "ans_idx": 3,
+    "justification": "A distance sensor measures the distance between the robot and objects in front of it. This helps robots avoid obstacles or know when to stop before hitting something.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Coding Fundamentals",
+      "Sprites"
+    ],
+    "question": "In mBlock, what is a 'sprite'?",
+    "choices": [
+      "A folder on your computer",
+      "A character or object you can program",
+      "The green flag button",
+      "A type of bug in your code"
+    ],
+    "ans_idx": 1,
+    "justification": "A sprite is any character, object, or image in mBlock that you can control with code. You can make sprites move, talk, change appearance, and interact with other sprites.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Movement commands",
+      "Basic control"
+    ],
+    "question": "To make a robot move backward, you use a different command than moving forward.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Yes, robots have separate commands for different movements. 'Drive forward' moves the robot ahead, while 'Drive backward' or 'Drive reverse' moves it in the opposite direction.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Counter logic"
+    ],
+    "question": "You're making a click counter game. Every click should add 1 to the count. Which blocks do you need?",
+    "choices": [
+      "When sprite clicked → Change count by 1",
+      "When space pressed → Say count",
+      "When green flag clicked → Set count to 100",
+      "Forever → Wait 1 second"
+    ],
+    "ans_idx": 0,
+    "justification": "For a click counter: the event 'when sprite clicked' detects each click, and 'change count by 1' adds one to the counter variable. This combination tracks how many times the sprite is clicked.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "Comparison operators"
+    ],
+    "question": "Your game ends when health reaches 0. Which condition correctly checks this?",
+    "choices": [
+      "if health = 0",
+      "if health = 100",
+      "if health + 0",
+      "if health > 0"
+    ],
+    "ans_idx": 0,
+    "justification": "The condition 'if health = 0' checks if the health variable equals zero. When this is true, you can trigger the game over sequence. The = operator compares if two values are equal.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "Output prediction"
+    ],
+    "question": "Code: [set x to 0] → [repeat 4 times: change x by 5]. After running, x equals _____.",
+    "choices": [
+      "20",
+      "4",
+      "5",
+      "9"
+    ],
+    "ans_idx": 0,
+    "justification": "Starting at x = 0, the loop adds 5 four times: 0 + 5 = 5, 5 + 5 = 10, 10 + 5 = 15, 15 + 5 = 20. Final value is 20.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Keyboard input"
+    ],
+    "question": "You want your character to move up when you press 'W' and down when you press 'S'. How many event blocks do you need?",
+    "choices": [
+      "1 event block for both keys",
+      "0 event blocks",
+      "2 event blocks (one for each key)",
+      "4 event blocks"
+    ],
+    "ans_idx": 2,
+    "justification": "Each key press needs its own event block. 'When W key pressed' handles moving up, and 'When S key pressed' handles moving down. That's 2 separate event blocks.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Logical NOT"
+    ],
+    "question": "The NOT operator flips a condition: if something is TRUE, NOT makes it FALSE.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "The NOT operator reverses a boolean value. NOT TRUE becomes FALSE, and NOT FALSE becomes TRUE. It's useful when you want to check if something is NOT happening.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "Accessing items"
+    ],
+    "question": "Your playlist list contains: [Rock, Pop, Jazz, Hip-Hop]. How do you play the third song (Jazz)?",
+    "choices": [
+      "Delete item 3 of playlist",
+      "Use item 3 of playlist",
+      "Use item 1 of playlist",
+      "Use item 4 of playlist"
+    ],
+    "ans_idx": 1,
+    "justification": "In mBlock, list positions start at 1. Rock is at position 1, Pop at 2, Jazz at 3, Hip-Hop at 4. To access Jazz, use 'item 3 of playlist'.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sequence",
+      "Animation"
+    ],
+    "question": "To make a character look like it's walking, you use: [switch costume to walk1] → [wait 0.2 secs] → [switch costume to walk2] → [wait 0.2 secs]. What does this create?",
+    "choices": [
+      "A sound effect",
+      "A jumping effect",
+      "A game over screen",
+      "A simple walking animation"
+    ],
+    "ans_idx": 3,
+    "justification": "By quickly switching between different costumes (images) with short waits, you create the illusion of movement - like a flipbook! This is how animations work in mBlock.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Eye Sensor",
+      "Color response"
+    ],
+    "question": "A line-following robot uses an eye sensor to stay on a black line. What should happen when the sensor sees white (off the line)?",
+    "choices": [
+      "Stop forever",
+      "Turn to find the black line again",
+      "Speed up and go straight",
+      "Ignore and continue straight"
+    ],
+    "ans_idx": 1,
+    "justification": "When the sensor sees white, it means the robot has moved off the black line. The robot should turn to search for and return to the black line to continue following it.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Angle calculation"
+    ],
+    "question": "A robot needs to turn completely around (180°). If it can only turn right 90° at a time, it needs to turn right _____ times.",
+    "choices": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "ans_idx": 2,
+    "justification": "To turn 180°, divide by the turn amount: 180° ÷ 90° = 2. The robot needs to turn right 90° twice to face the opposite direction.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Location Sensor",
+      "Position tracking"
+    ],
+    "question": "A location sensor can help a robot remember where it started and find its way back.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Location sensors track the robot's position using coordinates. By recording the starting position, the robot can calculate how to return home, like a robot vacuum returning to its charger.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bumper Sensor",
+      "Safety programming"
+    ],
+    "question": "Why is it important for a robot to have a bumper sensor?",
+    "choices": [
+      "To play music when touched",
+      "To measure temperature",
+      "To detect when it hits something and avoid damage",
+      "To make the robot look cool"
+    ],
+    "ans_idx": 2,
+    "justification": "Bumper sensors are safety devices. When the robot collides with something, the bumper detects the impact so the robot can stop or change direction, preventing damage to itself and objects around it.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Sequence errors"
+    ],
+    "question": "A student's code should show 'Ready, Set, Go!' but shows 'Set, Ready, Go!' instead. The blocks are: [say 'Set'] → [say 'Ready'] → [say 'Go!']. What's the fix?",
+    "choices": [
+      "Add more wait blocks",
+      "Delete the 'Go!' block",
+      "Change 'Set' to 'Go!'",
+      "Swap the first two blocks so 'Ready' comes before 'Set'"
+    ],
+    "ans_idx": 3,
+    "justification": "The blocks execute from top to bottom. Currently 'Set' is first. To get 'Ready, Set, Go!', we need to reorder so 'Ready' is first, then 'Set', then 'Go!'.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Logic errors"
+    ],
+    "question": "Bug hunt! This code should double a number: [set result to number] → [set result to number + number]. If number = 5, result should be 10, but it shows 10. Wait... that's correct! What if we change it to: [set result to number × 2]? What's the difference?",
+    "choices": [
+      "number × 2 gives a different answer",
+      "number + number won't work",
+      "Both give the same result, but × 2 is cleaner and clearer",
+      "You need three blocks to double a number"
+    ],
+    "ans_idx": 2,
+    "justification": "Both number + number and number × 2 give the same result (doubling). However, × 2 is more efficient and clearly communicates the intent to 'double'. Good programmers write clear, readable code.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "Debugging"
+    ],
+    "question": "A game should say 'Perfect!' for scores of exactly 100, but it never shows the message even when score is 100. Code: [if score > 100 then say 'Perfect!']. What's wrong?",
+    "choices": [
+      "Score can never reach 100",
+      "Should use < instead of >",
+      "Should use >= or = instead of > (100 is not greater than 100)",
+      "The say block is broken"
+    ],
+    "ans_idx": 2,
+    "justification": "The condition score > 100 means 'greater than 100'. When score equals exactly 100, it's not greater than 100, so the condition is false. Use score >= 100 (greater than or equal) or score = 100 (exactly equal).",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "Nested operations"
+    ],
+    "question": "Code: [set total to 0] → [repeat 3 times: change total by 2, change total by 3]. After running, total equals _____.",
+    "choices": [
+      "6",
+      "5",
+      "9",
+      "15"
+    ],
+    "ans_idx": 3,
+    "justification": "Each loop iteration adds 2, then adds 3 (total +5 per iteration). With 3 iterations: 5 × 3 = 15. Breaking it down: 0→2→5→7→10→12→15.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "Algorithm design"
+    ],
+    "question": "You want to find the largest number in a list [3, 7, 2, 9, 4]. Which approach works?",
+    "choices": [
+      "Set max to first item, then check each item: if item > max, set max to item",
+      "Sort the list alphabetically",
+      "Delete all items except the first one",
+      "Add all numbers together"
+    ],
+    "ans_idx": 0,
+    "justification": "This is the 'find maximum' algorithm: start by assuming the first item is the largest, then compare each item. If you find a bigger one, update max. After checking all items, max holds the largest value (9).",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sensors",
+      "Multi-sensor logic"
+    ],
+    "question": "A security robot must: stop when someone is close AND the bumper is pressed. Which condition is correct?",
+    "choices": [
+      "if (distance > 30) AND (bumper pressed) then stop",
+      "if (distance < 30) AND (bumper pressed) then stop",
+      "if (bumper pressed) then check distance",
+      "if (distance < 30) OR (bumper pressed) then stop"
+    ],
+    "ans_idx": 1,
+    "justification": "The requirement says 'close AND bumper pressed' - both conditions must be true. distance < 30 means someone is close. Using AND ensures both conditions are checked together.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Problem solving",
+      "Algorithm design"
+    ],
+    "question": "A robot must patrol a square room, visiting each corner in order. Which algorithm is most efficient?",
+    "choices": [
+      "Drive randomly until you've visited all corners",
+      "Drive backward the entire time",
+      "Repeat 4 times: drive forward until wall, turn right 90°",
+      "Turn left 360° at each corner"
+    ],
+    "ans_idx": 2,
+    "justification": "A square has 4 corners with 90° angles. The efficient algorithm: drive to a wall (corner), turn 90°, repeat 4 times. This systematically visits all corners with minimal unnecessary movement.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Instructions"
+    ],
+    "question": "An algorithm must have clear and specific steps that can be followed in order.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Algorithms need clear, unambiguous steps that anyone (or any computer) can follow. Vague instructions like 'do something cool' don't work because they can be interpreted differently.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Sequence",
+      "Order matters"
+    ],
+    "question": "In mBlock, you can arrange blocks in any order and the program will still work the same way.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "False! The order of blocks is crucial. Blocks run from top to bottom, and changing the order changes what happens. For example, 'jump then move' is different from 'move then jump'.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Initial value"
+    ],
+    "question": "When you create a new variable in mBlock and set it to 10, the variable's value is _____.",
+    "choices": [
+      "10",
+      "0",
+      "100",
+      "1"
+    ],
+    "ans_idx": 0,
+    "justification": "When you use 'set variable to 10', the variable stores exactly that value: 10. The variable will hold this value until you change it with another block.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Conditions",
+      "True and False"
+    ],
+    "question": "A condition in programming can only be either TRUE or FALSE.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Conditions are yes/no questions for the computer. Is score > 10? Either yes (TRUE) or no (FALSE). There's no 'maybe' in programming conditions!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "VRVEX Interface",
+      "Block programming"
+    ],
+    "question": "In VRVEX, you write code by typing text commands instead of using blocks.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "False! VRVEX uses block-based programming where you drag and drop visual blocks to create programs. This makes it easier to learn without worrying about typing syntax errors.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Movement",
+      "Direction"
+    ],
+    "question": "If a robot turns left 90° from facing North, it will now face _____.",
+    "choices": [
+      "West",
+      "East",
+      "South",
+      "North"
+    ],
+    "ans_idx": 0,
+    "justification": "Turning left (counterclockwise) 90° from North takes you to West. Think of a compass: North → West → South → East → North when turning left.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Events",
+      "Program start"
+    ],
+    "question": "A program in mBlock can have multiple 'when green flag clicked' blocks, and they will all run at the same time when clicked.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Yes! You can have multiple scripts that all start when the green flag is clicked. This is useful when you want different things to happen simultaneously, like background music playing while the character moves.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Division"
+    ],
+    "question": "In mBlock, [20 ÷ 4] equals _____.",
+    "choices": [
+      "16",
+      "5",
+      "24",
+      "80"
+    ],
+    "ans_idx": 1,
+    "justification": "The division operator (÷) divides the first number by the second. 20 divided by 4 equals 5.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "Infinite loops"
+    ],
+    "question": "What's the difference between 'repeat 10 times' and 'forever' loops?",
+    "choices": [
+      "They do the same thing",
+      "'Repeat 10' runs exactly 10 times then stops; 'forever' never stops on its own",
+      "'Repeat 10' runs forever",
+      "'Forever' runs 10 times faster"
+    ],
+    "ans_idx": 1,
+    "justification": "'Repeat 10 times' is a counted loop - it runs the code inside exactly 10 times, then moves on. 'Forever' is an infinite loop - it keeps running until you stop the program manually.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Naming"
+    ],
+    "question": "It's a good practice to give variables meaningful names like 'playerScore' instead of just 'x'.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Meaningful variable names make code easier to read and understand. 'playerScore' tells you exactly what the variable stores, while 'x' could be anything. This helps when you or others read the code later.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "Comparison"
+    ],
+    "question": "The condition [15 = 15] evaluates to _____.",
+    "choices": [
+      "FALSE",
+      "15",
+      "30",
+      "TRUE"
+    ],
+    "ans_idx": 3,
+    "justification": "The = operator checks if two values are equal. Since 15 equals 15, this comparison is TRUE.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "Length"
+    ],
+    "question": "A list contains [Monday, Tuesday, Wednesday, Thursday, Friday]. What is the length of this list?",
+    "choices": [
+      "7",
+      "6",
+      "4",
+      "5"
+    ],
+    "ans_idx": 3,
+    "justification": "The length of a list is the number of items it contains. Counting: Monday (1), Tuesday (2), Wednesday (3), Thursday (4), Friday (5). The list has 5 items.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Logical OR"
+    ],
+    "question": "The condition (5 > 10) OR (3 < 7) is TRUE because at least one part is true.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "The OR operator returns TRUE if at least one condition is true. Here: 5 > 10 is FALSE, but 3 < 7 is TRUE. Since one part is true, the whole OR expression is TRUE.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Distance Sensor",
+      "Threshold values"
+    ],
+    "question": "A robot is programmed: 'if distance < 25 then stop, else drive forward'. The sensor reads 30 cm. What does the robot do?",
+    "choices": [
+      "Turns around",
+      "Stops",
+      "Does nothing",
+      "Drives forward"
+    ],
+    "ans_idx": 3,
+    "justification": "The condition checks if distance < 25. Since 30 is NOT less than 25, the condition is false. The 'else' part runs, so the robot drives forward.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Distance calculation"
+    ],
+    "question": "A robot moves forward 10 cm, then backward 4 cm. Its net movement forward is _____ cm.",
+    "choices": [
+      "14",
+      "6",
+      "4",
+      "10"
+    ],
+    "ans_idx": 1,
+    "justification": "Moving forward 10 cm then backward 4 cm: 10 - 4 = 6 cm net forward movement. The robot ends up 6 cm ahead of where it started.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Eye Sensor",
+      "Detection"
+    ],
+    "question": "An eye sensor can only detect one color at a time.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Generally, an eye sensor reads what's directly in front of it at any moment, detecting one color at a time. The program can then check 'is it red? is it blue?' to respond accordingly.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Algorithm",
+      "Efficiency"
+    ],
+    "question": "Two students write algorithms to draw a line of 5 stars. Student A: [say ⭐] × 5 separate blocks. Student B: [repeat 5: say ⭐]. Which is better and why?",
+    "choices": [
+      "Both are exactly the same in every way",
+      "Neither works correctly",
+      "Student B - uses a loop which is shorter and easier to modify",
+      "Student A - more blocks means more powerful"
+    ],
+    "ans_idx": 2,
+    "justification": "Both produce the same output, but Student B's loop is more efficient. To change to 10 stars, B just changes '5' to '10', while A must add 5 more blocks. Loops make code shorter and more maintainable.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Variable errors"
+    ],
+    "question": "A score counter should start at 0 for each new game, but players keep their old score when restarting. Code: [when space pressed → change score by 1]. What's missing?",
+    "choices": [
+      "Need to use a list instead",
+      "The change block is wrong",
+      "Need 'when green flag clicked → set score to 0' to reset at game start",
+      "Need to delete the score variable"
+    ],
+    "ans_idx": 2,
+    "justification": "Without initialization, the score keeps its previous value. Adding 'set score to 0' in a 'when green flag clicked' event ensures the score resets every time a new game starts.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "Multiple conditions"
+    ],
+    "question": "Code: [if score >= 90 say 'A' else if score >= 80 say 'B' else if score >= 70 say 'C' else say 'F']. For score = 85, the grade is _____.",
+    "choices": [
+      "F",
+      "C",
+      "A",
+      "B"
+    ],
+    "ans_idx": 3,
+    "justification": "Checking in order: Is 85 >= 90? No. Is 85 >= 80? Yes! The program says 'B' and stops checking. Even though 85 is also >= 70, the first matching condition wins.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "Deletion"
+    ],
+    "question": "List: [A, B, C, D, E]. After running [delete item 2], then [delete item 2] again, the list is:",
+    "choices": [
+      "[A, D, E]",
+      "[C, D, E]",
+      "[A, C, D, E]",
+      "[A, B, E]"
+    ],
+    "ans_idx": 0,
+    "justification": "First delete item 2: [A, B, C, D, E] → [A, C, D, E] (B removed, C shifts to position 2). Second delete item 2: [A, C, D, E] → [A, D, E] (C removed). Final: [A, D, E].",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Events",
+      "Event handling"
+    ],
+    "question": "If you press a key while a 'wait 5 seconds' block is running, the key press event will be ignored completely.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False! In mBlock, event blocks (like 'when key pressed') work independently. Even if one script is waiting, another script triggered by a key press can still run. This is called parallel execution.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "Counter patterns"
+    ],
+    "question": "Code: [set n to 1] → [repeat 4 times: say n, change n by 2]. The numbers spoken are 1, 3, 5, _____.",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "ans_idx": 0,
+    "justification": "Starting at 1, adding 2 each time: 1 (say), +2 = 3 (say), +2 = 5 (say), +2 = 7 (say). This creates an odd number sequence: 1, 3, 5, 7.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Sensors",
+      "Debugging"
+    ],
+    "question": "A robot should stop 10 cm from walls but keeps crashing. Code: [forever: if distance > 10 then stop, else drive forward]. What's the bug?",
+    "choices": [
+      "Condition is backwards - should be 'if distance < 10 then stop'",
+      "The distance sensor is broken",
+      "Need to remove the forever loop",
+      "Should use bumper sensor instead"
+    ],
+    "ans_idx": 0,
+    "justification": "The logic is reversed! Currently: if far away (> 10), stop; if close, drive. It should be: if close (< 10), stop; if far, drive. The robot drives forward when it should stop!",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Problem solving",
+      "Multi-step navigation"
+    ],
+    "question": "A robot must navigate from corner A to corner C of a square room, but there's an obstacle in the middle. Best solution?",
+    "choices": [
+      "Turn in circles until the obstacle moves",
+      "Go along two walls (A→B→C) using distance sensors to navigate",
+      "Drive straight and crash through the obstacle",
+      "Stay at corner A forever"
+    ],
+    "ans_idx": 1,
+    "justification": "Since direct path is blocked, the robot should take an alternative route along the walls (A→B→C). Using distance sensors helps it follow walls and avoid hitting them while navigating around the obstacle.",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Location Sensor",
+      "Coordinate math"
+    ],
+    "question": "Robot starts at (2, 3). It moves: right 4 units, up 2 units, left 1 unit. Final position?",
+    "choices": [
+      "(7, 5)",
+      "(6, 5)",
+      "(5, 3)",
+      "(5, 5)"
+    ],
+    "ans_idx": 3,
+    "justification": "Starting (2, 3): Right 4 → (2+4, 3) = (6, 3). Up 2 → (6, 3+2) = (6, 5). Left 1 → (6-1, 5) = (5, 5). Final position is (5, 5).",
+    "age_group": "10-14",
+    "belt": "Yellow"
+  }
+]

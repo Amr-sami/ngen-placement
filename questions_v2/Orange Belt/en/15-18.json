@@ -1,0 +1,1928 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Artificial Intelligence",
+      "Definition"
+    ],
+    "question": "A standard calculator is considered Artificial Intelligence because it can perform complex mathematical operations.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "A standard calculator is not AI because it follows pre-programmed rules and cannot learn from data or adapt to new situations. AI systems learn, recognize patterns, and make decisions based on data.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Types",
+      "Vision AI"
+    ],
+    "question": "Face ID on smartphones that unlocks your device by recognizing your face is an example of which AI type?",
+    "choices": [
+      "Speech AI",
+      "Predictive AI",
+      "Generative AI",
+      "Vision AI"
+    ],
+    "ans_idx": 3,
+    "justification": "Face ID uses Vision AI because it processes and analyzes images (your face) to perform recognition and verification tasks.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Machine Learning",
+      "ML Types"
+    ],
+    "question": "Which type of Machine Learning involves training a model using labeled data where both inputs and correct outputs are provided?",
+    "choices": [
+      "Unsupervised Learning",
+      "Transfer Learning",
+      "Supervised Learning",
+      "Reinforcement Learning"
+    ],
+    "ans_idx": 2,
+    "justification": "Supervised Learning uses labeled data where the model learns from input-output pairs. The 'supervision' comes from having the correct answers during training.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Types",
+      "Generative AI"
+    ],
+    "question": "ChatGPT and DALL-E are examples of _______ AI, which creates new content like text, images, or code.",
+    "choices": [
+      "Speech",
+      "Generative",
+      "Predictive",
+      "Vision"
+    ],
+    "ans_idx": 1,
+    "justification": "Generative AI creates new content that didn't exist before, such as text (ChatGPT), images (DALL-E), music, or code, based on patterns learned from training data.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Supervised Learning"
+    ],
+    "question": "Netflix uses your watch history and ratings to recommend new shows. This recommendation system is primarily based on:",
+    "choices": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Rule-based Programming"
+    ],
+    "ans_idx": 0,
+    "justification": "Netflix recommendations primarily use Supervised Learning because the model learns from labeled data—your ratings and watch history serve as labels indicating your preferences.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "AI Relationship"
+    ],
+    "question": "Machine Learning is a subset of Artificial Intelligence that enables systems to learn and improve from experience without being explicitly programmed.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "This is correct. Machine Learning is indeed a subset of AI that focuses on algorithms that can learn patterns from data and improve their performance over time without explicit programming for each task.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "ML Types",
+      "Reinforcement Learning"
+    ],
+    "question": "A self-driving car learns to navigate by receiving positive rewards for safe driving and negative rewards for near-collisions. Which ML type best describes this approach?",
+    "choices": [
+      "Reinforcement Learning",
+      "Unsupervised Learning",
+      "Semi-supervised Learning",
+      "Supervised Learning"
+    ],
+    "ans_idx": 0,
+    "justification": "Reinforcement Learning involves an agent learning through trial and error, receiving rewards or penalties for its actions. The self-driving car learns optimal behavior through this reward-based feedback system.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Quality",
+      "ML Performance"
+    ],
+    "question": "The quality of data used to train a Machine Learning model has no significant impact on the model's predictions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "Data quality is critical for ML. Bad data leads to wrong predictions—'garbage in, garbage out.' Models learn patterns from training data, so inaccurate, incomplete, or biased data produces unreliable results.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pandas",
+      "Data Exploration"
+    ],
+    "question": "In Python using Pandas, which function would you use to display column names, data types, and count of non-null values in a DataFrame?",
+    "choices": [
+      "df.info()",
+      "df.head()",
+      "df.describe()",
+      "df.shape"
+    ],
+    "ans_idx": 0,
+    "justification": "The info() function provides a concise summary of the DataFrame including column names, data types, non-null counts, and memory usage—essential for understanding data structure.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pandas",
+      "Data Preview"
+    ],
+    "question": "To view the first 5 rows of a DataFrame named 'df' in Pandas, you would use the function _______.",
+    "choices": [
+      "df.top()",
+      "df.first()",
+      "df.head()",
+      "df.preview()"
+    ],
+    "ans_idx": 2,
+    "justification": "The head() function returns the first n rows of a DataFrame (default is 5). It's commonly used to quickly inspect the data structure and sample values.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Train-Test Split",
+      "Model Evaluation"
+    ],
+    "question": "Why do we split data into training and testing sets before building a Machine Learning model?",
+    "choices": [
+      "To make training faster",
+      "To reduce the dataset size",
+      "To increase data quality",
+      "To evaluate model performance on unseen data"
+    ],
+    "ans_idx": 3,
+    "justification": "Splitting data allows us to train the model on one portion and test it on data it has never seen. This gives a fair evaluation of how well the model generalizes to new, real-world data.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Missing Values"
+    ],
+    "question": "You're working with a dataset that has missing values in several columns. Which Pandas function removes rows containing any null values?",
+    "choices": [
+      "df.dropna()",
+      "df.removena()",
+      "df.cleanna()",
+      "df.fillna()"
+    ],
+    "ans_idx": 0,
+    "justification": "The dropna() function removes rows (or columns) that contain missing/null values. This is a common data cleaning step, though it should be used carefully to avoid losing too much data.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Classification",
+      "Supervised Learning"
+    ],
+    "question": "Classification problems in Machine Learning require labeled data because the model needs examples of each category to learn from.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Classification is a Supervised Learning task that requires labeled data. The model learns to map inputs to predefined categories by studying examples where the correct category is known.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Logistic Regression",
+      "Classification"
+    ],
+    "question": "For the Titanic survival prediction project (predicting Survived: 0 or 1), which model is most appropriate?",
+    "choices": [
+      "Logistic Regression",
+      "Linear Regression",
+      "Principal Component Analysis",
+      "KMeans"
+    ],
+    "ans_idx": 0,
+    "justification": "Logistic Regression is used for classification problems where the output is a category (0 or 1, Yes or No). Predicting survival (Survived: 0 or 1) is a binary classification task.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Model Training",
+      "Scikit-learn"
+    ],
+    "question": "In scikit-learn, to train a model on your training data, you use the _______ method.",
+    "choices": [
+      ".fit()",
+      ".learn()",
+      ".train()",
+      ".build()"
+    ],
+    "ans_idx": 0,
+    "justification": "The .fit() method is the standard way to train models in scikit-learn. It takes the training features (X) and target values (y) and learns the patterns in the data.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Accuracy",
+      "Classification Metrics"
+    ],
+    "question": "A classification model correctly predicts 85 out of 100 test samples. What is the accuracy of this model?",
+    "choices": [
+      "0.85%",
+      "15%",
+      "8.5%",
+      "85%"
+    ],
+    "ans_idx": 3,
+    "justification": "Accuracy is calculated as (correct predictions / total predictions) × 100. Here: (85/100) × 100 = 85%. It measures the proportion of correct predictions made by the model.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Regression",
+      "Evaluation Metrics"
+    ],
+    "question": "Accuracy is the appropriate evaluation metric for regression problems that predict continuous numeric values like house prices.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "Accuracy is NOT suitable for regression because predicting exact continuous values is nearly impossible. Regression uses metrics like MSE (Mean Squared Error) and R² that measure how close predictions are to actual values.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Linear Regression",
+      "Regression"
+    ],
+    "question": "You are building a model to predict house prices based on features like size, location, and number of bedrooms. Which model should you use?",
+    "choices": [
+      "Decision Tree Classifier",
+      "Linear Regression",
+      "Logistic Regression",
+      "KMeans Clustering"
+    ],
+    "ans_idx": 1,
+    "justification": "Linear Regression is used for predicting continuous numeric values. House prices are continuous values, making this a regression problem, not classification.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "MSE",
+      "Regression Evaluation"
+    ],
+    "question": "Mean Squared Error (MSE) calculates the average of squared differences between predicted and actual values. Why are the errors squared?",
+    "choices": [
+      "To convert errors to percentages",
+      "To reduce computation time",
+      "To make all errors positive and penalize larger errors more",
+      "To make errors smaller"
+    ],
+    "ans_idx": 2,
+    "justification": "Squaring errors ensures all values are positive (avoiding negative and positive errors canceling out) and gives more weight to larger errors, making the model focus on reducing big mistakes.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "R² Score",
+      "Regression Evaluation"
+    ],
+    "question": "The R² score ranges from 0 to 1, where a value closer to _______ indicates a better fit of the regression model.",
+    "choices": [
+      "1",
+      "0",
+      "0.5",
+      "-1"
+    ],
+    "ans_idx": 0,
+    "justification": "R² (coefficient of determination) measures how well the model explains variance in the data. A value of 1 means perfect prediction, while 0 means the model explains nothing. Higher is better.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Unsupervised Learning",
+      "Clustering"
+    ],
+    "question": "In Unsupervised Learning, the training data:",
+    "choices": [
+      "Is not needed at all",
+      "Must be perfectly clean",
+      "Does not have labels or correct answers",
+      "Has labels for every data point"
+    ],
+    "ans_idx": 2,
+    "justification": "Unsupervised Learning works with unlabeled data. The algorithm finds hidden patterns, structures, or groupings in the data without being told what the 'correct' answer should be.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "KMeans",
+      "Clustering"
+    ],
+    "question": "A marketing team wants to segment customers into groups based on their purchasing behavior without predefined categories. Which algorithm is most suitable?",
+    "choices": [
+      "KMeans Clustering",
+      "Random Forest Classifier",
+      "Linear Regression",
+      "Logistic Regression"
+    ],
+    "ans_idx": 0,
+    "justification": "KMeans is an unsupervised clustering algorithm that groups similar data points together without needing predefined labels. It's perfect for customer segmentation where categories aren't known beforehand.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Clustering",
+      "Evaluation"
+    ],
+    "question": "We can use accuracy to evaluate the performance of a KMeans clustering model.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "Accuracy cannot be used for clustering because there are no predefined 'correct' labels to compare against. Clustering is evaluated using metrics like Silhouette Score that measure cluster quality.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Silhouette Score",
+      "Clustering Evaluation"
+    ],
+    "question": "The Silhouette Score for clustering ranges from -1 to 1. A score close to 1 indicates that:",
+    "choices": [
+      "The clustering has failed completely",
+      "Data points are well-matched to their own cluster and poorly matched to neighboring clusters",
+      "All data points are in one cluster",
+      "The number of clusters is too high"
+    ],
+    "ans_idx": 1,
+    "justification": "Silhouette Score measures how similar a point is to its own cluster compared to other clusters. A score near 1 means points are well-clustered (close to their cluster, far from others). Near -1 means poor clustering.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "KMeans",
+      "Hyperparameter"
+    ],
+    "question": "When using the KMeans algorithm, you must specify the value of K, which represents the number of _______ you want to create.",
+    "choices": [
+      "rows",
+      "clusters",
+      "features",
+      "iterations"
+    ],
+    "ans_idx": 1,
+    "justification": "In KMeans, K is a hyperparameter that specifies how many clusters (groups) the algorithm should divide the data into. Choosing the right K value is crucial for meaningful results.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Types",
+      "Speech AI"
+    ],
+    "question": "Virtual assistants like Siri and Alexa that understand and respond to voice commands are examples of:",
+    "choices": [
+      "Predictive AI",
+      "Vision AI",
+      "Speech AI",
+      "Generative AI"
+    ],
+    "ans_idx": 2,
+    "justification": "Speech AI processes and understands human voice, converting speech to text and generating spoken responses. Virtual assistants use this technology to interpret voice commands.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Types",
+      "Predictive AI"
+    ],
+    "question": "Google Maps using AI to predict traffic conditions and estimate arrival times is an example of Predictive AI.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Predictive AI analyzes historical and real-time data to forecast future outcomes. Google Maps predicts traffic patterns and travel times based on data patterns, making it a classic example of Predictive AI.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "ML Types",
+      "Unsupervised Learning"
+    ],
+    "question": "Which type of Machine Learning is used when we want to find hidden patterns or groupings in data without any predefined labels?",
+    "choices": [
+      "Supervised Learning",
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Unsupervised Learning"
+    ],
+    "ans_idx": 3,
+    "justification": "Unsupervised Learning discovers hidden patterns and structures in unlabeled data. It's used when we don't have predefined categories and want the algorithm to find natural groupings.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Machine Learning",
+      "Definition"
+    ],
+    "question": "Machine Learning is a branch of _______ that enables computers to learn from data without being explicitly programmed.",
+    "choices": [
+      "Database Management",
+      "Artificial Intelligence",
+      "Web Development",
+      "Computer Networks"
+    ],
+    "ans_idx": 1,
+    "justification": "Machine Learning is a subset of Artificial Intelligence focused on algorithms that can learn patterns from data and improve their performance automatically through experience.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Types",
+      "AI Data"
+    ],
+    "question": "Which of the following is NOT a common type of data used in AI and Machine Learning?",
+    "choices": [
+      "Text",
+      "Audio",
+      "Keyboard shortcuts",
+      "Images"
+    ],
+    "ans_idx": 2,
+    "justification": "Common data types in AI include numbers, text, images, audio, and videos. Keyboard shortcuts are user interface commands, not a data type used for training ML models.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Train-Test Split",
+      "Data Ratio"
+    ],
+    "question": "A common practice in Machine Learning is to use 80% of data for training and 20% for testing.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The 80/20 split is a widely used standard in ML. It provides enough data for training while reserving sufficient data for reliable testing. Other common ratios include 70/30.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Google Colab",
+      "Development Environment"
+    ],
+    "question": "Google Colab is a popular tool for Machine Learning because it:",
+    "choices": [
+      "Replaces the need for any libraries",
+      "Is the only way to write Python code",
+      "Stores data permanently without limits",
+      "Provides free cloud-based Python notebooks with GPU access"
+    ],
+    "ans_idx": 3,
+    "justification": "Google Colab provides free cloud-based Jupyter notebooks with access to GPUs and TPUs, pre-installed ML libraries, and easy sharing—making it ideal for learning and developing ML projects.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Kaggle",
+      "Datasets"
+    ],
+    "question": "As a data scientist, you need a real-world dataset for your ML project. Which platform is commonly used to download free datasets?",
+    "choices": [
+      "Instagram",
+      "Netflix",
+      "Spotify",
+      "Kaggle"
+    ],
+    "ans_idx": 3,
+    "justification": "Kaggle is a leading platform for data science that provides thousands of free datasets, competitions, and notebooks. It's widely used by ML practitioners to find real-world data for projects.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Cleaning",
+      "Duplicates"
+    ],
+    "question": "To remove duplicate rows from a Pandas DataFrame, you would use the function _______.",
+    "choices": [
+      "df.delete_duplicates()",
+      "df.clean_duplicates()",
+      "df.remove_duplicates()",
+      "df.drop_duplicates()"
+    ],
+    "ans_idx": 3,
+    "justification": "The drop_duplicates() function in Pandas removes duplicate rows from a DataFrame. This is an essential data cleaning step to ensure data quality before training ML models.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "ML Process",
+      "Data Pipeline"
+    ],
+    "question": "What is the correct order of steps in a typical Machine Learning workflow?",
+    "choices": [
+      "Clean → Collect → Test → Train",
+      "Test → Train → Clean → Collect",
+      "Train → Test → Collect → Clean",
+      "Collect → Clean → Train → Test"
+    ],
+    "ans_idx": 3,
+    "justification": "The ML workflow follows: 1) Collect data from sources, 2) Clean and preprocess data, 3) Train the model on training data, 4) Test the model on unseen test data to evaluate performance.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Classification",
+      "Output Type"
+    ],
+    "question": "The output of a classification model is a continuous numeric value like 75.5 or 123.8.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "Classification outputs are discrete categories or classes (like Yes/No, 0/1, Cat/Dog), not continuous values. Continuous numeric outputs are produced by regression models, not classification.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Features",
+      "Target Variable"
+    ],
+    "question": "In Machine Learning terminology, what do X and y typically represent?",
+    "choices": [
+      "X = Training data, y = Test data",
+      "X = Features (inputs), y = Target (output)",
+      "X = Target (output), y = Features (inputs)",
+      "X = Rows, y = Columns"
+    ],
+    "ans_idx": 1,
+    "justification": "By convention, X represents the feature matrix (input variables used for prediction) and y represents the target vector (the output we want to predict). This notation is standard in scikit-learn.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Scikit-learn",
+      "Model Prediction"
+    ],
+    "question": "After training a model with `.fit()`, which method is used to make predictions on new data?",
+    "choices": [
+      ".predict()",
+      ".calculate()",
+      ".estimate()",
+      ".forecast()"
+    ],
+    "ans_idx": 0,
+    "justification": "In scikit-learn, after training a model with .fit(), the .predict() method is used to generate predictions on new, unseen data based on the learned patterns.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Classification",
+      "Binary Classification"
+    ],
+    "question": "Predicting whether an email is 'Spam' or 'Not Spam' is an example of _______ classification.",
+    "choices": [
+      "clustering",
+      "binary",
+      "regression",
+      "multi-class"
+    ],
+    "ans_idx": 1,
+    "justification": "Binary classification has exactly two possible outcomes (Spam/Not Spam, Yes/No, 0/1). Multi-class classification has more than two categories.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Feature Selection",
+      "Model Performance"
+    ],
+    "question": "A classification model has low accuracy. Which action is LEAST likely to improve its performance?",
+    "choices": [
+      "Changing the file format of the dataset",
+      "Adding more relevant features",
+      "Removing irrelevant features",
+      "Collecting more training data"
+    ],
+    "ans_idx": 0,
+    "justification": "Changing file format (e.g., CSV to JSON) doesn't affect model performance—the data content remains the same. Improving features, data quality, and data quantity are effective strategies.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Linear Regression",
+      "Logistic Regression"
+    ],
+    "question": "Linear Regression and Logistic Regression are used for the same type of problems and can be used interchangeably.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "They solve different problems: Linear Regression predicts continuous numeric values (regression), while Logistic Regression predicts categories/classes (classification). They cannot be used interchangeably.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Regression",
+      "Use Cases"
+    ],
+    "question": "Which of the following is a regression problem?",
+    "choices": [
+      "Grouping customers by behavior",
+      "Classifying images as cats or dogs",
+      "Predicting a student's exam score",
+      "Detecting spam emails"
+    ],
+    "ans_idx": 2,
+    "justification": "Predicting a score is regression because scores are continuous numeric values (e.g., 78.5, 92.0). The other options are classification (cats/dogs, spam) or clustering (grouping customers).",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "MSE",
+      "R² Score"
+    ],
+    "question": "A regression model has MSE = 25 and R² = 0.89. Which statement is correct?",
+    "choices": [
+      "The model is performing poorly and should be discarded",
+      "The model explains 89% of variance in the data with some prediction error",
+      "The model has 89 errors in predictions",
+      "MSE should always be higher than R²"
+    ],
+    "ans_idx": 1,
+    "justification": "R² = 0.89 means the model explains 89% of the variance, which is quite good. MSE = 25 indicates the average squared prediction error. Together, they show a reasonably good model with room for improvement.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Regression Metrics",
+      "Lower is Better"
+    ],
+    "question": "When evaluating regression models, a _______ MSE value indicates better model performance.",
+    "choices": [
+      "higher",
+      "zero exactly",
+      "negative",
+      "lower"
+    ],
+    "ans_idx": 3,
+    "justification": "MSE measures the average squared difference between predicted and actual values. Lower MSE means predictions are closer to actual values, indicating better performance. Zero MSE would mean perfect predictions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "KMeans",
+      "Cluster Assignment"
+    ],
+    "question": "In KMeans clustering, every data point is assigned to exactly one cluster.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "KMeans is a hard clustering algorithm where each data point belongs to exactly one cluster. The point is assigned to the cluster with the nearest centroid (center).",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Clustering",
+      "Feature Scaling"
+    ],
+    "question": "When using KMeans with features 'Annual Income (10,000-100,000)' and 'Age (18-65)', what could happen if features are not scaled?",
+    "choices": [
+      "Both features will contribute equally",
+      "Age will dominate the clustering",
+      "The algorithm will fail to run",
+      "Income will dominate the clustering because of its larger range"
+    ],
+    "ans_idx": 3,
+    "justification": "KMeans uses distance calculations. Without scaling, features with larger ranges (Income: 90,000 range vs Age: 47 range) will have disproportionately more influence on cluster assignments.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Model Selection",
+      "Problem Type"
+    ],
+    "question": "Which model would you choose for predicting whether a tumor is 'Malignant' or 'Benign'?",
+    "choices": [
+      "Logistic Regression",
+      "Linear Regression",
+      "KMeans",
+      "Principal Component Analysis"
+    ],
+    "ans_idx": 0,
+    "justification": "This is a binary classification problem (two categories: Malignant/Benign). Logistic Regression is designed for classification tasks, making it the appropriate choice.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Scikit-learn",
+      "Train-Test Split"
+    ],
+    "question": "The function _______ from scikit-learn is used to split data into training and testing sets.",
+    "choices": [
+      "split_data",
+      "train_test_split",
+      "divide_data",
+      "data_split"
+    ],
+    "ans_idx": 1,
+    "justification": "train_test_split is the standard scikit-learn function that randomly divides data into training and testing subsets. It's imported from sklearn.model_selection.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Silhouette Score",
+      "Clustering Quality"
+    ],
+    "question": "A Silhouette Score of -0.5 indicates that the clustering is performing well and the data points are correctly grouped.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "A Silhouette Score of -0.5 indicates poor clustering—points are likely assigned to wrong clusters. The score ranges from -1 to 1, where values closer to 1 indicate good clustering and negative values indicate poor clustering.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Model Comparison",
+      "Problem Matching"
+    ],
+    "question": "Match the correct evaluation metric to each model type: Classification uses _____, Regression uses _____, Clustering uses _____.",
+    "choices": [
+      "MSE, Silhouette Score, Accuracy",
+      "R², Accuracy, MSE",
+      "Accuracy, MSE/R², Silhouette Score",
+      "Silhouette Score, Accuracy, R²"
+    ],
+    "ans_idx": 2,
+    "justification": "Each problem type has appropriate metrics: Classification → Accuracy (correct predictions / total), Regression → MSE/R² (prediction error), Clustering → Silhouette Score (cluster quality).",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Definition",
+      "Learning Capability"
+    ],
+    "question": "What is the key characteristic that distinguishes AI systems from traditional software programs?",
+    "choices": [
+      "AI systems require internet connection",
+      "AI systems use more memory",
+      "AI systems can learn from data and improve over time",
+      "AI systems run faster than traditional programs"
+    ],
+    "ans_idx": 2,
+    "justification": "AI's defining characteristic is its ability to learn from data, recognize patterns, and improve its performance without being explicitly programmed for each task—unlike traditional rule-based software.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Types",
+      "Vision AI"
+    ],
+    "question": "Medical imaging systems that detect tumors in X-rays and MRIs are examples of Vision AI.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Vision AI processes and analyzes visual data like images and videos. Medical imaging AI analyzes X-rays, MRIs, and CT scans to identify patterns indicating diseases, making it a classic Vision AI application.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Reinforcement Learning",
+      "Trial and Error"
+    ],
+    "question": "A chess-playing AI that learns by playing millions of games and receiving rewards for winning is using:",
+    "choices": [
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Transfer Learning"
+    ],
+    "ans_idx": 0,
+    "justification": "Reinforcement Learning involves learning through trial and error with rewards and penalties. The chess AI learns optimal strategies by receiving positive rewards for winning and negative rewards for losing.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Supervised Learning",
+      "Labeled Data"
+    ],
+    "question": "In Supervised Learning, the training data must include _______ that tell the model the correct outputs for given inputs.",
+    "choices": [
+      "labels",
+      "penalties",
+      "rewards",
+      "clusters"
+    ],
+    "ans_idx": 0,
+    "justification": "Supervised Learning requires labeled data where each input has a corresponding correct output (label). The model learns to map inputs to outputs by studying these labeled examples.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Quality",
+      "Garbage In Garbage Out"
+    ],
+    "question": "The 'Garbage In, Garbage Out' principle means that if you train an ML model with poor quality data, you will get poor quality predictions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "This fundamental principle emphasizes that ML models learn patterns from training data. If the data is inaccurate, incomplete, or biased, the model will learn incorrect patterns and produce unreliable predictions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pandas",
+      "DataFrame Operations"
+    ],
+    "question": "You have a DataFrame with 1000 rows but `df.info()` shows a column has only 850 non-null values. What does this indicate?",
+    "choices": [
+      "There is an error in the data loading",
+      "The column has 850 missing values",
+      "The DataFrame has 850 rows total",
+      "The column has 150 missing values"
+    ],
+    "ans_idx": 3,
+    "justification": "If a column shows 850 non-null values out of 1000 rows, it means 1000 - 850 = 150 values are missing (null/NaN). This is important information for data cleaning decisions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Preprocessing",
+      "ML Pipeline"
+    ],
+    "question": "Why is data preprocessing important before training a Machine Learning model?",
+    "choices": [
+      "It is optional and only needed for large datasets",
+      "It converts all data to images",
+      "It ensures data quality and helps the model learn accurate patterns",
+      "It makes the training process slower but more accurate"
+    ],
+    "ans_idx": 2,
+    "justification": "Data preprocessing (cleaning, handling missing values, removing duplicates) ensures the model receives high-quality data, leading to more accurate pattern recognition and better predictions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Train-Test Split",
+      "Model Evaluation"
+    ],
+    "question": "Testing a model on the same data it was trained on gives a fair evaluation of its real-world performance.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "Testing on training data gives misleadingly high results because the model has memorized the data. True performance is measured on unseen test data, simulating how the model handles new, real-world cases.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pandas",
+      "Library Import"
+    ],
+    "question": "To use Pandas for data manipulation in Python, you typically import it with: `import pandas as _______`",
+    "choices": [
+      "pan",
+      "data",
+      "pd",
+      "panda"
+    ],
+    "ans_idx": 2,
+    "justification": "The convention `import pandas as pd` is the standard way to import Pandas. Using 'pd' as an alias makes code shorter and is universally recognized in the data science community.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Classification",
+      "Logistic Regression"
+    ],
+    "question": "For the Heart Disease Prediction project (predicting 0 = No Disease, 1 = Disease), which statement is correct?",
+    "choices": [
+      "This is a clustering problem suitable for KMeans",
+      "This requires unsupervised learning",
+      "This is a regression problem suitable for Linear Regression",
+      "This is a binary classification problem suitable for Logistic Regression"
+    ],
+    "ans_idx": 3,
+    "justification": "Predicting Disease (1) or No Disease (0) is binary classification with two discrete categories. Logistic Regression is designed for such classification tasks and is appropriate here.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Model Training",
+      "Fit Method"
+    ],
+    "question": "In scikit-learn, the `.fit()` method is called on the test data to evaluate the model's performance.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "The `.fit()` method is used on TRAINING data to train the model. For evaluation on test data, you use `.predict()` to generate predictions and then compare them with actual values.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Accuracy",
+      "Imbalanced Data"
+    ],
+    "question": "A fraud detection model has 99% accuracy, but in a dataset where 99% of transactions are legitimate. What might be the problem?",
+    "choices": [
+      "The model is performing excellently",
+      "The model might just be predicting all transactions as legitimate",
+      "The accuracy calculation is wrong",
+      "The model is overfitting to fraud cases"
+    ],
+    "ans_idx": 1,
+    "justification": "With imbalanced data (99% legitimate), a model predicting everything as 'legitimate' achieves 99% accuracy without detecting any fraud. Accuracy alone can be misleading for imbalanced datasets.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Linear Regression",
+      "Visualization"
+    ],
+    "question": "After building a house price prediction model, you plot actual prices vs predicted prices. Ideally, the points should:",
+    "choices": [
+      "Clustered in one corner",
+      "Close to a diagonal line (y = x)",
+      "Forming a horizontal line",
+      "Randomly scattered across the plot"
+    ],
+    "ans_idx": 1,
+    "justification": "If predictions equal actual values, points fall on the y = x diagonal. Points close to this line indicate good predictions. Scattered points far from the diagonal indicate poor model performance.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Regression",
+      "Continuous Output"
+    ],
+    "question": "Predicting the exact temperature (e.g., 23.5°C) for tomorrow is a _______ problem, not a classification problem.",
+    "choices": [
+      "clustering",
+      "regression",
+      "reinforcement",
+      "classification"
+    ],
+    "ans_idx": 1,
+    "justification": "Predicting a continuous numeric value like temperature (23.5°C) is a regression problem. Classification would predict categories (Hot/Cold), not exact numeric values.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "R² Score",
+      "Model Interpretation"
+    ],
+    "question": "A Linear Regression model for predicting insurance costs has R² = 0.15. What does this suggest?",
+    "choices": [
+      "The model is 85% accurate",
+      "The model is performing excellently",
+      "The model explains only 15% of variance and needs improvement",
+      "The model has 15 errors"
+    ],
+    "ans_idx": 2,
+    "justification": "R² = 0.15 means the model explains only 15% of the variance in insurance costs—85% is unexplained. This indicates a weak model that needs better features, more data, or a different algorithm.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "MSE",
+      "Error Interpretation"
+    ],
+    "question": "If a house price prediction model has MSE = 10,000, it means the model makes exactly $10,000 error on every prediction.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "MSE is the AVERAGE of SQUARED errors, not the actual error amount. Individual predictions have different errors. Also, MSE is in squared units, so √10,000 = 100 would be closer to the typical error scale.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Unsupervised Learning",
+      "Use Cases"
+    ],
+    "question": "An e-commerce company wants to group similar products together without predefined categories. Which approach should they use?",
+    "choices": [
+      "Unsupervised Learning (Clustering)",
+      "Supervised Learning (Classification)",
+      "Reinforcement Learning",
+      "Supervised Learning (Regression)"
+    ],
+    "ans_idx": 0,
+    "justification": "When there are no predefined categories and the goal is to discover natural groupings, Unsupervised Learning with clustering algorithms like KMeans is the appropriate approach.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "KMeans",
+      "Algorithm"
+    ],
+    "question": "The _______ algorithm groups data points by finding K cluster centers and assigning each point to the nearest center.",
+    "choices": [
+      "Logistic Regression",
+      "Linear Regression",
+      "Random Forest",
+      "KMeans"
+    ],
+    "ans_idx": 3,
+    "justification": "KMeans clustering works by initializing K centroids, assigning each point to the nearest centroid, and iteratively updating centroids until convergence. It's the most popular clustering algorithm.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Clustering",
+      "Labels"
+    ],
+    "question": "Clustering algorithms like KMeans require labeled data with known categories to function properly.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "Clustering is unsupervised learning that works with UNLABELED data. The algorithm discovers natural groupings without needing predefined categories—that's what makes it 'unsupervised.'",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "KMeans",
+      "Choosing K"
+    ],
+    "question": "You run KMeans with K=3, K=5, and K=7 on the same dataset. The Silhouette Scores are 0.65, 0.72, and 0.58 respectively. Which K value produces the best clustering?",
+    "choices": [
+      "All produce equally good clustering",
+      "K=7 (Silhouette Score: 0.58)",
+      "K=5 (Silhouette Score: 0.72)",
+      "K=3 (Silhouette Score: 0.65)"
+    ],
+    "ans_idx": 2,
+    "justification": "Higher Silhouette Scores indicate better clustering quality. K=5 with a score of 0.72 produces clusters where points are most similar within clusters and most different between clusters.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Applications",
+      "Real World"
+    ],
+    "question": "Which of the following is NOT a common real-world application of AI?",
+    "choices": [
+      "Product recommendations on Amazon",
+      "Spam email filtering",
+      "Manually sorting paper documents",
+      "Voice assistants like Siri"
+    ],
+    "ans_idx": 2,
+    "justification": "Manually sorting paper is a human task without AI involvement. Voice assistants (Speech AI), product recommendations (Predictive AI), and spam filtering (Classification) are all AI applications.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Missing Values Strategy"
+    ],
+    "question": "Using `dropna()` is always the best approach for handling missing values in a dataset.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "dropna() removes rows with missing values, which can lead to significant data loss if many rows have missing values. Alternatives like fillna() (imputation) may preserve more data and be more appropriate depending on the situation.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Scikit-learn",
+      "Accuracy Score"
+    ],
+    "question": "To calculate accuracy in scikit-learn, you use the function _______ from sklearn.metrics.",
+    "choices": [
+      "accuracy_calculate",
+      "get_accuracy",
+      "compute_accuracy",
+      "accuracy_score"
+    ],
+    "ans_idx": 3,
+    "justification": "accuracy_score(y_true, y_pred) is the standard scikit-learn function that calculates accuracy by comparing true labels with predicted labels and returning the proportion of correct predictions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "ML Workflow",
+      "Complete Pipeline"
+    ],
+    "question": "A junior data scientist builds a model but skips the data cleaning step. What is the most likely consequence?",
+    "choices": [
+      "There will be no impact on model performance",
+      "The model will automatically clean the data",
+      "The model will run faster without cleaning",
+      "The model learns incorrect patterns from dirty data, reducing accuracy"
+    ],
+    "ans_idx": 3,
+    "justification": "Skipping data cleaning means the model trains on data with missing values, duplicates, and errors. The model learns these incorrect patterns, leading to poor generalization and unreliable predictions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI vs Traditional Programming",
+      "Learning"
+    ],
+    "question": "If Netflix did NOT use Machine Learning, how would the recommendation system likely work?",
+    "choices": [
+      "Automatically understand each user's taste",
+      "Provide more accurate personalized recommendations",
+      "Learn from user behavior over time",
+      "Show the same popular movies to everyone without personalization"
+    ],
+    "ans_idx": 3,
+    "justification": "Without ML, Netflix couldn't learn individual preferences. It would rely on simple rules like showing popular content to everyone, losing the personalized experience that ML provides.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Generative AI",
+      "Content Creation"
+    ],
+    "question": "Generative AI can only create text and cannot generate images, music, or code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "Generative AI can create various types of content including text (ChatGPT), images (DALL-E, Midjourney), music (Suno), code (GitHub Copilot), and even videos. It's not limited to text.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "ML Types",
+      "Data Labels"
+    ],
+    "question": "When grouping customers based on purchasing patterns without knowing the groups beforehand, we use _______ Learning.",
+    "choices": [
+      "Supervised",
+      "Reinforcement",
+      "Unsupervised",
+      "Transfer"
+    ],
+    "ans_idx": 2,
+    "justification": "Unsupervised Learning is used when there are no predefined labels or categories. The algorithm discovers natural groupings (clusters) in the data on its own.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Predictive AI",
+      "Forecasting"
+    ],
+    "question": "A weather app that predicts tomorrow's temperature based on historical patterns is using:",
+    "choices": [
+      "Generative AI",
+      "Vision AI",
+      "Speech AI",
+      "Predictive AI"
+    ],
+    "ans_idx": 3,
+    "justification": "Predictive AI analyzes historical data to forecast future outcomes. Weather prediction uses past patterns to estimate future conditions, making it a classic Predictive AI application.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types",
+      "ML Input"
+    ],
+    "question": "Machine Learning models can only work with numerical data and cannot process text, images, or audio.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "ML models can process various data types: text (NLP models), images (computer vision), audio (speech recognition), and video. These are converted to numerical representations that models can process.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Pandas",
+      "Data Exploration"
+    ],
+    "question": "You want to see summary statistics (mean, min, max, etc.) of numerical columns in a DataFrame. Which function should you use?",
+    "choices": [
+      "df.describe()",
+      "df.head()",
+      "df.info()",
+      "df.columns()"
+    ],
+    "ans_idx": 0,
+    "justification": "The describe() function generates descriptive statistics including count, mean, std, min, 25%, 50%, 75%, and max for numerical columns—ideal for quickly understanding data distribution.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Scikit-learn",
+      "Library Import"
+    ],
+    "question": "To import Logistic Regression in scikit-learn, you would write: `from sklearn.linear_model import _______`",
+    "choices": [
+      "LogRegression",
+      "LogisticModel",
+      "LogisticRegression",
+      "Logistic_Regression"
+    ],
+    "ans_idx": 2,
+    "justification": "LogisticRegression (with capital L and R, no spaces or underscores) is the correct class name in scikit-learn's linear_model module for classification tasks.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Train-Test Split",
+      "Parameters"
+    ],
+    "question": "In `train_test_split(X, y, test_size=0.2)`, what does `test_size=0.2` mean?",
+    "choices": [
+      "80% of data will be used for testing",
+      "The test will run 20 times",
+      "20 samples will be used for testing",
+      "20% of data will be used for testing"
+    ],
+    "ans_idx": 3,
+    "justification": "test_size=0.2 means 20% (0.2 as a proportion) of the data goes to the test set, while the remaining 80% is used for training. This is equivalent to an 80/20 split.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Classification",
+      "Multi-class"
+    ],
+    "question": "Logistic Regression can only be used for binary classification (2 classes) and cannot handle multi-class problems.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "While Logistic Regression was originally designed for binary classification, it can handle multi-class problems using techniques like One-vs-Rest (OvR) or multinomial methods. Scikit-learn supports this natively.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Model Evaluation",
+      "Overfitting"
+    ],
+    "question": "A model has 98% accuracy on training data but only 60% on test data. This is likely a case of:",
+    "choices": [
+      "Perfect fitting",
+      "Underfitting",
+      "Overfitting",
+      "Data leakage"
+    ],
+    "ans_idx": 2,
+    "justification": "Overfitting occurs when a model memorizes training data (high training accuracy) but fails to generalize to new data (low test accuracy). The large gap between training and test performance is a classic overfitting sign.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Regression",
+      "Linear Regression"
+    ],
+    "question": "Linear Regression assumes a linear relationship between the input features and the output variable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Linear Regression models the relationship between features and target as a linear equation (y = mx + b). It assumes the target can be predicted by a weighted sum of features plus a bias term.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Model Selection",
+      "Problem Analysis"
+    ],
+    "question": "A hospital wants to predict the number of days a patient will stay based on their medical records. This is a:",
+    "choices": [
+      "Clustering problem (grouping patients)",
+      "Reinforcement learning problem",
+      "Regression problem (predicting a number)",
+      "Classification problem (predicting a category)"
+    ],
+    "ans_idx": 2,
+    "justification": "Predicting the number of days (e.g., 3, 5, 10.5 days) is a regression problem because the output is a continuous numeric value, not a discrete category.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Scikit-learn",
+      "Model Import"
+    ],
+    "question": "To use KMeans clustering in scikit-learn, you import it from: `from sklearn._______ import KMeans`",
+    "choices": [
+      "unsupervised",
+      "kmeans",
+      "cluster",
+      "clustering"
+    ],
+    "ans_idx": 2,
+    "justification": "In scikit-learn, clustering algorithms including KMeans are found in the sklearn.cluster module. The correct import is: from sklearn.cluster import KMeans.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Feature Engineering",
+      "Model Improvement"
+    ],
+    "question": "Your house price prediction model has R² = 0.45. Which action is MOST likely to improve it?",
+    "choices": [
+      "Remove all features except one",
+      "Add relevant features like neighborhood, age of house, or number of bathrooms",
+      "Use a smaller training dataset",
+      "Change the file from CSV to Excel format"
+    ],
+    "ans_idx": 1,
+    "justification": "R² = 0.45 means the model explains only 45% of variance. Adding relevant features that influence house prices (location, age, amenities) can help the model capture more patterns and improve R².",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "KMeans",
+      "Initialization"
+    ],
+    "question": "KMeans clustering always produces the same clusters regardless of how the initial cluster centers are chosen.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "KMeans results can vary based on initial centroid positions. Different random initializations may lead to different final clusters. That's why running KMeans multiple times (n_init parameter) helps find better solutions.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Evaluation Metrics",
+      "Metric Selection"
+    ],
+    "question": "Why would you choose R² over MSE when comparing regression models trained on datasets with different scales?",
+    "choices": [
+      "R² is faster to calculate",
+      "MSE is always larger than R²",
+      "MSE cannot be used for regression",
+      "R² is normalized (0-1) and scale-independent, making comparison fair"
+    ],
+    "ans_idx": 3,
+    "justification": "MSE depends on the scale of the target variable (predicting prices in thousands vs millions gives very different MSE). R² is normalized between 0-1, allowing fair comparison across different datasets.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Scikit-learn",
+      "Regression Metrics"
+    ],
+    "question": "To calculate Mean Squared Error in scikit-learn, you use: `from sklearn.metrics import _______`",
+    "choices": [
+      "squared_error_mean",
+      "mean_squared_error",
+      "mse_score",
+      "calculate_mse"
+    ],
+    "ans_idx": 1,
+    "justification": "mean_squared_error is the correct function name in sklearn.metrics. It calculates the average of squared differences between predicted and actual values: mean_squared_error(y_true, y_pred).",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Clustering",
+      "Real-world Application"
+    ],
+    "question": "A mall clusters customers using Annual Income and Spending Score. Cluster A has high income and high spending, Cluster B has high income and low spending. How might the marketing team use this?",
+    "choices": [
+      "Ignore Cluster A since they already spend a lot",
+      "Merge both clusters since they have similar income",
+      "Target Cluster B with promotions to increase their spending",
+      "Remove Cluster B from the customer database"
+    ],
+    "ans_idx": 2,
+    "justification": "Cluster B represents high-income customers who aren't spending much—a valuable opportunity. Targeted promotions could convert them into high spenders, increasing revenue.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Silhouette Score",
+      "Interpretation"
+    ],
+    "question": "A Silhouette Score of 0 means the clustering is perfect with well-separated clusters.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "A Silhouette Score of 0 indicates that data points are on or very close to the decision boundary between clusters—neither clearly belonging to their assigned cluster nor the neighboring one. Scores near 1 indicate well-separated clusters.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Quality",
+      "Feature Analysis"
+    ],
+    "question": "You notice that removing a feature improves your model's accuracy. What might this indicate about that feature?",
+    "choices": [
+      "The model is now overfitting",
+      "The feature was the most important one",
+      "The feature should be duplicated instead",
+      "The feature was adding noise or was irrelevant to the prediction"
+    ],
+    "ans_idx": 3,
+    "justification": "Irrelevant or noisy features can hurt model performance by adding confusing patterns. Removing such features (feature selection) often improves accuracy by helping the model focus on truly predictive information.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Teachable Machine",
+      "AI Tools"
+    ],
+    "question": "Teachable Machine is a tool that allows you to train simple Machine Learning models without writing code.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Teachable Machine is a web-based tool by Google that lets users train ML models for image, sound, and pose recognition through a visual interface without any coding required.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Model Types Summary",
+      "Overview"
+    ],
+    "question": "Which statement correctly matches the model to its purpose?",
+    "choices": [
+      "All three models are used for the same purpose",
+      "Logistic Regression → Classification, Linear Regression → Regression, KMeans → Clustering",
+      "Logistic Regression → Regression, Linear Regression → Classification, KMeans → Clustering",
+      "Logistic Regression → Clustering, Linear Regression → Classification, KMeans → Regression"
+    ],
+    "ans_idx": 1,
+    "justification": "Each model serves a specific purpose: Logistic Regression classifies into categories, Linear Regression predicts continuous numbers, and KMeans groups similar data points into clusters.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Scikit-learn",
+      "Clustering Metrics"
+    ],
+    "question": "To evaluate clustering quality in scikit-learn, you use: `from sklearn.metrics import _______`",
+    "choices": [
+      "cluster_accuracy",
+      "clustering_score",
+      "silhouette_score",
+      "kmeans_score"
+    ],
+    "ans_idx": 2,
+    "justification": "silhouette_score is the standard function in sklearn.metrics for evaluating clustering quality. It measures how similar data points are to their own cluster compared to other clusters.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Complete ML Workflow",
+      "End-to-End"
+    ],
+    "question": "You're building a complete ML project for Titanic survival prediction. What is the correct sequence of steps?",
+    "choices": [
+      "Split → Train → Load → Clean → Evaluate",
+      "Evaluate → Train → Split → Load → Clean",
+      "Train model → Load data → Evaluate → Clean data → Split",
+      "Load data → Clean data → Split into train/test → Train Logistic Regression → Evaluate with accuracy"
+    ],
+    "ans_idx": 3,
+    "justification": "The correct ML pipeline: 1) Load data from source, 2) Clean/preprocess (handle missing values, etc.), 3) Split into train/test sets, 4) Train the appropriate model, 5) Evaluate on test data using suitable metrics.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Visualization",
+      "Model Insights"
+    ],
+    "question": "Visualizing data with scatter plots before clustering can help identify the appropriate number of clusters (K) for KMeans.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Scatter plots can reveal natural groupings in data, especially with 2-3 features. Visual inspection helps estimate a reasonable K value before running the algorithm and can validate results afterward.",
+    "age_group": "15-18",
+    "belt": "Orange"
+  }
+]

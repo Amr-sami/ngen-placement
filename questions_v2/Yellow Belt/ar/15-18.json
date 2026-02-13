@@ -1,0 +1,1967 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "لغات البرمجة",
+      "اللغات عالية المستوى"
+    ],
+    "question": "تُعتبر Python لغة برمجة عالية المستوى لأنها تستخدم صياغة أقرب إلى اللغة البشرية بدلاً من لغة الآلة.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "Python هي بالفعل لغة برمجة عالية المستوى. اللغات عالية المستوى مصممة لتكون قابلة للقراءة وأقرب إلى اللغة البشرية، مع إخفاء تعقيدات لغة الآلة التي ينفذها الحاسوب فعلياً.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "الخوارزمية",
+      "المنطق التسلسلي"
+    ],
+    "question": "ما هي الخوارزمية في البرمجة؟",
+    "choices": [
+      "مجموعة من التعليمات خطوة بخطوة لحل مشكلة",
+      "مكون مادي في الحواسيب",
+      "نوع من لغات البرمجة",
+      "تنسيق ملف لتخزين الكود"
+    ],
+    "ans_idx": 0,
+    "justification": "الخوارزمية هي سلسلة محددة من التعليمات الواضحة المصممة لأداء مهمة معينة أو حل مشكلة محددة. وهي تشكل الأساس المنطقي لأي برنامج قبل بدء كتابة الكود الفعلي.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المتغيرات",
+      "الإسناد"
+    ],
+    "question": "في Python، العبارة `age = 17` تُنشئ _______ باسم `age` وتُسند إليه القيمة 17.",
+    "choices": [
+      "حلقة",
+      "دالة",
+      "متغير",
+      "شرط"
+    ],
+    "ans_idx": 2,
+    "justification": "العبارة `age = 17` تُعلن عن متغير باسم 'age' وتُسند إليه القيمة الصحيحة 17. تُستخدم المتغيرات لتخزين البيانات التي يمكن الرجوع إليها والتعامل معها في البرنامج.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المتغيرات",
+      "أنواع البيانات"
+    ],
+    "question": "ما هو ناتج الكود التالي؟\n\n```python\nx = 5\nx = x + 3\nprint(x)\n```",
+    "choices": [
+      "3",
+      "5",
+      "53",
+      "8"
+    ],
+    "ans_idx": 3,
+    "justification": "في البداية، يتم إسناد القيمة 5 إلى x. ثم يُعاد إسناد x إلى x + 3، أي 5 + 3 = 8. تُخرج عبارة print القيمة الحالية لـ x وهي 8.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "العمليات الحسابية"
+    ],
+    "question": "ما هي نتيجة التعبير `15 // 4` في Python؟",
+    "choices": [
+      "3.0",
+      "3",
+      "4",
+      "3.75"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `//` يُجري القسمة الصحيحة، التي تُرجع ناتج القسمة بدون الباقي. 15 مقسومة على 4 تساوي 3.75، لكن القسمة الصحيحة تُرجع الجزء الصحيح فقط: 3.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المعاملات",
+      "باقي القسمة"
+    ],
+    "question": "في Python، التعبير `10 % 3` يُرجع باقي القسمة، وهو 1.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "معامل باقي القسمة `%` يُرجع الباقي بعد القسمة. 10 مقسومة على 3 تساوي 3 مع باقي 1، لذلك `10 % 3` يُرجع 1 بشكل صحيح.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الشروط",
+      "if-else"
+    ],
+    "question": "ماذا سيطبع الكود التالي؟\n\n```python\nscore = 75\nif score >= 90:\n    print(\"A\")\nelif score >= 70:\n    print(\"B\")\nelse:\n    print(\"C\")\n```",
+    "choices": [
+      "A",
+      "C",
+      "B",
+      "AB"
+    ],
+    "ans_idx": 2,
+    "justification": "بما أن score تساوي 75، الشرط الأول (score >= 90) خاطئ. شرط elif (score >= 70) صحيح، لذلك يتم طباعة 'B'. يتم تخطي كتلة else لأن شرطاً قد تحقق بالفعل.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الشروط",
+      "الشروط المتداخلة",
+      "المعاملات المنطقية"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\nx = 15\ny = 10\nif x > 10 and y > 5:\n    if x + y > 20:\n        print(\"High\")\n    else:\n        print(\"Medium\")\nelse:\n    print(\"Low\")\n```",
+    "choices": [
+      "Medium",
+      "High",
+      "خطأ",
+      "Low"
+    ],
+    "ans_idx": 1,
+    "justification": "أولاً، x > 10 (15 > 10) صحيح و y > 5 (10 > 5) صحيح، لذلك شرط if الخارجي صحيح. داخلياً، x + y = 25 > 20 صحيح، لذلك يتم طباعة 'High'.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "القوائم",
+      "الفهرسة"
+    ],
+    "question": "في Python، يتم الوصول إلى العنصر الأول في القائمة باستخدام الفهرس 0.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "تستخدم Python الفهرسة التي تبدأ من الصفر، مما يعني أن العنصر الأول في أي قائمة يكون عند الفهرس 0، والثاني عند الفهرس 1، وهكذا.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "القوائم",
+      "عمليات القوائم"
+    ],
+    "question": "ما هو ناتج الكود التالي؟\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.append(\"orange\")\nprint(len(fruits))\n```",
+    "choices": [
+      "4",
+      "5",
+      "خطأ",
+      "3"
+    ],
+    "ans_idx": 0,
+    "justification": "القائمة تحتوي في البداية على 3 عناصر. دالة `append()` تُضيف 'orange' إلى النهاية، مما يجعلها 4 عناصر. دالة `len()` تُرجع العدد، وهو 4.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "القوائم",
+      "الفهرسة"
+    ],
+    "question": "بالنظر إلى `numbers = [10, 20, 30, 40]`، التعبير `numbers[_______]` سيُرجع القيمة 30.",
+    "choices": [
+      "30",
+      "1",
+      "2",
+      "3"
+    ],
+    "ans_idx": 2,
+    "justification": "في الفهرسة التي تبدأ من الصفر، الفهرس 0 يحمل 10، الفهرس 1 يحمل 20، والفهرس 2 يحمل 30. لذلك، `numbers[2]` تُرجع 30.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحلقات",
+      "حلقة for"
+    ],
+    "question": "للتكرار عبر الأرقام 0، 1، 2، 3، 4 في Python، تستخدم: `for i in _______(5):`",
+    "choices": [
+      "range",
+      "loop",
+      "len",
+      "list"
+    ],
+    "ans_idx": 0,
+    "justification": "دالة `range(5)` تُولّد سلسلة من الأرقام من 0 إلى 4 (5 أرقام إجمالاً). تُستخدم عادةً مع حلقات for للتكرار عدداً محدداً من المرات.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الحلقات",
+      "حلقة while",
+      "منطق الحلقات"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\ncount = 0\nwhile count < 3:\n    print(count)\n    count += 1\n```",
+    "choices": [
+      "1\\n2\\n3",
+      "0\\n1\\n2\\n3",
+      "0\\n1\\n2",
+      "حلقة لا نهائية"
+    ],
+    "ans_idx": 2,
+    "justification": "تبدأ الحلقة بـ count = 0. تطبع 0، ثم تزيد إلى 1. تطبع 1، تزيد إلى 2. تطبع 2، تزيد إلى 3. عندما تصبح count تساوي 3، الشرط count < 3 يصبح خاطئاً، فتتوقف الحلقة. الناتج: 0، 1، 2 على أسطر منفصلة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "خطأ نحوي"
+    ],
+    "question": "حدد الخطأ في الكود التالي:\n\n```python\nif score > 50\n    print(\"Pass\")\n```",
+    "choices": [
+      "نقص النقطتين (:) بعد شرط if",
+      "نقص الأقواس حول الشرط",
+      "يجب كتابة print بحرف كبير",
+      "مسافة بادئة غير صحيحة"
+    ],
+    "ans_idx": 0,
+    "justification": "في Python، يجب أن تنتهي عبارة if بنقطتين (:) قبل كتلة الكود المُزاحة. الصيغة الصحيحة هي `if score > 50:` متبوعة بعبارة print المُزاحة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "خطأ منطقي"
+    ],
+    "question": "يريد مبرمج إضافة 1 إلى العداد في كل مرة تعمل فيها الحلقة. كتب:\n\n```python\ncount = 0\nfor i in range(5):\n    count = 1\nprint(count)\n```\n\nما نوع الخطأ الموجود وماذا سيُطبع؟",
+    "choices": [
+      "خطأ نحوي؛ البرنامج لن يعمل",
+      "لا يوجد خطأ؛ يطبع 5",
+      "خطأ منطقي؛ يطبع 5",
+      "خطأ منطقي؛ يطبع 1"
+    ],
+    "ans_idx": 3,
+    "justification": "يحتوي الكود على خطأ منطقي. بدلاً من زيادة count (`count += 1` أو `count = count + 1`)، يُسند المبرمج القيمة 1 إلى count في كل تكرار. بعد الحلقة، تظل count تساوي 1، وليس 5.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المعاملات",
+      "معاملات المقارنة"
+    ],
+    "question": "في Python، التعبير `5 == 5` يُقيَّم إلى `True`.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "المعامل `==` يتحقق من المساواة. بما أن كلا الجانبين يساوي 5، فهما متساويان، والتعبير يُقيَّم إلى `True`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "تطبيقات الروبوتات",
+      "الأتمتة"
+    ],
+    "question": "تُستخدم الروبوتات في الصناعات التحويلية لأداء المهام المتكررة بدقة واتساق عاليين.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "تتفوق الروبوتات في المهام المتكررة في التصنيع لأنها تستطيع العمل باستمرار دون إرهاق والحفاظ على دقة متسقة، مما يجعلها مثالية لخطوط التجميع واللحام والتغليف.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "واجهة VRVEX",
+      "بيئة البرمجة"
+    ],
+    "question": "في بيئة برمجة الروبوتات مثل VRVEX، ما هو الغرض من منطقة المحاكاة؟",
+    "choices": [
+      "لتخزين ملفات الروبوت بشكل دائم",
+      "لاختبار سلوك الروبوت افتراضياً قبل نشره على روبوت حقيقي",
+      "للاتصال بالإنترنت",
+      "لكتابة كود الروبوت"
+    ],
+    "ans_idx": 1,
+    "justification": "تتيح منطقة المحاكاة للمبرمجين اختبار كودهم في بيئة افتراضية، ومراقبة كيف سيتصرف الروبوت دون الحاجة إلى أجهزة حقيقية. يساعد هذا في تحديد المشكلات وإصلاحها قبل النشر الفعلي.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحركة",
+      "الدوران",
+      "الملاحة"
+    ],
+    "question": "تمت برمجة روبوت للتحرك للأمام 100 وحدة، ثم الدوران يميناً 90 درجة، ثم التحرك للأمام 50 وحدة. إذا بدأ من الموضع (0، 0) متجهاً شمالاً، ما هو موضعه النهائي؟",
+    "choices": [
+      "(100, 100)",
+      "(0, 150)",
+      "(100, 50)",
+      "(50, 100)"
+    ],
+    "ans_idx": 3,
+    "justification": "بدءاً من (0،0) متجهاً شمالاً، التحرك للأمام 100 وحدة يأخذه إلى (0، 100). الدوران يميناً 90 درجة يجعله يتجه شرقاً. التحرك للأمام 50 وحدة في اتجاه الشرق يُضيف 50 إلى الإحداثي x، مما يُنتج (50، 100).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحركة",
+      "أوامر البرمجة"
+    ],
+    "question": "لجعل الروبوت يُكمل دورة كاملة (360 درجة) باستخدام أربع دورات متساوية، يجب أن تكون كل دورة _______ درجة.",
+    "choices": [
+      "180",
+      "90",
+      "45",
+      "120"
+    ],
+    "ans_idx": 1,
+    "justification": "الدورة الكاملة هي 360 درجة. قسمة هذا على 4 دورات متساوية: 360 ÷ 4 = 90 درجة لكل دورة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "مستشعر الاصطدام",
+      "الاستجابة الشرطية"
+    ],
+    "question": "تمت برمجة روبوت بـ: \"عندما يُضغط مستشعر الاصطدام، توقف واتجه للخلف.\" أي نوع من المنطق البرمجي يُمثله هذا؟",
+    "choices": [
+      "سلوك عشوائي",
+      "حلقة مستمرة بدون شروط",
+      "منطق شرطي مُوجَّه بالأحداث",
+      "تنفيذ تسلسلي فقط"
+    ],
+    "ans_idx": 2,
+    "justification": "هذا منطق شرطي مُوجَّه بالأحداث لأن إجراء الروبوت (التوقف والرجوع) يتم تفعيله بحدث محدد (الضغط على مستشعر الاصطدام) ويُنفَّذ بناءً على تحقق شرط معين.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر العين",
+      "كشف الألوان",
+      "المنطق الشرطي"
+    ],
+    "question": "يستخدم روبوت مستشعر عين لكشف الألوان. ينص الكود على:\n\n```\nif eye_sensor detects RED:\n    turn_left()\nelif eye_sensor detects BLUE:\n    turn_right()\nelse:\n    move_forward()\n```\n\nإذا اكتشف المستشعر اللون الأخضر، ماذا سيفعل الروبوت؟",
+    "choices": [
+      "الدوران يميناً",
+      "الدوران يساراً",
+      "التوقف",
+      "التحرك للأمام"
+    ],
+    "ans_idx": 3,
+    "justification": "الأخضر ليس أحمر ولا أزرق، لذا لا يتحقق شرط `if` ولا `elif`. يتم تنفيذ كتلة `else`، مما يجعل الروبوت يتحرك للأمام.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر المسافة",
+      "الملاحة الآمنة",
+      "البرمجة الشرطية"
+    ],
+    "question": "تمت برمجة روبوت بهذا المنطق الأمني:\n\n```\nwhile True:\n    distance = distance_sensor.read()\n    if distance < 20:\n        stop()\n        reverse(10)\n    elif distance < 50:\n        slow_down()\n    else:\n        move_forward()\n```\n\nإذا قرأ مستشعر المسافة 35، ماذا يحدث؟",
+    "choices": [
+      "يُبطئ الروبوت",
+      "يتوقف الروبوت ويرجع",
+      "لا يفعل الروبوت شيئاً",
+      "يتحرك الروبوت للأمام بسرعة عادية"
+    ],
+    "ans_idx": 0,
+    "justification": "35 ليست أقل من 20، لذا شرط `if` الأول خاطئ. لكن 35 أقل من 50، لذا شرط `elif` صحيح، ويتم تنفيذ `slow_down()`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "مستشعر المسافة",
+      "أنواع المستشعرات"
+    ],
+    "question": "يقيس مستشعر المسافة بُعد الجسم عن الروبوت، مما يسمح له بتجنب العوائق.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "تقيس مستشعرات المسافة (مثل المستشعرات فوق الصوتية أو الأشعة تحت الحمراء) المسافة بين الروبوت والأجسام القريبة، مما يُمكّن الروبوت من اكتشاف العوائق والتنقل بأمان.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر الموقع",
+      "الملاحة بالإحداثيات"
+    ],
+    "question": "روبوت عند الإحداثيات (10، 20) يحتاج للانتقال إلى (10، 50). للوصول إلى وجهته، يجب أن يقطع _______ وحدة في اتجاه y.",
+    "choices": [
+      "40",
+      "20",
+      "50",
+      "30"
+    ],
+    "ans_idx": 3,
+    "justification": "يبقى الإحداثي x عند 10 (لا توجد حركة أفقية). يتغير الإحداثي y من 20 إلى 50، مما يتطلب 50 - 20 = 30 وحدة من الحركة في اتجاه y.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "البرمجة",
+      "التعليمات"
+    ],
+    "question": "ما هو الغرض الأساسي من لغة البرمجة؟",
+    "choices": [
+      "لإعطاء تعليمات للحاسوب لأداء المهام",
+      "لربط الحواسيب بالإنترنت",
+      "لتخزين الملفات على القرص الصلب",
+      "لتصميم مكونات العتاد"
+    ],
+    "ans_idx": 0,
+    "justification": "صُممت لغات البرمجة للتواصل مع الحواسيب وإعطائها التعليمات. تسمح للمطورين بكتابة كود يُخبر الحاسوب بالضبط بالعمليات التي يجب تنفيذها.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "الخوارزمية",
+      "حل المشكلات"
+    ],
+    "question": "يجب كتابة الخوارزمية بلغة برمجة محددة لتُعتبر صالحة.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 1,
+    "justification": "الخوارزمية هي سلسلة منطقية من الخطوات لحل مشكلة ويمكن التعبير عنها بلغة عادية أو شبه كود أو مخططات انسيابية. لا يلزم كتابتها بأي لغة برمجة محددة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الخوارزمية",
+      "الترتيب المنطقي"
+    ],
+    "question": "تريد إنشاء خوارزمية لتحضير كوب شاي. ما هو الترتيب المنطقي الصحيح؟\n\n1. صب الماء الساخن في الكوب\n2. غلي الماء\n3. إضافة كيس الشاي إلى الكوب\n4. انتظار الشاي حتى يُنقع",
+    "choices": [
+      "1 → 2 → 3 → 4",
+      "2 → 1 → 3 → 4",
+      "2 → 3 → 1 → 4",
+      "3 → 2 → 1 → 4"
+    ],
+    "ans_idx": 2,
+    "justification": "الترتيب المنطقي هو: أولاً غلي الماء (2)، ثم إضافة كيس الشاي إلى الكوب (3)، صب الماء الساخن (1)، وأخيراً الانتظار حتى يُنقع (4). هذا التسلسل يضمن أن كل خطوة تعتمد على إتمام الخطوة السابقة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المتغيرات",
+      "أنواع البيانات"
+    ],
+    "question": "ما هو نوع البيانات للمتغير `price` بعد هذا الإسناد؟\n\n```python\nprice = 19.99\n```",
+    "choices": [
+      "float",
+      "boolean",
+      "string",
+      "integer"
+    ],
+    "ans_idx": 0,
+    "justification": "القيمة 19.99 تحتوي على فاصلة عشرية، مما يجعلها عدداً عشرياً (float). في Python، الأرقام ذات الفواصل العشرية تُصنف تلقائياً كنوع بيانات float.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المتغيرات",
+      "أنواع البيانات"
+    ],
+    "question": "في Python، `\"Hello World\"` هو مثال على نوع بيانات _______.",
+    "choices": [
+      "boolean",
+      "float",
+      "string",
+      "integer"
+    ],
+    "ans_idx": 2,
+    "justification": "النص المحاط بعلامات اقتباس (مفردة أو مزدوجة) في Python يُسمى string. تُستخدم السلاسل النصية لتمثيل البيانات النصية مثل الكلمات والجمل والأحرف.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "المتغيرات",
+      "تحويل الأنواع"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\na = \"5\"\nb = 3\nresult = int(a) + b\nprint(result)\n```",
+    "choices": [
+      "53",
+      "خطأ",
+      "35",
+      "8"
+    ],
+    "ans_idx": 3,
+    "justification": "المتغير `a` هو سلسلة نصية \"5\". دالة `int()` تُحوّله إلى العدد الصحيح 5. ثم يتم حساب 5 + 3 = 8 وطباعته.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "المعاملات المنطقية"
+    ],
+    "question": "في Python، التعبير `True and False` يُقيَّم إلى `False`.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "المعامل `and` يُرجع `True` فقط إذا كان كلا المُعاملين `True`. بما أن أحد المُعاملين هو `False`، فإن التعبير بالكامل يُقيَّم إلى `False`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "أولوية المعاملات"
+    ],
+    "question": "ما هي نتيجة التعبير `3 + 4 * 2` في Python؟",
+    "choices": [
+      "11",
+      "9",
+      "14",
+      "10"
+    ],
+    "ans_idx": 0,
+    "justification": "بسبب أولوية المعاملات، يتم تنفيذ الضرب قبل الجمع. لذا يتم حساب 4 * 2 = 8 أولاً، ثم 3 + 8 = 11.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "المعاملات",
+      "العمليات المختلطة"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\nx = 17\nprint(x // 5, x % 5)\n```",
+    "choices": [
+      "3.4 2",
+      "3 2",
+      "2 3",
+      "3 4"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `//` يُعطي القسمة الصحيحة: 17 // 5 = 3. المعامل `%` يُعطي الباقي: 17 % 5 = 2. لذا الناتج هو \"3 2\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المعاملات",
+      "المقارنة"
+    ],
+    "question": "التعبير `10 != 10` يُقيَّم إلى `True` في Python.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `!=` يتحقق مما إذا كانت قيمتان غير متساويتين. بما أن 10 تساوي 10، فهما ليستا مختلفتين، لذا التعبير يُقيَّم إلى `False`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الشروط",
+      "عبارة if"
+    ],
+    "question": "لتنفيذ الكود فقط عندما يكون الشرط صحيحاً، تستخدم Python عبارة _______.",
+    "choices": [
+      "for",
+      "while",
+      "def",
+      "if"
+    ],
+    "ans_idx": 3,
+    "justification": "تُستخدم عبارة `if` للتنفيذ الشرطي في Python. الكود داخل كتلة if يعمل فقط عندما يُقيَّم الشرط المحدد إلى True.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الشروط",
+      "عبارة elif"
+    ],
+    "question": "ما هو الغرض من الكلمة المفتاحية `elif` في Python؟",
+    "choices": [
+      "لإنشاء حلقة",
+      "لتعريف دالة",
+      "للتحقق من شرط آخر إذا كان شرط if السابق خاطئاً",
+      "لإنهاء عبارة if"
+    ],
+    "ans_idx": 2,
+    "justification": "الكلمة المفتاحية `elif` (else if) تسمح لك بالتحقق من شروط متعددة بالتسلسل. إذا كان شرط `if` الأولي خاطئاً، تتحقق Python من شرط `elif` التالي.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الشروط",
+      "المنطق البولياني"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\nage = 16\nhas_license = False\n\nif age >= 18 and has_license:\n    print(\"Can drive\")\nelif age >= 16:\n    print(\"Can get permit\")\nelse:\n    print(\"Too young\")\n```",
+    "choices": [
+      "Can drive",
+      "خطأ",
+      "Too young",
+      "Can get permit"
+    ],
+    "ans_idx": 3,
+    "justification": "الشرط الأول يتطلب أن يكون كلا الشرطين age >= 18 و has_license صحيحين. العمر 16، لذا يفشل هذا. يتحقق elif من age >= 16، وهو صحيح (16 >= 16)، لذا يُطبع \"Can get permit\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "القوائم",
+      "دوال القوائم"
+    ],
+    "question": "ما سيكون محتوى القائمة بعد تنفيذ هذا الكود؟\n\n```python\ncolors = [\"red\", \"green\", \"blue\"]\ncolors.remove(\"green\")\n```",
+    "choices": [
+      "[\"red\", \"blue\"]",
+      "[\"green\", \"blue\"]",
+      "[\"red\", \"green\", \"blue\"]",
+      "[\"red\", \"green\"]"
+    ],
+    "ans_idx": 0,
+    "justification": "دالة `remove()` تُزيل أول ظهور للقيمة المحددة من القائمة. بعد إزالة \"green\"، تحتوي القائمة على [\"red\", \"blue\"].",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "القوائم",
+      "الفهرسة السالبة"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\nnumbers = [10, 20, 30, 40, 50]\nprint(numbers[-2])\n```",
+    "choices": [
+      "20",
+      "50",
+      "40",
+      "30"
+    ],
+    "ans_idx": 2,
+    "justification": "الفهرسة السالبة في Python تعد من نهاية القائمة. الفهرس -1 هو العنصر الأخير (50)، والفهرس -2 هو العنصر قبل الأخير، وهو 40.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "القوائم",
+      "قابلية التغيير"
+    ],
+    "question": "في Python، يمكنك تغيير قيمة عنصر في قائمة بعد إنشاء القائمة.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "القوائم في Python قابلة للتغيير، مما يعني أنه يمكن تعديل عناصرها بعد الإنشاء. على سبيل المثال، `my_list[0] = \"new_value\"` يُغيّر العنصر الأول.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحلقات",
+      "حلقة for",
+      "التكرار"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\nfor i in range(1, 4):\n    print(i)\n```",
+    "choices": [
+      "0\\n1\\n2\\n3",
+      "1\\n2\\n3\\n4",
+      "0\\n1\\n2",
+      "1\\n2\\n3"
+    ],
+    "ans_idx": 3,
+    "justification": "دالة `range(1, 4)` تُولّد أرقاماً تبدأ من 1 حتى (ولكن لا تشمل) 4. لذا تُنتج 1، 2، 3، التي تُطبع على أسطر منفصلة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الحلقات",
+      "الحلقة مع القائمة"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\ntotal = 0\nnumbers = [1, 2, 3, 4]\nfor num in numbers:\n    total += num\nprint(total)\n```",
+    "choices": [
+      "4",
+      "10",
+      "0",
+      "1234"
+    ],
+    "ans_idx": 1,
+    "justification": "تتكرر الحلقة عبر كل رقم في القائمة وتُضيفه إلى total. بدءاً من 0: 0+1=1، 1+2=3، 3+3=6، 6+4=10. المجموع النهائي هو 10.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "الحلقات",
+      "حلقة while"
+    ],
+    "question": "حلقة _______ تستمر في التنفيذ طالما يظل شرطها صحيحاً.",
+    "choices": [
+      "if",
+      "def",
+      "while",
+      "for"
+    ],
+    "ans_idx": 2,
+    "justification": "حلقة `while` تُنفذ كتلة الكود الخاصة بها بشكل متكرر طالما يُقيَّم الشرط المحدد إلى True. تتوقف عندما يصبح الشرط False.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "الحلقة اللانهائية"
+    ],
+    "question": "ما الخطأ في هذا الكود؟\n\n```python\nx = 5\nwhile x > 0:\n    print(x)\n```",
+    "choices": [
+      "يجب أن تكون print(x) خارج الحلقة",
+      "يجب أن يستخدم الشرط >= بدلاً من >",
+      "يُنشئ حلقة لانهائية لأن x لا تُنقص أبداً",
+      "يجب تهيئة x إلى 0"
+    ],
+    "ans_idx": 2,
+    "justification": "بما أن x تبدأ بـ 5 ولا تتغير أبداً داخل الحلقة، فإن الشرط x > 0 سيكون دائماً صحيحاً، مما يُسبب تشغيل الحلقة إلى الأبد (حلقة لانهائية). الإصلاح هو إضافة `x -= 1` داخل الحلقة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "توقع الناتج"
+    ],
+    "question": "توقع طالب أن يطبع هذا الكود 5، لكنه يطبع 4. ما هو الخطأ؟\n\n```python\ncount = 0\nfor i in range(4):\n    count += 1\nprint(count)\n```",
+    "choices": [
+      "يجب أن تكون print داخل الحلقة",
+      "المعامل += غير صحيح",
+      "range(4) تتكرر 4 مرات فقط، وليس 5؛ يجب استخدام range(5)",
+      "يجب أن تبدأ count بـ 1 بدلاً من 0"
+    ],
+    "ans_idx": 2,
+    "justification": "دالة `range(4)` تُنتج القيم 0، 1، 2، 3 (4 تكرارات). إذا أراد الطالب 5 تكرارات، يجب استخدام `range(5)` التي تُنتج 0، 1، 2، 3، 4.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "الروبوتات",
+      "المستشعرات"
+    ],
+    "question": "تسمح المستشعرات للروبوتات بجمع معلومات عن بيئتها والاستجابة وفقاً لذلك.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "المستشعرات هي مكونات أساسية تُمكّن الروبوتات من إدراك محيطها—اكتشاف العوائق، قياس المسافات، التعرف على الألوان، والمزيد—مما يسمح لها باتخاذ قرارات مستنيرة والتفاعل مع التغييرات.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحركة",
+      "تخطيط المسار"
+    ],
+    "question": "يحتاج روبوت لرسم مربع بأضلاع طولها 50 وحدة. أي تسلسل أوامر يجب تكراره 4 مرات؟",
+    "choices": [
+      "التحرك للأمام 50، الدوران يميناً 45°",
+      "التحرك للأمام 50، الدوران يميناً 90°",
+      "الدوران يميناً 90°، التحرك للأمام 100",
+      "التحرك للأمام 25، الدوران يميناً 90°، التحرك للأمام 25"
+    ],
+    "ans_idx": 1,
+    "justification": "المربع له 4 أضلاع متساوية و4 زوايا قائمة (90°). لرسمه، يتحرك الروبوت للأمام بطول ضلع واحد (50 وحدة)، ثم يدور 90°. تكرار هذا 4 مرات يُكمل المربع.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "مستشعر الاصطدام",
+      "كشف اللمس"
+    ],
+    "question": "يتم تنشيط مستشعر الاصطدام عندما _______ الروبوت عائقاً.",
+    "choices": [
+      "يرى",
+      "يشم",
+      "يلمس فعلياً",
+      "يسمع"
+    ],
+    "ans_idx": 2,
+    "justification": "مستشعر الاصطدام هو مستشعر لمسي يكتشف التلامس الجسدي. عندما يصطدم الروبوت بشيء ما، يُضغط المستشعر/يُنشط، مما يُفعّل استجابة مبرمجة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر العين",
+      "كشف الأجسام",
+      "الأتمتة"
+    ],
+    "question": "يستخدم روبوت فرز مستشعر عين لكشف ألوان الأجسام. الكود هو:\n\n```\nwhile True:\n    color = eye_sensor.detect()\n    if color == \"RED\":\n        move_to_bin_A()\n    elif color == \"BLUE\":\n        move_to_bin_B()\n    else:\n        move_to_bin_C()\n```\n\nأين سيتم وضع جسم أصفر؟",
+    "choices": [
+      "الصندوق C",
+      "الصندوق B",
+      "الصندوق A",
+      "لن يتم فرزه"
+    ],
+    "ans_idx": 0,
+    "justification": "الأصفر ليس أحمر ولا أزرق، لذا شرطا `if` و `elif` كلاهما خاطئان. يتم تنفيذ كتلة `else`، مما يُرسل الجسم الأصفر إلى الصندوق C.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "البرمجة",
+      "تنفيذ الكود"
+    ],
+    "question": "بأي ترتيب يُنفذ الحاسوب عادةً سطور الكود في برنامج Python؟",
+    "choices": [
+      "من أعلى إلى أسفل، سطراً بسطر",
+      "بترتيب عشوائي",
+      "جميع السطور في نفس الوقت",
+      "من أسفل إلى أعلى"
+    ],
+    "ans_idx": 0,
+    "justification": "تُنفذ Python الكود بشكل تسلسلي من أعلى إلى أسفل، سطراً بسطر، ما لم تُغيّر هياكل التحكم (مثل الحلقات أو الشروط) تدفق التنفيذ.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المتغيرات",
+      "اصطلاحات التسمية"
+    ],
+    "question": "في Python، يمكن أن تبدأ أسماء المتغيرات برقم، مثل `2name`.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 1,
+    "justification": "يجب أن تبدأ أسماء المتغيرات في Python بحرف (a-z, A-Z) أو شرطة سفلية (_). لا يمكن أن تبدأ برقم. `2name` سيُسبب خطأ نحوي.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "دالة print",
+      "الإخراج"
+    ],
+    "question": "لعرض الرسالة \"Hello\" على الشاشة في Python، تستخدم دالة _______.",
+    "choices": [
+      "input()",
+      "show()",
+      "print()",
+      "display()"
+    ],
+    "ans_idx": 2,
+    "justification": "تُستخدم دالة `print()` في Python لإخراج النص أو القيم إلى وحدة التحكم. على سبيل المثال، `print(\"Hello\")` تعرض \"Hello\" على الشاشة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "دالة input",
+      "إدخال المستخدم"
+    ],
+    "question": "ما هو نوع البيانات للقيمة التي تُرجعها دالة `input()` في Python؟",
+    "choices": [
+      "boolean",
+      "string",
+      "float",
+      "integer"
+    ],
+    "ans_idx": 1,
+    "justification": "دالة `input()` تُرجع دائماً سلسلة نصية، حتى لو أدخل المستخدم رقماً. لاستخدامها كرقم، يجب تحويلها باستخدام `int()` أو `float()`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المتغيرات",
+      "الإسناد",
+      "التبديل"
+    ],
+    "question": "ما ستكون قيم `a` و `b` بعد تشغيل هذا الكود؟\n\n```python\na = 10\nb = 20\na, b = b, a\n```",
+    "choices": [
+      "a = 20, b = 20",
+      "a = 20, b = 10",
+      "a = 10, b = 10",
+      "a = 10, b = 20"
+    ],
+    "ans_idx": 1,
+    "justification": "تسمح Python بالإسناد المتزامن. العبارة `a, b = b, a` تُبدّل القيم: a تحصل على قيمة b (20) و b تحصل على قيمة a الأصلية (10).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "ربط السلاسل النصية"
+    ],
+    "question": "في Python، يمكن استخدام المعامل `+` لربط سلسلتين نصيتين معاً.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `+` يُجري عملية الربط عند استخدامه مع السلاسل النصية. على سبيل المثال، `\"Hello\" + \" World\"` ينتج عنه `\"Hello World\"`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "المعاملات",
+      "عمليات السلاسل النصية"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\nword = \"AI\"\nprint(word * 3)\n```",
+    "choices": [
+      "AI3",
+      "AI AI AI",
+      "AIAIAI",
+      "خطأ"
+    ],
+    "ans_idx": 2,
+    "justification": "في Python، ضرب سلسلة نصية في عدد صحيح يُكرر السلسلة بهذا العدد من المرات. `\"AI\" * 3` يُنتج `\"AIAIAI\"` (السلسلة \"AI\" مكررة 3 مرات).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الشروط",
+      "المقارنة"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\ntemperature = 25\nif temperature > 30:\n    print(\"Hot\")\nelse:\n    print(\"Cool\")\n```",
+    "choices": [
+      "Cool",
+      "25",
+      "Hot",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "بما أن temperature (25) ليست أكبر من 30، الشرط خاطئ. يتم تنفيذ كتلة else، وتُطبع \"Cool\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الشروط",
+      "المعاملات المنطقية"
+    ],
+    "question": "للتحقق مما إذا كان كلا الشرطين صحيحين في Python، تستخدم المعامل _______.",
+    "choices": [
+      "and",
+      "is",
+      "not",
+      "or"
+    ],
+    "ans_idx": 0,
+    "justification": "المعامل `and` يُرجع True فقط عندما يكون كلا الشرطين صحيحين. على سبيل المثال، `if x > 0 and x < 10:` يكون صحيحاً فقط إذا كانت x بين 0 و 10.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الشروط",
+      "معامل or"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\nday = \"Saturday\"\nif day == \"Saturday\" or day == \"Sunday\":\n    print(\"Weekend\")\nelse:\n    print(\"Weekday\")\n```",
+    "choices": [
+      "Weekend",
+      "Saturday",
+      "Weekday",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "المعامل `or` يُرجع True إذا كان شرط واحد على الأقل صحيحاً. بما أن day تساوي \"Saturday\"، الشرط الأول صحيح، لذا تُطبع \"Weekend\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "القوائم",
+      "القائمة الفارغة"
+    ],
+    "question": "يتم إنشاء قائمة فارغة في Python باستخدام `[]`.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "يمكن إنشاء قائمة فارغة باستخدام أقواس مربعة فارغة `[]` أو باستدعاء `list()`. كلتا الطريقتين تُنشئ قائمة بدون عناصر.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "القوائم",
+      "التقطيع"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\nletters = [\"a\", \"b\", \"c\", \"d\", \"e\"]\nprint(letters[1:4])\n```",
+    "choices": [
+      "[\"a\", \"b\", \"c\"]",
+      "[\"b\", \"c\", \"d\"]",
+      "[\"a\", \"b\", \"c\", \"d\"]",
+      "[\"b\", \"c\", \"d\", \"e\"]"
+    ],
+    "ans_idx": 1,
+    "justification": "تقطيع القائمة `[1:4]` يستخرج العناصر من الفهرس 1 حتى (ولكن لا يشمل) الفهرس 4. هذا يُعطي الفهارس 1، 2، 3 وهي \"b\"، \"c\"، \"d\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "القوائم",
+      "معامل in"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\nif \"mango\" in fruits:\n    print(\"Found\")\nelse:\n    print(\"Not found\")\n```",
+    "choices": [
+      "خطأ",
+      "Not found",
+      "mango",
+      "Found"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `in` يتحقق مما إذا كان عنصر موجوداً في قائمة. بما أن \"mango\" ليست في قائمة fruits، الشرط خاطئ، ويتم طباعة \"Not found\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "الحلقات",
+      "التكرار"
+    ],
+    "question": "تُستخدم حلقة _______ عندما تعرف مسبقاً كم مرة تريد تكرار كتلة من الكود.",
+    "choices": [
+      "for",
+      "if",
+      "while",
+      "else"
+    ],
+    "ans_idx": 0,
+    "justification": "تُستخدم حلقة `for` عادةً عندما يكون عدد التكرارات معروفاً، مثل التكرار على قائمة أو نطاق من الأرقام. تُستخدم حلقة `while` عندما يعتمد عدد التكرارات على شرط.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحلقات",
+      "دالة range"
+    ],
+    "question": "ما هي القيم التي تُولدها `range(2, 10, 2)`؟",
+    "choices": [
+      "2, 4, 6, 8",
+      "2, 4, 6, 8, 10",
+      "0, 2, 4, 6, 8",
+      "2, 3, 4, 5, 6, 7, 8, 9"
+    ],
+    "ans_idx": 0,
+    "justification": "دالة `range(2, 10, 2)` تبدأ من 2، تنتهي قبل 10، وتتقدم بمقدار 2. تُولد: 2، 4، 6، 8 (10 غير مشمول).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الحلقات",
+      "الحلقات المتداخلة"
+    ],
+    "question": "كم مرة سيتم طباعة \"*\"؟\n\n```python\nfor i in range(3):\n    for j in range(2):\n        print(\"*\")\n```",
+    "choices": [
+      "6",
+      "3",
+      "5",
+      "2"
+    ],
+    "ans_idx": 0,
+    "justification": "الحلقة الخارجية تعمل 3 مرات (i = 0، 1، 2). لكل تكرار خارجي، الحلقة الداخلية تعمل مرتين (j = 0، 1). إجمالي الطباعة: 3 × 2 = 6.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "المسافة البادئة"
+    ],
+    "question": "في Python، المسافة البادئة غير الصحيحة يمكن أن تُسبب `IndentationError`.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "تستخدم Python المسافة البادئة لتحديد كتل الكود. المسافة البادئة غير الصحيحة أو غير المتسقة تُسبب IndentationError، على عكس العديد من اللغات الأخرى التي تستخدم الأقواس {}.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "خطأ منطقي"
+    ],
+    "question": "كتب طالب كوداً لإيجاد الأكبر بين عددين، لكنه يطبع دائماً العدد الأول. ما هو الخطأ؟\n\n```python\na = 5\nb = 10\nif a > b:\n    print(a)\nelse:\n    print(a)\n```",
+    "choices": [
+      "يجب تبديل المتغيرات",
+      "الشرط يجب أن يكون a >= b",
+      "كتلة else يجب أن تطبع b، وليس a",
+      "يجب استخدام return بدلاً من print"
+    ],
+    "ans_idx": 2,
+    "justification": "كلتا كتلتي if و else تطبعان `a`. كتلة else يجب أن تطبع `b` لأن هذه هي الحالة عندما تكون b أكبر من أو تساوي a.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "أنواع الأخطاء"
+    ],
+    "question": "عندما تحاول الوصول إلى `my_list[10]` لكن القائمة تحتوي على 5 عناصر فقط، تُثير Python _______.",
+    "choices": [
+      "SyntaxError",
+      "TypeError",
+      "IndexError",
+      "ValueError"
+    ],
+    "ans_idx": 2,
+    "justification": "يحدث IndexError عندما تحاول الوصول إلى فهرس غير موجود في القائمة. مع 5 عناصر، الفهارس الصالحة هي 0-4، لذا الوصول للفهرس 10 يُثير IndexError.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "الروبوتات",
+      "فوائد الأتمتة"
+    ],
+    "question": "أي مما يلي يُعتبر ميزة لاستخدام الروبوتات في التصنيع؟",
+    "choices": [
+      "يمكنها اتخاذ قرارات إبداعية مثل البشر",
+      "لا تحتاج لأي برمجة",
+      "يمكنها العمل باستمرار دون تعب",
+      "يمكنها إصلاح نفسها تلقائياً"
+    ],
+    "ans_idx": 2,
+    "justification": "يمكن للروبوتات العمل على مدار الساعة دون إرهاق، مع الحفاظ على أداء متسق. لا تزال تحتاج للبرمجة والصيانة، واتخاذ القرارات الإبداعية يبقى قوة بشرية.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "VRVEX",
+      "المحاكاة"
+    ],
+    "question": "في VRVEX، يمكنك اختبار كود الروبوت في محاكاة قبل تشغيله على روبوت حقيقي.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "توفر VRVEX بيئة محاكاة افتراضية حيث يمكن للمبرمجين اختبار وتصحيح كود الروبوت قبل نشره على الأجهزة الحقيقية، مما يوفر الوقت ويمنع الأضرار المحتملة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحركة",
+      "حساب الزاوية"
+    ],
+    "question": "يحتاج روبوت للدوران بالكامل ومواجهة الاتجاه المعاكس. كم درجة يجب أن يدور؟",
+    "choices": [
+      "360",
+      "270",
+      "180",
+      "90"
+    ],
+    "ans_idx": 2,
+    "justification": "لمواجهة الاتجاه المعاكس (الدوران)، يحتاج الروبوت للدوران 180 درجة. دوران 90° هو زاوية قائمة، 360° هو دورة كاملة للعودة للاتجاه الأصلي، و270° ستواجه عمودياً على الاتجاه المعاكس.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر الاصطدام",
+      "معالجة الأحداث",
+      "المنطق الشرطي"
+    ],
+    "question": "روبوت لديه مستشعرات اصطدام أمامية وخلفية. الكود هو:\n\n```\nif front_bumper.pressed():\n    reverse(20)\n    turn_right(90)\nelif back_bumper.pressed():\n    move_forward(20)\n    turn_left(90)\nelse:\n    move_forward(5)\n```\n\nماذا يحدث إذا ضُغط المستشعر الأمامي؟",
+    "choices": [
+      "يرجع الروبوت 20 وحدة ويدور يميناً 90°",
+      "يتوقف الروبوت فوراً",
+      "يتحرك الروبوت للأمام 5 وحدات",
+      "يتحرك الروبوت للأمام 20 وحدة ويدور يساراً 90°"
+    ],
+    "ans_idx": 0,
+    "justification": "عندما يُضغط المستشعر الأمامي، الشرط الأول يكون صحيحاً. يُنفذ الروبوت `reverse(20)` للرجوع، ثم `turn_right(90)` لتغيير الاتجاه وتجنب العائق.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "مستشعر المسافة",
+      "كشف القرب"
+    ],
+    "question": "يقيس مستشعر المسافة _______ بين الروبوت والأجسام القريبة.",
+    "choices": [
+      "اللون",
+      "المسافة",
+      "درجة الحرارة",
+      "الصوت"
+    ],
+    "ans_idx": 1,
+    "justification": "يقيس مستشعر المسافة (غالباً فوق صوتي أو بالأشعة تحت الحمراء) بُعد الأجسام عن الروبوت، ويُرجع عادةً المسافة بالسنتيمترات أو البوصات.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر الموقع",
+      "نظام الإحداثيات",
+      "الملاحة"
+    ],
+    "question": "يستخدم روبوت مستشعر موقع ومُبرمج:\n\n```\ncurrent_x, current_y = location_sensor.get_position()\ntarget_x, target_y = 100, 100\n\nif current_x < target_x:\n    move_east()\nelif current_x > target_x:\n    move_west()\n\nif current_y < target_y:\n    move_north()\nelif current_y > target_y:\n    move_south()\n```\n\nإذا كان الروبوت في الموضع (50، 120)، في أي اتجاهات سيتحرك؟",
+    "choices": [
+      "غرباً وجنوباً",
+      "شرقاً وشمالاً",
+      "غرباً وشمالاً",
+      "شرقاً وجنوباً"
+    ],
+    "ans_idx": 3,
+    "justification": "الموضع الحالي هو (50، 120)، والهدف هو (100، 100). بما أن current_x (50) < target_x (100)، يتحرك شرقاً. بما أن current_y (120) > target_y (100)، يتحرك جنوباً.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "البرمجة",
+      "المفسر"
+    ],
+    "question": "Python هي لغة مُفسَّرة، مما يعني أن الكود يُنفَّذ سطراً بسطر دون الحاجة لترجمة البرنامج بالكامل أولاً.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "تستخدم Python مفسراً يقرأ وينفذ الكود سطراً بسطر أثناء التشغيل. هذا يختلف عن اللغات المُترجمة مثل C++ التي تحول البرنامج بالكامل إلى كود آلة قبل التنفيذ.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "الخوارزمية",
+      "حل المشكلات"
+    ],
+    "question": "أي مما يلي يصف بشكل أفضل لماذا الخوارزميات مهمة في البرمجة؟",
+    "choices": [
+      "تجعل البرنامج يعمل أسرع تلقائياً",
+      "تُغني عن الحاجة للاختبار",
+      "توفر خطة واضحة لحل المشكلة قبل كتابة الكود",
+      "مطلوبة فقط للبرامج المعقدة"
+    ],
+    "ans_idx": 2,
+    "justification": "تساعد الخوارزميات المبرمجين على التفكير في الحل منطقياً قبل كتابة الكود. توفر نهجاً منظماً لحل المشكلات، مما يجعل الكود أسهل للكتابة والفهم وتصحيح الأخطاء.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المتغيرات",
+      "أنواع البيانات"
+    ],
+    "question": "المتغير الذي يُخزن `True` أو `False` يُسمى نوع بيانات _______.",
+    "choices": [
+      "float",
+      "string",
+      "integer",
+      "boolean"
+    ],
+    "ans_idx": 3,
+    "justification": "boolean هو نوع بيانات يمكن أن يكون له قيمتان فقط: True أو False. يُستخدم عادةً للشروط والأعلام والعمليات المنطقية في البرمجة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "المتغيرات",
+      "حساسية حالة الأحرف"
+    ],
+    "question": "في Python، يتم التعامل مع `myVar` و `myvar` كنفس المتغير.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 1,
+    "justification": "Python حساسة لحالة الأحرف، مما يعني أن `myVar` و `myvar` يُعاملان كمتغيرين مختلفين. تكبير الأحرف مهم في أسماء المتغيرات.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "الأُس"
+    ],
+    "question": "ما هي نتيجة `2 ** 4` في Python؟",
+    "choices": [
+      "24",
+      "16",
+      "6",
+      "8"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `**` يُجري عملية الأُس في Python. `2 ** 4` تعني 2 مرفوعة للقوة 4، والتي تساوي 2 × 2 × 2 × 2 = 16.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "المقارنة"
+    ],
+    "question": "إلى ماذا سيُقيَّم هذا التعبير؟\n\n```python\nresult = (5 > 3) and (10 < 5)\nprint(result)\n```",
+    "choices": [
+      "5",
+      "True",
+      "False",
+      "خطأ"
+    ],
+    "ans_idx": 2,
+    "justification": "التعبير `(5 > 3)` صحيح، لكن `(10 < 5)` خاطئ. المعامل `and` يتطلب أن يكون كلا الشرطين صحيحين. بما أن أحدهما خاطئ، النتيجة False.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "المعاملات",
+      "معامل not"
+    ],
+    "question": "التعبير `not True` يُقيَّم إلى `False` في Python.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "المعامل `not` يعكس القيمة البوليانية. `not True` تصبح `False`، و `not False` تصبح `True`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الشروط",
+      "شروط متعددة"
+    ],
+    "question": "كم عدد عبارات `elif` التي يمكنك الحصول عليها في هيكل if-elif-else واحد في Python؟",
+    "choices": [
+      "خمسة كحد أقصى",
+      "ثلاثة كحد أقصى",
+      "واحدة فقط",
+      "بقدر ما تحتاج"
+    ],
+    "ans_idx": 3,
+    "justification": "تسمح Python بأي عدد من عبارات `elif` بين `if` و `else`. هذا يُمكّن من التحقق من شروط متعددة بالتتابع حتى يكون أحدها صحيحاً أو يتم الوصول لكتلة else.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "القوائم",
+      "الطول"
+    ],
+    "question": "لمعرفة كم عدد العناصر في قائمة، تستخدم دالة _______.",
+    "choices": [
+      "size()",
+      "length()",
+      "len()",
+      "count()"
+    ],
+    "ans_idx": 2,
+    "justification": "دالة `len()` تُرجع عدد العناصر في قائمة أو سلسلة نصية أو مجموعة أخرى. على سبيل المثال، `len([1, 2, 3])` تُرجع 3.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "القوائم",
+      "تعديل القائمة"
+    ],
+    "question": "ما هو ناتج هذا الكود؟\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nnumbers[2] = 10\nprint(numbers)\n```",
+    "choices": [
+      "[1, 10, 3, 4, 5]",
+      "[1, 2, 3, 10, 5]",
+      "[1, 2, 10, 4, 5]",
+      "[10, 2, 3, 4, 5]"
+    ],
+    "ans_idx": 2,
+    "justification": "الفهرس 2 يشير إلى العنصر الثالث (الفهرسة تبدأ من الصفر: 0، 1، 2). يتم استبدال القيمة في الفهرس 2 (التي كانت 3) بـ 10، مما ينتج [1, 2, 10, 4, 5].",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "الحلقات",
+      "عبارة break"
+    ],
+    "question": "تُستخدم عبارة `break` في Python للخروج من حلقة قبل إكمال جميع التكرارات.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "عبارة `break` تُنهي الحلقة التي تكون فيها فوراً وتستمر مع العبارة التالية بعد الحلقة. مفيدة للخروج مبكراً عند تحقق شرط معين.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الحلقات",
+      "عبارة break"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)\n```",
+    "choices": [
+      "0\\n1\\n2\\n3\\n4",
+      "3",
+      "0\\n1\\n2",
+      "0\\n1\\n2\\n3"
+    ],
+    "ans_idx": 2,
+    "justification": "تطبع الحلقة i للقيم 0، 1، 2. عندما تصبح i تساوي 3، تُنفذ عبارة `break` قبل الطباعة، وتخرج من الحلقة. لذا تُطبع فقط 0، 1، 2.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحلقات",
+      "عبارة continue"
+    ],
+    "question": "عبارة _______ تتخطى التكرار الحالي للحلقة وتنتقل إلى التكرار التالي.",
+    "choices": [
+      "break",
+      "pass",
+      "continue",
+      "return"
+    ],
+    "ans_idx": 2,
+    "justification": "عبارة `continue` تتخطى بقية التكرار الحالي للحلقة وتقفز إلى التكرار التالي. على عكس `break`، لا تخرج من الحلقة بالكامل.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "الحلقات",
+      "عبارة continue"
+    ],
+    "question": "ماذا سيطبع هذا الكود؟\n\n```python\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i)\n```",
+    "choices": [
+      "0\\n1\\n2\\n3\\n4",
+      "2",
+      "0\\n1",
+      "0\\n1\\n3\\n4"
+    ],
+    "ans_idx": 3,
+    "justification": "عندما تساوي i القيمة 2، تتخطى `continue` عبارة الطباعة لهذا التكرار. تستمر الحلقة مع i = 3 و i = 4. لذا تُطبع 0، 1، 3، 4 (يتم تخطي 2).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "TypeError"
+    ],
+    "question": "ما الخطأ الذي سينتجه هذا الكود؟\n\n```python\nage = \"25\"\nresult = age + 5\nprint(result)\n```",
+    "choices": [
+      "ValueError - قيمة غير صالحة",
+      "لا يوجد خطأ - يطبع 30",
+      "TypeError - لا يمكن جمع سلسلة نصية وعدد صحيح",
+      "SyntaxError - صياغة غير صالحة"
+    ],
+    "ans_idx": 2,
+    "justification": "لا تستطيع Python جمع سلسلة نصية (\"25\") وعدد صحيح (5) مباشرة. هذا يُسبب TypeError. لإصلاحه، حوّل السلسلة إلى int: `int(age) + 5`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "خطأ وقت التشغيل"
+    ],
+    "question": "يحدث خطأ وقت التشغيل أثناء تنفيذ البرنامج، وليس عند كتابة الكود.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "تحدث أخطاء وقت التشغيل أثناء تنفيذ البرنامج، مثل القسمة على صفر أو الوصول لفهرس غير صالح. تختلف عن الأخطاء النحوية التي تُكتشف قبل تشغيل البرنامج.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "تصحيح الأخطاء",
+      "ZeroDivisionError"
+    ],
+    "question": "محاولة قسمة رقم على صفر في Python تُثير _______.",
+    "choices": [
+      "TypeError",
+      "ZeroDivisionError",
+      "MathError",
+      "ValueError"
+    ],
+    "ans_idx": 1,
+    "justification": "القسمة على صفر غير معرفة رياضياً. تُثير Python خطأ ZeroDivisionError عند محاولة عمليات مثل `10 / 0` أو `10 // 0`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "الروبوتات",
+      "البرمجة"
+    ],
+    "question": "تتطلب جميع الروبوتات برمجة لأداء مهامها؛ لا يمكنها العمل بدون تعليمات.",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "ans_idx": 1,
+    "justification": "الروبوتات هي آلات تتبع تعليمات مبرمجة. بدون برمجة، لن يعرف الروبوت ما هي الإجراءات التي يجب اتخاذها أو كيفية الاستجابة لبيئته.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "تطبيقات الروبوتات",
+      "الاستخدام الواقعي"
+    ],
+    "question": "أي مما يلي ليس تطبيقاً شائعاً للروبوتات؟",
+    "choices": [
+      "كتابة الشعر والروايات الإبداعية",
+      "إجراء العمليات الجراحية",
+      "تجميع السيارات في المصانع",
+      "استكشاف البيئات الخطرة"
+    ],
+    "ans_idx": 0,
+    "justification": "تتفوق الروبوتات في المهام الجسدية مثل التصنيع والمساعدة في الجراحة واستكشاف المناطق الخطرة. الكتابة الإبداعية تتطلب خيالاً بشرياً وفهماً عاطفياً، وهو ما لا تستطيع الروبوتات تكراره حقاً.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "الحركة",
+      "الأوامر التسلسلية"
+    ],
+    "question": "يُنفذ روبوت هذه الأوامر:\n\n```\nmove_forward(30)\nturn_left(90)\nmove_forward(40)\nturn_left(90)\nmove_forward(30)\n```\n\nما الشكل الذي يُشبهه مسار الروبوت أكثر؟",
+    "choices": [
+      "ثلاثة أضلاع من مستطيل (شكل U)",
+      "خط مستقيم",
+      "مربع كامل",
+      "مثلث"
+    ],
+    "ans_idx": 0,
+    "justification": "يتحرك الروبوت للأمام 30، يدور 90° يساراً، يتحرك 40، يدور 90° يساراً مرة أخرى، ويتحرك 30. هذا يُنشئ ثلاثة أضلاع من مستطيل (أو شكل U)، وليس شكلاً مغلقاً كاملاً.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "مستشعر العين",
+      "الكشف"
+    ],
+    "question": "يمكن لمستشعر العين على الروبوت اكتشاف الألوان والأجسام أمامه.",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "ans_idx": 0,
+    "justification": "مستشعرات العين (مستشعرات الرؤية) تستخدم كاميرات أو مستشعرات ضوء لاكتشاف الألوان أو الأجسام أو الأنماط. تُمكّن الروبوتات من اتخاذ قرارات بناءً على ما \"تراه\" في بيئتها.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر المسافة",
+      "الحركة الشرطية"
+    ],
+    "question": "تمت برمجة روبوت بـ:\n\n```\nwhile True:\n    dist = distance_sensor.read()\n    if dist > 100:\n        set_speed(100)\n    elif dist > 50:\n        set_speed(50)\n    elif dist > 20:\n        set_speed(25)\n    else:\n        stop()\n```\n\nإذا كانت قراءة المسافة 35، بأي سرعة سيتحرك الروبوت؟",
+    "choices": [
+      "50",
+      "25",
+      "0 (متوقف)",
+      "100"
+    ],
+    "ans_idx": 1,
+    "justification": "مع dist = 35: الشرط الأول (35 > 100) خاطئ. الشرط الثاني (35 > 50) خاطئ. الشرط الثالث (35 > 20) صحيح، لذا يتم تنفيذ `set_speed(25)`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "المستشعرات",
+      "أجهزة الإدخال"
+    ],
+    "question": "في الروبوتات، تعمل المستشعرات كأجهزة _______ تجمع المعلومات من البيئة.",
+    "choices": [
+      "معالجة",
+      "تخزين",
+      "إخراج",
+      "إدخال"
+    ],
+    "ans_idx": 3,
+    "justification": "المستشعرات هي أجهزة إدخال تجمع البيانات من محيط الروبوت (المسافة، اللمس، اللون، إلخ). ثم يُعالج برنامج الروبوت هذه البيانات لتحديد الإجراءات المناسبة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعر الموقع",
+      "الملاحة بالإحداثيات",
+      "حساب المسافة"
+    ],
+    "question": "روبوت في الموضع (0، 0) يحتاج للوصول إلى الموضع (30، 40). إذا كان يستطيع التحرك أفقياً أو رأسياً فقط (وليس قطرياً)، ما هي أقل مسافة إجمالية يجب أن يقطعها؟",
+    "choices": [
+      "35 وحدة",
+      "100 وحدة",
+      "70 وحدة",
+      "50 وحدة"
+    ],
+    "ans_idx": 2,
+    "justification": "بالتحرك أفقياً ورأسياً فقط (مسافة مانهاتن)، يجب على الروبوت قطع 30 وحدة في اتجاه x و40 وحدة في اتجاه y. الإجمالي: 30 + 40 = 70 وحدة.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "مستشعرات متعددة",
+      "منطق معقد"
+    ],
+    "question": "يستخدم روبوت كلاً من مستشعر الاصطدام ومستشعر المسافة:\n\n```\nwhile True:\n    if bumper.pressed():\n        stop()\n        reverse(15)\n    elif distance_sensor.read() < 30:\n        slow_down()\n        turn_right(45)\n    else:\n        move_forward()\n```\n\nماذا يحدث إذا لم يكن المستشعر مضغوطاً وقراءة مستشعر المسافة 25؟",
+    "choices": [
+      "لا يفعل شيئاً",
+      "يتحرك للأمام",
+      "يتوقف ويرجع 15 وحدة",
+      "يُبطئ ويدور يميناً 45°"
+    ],
+    "ans_idx": 3,
+    "justification": "المستشعر غير مضغوط، لذا `if` الأول خاطئ. المسافة (25) أقل من 30، لذا شرط `elif` صحيح. يُبطئ الروبوت ويدور يميناً 45°.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  }
+]

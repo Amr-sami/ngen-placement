@@ -1,0 +1,1948 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "العتاد"
+    ],
+    "question": "لوحة المفاتيح هي عتاد لأنك تستطيع لمسها! 🎹",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "العتاد هو أي شيء يمكنك لمسه في الكمبيوتر. لوحة المفاتيح شيء يمكنك لمسه، لذلك هي عتاد!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الكمبيوتر",
+      "التعريف"
+    ],
+    "question": "ما هو الكمبيوتر؟ 💻",
+    "choices": [
+      "سيارة لعبة",
+      "نوع من الطعام",
+      "حيوان أليف",
+      "آلة تساعدنا على فعل الأشياء"
+    ],
+    "justification": "الكمبيوتر هو آلة ذكية تساعدنا على فعل أشياء كثيرة مثل التعلم واللعب والتحدث مع الأصدقاء!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "البرمجيات"
+    ],
+    "question": "لعبة الفيديو على الكمبيوتر هي برمجيات! 🎮",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "البرمجيات هي برامج تعمل داخل الكمبيوتر. الألعاب هي برامج، لذلك هي برمجيات! لا يمكنك لمس البرمجيات.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تكبير",
+      "النوافذ"
+    ],
+    "question": "تريد أن تجعل نافذة اللعبة تملأ الشاشة كلها! 🖥️ أي زر يجب أن تضغط؟",
+    "choices": [
+      "زر التكبير (المربع)",
+      "زر X",
+      "لوحة المفاتيح",
+      "زر التصغير (الخط)"
+    ],
+    "justification": "زر التكبير يشبه المربع ويجعل النافذة تملأ الشاشة كلها. إنه في الزاوية العلوية اليمنى!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تصغير",
+      "النوافذ"
+    ],
+    "question": "عندما تضغط على تصغير، تذهب النافذة إلى _____ الشاشة. 📍",
+    "choices": [
+      "أعلى",
+      "أسفل",
+      "تُحذف للأبد",
+      "داخل لوحة المفاتيح"
+    ],
+    "justification": "التصغير يُخفي النافذة في أسفل الشاشة في شريط المهام. إنها لا تزال موجودة، فقط تختبئ!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "العتاد",
+      "أجزاء الكمبيوتر"
+    ],
+    "question": "أيهم عتاد؟ 🤔",
+    "choices": [
+      "الفأرة",
+      "موقع إنترنت",
+      "لعبة فيديو",
+      "تطبيق رسم"
+    ],
+    "justification": "الفأرة هي عتاد لأنك تستطيع لمسها! الألعاب والتطبيقات والمواقع كلها برمجيات تعمل داخل الكمبيوتر.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "القرص C",
+      "التخزين"
+    ],
+    "question": "القرص C: هو المكان الذي يحفظ فيه الكمبيوتر ملفاته المهمة! 💾",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "القرص C: مثل صندوق تخزين كبير يحفظ فيه الكمبيوتر برامجه وملفاته المهمة!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "إغلاق التطبيق",
+      "زر X"
+    ],
+    "question": "انتهيت من اللعب وتريد إغلاق اللعبة. ماذا تضغط؟ 🎮",
+    "choices": [
+      "عجلة الفأرة",
+      "الشاشة",
+      "شريط المسافة",
+      "زر X"
+    ],
+    "justification": "زر X في الزاوية العلوية اليمنى يُغلق التطبيق تماماً. دائماً اضغط X عندما تنتهي!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "التبديل بين النوافذ",
+      "Alt+Tab"
+    ],
+    "question": "لديك تطبيق رسم ولعبة مفتوحان. كيف يمكنك التبديل بينهما بسرعة؟ ✨",
+    "choices": [
+      "اضغط على شريط المهام أو استخدم Alt+Tab",
+      "اشترِ كمبيوتر جديد",
+      "أغلق التطبيقين",
+      "أطفئ الكمبيوتر"
+    ],
+    "justification": "يمكنك الضغط على التطبيق في شريط المهام في الأسفل، أو الضغط على Alt+Tab للتبديل بين النوافذ المفتوحة بسرعة!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الكمبيوتر",
+      "الفائدة"
+    ],
+    "question": "الكمبيوتر يساعدنا على التعلم واللعب والتحدث مع الأصدقاء! 🌟",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "الكمبيوتر مفيد جداً! يساعدنا على تعلم أشياء جديدة ولعب ألعاب ممتعة والتواصل مع الأشخاص الذين نحبهم.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "فتح التطبيقات",
+      "النقر المزدوج"
+    ],
+    "question": "لفتح تطبيق على سطح المكتب، تقوم بـ _____ على أيقونته. 🖱️",
+    "choices": [
+      "إغلاق عينيك",
+      "النقر المزدوج",
+      "الضغط على الشاشة بقوة",
+      "هز الفأرة"
+    ],
+    "justification": "النقر المزدوج يعني الضغط على زر الفأرة مرتين بسرعة. هذه هي طريقة فتح التطبيقات والملفات!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "العتاد",
+      "البرمجيات",
+      "التمييز"
+    ],
+    "question": "صديقك يقول 'تطبيق اللعبة هو عتاد!' هل صديقك على حق؟ 🤔",
+    "choices": [
+      "نعم، لأن الألعاب ممتعة",
+      "لا، تطبيق اللعبة برمجيات لأنك لا تستطيع لمسه",
+      "لا، لأن الألعاب مملة",
+      "نعم، لأن الألعاب على الكمبيوتر"
+    ],
+    "justification": "صديقك مخطئ! العتاد هو الأشياء التي يمكنك لمسها (مثل لوحة المفاتيح). البرمجيات هي برامج لا يمكنك لمسها (مثل الألعاب والتطبيقات).",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تحريك النوافذ",
+      "شريط العنوان"
+    ],
+    "question": "لتحريك نافذة، تضغط وتسحب _____ في الأعلى. 🪟",
+    "choices": [
+      "شريط العنوان",
+      "زاوية الشاشة",
+      "زر X",
+      "لوحة المفاتيح"
+    ],
+    "justification": "شريط العنوان هو الشريط في أعلى النافذة. اضغط واسحبه لتحريك النافذة أينما تريد!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المجلد",
+      "الملف",
+      "الفرق"
+    ],
+    "question": "المجلد يشبه ماذا؟ 📁",
+    "choices": [
+      "أغنية",
+      "لعبة واحدة",
+      "صورة",
+      "صندوق ألعاب يحمل الألعاب"
+    ],
+    "justification": "المجلد مثل صندوق الألعاب! يحمل أشياء كثيرة (ملفات) بداخله، تماماً مثل صندوق الألعاب الذي يحمل ألعاباً كثيرة.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "التنظيم",
+      "الأهمية"
+    ],
+    "question": "تنظيم الملفات يساعدنا على إيجاد الأشياء بسرعة! 🔍",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "عندما ننظم الملفات في مجلدات، يمكننا إيجادها بسهولة. إنه مثل وضع ألعابك في الأماكن الصحيحة!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "أسماء الملفات",
+      "التسمية الجيدة"
+    ],
+    "question": "أيهم اسم جيد لملف فيه رسوماتك؟ 🎨",
+    "choices": [
+      "asdfgh",
+      "رسوماتي",
+      "أشياء",
+      "مجلد جديد (2)"
+    ],
+    "justification": "أسماء الملفات الجيدة تخبرك ما بداخلها! 'رسوماتي' واضح وسهل الفهم. الأسماء الأخرى مربكة.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "امتداد الملف",
+      "أنواع الملفات"
+    ],
+    "question": "الحروف بعد النقطة في اسم الملف (مثل .txt) تُسمى _____ الملف. 📄",
+    "choices": [
+      "لعبة",
+      "كلمة مرور",
+      "لون",
+      "امتداد"
+    ],
+    "justification": "امتداد الملف (مثل .txt، .png، .jpg) يُخبر الكمبيوتر عن نوع الملف!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "إنشاء مجلد",
+      "الخطوات"
+    ],
+    "question": "كيف تُنشئ مجلداً جديداً على سطح المكتب؟ 📁✨",
+    "choices": [
+      "اضغط كل المفاتيح معاً",
+      "اصرخ على الكمبيوتر",
+      "انقر بالزر الأيمن، ثم اختر جديد، ثم مجلد",
+      "هز الفأرة بسرعة كبيرة"
+    ],
+    "justification": "لإنشاء مجلد جديد، انقر بالزر الأيمن على سطح المكتب، اضغط 'جديد'، ثم اضغط 'مجلد'. بعدها يمكنك تسميته!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "مسار الملف",
+      "العنوان"
+    ],
+    "question": "مسار الملف يشبه _____. يُخبرنا أين يعيش الملف! 🏠",
+    "choices": [
+      "كلمة مرور سرية",
+      "نتيجة لعبة",
+      "صورة جميلة",
+      "عنوان المنزل للملفات"
+    ],
+    "justification": "مسار الملف (مثل C:\\Users\\Student\\Pictures) يشبه عنوان المنزل. يُخبرنا بالضبط أين نجد الملف!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "امتداد الملف",
+      ".txt"
+    ],
+    "question": "الملف الذي ينتهي بـ .txt هو ملف نصي! 📝",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "نعم! الامتداد .txt يعني أنه ملف نصي. مثل الملاحظات التي تكتبها في المفكرة!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المجلد",
+      "الحاوية"
+    ],
+    "question": "_____ يحمل ملفات ويمكن أن يحمل _____ أخرى بداخله! 📁📁",
+    "choices": [
+      "اللعبة، ألعاب",
+      "الفأرة، فئران",
+      "المجلد، مجلدات",
+      "الملف، ملفات"
+    ],
+    "justification": "المجلد يمكن أن يحمل ملفات ومجلدات أخرى بداخله! إنه مثل صندوق يمكن أن يحتوي على صناديق أصغر بداخله.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "امتداد الملف",
+      "ملفات الصور"
+    ],
+    "question": "أي امتداد ملف يعني أنه صورة؟ 🖼️",
+    "choices": [
+      ".png",
+      ".mp3",
+      ".docx",
+      ".txt"
+    ],
+    "justification": "الامتداد .png (و .jpg) للصور! .txt للنصوص، .docx لمستندات Word، و .mp3 للموسيقى.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "مسار الملف",
+      "الموقع"
+    ],
+    "question": "C:\\Users\\Ali\\Documents\\homework.txt يُخبرنا أن ملف الواجب في مجلد المستندات! 📂",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "المسار يُظهر لنا موقع الملف خطوة بخطوة: القرص C ← Users ← Ali ← Documents ← homework.txt",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المجلد",
+      "الملف",
+      "العلاقة"
+    ],
+    "question": "المجلدات يمكن أن تحمل ملفات كثيرة بداخلها! 📁🎉",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "نعم! المجلد مثل حاوية أو صندوق يمكنه حمل ملفات كثيرة. هذا يساعدنا على البقاء منظمين!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "أسماء الملفات",
+      "التسمية السيئة"
+    ],
+    "question": "سارة لديها 4 ملفات. أي اسم سيء وسيجعلها مرتبكة لاحقاً؟ 😵",
+    "choices": [
+      "مشروع المدرسة",
+      "صور عيد الميلاد",
+      "واجب الرياضيات",
+      "مجلد جديد (3)"
+    ],
+    "justification": "'مجلد جديد (3)' اسم سيء لأنه لا يُخبرك ما بداخله! الأسماء الجيدة تصف ما يحتويه الملف أو المجلد.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المفكرة",
+      "محرر النصوص"
+    ],
+    "question": "ما هي المفكرة على الكمبيوتر؟ 📝",
+    "choices": [
+      "تطبيق بسيط لكتابة النصوص",
+      "مشغل موسيقى",
+      "آلة حاسبة",
+      "لعبة مع تنانين"
+    ],
+    "justification": "المفكرة هي تطبيق بسيط يتيح لك كتابة النصوص. إنها مثل ورقة بيضاء فارغة على الكمبيوتر!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لوحة المفاتيح",
+      "جهاز إدخال"
+    ],
+    "question": "لوحة المفاتيح تُستخدم لكتابة الحروف والأرقام! 🎹",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! لوحة المفاتيح تحتوي على مفاتيح بحروف وأرقام ورموز نضغط عليها للكتابة على الكمبيوتر.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "نسخ",
+      "Ctrl+C"
+    ],
+    "question": "ماذا يفعل Ctrl+C؟ ✨",
+    "choices": [
+      "إنشاء مجلد",
+      "نسخ شيء",
+      "إغلاق الكمبيوتر",
+      "تغيير اللون"
+    ],
+    "justification": "Ctrl+C هو اختصار النسخ! يصنع نسخة مما حددته، مثل صنع توأم لنصك أو صورتك.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لصق",
+      "Ctrl+V"
+    ],
+    "question": "نسخت صورة قطة 🐱. الآن تريد وضعها في مكان آخر. أي اختصار تستخدم؟",
+    "choices": [
+      "Ctrl+X",
+      "Ctrl+C",
+      "Ctrl+V",
+      "Ctrl+Z"
+    ],
+    "justification": "Ctrl+V هو اللصق! بعد نسخ شيء بـ Ctrl+C، تستخدم Ctrl+V لوضعه في مكان جديد.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "حفظ",
+      "Ctrl+S"
+    ],
+    "question": "لحفظ عملك حتى لا تفقده، اضغط _____! 💾",
+    "choices": [
+      "Ctrl+D",
+      "Ctrl+Q",
+      "Ctrl+P",
+      "Ctrl+S"
+    ],
+    "justification": "Ctrl+S هو اختصار الحفظ! دائماً احفظ عملك حتى تجده لاحقاً. S تعني Save أي حفظ!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "قص",
+      "Ctrl+X"
+    ],
+    "question": "Ctrl+X يُسمى قص لأنه ينقل شيئاً إلى مكان جديد (وليس نسخ)! ✂️",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "القص (Ctrl+X) يزيل العنصر من مكانه الأصلي ويتيح لك لصقه في مكان آخر. النسخ يصنع توأماً، لكن القص ينقله!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "النسخ مقابل القص",
+      "الفرق"
+    ],
+    "question": "ما الفرق بين النسخ (Ctrl+C) والقص (Ctrl+X)؟ 🤔",
+    "choices": [
+      "النسخ يحذف للأبد، القص يحفظ",
+      "القص يصنع توأماً، النسخ ينقل",
+      "هما نفس الشيء تماماً",
+      "النسخ يصنع توأماً، القص ينقل الأصل"
+    ],
+    "justification": "النسخ يُبقي الأصل ويصنع نسخة. القص يزيل الأصل وينقله إلى موقع جديد عندما تلصق!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الملاحظات",
+      "الغرض"
+    ],
+    "question": "لماذا نكتب ملاحظات على الكمبيوتر؟ 📝✨",
+    "choices": [
+      "لإطفاء الشاشة",
+      "لكسر لوحة المفاتيح",
+      "لتذكر المعلومات",
+      "لإغضاب الكمبيوتر"
+    ],
+    "justification": "نكتب الملاحظات لتذكر الأشياء! مثل الكتابة في دفتر، لكن على الكمبيوتر حتى نحفظها ونجدها بسهولة.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تبديل اللغة",
+      "Alt+Shift"
+    ],
+    "question": "للتبديل بين الإنجليزية والعربية على لوحة المفاتيح، اضغط _____! 🌍",
+    "choices": [
+      "Ctrl+C",
+      "Ctrl+V",
+      "Alt+Shift",
+      "Ctrl+S"
+    ],
+    "justification": "Alt+Shift هو الاختصار السحري الذي يُبدّل لغة لوحة المفاتيح بين الإنجليزية والعربية (أو لغات أخرى)!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لوحة المفاتيح",
+      "الأهمية"
+    ],
+    "question": "لوحة المفاتيح مهمة للكتابة واستخدام الاختصارات! ⌨️",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! نستخدم لوحة المفاتيح لكتابة الكلمات واستخدام اختصارات خاصة مثل Ctrl+C و Ctrl+V التي تجعل الأشياء أسرع!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "PDF",
+      "تنسيق الملف"
+    ],
+    "question": "لماذا نحفظ الملفات كـ PDF؟ 📄",
+    "choices": [
+      "يجعل الملفات تختفي",
+      "يبدو بنفس الشكل على كل كمبيوتر",
+      "يحذف صورك",
+      "يعمل فقط على الهواتف"
+    ],
+    "justification": "ملفات PDF تحافظ على نفس الشكل في كل مكان! سواء فتحتها على كمبيوتر أو جهاز لوحي أو هاتف، تبدو بنفس الشكل تماماً.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "حذف",
+      "لوحة المفاتيح"
+    ],
+    "question": "كتبت 'Helllo' بالخطأ وتريد إزالة الـ 'l' الزائدة. ماذا يجب أن تفعل؟ ❌",
+    "choices": [
+      "أطفئ الكمبيوتر",
+      "اشترِ لوحة مفاتيح جديدة",
+      "اضغط مفتاح Delete أو Backspace",
+      "أغلق عينيك"
+    ],
+    "justification": "مفتاح Delete أو Backspace يزيل الحروف أو الأحرف. Backspace يحذف لليسار، Delete يزيل لليمين!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الحفظ",
+      "الأهمية"
+    ],
+    "question": "إذا لم تحفظ عملك (Ctrl+S)، قد تفقد كل شيء إذا انطفأ الكمبيوتر! 😱",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "دائماً احفظ عملك! إذا انطفأ الكمبيوتر أو أُغلق التطبيق، العمل غير المحفوظ يختفي للأبد. اضغط Ctrl+S كثيراً!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الاختصارات",
+      "الترتيب"
+    ],
+    "question": "لنقل النص من مكان إلى آخر، أولاً _____ ثم _____ في المكان الجديد!",
+    "choices": [
+      "لصق، قص",
+      "قص (Ctrl+X)، لصق (Ctrl+V)",
+      "نسخ، حذف",
+      "حفظ، حذف"
+    ],
+    "justification": "لنقل شيء: أولاً اقصه (Ctrl+X) لإزالته، ثم الصقه (Ctrl+V) في الموقع الجديد!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "التعريف"
+    ],
+    "question": "ما هي لقطة الشاشة؟ 📸",
+    "choices": [
+      "صورة لما يظهر على شاشتك",
+      "شاشة مكسورة",
+      "لعبة",
+      "نوع من لوحة المفاتيح"
+    ],
+    "justification": "لقطة الشاشة مثل التقاط صورة لشاشة الكمبيوتر! تلتقط بالضبط ما تراه في تلك اللحظة.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "الغرض"
+    ],
+    "question": "لقطات الشاشة مفيدة لحفظ شيء تريد تذكره! 🌟",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "نعم! لقطات الشاشة تساعدك على حفظ الأشياء المهمة التي تراها على الشاشة، مثل إنجازات الألعاب أو الرسائل أو المعلومات!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "الطرق"
+    ],
+    "question": "أي زر يمكنه التقاط لقطة شاشة لشاشتك كلها؟ 📷",
+    "choices": [
+      "Caps Lock",
+      "شريط المسافة",
+      "Enter",
+      "Print Screen (PrtSc)"
+    ],
+    "justification": "زر Print Screen (PrtSc) يلتقط صورة لشاشتك بالكامل! يمكنك إيجاده في أعلى لوحة المفاتيح.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "الاستخدامات"
+    ],
+    "question": "حصلت على نتيجة عالية في لعبة! 🎮🏆 لماذا قد تأخذ لقطة شاشة؟",
+    "choices": [
+      "لحفظ وإظهار إنجازك",
+      "لتغيير النتيجة",
+      "لحذف اللعبة",
+      "لجعل الكمبيوتر أسرع"
+    ],
+    "justification": "لقطات الشاشة تتيح لك حفظ اللحظات الخاصة مثل النتائج العالية! يمكنك إظهارها للأصدقاء أو الاحتفاظ بها كذكرى لإنجازك.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "الموقع"
+    ],
+    "question": "عادةً يتم حفظ لقطات الشاشة في مجلد _____ على الكمبيوتر. 📁",
+    "choices": [
+      "الألعاب",
+      "سلة المهملات",
+      "الموسيقى",
+      "الصور"
+    ],
+    "justification": "لقطات الشاشة هي صور، لذا تذهب إلى مجلد الصور! ابحث في الصور > لقطات الشاشة لإيجادها.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "المشاركة"
+    ],
+    "question": "يمكنك إرسال لقطة شاشة لصديق أو معلم لتريهم ما تراه! 👫",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! لقطات الشاشة رائعة للمشاركة. يمكنك إرسالها لتري شخصاً ما الذي تراه على شاشتك!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "حل المشكلات"
+    ],
+    "question": "الكمبيوتر يُظهر رسالة خطأ غريبة! 🆘 كيف يمكن للقطة الشاشة أن تساعد؟",
+    "choices": [
+      "اجعل الخطأ يختفي",
+      "غيّر لون الكمبيوتر",
+      "أظهر الخطأ لشخص بالغ يمكنه المساعدة في إصلاحه",
+      "اجعل الخطأ أكبر"
+    ],
+    "justification": "أخذ لقطة شاشة للخطأ يساعد! يمكنك إظهارها لوالد أو معلم ليعرفوا بالضبط كيف تبدو المشكلة.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "أداة القص",
+      "لقطة الشاشة"
+    ],
+    "question": "لماذا تُستخدم أداة القص؟ ✂️📸",
+    "choices": [
+      "تشغيل الموسيقى",
+      "قص الورق",
+      "أخذ لقطات شاشة لجزء من الشاشة",
+      "حذف الملفات"
+    ],
+    "justification": "أداة القص تتيح لك اختيار بالضبط أي جزء من الشاشة تريد التقاطه، بدلاً من الشاشة كلها!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة شاشة ويندوز",
+      "اختصار"
+    ],
+    "question": "الضغط على Windows + Print Screen يأخذ لقطة شاشة و_____ تلقائياً! 💾📸",
+    "choices": [
+      "يحفظها",
+      "يطبعها على ورق",
+      "يرسلها للأصدقاء",
+      "يحذفها"
+    ],
+    "justification": "Windows + Print Screen مفيد جداً! يأخذ لقطة الشاشة ويحفظها في مجلد الصور تلقائياً.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لقطة الشاشة",
+      "صورة"
+    ],
+    "question": "لقطة الشاشة تلتقط بالضبط ما تراه على شاشتك في تلك اللحظة! 👀",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "لقطة الشاشة مثل كاميرا لشاشتك! تلتقط كل شيء يظهر في تلك اللحظة بالتحديد.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "نسخ",
+      "لصق",
+      "لقطة الشاشة"
+    ],
+    "question": "ضغطت Print Screen. الآن تريد وضع لقطة الشاشة في مستند. ماذا تضغط؟ 📋",
+    "choices": [
+      "Ctrl+X لقصها",
+      "Ctrl+S لحفظ المستند",
+      "Ctrl+C لنسخها مرة أخرى",
+      "Ctrl+V للصقها"
+    ],
+    "justification": "عندما تضغط Print Screen، يتم نسخ الصورة إلى الحافظة. اضغط Ctrl+V للصقها في مستند!",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المتصفح",
+      "التعريف"
+    ],
+    "question": "ما هو المتصفح؟ 🌐",
+    "choices": [
+      "زر في لوحة المفاتيح",
+      "لعبة كمبيوتر",
+      "نوع من الطعام",
+      "برنامج يتيح لنا زيارة المواقع"
+    ],
+    "justification": "المتصفح مثل باب سحري للإنترنت! إنه برنامج يتيح لنا زيارة المواقع ومشاهدة الفيديوهات على الإنترنت.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المتصفح",
+      "أمثلة"
+    ],
+    "question": "أيهم متصفح؟ 💻",
+    "choices": [
+      "المفكرة",
+      "الرسام",
+      "الآلة الحاسبة",
+      "Chrome"
+    ],
+    "justification": "Chrome هو متصفح من Google! متصفحات أخرى تشمل Firefox و Safari و Edge. المفكرة والآلة الحاسبة والرسام تطبيقات مختلفة.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المتصفح",
+      "الغرض"
+    ],
+    "question": "نستخدم المتصفح لمشاهدة فيديوهات YouTube وتعلم أشياء جديدة! 📺🌟",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! المتصفحات تساعدنا على زيارة مواقع مثل YouTube لمشاهدة الفيديوهات واللعب وتعلم أشياء رائعة!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "التبويب",
+      "المتصفح"
+    ],
+    "question": "ما هو التبويب في المتصفح؟ 📑",
+    "choices": [
+      "وحدة تحكم ألعاب",
+      "نوع من لوحة المفاتيح",
+      "فيروس كمبيوتر",
+      "طريقة لفتح مواقع كثيرة في نفس الوقت"
+    ],
+    "justification": "التبويبات مثل الإشارات المرجعية في كتاب! كل تبويب يمكن أن يُظهر موقعاً مختلفاً، فيمكنك فتح صفحات كثيرة معاً.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تبويب جديد",
+      "Ctrl+T"
+    ],
+    "question": "لفتح تبويب جديد في المتصفح، يمكنك الضغط على _____! 📑✨",
+    "choices": [
+      "Ctrl+S",
+      "Ctrl+C",
+      "Ctrl+V",
+      "Ctrl+T"
+    ],
+    "justification": "Ctrl+T يفتح تبويباً جديداً! حرف T يعني Tab أي تبويب. يمكنك أيضاً الضغط على زر + بجانب التبويبات.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "التكبير",
+      "المتصفح"
+    ],
+    "question": "الكلمات على الموقع صغيرة جداً! 🔍 كيف يمكنك جعلها أكبر؟",
+    "choices": [
+      "أغلق المتصفح",
+      "هز الفأرة",
+      "اضغط Ctrl ومفتاح +",
+      "أطفئ الشاشة"
+    ],
+    "justification": "Ctrl + Plus (+) يُكبّر ويجعل الأشياء أكبر! Ctrl + Minus (-) يجعل الأشياء أصغر. مفيد جداً!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "التحميل",
+      "التعريف"
+    ],
+    "question": "التحميل يعني الحصول على ملف من الإنترنت إلى الكمبيوتر! ⬇️",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "نعم! عندما تُحمّل شيئاً، أنت تجلب نسخة منه من الإنترنت لحفظها على الكمبيوتر.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "مجلد التحميلات",
+      "الموقع"
+    ],
+    "question": "حمّلت صورة من الإنترنت. أين يمكنك إيجادها؟ 📁🖼️",
+    "choices": [
+      "مجلد الموسيقى",
+      "مجلد سلة المهملات",
+      "مجلد التحميلات",
+      "تحت لوحة المفاتيح"
+    ],
+    "justification": "الملفات المُحمّلة تذهب إلى مجلد التحميلات! هذا هو المكان الذي يحفظ فيه الكمبيوتر كل شيء تحصل عليه من الإنترنت.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "سجل المتصفح",
+      "التعريف"
+    ],
+    "question": "ما هو سجل المتصفح؟ 📜",
+    "choices": [
+      "قائمة بالمواقع التي زرتها من قبل",
+      "لعبة فيديو",
+      "نوع من الكمبيوتر",
+      "كلمة مرور سرية"
+    ],
+    "justification": "سجل المتصفح مثل مذكرة للمواقع! يتذكر كل المواقع التي زرتها، حتى تتمكن من إيجادها مرة أخرى.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "استعادة التبويب",
+      "Ctrl+Shift+T"
+    ],
+    "question": "يا إلهي! أغلقت تبويباً بالخطأ! 😱 اضغط _____ لإعادته!",
+    "choices": [
+      "Ctrl+Shift+T",
+      "Ctrl+V",
+      "Ctrl+X",
+      "Ctrl+C"
+    ],
+    "justification": "Ctrl+Shift+T هو اختصار الإنقاذ السحري! يُعيد آخر تبويب أغلقته. T تعني Tab أي تبويب!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "البحث",
+      "المتصفح"
+    ],
+    "question": "كيف تبحث عن شيء في المتصفح؟ 🔍",
+    "choices": [
+      "اكتب ما تريد إيجاده واضغط Enter",
+      "هز الكمبيوتر",
+      "أغلق عينيك وتمنى",
+      "افصل لوحة المفاتيح"
+    ],
+    "justification": "للبحث، اكتب سؤالك أو ما تريد إيجاده في شريط العناوين، ثم اضغط Enter! المتصفح سيُظهر لك النتائج.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "النوافذ المنبثقة",
+      "الإعلانات"
+    ],
+    "question": "الإعلانات المنبثقة هي رسائل تظهر فجأة على المواقع، غالباً تحاول بيع شيء! 🪟",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "النوافذ المنبثقة هي نوافذ مفاجئة تظهر فجأة. كثير منها إعلانات تحاول جعلك تضغط أو تشتري شيئاً.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الإعلانات",
+      "الخطر"
+    ],
+    "question": "لماذا يمكن أن تكون الإعلانات على الإنترنت خطيرة؟ ⚠️",
+    "choices": [
+      "تساعدك على تعلم الرياضيات",
+      "قد تحتوي على فيروسات أو تخدعك لتضغط على أشياء سيئة",
+      "تجعل الكمبيوتر أسرع",
+      "تجعل الشاشة ملونة"
+    ],
+    "justification": "بعض الإعلانات يمكن أن تكون خطيرة! قد تحتوي على فيروسات أو تخدعك لتضغط على روابط سيئة أو تطلب معلوماتك الشخصية.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تجنب الإعلانات",
+      "السلامة"
+    ],
+    "question": "ظهر إعلان ملون يقول 'فزت بجائزة! اضغط هنا!' 🎁 ماذا يجب أن تفعل؟",
+    "choices": [
+      "اضغط عليه بسرعة للحصول على الجائزة",
+      "أعطهم عنوان منزلك",
+      "أخبر كل أصدقائك ليضغطوا أيضاً",
+      "لا تضغط عليه واسأل شخصاً بالغاً"
+    ],
+    "justification": "لا تضغط أبداً على إعلانات الجوائز المفاجئة! عادةً تكون خدعاً. دائماً اسأل والداً أو شخصاً بالغاً قبل الضغط على الإعلانات.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "مانع الإعلانات",
+      "السلامة"
+    ],
+    "question": "مانع الإعلانات (Adblock) هو أداة تساعد على إيقاف الإعلانات المزعجة من الظهور! 🛡️",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "مانع الإعلانات (Adblock) أداة مفيدة تحجب معظم الإعلانات، مما يجعل التصفح أكثر أماناً وأقل إزعاجاً. يمكن للوالدين تثبيته!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "النظام الثنائي",
+      "التعريف"
+    ],
+    "question": "ما هو النظام الثنائي؟ 🤖",
+    "choices": [
+      "نوع من ألعاب الفيديو",
+      "لغة خاصة بها فقط 0 و 1",
+      "لون للكمبيوتر",
+      "نوع من الروبوتات"
+    ],
+    "justification": "النظام الثنائي هو اللغة السرية للكمبيوتر! يستخدم رقمين فقط: 0 و 1. هكذا يفهم الكمبيوتر كل شيء!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "النظام الثنائي",
+      "الأرقام"
+    ],
+    "question": "النظام الثنائي به رقمان فقط: 0 و 1! 🔢",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! النظام الثنائي بسيط جداً - فقط 0 و 1. لكن الكمبيوتر يستخدم هذين الرقمين لفعل أشياء مذهلة!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "النظام الثنائي",
+      "لماذا"
+    ],
+    "question": "لماذا يستخدم الكمبيوتر النظام الثنائي (0 و 1)؟ 💡",
+    "choices": [
+      "لأن البشر أخبروهم بذلك",
+      "لأن الكهرباء إما مُشغّلة أو مُطفأة",
+      "لأن 0 و 1 جميلان",
+      "لأن الكمبيوتر يحب الأرقام الصغيرة"
+    ],
+    "justification": "الكمبيوتر يعمل بالكهرباء، التي إما مُشغّلة (1) أو مُطفأة (0). النظام الثنائي يتطابق مع هذا تماماً! مثل مفتاح الضوء.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "النظام الثنائي",
+      "تشغيل إطفاء"
+    ],
+    "question": "في النظام الثنائي، 1 تعني _____ و 0 تعني _____. 💡",
+    "choices": [
+      "لا، لا",
+      "نعم، نعم",
+      "تشغيل، إطفاء",
+      "إطفاء، تشغيل"
+    ],
+    "justification": "في النظام الثنائي: 1 = تشغيل/نعم/صحيح و 0 = إطفاء/لا/خطأ. تماماً مثل مفتاح الضوء - تشغيل أو إطفاء!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "لغة الكمبيوتر",
+      "النظام الثنائي"
+    ],
+    "question": "الكمبيوتر يفهم الإنجليزية والعربية تماماً مثلنا! 🗣️",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "الكمبيوتر يفهم فقط النظام الثنائي (0 و 1)! برامج خاصة تساعد في ترجمة كلماتنا إلى نظام ثنائي حتى يفهمها الكمبيوتر.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المشكلة",
+      "التعريف"
+    ],
+    "question": "ما هي المشكلة؟ 🤔",
+    "choices": [
+      "زر في لوحة المفاتيح",
+      "شيء يحتاج إلى إصلاح أو إنجاز",
+      "نوع من ألعاب الكمبيوتر",
+      "وجبة خفيفة لذيذة"
+    ],
+    "justification": "المشكلة هي شيء يحتاج إلى حل - مثل سؤال يحتاج إلى إجابة أو هدف نريد الوصول إليه!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "حل المشكلات",
+      "الخطوات"
+    ],
+    "question": "ما هي الخطوة الأولى لحل مشكلة؟ 🧩",
+    "choices": [
+      "فهم المشكلة",
+      "أغلق عينيك",
+      "اهرب بعيداً",
+      "استسلم فوراً"
+    ],
+    "justification": "قبل حل أي شيء، يجب أن تفهم المشكلة أولاً! اسأل نفسك: ما الخطأ؟ ماذا أحتاج أن أفعل؟",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "حل المشكلات",
+      "الخطوات"
+    ],
+    "question": "لحل مشكلة: 1) افهمها، 2) فكر في الحلول، 3) جرب الأفضل، 4) _____ إذا نجح! ✅",
+    "choices": [
+      "انسَ",
+      "تحقق",
+      "ابكِ",
+      "نم"
+    ],
+    "justification": "بعد تجربة حل، دائماً تحقق إذا نجح! إذا لم ينجح، جرب مرة أخرى بفكرة مختلفة. هذا هو حل المشكلات الذكي!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "حل المشكلات",
+      "مثال"
+    ],
+    "question": "صنع ساندويتش مثل حل مشكلة! ما هو الترتيب الصحيح؟ 🥪",
+    "choices": [
+      "أضف الجبن ← كل ← أغلق الساندويتش ← أحضر الخبز",
+      "أحضر الخبز ← أضف الجبن ← أغلق الساندويتش ← كل",
+      "كل ← أحضر الخبز ← أضف الجبن ← أغلق الساندويتش",
+      "أغلق الساندويتش ← كل ← أحضر الخبز ← أضف الجبن"
+    ],
+    "justification": "الخطوات يجب أن تكون بالترتيب الصحيح! أولاً أحضر الخبز، ثم أضف الجبن، أغلق الساندويتش، وأخيراً كله. الترتيب مهم!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "حل المشكلات",
+      "الأهمية"
+    ],
+    "question": "تعلم حل المشكلات يساعدنا في المدرسة وفي الحياة اليومية! 🌟🧠",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "حل المشكلات مهارة خارقة! تساعد في الواجبات المدرسية وإيجاد الألعاب المفقودة واتخاذ القرارات وحتى برمجة الكمبيوتر!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "البرمجة",
+      "التعريف"
+    ],
+    "question": "ما هي البرمجة؟ 💻✨",
+    "choices": [
+      "لعبة كمبيوتر",
+      "نوع من الساندويتش",
+      "إعطاء تعليمات للكمبيوتر",
+      "نوع من الموسيقى"
+    ],
+    "justification": "البرمجة هي إخبار الكمبيوتر بما يجب فعله! نعطيه تعليمات، ويتبعها لإنشاء ألعاب وتطبيقات ومواقع.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "البرمجة",
+      "الأهمية"
+    ],
+    "question": "البرمجة تُستخدم لإنشاء الألعاب والتطبيقات التي نحبها! 🎮📱",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! كل الألعاب والتطبيقات والمواقع يصنعها مبرمجون يكتبون تعليمات للكمبيوتر ليتبعها.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الخوارزمية",
+      "التعريف"
+    ],
+    "question": "ما هي الخوارزمية؟ 📝",
+    "choices": [
+      "حلوى لذيذة",
+      "نوع من الروبوتات",
+      "شاشة كمبيوتر",
+      "مجموعة خطوات لحل مشكلة"
+    ],
+    "justification": "الخوارزمية مثل وصفة الطبخ! إنها مجموعة خطوات تتبعها بالترتيب لحل مشكلة أو إكمال مهمة.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الخوارزمية",
+      "مثال"
+    ],
+    "question": "أي من هذه مثال على خوارزمية؟ 🤔",
+    "choices": [
+      "خطوات تنظيف أسنانك بالترتيب",
+      "صورة ملونة",
+      "لوحة مفاتيح",
+      "فأرة الكمبيوتر"
+    ],
+    "justification": "الخوارزمية هي خطوات بالترتيب! تنظيف الأسنان: 1) أحضر فرشاة الأسنان، 2) أضف معجون الأسنان، 3) نظف الأسنان، 4) اشطف فمك.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الخوارزمية",
+      "وصفة"
+    ],
+    "question": "الخوارزمية مثل _____ للطبخ - خطوات تتبعها بالترتيب! 👨‍🍳",
+    "choices": [
+      "فأرة",
+      "شاشة",
+      "لوحة مفاتيح",
+      "وصفة"
+    ],
+    "justification": "الخوارزمية مثل الوصفة! كلاهما يخبرك بما يجب فعله خطوة بخطوة بالترتيب الصحيح للحصول على النتيجة التي تريدها.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الشيفرة الزائفة",
+      "التعريف"
+    ],
+    "question": "ما هي الشيفرة الزائفة؟ 📋",
+    "choices": [
+      "كتابة تعليمات بكلمات بسيطة لتخطيط برنامج",
+      "شخصية في لعبة فيديو",
+      "نوع من الكمبيوتر",
+      "كلمة مرور سرية"
+    ],
+    "justification": "الشيفرة الزائفة هي كتابة خطتك بكلمات بسيطة قبل كتابة الكود الحقيقي. تساعدك على التفكير فيما سيفعله البرنامج!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الشيفرة الزائفة",
+      "ليست كوداً حقيقياً"
+    ],
+    "question": "الشيفرة الزائفة ليست كوداً حقيقياً للكمبيوتر - إنها مجرد خطة مكتوبة بكلمات بسيطة! 📝",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "صحيح! الشيفرة الزائفة مثل التخطيط بلغة عادية. تساعد المبرمجين على التفكير قبل كتابة الكود الحقيقي.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الشيفرة الزائفة",
+      "مثال"
+    ],
+    "question": "أيهم مثال على الشيفرة الزائفة؟ 🌧️☂️",
+    "choices": [
+      "إذا كان المطر ينزل إذاً خذ المظلة",
+      "الرقم 12345",
+      "اختصار لوحة مفاتيح",
+      "صورة مطر"
+    ],
+    "justification": "'إذا كان المطر ينزل إذاً خذ المظلة' هي شيفرة زائفة! إنها خطة بسيطة مكتوبة بكلمات تصف ما يجب فعله.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الخطأ البرمجي",
+      "التعريف"
+    ],
+    "question": "ما هو الخطأ البرمجي (bug)؟ 🐛",
+    "choices": [
+      "دعسوقة لطيفة",
+      "خطأ يجعل البرنامج لا يعمل بشكل صحيح",
+      "لعبة فيديو",
+      "نوع من الكمبيوتر"
+    ],
+    "justification": "الخطأ البرمجي (bug) هو خطأ في البرنامج يجعله يفعل شيئاً خاطئاً! الاسم جاء من حشرة حقيقية وُجدت في كمبيوتر قديم منذ زمن طويل.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تصحيح الأخطاء",
+      "التعريف"
+    ],
+    "question": "إيجاد وإصلاح الأخطاء في البرنامج يُسمى _____! 🔍🐛",
+    "choices": [
+      "النوم",
+      "الأكل",
+      "الرقص",
+      "تصحيح الأخطاء"
+    ],
+    "justification": "تصحيح الأخطاء (debugging) يعني إيجاد الأخطاء وإصلاحها! إنه مثل أن تكون محققاً يبحث عن أدلة لحل لغز.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "تصحيح الأخطاء",
+      "المهارات"
+    ],
+    "question": "لماذا تصحيح الأخطاء مهارة مهمة للمبرمجين؟ 🦸",
+    "choices": [
+      "كل البرامج بها أخطاء تحتاج إلى إصلاح",
+      "يجعل لوحة المفاتيح ملونة",
+      "يجعل الكمبيوتر أعلى صوتاً",
+      "يساعد على تناول الغداء أسرع"
+    ],
+    "justification": "تقريباً كل البرامج بها أخطاء! المبرمجون الجيدون يعرفون كيف يجدونها ويصلحونها. تصحيح الأخطاء يجعل البرامج تعمل بشكل صحيح.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الخطأ البرمجي",
+      "الأصل"
+    ],
+    "question": "كلمة 'bug' في البرمجة جاءت من حشرة حقيقية وُجدت داخل كمبيوتر قديم! 🐛💻",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "صحيح! منذ زمن طويل، وُجدت فراشة حقيقية عالقة في كمبيوتر قديم تسبب مشاكل. لهذا نسمي أخطاء البرمجة 'bugs'!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الأمن السيبراني",
+      "التعريف"
+    ],
+    "question": "ما هو الأمن السيبراني؟ 🛡️",
+    "choices": [
+      "نوع من الآيس كريم",
+      "زر في لوحة المفاتيح",
+      "البقاء آمناً على الإنترنت",
+      "لعبة كمبيوتر"
+    ],
+    "justification": "الأمن السيبراني يعني البقاء آمناً على الإنترنت! إنه مثل إغلاق باب منزلك، لكن للكمبيوتر ومعلوماتك.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المعلومات الشخصية",
+      "أمثلة"
+    ],
+    "question": "أي من هذه معلومات شخصية يجب أن تبقى خاصة؟ 🔒",
+    "choices": [
+      "عنوان منزلك",
+      "اسم فيلم",
+      "لونك المفضل",
+      "حالة الطقس اليوم"
+    ],
+    "justification": "عنوان منزلك معلومات شخصية! لا تشاركه أبداً مع الغرباء على الإنترنت. الألوان والأفلام المفضلة آمنة للمشاركة.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "المعلومات الشخصية",
+      "الخصوصية"
+    ],
+    "question": "اسمك الكامل ورقم هاتفك واسم مدرستك معلومات شخصية! 📋🔐",
+    "choices": [
+      "خطأ",
+      "صحيح"
+    ],
+    "justification": "نعم! اسمك ورقم هاتفك وعنوانك واسم مدرستك وتاريخ ميلادك كلها معلومات شخصية. أبقها خاصة على الإنترنت!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "كلمة المرور",
+      "التعريف"
+    ],
+    "question": "ما هي كلمة المرور؟ 🔑",
+    "choices": [
+      "صوت عالٍ",
+      "كلمة سرية تفتح حساباتك",
+      "نوع من ألعاب الكمبيوتر",
+      "صورة على الشاشة"
+    ],
+    "justification": "كلمة المرور مثل مفتاح سري! تحافظ على أمان حساباتك وتسمح لك بالدخول فقط عندما تكتب الكلمة الصحيحة.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "كلمة المرور",
+      "قوية مقابل ضعيفة"
+    ],
+    "question": "أي كلمة مرور هي الأقوى؟ 💪🔐",
+    "choices": [
+      "ahmed",
+      "password",
+      "123456",
+      "Sun7!Moon3@Star"
+    ],
+    "justification": "Sun7!Moon3@Star قوية لأنها تخلط حروفاً وأرقاماً ورموزاً! كلمات بسيطة مثل 'password' أو '123456' سهلة التخمين.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "كلمة المرور",
+      "سرية"
+    ],
+    "question": "يجب ألا تشارك كلمة مرورك أبداً مع أي شخص إلا _____! 🤫",
+    "choices": [
+      "الأصدقاء في المدرسة",
+      "الوالدين أو الأوصياء",
+      "الغرباء على الإنترنت",
+      "الناس في الألعاب"
+    ],
+    "justification": "شارك كلمات المرور فقط مع والديك أو الأوصياء! هم يساعدون في الحفاظ على سلامتك. لا تشاركها مع الأصدقاء أو الغرباء أو الناس على الإنترنت.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "كلمة المرور",
+      "أمثلة سيئة"
+    ],
+    "question": "استخدام اسمك أو '123456' ككلمة مرور فكرة سيئة! ❌",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "نعم، هذه كلمات مرور سيئة! سهلة التخمين جداً. كلمات المرور الجيدة تخلط حروفاً وأرقاماً ورموزاً.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الغرباء على الإنترنت",
+      "الخطر"
+    ],
+    "question": "غريب على الإنترنت يقول إنه طفل ويريد أن يكون صديقك. ماذا يجب أن تفعل؟ 🚨",
+    "choices": [
+      "أخبر والداً أو شخصاً بالغاً فوراً",
+      "أخبرهم اسم مدرستك",
+      "أرسل لهم صورة",
+      "شارك عنوانك حتى يزوروك"
+    ],
+    "justification": "دائماً أخبر والداً أو شخصاً بالغاً! الغرباء على الإنترنت قد لا يكونون من يقولون إنهم. لا تشارك معلوماتك الشخصية معهم أبداً.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الغرباء على الإنترنت",
+      "المقابلة"
+    ],
+    "question": "من الآمن مقابلة شخص من الإنترنت في الحياة الحقيقية دون إخبار والديك! 🚫",
+    "choices": [
+      "صحيح",
+      "خطأ"
+    ],
+    "justification": "لا تقابل أبداً شخصاً من الإنترنت بدون والديك! الغرباء على الإنترنت قد يكونون خطيرين. دائماً أخبر شخصاً بالغاً تثق به.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "الروابط الآمنة",
+      "التحميلات"
+    ],
+    "question": "موقع يقول 'اضغط هنا لألعاب مجانية!' 🎮 ماذا يجب أن تفعل؟",
+    "choices": [
+      "اسأل والداً قبل الضغط",
+      "اضغط فوراً للحصول على ألعاب مجانية",
+      "شارك الرابط مع كل أصدقائك",
+      "اكتب كلمة مرورك للتحميل"
+    ],
+    "justification": "دائماً اسأل والداً قبل الضغط على روابط غير معروفة أو التحميل! بعض العروض 'المجانية' قد تكون خدعاً بها فيروسات.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "السلامة على الإنترنت",
+      "موقف سيء"
+    ],
+    "question": "إذا حدث شيء مخيف أو سيء على الإنترنت، أول شيء يجب أن تفعله هو إخبار _____! 🆘",
+    "choices": [
+      "حيوانك الأليف",
+      "والد أو معلم",
+      "الشخص المخيف",
+      "غريب على الإنترنت"
+    ],
+    "justification": "دائماً أخبر والداً أو معلماً إذا حدث شيء سيء على الإنترنت! يمكنهم المساعدة في الحفاظ على سلامتك. لا ترد على الرسائل المخيفة.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "السلامة على الإنترنت",
+      "3 قواعد"
+    ],
+    "question": "ما هي القاعدة الأولى للسلامة على الإنترنت؟ 🥇🛡️",
+    "choices": [
+      "اضغط على كل الإعلانات الملونة",
+      "أبقِ المعلومات الشخصية خاصة",
+      "تحدث مع كل الغرباء على الإنترنت",
+      "شارك كلمة مرورك مع الأصدقاء"
+    ],
+    "justification": "القاعدة 1: أبقِ المعلومات الشخصية خاصة! لا تشارك أبداً اسمك أو عنوانك أو مدرستك أو رقم هاتفك أو كلمة مرورك مع الغرباء على الإنترنت.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "6-9",
+    "belt": "White",
+    "concepts": [
+      "السلامة على الإنترنت",
+      "فكر قبل الضغط"
+    ],
+    "question": "القاعدة 3 للسلامة على الإنترنت: _____ قبل أن تضغط! 🧠👆",
+    "choices": [
+      "ارقص",
+      "كل",
+      "فكر",
+      "نم"
+    ],
+    "justification": "فكر قبل أن تضغط! اسأل نفسك: هل هذا آمن؟ هل أعرف هذا الموقع؟ هل يجب أن أسأل شخصاً بالغاً أولاً؟",
+    "ans_idx": 2
+  }
+]

@@ -1,0 +1,1962 @@
+[
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Input-Process-Output Model",
+      "Computer Components"
+    ],
+    "question": "In the Input → Process → Output model, which component is responsible for the 'Process' stage?",
+    "choices": [
+      "Keyboard",
+      "Monitor",
+      "Hard Drive",
+      "CPU"
+    ],
+    "justification": "The CPU (Central Processing Unit) is the brain of the computer and is responsible for processing all data and instructions during the 'Process' stage of the model.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Hardware",
+      "Software"
+    ],
+    "question": "Software refers to the physical components of a computer that you can touch.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This statement is false. Software refers to programs and applications that run on a computer. Hardware refers to the physical components you can touch.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "RAM",
+      "Storage",
+      "HDD vs SSD"
+    ],
+    "question": "A software development company needs to upgrade their workstations for faster application loading. Which upgrade would provide the most noticeable improvement in boot time and file access speed?",
+    "choices": [
+      "Adding more RAM only",
+      "Installing a larger HDD",
+      "Replacing HDD with SSD",
+      "Upgrading the monitor"
+    ],
+    "justification": "SSDs have no moving parts and use flash memory, making them significantly faster than HDDs for boot times and file access. This upgrade provides the most noticeable performance improvement for these specific tasks.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Backup Types",
+      "Cloud Backup"
+    ],
+    "question": "Which of the following is an example of cloud backup?",
+    "choices": [
+      "Google Drive",
+      "External hard drive",
+      "USB flash drive",
+      "DVD"
+    ],
+    "justification": "Google Drive is a cloud storage service that stores your files on remote servers accessible via the internet. USB drives, external hard drives, and DVDs are all forms of local backup.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Backup Strategy",
+      "3-2-1 Rule"
+    ],
+    "question": "According to best practices, keeping important files in only two locations (your computer and a USB drive) is sufficient for data protection.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "The golden rule recommends keeping files in at least 3 places: your computer, a local backup (USB), and cloud storage. Two locations leave you vulnerable if both fail simultaneously or are affected by the same disaster.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Version Control",
+      "File Naming"
+    ],
+    "question": "When managing multiple versions of a project file, using _______ in file names (like Project_V1, Project_V2) helps track changes over time.",
+    "choices": [
+      "lowercase only",
+      "version control",
+      "special characters",
+      "random numbers"
+    ],
+    "justification": "Version control in file naming involves adding version numbers (V1, V2, etc.) to systematically track different iterations of a file, making it easy to identify the most recent version and maintain a clear history of changes.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Factor Authentication",
+      "Security"
+    ],
+    "question": "Which of the following is an example of 'something you ARE' in factor authentication?",
+    "choices": [
+      "Security question",
+      "Fingerprint scan",
+      "OTP code sent to phone",
+      "Password"
+    ],
+    "justification": "Fingerprint scan is a biometric authentication method, which falls under 'something you ARE.' Passwords and security questions are 'something you KNOW,' while OTP codes are 'something you HAVE.'",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Malware",
+      "Worm"
+    ],
+    "question": "A worm requires user action (like opening an email attachment) to spread to other computers on a network.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. Unlike viruses, worms can spread automatically across networks without requiring any user action. They exploit vulnerabilities in operating systems or software to replicate themselves.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Malware Types",
+      "Trojan",
+      "Ransomware"
+    ],
+    "question": "An employee downloads what appears to be a legitimate PDF reader from an unofficial website. After installation, the software works normally but secretly records keystrokes and sends them to attackers. Which combination of malware characteristics does this scenario demonstrate?",
+    "choices": [
+      "Ransomware and Adware",
+      "Virus and Worm",
+      "Worm and Rootkit",
+      "Trojan and Spyware"
+    ],
+    "justification": "This is a Trojan because it disguises itself as legitimate software (PDF reader). It's also Spyware because it secretly records user activity (keystrokes) and transmits that data to attackers without the user's knowledge.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Passphrase",
+      "Password Security"
+    ],
+    "question": "A _______ like 'MyDogLikesPizza2025!' is more secure and easier to remember than a short, complex password.",
+    "choices": [
+      "security token",
+      "passphrase",
+      "PIN code",
+      "username"
+    ],
+    "justification": "A passphrase consists of multiple words combined together, making it longer and more secure than traditional passwords while being easier to remember. The example combines words with numbers and special characters for added security.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Advanced Search"
+    ],
+    "question": "A researcher needs to find PDF documents about artificial intelligence only from educational institutions. Which Google search query would be most effective?",
+    "choices": [
+      "artificial intelligence PDF education",
+      "artificial intelligence filetype:pdf site:.edu",
+      "AI documents school",
+      "\"artificial intelligence\" + PDF + university"
+    ],
+    "justification": "Using 'filetype:pdf' restricts results to PDF files, and 'site:.edu' limits results to educational institution websites. This combination of Google Dork operators precisely targets the desired content.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Credible Sources",
+      "Information Verification"
+    ],
+    "question": "Websites with .gov and .edu domain extensions are generally considered more credible sources for research than random blogs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. The .gov domain is reserved for government entities and .edu for accredited educational institutions, which typically have editorial standards and accountability that personal blogs lack.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Information Verification",
+      "Cross-checking"
+    ],
+    "question": "A junior analyst finds an article claiming a major security breach at a tech company. The article has an emotional headline, no author listed, and the website has many pop-up ads. Which verification approach is MOST comprehensive?",
+    "choices": [
+      "Accept the information if it appears in search results",
+      "Share the article immediately since security news is time-sensitive",
+      "Cross-check with multiple reputable sources, check the company's official statement, and verify the publication date",
+      "Trust the article if the website looks professional"
+    ],
+    "justification": "The most comprehensive approach involves cross-checking with multiple reputable sources, seeking official statements, and verifying the date. The red flags (emotional headline, no author, excessive ads) warrant extra scrutiny before accepting or sharing the information.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Programming",
+      "Code"
+    ],
+    "question": "What is the primary purpose of programming?",
+    "choices": [
+      "Designing computer hardware",
+      "Creating internet connections",
+      "Manufacturing electronic devices",
+      "Giving instructions to computers to perform tasks"
+    ],
+    "justification": "Programming is the process of writing instructions (code) that tell computers what to do. These instructions are written in programming languages and enable computers to perform specific tasks.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Block Coding",
+      "Text Coding"
+    ],
+    "question": "Block-based coding platforms like Scratch are only for beginners and cannot be used to create complex programs or games.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. While block-based coding is beginner-friendly, platforms like Scratch can be used to create sophisticated games and animations. However, text-based coding offers more flexibility for professional development.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Logical Operators",
+      "AND Operator"
+    ],
+    "question": "In programming, the _______ operator returns true only when both conditions are true.",
+    "choices": [
+      "NOT",
+      "AND",
+      "OR",
+      "XOR"
+    ],
+    "justification": "The AND operator evaluates to true only when both conditions on either side are true. If either condition is false, the entire expression evaluates to false.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Bug Types"
+    ],
+    "question": "A program is designed to calculate a 15% discount but instead calculates 1.5% due to a misplaced decimal point. The program runs without crashing. What type of error is this?",
+    "choices": [
+      "Compilation error",
+      "Runtime error",
+      "Syntax error",
+      "Logic error"
+    ],
+    "justification": "This is a logic error (bug) because the program runs successfully but produces incorrect results. The code is syntactically correct, but the logic/calculation is flawed. Logic errors are often the hardest to detect since the program doesn't crash.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Bit"
+    ],
+    "question": "What is the smallest unit of data in a computer?",
+    "choices": [
+      "Byte",
+      "Megabyte",
+      "Bit",
+      "Kilobyte"
+    ],
+    "justification": "A bit (binary digit) is the smallest unit of data in computing, representing either a 0 or 1. Eight bits make up one byte, which is the next unit in the data size hierarchy.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Analysis",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Compression",
+      "Lossy Compression"
+    ],
+    "question": "JPEG image compression is lossless, meaning you can restore the original image quality after decompression.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. JPEG uses lossy compression, which permanently removes some image data to reduce file size. Once compressed, the original quality cannot be fully restored. PNG uses lossless compression instead.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Compression",
+      "Lossy vs Lossless"
+    ],
+    "question": "A hospital needs to archive patient X-ray images where every pixel detail is critical for diagnosis. Which compression approach should they use?",
+    "choices": [
+      "Audio compression (MP3)",
+      "Lossy compression (JPEG)",
+      "No compression needed",
+      "Lossless compression (PNG)"
+    ],
+    "justification": "Lossless compression preserves every bit of the original data, which is essential for medical images where diagnostic accuracy depends on precise details. Lossy compression could remove critical diagnostic information.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Front End",
+      "Back End",
+      "Web Development"
+    ],
+    "question": "When a user clicks 'Login' on a website and their credentials are verified against stored data, which part of the web application handles this verification?",
+    "choices": [
+      "Browser cache",
+      "Front end",
+      "Back end",
+      "CSS stylesheet"
+    ],
+    "justification": "The back end handles server-side operations including user authentication, database queries, and data processing. The front end only displays the login form; the actual credential verification happens on the server (back end).",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "question": "HTML is responsible for the visual styling (colors, fonts, layouts) of a webpage.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. HTML provides the structure and content of a webpage (like the skeleton). CSS is responsible for visual styling including colors, fonts, and layouts. JavaScript adds interactivity.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML Tags",
+      "Web Structure"
+    ],
+    "question": "In HTML, the _______ tag is used to create clickable links that navigate users to other pages or resources.",
+    "choices": [
+      "<button>",
+      "<nav>",
+      "<a href=\"\">",
+      "<link>"
+    ],
+    "justification": "The <a> (anchor) tag with the href attribute creates hyperlinks in HTML. The href attribute specifies the destination URL. While <button> can trigger navigation via JavaScript, <a href=\"\"> is the standard for creating links.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript Variables",
+      "let vs const"
+    ],
+    "question": "In JavaScript, which keyword should you use to declare a variable whose value will never change throughout the program?",
+    "choices": [
+      "var",
+      "static",
+      "const",
+      "let"
+    ],
+    "justification": "The 'const' keyword declares a constant variable whose value cannot be reassigned after initialization. Use 'let' for variables that need to change, and avoid 'var' in modern JavaScript due to scoping issues.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "DOM Manipulation",
+      "JavaScript"
+    ],
+    "question": "DOM manipulation in JavaScript requires the webpage to reload every time content is updated or changed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. DOM (Document Object Model) manipulation allows JavaScript to dynamically change webpage content, structure, and styles without requiring a page reload. This is one of the key benefits of using JavaScript for interactivity.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Operating Systems",
+      "System Software"
+    ],
+    "question": "Which of the following is an example of an operating system?",
+    "choices": [
+      "Google Chrome",
+      "Photoshop",
+      "Windows",
+      "Microsoft Word"
+    ],
+    "justification": "Windows is an operating system that manages computer hardware and software resources. Microsoft Word, Google Chrome, and Photoshop are application software that run on top of an operating system.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "RAM",
+      "Memory"
+    ],
+    "question": "RAM retains all stored data even after the computer is turned off.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. RAM is volatile memory, meaning it loses all stored data when power is turned off. This is why unsaved work is lost during unexpected shutdowns. Storage devices (HDD/SSD) retain data without power.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Software Types",
+      "Application Software"
+    ],
+    "question": "A video editor, a web browser, and a music player are all examples of which type of software?",
+    "choices": [
+      "Drivers",
+      "System software",
+      "Firmware",
+      "Application software"
+    ],
+    "justification": "Application software consists of programs designed for end-users to perform specific tasks like editing videos, browsing the web, or playing music. System software (like OS) manages hardware, while firmware is embedded in hardware.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Input Devices",
+      "Hardware"
+    ],
+    "question": "A _______ is an input device that allows users to speak commands or record audio into a computer.",
+    "choices": [
+      "monitor",
+      "speaker",
+      "microphone",
+      "printer"
+    ],
+    "justification": "A microphone is an input device that captures audio (voice, sounds) and converts it into digital signals for the computer to process. Speakers and monitors are output devices, while printers produce physical output.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "CPU",
+      "RAM",
+      "Storage",
+      "Performance"
+    ],
+    "question": "A data analyst frequently works with large datasets that cause their computer to slow down significantly. The computer has an HDD, 8GB RAM, and a modern CPU. Which upgrade combination would provide the best performance improvement for this use case?",
+    "choices": [
+      "Only upgrade the monitor to a larger size",
+      "Install more application software",
+      "Replace the keyboard with a mechanical one",
+      "Upgrade to SSD and increase RAM to 16GB or more"
+    ],
+    "justification": "Large datasets require fast data access (SSD provides this) and sufficient memory to hold data during processing (more RAM). An SSD dramatically improves file loading speeds, while additional RAM allows larger datasets to be processed without excessive disk swapping.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Local Backup",
+      "Cloud Backup"
+    ],
+    "question": "Which is a disadvantage of relying solely on local backup (USB/external drive)?",
+    "choices": [
+      "Files cannot be larger than 1MB",
+      "The backup can be lost, stolen, or damaged along with the computer",
+      "It requires an internet connection to access files",
+      "It only works with Windows operating systems"
+    ],
+    "justification": "Local backups stored in the same location as the computer are vulnerable to the same physical threats (fire, flood, theft). If both are lost or damaged in the same incident, all data is lost. Cloud backup provides geographic redundancy.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Cloud Backup",
+      "Accessibility"
+    ],
+    "question": "Cloud backup services like Google Drive allow you to access your files from any device with an internet connection.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. One of the main advantages of cloud storage is accessibility from anywhere with internet access. You can log into your account from any device (computer, phone, tablet) and access your stored files.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Factor Authentication",
+      "2FA"
+    ],
+    "question": "A banking app requires you to enter your password and then confirm a code sent to your phone. This is an example of:",
+    "choices": [
+      "Biometric only authentication",
+      "Password recovery",
+      "Single sign-on",
+      "Two-factor authentication (2FA)"
+    ],
+    "justification": "This is two-factor authentication because it combines something you KNOW (password) with something you HAVE (phone receiving the OTP). Using two different authentication factors significantly increases security.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Malware",
+      "Ransomware"
+    ],
+    "question": "_______ is a type of malware that encrypts your files and demands payment to restore access to them.",
+    "choices": [
+      "Firewall",
+      "Adware",
+      "Ransomware",
+      "Spyware"
+    ],
+    "justification": "Ransomware encrypts victims' files and demands a ransom payment (usually in cryptocurrency) for the decryption key. It's one of the most damaging types of malware affecting individuals and organizations.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Phishing",
+      "Social Engineering"
+    ],
+    "question": "An employee receives an urgent email appearing to be from their CEO, requesting immediate wire transfer of funds to a new vendor. The email address shows 'ceo@company-secure.com' instead of 'ceo@company.com'. What type of attack is this, and what should the employee do?",
+    "choices": [
+      "Virus attack; run antivirus software",
+      "Legitimate request; process immediately due to urgency",
+      "Phishing/spear-phishing; verify through official channels before taking action",
+      "Spam; ignore but no verification needed"
+    ],
+    "justification": "This is a spear-phishing attack (targeted phishing) using urgency and authority to manipulate the victim. The slightly different domain is a red flag. The employee should verify the request through official channels (call the CEO directly) before taking any action.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Virus",
+      "Malware"
+    ],
+    "question": "A computer virus requires user action, such as opening an infected file or running a malicious program, to spread.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. Unlike worms that spread automatically, viruses require user action to activate and spread. They attach themselves to legitimate files or programs and spread when users share or execute those infected files.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Tracking",
+      "Digital Fingerprinting",
+      "Cookies"
+    ],
+    "question": "A user notices that after searching for running shoes on one website, they see running shoe advertisements on completely different websites. This is most likely due to:",
+    "choices": [
+      "Random advertisement selection",
+      "Tracking cookies and digital fingerprinting",
+      "The websites communicating directly",
+      "A virus infection"
+    ],
+    "justification": "Tracking cookies store information about browsing behavior, and digital fingerprinting identifies users across websites. Advertising networks use these technologies to show targeted ads based on users' browsing history across multiple sites.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Search Operators"
+    ],
+    "question": "To find an exact phrase in Google search results, you should enclose the phrase in _______.",
+    "choices": [
+      "curly braces ({})",
+      "quotation marks (\"\")",
+      "square brackets ([])",
+      "parentheses (())"
+    ],
+    "justification": "Using quotation marks around a phrase tells Google to search for that exact sequence of words. Without quotes, Google searches for pages containing the individual words, which may not appear together.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Algorithm",
+      "Problem Solving"
+    ],
+    "question": "What is an algorithm?",
+    "choices": [
+      "A type of computer hardware",
+      "A programming language",
+      "A step-by-step set of instructions to solve a problem",
+      "A software application"
+    ],
+    "justification": "An algorithm is a finite sequence of well-defined instructions used to solve a specific problem or perform a computation. Algorithms are the foundation of programming and can be expressed in pseudocode, flowcharts, or actual code.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Variables",
+      "Data Storage"
+    ],
+    "question": "In programming, a variable can only store numeric values like integers and decimals.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. Variables can store many types of data including numbers (integers, floats), text (strings), boolean values (true/false), and more complex data structures like lists and objects.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Loops",
+      "FOR Loop",
+      "WHILE Loop"
+    ],
+    "question": "Which type of loop is best suited when you know exactly how many times you want to repeat an action?",
+    "choices": [
+      "IF statement",
+      "FOR loop",
+      "SWITCH statement",
+      "WHILE loop"
+    ],
+    "justification": "A FOR loop is ideal when the number of iterations is known in advance. It iterates a specific number of times. A WHILE loop is better when you need to repeat until a condition becomes false, without knowing exactly how many iterations.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Conditionals",
+      "IF Statement"
+    ],
+    "question": "In programming, an _______ statement allows the computer to make decisions by checking if a condition is true or false.",
+    "choices": [
+      "VARIABLE",
+      "PRINT",
+      "IF",
+      "LOOP"
+    ],
+    "justification": "The IF statement is a conditional statement that evaluates a condition and executes a block of code only if the condition is true. It's fundamental for creating decision-making logic in programs.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Logical Operators",
+      "OR Operator",
+      "AND Operator"
+    ],
+    "question": "In a login system, a user should be granted admin access if they are either a 'superuser' OR have both 'manager' role AND 'security_clearance'. Which logical expression correctly represents this?",
+    "choices": [
+      "superuser AND manager AND security_clearance",
+      "(superuser OR manager) AND security_clearance",
+      "superuser AND (manager OR security_clearance)",
+      "superuser OR (manager AND security_clearance)"
+    ],
+    "justification": "The correct expression uses OR to allow superuser access independently, while the AND operator requires both manager role and security clearance together as the alternative path. Parentheses ensure proper operator precedence.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Byte",
+      "Bit",
+      "Data Units"
+    ],
+    "question": "How many bits are in one byte?",
+    "choices": [
+      "1024",
+      "8",
+      "16",
+      "2"
+    ],
+    "justification": "One byte consists of 8 bits. This is a fundamental unit in computing. A bit can be 0 or 1, so a byte can represent 256 different values (2^8 = 256).",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Analysis",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Pixels",
+      "Image Quality"
+    ],
+    "question": "An image with more pixels generally has higher quality and more detail than an image with fewer pixels.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. Pixels are the smallest elements of a digital image. More pixels (higher resolution) means more detail can be captured and displayed. However, more pixels also means larger file sizes.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Data Size Units",
+      "KB",
+      "MB",
+      "GB"
+    ],
+    "question": "Which of the following correctly orders data storage units from smallest to largest?",
+    "choices": [
+      "Byte → KB → MB → GB → TB",
+      "KB → Byte → MB → GB → TB",
+      "MB → KB → GB → TB → Byte",
+      "Bit → KB → Byte → MB → GB"
+    ],
+    "justification": "The correct hierarchy from smallest to largest is: Bit → Byte → Kilobyte (KB) → Megabyte (MB) → Gigabyte (GB) → Terabyte (TB). Each step up is approximately 1024 times larger than the previous.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Analysis",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Bit Depth",
+      "Color Depth"
+    ],
+    "question": "In digital imaging, increasing the _______ allows an image to display more colors, but also increases the file size.",
+    "choices": [
+      "folder location",
+      "file extension",
+      "image name",
+      "bit depth (color depth)"
+    ],
+    "justification": "Bit depth (or color depth) determines how many colors can be represented in an image. Higher bit depth means more possible colors (e.g., 8-bit = 256 colors, 24-bit = 16.7 million colors), but requires more storage space per pixel.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Database",
+      "Web Applications"
+    ],
+    "question": "In a web application, where is user information such as usernames, passwords, and profile data typically stored?",
+    "choices": [
+      "HTML page",
+      "CSS file",
+      "Database",
+      "User's browser only"
+    ],
+    "justification": "Databases store persistent data for web applications, including user accounts, content, and application data. They allow data to be saved, retrieved, updated, and deleted as needed by the application.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript",
+      "console.log",
+      "alert"
+    ],
+    "question": "In JavaScript, both `console.log()` and `alert()` display messages to the user in exactly the same way.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. `console.log()` outputs messages to the browser's developer console (used mainly for debugging), while `alert()` displays a popup dialog box that interrupts the user and requires them to click OK to continue.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript",
+      "Events",
+      "onClick"
+    ],
+    "question": "In web development, which JavaScript event is triggered when a user clicks on a button?",
+    "choices": [
+      "onHover",
+      "onClick",
+      "onLoad",
+      "onType"
+    ],
+    "justification": "The onClick event is triggered when a user clicks on an HTML element like a button. It's one of the most commonly used events for adding interactivity to web pages, connecting user actions to JavaScript functions.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML Structure",
+      "DOCTYPE"
+    ],
+    "question": "Which declaration must appear at the very beginning of an HTML document to specify the document type?",
+    "choices": [
+      "<body>",
+      "<html>",
+      "<head>",
+      "<!DOCTYPE html>"
+    ],
+    "justification": "The <!DOCTYPE html> declaration must be the first line in an HTML document. It tells the browser which version of HTML the page is using (HTML5 in this case) and ensures proper rendering.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Web Applications",
+      "Browser"
+    ],
+    "question": "Web applications like YouTube and Facebook run directly in a web browser without requiring installation on your device.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. Web applications are programs that run on remote servers and are accessed through a web browser. Users don't need to install them locally; they only need an internet connection and a browser.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML Tags",
+      "Headings"
+    ],
+    "question": "In HTML, which tag represents the largest heading size?",
+    "choices": [
+      "<title>",
+      "<h6>",
+      "<heading>",
+      "<h1>"
+    ],
+    "justification": "HTML heading tags range from <h1> to <h6>, with <h1> being the largest and most important heading, and <h6> being the smallest. The <title> tag is used for the browser tab title, not content headings.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML Tags",
+      "Images"
+    ],
+    "question": "In HTML, the _______ attribute in the <img> tag specifies the path or URL of the image to be displayed.",
+    "choices": [
+      "alt",
+      "link",
+      "href",
+      "src"
+    ],
+    "justification": "The 'src' (source) attribute specifies the path to the image file. The 'alt' attribute provides alternative text, and 'href' is used in anchor tags for links, not images.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Front End",
+      "Back End",
+      "Full Stack"
+    ],
+    "question": "A startup is building an e-commerce platform. The team needs to implement a shopping cart that updates in real-time (front end), processes payments securely (back end), and stores order history (database). Which combination of technologies would be most appropriate?",
+    "choices": [
+      "CSS for payments, HTML for database",
+      "Photoshop for front end, Word for back end",
+      "JavaScript for front end, Python/Node.js for back end, SQL/MongoDB for database",
+      "HTML only for all three layers"
+    ],
+    "justification": "JavaScript handles real-time front-end updates, back-end languages like Python or Node.js process business logic and payments securely, and databases (SQL or MongoDB) store persistent data. This is a standard full-stack architecture.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript",
+      "Interactivity"
+    ],
+    "question": "What is the primary purpose of JavaScript in web development?",
+    "choices": [
+      "To define the structure of a webpage",
+      "To style the colors and fonts of a webpage",
+      "To make websites interactive and respond to user actions",
+      "To store data in databases"
+    ],
+    "justification": "JavaScript is used to add interactivity to websites, allowing them to respond to user actions like clicks, form submissions, and mouse movements. HTML defines structure, CSS handles styling, and databases are managed by back-end technologies.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript Variables",
+      "const"
+    ],
+    "question": "In JavaScript, a variable declared with `const` can have its value changed later in the program.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. Variables declared with `const` are constants and cannot be reassigned after their initial value is set. If you need a variable that can change, use `let` instead.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript Functions",
+      "Reusable Code"
+    ],
+    "question": "What is the main benefit of using functions in programming?",
+    "choices": [
+      "Programs run faster without functions",
+      "Functions automatically fix bugs",
+      "Functions replace the need for variables",
+      "Code can be written once and reused multiple times"
+    ],
+    "justification": "Functions allow you to define a block of code once and call it whenever needed, promoting code reusability, reducing repetition, and making programs easier to maintain and debug.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "DOM Manipulation",
+      "Document Object Model"
+    ],
+    "question": "The _______ allows JavaScript to access and modify the content, structure, and style of a webpage without requiring a page reload.",
+    "choices": [
+      "DOM (Document Object Model)",
+      "API (Application Programming Interface)",
+      "HTTP (HyperText Transfer Protocol)",
+      "URL (Uniform Resource Locator)"
+    ],
+    "justification": "The DOM (Document Object Model) is a programming interface that represents the webpage as a tree of objects. JavaScript can interact with the DOM to dynamically change content, styles, and structure in real-time.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Cybersecurity",
+      "Data Protection"
+    ],
+    "question": "What is the primary goal of cybersecurity?",
+    "choices": [
+      "Protecting digital devices and data from unauthorized access and attacks",
+      "Designing attractive websites",
+      "Making computers run faster",
+      "Creating social media accounts"
+    ],
+    "justification": "Cybersecurity focuses on protecting computers, networks, programs, and data from unauthorized access, attacks, damage, or theft. It encompasses various practices and technologies to ensure digital safety.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Spyware",
+      "Malware"
+    ],
+    "question": "Spyware is a type of malware that openly notifies users when it is recording their activities.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. Spyware operates secretly without the user's knowledge, recording activities such as keystrokes, browsing history, and personal information. Its hidden nature is what makes it dangerous.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Malware Comparison",
+      "Virus vs Worm"
+    ],
+    "question": "A network administrator notices unusual traffic patterns suggesting malware is spreading between connected computers without any user opening files or clicking links. Which type of malware is most likely responsible?",
+    "choices": [
+      "Virus",
+      "Trojan",
+      "Worm",
+      "Adware"
+    ],
+    "justification": "Worms spread automatically across networks without requiring user action, exploiting vulnerabilities in systems. Viruses require user action (like opening a file), Trojans disguise themselves as legitimate software, and adware displays unwanted advertisements.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Two-Factor Authentication",
+      "Security"
+    ],
+    "question": "Enabling _______ adds an extra layer of security by requiring two different types of verification before granting access to an account.",
+    "choices": [
+      "password saving",
+      "auto-login",
+      "two-factor authentication (2FA)",
+      "public sharing"
+    ],
+    "justification": "Two-factor authentication requires users to provide two different authentication factors (like a password AND a phone code), making it much harder for attackers to gain unauthorized access even if they have one factor.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Phishing Detection",
+      "Email Security"
+    ],
+    "question": "Which combination of signs would most strongly indicate that an email is a phishing attempt?",
+    "choices": [
+      "Email from a known contact about a scheduled meeting",
+      "Professional logo, correct company name, sent during business hours",
+      "Long email with detailed product information",
+      "Urgent language, sender address slightly different from official domain, request for personal information, and generic greeting"
+    ],
+    "justification": "Phishing emails typically combine urgency (to pressure quick action), spoofed sender addresses (slightly misspelled domains), requests for sensitive information, and generic greetings (like 'Dear Customer' instead of your name).",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "File Types"
+    ],
+    "question": "The file extension .docx indicates that a file is a Microsoft Word document.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. The .docx extension is the standard format for Microsoft Word documents since Office 2007. The 'x' indicates the XML-based format used in modern Office documents.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Productivity"
+    ],
+    "question": "Which keyboard shortcut is used to paste content that was previously copied?",
+    "choices": [
+      "Ctrl+X",
+      "Ctrl+V",
+      "Ctrl+C",
+      "Ctrl+Z"
+    ],
+    "justification": "Ctrl+V is the universal shortcut for pasting. Ctrl+C copies, Ctrl+X cuts, and Ctrl+Z undoes the last action. These shortcuts work across most applications and operating systems.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Computer Data"
+    ],
+    "question": "Why do computers use binary (0s and 1s) to process and store data?",
+    "choices": [
+      "Because binary was invented specifically for gaming",
+      "Because binary uses less electricity than other number systems",
+      "Because binary is easier for humans to understand",
+      "Because electronic circuits can easily represent two states: on (1) and off (0)"
+    ],
+    "justification": "Computers use binary because electronic components (transistors) have two stable states: on and off, which naturally correspond to 1 and 0. This makes binary the most reliable and efficient system for digital electronics.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Analysis",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Data Representation",
+      "Unicode"
+    ],
+    "question": "Unicode is a character encoding standard that can represent text from virtually all writing systems in the world.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is true. Unicode is designed to support all characters from all writing systems worldwide, including Latin, Arabic, Chinese, emoji, and many others. It has become the universal standard for text encoding.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Compression Ratio",
+      "File Size"
+    ],
+    "question": "A graphic designer has a 100MB image file that needs to be reduced to under 10MB for web use while maintaining acceptable visual quality. Which approach would be most appropriate?",
+    "choices": [
+      "Simply rename the file extension to make it smaller",
+      "Use lossless compression only, as it always achieves 90% reduction",
+      "Delete parts of the image to reduce file size",
+      "Apply lossy compression (JPEG) with quality settings adjusted for the target size"
+    ],
+    "justification": "Lossy compression (like JPEG) can achieve high compression ratios by discarding some image data while maintaining acceptable visual quality for web use. Lossless compression typically achieves much smaller reductions and cannot guarantee a 90% decrease.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Analysis",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Pixel",
+      "Digital Images"
+    ],
+    "question": "A _______ is the smallest individual element of a digital image, often described as a tiny dot of color.",
+    "choices": [
+      "vector",
+      "file",
+      "byte",
+      "pixel"
+    ],
+    "justification": "A pixel (picture element) is the smallest controllable element of a digital image. Images are made up of thousands or millions of pixels arranged in a grid, each with its own color value.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Pseudocode",
+      "Algorithm Planning"
+    ],
+    "question": "What is the main purpose of writing pseudocode before actual coding?",
+    "choices": [
+      "To plan the logic of a program in plain language before writing actual code",
+      "To make the program run faster",
+      "To automatically generate working code",
+      "To replace the need for testing"
+    ],
+    "justification": "Pseudocode allows programmers to plan and outline their algorithm's logic using plain, human-readable language before translating it into actual programming code. It helps identify logical issues early and makes complex problems easier to solve.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "NOT Operator",
+      "Logical Operations"
+    ],
+    "question": "In programming, if a variable `isLoggedIn` is `True`, then `NOT isLoggedIn` evaluates to `True`.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. The NOT operator inverts the boolean value. If `isLoggedIn` is `True`, then `NOT isLoggedIn` evaluates to `False`. NOT always returns the opposite of the original value.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "VS Code",
+      "Live Server",
+      "Development Tools"
+    ],
+    "question": "A web development student wants to see their HTML changes reflected immediately in the browser without manually refreshing. Which VS Code feature or extension would best accomplish this?",
+    "choices": [
+      "File explorer",
+      "Live Server extension",
+      "Dark theme",
+      "Spell checker extension"
+    ],
+    "justification": "Live Server is a VS Code extension that launches a local development server with live reload capability. When you save changes to your HTML, CSS, or JavaScript files, the browser automatically refreshes to show the updates.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "CSS",
+      "Styling"
+    ],
+    "question": "_______ is used to control the visual appearance of a webpage, including colors, fonts, and layout.",
+    "choices": [
+      "SQL",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "justification": "CSS (Cascading Style Sheets) is specifically designed to handle the presentation and visual styling of web pages. HTML provides structure, JavaScript adds interactivity, and SQL is for database queries.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Stereotypes",
+      "Bias"
+    ],
+    "question": "In the context of digital literacy, why is it important to recognize stereotypes in online content?",
+    "choices": [
+      "Because stereotypes can spread harmful and unfair generalizations about groups of people",
+      "Because stereotypes improve search engine rankings",
+      "Because stereotypes make websites load faster",
+      "Because stereotypes are required by law in all content"
+    ],
+    "justification": "Stereotypes are oversimplified, fixed ideas about groups of people that can perpetuate discrimination and bias. Recognizing them helps individuals think critically about online content and avoid spreading harmful generalizations.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Output Devices",
+      "Hardware"
+    ],
+    "question": "Which of the following is an output device?",
+    "choices": [
+      "Monitor",
+      "Mouse",
+      "Keyboard",
+      "Microphone"
+    ],
+    "justification": "A monitor is an output device that displays visual information from the computer. Keyboards, mice, and microphones are input devices that send data to the computer.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "SSD",
+      "HDD",
+      "Storage"
+    ],
+    "question": "An SSD (Solid State Drive) has moving parts like a traditional HDD (Hard Disk Drive).",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. SSDs use flash memory and have no moving parts, which makes them faster, quieter, and more durable than HDDs. HDDs use spinning magnetic disks and read/write heads.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "CPU",
+      "Processing"
+    ],
+    "question": "The _______ is often called the 'brain' of the computer because it processes all instructions and calculations.",
+    "choices": [
+      "CPU (Central Processing Unit)",
+      "GPU (Graphics Processing Unit)",
+      "RAM (Random Access Memory)",
+      "SSD (Solid State Drive)"
+    ],
+    "justification": "The CPU (Central Processing Unit) executes instructions and performs calculations for all computer operations. It coordinates with other components like RAM and storage to run programs and process data.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Automatic Backup",
+      "Manual Backup"
+    ],
+    "question": "What is the main advantage of automatic backup over manual backup?",
+    "choices": [
+      "It runs on a schedule without requiring user intervention, reducing the risk of forgetting to backup",
+      "It creates larger backup files",
+      "It only works with cloud storage",
+      "It requires more storage space"
+    ],
+    "justification": "Automatic backup eliminates the need to remember to backup manually. Once configured, it runs on a schedule (daily, weekly, etc.), ensuring your data is regularly protected without any effort from the user.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "File Path",
+      "Folder Structure"
+    ],
+    "question": "A file path like 'C:\\Users\\John\\Documents\\Report.docx' shows the exact location of a file within the computer's folder structure.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. A file path describes the complete location of a file, starting from the drive (C:) through the folder hierarchy (Users → John → Documents) to the specific file (Report.docx).",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Factor Authentication",
+      "Security Layers"
+    ],
+    "question": "A financial institution wants to implement the strongest possible authentication for high-value transactions. Which combination provides the most secure multi-factor authentication?",
+    "choices": [
+      "Security question + memorable date",
+      "Password (know) + OTP to phone (have) + fingerprint scan (are)",
+      "Two different passwords",
+      "Email address + username"
+    ],
+    "justification": "True multi-factor authentication uses different categories: something you KNOW (password), something you HAVE (phone for OTP), and something you ARE (biometric). Using multiple factors from the same category (like two passwords) doesn't provide the same level of security.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Trojan",
+      "Malware"
+    ],
+    "question": "A _______ is a type of malware that disguises itself as legitimate software to trick users into installing it.",
+    "choices": [
+      "Trojan",
+      "Antivirus",
+      "Browser",
+      "Firewall"
+    ],
+    "justification": "A Trojan (named after the Greek Trojan Horse) appears to be useful or harmless software but contains hidden malicious code. Unlike viruses or worms, Trojans don't self-replicate but rely on users to install them.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Filter Bubbles",
+      "Online Tracking"
+    ],
+    "question": "Filter bubbles occur when algorithms show users only content that aligns with their existing views, potentially limiting exposure to diverse perspectives.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is true. Filter bubbles are created when personalization algorithms track user behavior and preferences, then show content that reinforces existing beliefs. This can create an echo chamber effect, limiting exposure to different viewpoints.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Security Best Practices",
+      "Protection Methods"
+    ],
+    "question": "A company experiences frequent security incidents. Which combination of measures would provide the most comprehensive protection?",
+    "choices": [
+      "Installing antivirus software once",
+      "Strong passphrases + 2FA enabled + regular software updates + antivirus + employee security training",
+      "Changing the company name",
+      "Only using complex passwords"
+    ],
+    "justification": "Comprehensive security requires multiple layers: strong authentication (passphrases + 2FA), up-to-date systems (patches vulnerabilities), protective software (antivirus), and human awareness (training reduces social engineering risks).",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Search Operators"
+    ],
+    "question": "Which Google search operator would you use to search for results only from a specific website?",
+    "choices": [
+      "filetype:",
+      "intitle:",
+      "inurl:",
+      "site:"
+    ],
+    "justification": "The 'site:' operator restricts search results to a specific domain. For example, 'site:wikipedia.org artificial intelligence' will only show results from Wikipedia about artificial intelligence.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Sponsored Content",
+      "Advertisements"
+    ],
+    "question": "Search results marked as 'Ad' or 'Sponsored' are the most reliable sources for academic research.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. Sponsored results are paid advertisements and may be biased toward promoting products or services. For academic research, peer-reviewed journals, educational institutions (.edu), and government sources (.gov) are more reliable.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "WHILE Loop",
+      "Conditions"
+    ],
+    "question": "When is a WHILE loop more appropriate than a FOR loop?",
+    "choices": [
+      "When you don't know in advance how many times the loop should run",
+      "When you want the loop to run exactly 5 times",
+      "When iterating through a list of known size",
+      "When you need to count from 1 to 10"
+    ],
+    "justification": "WHILE loops continue executing as long as a condition remains true, making them ideal when you don't know the exact number of iterations needed. FOR loops are better when you know the exact count or are iterating through a collection.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Error Finding"
+    ],
+    "question": "The process of finding and fixing errors in a program is called _______.",
+    "choices": [
+      "executing",
+      "installing",
+      "compiling",
+      "debugging"
+    ],
+    "justification": "Debugging is the systematic process of identifying, analyzing, and removing bugs (errors) from computer programs. The term originated from an actual moth found in an early computer causing a malfunction.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "OR Operator",
+      "Logical Operations"
+    ],
+    "question": "The OR operator returns True only when both conditions being compared are True.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is false. The OR operator returns True if at least one of the conditions is True. It only returns False when both conditions are False. The AND operator is the one that requires both conditions to be True.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Nested Conditionals",
+      "IF/ELSE"
+    ],
+    "question": "A grading system needs to assign grades based on scores: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60). What programming concept is most appropriate for this?",
+    "choices": [
+      "Nested IF/ELSE or ELSE IF statements",
+      "A single WHILE loop",
+      "Only variable declarations",
+      "The print function alone"
+    ],
+    "justification": "Multiple conditions with different outcomes require nested IF/ELSE or ELSE IF (elif) statements. Each score range is checked sequentially until a match is found, then the corresponding grade is assigned.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Analysis",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Storage vs Transmission",
+      "Data Transfer"
+    ],
+    "question": "What is the main difference between data storage and data transmission?",
+    "choices": [
+      "Storage saves data for later use, while transmission sends data from one location to another",
+      "Storage only works with text files",
+      "Transmission saves data permanently",
+      "Storage and transmission are exactly the same"
+    ],
+    "justification": "Storage refers to saving data on devices (HDD, SSD, cloud) for future access. Transmission is the process of sending data between devices or locations, typically over networks or the internet.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Analysis",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "MP3",
+      "Lossy Compression",
+      "Audio"
+    ],
+    "question": "MP3 audio files use lossless compression, preserving all original audio data from the source recording.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is false. MP3 uses lossy compression, which removes audio frequencies that are less audible to humans to reduce file size. For lossless audio compression, formats like FLAC or WAV are used.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Analysis",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Binary Conversion",
+      "Data Representation"
+    ],
+    "question": "All data in a computer, including text, images, and audio, is ultimately converted to _______ (0s and 1s) for processing.",
+    "choices": [
+      "binary",
+      "decimal",
+      "alphabetical",
+      "hexadecimal"
+    ],
+    "justification": "Computers process all data in binary (base-2) because their electronic circuits operate with two states: on (1) and off (0). Text is encoded using standards like Unicode, images as pixel values, and audio as samples—all in binary.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML Structure",
+      "Semantic Tags"
+    ],
+    "question": "A web developer needs to create a navigation menu, a main content area, and a footer for a website. Which approach follows modern HTML5 best practices?",
+    "choices": [
+      "Using only <div> tags for everything",
+      "Using semantic tags like <nav>, <main>, and <footer>",
+      "Using <table> tags for page layout",
+      "Placing all content in a single <p> tag"
+    ],
+    "justification": "HTML5 introduced semantic tags that describe the purpose of content. Using <nav>, <main>, <footer>, <article>, etc., improves accessibility, SEO, and code readability compared to generic <div> elements.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML",
+      "Paragraph Tag"
+    ],
+    "question": "In HTML, the <p> tag is used to define a paragraph of text.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is true. The <p> tag in HTML stands for 'paragraph' and is used to define blocks of text. Browsers automatically add margin space before and after paragraph elements.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript",
+      "alert()"
+    ],
+    "question": "What does the `alert()` function do in JavaScript?",
+    "choices": [
+      "Connects to a database",
+      "Displays a popup message box to the user",
+      "Saves data to a file",
+      "Creates a new HTML element"
+    ],
+    "justification": "The alert() function displays a modal dialog box with a message and an OK button. It's commonly used for simple notifications or debugging, though it blocks page interaction until dismissed.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript",
+      "let keyword"
+    ],
+    "question": "In JavaScript, the _______ keyword is used to declare a variable whose value can be changed later in the program.",
+    "choices": [
+      "final",
+      "static",
+      "let",
+      "const"
+    ],
+    "justification": "The 'let' keyword declares a block-scoped variable that can be reassigned. Use 'const' for values that should not change. 'var' is older and has different scoping rules, while 'final' and 'static' are not JavaScript keywords.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "JavaScript Functions",
+      "Code Organization"
+    ],
+    "question": "In JavaScript, a function must be called (invoked) for its code to execute; simply defining a function does not run its code.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is true. Function definitions (using the 'function' keyword) only create the function. To execute the code inside, you must call the function by its name followed by parentheses, like functionName().",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "Web Architecture",
+      "Client-Server"
+    ],
+    "question": "When you type a URL in your browser and press Enter, what is the correct sequence of events?",
+    "choices": [
+      "Browser sends request to server → Server processes request → Server sends back HTML/CSS/JS → Browser renders the page",
+      "Server automatically sends all websites to browser → Browser selects one",
+      "HTML files are downloaded from your hard drive → CSS is applied → JavaScript runs",
+      "Browser creates the website locally → Server approves the design → Page appears"
+    ],
+    "justification": "Web communication follows the client-server model: the browser (client) sends an HTTP request to the web server, which processes it and returns the requested files (HTML, CSS, JavaScript). The browser then renders these files into a visual webpage.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "15-18",
+    "belt": "White",
+    "concepts": [
+      "HTML",
+      "Button Tag"
+    ],
+    "question": "The <button> tag in HTML is used to create a clickable button on a webpage.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "This is true. The <button> element creates an interactive button that users can click. It can be combined with JavaScript (using events like onClick) to perform actions when clicked.",
+    "ans_idx": 1
+  }
+]

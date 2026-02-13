@@ -1,0 +1,2491 @@
+[
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Definition",
+      "AI Applications"
+    ],
+    "question": "Which of these is an example of Artificial Intelligence (AI)?",
+    "choices": [
+      "A wooden chair",
+      "Siri answering your questions",
+      "A regular calculator",
+      "A printed book"
+    ],
+    "ans_idx": 1,
+    "justification": "Siri is a voice assistant that uses AI to understand speech, process questions, and provide intelligent answers. AI refers to things humans made that act smart, like ChatGPT, Siri, and voice assistants.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Human Senses",
+      "AI Tools"
+    ],
+    "question": "AI uses a camera to imitate the human sense of sight.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Just like humans use eyes to see, AI uses a camera as a tool to capture images and 'see' the world. This allows AI to perform tasks like face detection and image recognition.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types",
+      "Quantitative Data"
+    ],
+    "question": "Your friend is tracking their gaming scores. What type of data is '2,500 points'?",
+    "choices": [
+      "Qualitative data (categories)",
+      "Both types",
+      "Quantitative data (numbers)",
+      "Neither type"
+    ],
+    "ans_idx": 2,
+    "justification": "2,500 points is quantitative data because it's a number that can be measured and used in calculations. Quantitative data represents quantities and amounts, while qualitative data represents categories like 'Action Game' or 'Red Color'.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Visualization",
+      "Chart Types"
+    ],
+    "question": "A _____ chart is best for showing percentages and parts of a whole.",
+    "choices": [
+      "Pie",
+      "Bar",
+      "Line",
+      "Scatter"
+    ],
+    "ans_idx": 0,
+    "justification": "A Pie chart is ideal for showing percentages and how different parts make up a whole (like 100%). It displays data as slices of a circle, making it easy to see proportions at a glance.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "ML Process"
+    ],
+    "question": "You're building an AI to recognize different types of games. What is the correct order of the Machine Learning process?",
+    "choices": [
+      "Input → Test → Learn",
+      "Learn → Input → Test",
+      "Input → Learn → Test",
+      "Test → Learn → Input"
+    ],
+    "ans_idx": 2,
+    "justification": "The Machine Learning process follows three steps in order: 1) Input - provide data/examples to the computer, 2) Learn - the computer learns patterns from the data, 3) Test - check if the computer learned correctly by testing with new examples.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Training Data",
+      "Data Quality"
+    ],
+    "question": "For good Machine Learning results, training data must be BIG (many examples) and DIFFERENT (varied examples).",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Training data must be BIG (enough examples) and DIFFERENT (variety) so the computer can learn correctly. If we train with only a few similar examples, the AI won't recognize different situations well.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "COUNT Function",
+      "Data Functions"
+    ],
+    "question": "You're analyzing data about students' favorite apps. Which question would you answer using the COUNT function?",
+    "choices": [
+      "What is the average age?",
+      "What is the total screen time?",
+      "How many students use TikTok?",
+      "Which app is most popular?"
+    ],
+    "ans_idx": 2,
+    "justification": "COUNT function tells us 'how many' items meet a condition. To find how many students use TikTok, we count the number of students. SUM would give us totals, MEAN gives averages, and finding most popular requires counting then comparing.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "SUM Function",
+      "Data Calculation"
+    ],
+    "question": "If you want to find the total hours spent gaming across all players, you should use the _____ function.",
+    "choices": [
+      "MEAN",
+      "COUNT",
+      "SUM",
+      "MAX"
+    ],
+    "ans_idx": 2,
+    "justification": "The SUM function adds all values together to give a total. When you want to find total hours, points, or any combined amount, SUM is the correct function to use.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Reading Data",
+      "Google Sheets"
+    ],
+    "question": "When reading data from Google Sheets with many rows, we should use a loop to read all rows automatically.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. Using a loop allows us to read many rows automatically instead of writing separate code for each row. This makes our program more efficient and able to handle large datasets easily.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Human Body Detection",
+      "PictoBlox Extensions"
+    ],
+    "question": "In your game project, you want to control a character by moving your hand left and right. Which extension should you use?",
+    "choices": [
+      "Text to Speech",
+      "Face Detection",
+      "Speech Recognition",
+      "Human Body Detection"
+    ],
+    "ans_idx": 3,
+    "justification": "Human Body Detection extension allows you to detect hands and track their X/Y positions. This is perfect for controlling game characters with hand movements, as it can detect when your hand moves left (smaller X) or right (larger X).",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "MEAN Function",
+      "Average Calculation"
+    ],
+    "question": "Your gaming group wants to know the average score across all players. Which function calculates this?",
+    "choices": [
+      "COUNT",
+      "MEAN",
+      "MAX",
+      "SUM"
+    ],
+    "ans_idx": 1,
+    "justification": "The MEAN function calculates the average by adding all values and dividing by the count. This gives a typical or middle value that represents the group's performance.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Face Detection",
+      "AI Recognition"
+    ],
+    "question": "Face Detection in PictoBlox can recognize faces that have been saved and trained in the system.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Face Detection extension can recognize faces that you have saved and trained. This is how it can identify specific people, like recognizing whether it's you or someone else in front of the camera.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Definition",
+      "Data Collection"
+    ],
+    "question": "What is data in the context of your favorite mobile game?",
+    "choices": [
+      "Information like your score, level, and play time",
+      "The phone's battery level",
+      "The game's download size",
+      "The game's graphics and sounds"
+    ],
+    "ans_idx": 0,
+    "justification": "Data is information collected from actions, choices, and events. In a game, your score, level reached, and time played are all examples of data that can be collected and analyzed to understand your gaming behavior.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Input Data"
+    ],
+    "question": "In Image Classification for identifying fruits, the _____ is what the computer learns from.",
+    "choices": [
+      "speaker output",
+      "keyboard input",
+      "camera image data",
+      "screen display"
+    ],
+    "ans_idx": 2,
+    "justification": "In Machine Learning for image classification, the INPUT is the camera image data. The computer learns from these images (examples of fruits) during the training phase to recognize different fruits later.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Speech Recognition",
+      "Voice Commands"
+    ],
+    "question": "You're creating a voice-controlled smart home system. What is the correct order of blocks to use?",
+    "choices": [
+      "Start listening → Wait for speech → Get speech recognition result → Take action",
+      "Take action → Start listening → Get result",
+      "Get speech recognition result → Start listening → Take action",
+      "Wait for speech → Take action → Start listening"
+    ],
+    "ans_idx": 0,
+    "justification": "For Speech Recognition to work correctly: 1) Start listening (turn on microphone), 2) Wait for the user to speak, 3) Get speech recognition result (what was said), 4) Take action based on the command. This logical flow ensures the system captures and processes voice commands properly.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Data Quality"
+    ],
+    "question": "Data Cleaning must be done BEFORE analyzing data to get accurate results.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Data Cleaning removes problems like duplicates, missing values, unusual data, and inconsistent names BEFORE analysis. If we analyze dirty data, our results and conclusions could be completely wrong. Clean data = accurate results.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "MAX Function",
+      "Data Analysis"
+    ],
+    "question": "Your esports team wants to find the highest score ever achieved. One player got 10,000 points once, but usually scores around 3,000. What should you consider?",
+    "choices": [
+      "MAX is affected more than MEAN by unusual high scores",
+      "Both MAX and MEAN would show 10,000",
+      "MAX shows the highest score (10,000), but MEAN would be affected by this outlier",
+      "This data should be deleted"
+    ],
+    "ans_idx": 2,
+    "justification": "MAX simply returns the highest value (10,000), which is useful for finding the best score ever. However, MEAN (average) would be significantly affected by this one unusually high score, pulling the average up. This shows why understanding different functions is important for proper analysis.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Translate",
+      "Combined AI Tools"
+    ],
+    "question": "To create a language translator that speaks, you must use blocks in this order: Listen → _____ → Speak.",
+    "choices": [
+      "MAX",
+      "Face Detection",
+      "Translate",
+      "Count"
+    ],
+    "ans_idx": 2,
+    "justification": "To build a speaking translator: 1) Listen (Speech Recognition captures what you say), 2) Translate (convert to target language), 3) Speak (Text to Speech says the translation). You must translate BEFORE speaking, or it will speak the original language.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Bar Chart",
+      "Comparison"
+    ],
+    "question": "You want to compare average screen time between students who game a lot vs. students who don't. Which chart type is most effective and why?",
+    "choices": [
+      "Bar Chart - best for comparing values between different groups",
+      "Scatter Plot - shows individual data points",
+      "Pie Chart - shows all students as percentages",
+      "Line Chart - shows change over time"
+    ],
+    "ans_idx": 0,
+    "justification": "Bar Chart is the best choice for comparing average values between different groups (gamers vs. non-gamers). Each bar represents a group's average, making comparison easy. Pie charts show parts of a whole, line charts show trends over time, and scatter plots show relationships between variables.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Human Body Detection",
+      "Forever Loop",
+      "Continuous Detection"
+    ],
+    "question": "For Human Body Detection to work continuously in a game, the 'analyze image for hand' block should be placed inside a forever loop.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. The 'analyze image for hand' block must be inside a forever loop to continuously detect hand position and movement. Without the loop, it would only detect once and stop, making it impossible to track hand movements for game controls.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bar Chart",
+      "X and Y Values"
+    ],
+    "question": "In a Bar Chart showing different games and their popularity scores, what do the X-value and Y-value represent?",
+    "choices": [
+      "X and Y both represent game names",
+      "X = Game names (categories), Y = Popularity scores (numbers)",
+      "X = Popularity scores, Y = Game names",
+      "X and Y both represent scores"
+    ],
+    "ans_idx": 1,
+    "justification": "In a Bar Chart, X-value typically represents the category or label (game names), while Y-value represents the numeric value being measured (popularity scores). This standard layout makes it easy to compare values across different categories.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Data Science Process"
+    ],
+    "question": "What is the correct order of steps in creating a Data Story for analyzing gaming habits?",
+    "choices": [
+      "Choose data → Choose chart → Ask question → Calculate",
+      "Calculate → Choose data → Ask question → Choose chart",
+      "Ask question → Choose data → Choose calculation → Choose chart → Make conclusion",
+      "Choose chart → Ask question → Choose data → Calculate"
+    ],
+    "ans_idx": 2,
+    "justification": "A proper Data Story follows this logical sequence: 1) Ask a question you want to answer, 2) Choose relevant data, 3) Choose appropriate calculations (COUNT, MEAN, etc.), 4) Choose the right chart type to visualize results, 5) Make conclusions based on analysis. Each step builds on the previous one.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Data Problems"
+    ],
+    "question": "When analyzing player usernames, you find 'ProGamer', 'pro_gamer', and 'ProGamer123' might be the same person. This is an example of _____ data problem.",
+    "choices": [
+      "unusual data",
+      "repeated data",
+      "similar but different names",
+      "missing data"
+    ],
+    "ans_idx": 2,
+    "justification": "This is a 'similar but different names' problem in Data Cleaning. The same person might be represented with slightly different usernames, which can cause counting errors. The solution is to unite these similar names into one consistent identifier before analysis.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Speech Recognition",
+      "Language Settings"
+    ],
+    "question": "Setting the correct language in Speech Recognition is important because the AI might not understand you if the language setting doesn't match what you're speaking.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. Language and accent settings are crucial for Speech Recognition. If you speak Arabic but the system is set to English, it won't understand you correctly. The AI needs to be configured for the correct language to accurately recognize and process your speech.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI vs Humans",
+      "AI Limitations"
+    ],
+    "question": "Why is AI not exactly like humans, even though it can imitate our senses?",
+    "choices": [
+      "AI has all the same senses as humans",
+      "AI can feel emotions just like humans",
+      "AI can imitate senses but cannot feel emotions or truly understand like humans",
+      "AI is better than humans at everything"
+    ],
+    "ans_idx": 2,
+    "justification": "AI can use tools like cameras and microphones to imitate human senses like sight and hearing, but it cannot feel emotions, have consciousness, or truly understand things the way humans do. AI processes information based on patterns and programming, not genuine feelings or understanding.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Qualitative Data",
+      "Data Types"
+    ],
+    "question": "Which of these represents qualitative (category) data about gaming?",
+    "choices": [
+      "Number of players: 2,450",
+      "Score: 95,000 points",
+      "Game genre: Action, Sports, Puzzle",
+      "Playing time: 3.5 hours"
+    ],
+    "ans_idx": 2,
+    "justification": "Game genres (Action, Sports, Puzzle) are qualitative data because they represent categories or groups, not numbers you can measure. Qualitative data describes qualities or characteristics. The other options are all quantitative (numeric) data.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Text to Speech",
+      "AI Output"
+    ],
+    "question": "What does the Text to Speech extension do?",
+    "choices": [
+      "Detects faces in images",
+      "Turns written text into spoken voice",
+      "Translates text to another language",
+      "Turns spoken voice into written text"
+    ],
+    "ans_idx": 1,
+    "justification": "Text to Speech (TTS) converts written text into spoken voice using a computer speaker. Apps like NaturalReader use this technology to read text aloud, which is helpful for accessibility and learning.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Visualization",
+      "Decision Making"
+    ],
+    "question": "Charts and graphs help us understand data faster than looking at numbers in a spreadsheet.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. Data visualization using charts and graphs makes patterns and trends easier to spot quickly. Our brains process visual information faster than reading rows of numbers, which is why data scientists use visualizations.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Image Classification",
+      "Training Requirements"
+    ],
+    "question": "When creating an Image Classification model for animals, you should collect at least _____ images per class for good training.",
+    "choices": [
+      "2",
+      "5",
+      "100",
+      "20"
+    ],
+    "ans_idx": 3,
+    "justification": "According to the curriculum, you should train your Image Classification model with at least 20 images per class. This provides enough varied examples for the computer to learn the patterns and features of each category effectively.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Cleaning",
+      "Missing Data"
+    ],
+    "question": "Your team is analyzing player data and finds some cells are empty. What data cleaning problem is this?",
+    "choices": [
+      "Missing data",
+      "Repeated data",
+      "Similar but different names",
+      "Unusual data"
+    ],
+    "ans_idx": 0,
+    "justification": "Empty cells represent missing data, which is one of the four main data cleaning problems. Missing data can affect calculations and must be addressed before analysis - either by filling in values, removing incomplete records, or using special handling methods.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Testing Phase"
+    ],
+    "question": "In the Machine Learning process, the TEST step checks if the computer learned correctly by using new examples it hasn't seen before.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. The TEST step is crucial in Machine Learning. After training, we test the model with new examples it hasn't seen to verify it actually learned the patterns, not just memorized the training data. This ensures the AI can work with real-world data.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Unusual Data"
+    ],
+    "question": "While analyzing gaming time, you find a player with '500 hours per day' recorded. What should you do?",
+    "choices": [
+      "Ignore it and analyze only other data",
+      "Identify it as unusual data and investigate or remove it before analysis",
+      "Change it to 50 hours without checking",
+      "Include it as is because it's in the dataset"
+    ],
+    "ans_idx": 1,
+    "justification": "This is unusual data - a value that doesn't make sense (there are only 24 hours in a day!). In Data Cleaning, we must identify and handle unusual data before analysis. It might be a data entry error that needs correction or removal, otherwise it will make our results wrong.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Human Body Detection",
+      "X/Y Coordinates"
+    ],
+    "question": "In Human Body Detection, if the X position of your hand increases, your hand is moving toward the _____.",
+    "choices": [
+      "right side of the screen",
+      "top of the screen",
+      "left side of the screen",
+      "bottom of the screen"
+    ],
+    "ans_idx": 0,
+    "justification": "In coordinate systems, X position increases as you move right. So a larger X value means your hand is moving toward the right side of the screen. Y position controls up/down movement (larger Y = lower on screen in most systems).",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Science Definition",
+      "Data Usage"
+    ],
+    "question": "What is Data Science used for?",
+    "choices": [
+      "To design websites",
+      "To create video games",
+      "To edit photos",
+      "To collect, analyze, and understand data to make better decisions"
+    ],
+    "ans_idx": 3,
+    "justification": "Data Science is the field of collecting, analyzing, and understanding data to make better, informed decisions. It helps us find patterns, answer questions, and solve problems using data. While it can be used in gaming, web design, and other fields, its core purpose is data-driven decision making.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Training Data Quality",
+      "Model Accuracy"
+    ],
+    "question": "If you train an animal classifier with only cat photos taken in daylight, the model might not recognize cats well in photos taken at night.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. This illustrates why training data must be DIFFERENT and varied. If all training examples are similar (only daylight photos), the AI learns a narrow pattern and struggles with different conditions (nighttime photos). Diverse training data helps the model work in various real-world situations.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Google Sheets",
+      "Data Reading"
+    ],
+    "question": "Why is it useful to read data from Google Sheets in your coding projects?",
+    "choices": [
+      "Google Sheets automatically creates charts",
+      "Google Sheets makes your code run faster",
+      "It's required for all projects",
+      "You can work with large, real datasets without typing everything in code"
+    ],
+    "ans_idx": 3,
+    "justification": "Reading data from Google Sheets allows you to work with large, real-world datasets without manually coding every value. It separates data storage from your program logic, making it easier to update data and analyze different datasets with the same code.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Repeated Data"
+    ],
+    "question": "If the same player's score appears twice in your dataset, this creates _____ data that should be removed during cleaning.",
+    "choices": [
+      "qualitative",
+      "unusual",
+      "missing",
+      "repeated/duplicate"
+    ],
+    "ans_idx": 3,
+    "justification": "When the same data appears multiple times, it's called repeated or duplicate data. This is one of the four main data cleaning problems. Duplicates can skew your analysis by counting the same information twice, leading to incorrect totals and averages.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Translate Extension",
+      "Language Conversion"
+    ],
+    "question": "The Translate extension in PictoBlox can convert text from one language to another language.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. The Translate extension converts text from one language to another. This is useful for creating multilingual applications, and can be combined with Speech Recognition and Text to Speech to create a complete speaking translator.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Tools",
+      "Microphone"
+    ],
+    "question": "Which AI tool helps the computer 'hear' like humans?",
+    "choices": [
+      "Speaker",
+      "Microphone",
+      "Screen",
+      "Camera"
+    ],
+    "ans_idx": 1,
+    "justification": "The microphone is the AI tool that captures sound, allowing AI to 'hear' similar to how humans use their ears. It's used in applications like Speech Recognition, voice assistants like Siri, and voice commands.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "MEAN Function",
+      "Outliers"
+    ],
+    "question": "Five students have screen times: 2, 3, 2.5, 3, and 15 hours. How does the 15-hour outlier affect your analysis?",
+    "choices": [
+      "The MEAN will not be affected at all",
+      "Only MAX is affected by outliers",
+      "The MEAN will be much higher than typical values, possibly misleading",
+      "Outliers should always be deleted"
+    ],
+    "ans_idx": 2,
+    "justification": "The MEAN (2+3+2.5+3+15)/5 = 5.1 hours, which is much higher than most students' actual screen time (around 2-3 hours). This one outlier (15 hours) pulls the average up significantly, making it less representative. This shows why we must understand our data and consider whether outliers are errors or meaningful data.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bar Chart",
+      "Comparison"
+    ],
+    "question": "A Bar Chart is the best choice when you want to compare values between different groups or categories.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Bar Charts excel at comparing values across different categories. Each bar represents a category, and the height shows its value, making side-by-side comparison easy. This is ideal for questions like 'Which game genre is most popular?' or 'Do high-screen-time students sleep less?'",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Speech Recognition",
+      "Result Storage"
+    ],
+    "question": "After Speech Recognition listens to you speak, the words you said are stored in _____.",
+    "choices": [
+      "speech recognition result",
+      "keyboard input",
+      "screen display",
+      "camera output"
+    ],
+    "ans_idx": 0,
+    "justification": "The 'speech recognition result' block stores the last word or sentence that was spoken and recognized. You can then use this stored text in your program to trigger actions, display messages, or combine with other AI tools like Translate or Text to Speech.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Pie Chart",
+      "Percentages"
+    ],
+    "question": "Your gaming group wants to show what percentage of total playtime each game type gets. Which chart is best?",
+    "choices": [
+      "Pie Chart",
+      "Line Chart",
+      "Scatter Plot",
+      "Bar Chart"
+    ],
+    "ans_idx": 0,
+    "justification": "Pie Chart is perfect for showing percentages and parts of a whole (like 100% total playtime divided among game types). Each slice represents a game type's share of total time, making it easy to see proportions at a glance.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Language Settings"
+    ],
+    "question": "Before using Text to Speech to speak Arabic text, you should set the language to Arabic so the pronunciation is correct.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Setting the correct language before using Text to Speech is crucial for proper pronunciation and accent. If the language is set to English but you're speaking Arabic text, the pronunciation will sound wrong. The 'set language' block helps the computer speak correctly.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Face Detection",
+      "Recognition Conditions"
+    ],
+    "question": "What might happen if the lighting is very poor during Face Detection?",
+    "choices": [
+      "Lighting doesn't affect Face Detection",
+      "Face Detection works better in darkness",
+      "The AI may not recognize faces well or at all",
+      "The camera automatically fixes lighting"
+    ],
+    "ans_idx": 2,
+    "justification": "Poor lighting affects Face Detection because the camera cannot capture clear images. Just like humans struggle to see faces in darkness, AI needs good visibility to detect and recognize faces. Proper lighting is an important condition for accurate Face Detection.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "MIN Function",
+      "Data Analysis"
+    ],
+    "question": "To find the lowest score in your gaming competition, you should use the _____ function.",
+    "choices": [
+      "COUNT",
+      "MAX",
+      "MEAN",
+      "MIN"
+    ],
+    "ans_idx": 3,
+    "justification": "The MIN function returns the smallest or lowest value from a set of numbers. It's the opposite of MAX (highest value) and is useful for finding minimums like lowest score, shortest time, or smallest amount.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Combined AI Extensions",
+      "Project Integration"
+    ],
+    "question": "You're creating a smart assistant for your YouTube channel. Which combination of AI tools would let viewers control video playback with voice AND see hand gestures detected?",
+    "choices": [
+      "Face Detection + Translate",
+      "Speech Recognition + Human Body Detection",
+      "Text to Speech + Face Detection",
+      "Translate + Speech Recognition only"
+    ],
+    "ans_idx": 1,
+    "justification": "Speech Recognition allows voice control (commands like 'play', 'pause'), while Human Body Detection tracks hand gestures and positions. Combining both extensions creates a multimodal control system using voice AND gestures, giving users flexible ways to interact with content.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Analysis Process"
+    ],
+    "question": "In the Data Story process, you should choose which chart to use BEFORE deciding what calculations to perform.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False. The correct Data Story order is: Ask question → Choose data → Choose calculation → Choose chart → Conclude. You must perform calculations first to get results, THEN choose the appropriate chart to visualize those results. The chart depends on what you calculated.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Analysis",
+      "Adding New Data"
+    ],
+    "question": "You analyzed reptiles' average sleep time. If you add more reptile data to your dataset, what might change?",
+    "choices": [
+      "The data will become invalid",
+      "Nothing will change because calculations are final",
+      "Only the COUNT will change, not the MEAN",
+      "The average sleep time of reptiles may increase or decrease"
+    ],
+    "ans_idx": 3,
+    "justification": "Adding new data changes calculations. The MEAN (average) recalculates with the new values included, so reptiles' average sleep could go up or down depending on the new data. This shows that data analysis is dynamic - new information can shift our understanding.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Definition",
+      "Smart Behavior"
+    ],
+    "question": "Artificial Intelligence means things that _____ made that act smart.",
+    "choices": [
+      "humans",
+      "animals",
+      "robots",
+      "nature"
+    ],
+    "ans_idx": 0,
+    "justification": "Artificial Intelligence (AI) refers to things that HUMANS made that act smart or intelligent. 'Artificial' means man-made (not natural), and these systems are programmed by humans to perform intelligent tasks like recognizing faces, understanding speech, or making decisions.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Chart Selection",
+      "Wrong Visualization"
+    ],
+    "question": "What can happen if you choose the wrong type of chart for your data?",
+    "choices": [
+      "Nothing happens, all charts work the same",
+      "Your code will have errors",
+      "The data will be deleted",
+      "The message can be confusing or misleading for viewers"
+    ],
+    "ans_idx": 3,
+    "justification": "Using the wrong chart type can make your message confusing or misleading. For example, using a Pie chart to compare values between many categories makes it hard to see differences, while a Bar chart would be clearer. Choosing the right visualization is crucial for effective communication.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Machine Learning",
+      "Learning from Examples"
+    ],
+    "question": "In Machine Learning, the computer learns patterns from the examples we give it during the training step.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. During the LEARN step of Machine Learning, the computer analyzes the training examples we provide and learns patterns from them. This is how it becomes able to recognize similar things later, like identifying cats after seeing many cat photos.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "COUNT vs SUM",
+      "Function Selection"
+    ],
+    "question": "Your friend asks 'How many players chose action games?' and 'What is the total playtime for all players?' Which functions should you use?",
+    "choices": [
+      "COUNT for both questions",
+      "MEAN for both questions",
+      "COUNT for first question, SUM for second question",
+      "SUM for first question, COUNT for second question"
+    ],
+    "ans_idx": 2,
+    "justification": "COUNT answers 'how many' (number of players), while SUM answers 'what is the total' (adding all playtime hours together). Each function serves a different purpose: COUNT counts items, SUM adds values together.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Speech Recognition",
+      "Real-world Applications"
+    ],
+    "question": "_____ is a popular voice assistant app that uses Speech Recognition to answer questions.",
+    "choices": [
+      "Siri",
+      "Instagram",
+      "Minecraft",
+      "TikTok"
+    ],
+    "ans_idx": 0,
+    "justification": "Siri (and similar assistants like Google Assistant and Alexa) are real-world applications of Speech Recognition technology. They listen to your voice commands, understand what you're asking, and respond accordingly.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Analysis Impact"
+    ],
+    "question": "You're analyzing 100 students' gaming preferences, but 20 records are duplicates. If you don't remove them during cleaning, what happens to your COUNT result?",
+    "choices": [
+      "COUNT will automatically remove duplicates",
+      "Duplicates don't affect COUNT",
+      "COUNT will show 80 automatically",
+      "COUNT will show 100 instead of 80, making your analysis incorrect"
+    ],
+    "ans_idx": 3,
+    "justification": "If you don't remove duplicates, COUNT will count all 100 records including the 20 duplicates, giving you an inflated and incorrect count. The true number is 80 unique students. This demonstrates why Data Cleaning is essential BEFORE analysis - dirty data leads to wrong conclusions.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Image Classification",
+      "Training Process"
+    ],
+    "question": "When training an Image Classification model, using only 5 very similar images per class will likely produce better results than using 20 varied images per class.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "False. Training data must be BIG (many examples, at least 20) and DIFFERENT (varied). Using only 5 similar images teaches the AI a very narrow pattern, so it won't recognize the object in different conditions. 20 varied images provide better learning and more accurate recognition.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Definition",
+      "Information Collection"
+    ],
+    "question": "Which of these is an example of data being collected from your actions?",
+    "choices": [
+      "Your backpack's brand",
+      "YouTube tracking which videos you watch",
+      "Your phone's color",
+      "Your school's name"
+    ],
+    "ans_idx": 1,
+    "justification": "Data is information collected from actions, choices, and events. When YouTube tracks which videos you watch, it's collecting data about your viewing behavior. This data helps YouTube recommend videos you might like. The other options are static facts, not collected action data.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Human Body Detection",
+      "Continuous Detection"
+    ],
+    "question": "To control a game character continuously with hand movements, the 'analyze image for hand' block must be inside a _____ loop.",
+    "choices": [
+      "forever",
+      "if-then",
+      "repeat 10",
+      "when clicked"
+    ],
+    "ans_idx": 0,
+    "justification": "A 'forever' loop runs continuously without stopping, which is necessary for real-time hand tracking. It constantly analyzes the camera feed for hand positions, allowing the game to respond immediately to your movements. A 'repeat 10' would stop after 10 times, which isn't suitable for continuous control.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "MAX Function",
+      "Finding Highest Value"
+    ],
+    "question": "Your esports tournament recorded these scores: 4500, 7200, 5800, 9100, 6300. Which function finds the winning score?",
+    "choices": [
+      "MIN",
+      "MEAN",
+      "MAX",
+      "SUM"
+    ],
+    "ans_idx": 2,
+    "justification": "The MAX function returns the highest value, which in this case is 9100 - the winning score. MAX is perfect for finding the best performance, highest score, or maximum value in any dataset.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "AI Limitations",
+      "Emotions"
+    ],
+    "question": "AI can detect facial expressions like happy or sad, but it cannot actually feel emotions like humans do.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. AI can recognize patterns in facial expressions and label them as 'happy' or 'sad' through image recognition, but it doesn't actually experience emotions. AI processes patterns in data but lacks consciousness and feelings - this is a key difference between AI and humans.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Complete Analysis"
+    ],
+    "question": "You completed these Data Story steps: Asked 'Which game genre is most popular?', collected data, calculated COUNT for each genre, and created a Bar Chart. What should be your final step?",
+    "choices": [
+      "Make a conclusion answering your original question based on the chart",
+      "Start a new analysis immediately",
+      "Delete all the data",
+      "Choose a different chart type"
+    ],
+    "ans_idx": 0,
+    "justification": "The final step in the Data Story process is to make a conclusion that answers your original question. After visualizing the data, you interpret the results and state your findings (e.g., 'Action games are most popular with 45 players'). This completes the analysis cycle.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Quantitative Data",
+      "Numbers"
+    ],
+    "question": "Data that represents numbers and can be measured is called _____ data.",
+    "choices": [
+      "missing",
+      "categorical",
+      "quantitative",
+      "qualitative"
+    ],
+    "ans_idx": 2,
+    "justification": "Quantitative data represents numbers and measurable quantities like scores, time, age, or money. It's different from qualitative data, which represents categories or qualities like color, game type, or favorite food.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Text to Speech",
+      "Speaker Output"
+    ],
+    "question": "Your app uses Text to Speech to read notifications aloud. What AI tool must the computer have to output sound?",
+    "choices": [
+      "Speaker",
+      "Keyboard",
+      "Microphone",
+      "Camera"
+    ],
+    "ans_idx": 0,
+    "justification": "The speaker is the output device that produces sound. Text to Speech converts text into audio, which is then played through the speaker so you can hear it. The speaker is like AI's 'mouth' for speaking.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Visualization",
+      "Chart Purpose"
+    ],
+    "question": "Using charts and graphs makes it easier to spot patterns and trends in data compared to looking at raw numbers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. Visual representations like charts and graphs help us quickly understand patterns, compare values, and identify trends that would be difficult to see in tables of numbers. This is why Data Visualization is a fundamental part of Data Science - it makes data insights accessible and understandable.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Combined AI Tools",
+      "Language Translator"
+    ],
+    "question": "To create a complete speaking translator app, you need to combine three AI extensions. What is the correct sequence of operations?",
+    "choices": [
+      "Speak → Translate → Listen",
+      "Listen → Speak → Translate",
+      "Translate → Listen → Speak",
+      "Listen (Speech Recognition) → Translate → Speak (Text to Speech)"
+    ],
+    "ans_idx": 3,
+    "justification": "The logical flow is: 1) Listen using Speech Recognition to capture what the user says, 2) Translate the captured text to the target language, 3) Speak the translated text using Text to Speech. This creates a complete voice-to-voice translator. Any other order wouldn't make logical sense.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Charts Extension",
+      "Visualization Tool"
+    ],
+    "question": "In mBlock, to create Bar Charts and Pie Charts for visualizing data, you need to use the _____ extension.",
+    "choices": [
+      "Speech Recognition",
+      "Data Charts",
+      "Face Detection",
+      "Human Body Detection"
+    ],
+    "ans_idx": 1,
+    "justification": "The Data Charts extension in mBlock provides blocks for creating visualizations like Bar Charts and Pie Charts. This extension is essential for the Data Visualization step in your Data Science projects, helping you present your analysis visually.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Similar Names Problem"
+    ],
+    "question": "Your dataset has players named 'Alex', 'alex', 'Alex_123', and 'ALEX'. What's the best way to handle this during Data Cleaning?",
+    "choices": [
+      "Change each to a random new name",
+      "Unite them into one consistent name like 'Alex' to avoid counting the same person multiple times",
+      "Keep all versions because they might be different people",
+      "Delete all records with similar names"
+    ],
+    "ans_idx": 1,
+    "justification": "This is the 'similar but different names' problem in Data Cleaning. The best practice is to standardize these variations into one consistent identifier. This prevents counting the same player multiple times and ensures accurate analysis. However, you should verify they're actually the same person first.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Translate Extension",
+      "Multilingual Support"
+    ],
+    "question": "The Translate extension can help you create apps that work in multiple languages.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. The Translate extension converts text between languages, making it perfect for creating multilingual applications. You can build apps where users choose their language, and all text is automatically translated, making your app accessible to people around the world.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Types",
+      "Qualitative Data"
+    ],
+    "question": "Which of these represents qualitative (category) data?",
+    "choices": [
+      "Favorite game genre: RPG, Sports, Puzzle",
+      "Score: 8,500 points",
+      "Player level: 42",
+      "Playing time: 5.5 hours"
+    ],
+    "ans_idx": 0,
+    "justification": "Game genres (RPG, Sports, Puzzle) are qualitative data because they represent categories or types, not measurable numbers. Qualitative data describes qualities or characteristics that can be observed but not measured numerically.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Training Data Quality",
+      "Varied Examples"
+    ],
+    "question": "For good ML results, training data must be both _____ (many examples) and _____ (varied examples).",
+    "choices": [
+      "old and new",
+      "BIG and DIFFERENT",
+      "small and similar",
+      "fast and slow"
+    ],
+    "ans_idx": 1,
+    "justification": "The key principle for training data quality is that it must be BIG (enough examples, at least 20 per class) and DIFFERENT (varied in lighting, angles, backgrounds, etc.). This combination ensures the AI learns robust patterns that work in real-world conditions.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "MEAN vs MAX",
+      "Function Comparison"
+    ],
+    "question": "Player scores are: 5000, 5200, 5100, 5300, and 15000. Which statement is correct?",
+    "choices": [
+      "MAX is affected more by the outlier than MEAN",
+      "MAX and MEAN both give 15000",
+      "MAX gives 15000, while MEAN gives about 7120, which is higher than most scores",
+      "MEAN gives 5000 because that's most common"
+    ],
+    "ans_idx": 2,
+    "justification": "MAX simply returns the highest value (15000). MEAN calculates average: (5000+5200+5100+5300+15000)/5 = 7120. The outlier (15000) significantly raises the mean above typical scores (around 5000), showing how MEAN is sensitive to extreme values while MAX just identifies the maximum.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "Reading Multiple Rows"
+    ],
+    "question": "When reading 50 rows of data from Google Sheets, using a loop is more efficient than writing 50 separate read commands.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. A loop allows you to read many rows automatically with just a few lines of code. Writing 50 separate commands would be extremely inefficient, time-consuming, and error-prone. Loops are essential for handling large datasets - this is a fundamental programming principle in Data Science.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Camera",
+      "AI Vision"
+    ],
+    "question": "What does AI use to 'see' things like a human uses eyes?",
+    "choices": [
+      "Speaker",
+      "Keyboard",
+      "Microphone",
+      "Camera"
+    ],
+    "ans_idx": 3,
+    "justification": "AI uses a camera to capture images and 'see' the world, similar to how humans use eyes for vision. The camera is essential for AI features like Face Detection, Image Classification, and Human Body Detection - all visual recognition tasks.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story Steps",
+      "Analysis Order"
+    ],
+    "question": "The Data Story process begins with asking a _____, then choosing relevant data to answer it.",
+    "choices": [
+      "calculation",
+      "conclusion",
+      "question",
+      "chart"
+    ],
+    "ans_idx": 2,
+    "justification": "The Data Story process always starts with a QUESTION - something you want to find out or understand. This question guides all subsequent steps: what data to collect, which calculations to perform, which chart to use, and what conclusions to draw. Starting with a clear question ensures focused, purposeful analysis.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Speech Recognition",
+      "Start Listening Block"
+    ],
+    "question": "The 'start listening' block in Speech Recognition should typically be used once when the program starts, not repeatedly in a loop.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. 'Start listening' initializes the microphone and should be called once at the beginning (like when green flag is clicked). Once listening is started, the system continuously captures speech. Repeatedly calling it in a loop is unnecessary and can cause issues.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Science",
+      "Decision Making"
+    ],
+    "question": "Why is Data Science important for making decisions about your YouTube gaming channel?",
+    "choices": [
+      "It makes videos upload faster",
+      "It gives you more subscribers instantly",
+      "It helps you understand which videos get more views so you can create better content",
+      "It improves video quality automatically"
+    ],
+    "ans_idx": 2,
+    "justification": "Data Science helps you analyze information (like view counts, watch time, comments) to understand patterns and make informed decisions. By seeing which content performs best, you can create more of what your audience wants, leading to channel growth. It's about using data to make smarter choices.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Training Data",
+      "Image Collection"
+    ],
+    "question": "You're training an animal classifier and need 20 images per class. Why should you take photos from different angles and lighting conditions?",
+    "choices": [
+      "To make the dataset look more colorful",
+      "To use more storage space",
+      "So the AI learns to recognize animals in various real-world conditions",
+      "Because the computer gets bored with similar images"
+    ],
+    "ans_idx": 2,
+    "justification": "Training data must be DIFFERENT (varied) so the AI learns robust patterns that work in various conditions. Photos from different angles, lighting, backgrounds, and distances help the model recognize animals in real-world scenarios, not just one specific situation.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data",
+      "Information from Actions"
+    ],
+    "question": "When Netflix tracks which shows you watch, it is collecting data about your viewing behavior.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Data is information collected from your actions, choices, and events. Netflix collecting viewing data (what you watch, when, for how long) is a perfect example of data collection that helps them recommend shows you might like.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Text to Speech",
+      "Set Language Block"
+    ],
+    "question": "Before using the 'speak' block in Text to Speech, you should use _____ block to ensure correct pronunciation.",
+    "choices": [
+      "count data",
+      "analyze image",
+      "set language",
+      "start listening"
+    ],
+    "ans_idx": 2,
+    "justification": "The 'set language' block configures the Text to Speech system for the correct language and accent. This ensures the computer pronounces words correctly in the target language. Without setting the language, pronunciation may sound wrong or unnatural.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Choosing Questions"
+    ],
+    "question": "Which question would be BEST for a Data Story project about gaming habits?",
+    "choices": [
+      "Do students who play more than 3 hours daily have lower grades than those who play less?",
+      "When was Minecraft created?",
+      "What is my favorite color?",
+      "How many computers are in school?"
+    ],
+    "ans_idx": 0,
+    "justification": "A good Data Story question is specific, answerable with data, and compares groups or explores relationships. The gaming hours vs. grades question can be answered by collecting data, calculating averages, and comparing groups. The other options are either not data-related or don't require analysis.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Human Body Detection",
+      "Hands Detection"
+    ],
+    "question": "Human Body Detection extension can detect specific body parts like hands and track their X/Y positions in real-time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. The Human Body Detection extension in PictoBlox can detect specific body parts (like hands, head, shoulders) and provides their X and Y coordinates. This enables real-time hand tracking for interactive applications like games and gesture control.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "MEAN Function",
+      "Average Understanding"
+    ],
+    "question": "Five gamers have these scores: 6000, 6500, 6200, 6400, 6300. What does MEAN tell you?",
+    "choices": [
+      "The total of all scores is 31400",
+      "There are 5 players total",
+      "The highest score is 6500",
+      "The typical/average score is 6280 points"
+    ],
+    "ans_idx": 3,
+    "justification": "MEAN calculates the average: (6000+6500+6200+6400+6300)/5 = 31400/5 = 6280. This tells you the typical or middle value that represents the group's performance. It's useful for understanding what's 'normal' in your dataset.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Qualitative Data",
+      "Categories"
+    ],
+    "question": "Data that represents categories or groups (not numbers) is called _____ data.",
+    "choices": [
+      "qualitative",
+      "numerical",
+      "calculated",
+      "quantitative"
+    ],
+    "ans_idx": 0,
+    "justification": "Qualitative data describes qualities, characteristics, or categories like colors (red, blue), game types (action, sports), or difficulty levels (easy, hard). It's different from quantitative data which represents measurable numbers.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Face Detection",
+      "Saved Faces"
+    ],
+    "question": "Face Detection in PictoBlox can only detect that a face exists, but cannot identify whose face it is.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "False. Face Detection in PictoBlox can recognize saved faces - it can identify specific people whose faces have been trained/saved in the system. This is how it can tell if it's you or someone else, as mentioned in Session 1 of the AI curriculum.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Impact on Results"
+    ],
+    "question": "Your dataset has 'Fortnite', 'fortnite', 'FORTNITE', and 'Fortnite_Game' which are all the same game. If you don't unite them, what happens?",
+    "choices": [
+      "COUNT will show 4 different games instead of 1, making popularity analysis wrong",
+      "Nothing happens, the analysis is still correct",
+      "Only the chart colors will be affected",
+      "The computer will automatically combine them"
+    ],
+    "ans_idx": 0,
+    "justification": "This is the 'similar but different names' problem. Without uniting them, the computer treats them as 4 separate games, so COUNT and other analyses will be wrong. The solution is to standardize all variations to one name (e.g., 'Fortnite') during Data Cleaning.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning",
+      "Learn Step"
+    ],
+    "question": "During the _____ step of Machine Learning, the computer analyzes training data and identifies patterns.",
+    "choices": [
+      "Test",
+      "Input",
+      "Output",
+      "Learn"
+    ],
+    "ans_idx": 3,
+    "justification": "The LEARN (or Training) step is when the computer processes the input data and learns patterns from it. This is the core of Machine Learning where the AI develops its ability to recognize things by studying examples.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Visualization",
+      "Understanding Data"
+    ],
+    "question": "Why do data scientists use charts instead of just showing tables of numbers?",
+    "choices": [
+      "Charts take up more space",
+      "Charts make patterns and trends easier to see and understand quickly",
+      "Tables are too difficult to create",
+      "Charts use more colors"
+    ],
+    "ans_idx": 1,
+    "justification": "Data visualization through charts helps us spot patterns, trends, and insights much faster than reading rows of numbers. Our brains process visual information more efficiently, making charts essential for effective data communication and analysis.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Combined AI Projects",
+      "Multiple Extensions"
+    ],
+    "question": "Advanced AI projects can combine multiple extensions like Speech Recognition, Translate, and Text to Speech to create powerful multilingual applications.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. The curriculum demonstrates combining multiple AI tools to create sophisticated applications. For example, the language translator project uses Speech Recognition (listen) + Translate (convert language) + Text to Speech (speak translation), showing how AI extensions work together powerfully.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Reading Data",
+      "Lists"
+    ],
+    "question": "When reading data from Google Sheets into your program, where is the data typically stored?",
+    "choices": [
+      "In the camera",
+      "In lists or variables",
+      "In the speaker",
+      "On the screen only"
+    ],
+    "ans_idx": 1,
+    "justification": "Data read from Google Sheets is stored in lists or variables in your program. This allows you to manipulate the data, perform calculations on it, and use it throughout your code. Lists are particularly useful for storing multiple data values.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Senses",
+      "Microphone"
+    ],
+    "question": "Just like humans use ears to hear, AI uses a _____ to capture sound.",
+    "choices": [
+      "screen",
+      "microphone",
+      "camera",
+      "keyboard"
+    ],
+    "ans_idx": 1,
+    "justification": "The microphone is AI's tool for 'hearing' - it captures sound waves just like human ears do. This enables AI applications like Speech Recognition, voice commands, and audio analysis.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Story",
+      "Analysis Process"
+    ],
+    "question": "In a Data Story, you should always start by asking a clear question before collecting any data.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. The Data Story process begins with a question - this guides what data you need to collect, which calculations to perform, and which visualizations to create. Starting with a clear question ensures your analysis is focused and purposeful rather than random.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Rock Paper Scissors Project",
+      "Voice Control"
+    ],
+    "question": "In the Rock Paper Scissors homework project using Speech Recognition, what happens when you say 'rock'?",
+    "choices": [
+      "The backdrop changes based on your voice command",
+      "The computer gets confused",
+      "Nothing happens",
+      "The game ends immediately"
+    ],
+    "ans_idx": 0,
+    "justification": "In the Session 4 homework project, Speech Recognition captures voice commands ('rock', 'paper', or 'scissors') and the program changes the backdrop accordingly. This demonstrates using speech input to control visual elements in an interactive game.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Comparing Groups",
+      "Sleep and Screen Time"
+    ],
+    "question": "To answer 'Does high screen time affect sleep?', which analysis approach is most appropriate?",
+    "choices": [
+      "Create a Pie Chart of all students",
+      "Find the maximum sleep time",
+      "Divide students into high/low screen time groups, calculate average sleep for each, compare with Bar Chart",
+      "Just count total students"
+    ],
+    "ans_idx": 2,
+    "justification": "This is a group comparison question requiring: 1) Divide data into groups (high vs low screen time), 2) Calculate MEAN sleep for each group, 3) Compare averages using Bar Chart to visualize the difference. This approach directly answers whether screen time affects sleep by showing if one group sleeps less.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Google Sheets",
+      "Data Source"
+    ],
+    "question": "In Data Science projects, we read data from _____ instead of typing all values manually in code.",
+    "choices": [
+      "Google Sheets",
+      "the speaker",
+      "the microphone",
+      "the camera"
+    ],
+    "ans_idx": 0,
+    "justification": "Google Sheets serves as a data source in Data Science projects. Reading from sheets allows you to work with large, real datasets without hardcoding every value. It separates data from code, making updates easier and analysis more flexible.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Image Classification",
+      "Fruit Classifier"
+    ],
+    "question": "When creating a fruit classifier, you need to train it with at least 20 different images for each type of fruit.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. According to the curriculum, Image Classification models should be trained with at least 20 images per class. This provides sufficient varied examples for the computer to learn patterns and recognize fruits accurately. The homework in Session 2 asks for 3 animals with 20 images each.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Data Science",
+      "Better Decisions"
+    ],
+    "question": "How does Data Science help you make better decisions about your YouTube channel?",
+    "choices": [
+      "By making videos automatically",
+      "By giving you free subscribers",
+      "By analyzing which videos get more views to understand what content works best",
+      "By changing video colors"
+    ],
+    "ans_idx": 2,
+    "justification": "Data Science helps you analyze information (views, likes, comments, watch time) to identify patterns in what your audience enjoys. By understanding which content performs best, you can make informed decisions about what to create next, leading to better content and channel growth.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Clean Data",
+      "Training Quality"
+    ],
+    "question": "In Machine Learning, _____ data means having good quality training examples without errors.",
+    "choices": [
+      "Clean",
+      "Dirty",
+      "Old",
+      "Small"
+    ],
+    "ans_idx": 0,
+    "justification": "Clean Data in ML means high-quality training examples without errors, duplicates, or problems. Just like in Data Science, clean data is crucial for Machine Learning because errors in training data lead to poor AI performance. Quality matters as much as quantity.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Animals Sleep Analysis",
+      "Reptiles vs Mammals"
+    ],
+    "question": "In the Final Project (Animals Sleep Time), you compare average sleep hours between mammals and reptiles to see which group sleeps more.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. The Final Project in Data Science involves analyzing animal sleep data, comparing groups (mammals vs reptiles), and visualizing results with a Bar Chart. The homework extends this by adding more animals to the comparison, demonstrating complete Data Story skills.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Smart Assistant Project",
+      "Lights Control"
+    ],
+    "question": "In the Smart Assistant project from Session 4, how do voice commands control lights?",
+    "choices": [
+      "Lights turn on automatically without commands",
+      "Speech Recognition captures commands, then code checks the result and turns lights on/off accordingly",
+      "The camera detects light levels",
+      "Text to Speech controls the lights"
+    ],
+    "ans_idx": 1,
+    "justification": "The Smart Assistant uses Speech Recognition to capture voice commands (like 'lights on' or 'lights off'). The program then checks the speech recognition result and executes the appropriate action (turning lights sprite on/off). This demonstrates practical voice-controlled automation.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Blood Pressure Analysis",
+      "At-Risk Patients"
+    ],
+    "question": "In the blood pressure project, you need to count patients with readings above 140. Which function is correct?",
+    "choices": [
+      "COUNT patients where blood pressure > 140",
+      "MEAN of all patients",
+      "SUM all blood pressure readings",
+      "MAX blood pressure only"
+    ],
+    "ans_idx": 0,
+    "justification": "COUNT with a condition (blood pressure > 140) tells you HOW MANY patients are at risk. This is mentioned in the homework for Session 2 - counting how many students have screen time > 5 hours, and similar logic applies to counting at-risk patients.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Speaker",
+      "AI Output"
+    ],
+    "question": "The speaker is the AI tool that produces sound output, like playing Text to Speech audio.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. The speaker is the output device for sound in AI systems. When Text to Speech converts text to audio, the speaker plays that audio so you can hear it. It's AI's way of 'speaking' to communicate with users through sound.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Final Step"
+    ],
+    "question": "After creating your chart in a Data Story, the final step is to make a _____ that answers your original question.",
+    "choices": [
+      "different chart",
+      "loop",
+      "conclusion",
+      "new question"
+    ],
+    "ans_idx": 2,
+    "justification": "The Data Story process ends with a CONCLUSION - a clear statement that answers your original question based on your analysis and visualization. For example: 'Students with high screen time sleep 1.5 hours less on average than those with low screen time.' This closes the analysis cycle.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "Natural vs Artificial",
+      "AI Definition"
+    ],
+    "question": "Which of these is the difference between natural and artificial?",
+    "choices": [
+      "Natural is newer than artificial",
+      "Natural exists in nature, artificial is made by humans",
+      "Natural is better than artificial always",
+      "Artificial is more expensive than natural"
+    ],
+    "ans_idx": 1,
+    "justification": "The key difference is that natural things exist in nature (like trees, animals, human intelligence), while artificial things are made by humans (like AI, robots, computers). This is why we call it 'Artificial' Intelligence - it's intelligence created by humans, not naturally occurring.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "SUM Function",
+      "Total Calculation"
+    ],
+    "question": "The SUM function adds all values together to give you a total.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. SUM is used to add all values together to get a total amount. For example, if you want to find total gaming hours across all players (5+3+7+4), SUM gives you 19 hours total.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Machine Learning Process",
+      "Testing"
+    ],
+    "question": "The ML process has three steps: Input, Learn, and _____.",
+    "choices": [
+      "Print",
+      "Delete",
+      "Test",
+      "Save"
+    ],
+    "ans_idx": 2,
+    "justification": "The three steps of the Machine Learning process are: Input (provide data), Learn (computer learns patterns), and Test (check if it learned correctly). Testing is crucial to verify the AI can work with new, unseen examples.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Comparing Groups",
+      "Average Calculation"
+    ],
+    "question": "To compare whether students with high screen time sleep less than students with low screen time, which approach is most appropriate?",
+    "choices": [
+      "Find MAX sleep time for all students",
+      "Use a Pie Chart to show all students",
+      "Calculate MEAN sleep for each group, then compare using a Bar Chart",
+      "Use COUNT to count students in each group"
+    ],
+    "ans_idx": 2,
+    "justification": "To compare groups properly, calculate the average (MEAN) for each group separately, then visualize the comparison with a Bar Chart (one bar per group). This shows whether high screen time group has a lower average sleep than low screen time group. COUNT would only tell you how many students, not their sleep patterns.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Emotion Detection",
+      "AI Capabilities"
+    ],
+    "question": "Emotion Detection using Face Detection can identify expressions like happy, sad, or neutral based on facial features.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. Emotion Detection is an advanced feature that analyzes facial expressions to classify emotions like happy, sad, neutral, angry, etc. It works by detecting specific facial features (smile, frown, eyebrow position) and matching them to emotion patterns. This is part of the homework project in Session 1 of the AI track.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Cleaning",
+      "Duplicate Data"
+    ],
+    "question": "What is the problem with having repeated (duplicate) data in your dataset?",
+    "choices": [
+      "It makes your calculations wrong by counting the same information multiple times",
+      "It's not a problem at all",
+      "It only affects the chart colors",
+      "It makes your computer slower"
+    ],
+    "ans_idx": 0,
+    "justification": "Duplicate data is a major problem because it skews your analysis by counting the same information multiple times. For example, if the same player's score appears twice, your SUM would be inflated, COUNT would be wrong, and MEAN would be inaccurate. This is why removing duplicates during Data Cleaning is essential.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Examples",
+      "Real-world Applications"
+    ],
+    "question": "_____ is an AI chatbot that can answer questions and have conversations with you.",
+    "choices": [
+      "Microsoft Word",
+      "Google Chrome",
+      "Zoom",
+      "ChatGPT"
+    ],
+    "ans_idx": 3,
+    "justification": "ChatGPT is a popular example of AI that uses natural language processing to understand questions and provide intelligent responses. It's mentioned in the curriculum as a real-world AI application that students can relate to.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Bar Chart",
+      "When to Use"
+    ],
+    "question": "When is a Bar Chart the best choice for visualizing your data?",
+    "choices": [
+      "When showing individual data points scattered",
+      "When showing percentages that add to 100%",
+      "When showing how something changes over years",
+      "When comparing values between different categories or groups"
+    ],
+    "ans_idx": 3,
+    "justification": "Bar Charts are ideal for comparing values across different categories (like comparing average sleep between high vs low screen time groups, or comparing scores across different games). Each bar represents a category, making side-by-side comparison easy and clear.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Human Body Detection",
+      "X/Y Coordinates"
+    ],
+    "question": "In Human Body Detection, the Y position of your hand tells you if your hand is on the left or right side of the screen.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False. The X position determines left/right (larger X = more to the right), while the Y position determines up/down (larger Y typically = lower on screen). Understanding X and Y coordinates is important for controlling movements in AI projects.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Analysis",
+      "Adding Data Impact"
+    ],
+    "question": "You analyzed 5 mammals with sleep times: 8, 7, 9, 8, 8 hours (average = 8). If you add a mammal that sleeps 2 hours, what happens to the average?",
+    "choices": [
+      "The average becomes 2 hours",
+      "The average stays 8 hours",
+      "The average decreases to 7 hours because the new low value pulls it down",
+      "The average increases"
+    ],
+    "ans_idx": 2,
+    "justification": "Adding 2 hours to the dataset changes the calculation: (8+7+9+8+8+2)/6 = 42/6 = 7 hours. The new low value (2) pulls the average down from 8 to 7. This demonstrates how MEAN is affected by all values, especially outliers, and shows why adding new data can change your conclusions.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Cleaning",
+      "Four Main Problems"
+    ],
+    "question": "The four main data cleaning problems are: repeated data, missing data, unusual data, and _____ data.",
+    "choices": [
+      "foreign",
+      "expensive",
+      "colorful",
+      "similar but different names"
+    ],
+    "ans_idx": 3,
+    "justification": "The four main Data Cleaning problems covered in the curriculum are: 1) Repeated/duplicate data, 2) Missing data (empty cells), 3) Unusual data (values that don't make sense), and 4) Similar but different names (like 'Alex', 'alex', 'ALEX' for same person).",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "PictoBlox",
+      "ML Environment"
+    ],
+    "question": "PictoBlox is a programming platform that includes Machine Learning extensions for building AI projects.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. PictoBlox (also mentioned as mBlock in Data Science sections) is the programming platform used throughout the Orange Belt curriculum. It provides ML Environment and various AI extensions like Face Detection, Human Body Detection, Speech Recognition, Text to Speech, and Translate for building AI projects.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Face Filters Project",
+      "Combined Extensions"
+    ],
+    "question": "For the Final Project (Face Filters), which combination of AI extensions would you need?",
+    "choices": [
+      "Text to Speech + Translate",
+      "Speech Recognition only",
+      "Human Body Detection to place filters + Speech Recognition to change filter costume",
+      "Face Detection only"
+    ],
+    "ans_idx": 2,
+    "justification": "The Final Project in AI track combines Human Body Detection (to detect face/head position and place filter correctly) with Speech Recognition (to change which filter costume is used via voice commands). This demonstrates mastery of multiple AI tools working together.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "MIN Function",
+      "Lowest Value"
+    ],
+    "question": "Blood pressure readings for at-risk patients are: 145, 152, 148, 160, 142. What does MIN tell you?",
+    "choices": [
+      "How many patients are at risk",
+      "The lowest blood pressure is 142",
+      "The average blood pressure",
+      "The total of all readings"
+    ],
+    "ans_idx": 1,
+    "justification": "MIN returns the smallest/lowest value, which is 142 in this dataset. This is useful for finding the minimum in any set of values, like the patient with the lowest (but still concerning) blood pressure reading among at-risk patients. This is mentioned in the homework for Session 3 of Data Science track.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "X and Y Values",
+      "Chart Axes"
+    ],
+    "question": "In a Bar Chart comparing games, if you accidentally swap X and Y values, the chart will still show the correct comparison.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "False. X and Y values have specific meanings: X-value = category/label (game names), Y-value = numeric measurement (scores, counts). Swapping them would create a confusing or incorrect chart where numbers appear on the horizontal axis and categories on vertical, making the visualization misleading and hard to interpret.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "Speech Recognition",
+      "Real-world Apps"
+    ],
+    "question": "Voice search on YouTube and Google are examples of _____ in real-world applications.",
+    "choices": [
+      "Data Cleaning",
+      "Face Detection",
+      "Speech Recognition",
+      "Image Classification"
+    ],
+    "ans_idx": 2,
+    "justification": "Voice search features on platforms like YouTube and Google use Speech Recognition technology. They listen to what you say, convert it to text, and then search for that content. This is a practical, everyday example of Speech Recognition that students use regularly.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "Pie Chart",
+      "Best Use Case"
+    ],
+    "question": "Your gaming team wants to show what percentage of total game time each member played. Which chart is best?",
+    "choices": [
+      "Scatter Plot",
+      "Bar Chart",
+      "Pie Chart",
+      "Line Chart"
+    ],
+    "ans_idx": 2,
+    "justification": "Pie Chart is perfect for showing percentages of a whole. When you want to show how the total (100%) is divided among parts (each team member's percentage), Pie Chart makes it visual with slices. Each slice size shows that member's proportion of total game time.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 1,
+    "concepts": [
+      "AI Tools",
+      "Code"
+    ],
+    "question": "Code is one of the AI tools that tells the computer what to do with the data from cameras and microphones.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "True. Code (programming) is the tool that instructs the computer on how to process data from input devices like cameras and microphones. Without code, the hardware alone can't perform intelligent tasks. Code brings together all the AI tools to create functioning applications.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Story",
+      "Wrong Calculations"
+    ],
+    "question": "You asked 'Which game is most popular?' but used SUM on game ratings instead of COUNT on number of players. What's the problem?",
+    "choices": [
+      "There is no problem, both work equally",
+      "The chart type will fix this automatically",
+      "SUM is always better than COUNT",
+      "Wrong calculation doesn't answer the question - popularity = player count, not rating sum"
+    ],
+    "ans_idx": 3,
+    "justification": "This shows the importance of choosing the correct calculation for your question. 'Most popular' means 'most players chose it', which requires COUNT (how many players). SUM of ratings tells you total rating points, not popularity. Using the wrong function leads to answering a different question than you asked.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 1,
+    "concepts": [
+      "COUNT Function",
+      "Counting Items"
+    ],
+    "question": "The COUNT function tells us _____ items meet a certain condition.",
+    "choices": [
+      "the total of",
+      "how many",
+      "the biggest",
+      "the average of"
+    ],
+    "ans_idx": 1,
+    "justification": "COUNT answers the question 'how many'. For example, 'how many students play action games?', 'how many players scored above 5000?', or 'how many patients are at risk?'. It counts the number of items that meet your specified condition.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Translate",
+      "Language Conversion"
+    ],
+    "question": "In a multilanguage translator project, where does the Translate block fit in the sequence?",
+    "choices": [
+      "After speaking the text",
+      "It doesn't matter where it goes",
+      "Before listening to speech",
+      "Between getting the speech result and speaking it out"
+    ],
+    "ans_idx": 3,
+    "justification": "The Translate block must come BETWEEN capturing speech and speaking it. The flow is: 1) Get speech recognition result (original language), 2) Translate to target language, 3) Speak the translated text. If you speak before translating, you'll hear the original language, not the translation.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Data Science Functions",
+      "Multiple Functions"
+    ],
+    "question": "For a complete data analysis, you often need to use multiple functions like COUNT, SUM, MEAN, MAX, and MIN together.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. Comprehensive data analysis usually requires multiple functions to get a complete picture. For example, you might use COUNT (how many players), MEAN (average score), MAX (highest score), and MIN (lowest score) together to fully understand player performance. Each function reveals different insights.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "AI",
+    "difficulty_level": 2,
+    "concepts": [
+      "Image Classification",
+      "Input Data"
+    ],
+    "question": "What is the INPUT in an Image Classification project for fruits?",
+    "choices": [
+      "The classification result",
+      "The speaker output",
+      "The camera images of different fruits",
+      "The chart showing results"
+    ],
+    "ans_idx": 2,
+    "justification": "In the ML process for Image Classification, the INPUT is the camera images - the photos of fruits you provide during training and testing. The computer learns from these image inputs to recognize and classify different fruits later. Input is the data we give to the ML system.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Data Science",
+    "difficulty_level": 3,
+    "concepts": [
+      "Data Cleaning",
+      "Analysis Accuracy"
+    ],
+    "question": "If we analyze data with wrong values and duplicates, our answer could be _____.",
+    "choices": [
+      "wrong",
+      "perfect",
+      "colorful",
+      "faster"
+    ],
+    "ans_idx": 0,
+    "justification": "Dirty data (with wrong values, duplicates, missing data, or inconsistencies) leads to wrong analysis results. This is why Data Cleaning is the critical first step - 'garbage in, garbage out'. Clean data is essential for accurate conclusions and good decision-making.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Data Science",
+    "difficulty_level": 2,
+    "concepts": [
+      "Gaming Data Analysis",
+      "Final Project"
+    ],
+    "question": "In the Final Gaming Data Analysis project, what should you do FIRST before creating charts?",
+    "choices": [
+      "Calculate all functions at once",
+      "Clean the data by removing duplicates, fixing missing values, and uniting similar names",
+      "Share results with your team",
+      "Create the Bar Chart immediately"
+    ],
+    "ans_idx": 1,
+    "justification": "The Final Project emphasizes Data Cleaning as the first step: remove repeated data, fix missing values, handle unusual data, and unite similar names. Only after cleaning should you read data, perform calculations (COUNT, SUM, etc.), and create visualizations. This follows the proper Data Story workflow.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  },
+  {
+    "question_type": "true_false",
+    "track": "AI",
+    "difficulty_level": 3,
+    "concepts": [
+      "NaturalReader",
+      "Text to Speech Application"
+    ],
+    "question": "NaturalReader is mentioned as a real-world application that uses Text to Speech technology to read text aloud.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "True. NaturalReader is specifically mentioned in Session 5 of the AI track as an example of a Text to Speech application. It demonstrates how TTS technology is used in real-world tools to help people by reading digital text aloud, which is useful for accessibility and learning.",
+    "age_group": "10-14",
+    "belt": "Orange"
+  }
+]

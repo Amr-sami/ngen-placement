@@ -1,0 +1,1967 @@
+[
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Programming Languages",
+      "High-Level Languages"
+    ],
+    "question": "Python is considered a high-level programming language because it uses syntax closer to human language rather than machine code.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Python is indeed a high-level programming language. High-level languages are designed to be readable and closer to human language, abstracting away the complex machine code that computers actually execute.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Sequential Logic"
+    ],
+    "question": "What is an algorithm in programming?",
+    "choices": [
+      "A hardware component in computers",
+      "A file format for storing code",
+      "A step-by-step set of instructions to solve a problem",
+      "A type of programming language"
+    ],
+    "ans_idx": 2,
+    "justification": "An algorithm is a finite sequence of well-defined instructions designed to perform a specific task or solve a particular problem. It forms the logical foundation of any program before actual coding begins.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Assignment"
+    ],
+    "question": "In Python, the statement `age = 17` creates a _______ named `age` and assigns it the value 17.",
+    "choices": [
+      "loop",
+      "condition",
+      "variable",
+      "function"
+    ],
+    "ans_idx": 2,
+    "justification": "The statement `age = 17` declares a variable named 'age' and assigns the integer value 17 to it. Variables are used to store data that can be referenced and manipulated throughout the program.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Data Types"
+    ],
+    "question": "What will be the output of the following code?\n\n```python\nx = 5\nx = x + 3\nprint(x)\n```",
+    "choices": [
+      "3",
+      "5",
+      "8",
+      "53"
+    ],
+    "ans_idx": 2,
+    "justification": "Initially, x is assigned 5. Then x is reassigned to x + 3, which is 5 + 3 = 8. The print statement outputs the current value of x, which is 8.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Arithmetic Operations"
+    ],
+    "question": "What is the result of the expression `15 // 4` in Python?",
+    "choices": [
+      "3.0",
+      "3.75",
+      "3",
+      "4"
+    ],
+    "ans_idx": 2,
+    "justification": "The `//` operator performs floor division (integer division), which returns the quotient without the remainder. 15 divided by 4 equals 3.75, but floor division returns only the integer part: 3.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Operators",
+      "Modulo"
+    ],
+    "question": "In Python, the expression `10 % 3` returns the remainder of the division, which is 1.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The modulo operator `%` returns the remainder after division. 10 divided by 3 equals 3 with a remainder of 1, so `10 % 3` correctly returns 1.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "if-else"
+    ],
+    "question": "What will the following code print?\n\n```python\nscore = 75\nif score >= 90:\n    print(\"A\")\nelif score >= 70:\n    print(\"B\")\nelse:\n    print(\"C\")\n```",
+    "choices": [
+      "B",
+      "C",
+      "AB",
+      "A"
+    ],
+    "ans_idx": 0,
+    "justification": "Since score is 75, the first condition (score >= 90) is False. The elif condition (score >= 70) is True, so 'B' is printed. The else block is skipped because a condition was already met.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "Nested Conditions",
+      "Logical Operators"
+    ],
+    "question": "What is the output of this code?\n\n```python\nx = 15\ny = 10\nif x > 10 and y > 5:\n    if x + y > 20:\n        print(\"High\")\n    else:\n        print(\"Medium\")\nelse:\n    print(\"Low\")\n```",
+    "choices": [
+      "High",
+      "Low",
+      "Error",
+      "Medium"
+    ],
+    "ans_idx": 0,
+    "justification": "First, x > 10 (15 > 10) is True and y > 5 (10 > 5) is True, so the outer if is True. Inside, x + y = 25 > 20 is True, so 'High' is printed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Lists",
+      "Indexing"
+    ],
+    "question": "In Python, the first element of a list is accessed using index 0.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Python uses zero-based indexing, meaning the first element of any list is at index 0, the second at index 1, and so on.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "List Operations"
+    ],
+    "question": "What is the output of the following code?\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.append(\"orange\")\nprint(len(fruits))\n```",
+    "choices": [
+      "3",
+      "4",
+      "Error",
+      "5"
+    ],
+    "ans_idx": 1,
+    "justification": "The list initially has 3 elements. The `append()` method adds 'orange' to the end, making it 4 elements. The `len()` function returns the count, which is 4.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "Indexing"
+    ],
+    "question": "Given `numbers = [10, 20, 30, 40]`, the expression `numbers[_______]` will return the value 30.",
+    "choices": [
+      "2",
+      "3",
+      "1",
+      "30"
+    ],
+    "ans_idx": 0,
+    "justification": "In zero-based indexing, index 0 holds 10, index 1 holds 20, and index 2 holds 30. Therefore, `numbers[2]` returns 30.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "for Loop"
+    ],
+    "question": "To iterate through numbers 0, 1, 2, 3, 4 in Python, you would use: `for i in _______(5):`",
+    "choices": [
+      "range",
+      "len",
+      "list",
+      "loop"
+    ],
+    "ans_idx": 0,
+    "justification": "The `range(5)` function generates a sequence of numbers from 0 to 4 (5 numbers total). It's commonly used with for loops to iterate a specific number of times.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "while Loop",
+      "Loop Logic"
+    ],
+    "question": "What will be the output of this code?\n\n```python\ncount = 0\nwhile count < 3:\n    print(count)\n    count += 1\n```",
+    "choices": [
+      "0\\n1\\n2\\n3",
+      "0\\n1\\n2",
+      "1\\n2\\n3",
+      "Infinite loop"
+    ],
+    "ans_idx": 1,
+    "justification": "The loop starts with count = 0. It prints 0, then increments to 1. It prints 1, increments to 2. It prints 2, increments to 3. When count becomes 3, the condition count < 3 is False, so the loop stops. Output: 0, 1, 2 on separate lines.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Syntax Error"
+    ],
+    "question": "Identify the error in the following code:\n\n```python\nif score > 50\n    print(\"Pass\")\n```",
+    "choices": [
+      "Missing colon (:) after the if condition",
+      "Incorrect indentation",
+      "print should be capitalized",
+      "Missing parentheses around the condition"
+    ],
+    "ans_idx": 0,
+    "justification": "In Python, an if statement must end with a colon (:) before the indented code block. The correct syntax is `if score > 50:` followed by the indented print statement.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Logic Error"
+    ],
+    "question": "A programmer wants to add 1 to a counter each time a loop runs. They wrote:\n\n```python\ncount = 0\nfor i in range(5):\n    count = 1\nprint(count)\n```\n\nWhat type of error exists and what will be printed?",
+    "choices": [
+      "Logic error; prints 1",
+      "Logic error; prints 5",
+      "Syntax error; program won't run",
+      "No error; prints 5"
+    ],
+    "ans_idx": 0,
+    "justification": "The code has a logic error. Instead of incrementing count (`count += 1` or `count = count + 1`), the programmer assigns 1 to count each iteration. After the loop, count is still 1, not 5.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Operators",
+      "Comparison Operators"
+    ],
+    "question": "In Python, the expression `5 == 5` evaluates to `True`.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The `==` operator checks for equality. Since both sides are 5, they are equal, and the expression evaluates to `True`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics Applications",
+      "Automation"
+    ],
+    "question": "Robots are used in manufacturing industries to perform repetitive tasks with high precision and consistency.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Robots excel at repetitive tasks in manufacturing because they can work continuously without fatigue and maintain consistent precision, making them ideal for assembly lines, welding, and packaging.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "VRVEX Interface",
+      "Programming Environment"
+    ],
+    "question": "In a robotics programming environment like VRVEX, what is the purpose of the simulation area?",
+    "choices": [
+      "To test robot behavior virtually before deploying to a physical robot",
+      "To store robot files permanently",
+      "To connect to the internet",
+      "To write the robot's code"
+    ],
+    "ans_idx": 0,
+    "justification": "The simulation area allows programmers to test their code in a virtual environment, observing how the robot would behave without needing physical hardware. This helps identify and fix issues before real-world deployment.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Turning",
+      "Navigation"
+    ],
+    "question": "A robot is programmed to move forward 100 units, turn right 90 degrees, then move forward 50 units. If it started at position (0, 0) facing north, what is its final position?",
+    "choices": [
+      "(50, 100)",
+      "(100, 50)",
+      "(100, 100)",
+      "(0, 150)"
+    ],
+    "ans_idx": 0,
+    "justification": "Starting at (0,0) facing north, moving forward 100 units takes it to (0, 100). Turning right 90° makes it face east. Moving forward 50 units in the east direction adds 50 to the x-coordinate, resulting in (50, 100).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Programming Commands"
+    ],
+    "question": "To make a robot complete a full rotation (360 degrees) using four equal turns, each turn must be _______ degrees.",
+    "choices": [
+      "180",
+      "45",
+      "90",
+      "120"
+    ],
+    "ans_idx": 2,
+    "justification": "A full rotation is 360 degrees. Dividing this by 4 equal turns: 360 ÷ 4 = 90 degrees per turn.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bumper Sensor",
+      "Conditional Response"
+    ],
+    "question": "A robot is programmed with: \"When the bumper sensor is pressed, stop and reverse.\" What type of programming logic does this represent?",
+    "choices": [
+      "Event-driven conditional logic",
+      "Random behavior",
+      "Continuous loop without conditions",
+      "Sequential execution only"
+    ],
+    "ans_idx": 0,
+    "justification": "This is event-driven conditional logic because the robot's action (stop and reverse) is triggered by a specific event (bumper sensor pressed) and executes based on a condition being met.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Eye Sensor",
+      "Color Detection",
+      "Conditional Logic"
+    ],
+    "question": "A robot uses an eye sensor to detect colors. The code states:\n\n```\nif eye_sensor detects RED:\n    turn_left()\nelif eye_sensor detects BLUE:\n    turn_right()\nelse:\n    move_forward()\n```\n\nIf the sensor detects GREEN, what will the robot do?",
+    "choices": [
+      "Move forward",
+      "Turn right",
+      "Stop",
+      "Turn left"
+    ],
+    "ans_idx": 0,
+    "justification": "GREEN is neither RED nor BLUE, so neither the `if` nor `elif` conditions are met. The `else` block executes, causing the robot to move forward.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Distance Sensor",
+      "Safety Navigation",
+      "Conditional Programming"
+    ],
+    "question": "A robot is programmed with this safety logic:\n\n```\nwhile True:\n    distance = distance_sensor.read()\n    if distance < 20:\n        stop()\n        reverse(10)\n    elif distance < 50:\n        slow_down()\n    else:\n        move_forward()\n```\n\nIf the distance sensor reads 35, what happens?",
+    "choices": [
+      "The robot stops and reverses",
+      "The robot slows down",
+      "The robot does nothing",
+      "The robot moves forward at normal speed"
+    ],
+    "ans_idx": 1,
+    "justification": "35 is not less than 20, so the first `if` is False. However, 35 is less than 50, so the `elif` condition is True, and `slow_down()` is executed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Distance Sensor",
+      "Sensor Types"
+    ],
+    "question": "A distance sensor measures how far an object is from the robot, allowing it to avoid obstacles.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Distance sensors (like ultrasonic or infrared sensors) measure the distance between the robot and nearby objects, enabling the robot to detect obstacles and navigate safely.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Location Sensor",
+      "Coordinate Navigation"
+    ],
+    "question": "A robot at coordinates (10, 20) needs to move to (10, 50). To reach its destination, it must travel _______ units in the y-direction.",
+    "choices": [
+      "40",
+      "50",
+      "20",
+      "30"
+    ],
+    "ans_idx": 3,
+    "justification": "The x-coordinate remains 10 (no horizontal movement). The y-coordinate changes from 20 to 50, requiring 50 - 20 = 30 units of movement in the y-direction.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Programming",
+      "Instructions"
+    ],
+    "question": "What is the primary purpose of a programming language?",
+    "choices": [
+      "To design hardware components",
+      "To store files on a hard drive",
+      "To give instructions to a computer to perform tasks",
+      "To connect computers to the internet"
+    ],
+    "ans_idx": 2,
+    "justification": "Programming languages are designed to communicate instructions to computers. They allow developers to write code that tells the computer exactly what operations to perform.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Problem Solving"
+    ],
+    "question": "An algorithm must be written in a specific programming language to be considered valid.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "An algorithm is a logical sequence of steps to solve a problem and can be expressed in plain language, pseudocode, or flowcharts. It doesn't need to be written in any specific programming language.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Algorithm",
+      "Logical Order"
+    ],
+    "question": "You want to create an algorithm to make a cup of tea. Which is the correct logical order?\n\n1. Pour hot water into the cup\n2. Boil water\n3. Add tea bag to cup\n4. Wait for tea to steep",
+    "choices": [
+      "3 → 2 → 1 → 4",
+      "1 → 2 → 3 → 4",
+      "2 → 1 → 3 → 4",
+      "2 → 3 → 1 → 4"
+    ],
+    "ans_idx": 3,
+    "justification": "The logical order is: First boil water (2), then add the tea bag to the cup (3), pour the hot water (1), and finally wait for it to steep (4). This sequence ensures each step depends on the previous one being completed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Data Types"
+    ],
+    "question": "What is the data type of the variable `price` after this assignment?\n\n```python\nprice = 19.99\n```",
+    "choices": [
+      "integer",
+      "string",
+      "float",
+      "boolean"
+    ],
+    "ans_idx": 2,
+    "justification": "The value 19.99 contains a decimal point, making it a floating-point number (float). In Python, numbers with decimal points are automatically classified as float data type.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Data Types"
+    ],
+    "question": "In Python, `\"Hello World\"` is an example of a _______ data type.",
+    "choices": [
+      "string",
+      "float",
+      "integer",
+      "boolean"
+    ],
+    "ans_idx": 0,
+    "justification": "Text enclosed in quotation marks (single or double) in Python is called a string. Strings are used to represent textual data like words, sentences, or characters.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Variables",
+      "Type Conversion"
+    ],
+    "question": "What will be the output of this code?\n\n```python\na = \"5\"\nb = 3\nresult = int(a) + b\nprint(result)\n```",
+    "choices": [
+      "35",
+      "53",
+      "Error",
+      "8"
+    ],
+    "ans_idx": 3,
+    "justification": "The variable `a` is a string \"5\". The `int()` function converts it to the integer 5. Then 5 + 3 = 8 is calculated and printed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Logical Operators"
+    ],
+    "question": "In Python, the expression `True and False` evaluates to `False`.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "The `and` operator returns `True` only if both operands are `True`. Since one operand is `False`, the entire expression evaluates to `False`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Operator Precedence"
+    ],
+    "question": "What is the result of the expression `3 + 4 * 2` in Python?",
+    "choices": [
+      "9",
+      "11",
+      "14",
+      "10"
+    ],
+    "ans_idx": 1,
+    "justification": "Due to operator precedence, multiplication is performed before addition. So 4 * 2 = 8 is calculated first, then 3 + 8 = 11.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Operators",
+      "Mixed Operations"
+    ],
+    "question": "What is the output of this code?\n\n```python\nx = 17\nprint(x // 5, x % 5)\n```",
+    "choices": [
+      "3 2",
+      "2 3",
+      "3.4 2",
+      "3 4"
+    ],
+    "ans_idx": 0,
+    "justification": "The `//` operator gives floor division: 17 // 5 = 3. The `%` operator gives the remainder: 17 % 5 = 2. So the output is \"3 2\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Operators",
+      "Comparison"
+    ],
+    "question": "The expression `10 != 10` evaluates to `True` in Python.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "The `!=` operator checks if two values are NOT equal. Since 10 equals 10, they are not different, so the expression evaluates to `False`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "if Statement"
+    ],
+    "question": "To execute code only when a condition is true, Python uses the _______ statement.",
+    "choices": [
+      "if",
+      "for",
+      "def",
+      "while"
+    ],
+    "ans_idx": 0,
+    "justification": "The `if` statement is used for conditional execution in Python. Code inside an if block only runs when the specified condition evaluates to True.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "elif Statement"
+    ],
+    "question": "What is the purpose of the `elif` keyword in Python?",
+    "choices": [
+      "To define a function",
+      "To end an if statement",
+      "To check another condition if the previous if condition was false",
+      "To create a loop"
+    ],
+    "ans_idx": 2,
+    "justification": "The `elif` (else if) keyword allows you to check multiple conditions in sequence. If the initial `if` condition is False, Python checks the `elif` condition next.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "Boolean Logic"
+    ],
+    "question": "What will this code print?\n\n```python\nage = 16\nhas_license = False\n\nif age >= 18 and has_license:\n    print(\"Can drive\")\nelif age >= 16:\n    print(\"Can get permit\")\nelse:\n    print(\"Too young\")\n```",
+    "choices": [
+      "Too young",
+      "Error",
+      "Can get permit",
+      "Can drive"
+    ],
+    "ans_idx": 2,
+    "justification": "The first condition requires both age >= 18 AND has_license to be True. Age is 16, so this fails. The elif checks age >= 16, which is True (16 >= 16), so \"Can get permit\" is printed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "List Methods"
+    ],
+    "question": "What will be the content of the list after executing this code?\n\n```python\ncolors = [\"red\", \"green\", \"blue\"]\ncolors.remove(\"green\")\n```",
+    "choices": [
+      "[\"red\", \"green\"]",
+      "[\"green\", \"blue\"]",
+      "[\"red\", \"blue\"]",
+      "[\"red\", \"green\", \"blue\"]"
+    ],
+    "ans_idx": 2,
+    "justification": "The `remove()` method removes the first occurrence of the specified value from the list. After removing \"green\", the list contains [\"red\", \"blue\"].",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "Negative Indexing"
+    ],
+    "question": "What is the output of this code?\n\n```python\nnumbers = [10, 20, 30, 40, 50]\nprint(numbers[-2])\n```",
+    "choices": [
+      "30",
+      "50",
+      "20",
+      "40"
+    ],
+    "ans_idx": 3,
+    "justification": "Negative indexing in Python counts from the end of the list. Index -1 is the last element (50), and index -2 is the second-to-last element, which is 40.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Lists",
+      "Mutability"
+    ],
+    "question": "In Python, you can change the value of an element in a list after the list has been created.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Lists in Python are mutable, meaning their elements can be modified after creation. For example, `my_list[0] = \"new_value\"` changes the first element.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "for Loop",
+      "Iteration"
+    ],
+    "question": "What will this code print?\n\n```python\nfor i in range(1, 4):\n    print(i)\n```",
+    "choices": [
+      "0\\n1\\n2",
+      "0\\n1\\n2\\n3",
+      "1\\n2\\n3",
+      "1\\n2\\n3\\n4"
+    ],
+    "ans_idx": 2,
+    "justification": "The `range(1, 4)` function generates numbers starting from 1 up to (but not including) 4. So it produces 1, 2, 3, which are printed on separate lines.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "Loop with List"
+    ],
+    "question": "What is the output of this code?\n\n```python\ntotal = 0\nnumbers = [1, 2, 3, 4]\nfor num in numbers:\n    total += num\nprint(total)\n```",
+    "choices": [
+      "1234",
+      "0",
+      "4",
+      "10"
+    ],
+    "ans_idx": 3,
+    "justification": "The loop iterates through each number in the list and adds it to total. Starting from 0: 0+1=1, 1+2=3, 3+3=6, 6+4=10. The final total is 10.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Loops",
+      "while Loop"
+    ],
+    "question": "A _______ loop continues executing as long as its condition remains true.",
+    "choices": [
+      "for",
+      "def",
+      "if",
+      "while"
+    ],
+    "ans_idx": 3,
+    "justification": "A `while` loop repeatedly executes its code block as long as the specified condition evaluates to True. It stops when the condition becomes False.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Infinite Loop"
+    ],
+    "question": "What is wrong with this code?\n\n```python\nx = 5\nwhile x > 0:\n    print(x)\n```",
+    "choices": [
+      "The condition should use >= instead of >",
+      "It creates an infinite loop because x is never decremented",
+      "print(x) should be outside the loop",
+      "x should be initialized to 0"
+    ],
+    "ans_idx": 1,
+    "justification": "Since x starts at 5 and is never changed inside the loop, the condition x > 0 will always be True, causing the loop to run forever (infinite loop). The fix would be to add `x -= 1` inside the loop.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Output Prediction"
+    ],
+    "question": "A student expected this code to print 5, but it prints 4. What is the bug?\n\n```python\ncount = 0\nfor i in range(4):\n    count += 1\nprint(count)\n```",
+    "choices": [
+      "range(4) only iterates 4 times, not 5; should use range(5)",
+      "count should start at 1 instead of 0",
+      "The += operator is incorrect",
+      "print should be inside the loop"
+    ],
+    "ans_idx": 0,
+    "justification": "The `range(4)` function produces values 0, 1, 2, 3 (4 iterations). If the student wants 5 iterations, they should use `range(5)` which produces 0, 1, 2, 3, 4.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics",
+      "Sensors"
+    ],
+    "question": "Sensors allow robots to gather information about their environment and respond accordingly.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "Sensors are essential components that enable robots to perceive their surroundings—detecting obstacles, measuring distances, recognizing colors, and more—allowing them to make informed decisions and react to changes.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Path Planning"
+    ],
+    "question": "A robot needs to draw a square with sides of 50 units. Which sequence of commands should it repeat 4 times?",
+    "choices": [
+      "Move forward 50, turn right 90°",
+      "Move forward 50, turn right 45°",
+      "Turn right 90°, move forward 100",
+      "Move forward 25, turn right 90°, move forward 25"
+    ],
+    "ans_idx": 0,
+    "justification": "A square has 4 equal sides and 4 right angles (90°). To draw it, the robot moves forward one side length (50 units), then turns 90°. Repeating this 4 times completes the square.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Bumper Sensor",
+      "Touch Detection"
+    ],
+    "question": "A bumper sensor is activated when the robot _______ an obstacle.",
+    "choices": [
+      "sees",
+      "smells",
+      "hears",
+      "physically touches"
+    ],
+    "ans_idx": 3,
+    "justification": "A bumper sensor is a tactile (touch) sensor that detects physical contact. When the robot bumps into something, the sensor is pressed/activated, triggering a programmed response.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Eye Sensor",
+      "Object Detection",
+      "Automation"
+    ],
+    "question": "A sorting robot uses an eye sensor to detect object colors. The code is:\n\n```\nwhile True:\n    color = eye_sensor.detect()\n    if color == \"RED\":\n        move_to_bin_A()\n    elif color == \"BLUE\":\n        move_to_bin_B()\n    else:\n        move_to_bin_C()\n```\n\nWhere will a YELLOW object be placed?",
+    "choices": [
+      "Bin C",
+      "It will not be sorted",
+      "Bin A",
+      "Bin B"
+    ],
+    "ans_idx": 0,
+    "justification": "YELLOW is neither RED nor BLUE, so both the `if` and `elif` conditions are False. The `else` block executes, sending the yellow object to Bin C.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Programming",
+      "Code Execution"
+    ],
+    "question": "In what order does a computer typically execute lines of code in a Python program?",
+    "choices": [
+      "In random order",
+      "All lines at the same time",
+      "From top to bottom, line by line",
+      "From bottom to top"
+    ],
+    "ans_idx": 2,
+    "justification": "Python executes code sequentially from top to bottom, line by line, unless control structures (like loops or conditions) alter the flow of execution.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Naming Conventions"
+    ],
+    "question": "In Python, variable names can start with a number, such as `2name`.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 0,
+    "justification": "Python variable names must start with a letter (a-z, A-Z) or an underscore (_). They cannot start with a number. `2name` would cause a syntax error.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "print Function",
+      "Output"
+    ],
+    "question": "To display the message \"Hello\" on the screen in Python, you use the _______ function.",
+    "choices": [
+      "display()",
+      "input()",
+      "print()",
+      "show()"
+    ],
+    "ans_idx": 2,
+    "justification": "The `print()` function is used in Python to output text or values to the console. For example, `print(\"Hello\")` displays \"Hello\" on the screen.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "input Function",
+      "User Input"
+    ],
+    "question": "What is the data type of the value returned by the `input()` function in Python?",
+    "choices": [
+      "string",
+      "integer",
+      "boolean",
+      "float"
+    ],
+    "ans_idx": 0,
+    "justification": "The `input()` function always returns a string, even if the user enters a number. To use it as a number, you must convert it using `int()` or `float()`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Variables",
+      "Assignment",
+      "Swapping"
+    ],
+    "question": "What will be the values of `a` and `b` after this code runs?\n\n```python\na = 10\nb = 20\na, b = b, a\n```",
+    "choices": [
+      "a = 20, b = 10",
+      "a = 20, b = 20",
+      "a = 10, b = 20",
+      "a = 10, b = 10"
+    ],
+    "ans_idx": 0,
+    "justification": "Python allows simultaneous assignment. The statement `a, b = b, a` swaps the values: a gets b's value (20) and b gets a's original value (10).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "String Concatenation"
+    ],
+    "question": "In Python, the `+` operator can be used to join two strings together.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The `+` operator performs concatenation when used with strings. For example, `\"Hello\" + \" World\"` results in `\"Hello World\"`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Operators",
+      "String Operations"
+    ],
+    "question": "What is the output of this code?\n\n```python\nword = \"AI\"\nprint(word * 3)\n```",
+    "choices": [
+      "Error",
+      "AI3",
+      "AIAIAI",
+      "AI AI AI"
+    ],
+    "ans_idx": 2,
+    "justification": "In Python, multiplying a string by an integer repeats the string that many times. `\"AI\" * 3` produces `\"AIAIAI\"` (the string \"AI\" repeated 3 times).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "Comparison"
+    ],
+    "question": "What will this code print?\n\n```python\ntemperature = 25\nif temperature > 30:\n    print(\"Hot\")\nelse:\n    print(\"Cool\")\n```",
+    "choices": [
+      "Cool",
+      "Hot",
+      "25",
+      "Error"
+    ],
+    "ans_idx": 0,
+    "justification": "Since temperature (25) is not greater than 30, the condition is False. The else block executes, printing \"Cool\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "Logical Operators"
+    ],
+    "question": "To check if BOTH conditions are true in Python, you use the _______ operator.",
+    "choices": [
+      "and",
+      "or",
+      "not",
+      "is"
+    ],
+    "ans_idx": 0,
+    "justification": "The `and` operator returns True only when both conditions are True. For example, `if x > 0 and x < 10:` is True only if x is between 0 and 10.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Conditions",
+      "or Operator"
+    ],
+    "question": "What will this code print?\n\n```python\nday = \"Saturday\"\nif day == \"Saturday\" or day == \"Sunday\":\n    print(\"Weekend\")\nelse:\n    print(\"Weekday\")\n```",
+    "choices": [
+      "Weekday",
+      "Saturday",
+      "Weekend",
+      "Error"
+    ],
+    "ans_idx": 2,
+    "justification": "The `or` operator returns True if at least one condition is True. Since day equals \"Saturday\", the first condition is True, so \"Weekend\" is printed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Lists",
+      "Empty List"
+    ],
+    "question": "An empty list in Python is created using `[]`.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "An empty list can be created using empty square brackets `[]` or by calling `list()`. Both methods create a list with no elements.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "Slicing"
+    ],
+    "question": "What is the output of this code?\n\n```python\nletters = [\"a\", \"b\", \"c\", \"d\", \"e\"]\nprint(letters[1:4])\n```",
+    "choices": [
+      "[\"b\", \"c\", \"d\", \"e\"]",
+      "[\"a\", \"b\", \"c\"]",
+      "[\"a\", \"b\", \"c\", \"d\"]",
+      "[\"b\", \"c\", \"d\"]"
+    ],
+    "ans_idx": 3,
+    "justification": "List slicing `[1:4]` extracts elements from index 1 up to (but not including) index 4. This gives indices 1, 2, 3 which are \"b\", \"c\", \"d\".",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "in Operator"
+    ],
+    "question": "What will this code print?\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\nif \"mango\" in fruits:\n    print(\"Found\")\nelse:\n    print(\"Not found\")\n```",
+    "choices": [
+      "mango",
+      "Found",
+      "Error",
+      "Not found"
+    ],
+    "ans_idx": 3,
+    "justification": "The `in` operator checks if an element exists in a list. Since \"mango\" is not in the fruits list, the condition is False, and \"Not found\" is printed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Loops",
+      "Iteration"
+    ],
+    "question": "A _______ loop is used when you know in advance how many times you want to repeat a block of code.",
+    "choices": [
+      "else",
+      "if",
+      "for",
+      "while"
+    ],
+    "ans_idx": 2,
+    "justification": "A `for` loop is typically used when the number of iterations is known, such as iterating over a list or a range of numbers. A `while` loop is used when the number of iterations depends on a condition.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "range Function"
+    ],
+    "question": "What values does `range(2, 10, 2)` generate?",
+    "choices": [
+      "2, 3, 4, 5, 6, 7, 8, 9",
+      "2, 4, 6, 8",
+      "0, 2, 4, 6, 8",
+      "2, 4, 6, 8, 10"
+    ],
+    "ans_idx": 1,
+    "justification": "The `range(2, 10, 2)` function starts at 2, ends before 10, and steps by 2. It generates: 2, 4, 6, 8 (10 is not included).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "Nested Loops"
+    ],
+    "question": "How many times will \"*\" be printed?\n\n```python\nfor i in range(3):\n    for j in range(2):\n        print(\"*\")\n```",
+    "choices": [
+      "2",
+      "6",
+      "3",
+      "5"
+    ],
+    "ans_idx": 1,
+    "justification": "The outer loop runs 3 times (i = 0, 1, 2). For each outer iteration, the inner loop runs 2 times (j = 0, 1). Total prints: 3 × 2 = 6.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Debugging",
+      "Indentation"
+    ],
+    "question": "In Python, incorrect indentation can cause an `IndentationError`.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Python uses indentation to define code blocks. Incorrect or inconsistent indentation causes an IndentationError, unlike many other languages that use braces {}.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Logic Error"
+    ],
+    "question": "A student wrote code to find the maximum of two numbers, but it always prints the first number. What's the bug?\n\n```python\na = 5\nb = 10\nif a > b:\n    print(a)\nelse:\n    print(a)\n```",
+    "choices": [
+      "The condition should be a >= b",
+      "print should use return instead",
+      "The else block should print b, not a",
+      "Variables should be swapped"
+    ],
+    "ans_idx": 2,
+    "justification": "Both the if and else blocks print `a`. The else block should print `b` since that's the case when b is greater than or equal to a.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "Error Types"
+    ],
+    "question": "When you try to access `my_list[10]` but the list only has 5 elements, Python raises an _______.",
+    "choices": [
+      "SyntaxError",
+      "TypeError",
+      "IndexError",
+      "ValueError"
+    ],
+    "ans_idx": 2,
+    "justification": "An IndexError occurs when you try to access an index that doesn't exist in a list. With 5 elements, valid indices are 0-4, so accessing index 10 raises an IndexError.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics",
+      "Automation Benefits"
+    ],
+    "question": "Which of the following is an advantage of using robots in manufacturing?",
+    "choices": [
+      "They don't require any programming",
+      "They can make creative decisions like humans",
+      "They can repair themselves automatically",
+      "They can work continuously without getting tired"
+    ],
+    "ans_idx": 3,
+    "justification": "Robots can operate 24/7 without fatigue, maintaining consistent performance. They still require programming and maintenance, and creative decision-making remains a human strength.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "VRVEX",
+      "Simulation"
+    ],
+    "question": "In VRVEX, you can test your robot code in a simulation before running it on a physical robot.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 0,
+    "justification": "VRVEX provides a virtual simulation environment where programmers can test and debug their robot code before deploying it to physical hardware, saving time and preventing potential damage.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Angle Calculation"
+    ],
+    "question": "A robot needs to turn around completely and face the opposite direction. How many degrees should it turn?",
+    "choices": [
+      "90",
+      "180",
+      "360",
+      "270"
+    ],
+    "ans_idx": 1,
+    "justification": "To face the opposite direction (turn around), a robot needs to turn 180 degrees. A 90° turn is a right angle, 360° is a full rotation back to the original direction, and 270° would face perpendicular to the opposite direction.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Bumper Sensor",
+      "Event Handling",
+      "Conditional Logic"
+    ],
+    "question": "A robot has front and back bumper sensors. The code is:\n\n```\nif front_bumper.pressed():\n    reverse(20)\n    turn_right(90)\nelif back_bumper.pressed():\n    move_forward(20)\n    turn_left(90)\nelse:\n    move_forward(5)\n```\n\nWhat happens if the front bumper is pressed?",
+    "choices": [
+      "Robot stops immediately",
+      "Robot moves forward 5 units",
+      "Robot moves forward 20 units and turns left 90°",
+      "Robot reverses 20 units and turns right 90°"
+    ],
+    "ans_idx": 3,
+    "justification": "When the front bumper is pressed, the first condition is True. The robot executes `reverse(20)` to back up, then `turn_right(90)` to change direction and avoid the obstacle.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Distance Sensor",
+      "Proximity Detection"
+    ],
+    "question": "A distance sensor measures the _______ between the robot and nearby objects.",
+    "choices": [
+      "distance",
+      "temperature",
+      "color",
+      "sound"
+    ],
+    "ans_idx": 0,
+    "justification": "A distance sensor (often ultrasonic or infrared) measures how far objects are from the robot, typically returning the distance in centimeters or inches.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Location Sensor",
+      "Coordinate System",
+      "Navigation"
+    ],
+    "question": "A robot uses a location sensor and is programmed:\n\n```\ncurrent_x, current_y = location_sensor.get_position()\ntarget_x, target_y = 100, 100\n\nif current_x < target_x:\n    move_east()\nelif current_x > target_x:\n    move_west()\n\nif current_y < target_y:\n    move_north()\nelif current_y > target_y:\n    move_south()\n```\n\nIf the robot is at position (50, 120), which directions will it move?",
+    "choices": [
+      "East and South",
+      "West and North",
+      "East and North",
+      "West and South"
+    ],
+    "ans_idx": 0,
+    "justification": "Current position is (50, 120), target is (100, 100). Since current_x (50) < target_x (100), move east. Since current_y (120) > target_y (100), move south.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Programming",
+      "Interpreter"
+    ],
+    "question": "Python is an interpreted language, meaning the code is executed line by line without needing to compile the entire program first.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Python uses an interpreter that reads and executes code line by line at runtime. This differs from compiled languages like C++ that convert the entire program to machine code before execution.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Algorithm",
+      "Problem Solving"
+    ],
+    "question": "Which of the following best describes why algorithms are important in programming?",
+    "choices": [
+      "They provide a clear plan for solving a problem before writing code",
+      "They are only needed for complex programs",
+      "They make the program run faster automatically",
+      "They replace the need for testing"
+    ],
+    "ans_idx": 0,
+    "justification": "Algorithms help programmers think through the solution logically before coding. They provide a structured approach to problem-solving, making code easier to write, understand, and debug.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Data Types"
+    ],
+    "question": "A variable that stores `True` or `False` is called a _______ data type.",
+    "choices": [
+      "integer",
+      "boolean",
+      "string",
+      "float"
+    ],
+    "ans_idx": 1,
+    "justification": "Boolean is a data type that can only have two values: True or False. It's commonly used for conditions, flags, and logical operations in programming.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Variables",
+      "Case Sensitivity"
+    ],
+    "question": "In Python, `myVar` and `myvar` are treated as the same variable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "ans_idx": 1,
+    "justification": "Python is case-sensitive, meaning `myVar` and `myvar` are treated as two different variables. The capitalization of letters matters in variable names.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Exponentiation"
+    ],
+    "question": "What is the result of `2 ** 4` in Python?",
+    "choices": [
+      "6",
+      "16",
+      "24",
+      "8"
+    ],
+    "ans_idx": 1,
+    "justification": "The `**` operator performs exponentiation in Python. `2 ** 4` means 2 raised to the power of 4, which equals 2 × 2 × 2 × 2 = 16.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "Comparison"
+    ],
+    "question": "What will this expression evaluate to?\n\n```python\nresult = (5 > 3) and (10 < 5)\nprint(result)\n```",
+    "choices": [
+      "Error",
+      "False",
+      "True",
+      "5"
+    ],
+    "ans_idx": 1,
+    "justification": "The expression `(5 > 3)` is True, but `(10 < 5)` is False. The `and` operator requires both conditions to be True. Since one is False, the result is False.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Operators",
+      "not Operator"
+    ],
+    "question": "The expression `not True` evaluates to `False` in Python.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The `not` operator inverts a boolean value. `not True` becomes `False`, and `not False` becomes `True`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Conditions",
+      "Multiple Conditions"
+    ],
+    "question": "How many `elif` statements can you have in a single if-elif-else structure in Python?",
+    "choices": [
+      "Maximum of five",
+      "As many as needed",
+      "Maximum of three",
+      "Only one"
+    ],
+    "ans_idx": 1,
+    "justification": "Python allows any number of `elif` statements between `if` and `else`. This enables checking multiple conditions sequentially until one is True or the else block is reached.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Lists",
+      "Length"
+    ],
+    "question": "To find out how many elements are in a list, you use the _______ function.",
+    "choices": [
+      "size()",
+      "length()",
+      "count()",
+      "len()"
+    ],
+    "ans_idx": 3,
+    "justification": "The `len()` function returns the number of elements in a list, string, or other collection. For example, `len([1, 2, 3])` returns 3.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Lists",
+      "List Modification"
+    ],
+    "question": "What is the output of this code?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nnumbers[2] = 10\nprint(numbers)\n```",
+    "choices": [
+      "[10, 2, 3, 4, 5]",
+      "[1, 2, 10, 4, 5]",
+      "[1, 2, 3, 10, 5]",
+      "[1, 10, 3, 4, 5]"
+    ],
+    "ans_idx": 1,
+    "justification": "Index 2 refers to the third element (zero-based indexing: 0, 1, 2). The value at index 2 (which was 3) is replaced with 10, resulting in [1, 2, 10, 4, 5].",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "concepts": [
+      "Loops",
+      "break Statement"
+    ],
+    "question": "The `break` statement in Python is used to exit a loop before it completes all iterations.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "The `break` statement immediately terminates the loop it's in and continues with the next statement after the loop. It's useful for exiting early when a certain condition is met.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "break Statement"
+    ],
+    "question": "What will this code print?\n\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)\n```",
+    "choices": [
+      "0\\n1\\n2\\n3",
+      "0\\n1\\n2",
+      "3",
+      "0\\n1\\n2\\n3\\n4"
+    ],
+    "ans_idx": 1,
+    "justification": "The loop prints i for values 0, 1, 2. When i becomes 3, the `break` statement executes before the print, exiting the loop. So only 0, 1, 2 are printed.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Loops",
+      "continue Statement"
+    ],
+    "question": "The _______ statement skips the current iteration of a loop and moves to the next one.",
+    "choices": [
+      "return",
+      "continue",
+      "pass",
+      "break"
+    ],
+    "ans_idx": 1,
+    "justification": "The `continue` statement skips the rest of the current loop iteration and jumps to the next iteration. Unlike `break`, it doesn't exit the loop entirely.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Loops",
+      "continue Statement"
+    ],
+    "question": "What will this code print?\n\n```python\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i)\n```",
+    "choices": [
+      "0\\n1\\n2\\n3\\n4",
+      "0\\n1",
+      "0\\n1\\n3\\n4",
+      "2"
+    ],
+    "ans_idx": 2,
+    "justification": "When i equals 2, `continue` skips the print statement for that iteration. The loop continues with i = 3 and i = 4. So 0, 1, 3, 4 are printed (2 is skipped).",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "TypeError"
+    ],
+    "question": "What error will this code produce?\n\n```python\nage = \"25\"\nresult = age + 5\nprint(result)\n```",
+    "choices": [
+      "No error - prints 30",
+      "SyntaxError - invalid syntax",
+      "TypeError - cannot add string and integer",
+      "ValueError - invalid value"
+    ],
+    "ans_idx": 2,
+    "justification": "Python cannot add a string (\"25\") and an integer (5) directly. This causes a TypeError. To fix it, convert the string to int: `int(age) + 5`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "concepts": [
+      "Debugging",
+      "Runtime Error"
+    ],
+    "question": "A runtime error occurs while the program is executing, not when the code is being written.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Runtime errors occur during program execution, such as division by zero or accessing an invalid index. They differ from syntax errors, which are detected before the program runs.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "concepts": [
+      "Debugging",
+      "ZeroDivisionError"
+    ],
+    "question": "Attempting to divide a number by zero in Python raises a _______.",
+    "choices": [
+      "MathError",
+      "TypeError",
+      "ValueError",
+      "ZeroDivisionError"
+    ],
+    "ans_idx": 3,
+    "justification": "Division by zero is mathematically undefined. Python raises a ZeroDivisionError when you attempt operations like `10 / 0` or `10 // 0`.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics",
+      "Programming"
+    ],
+    "question": "All robots require programming to perform their tasks; they cannot operate without instructions.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Robots are machines that follow programmed instructions. Without programming, a robot wouldn't know what actions to take or how to respond to its environment.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 1,
+    "concepts": [
+      "Robotics Applications",
+      "Real-world Use"
+    ],
+    "question": "Which of the following is NOT a common application of robots?",
+    "choices": [
+      "Assembling cars in factories",
+      "Exploring hazardous environments",
+      "Performing surgical operations",
+      "Writing creative poetry and novels"
+    ],
+    "ans_idx": 3,
+    "justification": "Robots excel at physical tasks like manufacturing, surgery assistance, and exploring dangerous areas. Creative writing requires human imagination and emotional understanding, which robots cannot truly replicate.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Movement",
+      "Sequential Commands"
+    ],
+    "question": "A robot executes these commands:\n\n```\nmove_forward(30)\nturn_left(90)\nmove_forward(40)\nturn_left(90)\nmove_forward(30)\n```\n\nWhat shape does the robot's path most closely resemble?",
+    "choices": [
+      "Three sides of a rectangle (U-shape)",
+      "A straight line",
+      "A complete square",
+      "A triangle"
+    ],
+    "ans_idx": 0,
+    "justification": "The robot moves forward 30, turns 90° left, moves 40, turns 90° left again, and moves 30. This creates three sides of a rectangle (or a U-shape), not a complete closed shape.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "true_false",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Eye Sensor",
+      "Detection"
+    ],
+    "question": "An eye sensor on a robot can detect colors and objects in front of it.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "ans_idx": 1,
+    "justification": "Eye sensors (vision sensors) use cameras or light sensors to detect colors, objects, or patterns. They enable robots to make decisions based on what they \"see\" in their environment.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Distance Sensor",
+      "Conditional Movement"
+    ],
+    "question": "A robot is programmed with:\n\n```\nwhile True:\n    dist = distance_sensor.read()\n    if dist > 100:\n        set_speed(100)\n    elif dist > 50:\n        set_speed(50)\n    elif dist > 20:\n        set_speed(25)\n    else:\n        stop()\n```\n\nIf the distance reading is 35, what speed will the robot move at?",
+    "choices": [
+      "0 (stopped)",
+      "100",
+      "50",
+      "25"
+    ],
+    "ans_idx": 3,
+    "justification": "With dist = 35: First condition (35 > 100) is False. Second condition (35 > 50) is False. Third condition (35 > 20) is True, so `set_speed(25)` executes.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Robotics",
+    "difficulty_level": 2,
+    "concepts": [
+      "Sensors",
+      "Input Devices"
+    ],
+    "question": "In robotics, sensors act as _______ devices that collect information from the environment.",
+    "choices": [
+      "input",
+      "storage",
+      "output",
+      "processing"
+    ],
+    "ans_idx": 0,
+    "justification": "Sensors are input devices that gather data from the robot's surroundings (distance, touch, color, etc.). This data is then processed by the robot's program to determine appropriate actions.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Location Sensor",
+      "Coordinate Navigation",
+      "Distance Calculation"
+    ],
+    "question": "A robot at position (0, 0) needs to reach position (30, 40). If it can only move horizontally or vertically (not diagonally), what is the minimum total distance it must travel?",
+    "choices": [
+      "100 units",
+      "35 units",
+      "70 units",
+      "50 units"
+    ],
+    "ans_idx": 2,
+    "justification": "Moving only horizontally and vertically (Manhattan distance), the robot must travel 30 units in the x-direction and 40 units in the y-direction. Total: 30 + 40 = 70 units.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  },
+  {
+    "question_type": "mcq",
+    "track": "Robotics",
+    "difficulty_level": 3,
+    "concepts": [
+      "Multiple Sensors",
+      "Complex Logic"
+    ],
+    "question": "A robot uses both a bumper sensor and a distance sensor:\n\n```\nwhile True:\n    if bumper.pressed():\n        stop()\n        reverse(15)\n    elif distance_sensor.read() < 30:\n        slow_down()\n        turn_right(45)\n    else:\n        move_forward()\n```\n\nWhat happens if the bumper is NOT pressed and the distance sensor reads 25?",
+    "choices": [
+      "Moves forward",
+      "Stops and reverses 15 units",
+      "Does nothing",
+      "Slows down and turns right 45°"
+    ],
+    "ans_idx": 3,
+    "justification": "The bumper is not pressed, so the first `if` is False. The distance (25) is less than 30, so the `elif` condition is True. The robot slows down and turns right 45°.",
+    "age_group": "15-18",
+    "belt": "Yellow"
+  }
+]

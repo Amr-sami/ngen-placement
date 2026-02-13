@@ -1,0 +1,1968 @@
+[
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Copy"
+    ],
+    "question": "You're working on a school project and want to copy some text. Which keyboard shortcut should you use?",
+    "choices": [
+      "Ctrl+X",
+      "Ctrl+S",
+      "Ctrl+C",
+      "Ctrl+V"
+    ],
+    "justification": "Ctrl+C is the universal shortcut for copying selected text or files. Ctrl+V is for pasting, Ctrl+X is for cutting, and Ctrl+S is for saving.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Window Switching"
+    ],
+    "question": "Pressing Alt+Tab allows you to quickly switch between open windows on your computer.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Alt+Tab is a quick window switching shortcut that shows all open windows and lets you jump between them without using the mouse.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Folder Creation"
+    ],
+    "question": "To create a new folder quickly without right-clicking, you can press Ctrl+Shift+___.",
+    "choices": [
+      "F",
+      "D",
+      "N",
+      "C"
+    ],
+    "justification": "Ctrl+Shift+N is the shortcut to create a new folder in Windows File Explorer. The 'N' stands for 'New'.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "CMD Commands",
+      "Command Prompt"
+    ],
+    "question": "In Command Prompt (CMD), which command would you use to see all the files and folders in your current location?",
+    "choices": [
+      "cd",
+      "mkdir",
+      "dir",
+      "cls"
+    ],
+    "justification": "The 'dir' command (short for directory) lists all files and folders in the current directory. 'cd' changes directories, 'mkdir' creates folders, and 'cls' clears the screen.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Naming",
+      "Best Practices"
+    ],
+    "question": "You're saving your science project. Which file name follows the best naming practices?",
+    "choices": [
+      "asdfgh.docx",
+      "my project!!! final.docx",
+      "Science_Project_V1.docx",
+      "new document (2).docx"
+    ],
+    "justification": "Good file names are descriptive, use underscores instead of spaces, avoid special characters like '!', and include version numbers (V1). This makes files easy to find and organize.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Version Control",
+      "File Naming"
+    ],
+    "question": "Your friend has files named Essay_V1.docx, Essay_V2.docx, and Essay_V3.docx. What does this naming style help them do?",
+    "choices": [
+      "Share files faster online",
+      "Make files smaller in size",
+      "Keep track of different versions and go back if needed",
+      "Protect files from viruses"
+    ],
+    "justification": "Version control (V1, V2, V3) helps you keep track of changes over time. If something goes wrong in V3, you can go back to V2 or V1 without losing your earlier work.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Paths",
+      "Absolute Path"
+    ],
+    "question": "The path C:\\Users\\Ahmed\\Documents\\Homework\\Math_V1.docx tells us that the file Math_V1.docx is inside a folder called Homework, which is inside Documents.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "An absolute path shows the complete location of a file from the root drive. Reading from left to right: C: drive → Users → Ahmed → Documents → Homework → Math_V1.docx. Each backslash (\\) separates folder levels.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Print Screen"
+    ],
+    "question": "You want to take a screenshot of your entire screen to show a friend your game stats. Which key captures everything on your screen?",
+    "choices": [
+      "Escape",
+      "Print Screen (PrtSc)",
+      "Enter",
+      "Tab"
+    ],
+    "justification": "The Print Screen (PrtSc) key captures an image of your entire screen and copies it to the clipboard. You can then paste it into an image editor or document.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "PDF",
+      "File Formats"
+    ],
+    "question": "A .pdf file will look exactly the same on any computer, phone, or tablet, no matter what software is installed.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "PDF (Portable Document Format) preserves the exact formatting, fonts, and layout of a document regardless of what device or software opens it. That's why it's great for sharing final versions.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Active Window"
+    ],
+    "question": "To capture only the active window (not the entire screen), you should press ___+PrtSc.",
+    "choices": [
+      "Ctrl",
+      "Shift",
+      "Alt",
+      "Windows"
+    ],
+    "justification": "Alt+PrtSc captures only the currently active window, which is useful when you want to screenshot just one application without showing everything else on your screen.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Search Operators"
+    ],
+    "question": "You need to find information about climate change, but only from educational websites. Which Google search would work best?",
+    "choices": [
+      "climate change!!! education",
+      "climate change best websites",
+      "\"climate\" \"change\" \"education\"",
+      "climate change site:.edu"
+    ],
+    "justification": "The site: operator tells Google to only show results from specific website types. Using site:.edu limits results to educational institutions, which are typically more reliable sources.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Source Credibility",
+      "Research Skills"
+    ],
+    "question": "You're researching space exploration for a school presentation. Which source would be the MOST credible?",
+    "choices": [
+      "NASA.gov official website",
+      "A website with lots of pop-up ads",
+      "A random blog post",
+      "A social media comment"
+    ],
+    "justification": "Government websites (.gov) and official organization sites are among the most credible sources because they're maintained by experts and verified before publishing. NASA is the official U.S. space agency.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Filetype Operator"
+    ],
+    "question": "Using the search \"robotics project filetype:pdf\" will show you only PDF documents about robotics projects in the search results.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "The filetype: operator filters search results to show only files with the specified extension. This is useful when you want downloadable documents like PDFs for research.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Phishing",
+      "Online Safety"
+    ],
+    "question": "What is phishing?",
+    "choices": [
+      "Fake emails or messages trying to steal your personal information",
+      "A type of computer virus that deletes files",
+      "A way to make your internet faster",
+      "A method to compress large files"
+    ],
+    "justification": "Phishing is a cyber attack where criminals send fake emails, messages, or create fake websites that look legitimate to trick you into giving away passwords, credit card numbers, or personal information.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Pop-ups",
+      "Fake Warnings"
+    ],
+    "question": "A pop-up message saying \"YOUR COMPUTER HAS 50 VIRUSES! CALL THIS NUMBER NOW!\" is usually a scam and should be ignored.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Legitimate antivirus software never uses scary pop-ups with phone numbers or urgent warnings. These are scam tactics to trick you into paying money or giving access to your computer. Close them without clicking anything.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Red Flags",
+      "Phishing Identification"
+    ],
+    "question": "You receive an email from \"amaz0n-support@gmail.com\" saying your account will be deleted unless you click a link and enter your password immediately. Which red flags suggest this is a phishing attempt?",
+    "choices": [
+      "The email is written in English",
+      "The email was sent in the morning",
+      "The email contains the Amazon logo",
+      "Suspicious email address, creates urgency, and asks for password"
+    ],
+    "justification": "Multiple red flags: 1) The email uses a fake address with '0' instead of 'o' and @gmail.com instead of @amazon.com, 2) Creates false urgency ('immediately'), 3) Asks for sensitive information. Real companies never ask for passwords via email.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "Image Files"
+    ],
+    "question": "Your friend sends you a file called vacation_photo.png. What type of file is this?",
+    "choices": [
+      "A video file",
+      "A document file",
+      "A music file",
+      "An image file"
+    ],
+    "justification": "The .png extension stands for Portable Network Graphics, which is an image file format. It's commonly used for pictures, screenshots, and graphics that need transparent backgrounds.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Drive",
+      "Cloud Storage"
+    ],
+    "question": "Google Drive offers ___ GB of free cloud storage for every Google account.",
+    "choices": [
+      "100",
+      "5",
+      "50",
+      "15"
+    ],
+    "justification": "Google provides 15 GB of free cloud storage shared across Google Drive, Gmail, and Google Photos. This is enough for many documents, photos, and school projects.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Docs",
+      "Auto-save"
+    ],
+    "question": "When working in Google Docs, you don't need to press Ctrl+S to save because it automatically saves your work as you type.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Google Docs has an auto-save feature that continuously saves your document to the cloud as you work. You'll see 'Saving...' and then 'All changes saved in Drive' at the top of the page.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Computer Language"
+    ],
+    "question": "Computers understand information using binary. What is binary made of?",
+    "choices": [
+      "Letters A to Z",
+      "Special symbols like @ and #",
+      "Only 0s and 1s",
+      "Numbers 0 to 9"
+    ],
+    "justification": "Binary is a number system that uses only two digits: 0 and 1. Computers use binary because electronic circuits can easily represent two states: off (0) and on (1).",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Algorithm",
+      "Problem Solving"
+    ],
+    "question": "An algorithm is a ___-by-___ set of instructions to solve a problem.",
+    "choices": [
+      "day-by-day",
+      "file-by-file",
+      "click-by-click",
+      "step-by-step"
+    ],
+    "justification": "An algorithm is a step-by-step procedure or set of rules to solve a problem or complete a task. It's like a recipe that tells you exactly what to do in order.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Input-Process-Output",
+      "Computer Model"
+    ],
+    "question": "In the computer model \"Input → Process → Output,\" what happens during the \"Process\" stage?",
+    "choices": [
+      "The computer turns off",
+      "The user types on the keyboard",
+      "The screen displays the final answer",
+      "The computer works with the data to produce a result"
+    ],
+    "justification": "In the IPO model: Input is when data enters (keyboard, mouse), Process is when the computer calculates or manipulates that data, and Output is when results are displayed (screen, speakers, printer).",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "IF/ELSE Logic",
+      "Conditionals"
+    ],
+    "question": "In programming, if you write: IF score >= 50 THEN print \"Pass\" ELSE print \"Fail\" — and the score is 50, the program will print \"Pass\".",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "The condition score >= 50 means 'score is greater than OR equal to 50.' Since 50 equals 50, the condition is true, so the program executes the IF branch and prints 'Pass'.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Variables",
+      "Data Storage"
+    ],
+    "question": "In programming, what is a variable?",
+    "choices": [
+      "A container that stores data like numbers or text",
+      "A special kind of file extension",
+      "A tool for drawing graphics",
+      "A type of keyboard shortcut"
+    ],
+    "justification": "A variable is like a labeled box in the computer's memory that holds data. For example, 'score = 100' creates a variable named 'score' that stores the number 100.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Logical Operators",
+      "AND Operation"
+    ],
+    "question": "In a game, a player unlocks a bonus level only if they have MORE than 100 coins AND have completed level 5. If a player has 150 coins but only completed level 3, will they unlock the bonus?",
+    "choices": [
+      "Yes, because they have enough coins",
+      "No, because they have too many coins",
+      "No, because both conditions must be true with AND",
+      "Yes, because one condition is true"
+    ],
+    "justification": "The AND operator requires ALL conditions to be true. The player has enough coins (TRUE), but hasn't completed level 5 (FALSE). TRUE AND FALSE = FALSE, so the bonus doesn't unlock.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Error Fixing"
+    ],
+    "question": "The process of finding and fixing errors in a computer program is called ___.",
+    "choices": [
+      "compressing",
+      "downloading",
+      "debugging",
+      "uploading"
+    ],
+    "justification": "Debugging is the process of identifying and removing bugs (errors) from code. The term comes from early computing when an actual moth (bug) caused a computer malfunction!",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Undo"
+    ],
+    "question": "Oops! You accidentally deleted an important paragraph in your essay. Which shortcut can undo your last action?",
+    "choices": [
+      "Ctrl+D",
+      "Ctrl+Y",
+      "Ctrl+P",
+      "Ctrl+Z"
+    ],
+    "justification": "Ctrl+Z is the universal 'undo' shortcut that reverses your last action. It works in most applications and can be pressed multiple times to undo several actions.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Rename"
+    ],
+    "question": "Pressing F2 while a file is selected allows you to quickly rename it without right-clicking.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "F2 is a quick shortcut for renaming files and folders in Windows. Simply select the item and press F2 to make the name editable.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "CMD Commands",
+      "Directory Navigation"
+    ],
+    "question": "In Command Prompt, you want to move from the Downloads folder to the Documents folder. Which command helps you change directories?",
+    "choices": [
+      "mkdir",
+      "cd",
+      "dir",
+      "cls"
+    ],
+    "justification": "The 'cd' command (change directory) is used to navigate between folders in Command Prompt. For example, 'cd Documents' would take you to the Documents folder.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "CMD Commands",
+      "Create Folder"
+    ],
+    "question": "In Command Prompt, the command ___ is used to create a new folder (make directory).",
+    "choices": [
+      "rmdir",
+      "cd",
+      "mkdir",
+      "dir"
+    ],
+    "justification": "The 'mkdir' command (make directory) creates a new folder. For example, 'mkdir Games' would create a folder called Games in your current location.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Naming",
+      "Special Characters"
+    ],
+    "question": "You're trying to save a file but getting an error. Which file name is causing the problem because it contains invalid characters?",
+    "choices": [
+      "My-Project-2024.docx",
+      "SchoolWork_March.docx",
+      "Project:Final?.docx",
+      "Project_Final_V2.docx"
+    ],
+    "justification": "Windows doesn't allow these characters in file names: \\ / : * ? \" < > |. The file name 'Project:Final?.docx' contains both ':' and '?' which are invalid characters.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Version Control",
+      "File Management"
+    ],
+    "question": "When working on an important project, it's a good idea to save new versions (like V1, V2, V3) instead of overwriting the same file.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Saving different versions protects your work. If something goes wrong or you prefer an earlier version, you can easily go back. This is called version control.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Snipping Tool"
+    ],
+    "question": "You want to capture only a specific part of your screen for a tutorial you're making. Which Windows tool lets you select and capture a custom area?",
+    "choices": [
+      "Notepad",
+      "Paint",
+      "Snip & Sketch",
+      "Calculator"
+    ],
+    "justification": "Snip & Sketch (or Snipping Tool) allows you to draw a selection around any part of your screen to capture just that area. You can also add annotations afterward.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Annotations"
+    ],
+    "question": "You're creating a tutorial showing how to use a new app. Why should you add annotations (arrows, circles, text) to your screenshots?",
+    "choices": [
+      "To make the file size larger",
+      "To hide personal information only",
+      "To highlight important areas and guide the viewer's attention",
+      "To change the app's colors"
+    ],
+    "justification": "Annotations like arrows, circles, and text help viewers understand exactly what to look at and what steps to follow. They make tutorials clearer and more professional.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Windows Shortcut"
+    ],
+    "question": "Pressing Windows+___ takes a screenshot and automatically saves it to your Pictures folder.",
+    "choices": [
+      "Enter",
+      "Space",
+      "Tab",
+      "PrtSc"
+    ],
+    "justification": "Windows+PrtSc captures the entire screen AND automatically saves it as a PNG file in your Pictures > Screenshots folder. The screen briefly dims to confirm the capture.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Exact Match"
+    ],
+    "question": "You want to find pages that contain the exact phrase \"machine learning for beginners\" - not just pages with those words scattered around. What should you use?",
+    "choices": [
+      "Add exclamation marks: machine learning for beginners!!!",
+      "Separate words with commas: machine, learning, for, beginners",
+      "Use all capital letters: MACHINE LEARNING FOR BEGINNERS",
+      "Put quotes around the phrase: \"machine learning for beginners\""
+    ],
+    "justification": "Putting quotes around a phrase tells Google to search for those exact words in that exact order. Without quotes, Google might show pages where the words appear separately.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Search Skills",
+      "Identifying Ads"
+    ],
+    "question": "In Google search results, the first few results labeled \"Ad\" or \"Sponsored\" are paid advertisements, not necessarily the best or most relevant information.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Results marked 'Ad' or 'Sponsored' are paid placements. Companies pay to appear at the top. For research, it's better to look at organic (non-ad) results below them.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Source Credibility",
+      "Cross-checking"
+    ],
+    "question": "You found an interesting fact on a website you've never heard of. What's the BEST way to verify if the information is accurate?",
+    "choices": [
+      "Check how many social media followers the website has",
+      "Cross-check by finding the same information on multiple credible sources",
+      "Only trust it if it has lots of pictures",
+      "Assume it's true if the website looks professional"
+    ],
+    "justification": "Cross-checking means verifying information by finding it on multiple reliable sources (like .edu, .gov, or well-known news sites). If several credible sources agree, the information is more likely accurate.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Virus",
+      "Malware"
+    ],
+    "question": "What is a computer virus?",
+    "choices": [
+      "A harmful program that can damage your computer or steal your data",
+      "A useful tool that speeds up your computer",
+      "A type of computer game",
+      "A way to connect to the internet faster"
+    ],
+    "justification": "A computer virus is malicious software (malware) designed to spread from computer to computer and cause harm, such as deleting files, stealing personal information, or slowing down your system.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Permissions",
+      "App Security"
+    ],
+    "question": "A flashlight app asking for permission to access your contacts, camera, and location is a red flag that something might be wrong with the app.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Apps should only request permissions they actually need. A flashlight only needs access to your camera flash, not your contacts or location. Excessive permission requests can indicate a malicious app trying to collect your data.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Downloads",
+      "Safe Practices"
+    ],
+    "question": "You want to download a popular game. Which is the SAFEST way to do it?",
+    "choices": [
+      "Accept a file from a stranger online",
+      "Download from the official website or app store",
+      "Click on a pop-up ad offering free download",
+      "Download from a random website found on search"
+    ],
+    "justification": "Official websites and app stores (like Google Play, Microsoft Store, or Steam) verify that software is safe before listing it. Random websites and pop-up ads often distribute malware disguised as popular software.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Download vs Installer",
+      "Software Installation"
+    ],
+    "question": "After downloading software, you usually need to run the ___ file to install the program on your computer.",
+    "choices": [
+      "screenshot",
+      "installer",
+      "shortcut",
+      "backup"
+    ],
+    "justification": "Downloading copies a file to your computer, but it doesn't set up the program. The installer (usually .exe or .msi file) extracts files, creates shortcuts, and configures the software to work properly.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "Document Files"
+    ],
+    "question": "Your teacher asks you to submit your essay as a Word document. Which file extension should your file have?",
+    "choices": [
+      ".docx",
+      ".mp3",
+      ".png",
+      ".exe"
+    ],
+    "justification": "The .docx extension is the standard format for Microsoft Word documents. .mp3 is for audio, .png is for images, and .exe is for executable programs.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "GIF"
+    ],
+    "question": "A .gif file can contain a short animation that plays automatically, like the moving images you see in memes.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "GIF (Graphics Interchange Format) supports animation by storing multiple frames that play in sequence. This makes GIFs popular for memes, reactions, and short looping animations.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "WinRAR",
+      "File Compression"
+    ],
+    "question": "Your friend sends you a .zip file containing their vacation photos. What do you need to do to see the photos inside?",
+    "choices": [
+      "Print the file",
+      "Rename the file to .jpg",
+      "Extract (unzip) the file",
+      "Delete the file"
+    ],
+    "justification": "ZIP files are compressed archives that contain other files. To access the contents, you need to extract (unzip) them using Windows' built-in feature or programs like WinRAR or 7-Zip.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Cloud Storage",
+      "Benefits"
+    ],
+    "question": "Your laptop suddenly stopped working, but all your school projects were saved on Google Drive. What happens to your files?",
+    "choices": [
+      "Your files are only on the broken laptop",
+      "Your files are safe and accessible from any other device",
+      "Your files become encrypted and unreadable",
+      "Your files are permanently deleted"
+    ],
+    "justification": "Cloud storage keeps your files on remote servers (the 'cloud'), not just on your device. Even if your computer breaks, you can access your files by logging into your account from any other device with internet.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Programming",
+      "Instructions"
+    ],
+    "question": "Programming is the process of writing ___ that tell a computer what to do.",
+    "choices": [
+      "instructions",
+      "songs",
+      "drawings",
+      "stories"
+    ],
+    "justification": "Programming (or coding) involves writing step-by-step instructions in a language the computer can understand. These instructions tell the computer exactly what actions to perform.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Pseudocode",
+      "Planning"
+    ],
+    "question": "Before writing actual code, programmers sometimes write \"pseudocode.\" What is pseudocode?",
+    "choices": [
+      "A plain language description of what the program should do",
+      "A type of computer virus",
+      "A secret code that hackers use",
+      "The final version of a program"
+    ],
+    "justification": "Pseudocode is a way to plan your program using plain English (or any language) before writing actual code. It helps you think through the logic without worrying about syntax.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Loops",
+      "Repetition"
+    ],
+    "question": "In programming, if you want a character in a game to jump 10 times, using a loop is more efficient than writing the jump instruction 10 separate times.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Loops allow you to repeat instructions without writing them multiple times. Instead of 10 lines of 'jump', you can write 'repeat 10 times: jump'. This makes code shorter, cleaner, and easier to modify.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Events",
+      "Triggers"
+    ],
+    "question": "In a game, the character moves right when you press the right arrow key. In programming terms, what is the key press called?",
+    "choices": [
+      "An event",
+      "A loop",
+      "A function",
+      "A variable"
+    ],
+    "justification": "An event is something that happens that the program can detect and respond to, like a key press, mouse click, or timer finishing. Events trigger specific actions in the code.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "OR Operator",
+      "Logical Operations"
+    ],
+    "question": "A game gives you a power-up if you collect 100 coins OR defeat the boss. You have 50 coins but just defeated the boss. Do you get the power-up?",
+    "choices": [
+      "No, because you need both conditions",
+      "Yes, because OR only needs one condition to be true",
+      "No, because you don't have enough coins",
+      "Yes, but only if you collect 50 more coins"
+    ],
+    "justification": "The OR operator returns true if AT LEAST ONE condition is true. You don't have 100 coins (FALSE), but you did defeat the boss (TRUE). FALSE OR TRUE = TRUE, so you get the power-up!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Paste"
+    ],
+    "question": "You've just copied some text using Ctrl+C. Which shortcut do you use to paste it somewhere else?",
+    "choices": [
+      "Ctrl+P",
+      "Ctrl+X",
+      "Ctrl+V",
+      "Ctrl+B"
+    ],
+    "justification": "Ctrl+V is the universal shortcut for pasting content that you've previously copied or cut. Think of V as an arrow pointing down to where you're inserting the content.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Select All"
+    ],
+    "question": "Pressing Ctrl+A selects all the text or items in the current document or folder.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Ctrl+A is the 'Select All' shortcut. It works in documents to select all text, in folders to select all files, and in many other applications to select everything at once.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Cut"
+    ],
+    "question": "What's the difference between Ctrl+C (copy) and Ctrl+X (cut)?",
+    "choices": [
+      "Cut removes the original item when pasted; copy leaves the original in place",
+      "Copy removes the original; cut leaves the original",
+      "They do exactly the same thing",
+      "Cut is for text only; copy is for files only"
+    ],
+    "justification": "Copy (Ctrl+C) duplicates the item - the original stays and you create a copy. Cut (Ctrl+X) moves the item - after pasting, the original is removed from its location.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "CMD Commands",
+      "Clear Screen"
+    ],
+    "question": "In Command Prompt, if your screen is full of previous commands and you want to clear it, you type the command ___.",
+    "choices": [
+      "clear",
+      "del",
+      "reset",
+      "cls"
+    ],
+    "justification": "The 'cls' command (clear screen) removes all previous text from the Command Prompt window, giving you a clean screen to work with.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Paths",
+      "Navigation"
+    ],
+    "question": "You're in the folder C:\\Users\\Sara\\Documents\\School and want to access C:\\Users\\Sara\\Downloads. Which understanding is correct about navigating between these folders?",
+    "choices": [
+      "You need to go up one level only",
+      "These folders are on different drives",
+      "You need to go up two levels (to Sara folder) then into Downloads",
+      "Downloads is inside the School folder"
+    ],
+    "justification": "From School, you go up to Documents (level 1), then up to Sara (level 2). From Sara, you can go down into Downloads. Both folders (Documents and Downloads) are siblings inside the Sara folder.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Naming",
+      "Spaces"
+    ],
+    "question": "Using underscores (_) instead of spaces in file names is a good practice because some systems have trouble with spaces in file names.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Spaces in file names can cause issues in web URLs, programming, and command-line operations. Using underscores (My_File.txt) or hyphens (My-File.txt) avoids these problems.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Basic Capture"
+    ],
+    "question": "What does the Print Screen (PrtSc) key do when pressed?",
+    "choices": [
+      "Closes all open windows",
+      "Takes a photo using your webcam",
+      "Prints the current page on paper",
+      "Captures an image of your entire screen to the clipboard"
+    ],
+    "justification": "Despite its name, Print Screen doesn't print anything. It captures your screen as an image and saves it to the clipboard. You can then paste (Ctrl+V) it into an image editor or document.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Common Mistakes"
+    ],
+    "question": "You're creating a tutorial and need to take screenshots. Which of these is a common mistake you should AVOID?",
+    "choices": [
+      "Cropping the image to show only relevant content",
+      "Using annotations to highlight important areas",
+      "Capturing your entire desktop when you only need to show one small button",
+      "Saving screenshots in PNG format"
+    ],
+    "justification": "Capturing too much (like the entire desktop) when you only need a small area distracts viewers and makes tutorials confusing. Always capture just what's needed and crop if necessary.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "PDF",
+      "Document Sharing"
+    ],
+    "question": "PDF is a good format for sharing final documents because the receiver can easily change and edit the content.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Actually, the opposite is true! PDF is good for sharing BECAUSE it's difficult to edit. It preserves your formatting and prevents accidental changes. If you want the receiver to edit, send a .docx file instead.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Site Operator"
+    ],
+    "question": "You want to find articles about robotics, but ONLY from Wikipedia. Which search should you use?",
+    "choices": [
+      "robotics wikipedia only",
+      "\"robotics wikipedia\"",
+      "robotics site:wikipedia.org",
+      "robotics + wikipedia"
+    ],
+    "justification": "The site: operator limits results to a specific website. 'robotics site:wikipedia.org' tells Google to only show pages about robotics that are on Wikipedia.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Title Search"
+    ],
+    "question": "To find web pages that have \"Python tutorial\" in their title, you would search: ___:\"Python tutorial\"",
+    "choices": [
+      "inurl",
+      "intitle",
+      "intext",
+      "site"
+    ],
+    "justification": "The intitle: operator searches for words specifically in the page title (what appears in the browser tab). This helps find pages where your topic is the main focus.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Stereotypes",
+      "Digital Literacy"
+    ],
+    "question": "While researching online, you notice that image searches for \"CEO\" mostly show men in suits. This is an example of:",
+    "choices": [
+      "A stereotype being reinforced by search results",
+      "A computer virus affecting results",
+      "Accurate representation of all CEOs",
+      "Google's official policy"
+    ],
+    "justification": "Search results can reflect and reinforce stereotypes - oversimplified beliefs about groups of people. Being aware of this helps us think critically about the information we find online.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Password",
+      "Security"
+    ],
+    "question": "Which of these would be the STRONGEST password?",
+    "choices": [
+      "qwerty",
+      "123456789",
+      "Tr0pic@lFish2024!",
+      "password123"
+    ],
+    "justification": "Strong passwords have: uppercase and lowercase letters, numbers, special characters (@!), and are at least 12 characters long. 'Tr0pic@lFish2024!' has all of these, making it very hard to guess.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Phishing",
+      "Email Safety"
+    ],
+    "question": "If an email from your bank asks you to click a link and enter your password, you should always do it because banks need to verify your identity regularly.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Banks and legitimate companies NEVER ask for passwords via email. This is a classic phishing technique. If you're unsure, go directly to the bank's website by typing the address yourself, or call them.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Red Flags",
+      "Safe vs Risky"
+    ],
+    "question": "Which scenario is MOST LIKELY to be safe?",
+    "choices": [
+      "Entering your password on a website with HTTP (not HTTPS)",
+      "Downloading software from the official Microsoft Store",
+      "Clicking a link in an email saying you won a free iPhone",
+      "Opening an attachment from an unknown sender"
+    ],
+    "justification": "Official app stores verify software for safety. The other options are all red flags: 'free prize' emails are scams, unknown attachments may contain malware, and HTTP sites don't encrypt your data.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Virus",
+      "Protection"
+    ],
+    "question": "To protect your computer from viruses, you should install ___ software.",
+    "choices": [
+      "gaming",
+      "music",
+      "antivirus",
+      "drawing"
+    ],
+    "justification": "Antivirus software scans your computer for malicious programs (malware), blocks threats, and removes infections. Windows has built-in protection called Windows Defender.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "Text Files"
+    ],
+    "question": "You created a simple text file in Notepad. What extension will it have by default?",
+    "choices": [
+      ".jpg",
+      ".pdf",
+      ".txt",
+      ".doc"
+    ],
+    "justification": "Notepad saves files as plain text with the .txt extension by default. TXT files contain only text without formatting like fonts or colors.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "Image Comparison"
+    ],
+    "question": "You're saving a logo for your school project and need a transparent background. Which image format supports transparency?",
+    "choices": [
+      "TXT",
+      "MP3",
+      "PNG",
+      "JPG"
+    ],
+    "justification": "PNG (Portable Network Graphics) supports transparency, meaning parts of the image can be see-through. JPG doesn't support transparency - it fills transparent areas with a solid color (usually white).",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Docs",
+      "Collaboration"
+    ],
+    "question": "Multiple people can edit the same Google Docs document at the same time, and everyone can see each other's changes in real-time.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Google Docs supports real-time collaboration. Multiple users can type in the same document simultaneously, and you can see colored cursors showing where each person is working.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "WinRAR",
+      "Compression Benefits"
+    ],
+    "question": "Why would you compress files into a ZIP or RAR archive before sending them to a friend?",
+    "choices": [
+      "To add viruses to the files",
+      "To make the files impossible to open",
+      "To convert images to videos",
+      "To reduce file size and bundle multiple files into one"
+    ],
+    "justification": "Compression does two useful things: 1) Makes files smaller for faster uploading/downloading, and 2) Bundles multiple files into one archive, making it easier to share entire folders.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Binary",
+      "Digits"
+    ],
+    "question": "In binary, the only two digits used are ___ and ___.",
+    "choices": [
+      "1 and 2",
+      "0 and 1",
+      "0 and 9",
+      "A and B"
+    ],
+    "justification": "Binary (base-2) uses only two digits: 0 and 1. This matches how computers work with electrical signals that are either off (0) or on (1).",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Sequence",
+      "Order of Instructions"
+    ],
+    "question": "In programming, why does the ORDER of instructions matter?",
+    "choices": [
+      "Because the computer executes instructions one after another from top to bottom",
+      "Because the computer can read minds",
+      "The order doesn't actually matter",
+      "Because longer code always runs faster"
+    ],
+    "justification": "Computers follow instructions in sequence - the order you write them. If you put 'add sugar' before 'pour tea into cup,' you'd be adding sugar to an empty cup! Sequence matters in coding just like in recipes.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Functions",
+      "Reusable Code"
+    ],
+    "question": "In programming, a function is a reusable block of code that performs a specific task, which you can use multiple times without rewriting it.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Functions are like mini-programs within your program. You define them once and can 'call' them whenever needed. For example, a 'jump' function in a game can be used every time the player presses the jump button.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "NOT Operator",
+      "Logical Operations"
+    ],
+    "question": "In a game, a door opens when the player does NOT have a key (meaning keyFound = False). If keyFound is currently True, what does NOT keyFound equal?",
+    "choices": [
+      "Maybe",
+      "False",
+      "True",
+      "Error"
+    ],
+    "justification": "The NOT operator flips the value: NOT True = False, and NOT False = True. Since keyFound is True, NOT keyFound equals False. So the door would NOT open because the condition (NOT keyFound) is False.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Logic Bugs"
+    ],
+    "question": "A student wrote a game where collecting a coin should add 1 to the score. But when they test it, collecting a coin adds 2 to the score instead. What type of bug is this?",
+    "choices": [
+      "A logic bug - the code runs but produces wrong results",
+      "A hardware problem",
+      "A virus infection",
+      "A syntax error - the code won't run at all"
+    ],
+    "justification": "A logic bug (or logical error) means the program runs without crashing, but doesn't do what you intended. The code probably says 'score = score + 2' instead of 'score = score + 1'. Syntax errors prevent the program from running at all.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Save"
+    ],
+    "question": "Pressing Ctrl+S is a quick way to save your work in most applications.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Ctrl+S is the universal 'Save' shortcut that works in almost all programs including Word, Notepad, browsers, and image editors. It's one of the most important shortcuts to remember!",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Keyboard Shortcuts",
+      "Task View"
+    ],
+    "question": "Pressing Windows+___ opens Task View, which shows all your open windows and virtual desktops.",
+    "choices": [
+      "Shift",
+      "Space",
+      "Enter",
+      "Tab"
+    ],
+    "justification": "Windows+Tab opens Task View, giving you a visual overview of all open windows. Unlike Alt+Tab (which quickly switches), Task View lets you see everything at once and manage virtual desktops.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Organization",
+      "Folder Structure"
+    ],
+    "question": "You have school files for Math, Science, and English. What's the BEST way to organize them?",
+    "choices": [
+      "Save everything on the desktop",
+      "Keep files in the Downloads folder",
+      "Create separate folders for each subject inside a main 'School' folder",
+      "Put all files in one folder with random names"
+    ],
+    "justification": "A logical folder hierarchy (School → Math, Science, English) makes files easy to find. Keeping files on the desktop or in Downloads creates clutter and makes organization difficult.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Version Control",
+      "Best Practices"
+    ],
+    "question": "If you name your files Essay_Final.docx, Essay_Final_v2.docx, Essay_Final_v2_REAL.docx, Essay_ACTUAL_Final.docx, you're following good version control practices.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is poor version control! Words like 'Final', 'REAL', and 'ACTUAL' are confusing. Good practice is using consistent numbering: Essay_V1.docx, Essay_V2.docx, Essay_V3.docx - simple and clear.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "PDF",
+      "Conversion"
+    ],
+    "question": "In Microsoft Word, you can save your document as a PDF by clicking File → Save As, then choosing ___ as the file type.",
+    "choices": [
+      "PDF",
+      "HTML",
+      "EXE",
+      "TXT"
+    ],
+    "justification": "Most document programs like Microsoft Word let you export or 'Save As' PDF directly. This converts your document into a format that looks the same on any device.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Screenshots",
+      "Professional Use"
+    ],
+    "question": "You need to send a screenshot to your teacher showing an error message, but your screen also shows personal browser tabs and a messy desktop. What should you do?",
+    "choices": [
+      "Send the full screenshot including everything",
+      "Use Alt+PrtSc to capture only the window with the error, or crop the screenshot",
+      "Take a photo of the screen with your phone",
+      "Don't send any screenshot"
+    ],
+    "justification": "Professional screenshots should show only relevant content. Use Alt+PrtSc for single windows, Snip & Sketch to select specific areas, or crop afterward. This protects privacy and looks more professional.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "Basic Search"
+    ],
+    "question": "You want to learn about \"how volcanoes erupt\" - what's the difference between searching with and without quotes?",
+    "choices": [
+      "There's no difference",
+      "Without quotes is more accurate",
+      "Quotes make the search slower",
+      "Quotes find the exact phrase; without quotes finds pages with those words anywhere"
+    ],
+    "justification": "Quotes tell Google to find that exact phrase in that exact order. Without quotes, Google finds pages containing those words separately, which might not match what you're looking for.",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Dorking",
+      "URL Search"
+    ],
+    "question": "To find pages that have the word \"tutorial\" in their web address (URL), you would use the Google operator ___:tutorial",
+    "choices": [
+      "filetype",
+      "intitle",
+      "inurl",
+      "site"
+    ],
+    "justification": "The inurl: operator searches for keywords within the page's URL. For example, 'inurl:tutorial python' finds pages with 'tutorial' in the address that are also about Python.",
+    "ans_idx": 2
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Source Credibility",
+      "Website Trust"
+    ],
+    "question": "A website ending in .gov is typically more trustworthy for factual information than a random blog because .gov sites are official government websites.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Domain extensions indicate who controls the website. .gov is reserved for government entities, .edu for educational institutions. These organizations have standards for accuracy, unlike personal blogs which can publish anything.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Phishing",
+      "Link Safety"
+    ],
+    "question": "You receive a text message saying \"Your package couldn't be delivered. Click here to reschedule: bit.ly/3xY7z9\" but you didn't order anything. What should you do?",
+    "choices": [
+      "Reply to the message asking for details",
+      "Don't click - this is likely a phishing scam",
+      "Forward it to all your friends",
+      "Click the link to see what package it is"
+    ],
+    "justification": "This is a classic phishing scam. Red flags: unexpected message, shortened/suspicious link, urgency. If you're expecting a package, go directly to the delivery company's official website instead of clicking links.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Cybersecurity",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Virus",
+      "Spread"
+    ],
+    "question": "A computer virus can spread from one computer to another through infected files shared via USB drives or email attachments.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "justification": "Viruses spread by attaching themselves to files or programs. When you share an infected file via USB, email, or downloads, the virus travels with it. This is why you should scan files from unknown sources.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Cybersecurity",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Permissions",
+      "Privacy"
+    ],
+    "question": "You're installing a calculator app that requests permission to access your camera, microphone, contacts, and location. What should you do?",
+    "choices": [
+      "Permissions don't matter, so just accept them all",
+      "Be suspicious and don't install it - a calculator doesn't need those permissions",
+      "Only grant camera permission",
+      "Grant all permissions since you want to use the app"
+    ],
+    "justification": "A calculator only needs to do math - it has no legitimate reason for camera, microphone, contacts, or location access. Excessive permissions suggest the app might be collecting your personal data. Find a different app!",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Cybersecurity",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Pop-ups",
+      "Scam Recognition"
+    ],
+    "question": "Fake pop-up warnings that say your computer is infected and you must call a phone number are called tech support ___.",
+    "choices": [
+      "tutorials",
+      "scams",
+      "features",
+      "updates"
+    ],
+    "justification": "Tech support scams use fake pop-ups to scare you into calling scammers who pretend to be from Microsoft or Apple. They try to get money or remote access to your computer. Always close these pop-ups without clicking anything.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "mcq",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "File Extensions",
+      "Audio Files"
+    ],
+    "question": "Your friend sent you a song file called summer_vibes.mp3. What type of file is this?",
+    "choices": [
+      "An audio/music file",
+      "An image file",
+      "A video file",
+      "A document file"
+    ],
+    "justification": "The .mp3 extension indicates an audio file format commonly used for music and podcasts. MP3 files are compressed to be smaller while maintaining good sound quality.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Cloud Storage",
+      "Accessibility"
+    ],
+    "question": "Files stored on Google Drive can be accessed from your phone, tablet, school computer, or any device with internet access, as long as you log into your Google account.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "This is a key benefit of cloud storage - your files are stored on Google's servers, not just one device. Log in from anywhere with internet access, and your files are there waiting for you.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Computer Fundamentals",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Google Drive",
+      "Sharing"
+    ],
+    "question": "In Google Drive, if you want a classmate to see your document but NOT be able to edit it, you should share it with \"___\" permission.",
+    "choices": [
+      "Viewer",
+      "Editor",
+      "Owner",
+      "Commenter"
+    ],
+    "justification": "Google Drive has three sharing levels: Viewer (can only look), Commenter (can look and leave comments), and Editor (can make changes). Choose Viewer when you want to share without allowing edits.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 1,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Input-Process-Output",
+      "Computer Model"
+    ],
+    "question": "When you press keys on your keyboard, what part of the computer model does this represent?",
+    "choices": [
+      "Output",
+      "Process",
+      "Storage",
+      "Input"
+    ],
+    "justification": "Input is any data entering the computer - keyboard typing, mouse clicks, microphone audio, or camera images. The computer then processes this input and produces output (like text appearing on screen).",
+    "ans_idx": 3
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Algorithm",
+      "Daily Life"
+    ],
+    "question": "A recipe for baking a cake can be considered an algorithm because it's a step-by-step set of instructions to achieve a specific result.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Algorithms are everywhere! A recipe, driving directions, or assembly instructions are all algorithms - ordered steps that, when followed, produce a predictable result. Programming algorithms work the same way.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "IF/ELSE Logic",
+      "Nested Conditions"
+    ],
+    "question": "In a game: IF player has a key THEN open the door, ELSE IF player has 100 coins THEN buy a key, ELSE display \"Find coins or a key!\". The player has 100 coins but no key. What happens?",
+    "choices": [
+      "The player buys a key",
+      "The message \"Find coins or a key!\" displays",
+      "The game crashes",
+      "The door opens"
+    ],
+    "justification": "The computer checks conditions in order: First IF (has key?) - No. Then ELSE IF (has 100 coins?) - Yes! So it executes 'buy a key' and stops checking. The ELSE is only reached if ALL previous conditions are false.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Variables",
+      "Data Storage"
+    ],
+    "question": "In a game, to keep track of the player's score, you would create a ___ called 'score' and update it whenever they earn points.",
+    "choices": [
+      "variable",
+      "screenshot",
+      "browser",
+      "folder"
+    ],
+    "justification": "Variables store data that can change during program execution. A 'score' variable starts at 0 and increases as the player collects points. The value varies, hence the name 'variable'.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Loops",
+      "Efficiency"
+    ],
+    "question": "You want a game character to say \"Hello!\" 100 times. Which approach is BEST?",
+    "choices": [
+      "Write say \"Hello!\" 100 separate times in your code",
+      "Use a loop: repeat 100 times { say \"Hello!\" }",
+      "Use 100 different variables",
+      "It's impossible to make a character speak 100 times"
+    ],
+    "justification": "Loops let you repeat code without rewriting it. Instead of 100 lines saying the same thing, one loop does the job in 3 lines. This makes code shorter, cleaner, and much easier to change (want 200 times? Just change one number!).",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Conditionals",
+      "Boolean"
+    ],
+    "question": "In programming, an IF statement checks a condition that is either True or False - there's no \"maybe\" option.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Computers work with Boolean logic - conditions are either True (yes, 1) or False (no, 0). There's no middle ground. This is why conditions must be clear: 'score > 100' is either true or false, never 'sort of'.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "mcq",
+    "track": "Python Programming",
+    "difficulty_level": 2,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Conditionals",
+      "Game Logic"
+    ],
+    "question": "In a game, you want something special to happen when the score reaches exactly 50. Which condition correctly checks for this?",
+    "choices": [
+      "IF score = 50 (or score == 50)",
+      "IF score < 50",
+      "IF score + 50",
+      "IF score > 50"
+    ],
+    "justification": "To check if something equals a value, use = or == (depending on the programming language). > means greater than, < means less than. 'score + 50' adds numbers but doesn't compare them.",
+    "ans_idx": 0
+  },
+  {
+    "question_type": "true_false",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "Debugging",
+      "Testing"
+    ],
+    "question": "Professional programmers always write perfect code on their first try and never need to debug.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "justification": "Even the best programmers make mistakes and spend significant time debugging! Finding and fixing bugs is a normal, important part of programming. Testing your code and debugging skills are just as valuable as writing code.",
+    "ans_idx": 1
+  },
+  {
+    "question_type": "fill_the_blank",
+    "track": "Python Programming",
+    "difficulty_level": 3,
+    "age_group": "10-14",
+    "belt": "White",
+    "concepts": [
+      "AND Operator",
+      "Multiple Conditions"
+    ],
+    "question": "To check if BOTH conditions must be true (like: player has key AND player is at the door), you use the ___ operator.",
+    "choices": [
+      "IF",
+      "AND",
+      "OR",
+      "NOT"
+    ],
+    "justification": "AND requires ALL conditions to be true. If any one condition is false, the whole expression is false. Use AND when multiple things must happen together, like having a key AND being at the door to unlock it.",
+    "ans_idx": 1
+  }
+]
