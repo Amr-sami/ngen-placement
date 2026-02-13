@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Sparkles, Tag, Package, MessageCircle } from 'lucide-react'
+import { X, Sparkles, Tag, Package, MessageCircle, AlertCircle } from 'lucide-react'
 import { useLocale } from 'next-intl'
-import type { BeltLevel } from './types'
+import type { BeltLevel, StudentInfo } from './types'
 import { beltLevels, getLocalizedBeltValue } from './types'
 import { formatPrice } from '@/hooks/useUserLocation'
 import type { PricingResponse, PackagePricing, PackageBeltInfo } from '@/app/api/pricing/route'
@@ -14,6 +14,7 @@ interface PurchaseCardProps {
     isOpen: boolean
     onClose: () => void
     belt: BeltLevel
+    userInfo: StudentInfo
 }
 
 type PurchaseOption = 'perBelt' | 'package' | 'organization';
@@ -62,12 +63,14 @@ const parseStats = (belts: BeltLevel[], locale: 'en' | 'ar') => {
     };
 }
 
-export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProps) {
+export default function PurchaseCard({ isOpen, onClose, belt, userInfo }: PurchaseCardProps) {
     const locale = useLocale() as 'en' | 'ar'
     const isRTL = locale === 'ar'
 
     const [pricing, setPricing] = useState<PricingResponse | null>(null)
     const [isLoading, setIsLoading] = useState(true)
+    const [isPurchasing, setIsPurchasing] = useState(false)
+    const [purchaseError, setPurchaseError] = useState<string | null>(null)
     const [mounted, setMounted] = useState(false)
     const [selectedOption, setSelectedOption] = useState<PurchaseOption>('perBelt')
 
@@ -87,6 +90,7 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
             if (!isOpen) return
 
             setIsLoading(true)
+            setPurchaseError(null)
             try {
                 const response = await fetch(`/api/pricing?locale=${locale}`)
                 if (response.ok) {
@@ -151,6 +155,10 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
             comingSoon: 'Coming Soon',
             paymentSoon: 'Payment options will be available soon',
             orgsSchools: 'Organizations / Schools',
+            buyNow: 'Buy Now',
+            processing: 'Processing...',
+            error: 'Payment failed. Please try again.',
+            missingInfo: 'Please complete your profile first.'
         },
         ar: {
             perBelt: 'لكل حزام',
@@ -168,6 +176,10 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
             comingSoon: 'قريباً',
             paymentSoon: 'خيارات الدفع ستكون متاحة قريباً',
             orgsSchools: 'المؤسسات / المدارس',
+            buyNow: 'شراء الآن',
+            processing: 'جاري المعالجة...',
+            error: 'فشلت عملية الدفع. يرجى المحاولة مرة أخرى.',
+            missingInfo: 'يرجى إكمال ملفك الشخصي أولاً.'
         }
     }[locale]
 
@@ -192,6 +204,57 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
     const beltPricing = getBeltPrice()
     const packagePricing = getPackageForBelt()
     const currency = pricing?.currency || 'USD'
+
+    const handlePurchase = async () => {
+        if (!userInfo.email || !userInfo.name || !userInfo.phone) {
+            setPurchaseError(t.missingInfo)
+            return
+        }
+
+        // Only handle direct belt purchase for now
+        // TODO: Handle package purchase
+        if (selectedOption !== 'perBelt' || !beltPricing?.beltId) return
+
+        setIsPurchasing(true)
+        setPurchaseError(null)
+
+        try {
+            const response = await fetch('/api/orders/create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    beltId: beltPricing.beltId,
+                    customerName: userInfo.name,
+                    customerEmail: userInfo.email,
+                    customerPhone: userInfo.phone,
+                    paymentMethod: 'card', // Default to card for now
+                    currency: currency,
+                    locale: locale
+                }),
+            })
+
+            const data = await response.json()
+
+            if (!response.ok) {
+                throw new Error(data.message || t.error)
+            }
+
+            if (data.iframeUrl) {
+                // Redirect to Paymob iframe
+                window.location.href = data.iframeUrl
+            } else {
+                throw new Error('No payment URL received')
+            }
+
+        } catch (error) {
+            console.error('Purchase error:', error)
+            setPurchaseError(error instanceof Error ? error.message : t.error)
+            setIsPurchasing(false)
+        }
+    }
+
 
     // Calculate package stats
     let displayStats = {
@@ -428,16 +491,28 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                     </div>
                                 </div>
 
+                                {purchaseError && (
+                                    <div className="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded-xl flex items-center gap-2 text-red-200 text-sm">
+                                        <AlertCircle className="w-4 h-4 shrink-0" />
+                                        <span>{purchaseError}</span>
+                                    </div>
+                                )}
+
                                 {/* Purchase Button */}
                                 {selectedOption === 'perBelt' ? (
                                     <button
-                                        disabled
-                                        className="w-full py-3 rounded-xl text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
+                                        onClick={handlePurchase}
+                                        disabled={isPurchasing || !beltPricing?.beltId}
+                                        className={`w-full py-3 rounded-xl text-white font-bold flex items-center justify-center gap-2 transition-all
+                                            ${isPurchasing || !beltPricing?.beltId
+                                                ? 'opacity-70 cursor-not-allowed'
+                                                : 'hover:opacity-90 hover:scale-[1.02]'
+                                            }`}
                                         style={{
                                             background: `linear-gradient(to right, ${belt.color}80, ${belt.color}40)`,
                                         }}
                                     >
-                                        {t.comingSoon}
+                                        {isPurchasing ? t.processing : t.buyNow}
                                     </button>
                                 ) : selectedOption === 'package' ? (
                                     <button
@@ -448,16 +523,18 @@ export default function PurchaseCard({ isOpen, onClose, belt }: PurchaseCardProp
                                     </button>
                                 ) : (
                                     <button
-                                        disabled
+                                        disabled // Org button still disabled/configured for contact-us logic separately
                                         className="w-full py-3 rounded-xl bg-gradient-to-r from-orange-500/50 to-red-600/50 text-white/70 font-bold flex items-center justify-center gap-2 cursor-not-allowed"
                                     >
                                         {t.comingSoon}
                                     </button>
                                 )}
 
-                                <p className="text-center text-purple-300/60 text-xs mt-2">
-                                    {t.paymentSoon}
-                                </p>
+                                {selectedOption !== 'perBelt' && (
+                                    <p className="text-center text-purple-300/60 text-xs mt-2">
+                                        {t.paymentSoon}
+                                    </p>
+                                )}
                             </>
                         )}
                     </div>

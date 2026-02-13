@@ -246,6 +246,7 @@ export default function ResultsMain() {
           isOpen={showPurchaseCard}
           onClose={() => setShowPurchaseCard(false)}
           belt={recommendedBelt}
+          userInfo={studentInfo}
         />
       </motion.div>
     </div>

@@ -127,7 +127,7 @@ export async function POST(req: Request) {
 
     const exam = generateBalancedExam(allQuestions, {
       n,
-      tracks: tracks,
+      tracks: tracks, // For General: ["White", "Yellow", "Orange"]; For Specific: [TrackName]
       difficulties: DIFFICULTIES,
       seed: Date.now(),
     })

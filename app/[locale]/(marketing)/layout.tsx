@@ -1,5 +1,5 @@
 import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import FooterWrapper from '@/components/layout/FooterWrapper';
 
 /**
  * Marketing Layout
@@ -15,7 +15,7 @@ export default function MarketingLayout({
     <>
       <Navbar />
       <div className="pt-20">{children}</div>
-      <Footer />
+      <FooterWrapper />
     </>
   );
 }

@@ -410,7 +410,7 @@ function HomepagePricingSection() {
                   </div>
 
                   <div
-                    className={`grid gap-6 ${pricing.option1_perBelt.belts.length === 1 ? 'grid-cols-1 max-w-sm mx-auto' : 'grid-cols-2 md:grid-cols-4 lg:grid-cols-5'
+                    className={`grid gap-6 ${pricing.option1_perBelt.belts.length === 1 ? 'grid-cols-1 max-w-sm mx-auto' : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5'
                       }`}
                   >
                     {pricing.option1_perBelt.belts.map(belt => {

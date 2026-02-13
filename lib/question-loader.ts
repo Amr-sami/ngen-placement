@@ -21,11 +21,6 @@ export async function loadGeneralQuestions(language: 'en' | 'ar', age: number): 
 
     for (const belt of GENERAL_BELTS) {
         // Construct path: .next/questions_v2/{BeltName}/{lang}/{ageFile}
-        // Note: Analysis showed language folders are inside belt folders, e.g. "Orange Belt/en/6-9.json"
-        // However, some file listings showed "Ages 6-9.json" in White Belt vs "6-9.json" in Orange. 
-        // I need to be careful with file names. 
-        // Let's try to detect or fallback.
-
         const beltDir = path.join(baseDir, belt, language);
 
         // Try standard name first
