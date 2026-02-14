@@ -1,59 +1,18 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { X, Plus } from 'lucide-react';
-import { createTrack } from '@/lib/actions/admin/curriculumActions';
+import { useCreateTrackForm } from './hooks/useCreateTrackForm';
+import { AdminInput } from '../ui/AdminInput';
+import { AdminTextarea } from '../ui/AdminTextarea';
 
 export default function CreateTrackModal() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState<string | null>(null);
-    const router = useRouter();
+    const { formData, isLoading, error, handleInputChange, handleSubmit, resetForm } = useCreateTrackForm(() => setIsOpen(false));
 
-    const [formData, setFormData] = useState({
-        nameEn: '',
-        nameAr: '',
-        slug: '',
-        descriptionEn: '',
-        descriptionAr: '',
-    });
-
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
-
-        // Auto-generate slug from English name
-        if (name === 'nameEn') {
-            const slug = value
-                .toLowerCase()
-                .replace(/[^a-z0-9 ]/g, '')
-                .replace(/\s+/g, '-');
-            setFormData(prev => ({ ...prev, slug }));
-        }
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setError(null);
-        setIsLoading(true);
-
-        try {
-            await createTrack(formData);
-            setIsOpen(false);
-            setFormData({
-                nameEn: '',
-                nameAr: '',
-                slug: '',
-                descriptionEn: '',
-                descriptionAr: '',
-            });
-            router.refresh();
-        } catch (err) {
-            setError(err instanceof Error ? err.message : 'Failed to create track');
-        } finally {
-            setIsLoading(false);
-        }
+    const handleClose = () => {
+        setIsOpen(false);
+        resetForm();
     };
 
     return (
@@ -73,7 +32,7 @@ export default function CreateTrackModal() {
                     {/* Backdrop */}
                     <div
                         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-                        onClick={() => setIsOpen(false)}
+                        onClick={handleClose}
                     />
 
                     {/* Modal Content */}
@@ -82,7 +41,7 @@ export default function CreateTrackModal() {
                         <div className="flex items-center justify-between mb-6">
                             <h2 className="text-xl font-bold text-white">Create New Track</h2>
                             <button
-                                onClick={() => setIsOpen(false)}
+                                onClick={handleClose}
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
                                 <X size={20} />
@@ -91,90 +50,60 @@ export default function CreateTrackModal() {
 
                         {/* Form */}
                         <form onSubmit={handleSubmit} className="space-y-4">
-                            {/* English Name */}
-                            <div>
-                                <label className="block text-sm text-gray-400 mb-1">
-                                    Name (English) *
-                                </label>
-                                <input
-                                    type="text"
-                                    name="nameEn"
-                                    value={formData.nameEn}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500"
-                                    placeholder="e.g. Programming"
-                                />
-                            </div>
+                            <AdminInput
+                                label="Name (English)"
+                                name="nameEn"
+                                value={formData.nameEn}
+                                onChange={handleInputChange}
+                                required
+                                placeholder="e.g. Programming"
+                            />
 
-                            {/* Arabic Name */}
-                            <div>
-                                <label className="block text-sm text-gray-400 mb-1">
-                                    Name (Arabic) *
-                                </label>
-                                <input
-                                    type="text"
-                                    name="nameAr"
-                                    value={formData.nameAr}
-                                    onChange={handleInputChange}
-                                    required
-                                    dir="rtl"
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500"
-                                    placeholder="مثال: البرمجة"
-                                />
-                            </div>
+                            <AdminInput
+                                label="Name (Arabic)"
+                                name="nameAr"
+                                value={formData.nameAr}
+                                onChange={handleInputChange}
+                                required
+                                dir="rtl"
+                                placeholder="مثال: البرمجة"
+                            />
 
-                            {/* Slug */}
                             <div>
-                                <label className="block text-sm text-gray-400 mb-1">
-                                    Slug (URL-friendly) *
-                                </label>
-                                <input
-                                    type="text"
+                                <AdminInput
+                                    label="Slug (URL-friendly)"
                                     name="slug"
                                     value={formData.slug}
                                     onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 font-mono text-sm"
+                                    className="font-mono text-sm"
                                     placeholder="programming"
                                 />
-                                <p className="text-xs text-gray-500 mt-1">
+                                <p className="text-xs text-gray-500 mt-1 pl-1">
                                     Auto-generated from English name. Must be unique.
                                 </p>
                             </div>
 
-                            {/* Description English */}
-                            <div>
-                                <label className="block text-sm text-gray-400 mb-1">
-                                    Description (English)
-                                </label>
-                                <textarea
-                                    name="descriptionEn"
-                                    value={formData.descriptionEn}
-                                    onChange={handleInputChange}
-                                    rows={2}
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 resize-none"
-                                    placeholder="Brief description of this track..."
-                                />
-                            </div>
+                            <AdminTextarea
+                                label="Description (English)"
+                                name="descriptionEn"
+                                value={formData.descriptionEn}
+                                onChange={handleInputChange}
+                                rows={2}
+                                placeholder="Brief description of this track..."
+                            />
 
-                            {/* Description Arabic */}
-                            <div>
-                                <label className="block text-sm text-gray-400 mb-1">
-                                    Description (Arabic)
-                                </label>
-                                <textarea
-                                    name="descriptionAr"
-                                    value={formData.descriptionAr}
-                                    onChange={handleInputChange}
-                                    rows={2}
-                                    dir="rtl"
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 resize-none"
-                                    placeholder="وصف موجز لهذا المسار..."
-                                />
-                            </div>
+                            <AdminTextarea
+                                label="Description (Arabic)"
+                                name="descriptionAr"
+                                value={formData.descriptionAr}
+                                onChange={handleInputChange}
+                                rows={2}
+                                dir="rtl"
+                                placeholder="وصف موجز لهذا المسار..."
+                            />
 
-                            {/* Error */}
+                            {/* Global Error */}
                             {error && (
                                 <div className="p-3 bg-red-500/20 text-red-400 rounded-lg text-sm">
                                     {error}
@@ -192,7 +121,7 @@ export default function CreateTrackModal() {
                                 </button>
                                 <button
                                     type="button"
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={handleClose}
                                     className="py-2 px-4 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors"
                                 >
                                     Cancel

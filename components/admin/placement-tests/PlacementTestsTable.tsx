@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getPlacementTests } from '@/lib/actions/admin/operationsActions';
-import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import AdminPagination from '@/components/admin/ui/AdminPagination';
 
 interface PlacementTestsTableProps {
     page: number;
@@ -70,8 +71,8 @@ export default async function PlacementTestsTable({ page, status }: PlacementTes
                                     <td className="py-4 px-6">
                                         {test.scorePercent !== undefined && test.scorePercent !== null ? (
                                             <span className={`font-medium ${test.scorePercent >= 70 ? 'text-green-400' :
-                                                    test.scorePercent >= 50 ? 'text-yellow-400' :
-                                                        'text-red-400'
+                                                test.scorePercent >= 50 ? 'text-yellow-400' :
+                                                    'text-red-400'
                                                 }`}>
                                                 {test.scorePercent}%
                                             </span>
@@ -115,38 +116,15 @@ export default async function PlacementTestsTable({ page, status }: PlacementTes
             </div>
 
             {/* Pagination */}
-            {pagination.totalPages > 1 && (
-                <div className="flex items-center justify-between px-6 py-4 border-t border-gray-700">
-                    <p className="text-sm text-gray-400">
-                        Showing {((pagination.page - 1) * pagination.limit) + 1} to {Math.min(pagination.page * pagination.limit, pagination.total)} of {pagination.total} tests
-                    </p>
-                    <div className="flex items-center gap-2">
-                        <Link
-                            href={`/en/admin/placement-tests?page=${pagination.page - 1}${status !== 'all' ? `&status=${status}` : ''}`}
-                            className={`p-2 rounded-lg transition-colors ${pagination.page === 1
-                                    ? 'text-gray-600 cursor-not-allowed'
-                                    : 'text-gray-400 hover:text-white hover:bg-gray-700'
-                                }`}
-                            aria-disabled={pagination.page === 1}
-                        >
-                            <ChevronLeft size={18} />
-                        </Link>
-                        <span className="text-sm text-gray-400">
-                            Page {pagination.page} of {pagination.totalPages}
-                        </span>
-                        <Link
-                            href={`/en/admin/placement-tests?page=${pagination.page + 1}${status !== 'all' ? `&status=${status}` : ''}`}
-                            className={`p-2 rounded-lg transition-colors ${pagination.page === pagination.totalPages
-                                    ? 'text-gray-600 cursor-not-allowed'
-                                    : 'text-gray-400 hover:text-white hover:bg-gray-700'
-                                }`}
-                            aria-disabled={pagination.page === pagination.totalPages}
-                        >
-                            <ChevronRight size={18} />
-                        </Link>
-                    </div>
-                </div>
-            )}
+            <AdminPagination
+                page={pagination.page}
+                totalPages={pagination.totalPages}
+                total={pagination.total}
+                limit={pagination.limit}
+                baseUrl="/en/admin/placement-tests"
+                searchParams={{ status }}
+                itemLabel="tests"
+            />
         </div>
     );
 }

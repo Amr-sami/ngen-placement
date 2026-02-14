@@ -1,50 +1,9 @@
 import { User, Mail, Phone, Calendar, Globe, Briefcase, Award, Clock } from 'lucide-react';
 import UserStatusBadge from './UserStatusBadge';
+import type { UserDetail } from './types';
 
 interface UserDetailCardProps {
-    user: {
-        id: string;
-        email: string;
-        authProvider: string;
-        emailVerified: boolean;
-        role: string;
-        status: string;
-        profile: {
-            firstName: string;
-            lastName: string;
-            fullName?: string;
-            phoneNumber?: string;
-            parentPhoneNumber?: string;
-            age: number;
-            dateOfBirth?: Date;
-            address?: {
-                country?: string;
-                city?: string;
-            };
-            joinType: string;
-            organizationName?: string;
-            howDidYouKnowNgen: string;
-        };
-        progress?: {
-            currentTrackName?: string;
-            currentBeltName?: string;
-            beltLevel?: number;
-        };
-        placementTest?: {
-            hasTakenAnyPlacementTest: boolean;
-            allowedAttempts: number;
-            attemptsUsed: number;
-            extraAttemptsGrantedBySupport?: number;
-            resultBeltName?: string;
-            resultScorePercent?: number;
-            takenAt?: Date | string | null;
-            lastPlacementTestId?: string | null;
-        } | null;
-        detectedCountry?: string;
-        detectedCountryCode?: string;
-        createdAt: Date;
-        lastLoginAt?: Date;
-    };
+    user: UserDetail;
 }
 
 export default function UserDetailCard({ user }: UserDetailCardProps) {

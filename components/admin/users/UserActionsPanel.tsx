@@ -1,69 +1,16 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { Plus, UserCheck, Ban, Trash2, RefreshCw, Mail } from 'lucide-react';
-import { updateUserStatus, grantExtraAttempt, verifyUserEmail } from '@/lib/actions/admin/userActions';
+import { useUserActions } from './hooks/useUserActions';
 import ResetUserPassword from './ResetUserPassword';
+import type { UserActionsPanelUser } from './types';
 
 interface UserActionsPanelProps {
-    user: {
-        id: string;
-        email: string;
-        status: string;
-        emailVerified?: boolean;
-        placementTest?: {
-            allowedAttempts: number;
-            attemptsUsed: number;
-            extraAttemptsGrantedBySupport?: number;
-        } | null;
-    };
+    user: UserActionsPanelUser;
 }
 
 export default function UserActionsPanel({ user }: UserActionsPanelProps) {
-    const [isLoading, setIsLoading] = useState<string | null>(null);
-    const router = useRouter();
-
-    const handleGrantAttempt = async () => {
-        setIsLoading('grant');
-        try {
-            const result = await grantExtraAttempt(user.id, 1);
-            router.refresh();
-            alert(`Success! New total attempts: ${result.newTotalAttempts}`);
-        } catch (error) {
-            console.error('Failed to grant attempt:', error);
-            alert('Failed to grant extra attempt');
-        } finally {
-            setIsLoading(null);
-        }
-    };
-
-    const handleStatusChange = async (status: 'active' | 'pending' | 'suspended' | 'deleted') => {
-        setIsLoading(status);
-        try {
-            await updateUserStatus(user.id, status);
-            router.refresh();
-        } catch (error) {
-            console.error('Failed to update status:', error);
-            alert('Failed to update user status');
-        } finally {
-            setIsLoading(null);
-        }
-    };
-
-    const handleVerifyEmail = async () => {
-        setIsLoading('verify');
-        try {
-            await verifyUserEmail(user.id);
-            router.refresh();
-            alert('Email verified successfully!');
-        } catch (error) {
-            console.error('Failed to verify email:', error);
-            alert(error instanceof Error ? error.message : 'Failed to verify email');
-        } finally {
-            setIsLoading(null);
-        }
-    };
+    const { isLoading, handleGrantAttempt, handleStatusChange, handleVerifyEmail } = useUserActions(user.id);
 
     const totalAttempts = (user.placementTest?.allowedAttempts || 1) + (user.placementTest?.extraAttemptsGrantedBySupport || 0);
     const remainingAttempts = totalAttempts - (user.placementTest?.attemptsUsed || 0);

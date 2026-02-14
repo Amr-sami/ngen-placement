@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { getUsers } from '@/lib/actions/admin/userActions';
-import { Eye, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import UserStatusBadge from '@/components/admin/users/UserStatusBadge';
 import UserQuickActions from '@/components/admin/users/UserQuickActions';
+import AdminPagination from '@/components/admin/ui/AdminPagination';
 
 interface UsersTableProps {
     page: number;
@@ -96,38 +97,15 @@ export default async function UsersTable({ page, search, status }: UsersTablePro
             </div>
 
             {/* Pagination */}
-            {pagination.totalPages > 1 && (
-                <div className="flex items-center justify-between px-6 py-4 border-t border-gray-700">
-                    <p className="text-sm text-gray-400">
-                        Showing {((pagination.page - 1) * pagination.limit) + 1} to {Math.min(pagination.page * pagination.limit, pagination.total)} of {pagination.total} users
-                    </p>
-                    <div className="flex items-center gap-2">
-                        <Link
-                            href={`/en/admin/users?page=${pagination.page - 1}${search ? `&search=${search}` : ''}${status !== 'all' ? `&status=${status}` : ''}`}
-                            className={`p-2 rounded-lg transition-colors ${pagination.page === 1
-                                ? 'text-gray-600 cursor-not-allowed'
-                                : 'text-gray-400 hover:text-white hover:bg-gray-700'
-                                }`}
-                            aria-disabled={pagination.page === 1}
-                        >
-                            <ChevronLeft size={18} />
-                        </Link>
-                        <span className="text-sm text-gray-400">
-                            Page {pagination.page} of {pagination.totalPages}
-                        </span>
-                        <Link
-                            href={`/en/admin/users?page=${pagination.page + 1}${search ? `&search=${search}` : ''}${status !== 'all' ? `&status=${status}` : ''}`}
-                            className={`p-2 rounded-lg transition-colors ${pagination.page === pagination.totalPages
-                                ? 'text-gray-600 cursor-not-allowed'
-                                : 'text-gray-400 hover:text-white hover:bg-gray-700'
-                                }`}
-                            aria-disabled={pagination.page === pagination.totalPages}
-                        >
-                            <ChevronRight size={18} />
-                        </Link>
-                    </div>
-                </div>
-            )}
+            <AdminPagination
+                page={pagination.page}
+                totalPages={pagination.totalPages}
+                total={pagination.total}
+                limit={pagination.limit}
+                baseUrl="/en/admin/users"
+                searchParams={{ search, status }}
+                itemLabel="users"
+            />
         </div>
     );
 }
