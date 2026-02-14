@@ -120,6 +120,12 @@
         "description": "Login or create an account to save your placement test results, track your progress, and access exclusive features.",
         "login": "Login",
         "signup": "Sign Up"
+      },
+      "test": {
+        "finish": "Finish Test",
+        "next": "Next",
+        "nextQuestion": "Next Question",
+        "previous": "Previous"
       }
     },
     "survey": {

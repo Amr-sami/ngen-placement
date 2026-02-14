@@ -1,5 +1,5 @@
-
 import { ArrowRight, ArrowLeft, Sparkles } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 interface TestFooterProps {
   currentQuestion: number
@@ -18,6 +18,7 @@ export default function TestFooter({
   onNext,
   onSubmit,
 }: TestFooterProps) {
+  const t = useTranslations('placementTest.test')
   const isLastQuestion = currentQuestion === totalQuestions - 1
 
   return (
@@ -27,13 +28,13 @@ export default function TestFooter({
         disabled={currentQuestion === 0}
         className={`
           flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-xl font-bold text-white transition-all text-sm md:text-base
-          ${currentQuestion === 0 
-            ? 'opacity-30 cursor-not-allowed' 
+          ${currentQuestion === 0
+            ? 'opacity-30 cursor-not-allowed'
             : 'hover:bg-white/10 active:scale-95'}
         `}
       >
         <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
-        <span className="hidden sm:inline">Previous</span>
+        <span className="hidden sm:inline">{t('previous')}</span>
       </button>
 
       {isLastQuestion ? (
@@ -42,7 +43,7 @@ export default function TestFooter({
           disabled={!isAnswerSelected}
           className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-bold shadow-lg shadow-green-900/20 transition-all transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:scale-100 flex items-center gap-2 text-sm md:text-base"
         >
-          <span>Finish Test</span>
+          <span>{t('finish')}</span>
           <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
         </button>
       ) : (
@@ -51,8 +52,8 @@ export default function TestFooter({
           disabled={!isAnswerSelected}
           className="bg-gradient-to-r from-orange-500 to-pink-600 hover:from-orange-400 hover:to-pink-500 text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-bold shadow-lg shadow-purple-900/20 transition-all transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:scale-100 flex items-center gap-2 text-sm md:text-base"
         >
-          <span className="hidden sm:inline">Next Question</span>
-          <span className="sm:hidden">Next</span>
+          <span className="hidden sm:inline">{t('nextQuestion')}</span>
+          <span className="sm:hidden">{t('next')}</span>
           <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
         </button>
       )}
