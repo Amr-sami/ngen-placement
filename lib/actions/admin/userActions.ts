@@ -23,6 +23,8 @@ export async function grantExtraAttempt(userId: string, attempts: number = 1) {
             hasTakenAnyPlacementTest: false,
             allowedAttempts: 1,
             attemptsUsed: 0,
+            technicalAttemptsUsed: 0,
+            softSkillsAttemptsUsed: 0,
             extraAttemptsGrantedBySupport: 0,
         };
     }

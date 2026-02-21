@@ -109,6 +109,8 @@ async function seedTestUsers() {
                     hasTakenAnyPlacementTest: true,
                     allowedAttempts: 3,
                     attemptsUsed: 1,
+                    technicalAttemptsUsed: 1,
+                    softSkillsAttemptsUsed: 0,
                     resultBeltName: testUser.resultBeltName,
                     resultScorePercent: testUser.resultScorePercent!,
                     takenAt: new Date(),
@@ -116,6 +118,8 @@ async function seedTestUsers() {
                     hasTakenAnyPlacementTest: false,
                     allowedAttempts: 3,
                     attemptsUsed: 0,
+                    technicalAttemptsUsed: 0,
+                    softSkillsAttemptsUsed: 0,
                 };
                 await existingUser.save();
                 console.log(`   📝 Updated: ${testUser.email}`);
