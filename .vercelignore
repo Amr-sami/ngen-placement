@@ -1,0 +1,7 @@
+# Exclude large question files from Vercel deployment
+# These files are not needed at runtime and cause bundle size issues
+questions_v2/
+*.ipynb
+*.py
+*.md
+test_ar.json
