@@ -6,29 +6,79 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import { useTranslations, useLocale } from 'next-intl'
+import { useSession } from 'next-auth/react'
 import type { ApiQuestion } from './types'
 import LoadingState from './LoadingState'
 import ErrorState from './ErrorState'
 import TestHeader from './TestHeader'
 import QuestionCard from './QuestionCard'
 import TestFooter from './TestFooter'
+import TestSelection from '../TestSelection'
+import SoftSkillsMain from '../SoftSkills/SoftSkillsMain'
 
 export default function TestMain() {
   const router = useRouter()
   const t = useTranslations('placementTest')
   const locale = useLocale()
   const isRTL = locale === 'ar'
+  const { data: session } = useSession()
 
+  const [testStep, setTestStep] = useState<'technical' | 'soft_skills'>('technical')
+  const [userTestStatus, setUserTestStatus] = useState({ hasTakenTechnical: false, hasTakenSoftSkills: false })
+  const [statusLoading, setStatusLoading] = useState(true)
+
+  // Technical Test State
   const [isLoading, setIsLoading] = useState(true)
   const [loadingProgress, setLoadingProgress] = useState(0)
   const [questions, setQuestions] = useState<ApiQuestion[]>([])
   const [error, setError] = useState<string | null>(null)
-
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>([])
 
-  // --- Logic: Fetching Questions ---
+  // Load User Status
   useEffect(() => {
+    const checkStatus = async () => {
+      if (session?.user) {
+        try {
+          const res = await fetch('/api/placement-test/check-user', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: session.user.email })
+          });
+          const data = await res.json();
+          setUserTestStatus({
+            hasTakenTechnical: data.hasTakenPlacementTest, // Mapping existing field
+            hasTakenSoftSkills: data.hasTakenSoftSkillsTest || false
+          });
+        } catch (e) {
+          console.error("Failed to check user status", e);
+        }
+      }
+      setStatusLoading(false);
+    };
+    checkStatus();
+  }, [session]);
+
+  // Check if Soft Skills was selected in Survey
+  useEffect(() => {
+    const track = sessionStorage.getItem('selectedTrack');
+    if (track === 'soft_skills') {
+      setTestStep('soft_skills');
+    } else {
+      setTestStep('technical');
+    }
+  }, []);
+
+  // Handle test type selection from TestSelection
+  const handleTestTypeSelect = (type: 'technical' | 'soft_skills') => {
+    sessionStorage.setItem('selectedTrack', type);
+    setTestStep(type);
+  };
+
+  // --- Technical Test Logic: Fetching Questions ---
+  useEffect(() => {
+    if (testStep !== 'technical') return;
+
     let progressTimer: ReturnType<typeof setInterval> | null = null
 
     const startProgress = () => {
@@ -135,7 +185,7 @@ export default function TestMain() {
     return () => {
       if (progressTimer) clearInterval(progressTimer)
     }
-  }, [router, locale, t])
+  }, [router, locale, t, testStep])
 
   // --- Handlers ---
   const handleAnswerSelect = (answerIndex: number) => {
@@ -162,11 +212,16 @@ export default function TestMain() {
       return answer === questions[index].ans_idx ? total + 1 : total
     }, 0)
 
+    // Store full question data including belt, difficulty_level, and concepts for evaluation
     const storedQuestions = questions.map(q => ({
       question: q.question,
       options: q.choices,
       ans_idx: q.ans_idx,
       justification: q.justification,
+      // Include these fields for the evaluator
+      belt: q.belt,
+      difficulty_level: q.difficulty_level,
+      concepts: q.concepts,
     }))
 
     sessionStorage.setItem('testScore', score.toString())
@@ -177,7 +232,56 @@ export default function TestMain() {
     router.push('/placement-test/results')
   }
 
-  // --- Render States ---
+  if (statusLoading) return <LoadingState loadingProgress={50} />;
+
+  // --- Render Selection Screen for logged-in users ---
+  // Show test selection when user is logged in and hasn't selected a test type yet
+  if (session?.user) {
+    return (
+      <div className="min-h-screen w-full bg-[#1a0b2e] relative py-8">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
+        </div>
+        <div className="w-full max-w-5xl mx-auto relative z-10">
+          <TestSelection
+            onSelect={handleTestTypeSelect}
+            hasTakenTechnical={userTestStatus.hasTakenTechnical}
+            hasTakenSoftSkills={userTestStatus.hasTakenSoftSkills}
+          />
+        </div>
+      </div>
+    );
+  }
+
+  // --- Render Soft Skills Test ---
+  if (testStep === 'soft_skills') {
+    // Determine age group from survey data
+    let ageGroup: '6-9' | '10-14' | '15-18' = '10-14';
+    if (typeof window !== 'undefined') {
+      const stored = sessionStorage.getItem('surveyData');
+      if (stored) {
+        const data = JSON.parse(stored);
+        const age = parseInt(data.age);
+        if (age >= 6 && age <= 9) ageGroup = '6-9';
+        else if (age >= 10 && age <= 14) ageGroup = '10-14';
+        else if (age >= 15) ageGroup = '15-18';
+      }
+    }
+
+    return (
+      <div className="min-h-screen w-full bg-[#1a0b2e] relative py-8">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
+        </div>
+        <SoftSkillsMain
+          ageGroup={ageGroup}
+          onComplete={() => router.push('/')} // Redirect to home
+        />
+      </div>
+    );
+  }
+
+  // --- Render Technical Test (Existing Flow) ---
   if (isLoading) {
     return <LoadingState loadingProgress={loadingProgress} />
   }

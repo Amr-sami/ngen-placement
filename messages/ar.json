@@ -102,6 +102,7 @@
   },
   "placementTest": {
     "test": {
+      "question": "السؤال",
       "finish": "إنهاء الاختبار",
       "next": "التالي",
       "nextQuestion": "السؤال التالي",
@@ -174,7 +175,8 @@
           "cybersecurity": "الأمن السيبراني",
           "data_analysis": "تحليل البيانات",
           "python_programming": "برمجة بايثون",
-          "robotics": "الروبوتات"
+          "robotics": "الروبوتات",
+          "soft_skills": "تقييم المهارات الشخصية"
         }
       }
     }

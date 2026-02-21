@@ -16,6 +16,7 @@ export interface IPlacementTest extends Document {
     trackId: mongoose.Types.ObjectId;
     trackName?: string;
     attemptNumber: number;
+    testType?: 'technical' | 'soft_skills';
     status: 'in_progress' | 'completed' | 'cancelled';
     scorePercent?: number;
     resultBeltId?: mongoose.Types.ObjectId;
@@ -76,6 +77,11 @@ const PlacementTestSchema = new Schema<IPlacementTest>(
             type: Number,
             required: [true, 'Attempt number is required'],
             min: 1,
+        },
+        testType: {
+            type: String,
+            enum: ['technical', 'soft_skills'],
+            default: 'technical',
         },
         status: {
             type: String,

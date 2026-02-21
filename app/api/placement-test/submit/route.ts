@@ -39,12 +39,13 @@ interface SubmitRequestBody {
         totalClasses: string;
         scoreRange: [number, number];
     };
+    track?: string; // 'general' or specific track like 'python_programming'
 }
 
 export async function POST(req: Request) {
     try {
         const body: SubmitRequestBody = await req.json();
-        const { testId, questions, selectedAnswers, score, totalQuestions, belt } = body;
+        const { testId, questions, selectedAnswers, score, totalQuestions, belt, track } = body;
 
         const session = await getServerSession(authOptions);
 
@@ -53,24 +54,38 @@ export async function POST(req: Request) {
         let detailedEvaluation = null;
         let isGeneralTest = false;
 
-        // Check if this is a General Test
-        // We can infer this if the belt object corresponds to the 'General' track or 
-        // if we explicitly pass a flag. 
-        // Currently, the frontend passes a 'belt' object. 
-        // For general test, the 'belt' might be determined by the frontend based on score.
-        // BUT, the new logic requires backend to evaluate.
-        // Let's assume if the belt name is derived from 'General - ' or if we pass a specific flag.
-        // Better yet, let's look at the questions. If they have 'belt' property, it's likely our new format.
-        // Or we can rely on `body.isGeneralTest` if we update frontend, 
-        // OR we can check if `belt.belt` is 'General' (if that's what frontend sends).
+        // Determine if this is a General test or specific track
+        // If track is 'general' or not provided, it's a general placement test
+        const isGeneral = !track || track === 'general';
 
-        // Strategy: We will infer it if the first question has a 'belt' property that matches our new system 
-        // OR if the user is in the 'General' flow (maybe check session/user state? No, stateless API is better).
-        // Let's rely on the question structure for now.
+        // Check if this is a General Test based on question structure
         const firstQuestion = questions[0] as any;
-        if (firstQuestion && (firstQuestion.belt === 'White' || firstQuestion.belt === 'Yellow' || firstQuestion.belt === 'Orange')) {
+        const hasBeltData = firstQuestion && (firstQuestion.belt === 'White' || firstQuestion.belt === 'Yellow' || firstQuestion.belt === 'Orange');
+
+        if (hasBeltData) {
             isGeneralTest = true;
         }
+
+        // Debug logging
+        console.log('📋 Submit API Debug:');
+        console.log('  - Track:', track);
+        console.log('  - Is General:', isGeneral);
+        console.log('  - Has Belt Data:', hasBeltData);
+        console.log('  - First Question Belt:', firstQuestion?.belt);
+        console.log('  - Questions Count:', questions?.length);
+
+        // Map track keys to display names
+        const TRACK_NAME_MAP: Record<string, string> = {
+            data_science: 'AI & Data Science',
+            computer_fundamentals: 'Computer Fundamentals',
+            cybersecurity: 'Cybersecurity',
+            data_analysis: 'Data Analysis',
+            python_programming: 'Python Programming',
+            robotics: 'Robotics',
+            general: 'General Placement',
+        };
+
+        const trackName = isGeneral ? 'General Placement' : (TRACK_NAME_MAP[track] || track);
 
         if (isGeneralTest) {
             const { evaluatePlacementTest } = await import('@/lib/placement-test/evaluator'); // Dynamic import
@@ -85,12 +100,18 @@ export async function POST(req: Request) {
             // `TestMain.tsx` preserves them.
             // So `body.questions` should have all fields.
 
+            console.log('  - Running evaluator with', questions.length, 'questions');
+            console.log('  - First question sample:', JSON.stringify(questions[0]));
+
             const evaluationResult = evaluatePlacementTest(questions as any, selectedAnswers);
             detailedEvaluation = evaluationResult;
             scorePercent = Math.round(evaluationResult.overall_readiness);
 
             // Log the study plan for debugging
             console.log('🎓 General Test Evaluation:', JSON.stringify(evaluationResult.study_plan, null, 2));
+            console.log('🎓 Evaluation belt_details:', JSON.stringify(Object.keys(evaluationResult.belt_details || {})));
+        } else {
+            console.log('  - NOT running evaluator (not a general test)');
         }
 
         // Prepare questions data for storage
@@ -138,6 +159,7 @@ export async function POST(req: Request) {
             status: 'completed',
             scorePercent,
             resultBeltName: belt.belt, // This matches what frontend predicted/showed
+            trackName: trackName, // Store the track name (e.g., 'Python Programming' or 'General Placement')
             questions: questionsData,
             detailedEvaluation,
             completedAt: new Date(),
@@ -159,7 +181,8 @@ export async function POST(req: Request) {
 
             placementTest = await PlacementTest.create({
                 userId: user._id,
-                trackId: user._id, // Placeholder trackId
+                trackId: user._id, // Placeholder - we don't have the actual trackId ObjectId
+                trackName: trackName, // Store track name for display
                 attemptNumber,
                 status: 'completed',
                 scorePercent,
@@ -173,12 +196,9 @@ export async function POST(req: Request) {
 
 
         // Update user's placement test summary
-        const currentAttemptsUsed = user.placementTest?.attemptsUsed || 0;
+        const currentTechnicalAttemptsUsed = user.placementTest?.technicalAttemptsUsed || 0;
 
-        // If it's a general test, we might want to update specific fields on user model 
-        // OR just keep using the generic `resultScorePercent`.
-        // for now, we follow existing pattern.
-
+        // Update technical test attempts
         await User.findByIdAndUpdate(user._id, {
             $set: {
                 'placementTest.hasTakenAnyPlacementTest': true,
@@ -186,7 +206,8 @@ export async function POST(req: Request) {
                 'placementTest.resultBeltName': belt.belt,
                 'placementTest.resultScorePercent': scorePercent,
                 'placementTest.takenAt': new Date(),
-                'placementTest.attemptsUsed': testId ? currentAttemptsUsed : currentAttemptsUsed + 1,
+                'placementTest.attemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
+                'placementTest.technicalAttemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
             },
         });
 
@@ -199,7 +220,7 @@ export async function POST(req: Request) {
                 scorePercent,
                 beltName: belt.belt,
                 beltStage: belt.stage,
-                attemptsUsed: testId ? currentAttemptsUsed : currentAttemptsUsed + 1,
+                attemptsUsed: testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
                 detailedEvaluation // Send back to frontend
             },
         });

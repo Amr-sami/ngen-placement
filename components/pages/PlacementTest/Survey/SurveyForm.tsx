@@ -62,6 +62,8 @@ export default function SurveyForm() {
     attemptsUsed: number;
     totalAllowed: number;
     lastResult: { beltName: string; scorePercent: number; takenAt: string } | null;
+    hasTakenSoftSkillsTest: boolean;
+    hasTakenTechnicalTest: boolean;
   }>({
     checked: false,
     canTake: true,
@@ -69,6 +71,8 @@ export default function SurveyForm() {
     attemptsUsed: 0,
     totalAllowed: 2,
     lastResult: null,
+    hasTakenSoftSkillsTest: false,
+    hasTakenTechnicalTest: false,
   })
 
   // Pre-fill form if user is logged in
@@ -82,32 +86,68 @@ export default function SurveyForm() {
     }
   }, [session])
 
-  // Check attempt status for logged-in users
-  useEffect(() => {
-    const checkAttemptStatus = async () => {
-      if (sessionStatus !== 'authenticated') return
+  // Check attempt status for logged-in users - ONLY when form is submitted
+  const checkAttemptStatus = async (testType: string) => {
+    if (sessionStatus !== 'authenticated') return
 
+    try {
+      const response = await fetch(`/api/placement-test/start?testType=${testType}`, {
+        method: 'GET',
+      })
+      const data = await response.json()
+
+      setAttemptStatus({
+        checked: true,
+        canTake: data.canTake,
+        remainingAttempts: data.remainingAttempts || 0,
+        attemptsUsed: data.attemptsUsed || 0,
+        totalAllowed: data.totalAllowed || 2,
+        lastResult: data.lastTestResult || null,
+        hasTakenSoftSkillsTest: data.hasTakenSoftSkillsTest || false,
+        hasTakenTechnicalTest: data.hasTakenTechnicalTest || false,
+      })
+    } catch (error) {
+      console.error('Error checking attempt status:', error)
+      setAttemptStatus(prev => ({ ...prev, checked: true }))
+    }
+  }
+
+  // Initialize attempt status for logged-in users on mount
+  // This is used to disable dropdown options based on previous test completions
+  useEffect(() => {
+    if (sessionStatus !== 'authenticated') return
+
+    const checkInitialStatus = async () => {
       try {
-        const response = await fetch('/api/placement-test/start', {
+        // Check technical status
+        const techResponse = await fetch('/api/placement-test/start?testType=technical', {
           method: 'GET',
         })
-        const data = await response.json()
+        const techData = await techResponse.json()
+
+        // Check soft skills status
+        const softResponse = await fetch('/api/placement-test/start?testType=soft_skills', {
+          method: 'GET',
+        })
+        const softData = await softResponse.json()
 
         setAttemptStatus({
           checked: true,
-          canTake: data.canTake,
-          remainingAttempts: data.remainingAttempts || 0,
-          attemptsUsed: data.attemptsUsed || 0,
-          totalAllowed: data.totalAllowed || 2,
-          lastResult: data.lastTestResult || null,
+          canTake: true, // Will be re-checked on submit
+          remainingAttempts: techData.remainingAttempts ?? 2,
+          attemptsUsed: techData.attemptsUsed ?? 0,
+          totalAllowed: techData.totalAllowed ?? 2,
+          lastResult: techData.lastTestResult || null,
+          hasTakenSoftSkillsTest: softData.hasTakenSoftSkillsTest || softData.attemptsUsed > 0,
+          hasTakenTechnicalTest: techData.hasTakenTechnicalTest || techData.attemptsUsed > 0,
         })
       } catch (error) {
-        console.error('Error checking attempt status:', error)
+        console.error('Error checking initial status:', error)
         setAttemptStatus(prev => ({ ...prev, checked: true }))
       }
     }
 
-    checkAttemptStatus()
+    checkInitialStatus()
   }, [sessionStatus])
 
   // Check if user exists when email is entered
@@ -148,6 +188,13 @@ export default function SurveyForm() {
         if (field === 'email') {
           setExistingUserWarning({ show: false, message: '', hasTakenTest: false })
         }
+
+        // Check attempt status when track selection changes
+        if (field === 'selectedTrack') {
+          const isSoftSkills = e.target.value === 'soft_skills'
+          const testType = isSoftSkills ? 'soft_skills' : 'technical'
+          checkAttemptStatus(testType)
+        }
       }
 
   const handleEmailBlur = () => {
@@ -159,6 +206,37 @@ export default function SurveyForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    // For logged-in users, check attempt status based on selected track BEFORE allowing test
+    if (sessionStatus === 'authenticated') {
+      const isSoftSkills = formData.selectedTrack === 'soft_skills'
+      const testType = isSoftSkills ? 'soft_skills' : 'technical'
+
+      // Check attempt status synchronously
+      try {
+        const response = await fetch(`/api/placement-test/start?testType=${testType}`, {
+          method: 'GET',
+        })
+        const data = await response.json()
+
+        if (!data.canTake) {
+          // User has used all attempts for this test type
+          setAttemptStatus({
+            checked: true,
+            canTake: false,
+            remainingAttempts: data.remainingAttempts || 0,
+            attemptsUsed: data.attemptsUsed || 0,
+            totalAllowed: data.totalAllowed || 2,
+            lastResult: data.lastTestResult || null,
+            hasTakenSoftSkillsTest: data.hasTakenSoftSkillsTest || false,
+            hasTakenTechnicalTest: data.hasTakenTechnicalTest || false,
+          })
+          return // Block submission
+        }
+      } catch (error) {
+        console.error('Error checking attempt status:', error)
+      }
+    }
 
     // Double-check if user exists before allowing test (catch any bypass attempts)
     if (sessionStatus !== 'authenticated' && formData.email) {
@@ -473,26 +551,61 @@ export default function SurveyForm() {
                       onChange={handleChange('selectedTrack')}
                       className="w-full ps-12 pe-4 py-4 bg-black/20 border border-white/10 rounded-2xl text-white/90 placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:bg-black/40 transition-all appearance-none cursor-pointer"
                     >
-                      <option value="general" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.general')}
+                      <option
+                        value="general"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.general')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
                       </option>
-                      <option value="data_science" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.data_science')}
+                      <option
+                        value="data_science"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.data_science')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
                       </option>
-                      <option value="computer_fundamentals" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.computer_fundamentals')}
+                      <option
+                        value="computer_fundamentals"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.computer_fundamentals')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
                       </option>
-                      <option value="cybersecurity" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.cybersecurity')}
+                      <option
+                        value="cybersecurity"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.cybersecurity')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
                       </option>
-                      <option value="data_analysis" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.data_analysis')}
+                      <option
+                        value="data_analysis"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.data_analysis')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
                       </option>
-                      <option value="python_programming" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.python_programming')}
+                      <option
+                        value="python_programming"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.python_programming')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
                       </option>
-                      <option value="robotics" className="bg-[#1a0b2e]">
-                        {t('trackSelection.options.robotics')}
+                      <option
+                        value="robotics"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenTechnicalTest}
+                      >
+                        {t('trackSelection.options.robotics')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
+                      </option>
+                      <option
+                        value="soft_skills"
+                        className="bg-[#1a0b2e]"
+                        disabled={attemptStatus.hasTakenSoftSkillsTest}
+                      >
+                        {t('trackSelection.options.soft_skills')} {attemptStatus.hasTakenSoftSkillsTest ? '(Completed)' : ''}
                       </option>
                     </select>
                   </div>

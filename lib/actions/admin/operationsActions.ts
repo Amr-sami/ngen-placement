@@ -2,6 +2,8 @@
 
 import { revalidatePath } from 'next/cache';
 import connectToDatabase from '@/lib/mongodb';
+// Import all models to ensure they are registered with Mongoose
+import '@/lib/models';
 import Order from '@/lib/models/Order';
 import Transaction from '@/lib/models/Transaction';
 import PlacementTest from '@/lib/models/PlacementTest';
@@ -174,10 +176,12 @@ export async function getPlacementTests(options: {
                 trackName: track?.name?.en || test.trackName || 'Unknown',
                 attemptNumber: test.attemptNumber,
                 status: test.status,
+                testType: test.testType || 'technical',
                 scorePercent: test.scorePercent,
                 resultBeltName: belt?.name?.en || test.resultBeltName || null,
                 resultBeltCode: belt?.code || null,
                 questionsCount: test.questions?.length || 0,
+                detailedEvaluation: test.detailedEvaluation || null,
                 startedAt: test.startedAt,
                 completedAt: test.completedAt,
                 createdAt: test.createdAt,
@@ -245,4 +249,83 @@ export async function updateOrderStatus(orderId: string, status: 'pending' | 'pa
     revalidatePath('/en/admin/orders');
 
     return { success: true };
+}
+
+import { loadQuestionBank } from '@/lib/soft-skills/question-bank';
+
+/**
+ * Get single placement test details
+ */
+export async function getPlacementTest(id: string) {
+    await requireSuperAdmin();
+    await connectToDatabase();
+
+    const test = await PlacementTest.findById(id)
+        .populate('userId', 'email profile.firstName profile.lastName profile.age profile.phoneNumber')
+        .populate('trackId', 'name')
+        .populate('resultBeltId', 'name code')
+        .lean();
+
+    if (!test) {
+        return null;
+    }
+
+    const user = test.userId as any;
+    const track = test.trackId as any;
+    const belt = test.resultBeltId as any;
+
+    let enrichedEvaluation = test.detailedEvaluation;
+
+    // Enrich soft skills data with question text
+    if (test.testType === 'soft_skills' && enrichedEvaluation && enrichedEvaluation.raw_data?.answers) {
+        try {
+            const questionBank = loadQuestionBank();
+            // Assuming the age group is in the meta or we search all
+            const ageGroup = enrichedEvaluation.meta?.age_group;
+            const questions = ageGroup ? questionBank[ageGroup] : [];
+
+            if (questions && questions.length > 0) {
+                const enrichedAnswers = Object.entries(enrichedEvaluation.raw_data.answers).map(([qid, ansIdx]: [string, any]) => {
+                    const question = questions.find((q: any) => q.id === Number(qid));
+                    if (question) {
+                        return {
+                            id: qid,
+                            text: question.question_en,
+                            text_ar: question.question_ar,
+                            selectedOption: question.options_en[ansIdx as number],
+                            selectedOption_ar: question.options_ar[ansIdx as number]
+                        };
+                    }
+                    return { id: qid, selectedOption: ansIdx };
+                });
+                enrichedEvaluation = {
+                    ...enrichedEvaluation,
+                    enriched_answers: enrichedAnswers
+                };
+            }
+        } catch (error) {
+            console.error("Error loading question bank for enrichment:", error);
+        }
+    }
+
+    return {
+        id: test._id.toString(),
+        userId: user?._id?.toString() || null,
+        userEmail: user?.email || 'Unknown',
+        userName: user?.profile ? `${user.profile.firstName} ${user.profile.lastName}` : 'Unknown',
+        userAge: user?.profile?.age || null,
+        userPhone: user?.profile?.phoneNumber || null,
+        trackName: track?.name?.en || test.trackName || 'Unknown',
+        attemptNumber: test.attemptNumber,
+        status: test.status,
+        testType: test.testType || 'technical',
+        scorePercent: test.scorePercent,
+        resultBeltName: belt?.name?.en || test.resultBeltName || null,
+        resultBeltCode: belt?.code || null,
+        questions: test.questions || [],
+        detailedEvaluation: enrichedEvaluation || null,
+        startedAt: test.startedAt,
+        completedAt: test.completedAt,
+        createdAt: test.createdAt,
+    };
 }

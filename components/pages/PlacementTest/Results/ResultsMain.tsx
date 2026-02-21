@@ -73,6 +73,7 @@ export default function ResultsMain() {
       try {
         const surveyData = sessionStorage.getItem('surveyData')
         const testId = sessionStorage.getItem('testId')
+        const selectedTrack = sessionStorage.getItem('selectedTrack') || 'general'
 
         const response = await fetch('/api/placement-test/submit', {
           method: 'POST',
@@ -85,6 +86,7 @@ export default function ResultsMain() {
             score,
             totalQuestions,
             belt: recommendedBelt,
+            track: selectedTrack,
           }),
         })
 
@@ -112,6 +114,9 @@ export default function ResultsMain() {
     if (questions.length > 0 && score >= 0 && recommendedBelt) {
       saveResults()
     }
+
+    // Clear sessionStorage for test type selection so user can choose again
+    sessionStorage.removeItem('selectedTrack');
   }, [sessionStatus, questions, selectedAnswers, score, totalQuestions, recommendedBelt])
 
   // Recover result from server if local storage empty

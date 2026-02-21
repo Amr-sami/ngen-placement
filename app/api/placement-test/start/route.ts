@@ -5,9 +5,11 @@ import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PlacementTest from '@/lib/models/PlacementTest';
 
-export async function POST() {
+export async function POST(req: Request) {
     try {
         const session = await getServerSession(authOptions);
+        const body = await req.json().catch(() => ({}));
+        const testType = body.testType || 'technical'; // 'technical' or 'soft_skills'
 
         // If not logged in, allow test but won't be saved to DB
         if (!session?.user?.email) {
@@ -38,32 +40,42 @@ export async function POST() {
                 hasTakenAnyPlacementTest: false,
                 allowedAttempts: 1,
                 attemptsUsed: 0,
+                technicalAttemptsUsed: 0,
+                softSkillsAttemptsUsed: 0,
                 extraAttemptsGrantedBySupport: 0,
             };
             await user.save();
         }
 
-        const { allowedAttempts, attemptsUsed, extraAttemptsGrantedBySupport } = user.placementTest;
+        const { allowedAttempts, extraAttemptsGrantedBySupport, technicalAttemptsUsed, softSkillsAttemptsUsed } = user.placementTest;
+
+        // Check attempts based on test type
         const totalAllowed = allowedAttempts + (extraAttemptsGrantedBySupport || 0);
-        const remainingAttempts = totalAllowed - attemptsUsed;
+        const isTechnicalTest = testType === 'technical';
+        const currentAttemptsUsed = isTechnicalTest ? technicalAttemptsUsed : softSkillsAttemptsUsed;
+        const remainingAttempts = totalAllowed - currentAttemptsUsed;
 
         if (remainingAttempts <= 0) {
             return NextResponse.json({
                 canTake: false,
                 isGuest: false,
-                attemptNumber: attemptsUsed,
+                attemptNumber: currentAttemptsUsed + 1,
                 remainingAttempts: 0,
-                message: 'You have reached the maximum number of attempts. Contact admin for additional attempts.',
+                testType,
+                message: isTechnicalTest
+                    ? 'You have reached the maximum number of technical test attempts. Contact admin for additional attempts.'
+                    : 'You have reached the maximum number of soft skills test attempts. Contact admin for additional attempts.',
             });
         }
 
         // Create a new placement test record
-        const newAttemptNumber = attemptsUsed + 1;
+        const newAttemptNumber = currentAttemptsUsed + 1;
 
         const placementTest = await PlacementTest.create({
             userId: user._id,
             trackId: user._id, // Using user ID as placeholder, will be updated when test completes
             attemptNumber: newAttemptNumber,
+            testType,
             status: 'in_progress',
             startedAt: new Date(),
         });
@@ -74,7 +86,8 @@ export async function POST() {
             testId: placementTest._id.toString(),
             attemptNumber: newAttemptNumber,
             remainingAttempts: remainingAttempts - 1,
-            message: `Starting attempt ${newAttemptNumber} of ${totalAllowed}`,
+            testType,
+            message: `Starting ${testType === 'technical' ? 'technical' : 'soft skills'} attempt ${newAttemptNumber} of ${totalAllowed}`,
         });
     } catch (error) {
         console.error('Error in placement-test/start:', error);
@@ -86,9 +99,11 @@ export async function POST() {
 }
 
 // GET method to check if user can take test without starting
-export async function GET() {
+export async function GET(req: Request) {
     try {
         const session = await getServerSession(authOptions);
+        const { searchParams } = new URL(req.url);
+        const testType = searchParams.get('testType') || 'technical';
 
         if (!session?.user?.email) {
             return NextResponse.json({
@@ -112,23 +127,32 @@ export async function GET() {
 
         const placementTestData = user.placementTest;
         const allowedAttempts = placementTestData?.allowedAttempts || 2;
-        const attemptsUsed = placementTestData?.attemptsUsed || 0;
+        const technicalAttemptsUsed = placementTestData?.technicalAttemptsUsed || 0;
+        const softSkillsAttemptsUsed = placementTestData?.softSkillsAttemptsUsed || 0;
         const extraAttemptsGrantedBySupport = placementTestData?.extraAttemptsGrantedBySupport || 0;
 
         const totalAllowed = allowedAttempts + extraAttemptsGrantedBySupport;
-        const remainingAttempts = totalAllowed - attemptsUsed;
+
+        // Check attempts based on test type
+        const isTechnicalTest = testType === 'technical';
+        const currentAttemptsUsed = isTechnicalTest ? technicalAttemptsUsed : softSkillsAttemptsUsed;
+        const remainingAttempts = totalAllowed - currentAttemptsUsed;
 
         return NextResponse.json({
             canTake: remainingAttempts > 0,
             isGuest: false,
-            attemptsUsed,
+            attemptsUsed: currentAttemptsUsed,
             totalAllowed,
             remainingAttempts,
+            technicalAttemptsUsed,
+            softSkillsAttemptsUsed,
             lastTestResult: placementTestData?.resultBeltName ? {
                 beltName: placementTestData.resultBeltName,
                 scorePercent: placementTestData.resultScorePercent,
                 takenAt: placementTestData.takenAt,
             } : null,
+            hasTakenSoftSkillsTest: placementTestData?.hasTakenSoftSkillsTest || false,
+            hasTakenTechnicalTest: placementTestData?.hasTakenAnyPlacementTest || false,
         });
     } catch (error) {
         console.error('Error checking placement test status:', error);

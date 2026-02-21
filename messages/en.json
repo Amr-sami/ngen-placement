@@ -102,6 +102,7 @@
   },
   "placementTest": {
     "test": {
+      "question": "Question",
       "finish": "Finish Test",
       "next": "Next",
       "nextQuestion": "Next Question",
@@ -174,7 +175,8 @@
           "cybersecurity": "Cybersecurity",
           "data_analysis": "Data Analysis",
           "python_programming": "Python Programming",
-          "robotics": "Robotics"
+          "robotics": "Robotics",
+          "soft_skills": "Soft Skills Assessment"
         }
       }
     }

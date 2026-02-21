@@ -44,6 +44,9 @@ export interface IUserPlacementTest {
     hasTakenAnyPlacementTest: boolean;
     allowedAttempts: number;
     attemptsUsed: number;
+    // Separate tracking for technical and soft skills tests
+    technicalAttemptsUsed: number;
+    softSkillsAttemptsUsed: number;
     remainingAttempts?: number;
     extraAttemptsGrantedBySupport?: number;
     lastPlacementTestId?: mongoose.Types.ObjectId;
@@ -52,6 +55,8 @@ export interface IUserPlacementTest {
     resultBeltId?: mongoose.Types.ObjectId;
     resultBeltName?: string;
     resultScorePercent?: number;
+    hasTakenSoftSkillsTest?: boolean;
+    softSkillsTestId?: mongoose.Types.ObjectId;
     takenAt?: Date;
 }
 
@@ -158,6 +163,9 @@ const PlacementTestSummarySchema = new Schema(
         hasTakenAnyPlacementTest: { type: Boolean, default: false },
         allowedAttempts: { type: Number, default: 1 },
         attemptsUsed: { type: Number, default: 0 },
+        // Separate tracking for technical and soft skills tests
+        technicalAttemptsUsed: { type: Number, default: 0 },
+        softSkillsAttemptsUsed: { type: Number, default: 0 },
         remainingAttempts: { type: Number },
         extraAttemptsGrantedBySupport: { type: Number, default: 0 },
         lastPlacementTestId: { type: Schema.Types.ObjectId, ref: 'PlacementTest' },
@@ -166,6 +174,8 @@ const PlacementTestSummarySchema = new Schema(
         resultBeltId: { type: Schema.Types.ObjectId, ref: 'Belt' },
         resultBeltName: { type: String },
         resultScorePercent: { type: Number, min: 0, max: 100 },
+        hasTakenSoftSkillsTest: { type: Boolean, default: false },
+        softSkillsTestId: { type: Schema.Types.ObjectId, ref: 'PlacementTest' },
         takenAt: { type: Date },
     },
     { _id: false }

@@ -48,16 +48,17 @@ export async function POST(req: Request) {
         }
 
         // User exists - return limited info for security
-        const hasTakenTest = existingUser.placementTest?.hasTakenAnyPlacementTest || false;
+        const isGuest = false; // Existing logic doesn't seem to account for guest checks here, assuming registered user check.
+        const hasTakenPlacementTest = existingUser.placementTest?.hasTakenAnyPlacementTest || false;
+        const hasTakenSoftSkillsTest = existingUser.placementTest?.hasTakenSoftSkillsTest || false;
         const hasResults = !!existingUser.placementTest?.resultBeltName;
 
         return NextResponse.json({
             exists: true,
-            hasTakenTest,
+            hasTakenPlacementTest,
+            hasTakenSoftSkillsTest,
             hasResults,
-            message: hasTakenTest
-                ? 'An account with this email already exists. Please login to view your results or retake the test.'
-                : 'An account with this email already exists. Please login to continue.',
+            message: 'An account with this email already exists.',
             // Only return first name initial for privacy
             userHint: existingUser.profile?.firstName
                 ? `${existingUser.profile.firstName.charAt(0)}***`

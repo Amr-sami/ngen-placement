@@ -37,6 +37,7 @@ export default async function PlacementTestsTable({ page, status }: PlacementTes
                     <thead>
                         <tr className="border-b border-gray-700">
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">User</th>
+                            <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Type</th>
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Track</th>
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Attempt</th>
                             <th className="text-left py-4 px-6 text-sm font-medium text-gray-400">Status</th>
@@ -56,6 +57,14 @@ export default async function PlacementTestsTable({ page, status }: PlacementTes
                                             <p className="text-white font-medium">{test.userName}</p>
                                             <p className="text-gray-400 text-sm">{test.userEmail}</p>
                                         </div>
+                                    </td>
+                                    <td className="py-4 px-6">
+                                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${test.testType === 'soft_skills'
+                                                ? 'bg-purple-500/20 text-purple-400'
+                                                : 'bg-blue-500/20 text-blue-400'
+                                            }`}>
+                                            {test.testType === 'soft_skills' ? 'Soft Skills' : 'Technical'}
+                                        </span>
                                     </td>
                                     <td className="py-4 px-6 text-gray-400">
                                         {test.trackName}
@@ -97,16 +106,14 @@ export default async function PlacementTestsTable({ page, status }: PlacementTes
                                             ? new Date(test.completedAt).toLocaleDateString()
                                             : new Date(test.createdAt).toLocaleDateString()}
                                     </td>
-                                    <td className="py-4 px-6">
-                                        {test.userId && (
-                                            <Link
-                                                href={`/en/admin/users/${test.userId}`}
-                                                className="p-2 text-gray-400 hover:text-white hover:bg-gray-700 rounded-lg transition-colors inline-block"
-                                                title="View User"
-                                            >
-                                                <ExternalLink size={16} />
-                                            </Link>
-                                        )}
+                                    <td className="py-4 px-6 text-right space-x-2">
+                                        <Link
+                                            href={`/en/admin/placement-tests/${test.id}`}
+                                            className="p-2 text-blue-400 hover:text-white hover:bg-blue-500/20 rounded-lg transition-colors inline-block"
+                                            title="View Details"
+                                        >
+                                            <ExternalLink size={16} />
+                                        </Link>
                                     </td>
                                 </tr>
                             );

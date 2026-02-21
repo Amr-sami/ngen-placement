@@ -20,6 +20,10 @@ export type StoredQuestion = {
   ans_idx?: number
   correctAnswer?: number
   justification?: string
+  // Fields for detailed evaluation
+  belt?: string
+  difficulty_level?: number
+  concepts?: string[]
 }
 
 export type StudentInfo = {

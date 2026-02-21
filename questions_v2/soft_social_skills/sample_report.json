@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "student_name": "Yara Raed",
+    "student_id": "NGEN-2024-19193",
+    "age": 14,
+    "age_group": "10-14",
+    "total_questions_answered": 25,
+    "evaluation_date": "2026-02-17T23:28:37.780517",
+    "report_version": "2.0"
+  },
+  "trait_scores": {
+    "social": {
+      "score": 62.7,
+      "category": "moderate",
+      "label_en": "Social Skills",
+      "label_ar": "المهارات الاجتماعية"
+    },
+    "communication": {
+      "score": 54.3,
+      "category": "moderate",
+      "label_en": "Communication Skills",
+      "label_ar": "مهارات التواصل"
+    },
+    "problem_solving": {
+      "score": 29.5,
+      "category": "developing",
+      "label_en": "Problem-Solving Skills",
+      "label_ar": "مهارات حل المشكلات"
+    },
+    "time_management": {
+      "score": 38.7,
+      "category": "developing",
+      "label_en": "Time Management Skills",
+      "label_ar": "مهارات إدارة الوقت"
+    },
+    "teamwork": {
+      "score": 53.7,
+      "category": "moderate",
+      "label_en": "Teamwork Skills",
+      "label_ar": "مهارات العمل الجماعي"
+    },
+    "leadership": {
+      "score": 48.4,
+      "category": "moderate",
+      "label_en": "Leadership Skills",
+      "label_ar": "مهارات القيادة"
+    },
+    "creativity": {
+      "score": 20.0,
+      "category": "emerging",
+      "label_en": "Creativity Skills",
+      "label_ar": "مهارات الإبداع"
+    },
+    "critical_thinking": {
+      "score": 31.0,
+      "category": "developing",
+      "label_en": "Critical Thinking Skills",
+      "label_ar": "مهارات التفكير النقدي"
+    },
+    "emotional_intelligence": {
+      "score": 38.5,
+      "category": "developing",
+      "label_en": "Emotional Intelligence",
+      "label_ar": "الذكاء العاطفي"
+    },
+    "adaptability": {
+      "score": 53.3,
+      "category": "moderate",
+      "label_en": "Adaptability Skills",
+      "label_ar": "مهارات القدرة على التكيف"
+    }
+  },
+  "behavioral_dimensions": {
+    "work_style": {
+      "primary": "collaborative",
+      "primary_label_en": "Team Collaborator",
+      "primary_label_ar": "متعاون جماعي",
+      "primary_confidence": 36.0,
+      "secondary": "leader",
+      "secondary_label_en": "Natural Leader",
+      "secondary_label_ar": "قائد طبيعي",
+      "secondary_confidence": 24.0,
+      "distribution": {
+        "collaborative": 36.0,
+        "supporter": 16.0,
+        "leader": 24.0,
+        "individual": 24.0
+      }
+    },
+    "learning_approach": {
+      "primary": "hands_on",
+      "primary_label_en": "Hands-On Learner",
+      "primary_label_ar": "متعلم عملي",
+      "primary_confidence": 40.0,
+      "secondary": "analytical",
+      "secondary_label_en": "Analytical Learner",
+      "secondary_label_ar": "متعلم تحليلي",
+      "secondary_confidence": 24.0,
+      "distribution": {
+        "hands_on": 40.0,
+        "analytical": 24.0,
+        "social_learner": 24.0,
+        "structured": 12.0
+      }
+    },
+    "challenge_response": {
+      "primary": "help_seeking",
+      "primary_label_en": "Collaborative Problem-Solver",
+      "primary_label_ar": "حلّال مشكلات تعاوني",
+      "primary_confidence": 28.0,
+      "secondary": "adaptive",
+      "secondary_label_en": "Flexible & Adaptive",
+      "secondary_label_ar": "مرن ومتكيف",
+      "secondary_confidence": 28.0,
+      "distribution": {
+        "creative_solver": 20.0,
+        "persistent": 24.0,
+        "help_seeking": 28.0,
+        "adaptive": 28.0
+      }
+    },
+    "decision_style": {
+      "primary": "deliberate",
+      "primary_label_en": "Thoughtful & Deliberate",
+      "primary_label_ar": "متأنٍ ومتعمّد",
+      "primary_confidence": 48.0,
+      "secondary": "consultative",
+      "secondary_label_en": "Consultative & Inclusive",
+      "secondary_label_ar": "استشاري وشامل",
+      "secondary_confidence": 20.0,
+      "distribution": {
+        "consultative": 20.0,
+        "decisive": 12.0,
+        "spontaneous": 20.0,
+        "deliberate": 48.0
+      }
+    }
+  },
+  "learning_profile": {
+    "learning_pace": {
+      "primary": "steady",
+      "primary_label_en": "Steady Learner — Progresses consistently with regular practice and structure",
+      "primary_label_ar": "متعلم ثابت — يتقدم بثبات مع الممارسة المنتظمة والهيكلة",
+      "secondary": "reflective",
+      "secondary_label_en": "Reflective Learner — Takes time to process deeply; benefits from patient guidance",
+      "secondary_label_ar": "متعلم تأملي — يأخذ وقتاً للمعالجة العميقة؛ يستفيد من التوجيه الصبور",
+      "pace_scores": {
+        "fast": 33.9,
+        "steady": 42.8,
+        "reflective": 34.0,
+        "exploratory": 25.6
+      }
+    },
+    "group_placement": {
+      "primary": "mixed",
+      "primary_label_en": "Mixed/Balanced Group",
+      "primary_label_ar": "مجموعة مختلطة/متوازنة",
+      "secondary": "collaborative",
+      "secondary_label_en": "Collaborative/Supportive Group",
+      "secondary_label_ar": "مجموعة تعاونية/داعمة",
+      "group_scores": {
+        "competitive": 2.17,
+        "collaborative": 3.28,
+        "creative": 2.98,
+        "structured": 1.88,
+        "mixed": 3.83
+      }
+    },
+    "effort_level": {
+      "level": "moderate",
+      "label_en": "Moderate — Student benefits from regular check-ins and encouragement",
+      "label_ar": "متوسط — الطالب يستفيد من المتابعة المنتظمة والتشجيع",
+      "self_drive_score": 38.9,
+      "persistence_score": 44.0,
+      "composite_score": 41.0
+    }
+  },
+  "strengths": [
+    {
+      "trait": "social",
+      "score": 62.7,
+      "label_en": "Social Skills",
+      "label_ar": "المهارات الاجتماعية",
+      "description_en": "Naturally connects with others and builds relationships easily. Thrives in group settings.",
+      "description_ar": "يتواصل بشكل طبيعي مع الآخرين ويبني العلاقات بسهولة. يزدهر في الإعدادات الجماعية."
+    },
+    {
+      "trait": "communication",
+      "score": 54.3,
+      "label_en": "Communication Skills",
+      "label_ar": "مهارات التواصل",
+      "description_en": "Expresses ideas clearly and listens actively. Strong at sharing thoughts and understanding others.",
+      "description_ar": "يعبّر عن الأفكار بوضوح ويستمع بفعالية. قوي في مشاركة الأفكار وفهم الآخرين."
+    },
+    {
+      "trait": "teamwork",
+      "score": 53.7,
+      "label_en": "Teamwork Skills",
+      "label_ar": "مهارات العمل الجماعي",
+      "description_en": "Works well with others and values group contribution. Strong collaborator who supports the team.",
+      "description_ar": "يعمل بشكل جيد مع الآخرين ويقدر المساهمة الجماعية. متعاون قوي يدعم الفريق."
+    }
+  ],
+  "growth_areas": [
+    {
+      "trait": "creativity",
+      "score": 20.0,
+      "label_en": "Creativity Skills",
+      "label_ar": "مهارات الإبداع",
+      "description_en": "Could be encouraged to explore open-ended projects and express ideas in unconventional ways.",
+      "description_ar": "يمكن تشجيعه على استكشاف مشاريع مفتوحة النهاية والتعبير عن الأفكار بطرق غير تقليدية."
+    },
+    {
+      "trait": "problem_solving",
+      "score": 29.5,
+      "label_en": "Problem-Solving Skills",
+      "label_ar": "مهارات حل المشكلات",
+      "description_en": "Could benefit from structured problem-solving exercises and learning to break down complex challenges.",
+      "description_ar": "يمكن أن يستفيد من تمارين حل المشكلات المنظمة وتعلم تقسيم التحديات المعقدة."
+    },
+    {
+      "trait": "critical_thinking",
+      "score": 31.0,
+      "label_en": "Critical Thinking Skills",
+      "label_ar": "مهارات التفكير النقدي",
+      "description_en": "Would benefit from activities that require analysis, comparison, and evaluating different options.",
+      "description_ar": "سيستفيد من أنشطة تتطلب التحليل والمقارنة وتقييم الخيارات المختلفة."
+    }
+  ],
+  "personality_summary": {
+    "en": "This student is a natural collaborator who values teamwork and group contribution. They learn best through hands-on experimentation and building things directly. They wisely seek help when stuck and leverage others' knowledge to overcome obstacles. Their strongest areas are Social Skills, Communication Skills and Teamwork Skills. They learn at a consistent pace and do well with regular practice and reinforcement.",
+    "ar": "هذا الطالب متعاون بطبيعته ويقدر العمل الجماعي والمساهمة الجماعية. يتعلم بشكل أفضل من خلال التجربة العملية وبناء الأشياء مباشرة. يطلب المساعدة بحكمة عندما يعلق ويستفيد من معرفة الآخرين لتجاوز العقبات. أقوى مجالاته هي المهارات الاجتماعية ومهارات التواصل ومهارات العمل الجماعي. يتعلم بوتيرة ثابتة ويؤدي بشكل جيد مع الممارسة والتعزيز المنتظم."
+  },
+  "instructor_recommendations": {
+    "en": [
+      "Place in groups with other collaborative students — they thrive when working together and bouncing ideas off peers.",
+      "Use project-based and hands-on activities. Let them build, experiment, and learn through doing rather than reading.",
+      "Create a safe environment for asking questions. Pair them with patient mentors and encourage them to attempt solutions before seeking help.",
+      "Regular check-ins and positive reinforcement will keep them on track. Set clear milestones and celebrate small wins.",
+      "Recommended group type: Mixed/Balanced Group."
+    ],
+    "ar": [
+      "ضعه في مجموعات مع طلاب تعاونيين آخرين — يزدهر عند العمل معاً وتبادل الأفكار مع الأقران.",
+      "استخدم الأنشطة القائمة على المشاريع والعملية. دعه يبني ويجرب ويتعلم من خلال العمل بدلاً من القراءة.",
+      "أنشئ بيئة آمنة لطرح الأسئلة. اجعله شريكاً مع مرشدين صبورين وشجعه على محاولة الحلول قبل طلب المساعدة.",
+      "المتابعة المنتظمة والتعزيز الإيجابي سيبقيانه على المسار. حدد معالم واضحة واحتفِ بالإنجازات الصغيرة.",
+      "نوع المجموعة الموصى بها: مجموعة مختلطة/متوازنة."
+    ]
+  },
+  "motivation_strategies": {
+    "en": [
+      "Highlight how their contribution makes the team better — they're motivated by belonging and group success.",
+      "Use peer recognition and group celebrations — they're energized by positive social interactions.",
+      "Create buddy systems where asking for help is normalized and celebrated, not seen as weakness."
+    ],
+    "ar": [
+      "أبرز كيف أن مساهمتهم تجعل الفريق أفضل — يتحفزون من الانتماء ونجاح المجموعة.",
+      "استخدم تقدير الأقران والاحتفالات الجماعية — يتنشطون من التفاعلات الاجتماعية الإيجابية.",
+      "أنشئ نظام رفاق حيث طلب المساعدة أمر طبيعي ومحتفى به وليس نقطة ضعف."
+    ]
+  },
+  "raw_data": {
+    "raw_trait_scores": {
+      "teamwork": 36.0,
+      "social": 37.0,
+      "adaptability": 48.0,
+      "problem_solving": 23.0,
+      "creativity": 8.0,
+      "time_management": 29.0,
+      "critical_thinking": 27.0,
+      "communication": 44.0,
+      "emotional_intelligence": 15.0,
+      "leadership": 31.0
+    },
+    "max_possible_scores": {
+      "social": 59.0,
+      "communication": 81.0,
+      "problem_solving": 78.0,
+      "time_management": 75.0,
+      "teamwork": 67.0,
+      "leadership": 64.0,
+      "creativity": 40.0,
+      "critical_thinking": 87.0,
+      "emotional_intelligence": 39.0,
+      "adaptability": 90.0
+    },
+    "indicator_counts": {
+      "work_style": {
+        "collaborative": 9,
+        "supporter": 4,
+        "leader": 6,
+        "individual": 6
+      },
+      "learning_approach": {
+        "hands_on": 10,
+        "analytical": 6,
+        "social_learner": 6,
+        "structured": 3
+      },
+      "challenge_response": {
+        "creative_solver": 5,
+        "persistent": 6,
+        "help_seeking": 7,
+        "adaptive": 7
+      },
+      "decision_style": {
+        "consultative": 5,
+        "decisive": 3,
+        "spontaneous": 5,
+        "deliberate": 12
+      }
+    },
+    "answers": {
+      "77": 3,
+      "50": 2,
+      "79": 1,
+      "96": 3,
+      "28": 2,
+      "68": 2,
+      "26": 1,
+      "43": 3,
+      "54": 2,
+      "75": 0,
+      "1": 2,
+      "87": 3,
+      "73": 1,
+      "89": 1,
+      "82": 1,
+      "78": 2,
+      "17": 3,
+      "5": 3,
+      "62": 2,
+      "47": 1,
+      "65": 0,
+      "55": 1,
+      "8": 3,
+      "57": 0,
+      "12": 2
+    }
+  }
+}
