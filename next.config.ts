@@ -14,6 +14,14 @@ const nextConfig: NextConfig = {
       './SpicificTest-EN/**/*'
     ],
   },
+  outputFileTracingExcludes: {
+    '/api/**/*': [
+      './public/game/**/*',
+      './hello_name_web/**/*',
+      './public/assets/**/*',
+      './public/*.svg'
+    ],
+  },
 };
 
 export default withNextIntl(nextConfig);
