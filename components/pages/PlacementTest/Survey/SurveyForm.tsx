@@ -131,15 +131,23 @@ export default function SurveyForm() {
         })
         const softData = await softResponse.json()
 
+        const hasTakenSoftSkills = softData.hasTakenSoftSkillsTest || softData.attemptsUsed > 0;
+        const hasTakenTechnical = techData.hasTakenTechnicalTest || techData.attemptsUsed > 0;
+        const allCompleted = hasTakenSoftSkills && hasTakenTechnical;
+
+        if (!allCompleted && hasTakenTechnical && !hasTakenSoftSkills) {
+            setFormData(prev => ({ ...prev, selectedTrack: 'soft_skills' }));
+        }
+
         setAttemptStatus({
           checked: true,
-          canTake: true, // Will be re-checked on submit
+          canTake: !allCompleted, // Immediately block access if both are taken
           remainingAttempts: techData.remainingAttempts ?? 2,
           attemptsUsed: techData.attemptsUsed ?? 0,
           totalAllowed: techData.totalAllowed ?? 2,
           lastResult: techData.lastTestResult || null,
-          hasTakenSoftSkillsTest: softData.hasTakenSoftSkillsTest || softData.attemptsUsed > 0,
-          hasTakenTechnicalTest: techData.hasTakenTechnicalTest || techData.attemptsUsed > 0,
+          hasTakenSoftSkillsTest: hasTakenSoftSkills,
+          hasTakenTechnicalTest: hasTakenTechnical,
         })
       } catch (error) {
         console.error('Error checking initial status:', error)

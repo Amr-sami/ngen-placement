@@ -235,8 +235,12 @@ export default function TestMain() {
   if (statusLoading) return <LoadingState loadingProgress={50} />;
 
   // --- Render Selection Screen for logged-in users ---
-  // Show test selection when user is logged in and hasn't selected a test type yet
-  if (session?.user) {
+  // Show test selection when user is logged in AND hasn't made a track selection yet.
+  // We use `sessionStorage.getItem('selectedTrack')` implicitly via checking if testStep was initialized, 
+  // but let's check explicitly so we don't flash the screen or force selection if they just came from survey.
+  const hasSelectedTrack = typeof window !== 'undefined' ? !!sessionStorage.getItem('selectedTrack') : false;
+
+  if (session?.user && !hasSelectedTrack) {
     return (
       <div className="min-h-screen w-full bg-[#1a0b2e] relative py-8">
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
