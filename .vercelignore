@@ -1,6 +1,5 @@
-# Exclude large question files from Vercel deployment
-# These files are not needed at runtime and cause bundle size issues
-questions_v2/
+# Exclude large development files from Vercel deployment
+# (DO NOT ignore questions_v2/ because the API needs the .json files at runtime)
 *.ipynb
 *.py
 *.md
