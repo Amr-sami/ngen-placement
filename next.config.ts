@@ -7,14 +7,12 @@ const nextConfig: NextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
-  experimental: {
-    outputFileTracingIncludes: {
-      '/api/**/*': [
-        './questions_v2/**/*',
-        './SpicificTest-AR/**/*',
-        './SpicificTest-EN/**/*'
-      ],
-    },
+  outputFileTracingIncludes: {
+    '/api/**/*': [
+      './questions_v2/**/*',
+      './SpicificTest-AR/**/*',
+      './SpicificTest-EN/**/*'
+    ],
   },
 };
 
