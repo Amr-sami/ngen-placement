@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import UsersTable from '@/components/admin/users/UsersTable';
 import UsersHeader from '@/components/admin/users/UsersHeader';
+import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
 interface PageProps {
     searchParams: Promise<{
@@ -12,6 +13,7 @@ interface PageProps {
 
 export default async function UsersPage({ searchParams }: PageProps) {
     const params = await searchParams;
+    await requireSuperAdmin();
 
     return (
         <div className="space-y-6">

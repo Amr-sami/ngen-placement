@@ -1,8 +1,18 @@
 import { Suspense } from 'react';
 import DashboardStats from '@/components/admin/DashboardStats';
 import RecentActivity from '@/components/admin/RecentActivity';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth/authOptions';
+import { redirect } from 'next/navigation';
 
-export default function AdminDashboardPage() {
+export default async function AdminDashboardPage() {
+    const session = await getServerSession(authOptions);
+
+    // Redirect sales users to their only accessible page
+    if (session?.user?.role === 'sales') {
+        redirect('/en/admin/placement-tests');
+    }
+
     return (
         <div className="space-y-6">
             {/* Header */}

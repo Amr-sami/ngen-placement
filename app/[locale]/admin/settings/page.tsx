@@ -2,8 +2,11 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth/authOptions';
 import { Shield, Server, Database, Key } from 'lucide-react';
 import AdminPasswordChange from '@/components/admin/settings/AdminPasswordChange';
+import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
 export default async function SettingsPage() {
+    // Both checks are conceptually distinct: one checks for super admin route access, the other gets the session.
+    await requireSuperAdmin();
     const session = await getServerSession(authOptions);
 
     return (

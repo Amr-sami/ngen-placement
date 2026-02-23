@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { signOut } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 import {
     LayoutDashboard,
     Users,
@@ -29,9 +29,19 @@ const navItems = [
 
 export default function AdminSidebar() {
     const pathname = usePathname();
+    const { data: session } = useSession();
+    const userRole = session?.user?.role;
 
     // Extract locale from pathname (e.g., /en/admin -> en)
     const locale = pathname.split('/')[1] || 'en';
+
+    // Filter nav items based on user role
+    const filteredNavItems = navItems.filter(item => {
+        if (userRole === 'sales') {
+            return item.path === '/admin/placement-tests' || item.path === '/admin/evaluations';
+        }
+        return true; // Superadmins see everything
+    });
 
     return (
         <aside className="w-64 bg-gray-800 border-r border-gray-700 flex flex-col">
@@ -43,7 +53,7 @@ export default function AdminSidebar() {
                     </div>
                     <div>
                         <h1 className="text-lg font-bold text-white">NGEN Admin</h1>
-                        <p className="text-xs text-gray-400">Control Panel</p>
+                        <p className="text-xs text-gray-400 capitalize">{userRole || 'Control Panel'}</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +65,7 @@ export default function AdminSidebar() {
                         Management
                     </p>
                 </div>
-                {navItems.map((item) => {
+                {filteredNavItems.map((item) => {
                     const href = `/${locale}${item.path}`;
                     const isActive = item.exact
                         ? pathname === href

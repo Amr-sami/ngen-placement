@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { requireSuperAdmin } from '@/lib/auth/adminAuth';
+import { requireAdminAccess } from '@/lib/auth/adminAuth';
 import AdminSidebar from '@/components/admin/AdminSidebar';
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default async function AdminLayout({
     children: React.ReactNode;
 }) {
     // This will redirect non-admins to 404 or login
-    await requireSuperAdmin();
+    await requireAdminAccess();
 
     return (
         <div className="flex h-screen bg-gray-900">
