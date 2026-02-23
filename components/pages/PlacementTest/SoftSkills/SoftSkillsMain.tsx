@@ -73,11 +73,15 @@ const SoftSkillsMain: React.FC<SoftSkillsMainProps> = ({ ageGroup, onComplete })
     const submitAssessment = async (finalAnswers: any) => {
         setSubmitting(true);
         try {
+            const surveyDataString = sessionStorage.getItem('surveyData');
+            const surveyData = surveyDataString ? JSON.parse(surveyDataString) : {};
+
             const res = await fetch('/api/soft-skills/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     ageGroup,
+                    surveyData,
                     answers: finalAnswers
                 })
             });

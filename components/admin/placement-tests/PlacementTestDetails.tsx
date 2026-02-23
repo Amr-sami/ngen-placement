@@ -25,6 +25,13 @@ export default function PlacementTestDetails({ test }: PlacementTestDetailsProps
                     <h1 className="text-2xl font-bold text-white">
                         {test.userName} <span className="text-gray-500 text-lg font-normal">({test.userEmail})</span>
                     </h1>
+                    {(test.userPhone || test.userAge) && (
+                        <div className="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            {test.userPhone && <span>📞 {test.userPhone}</span>}
+                            {test.userPhone && test.userAge && <span>•</span>}
+                            {test.userAge && <span>Age: {test.userAge}</span>}
+                        </div>
+                    )}
                     <div className="flex items-center space-x-3 text-sm text-gray-400 mt-1">
                         <span>{isSoftSkills ? 'Soft Skills Assessment' : `Technical Test: ${test.trackName}`}</span>
                         <span>•</span>
@@ -418,9 +425,9 @@ function DetailedEvaluationSection({ evaluation }: { evaluation: any }) {
                                     <div className="flex items-center">
                                         <h5 className="text-xl font-bold text-white">{beltName}</h5>
                                         <span className={`ml-3 px-2 py-0.5 rounded text-xs font-medium ${beltData.status === 'fully_mastered' ? 'bg-green-500/20 text-green-400' :
-                                                beltData.status === 'mastered' ? 'bg-green-500/20 text-green-400' :
-                                                    beltData.status === 'needs_review' ? 'bg-yellow-500/20 text-yellow-400' :
-                                                        'bg-red-500/20 text-red-400'
+                                            beltData.status === 'mastered' ? 'bg-green-500/20 text-green-400' :
+                                                beltData.status === 'needs_review' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                    'bg-red-500/20 text-red-400'
                                             }`}>
                                             {beltData.status?.replace(/_/g, ' ') || 'N/A'}
                                         </span>

@@ -164,15 +164,16 @@ export async function getPlacementTests(options: {
 
     return {
         tests: tests.map(test => {
-            const user = test.userId as unknown as { _id: { toString: () => string }; email: string; profile: { firstName: string; lastName: string } } | null;
+            const user = test.userId as unknown as { _id: { toString: () => string }; email: string; profile: { firstName: string; lastName: string; phoneNumber?: string } } | null;
             const track = test.trackId as unknown as { name: { en: string } } | null;
             const belt = test.resultBeltId as unknown as { name: { en: string }; code: string } | null;
 
             return {
                 id: test._id.toString(),
                 userId: user?._id?.toString() || null,
-                userEmail: user?.email || 'Unknown',
-                userName: user?.profile ? `${user.profile.firstName} ${user.profile.lastName}` : 'Unknown',
+                userEmail: user?.email || test.guestDetails?.email || 'Unknown',
+                userName: test.guestDetails?.name || (user?.profile ? `${user.profile.firstName} ${user.profile.lastName}` : 'Guest'),
+                userPhone: test.guestDetails?.phone || user?.profile?.phoneNumber || null,
                 trackName: track?.name?.en || test.trackName || 'Unknown',
                 attemptNumber: test.attemptNumber,
                 status: test.status,
@@ -311,10 +312,10 @@ export async function getPlacementTest(id: string) {
     return {
         id: test._id.toString(),
         userId: user?._id?.toString() || null,
-        userEmail: user?.email || 'Unknown',
-        userName: user?.profile ? `${user.profile.firstName} ${user.profile.lastName}` : 'Unknown',
-        userAge: user?.profile?.age || null,
-        userPhone: user?.profile?.phoneNumber || null,
+        userEmail: user?.email || test.guestDetails?.email || 'Unknown',
+        userName: test.guestDetails?.name || (user?.profile ? `${user.profile.firstName} ${user.profile.lastName}` : 'Guest'),
+        userAge: test.guestDetails?.age || user?.profile?.age || null,
+        userPhone: test.guestDetails?.phone || user?.profile?.phoneNumber || null,
         trackName: track?.name?.en || test.trackName || 'Unknown',
         attemptNumber: test.attemptNumber,
         status: test.status,

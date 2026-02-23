@@ -124,33 +124,26 @@ export async function POST(req: Request) {
             difficulty: q.difficulty_level
         }));
 
-        // If guest user, return the data for later linking
-        if (!session?.user?.email) {
-            return NextResponse.json({
-                success: true,
-                isGuest: true,
-                message: 'Results recorded. Wait for login to save.',
-                data: {
-                    scorePercent,
-                    beltName: belt.belt,
-                    beltStage: belt.stage,
-                    questionsCount: questions.length,
-                    detailedEvaluation // Return this so frontend can show it if needed
-                },
-            });
-        }
-
         await dbConnect();
 
-        // Find user
-        const user = await User.findOne({ email: session.user.email });
-
-        if (!user) {
-            return NextResponse.json(
-                { error: 'User not found' },
-                { status: 404 }
-            );
+        let user = null;
+        if (session?.user?.email) {
+            user = await User.findOne({ email: session.user.email });
         }
+
+        const surveyData = body.surveyData || {};
+        const guestDetails = !user ? {
+            name: surveyData.name,
+            email: surveyData.email,
+            phone: surveyData.phone,
+            age: surveyData.age,
+            country: surveyData.country,
+            city: surveyData.city,
+            schoolName: surveyData.schoolName,
+            preferredHouse: surveyData.preferredHouse,
+            techExperience: surveyData.techExperience,
+            heardAboutUs: surveyData.heardAboutUs,
+        } : undefined;
 
         // Update or create placement test record
         let placementTest;
@@ -165,6 +158,10 @@ export async function POST(req: Request) {
             completedAt: new Date(),
         };
 
+        if (guestDetails) {
+            updateData.guestDetails = guestDetails;
+        }
+
         if (testId) {
             // Update existing test
             placementTest = await PlacementTest.findByIdAndUpdate(
@@ -177,11 +174,11 @@ export async function POST(req: Request) {
         // If no testId provided OR update failed (invalid testId), create new record
         if (!placementTest) {
             // Create new test record
-            const attemptNumber = (user.placementTest?.attemptsUsed || 0) + 1;
+            const attemptNumber = user ? ((user.placementTest?.attemptsUsed || 0) + 1) : 1;
 
             placementTest = await PlacementTest.create({
-                userId: user._id,
-                trackId: user._id, // Placeholder - we don't have the actual trackId ObjectId
+                userId: user?._id || null,
+                trackId: user?._id || null, // Placeholder
                 trackName: trackName, // Store track name for display
                 attemptNumber,
                 status: 'completed',
@@ -189,27 +186,32 @@ export async function POST(req: Request) {
                 resultBeltName: belt.belt,
                 questions: questionsData,
                 detailedEvaluation,
+                guestDetails,
                 startedAt: new Date(),
                 completedAt: new Date(),
             });
         }
 
 
-        // Update user's placement test summary
-        const currentTechnicalAttemptsUsed = user.placementTest?.technicalAttemptsUsed || 0;
+        let currentTechnicalAttemptsUsed = 0;
 
-        // Update technical test attempts
-        await User.findByIdAndUpdate(user._id, {
-            $set: {
-                'placementTest.hasTakenAnyPlacementTest': true,
-                'placementTest.lastPlacementTestId': placementTest._id,
-                'placementTest.resultBeltName': belt.belt,
-                'placementTest.resultScorePercent': scorePercent,
-                'placementTest.takenAt': new Date(),
-                'placementTest.attemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
-                'placementTest.technicalAttemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
-            },
-        });
+        if (user) {
+            // Update user's placement test summary
+            currentTechnicalAttemptsUsed = user.placementTest?.technicalAttemptsUsed || 0;
+
+            // Update technical test attempts
+            await User.findByIdAndUpdate(user._id, {
+                $set: {
+                    'placementTest.hasTakenAnyPlacementTest': true,
+                    'placementTest.lastPlacementTestId': placementTest._id,
+                    'placementTest.resultBeltName': belt.belt,
+                    'placementTest.resultScorePercent': scorePercent,
+                    'placementTest.takenAt': new Date(),
+                    'placementTest.attemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
+                    'placementTest.technicalAttemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
+                },
+            });
+        }
 
         return NextResponse.json({
             success: true,

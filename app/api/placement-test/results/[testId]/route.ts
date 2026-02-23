@@ -44,7 +44,7 @@ export async function GET(req: Request, { params }: RouteParams) {
         }
 
         // Check if user owns this test
-        if (test.userId.toString() !== user._id.toString()) {
+        if (!test.userId || test.userId.toString() !== user._id.toString()) {
             return NextResponse.json(
                 { error: 'Access denied' },
                 { status: 403 }

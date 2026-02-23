@@ -12,8 +12,8 @@ export interface IPlacementTestQuestion {
 // Main PlacementTest interface
 export interface IPlacementTest extends Document {
     _id: mongoose.Types.ObjectId;
-    userId: mongoose.Types.ObjectId;
-    trackId: mongoose.Types.ObjectId;
+    userId?: mongoose.Types.ObjectId | null;
+    trackId?: mongoose.Types.ObjectId | null;
     trackName?: string;
     attemptNumber: number;
     testType?: 'technical' | 'soft_skills';
@@ -22,6 +22,18 @@ export interface IPlacementTest extends Document {
     resultBeltId?: mongoose.Types.ObjectId;
     resultBeltName?: string;
     questions?: IPlacementTestQuestion[];
+    guestDetails?: {
+        name?: string;
+        email?: string;
+        phone?: string;
+        age?: string;
+        country?: string;
+        city?: string;
+        schoolName?: string;
+        preferredHouse?: string;
+        techExperience?: string;
+        heardAboutUs?: string;
+    };
     detailedEvaluation?: any; // Stores the complex JSON result from new evaluator
     startedAt?: Date;
     completedAt?: Date;
@@ -63,12 +75,12 @@ const PlacementTestSchema = new Schema<IPlacementTest>(
         userId: {
             type: Schema.Types.ObjectId,
             ref: 'User',
-            required: [true, 'User ID is required'],
+            // required: false, since guests take tests now
         },
         trackId: {
             type: Schema.Types.ObjectId,
             ref: 'Track',
-            required: [true, 'Track ID is required'],
+            // required: false, since guests take tests now
         },
         trackName: {
             type: String,
@@ -104,6 +116,18 @@ const PlacementTestSchema = new Schema<IPlacementTest>(
         questions: [QuestionSchema],
         detailedEvaluation: {
             type: Schema.Types.Mixed, // Flexible for the complex result object
+        },
+        guestDetails: {
+            name: String,
+            email: String,
+            phone: String,
+            age: String,
+            country: String,
+            city: String,
+            schoolName: String,
+            preferredHouse: String,
+            techExperience: String,
+            heardAboutUs: String,
         },
         startedAt: {
             type: Date,
