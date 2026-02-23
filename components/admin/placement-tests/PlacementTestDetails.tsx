@@ -25,11 +25,13 @@ export default function PlacementTestDetails({ test }: PlacementTestDetailsProps
                     <h1 className="text-2xl font-bold text-white">
                         {test.userName} <span className="text-gray-500 text-lg font-normal">({test.userEmail})</span>
                     </h1>
-                    {(test.userPhone || test.userAge) && (
+                    {(test.userPhone || test.userAge || test.userCountry) && (
                         <div className="flex items-center space-x-3 text-sm text-gray-400 mt-1">
                             {test.userPhone && <span>📞 {test.userPhone}</span>}
-                            {test.userPhone && test.userAge && <span>•</span>}
+                            {test.userPhone && (test.userAge || test.userCountry) && <span>•</span>}
                             {test.userAge && <span>Age: {test.userAge}</span>}
+                            {test.userAge && test.userCountry && <span>•</span>}
+                            {test.userCountry && <span>🌍 {test.userCountry}</span>}
                         </div>
                     )}
                     <div className="flex items-center space-x-3 text-sm text-gray-400 mt-1">

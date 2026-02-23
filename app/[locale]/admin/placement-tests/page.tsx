@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { Suspense } from 'react';
 import PlacementTestsTable from '@/components/admin/placement-tests/PlacementTestsTable';
 import PlacementTestsHeader from '@/components/admin/placement-tests/PlacementTestsHeader';

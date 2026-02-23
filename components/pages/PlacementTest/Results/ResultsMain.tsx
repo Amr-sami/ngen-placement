@@ -59,10 +59,11 @@ export default function ResultsMain() {
     if (storedSelectedAnswers) setSelectedAnswers(JSON.parse(storedSelectedAnswers))
   }, [])
 
-  // Auto-save results to database when logged in
+  // Auto-save results to database (for both logged-in users and guests)
   useEffect(() => {
     const saveResults = async () => {
-      if (sessionStatus !== 'authenticated') return
+      // Wait until session status is determined
+      if (sessionStatus === 'loading') return
 
       const alreadySaved = sessionStorage.getItem('resultsSaved_v2')
       if (alreadySaved === 'true' || questions.length === 0) return
@@ -93,12 +94,10 @@ export default function ResultsMain() {
         const data = await response.json()
 
         // Check if server treated us as guest despite being logged in (session expired/invalid)
+        // Since we now allow guests, we don't strictly consider this an error that prevents saving,
+        // but it's good to log it.
         if (data.isGuest && sessionStatus === 'authenticated') {
-          // Session is invalid on server side. 
-          // Don't mark as saved, set status to error so user sees indicator.
-          console.error('Session expired during save - treated as guest')
-          setSaveStatus('error')
-          return
+          console.warn('Session expired during save - successfully saved as guest test.')
         }
 
         sessionStorage.setItem('resultsSaved_v2', 'true')

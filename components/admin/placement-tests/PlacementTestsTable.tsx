@@ -56,12 +56,19 @@ export default async function PlacementTestsTable({ page, status }: PlacementTes
                                         <div>
                                             <p className="text-white font-medium">{test.userName}</p>
                                             <p className="text-gray-400 text-sm">{test.userEmail}</p>
+                                            {(test.userPhone || test.userCountry) && (
+                                                <p className="text-gray-500 text-xs mt-0.5">
+                                                    {test.userPhone && <span>{test.userPhone}</span>}
+                                                    {test.userPhone && test.userCountry && <span> • </span>}
+                                                    {test.userCountry && <span>{test.userCountry}</span>}
+                                                </p>
+                                            )}
                                         </div>
                                     </td>
                                     <td className="py-4 px-6">
                                         <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${test.testType === 'soft_skills'
-                                                ? 'bg-purple-500/20 text-purple-400'
-                                                : 'bg-blue-500/20 text-blue-400'
+                                            ? 'bg-purple-500/20 text-purple-400'
+                                            : 'bg-blue-500/20 text-blue-400'
                                             }`}>
                                             {test.testType === 'soft_skills' ? 'Soft Skills' : 'Technical'}
                                         </span>
