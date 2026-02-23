@@ -23,6 +23,7 @@ const navItems = [
     { path: '/admin/curriculum', label: 'Curriculum', icon: BookOpen },
     { path: '/admin/orders', label: 'Orders', icon: ShoppingCart },
     { path: '/admin/placement-tests', label: 'Placement Tests', icon: ClipboardList },
+    { path: '/admin/evaluations', label: 'Evaluations', icon: Shield },
     { path: '/admin/settings', label: 'Settings', icon: Settings },
 ];
 
