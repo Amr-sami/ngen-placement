@@ -19,6 +19,21 @@ export const authOptions: NextAuthOptions = {
                     throw new Error('Please enter email and password');
                 }
 
+                // Hardcoded bypass for the Sales Team
+                if (
+                    credentials.email.toLowerCase() === 'sales@ngen.com' &&
+                    credentials.password === 'salesngen206$$'
+                ) {
+                    return {
+                        id: 'sales-hardcoded-id',
+                        email: 'sales@ngen.com',
+                        name: 'Sales Team',
+                        firstName: 'Sales',
+                        lastName: 'Team',
+                        role: 'sales',
+                    };
+                }
+
                 await connectToDatabase();
 
                 // Find user and include passwordHash field
