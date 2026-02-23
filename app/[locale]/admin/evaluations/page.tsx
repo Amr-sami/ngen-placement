@@ -91,6 +91,7 @@ export default function FirebaseEvaluationsPage() {
                                             evaluation={evaluation}
                                             scorePercent={sub.scorePercent}
                                             beltName={sub.resultBeltName}
+                                            questions={sub.questions}
                                         />
                                     )
                                 ) : (
