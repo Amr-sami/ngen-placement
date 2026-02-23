@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import LoadingState from '../Test/LoadingState';
 import ErrorState from '../Test/ErrorState';
 import TestFooter from '../Test/TestFooter';
-import { Target, CheckCircle, Sparkles } from 'lucide-react';
+import { Target, CheckCircle, Sparkles, Mail } from 'lucide-react';
 
 interface SoftSkillsMainProps {
     ageGroup: '6-9' | '10-14' | '15-18';
@@ -99,25 +99,34 @@ const SoftSkillsMain: React.FC<SoftSkillsMainProps> = ({ ageGroup, onComplete })
     if (error) return <ErrorState error={error} onRetry={() => window.location.reload()} />;
 
     if (completed) {
+        const thankYouTitle = isRTL ? 'شكراً لك!' : 'Thank You!';
+        const thankYouMessage = isRTL
+            ? 'شكراً لإكمال تقييم المهارات الشخصية. سنتواصل معك قريباً.'
+            : 'Thank you for completing the Soft Skills Assessment. We will contact you shortly.';
+        const homeButton = isRTL ? 'العودة للرئيسية' : 'Return to Home';
+
         return (
             <div className="flex flex-col items-center justify-center min-h-[60vh] text-center p-8">
                 <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     className="bg-white/10 backdrop-blur-md p-10 rounded-3xl border border-white/20 shadow-2xl max-w-2xl"
+                    dir={isRTL ? 'rtl' : 'ltr'}
                 >
-                    <div className="text-6xl mb-6">🎉</div>
-                    <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
-                        Assessment Completed!
+                    <div className="w-24 h-24 mx-auto mb-6 bg-green-500/20 rounded-full flex items-center justify-center">
+                        <Mail className="w-12 h-12 text-green-400" />
+                    </div>
+                    <h2 className={`text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 mb-4 ${isRTL ? 'font-arabic' : ''}`}>
+                        {thankYouTitle}
                     </h2>
-                    <p className="text-xl text-gray-300 mb-8">
-                        Thank you for completing the Soft Skills Assessment. Your results have been saved and will help us personalize your learning journey.
+                    <p className={`text-xl text-gray-300 mb-8 ${isRTL ? 'font-arabic' : ''}`}>
+                        {thankYouMessage}
                     </p>
                     <button
                         onClick={onComplete}
-                        className="px-8 py-3 bg-purple-600 hover:bg-purple-500 rounded-xl font-bold text-white transition-all shadow-lg shadow-purple-500/30"
+                        className={`px-8 py-3 bg-purple-600 hover:bg-purple-500 rounded-xl font-bold text-white transition-all shadow-lg shadow-purple-500/30 ${isRTL ? 'font-arabic' : ''}`}
                     >
-                        Return to Home
+                        {homeButton}
                     </button>
                 </motion.div>
             </div>

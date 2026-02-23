@@ -13,8 +13,9 @@ import ErrorState from './ErrorState'
 import TestHeader from './TestHeader'
 import QuestionCard from './QuestionCard'
 import TestFooter from './TestFooter'
-import TestSelection from '../TestSelection'
 import SoftSkillsMain from '../SoftSkills/SoftSkillsMain'
+import LanguageSwitcher from '@/components/layout/LanguageSwitcher'
+import { Code2, Brain, Cpu, Database, Shield, BarChart3, Terminal, Bot, Layers } from 'lucide-react'
 
 export default function TestMain() {
   const router = useRouter()
@@ -24,8 +25,8 @@ export default function TestMain() {
   const { data: session } = useSession()
 
   const [testStep, setTestStep] = useState<'technical' | 'soft_skills'>('technical')
-  const [userTestStatus, setUserTestStatus] = useState({ hasTakenTechnical: false, hasTakenSoftSkills: false })
-  const [statusLoading, setStatusLoading] = useState(true)
+  const [specificTrack, setSpecificTrack] = useState<string | null>(null)
+  const [showTrackSelection, setShowTrackSelection] = useState(false)
 
   // Technical Test State
   const [isLoading, setIsLoading] = useState(true)
@@ -35,49 +36,31 @@ export default function TestMain() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>([])
 
-  // Load User Status
-  useEffect(() => {
-    const checkStatus = async () => {
-      if (session?.user) {
-        try {
-          const res = await fetch('/api/placement-test/check-user', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: session.user.email })
-          });
-          const data = await res.json();
-          setUserTestStatus({
-            hasTakenTechnical: data.hasTakenPlacementTest, // Mapping existing field
-            hasTakenSoftSkills: data.hasTakenSoftSkillsTest || false
-          });
-        } catch (e) {
-          console.error("Failed to check user status", e);
-        }
-      }
-      setStatusLoading(false);
-    };
-    checkStatus();
-  }, [session]);
-
-  // Check if Soft Skills was selected in Survey
+  // Determine test type from sessionStorage
   useEffect(() => {
     const track = sessionStorage.getItem('selectedTrack');
     if (track === 'soft_skills') {
       setTestStep('soft_skills');
-    } else {
+    } else if (track === 'technical') {
+      // User chose "technical" from landing page → show track selection
       setTestStep('technical');
+      setShowTrackSelection(true);
+    } else {
+      // A specific track was already chosen (e.g. 'general', 'data_science')
+      setTestStep('technical');
+      setSpecificTrack(track || 'general');
     }
   }, []);
 
-  // Handle test type selection from TestSelection
-  const handleTestTypeSelect = (type: 'technical' | 'soft_skills') => {
-    sessionStorage.setItem('selectedTrack', type);
-    setTestStep(type);
+  const handleTrackSelect = (track: string) => {
+    sessionStorage.setItem('selectedTrack', track);
+    setSpecificTrack(track);
+    setShowTrackSelection(false);
   };
 
   // --- Technical Test Logic: Fetching Questions ---
   useEffect(() => {
-    if (testStep !== 'technical') return;
+    if (testStep !== 'technical' || !specificTrack) return;
 
     let progressTimer: ReturnType<typeof setInterval> | null = null
 
@@ -113,7 +96,7 @@ export default function TestMain() {
           body: JSON.stringify({
             survey_results: surveyResults,
             language: locale,
-            selectedTrack: sessionStorage.getItem('selectedTrack') || 'general'
+            selectedTrack: specificTrack
           }),
         })
 
@@ -185,7 +168,7 @@ export default function TestMain() {
     return () => {
       if (progressTimer) clearInterval(progressTimer)
     }
-  }, [router, locale, t, testStep])
+  }, [router, locale, t, testStep, specificTrack])
 
   // --- Handlers ---
   const handleAnswerSelect = (answerIndex: number) => {
@@ -232,31 +215,6 @@ export default function TestMain() {
     router.push('/placement-test/results')
   }
 
-  if (statusLoading) return <LoadingState loadingProgress={50} />;
-
-  // --- Render Selection Screen for logged-in users ---
-  // Show test selection when user is logged in AND hasn't made a track selection yet.
-  // We use `sessionStorage.getItem('selectedTrack')` implicitly via checking if testStep was initialized, 
-  // but let's check explicitly so we don't flash the screen or force selection if they just came from survey.
-  const hasSelectedTrack = typeof window !== 'undefined' ? !!sessionStorage.getItem('selectedTrack') : false;
-
-  if (session?.user && !hasSelectedTrack) {
-    return (
-      <div className="min-h-screen w-full bg-[#1a0b2e] relative py-8">
-        <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
-        </div>
-        <div className="w-full max-w-5xl mx-auto relative z-10">
-          <TestSelection
-            onSelect={handleTestTypeSelect}
-            hasTakenTechnical={userTestStatus.hasTakenTechnical}
-            hasTakenSoftSkills={userTestStatus.hasTakenSoftSkills}
-          />
-        </div>
-      </div>
-    );
-  }
-
   // --- Render Soft Skills Test ---
   if (testStep === 'soft_skills') {
     // Determine age group from survey data
@@ -277,10 +235,123 @@ export default function TestMain() {
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
         </div>
+        {/* Language Toggle */}
+        <div className="fixed top-4 right-4 z-50">
+          <LanguageSwitcher />
+        </div>
         <SoftSkillsMain
           ageGroup={ageGroup}
-          onComplete={() => router.push('/')} // Redirect to home
+          onComplete={() => router.push('/')}
         />
+      </div>
+    );
+  }
+
+  // --- Render Track Selection (Step A for Technical) ---
+  if (showTrackSelection) {
+    const trackTranslations = {
+      en: {
+        title: 'Choose Your Track',
+        subtitle: 'Select the technical track you want to be assessed on',
+        general: 'General',
+        generalDesc: 'Comprehensive assessment across all topics',
+        data_science: 'Data Science',
+        data_scienceDesc: 'Machine learning, statistics, and data modeling',
+        computer_fundamentals: 'Computer Fundamentals',
+        computer_fundamentalsDesc: 'Core computer science concepts and basics',
+        cybersecurity: 'Cybersecurity',
+        cybersecurityDesc: 'Network security, encryption, and digital safety',
+        data_analysis: 'Data Analysis',
+        data_analysisDesc: 'Data visualization, SQL, and analytical thinking',
+        python_programming: 'Python Programming',
+        python_programmingDesc: 'Python fundamentals and problem solving',
+        robotics: 'Robotics',
+        roboticsDesc: 'Robotics, embedded systems, and automation',
+      },
+      ar: {
+        title: 'اختر المسار',
+        subtitle: 'حدد المسار التقني الذي تريد تقييمه',
+        general: 'عام',
+        generalDesc: 'تقييم شامل في جميع المواضيع',
+        data_science: 'علم البيانات',
+        data_scienceDesc: 'التعلم الآلي والإحصاء ونمذجة البيانات',
+        computer_fundamentals: 'أساسيات الحاسب',
+        computer_fundamentalsDesc: 'مفاهيم علوم الحاسب الأساسية',
+        cybersecurity: 'الأمن السيبراني',
+        cybersecurityDesc: 'أمن الشبكات والتشفير والأمان الرقمي',
+        data_analysis: 'تحليل البيانات',
+        data_analysisDesc: 'تصور البيانات و SQL والتفكير التحليلي',
+        python_programming: 'برمجة بايثون',
+        python_programmingDesc: 'أساسيات بايثون وحل المشكلات',
+        robotics: 'الروبوتات',
+        roboticsDesc: 'الروبوتات والأنظمة المدمجة والأتمتة',
+      },
+    };
+
+    const tt = trackTranslations[locale as 'en' | 'ar'] || trackTranslations.en;
+
+    const tracks = [
+      { id: 'general', name: tt.general, desc: tt.generalDesc, icon: Layers, color: 'from-blue-500 to-cyan-500' },
+      { id: 'data_science', name: tt.data_science, desc: tt.data_scienceDesc, icon: Brain, color: 'from-purple-500 to-pink-500' },
+      { id: 'computer_fundamentals', name: tt.computer_fundamentals, desc: tt.computer_fundamentalsDesc, icon: Cpu, color: 'from-green-500 to-emerald-500' },
+      { id: 'cybersecurity', name: tt.cybersecurity, desc: tt.cybersecurityDesc, icon: Shield, color: 'from-red-500 to-orange-500' },
+      { id: 'data_analysis', name: tt.data_analysis, desc: tt.data_analysisDesc, icon: BarChart3, color: 'from-yellow-500 to-amber-500' },
+      { id: 'python_programming', name: tt.python_programming, desc: tt.python_programmingDesc, icon: Terminal, color: 'from-sky-500 to-blue-500' },
+      { id: 'robotics', name: tt.robotics, desc: tt.roboticsDesc, icon: Bot, color: 'from-teal-500 to-cyan-500' },
+    ];
+
+    return (
+      <div className="min-h-screen w-full bg-[#1a0b2e] relative flex flex-col items-center justify-center p-4 sm:p-6 md:p-8" dir={isRTL ? 'rtl' : 'ltr'}>
+        {/* Background */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
+          <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-900/30 rounded-full mix-blend-screen filter blur-[100px]"></div>
+        </div>
+
+        {/* Language Toggle */}
+        <div className="fixed top-4 right-4 z-50">
+          <LanguageSwitcher />
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="w-full max-w-4xl relative z-10"
+        >
+          <div className="text-center mb-10">
+            <h1 className={`text-3xl md:text-4xl font-bold text-white mb-3 ${isRTL ? 'font-arabic' : ''}`}>
+              {tt.title}
+            </h1>
+            <p className={`text-purple-200/70 text-lg ${isRTL ? 'font-arabic' : ''}`}>
+              {tt.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {tracks.map((track) => {
+              const Icon = track.icon;
+              return (
+                <motion.button
+                  key={track.id}
+                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => handleTrackSelect(track.id)}
+                  className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-all text-start flex flex-col gap-3"
+                >
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${track.color} flex items-center justify-center`}>
+                    <Icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className={`text-lg font-bold text-white ${isRTL ? 'font-arabic' : ''}`}>
+                    {track.name}
+                  </h3>
+                  <p className={`text-sm text-gray-400 ${isRTL ? 'font-arabic' : ''}`}>
+                    {track.desc}
+                  </p>
+                </motion.button>
+              );
+            })}
+          </div>
+        </motion.div>
       </div>
     );
   }
@@ -311,6 +382,11 @@ export default function TestMain() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/40 rounded-full mix-blend-screen filter blur-[120px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-900/30 rounded-full mix-blend-screen filter blur-[100px]"></div>
+      </div>
+
+      {/* Language Toggle */}
+      <div className="fixed top-4 right-4 z-50">
+        <LanguageSwitcher />
       </div>
 
       <div className="w-full max-w-5xl mx-auto relative z-10 flex flex-col h-full">

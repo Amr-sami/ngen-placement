@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useRouter, useParams } from 'next/navigation'
+import { useRouter, useParams, useSearchParams } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
@@ -18,7 +18,6 @@ import {
   Globe,
   AlertTriangle,
   LogIn,
-  Layers,
 } from 'lucide-react'
 import type { SurveyFormData } from './types'
 import InputField from './InputField'
@@ -27,7 +26,9 @@ import ContactAdminModal from '../Results/ContactAdminModal'
 export default function SurveyForm() {
   const router = useRouter()
   const params = useParams()
+  const searchParams = useSearchParams()
   const locale = (params?.locale as string) || 'en'
+  const testType = searchParams.get('type') || 'technical'
   const { data: session, status: sessionStatus } = useSession()
   const [showContactModal, setShowContactModal] = useState(false)
 
@@ -43,7 +44,6 @@ export default function SurveyForm() {
     heardAboutUs: '',
     phone: '',
     email: '',
-    selectedTrack: 'general',
   })
 
   // State for existing user warning
@@ -87,11 +87,11 @@ export default function SurveyForm() {
   }, [session])
 
   // Check attempt status for logged-in users - ONLY when form is submitted
-  const checkAttemptStatus = async (testType: string) => {
+  const checkAttemptStatus = async (testTypeParam: string) => {
     if (sessionStatus !== 'authenticated') return
 
     try {
-      const response = await fetch(`/api/placement-test/start?testType=${testType}`, {
+      const response = await fetch(`/api/placement-test/start?testType=${testTypeParam}`, {
         method: 'GET',
       })
       const data = await response.json()
@@ -135,9 +135,7 @@ export default function SurveyForm() {
         const hasTakenTechnical = techData.hasTakenTechnicalTest || techData.attemptsUsed > 0;
         const allCompleted = hasTakenSoftSkills && hasTakenTechnical;
 
-        if (!allCompleted && hasTakenTechnical && !hasTakenSoftSkills) {
-            setFormData(prev => ({ ...prev, selectedTrack: 'soft_skills' }));
-        }
+
 
         setAttemptStatus({
           checked: true,
@@ -196,13 +194,6 @@ export default function SurveyForm() {
         if (field === 'email') {
           setExistingUserWarning({ show: false, message: '', hasTakenTest: false })
         }
-
-        // Check attempt status when track selection changes
-        if (field === 'selectedTrack') {
-          const isSoftSkills = e.target.value === 'soft_skills'
-          const testType = isSoftSkills ? 'soft_skills' : 'technical'
-          checkAttemptStatus(testType)
-        }
       }
 
   const handleEmailBlur = () => {
@@ -215,14 +206,14 @@ export default function SurveyForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    // For logged-in users, check attempt status based on selected track BEFORE allowing test
+    // For logged-in users, check attempt status based on test type BEFORE allowing test
     if (sessionStatus === 'authenticated') {
-      const isSoftSkills = formData.selectedTrack === 'soft_skills'
-      const testType = isSoftSkills ? 'soft_skills' : 'technical'
+      const isSoftSkills = testType === 'soft_skills'
+      const testTypeParam = isSoftSkills ? 'soft_skills' : 'technical'
 
       // Check attempt status synchronously
       try {
-        const response = await fetch(`/api/placement-test/start?testType=${testType}`, {
+        const response = await fetch(`/api/placement-test/start?testType=${testTypeParam}`, {
           method: 'GET',
         })
         const data = await response.json()
@@ -316,7 +307,7 @@ export default function SurveyForm() {
     )
 
     sessionStorage.setItem('surveyData', JSON.stringify(formData))
-    sessionStorage.setItem('selectedTrack', formData.selectedTrack)
+    sessionStorage.setItem('selectedTrack', testType)
 
     router.push(`/${locale}/placement-test/test`)
   }
@@ -551,73 +542,6 @@ export default function SurveyForm() {
                     onChange={handleChange('schoolName')}
                   />
 
-                  {/* Track Selection */}
-                  <div className="relative group">
-                    <Layers className="absolute start-4 top-1/2 -translate-y-1/2 text-purple-300 w-5 h-5 pointer-events-none rtl:scale-x-[-1]" />
-                    <select
-                      value={formData.selectedTrack}
-                      onChange={handleChange('selectedTrack')}
-                      className="w-full ps-12 pe-4 py-4 bg-black/20 border border-white/10 rounded-2xl text-white/90 placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:bg-black/40 transition-all appearance-none cursor-pointer"
-                    >
-                      <option
-                        value="general"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.general')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="data_science"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.data_science')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="computer_fundamentals"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.computer_fundamentals')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="cybersecurity"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.cybersecurity')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="data_analysis"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.data_analysis')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="python_programming"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.python_programming')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="robotics"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenTechnicalTest}
-                      >
-                        {t('trackSelection.options.robotics')} {attemptStatus.hasTakenTechnicalTest ? '(Completed)' : ''}
-                      </option>
-                      <option
-                        value="soft_skills"
-                        className="bg-[#1a0b2e]"
-                        disabled={attemptStatus.hasTakenSoftSkillsTest}
-                      >
-                        {t('trackSelection.options.soft_skills')} {attemptStatus.hasTakenSoftSkillsTest ? '(Completed)' : ''}
-                      </option>
-                    </select>
-                  </div>
-
                   {/* Tech Toggle */}
                   <div className="bg-white/5 p-5 rounded-2xl border border-white/10">
                     <p className="text-white/90 text-sm font-semibold mb-4 flex items-center gap-2">
@@ -696,10 +620,11 @@ export default function SurveyForm() {
                   <Sparkles className="w-6 h-6 rtl:scale-x-[-1]" />
                 </button>
               </div>
-            </form>
-          </div>
-        )}
-      </motion.div>
+            </form >
+          </div >
+        )
+        }
+      </motion.div >
 
       <ContactAdminModal
         isOpen={showContactModal}
@@ -708,6 +633,6 @@ export default function SurveyForm() {
         userEmail={session?.user?.email || formData.email}
         userName={session?.user?.name || formData.name}
       />
-    </div>
+    </div >
   )
 }

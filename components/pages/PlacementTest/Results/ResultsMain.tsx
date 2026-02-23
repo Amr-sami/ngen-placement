@@ -14,7 +14,6 @@ import ReviewModal from './ReviewModal'
 import SaveStatusIndicator from './SaveStatusIndicator'
 import ContactAdminModal from './ContactAdminModal'
 import LoginPromptCard from './LoginPromptCard'
-import PurchaseCard from './PurchaseCard'
 
 export default function ResultsMain() {
   const { data: session, status: sessionStatus } = useSession()
@@ -37,7 +36,6 @@ export default function ResultsMain() {
 
   // Modal states
   const [showContactModal, setShowContactModal] = useState(false)
-  const [showPurchaseCard, setShowPurchaseCard] = useState(false)
 
   // Load data from sessionStorage
   useEffect(() => {
@@ -146,9 +144,7 @@ export default function ResultsMain() {
     fetchProfile()
   }, [sessionStatus])
 
-  const handleBuyLevel = () => {
-    setShowPurchaseCard(true)
-  }
+
 
   const handleContactAdmin = () => {
     setShowContactModal(true)
@@ -167,7 +163,7 @@ export default function ResultsMain() {
     setCurrentReviewIndex(prev => Math.min(questions.length - 1, prev + 1))
   }
 
-  const isGuest = sessionStatus !== 'authenticated'
+
 
   return (
     <div className="min-h-screen w-full bg-[#1a0b2e] relative flex flex-col items-center p-4 sm:p-6 md:p-8 overflow-x-hidden">
@@ -191,44 +187,25 @@ export default function ResultsMain() {
         {/* Header - Always visible */}
         <ResultsHeader
           studentName={studentInfo.name}
-          score={isGuest ? null : score}
-          totalQuestions={isGuest ? null : totalQuestions}
+          score={score}
+          totalQuestions={totalQuestions}
         />
 
-        {/* Main Content - Blurred for guests */}
-        <div className={`relative ${isGuest ? 'pointer-events-none' : ''}`}>
-          {/* Blur overlay for guests */}
-          {isGuest && (
-            <div className="absolute inset-0 bg-[#1a0b2e]/60 backdrop-blur-xl z-20 rounded-3xl flex items-center justify-center">
-              <div className="text-center p-8">
-                <h3 className="text-2xl font-black text-white mb-2">{t('blurOverlay.title')}</h3>
-                <p className="text-purple-200 mb-6">{t('blurOverlay.description')}</p>
-              </div>
-            </div>
-          )}
+        {/* Achievement Card */}
+        <BeltAchievementCard belt={recommendedBelt} score={score} />
 
-          {/* Achievement Card */}
-          <div className={isGuest ? 'filter blur-md' : ''}>
-            <BeltAchievementCard belt={recommendedBelt} score={score} />
-          </div>
-        </div>
 
-        {/* Login Prompt for Guests - Above buttons */}
-        {isGuest && <LoginPromptCard />}
 
         {/* Action Buttons */}
         <ActionButtons
           onReviewAnswers={handleReviewAnswers}
           onContactAdmin={handleContactAdmin}
-          onBuyLevel={handleBuyLevel}
-          isLoggedIn={!isGuest}
-          beltName={recommendedBelt.belt}
           hasQuestions={questions.length > 0}
         />
 
         {/* Review Modal - Only for logged in users */}
         <ReviewModal
-          isOpen={isReviewMode && !isGuest}
+          isOpen={isReviewMode}
           currentIndex={currentReviewIndex}
           questions={questions}
           selectedAnswers={selectedAnswers}
@@ -246,13 +223,6 @@ export default function ResultsMain() {
           userName={session?.user?.name || studentInfo.name}
         />
 
-        {/* Purchase Card Modal */}
-        <PurchaseCard
-          isOpen={showPurchaseCard}
-          onClose={() => setShowPurchaseCard(false)}
-          belt={recommendedBelt}
-          userInfo={studentInfo}
-        />
       </motion.div>
     </div>
   )

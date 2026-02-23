@@ -21,15 +21,6 @@ const ADMIN_ALLOWED_PUBLIC_ROUTES = [
   '/ar/auth/login',
   '/en/auth/logout',
   '/ar/auth/logout',
-  '/payment/return',
-  '/payment/success',
-  '/payment/error',
-  '/en/payment/return',
-  '/ar/payment/return',
-  '/en/payment/success',
-  '/ar/payment/success',
-  '/en/payment/error',
-  '/ar/payment/error',
 ];
 
 export async function middleware(request: NextRequest) {
