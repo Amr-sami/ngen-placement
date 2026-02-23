@@ -87,6 +87,9 @@ export default function TestMain() {
         return
       }
 
+      // Ensure any previous test save flags are cleared so this test can save
+      sessionStorage.removeItem('resultsSaved_v2')
+
       startProgress()
 
       try {

@@ -309,6 +309,9 @@ export default function SurveyForm() {
     sessionStorage.setItem('surveyData', JSON.stringify(formData))
     sessionStorage.setItem('selectedTrack', testType)
 
+    // Clear any previous save flags so the new test can save
+    sessionStorage.removeItem('resultsSaved_v2')
+
     router.push(`/${locale}/placement-test/test`)
   }
 
