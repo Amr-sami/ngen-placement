@@ -23,6 +23,7 @@ export interface BeltAssessment {
     correct: number;
     total: number;
     status: 'mastered' | 'fully_mastered' | 'needs_review' | 'needs_full_course' | 'not_assessed';
+    passed: boolean; // Whether this belt passed the 80% sequential threshold
     confidence: 'high' | 'medium' | 'low' | 'very_low';
     by_difficulty: {
         [level: number]: {
@@ -50,6 +51,7 @@ export interface StudyPriority {
 // Final evaluation result
 export interface PlacementEvaluationResult {
     overall_readiness: number; // Avg percentage
+    assigned_belt: string; // The belt assigned via sequential chain evaluation
     total_questions: number;
     total_correct: number;
     belts_assessed: number;

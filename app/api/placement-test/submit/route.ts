@@ -148,11 +148,16 @@ export async function POST(req: Request) {
         // Update or create placement test record
         let placementTest;
 
+        // For general tests, use server-side evaluator belt; for specific tracks, use frontend belt
+        const assignedBeltName = (isGeneralTest && detailedEvaluation?.assigned_belt)
+            ? detailedEvaluation.assigned_belt
+            : belt.belt;
+
         const updateData: any = {
             status: 'completed',
             scorePercent,
-            resultBeltName: belt.belt, // This matches what frontend predicted/showed
-            trackName: trackName, // Store the track name (e.g., 'Python Programming' or 'General Placement')
+            resultBeltName: assignedBeltName,
+            trackName: trackName,
             questions: questionsData,
             detailedEvaluation,
             completedAt: new Date(),
@@ -204,7 +209,7 @@ export async function POST(req: Request) {
                 $set: {
                     'placementTest.hasTakenAnyPlacementTest': true,
                     'placementTest.lastPlacementTestId': placementTest._id,
-                    'placementTest.resultBeltName': belt.belt,
+                    'placementTest.resultBeltName': assignedBeltName,
                     'placementTest.resultScorePercent': scorePercent,
                     'placementTest.takenAt': new Date(),
                     'placementTest.attemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
@@ -220,7 +225,7 @@ export async function POST(req: Request) {
             data: {
                 testId: placementTest._id.toString(),
                 scorePercent,
-                beltName: belt.belt,
+                beltName: assignedBeltName,
                 beltStage: belt.stage,
                 attemptsUsed: testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
                 detailedEvaluation // Send back to frontend

@@ -27,11 +27,23 @@ const navItems = [
     { path: '/admin/settings', label: 'Settings', icon: Settings },
 ];
 
-export default function AdminSidebar() {
+// Nav items visible to support role (read-only results access)
+const SUPPORT_ALLOWED_PATHS = ['/admin/placement-tests'];
+
+interface AdminSidebarProps {
+    userRole?: string;
+}
+
+export default function AdminSidebar({ userRole }: AdminSidebarProps) {
     const pathname = usePathname();
 
     // Extract locale from pathname (e.g., /en/admin -> en)
     const locale = pathname.split('/')[1] || 'en';
+
+    // Filter nav items based on role
+    const visibleNavItems = userRole === 'support'
+        ? navItems.filter(item => SUPPORT_ALLOWED_PATHS.some(p => item.path.startsWith(p)))
+        : navItems;
 
     return (
         <aside className="w-64 bg-gray-800 border-r border-gray-700 flex flex-col">
@@ -43,7 +55,9 @@ export default function AdminSidebar() {
                     </div>
                     <div>
                         <h1 className="text-lg font-bold text-white">NGEN Admin</h1>
-                        <p className="text-xs text-gray-400">Control Panel</p>
+                        <p className="text-xs text-gray-400">
+                            {userRole === 'support' ? 'Support View' : 'Control Panel'}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -52,10 +66,10 @@ export default function AdminSidebar() {
             <nav className="flex-1 py-4 overflow-y-auto">
                 <div className="px-3 mb-2">
                     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                        Management
+                        {userRole === 'support' ? 'Results' : 'Management'}
                     </p>
                 </div>
-                {navItems.map((item) => {
+                {visibleNavItems.map((item) => {
                     const href = `/${locale}${item.path}`;
                     const isActive = item.exact
                         ? pathname === href

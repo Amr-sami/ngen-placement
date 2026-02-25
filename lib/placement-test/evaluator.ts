@@ -3,6 +3,7 @@ import { Question, PlacementEvaluationResult, BeltAssessment, StudyPriority } fr
 const MASTERY_THRESHOLD = 70;
 const FULL_MASTERY_THRESHOLD = 90;
 const REVIEW_THRESHOLD = 40;
+const PASS_THRESHOLD = 80; // Sequential belt assignment threshold
 
 const BELT_IMPORTANCE: Record<string, number> = {
     'White': 1,
@@ -128,6 +129,7 @@ export function evaluatePlacementTest(
             correct: correctCount,
             total: beltItems.length,
             status,
+            passed: scorePercent >= PASS_THRESHOLD,
             confidence,
             by_difficulty,
             strong_concepts,
@@ -263,8 +265,12 @@ export function evaluatePlacementTest(
         ? parseFloat(((totalCorrectOverall / totalQuestionsOverall) * 100).toFixed(1))
         : 0;
 
+    // Determine assigned belt using sequential chain logic
+    const assigned_belt = determineAssignedBelt(beltDetails);
+
     return {
         overall_readiness,
+        assigned_belt,
         total_questions: totalQuestionsOverall,
         total_correct: totalCorrectOverall,
         belts_assessed: allBelts.size,
@@ -278,4 +284,36 @@ export function evaluatePlacementTest(
         weaknesses,
         flags: Array.from(flags)
     };
+}
+
+/**
+ * Determines the assigned belt using sequential chain evaluation.
+ * Belts are sorted by BELT_IMPORTANCE order and checked one-by-one.
+ * The first belt that scores < PASS_THRESHOLD (80%) is the assigned belt.
+ * If all belts pass, the lowest belt is assigned.
+ * Belts with no questions are skipped.
+ */
+function determineAssignedBelt(beltDetails: Record<string, BeltAssessment>): string {
+    // Sort belts by their order (BELT_IMPORTANCE)
+    const sortedBelts = Object.keys(beltDetails)
+        .filter(belt => beltDetails[belt].total > 0) // Skip belts with no questions
+        .sort((a, b) => {
+            const orderA = BELT_IMPORTANCE[a] ?? 99;
+            const orderB = BELT_IMPORTANCE[b] ?? 99;
+            return orderA - orderB;
+        });
+
+    if (sortedBelts.length === 0) {
+        return 'White'; // Fallback: no belts assessed
+    }
+
+    // Walk the chain: first belt that fails (<80%) is the assigned belt
+    for (const belt of sortedBelts) {
+        if (!beltDetails[belt].passed) {
+            return belt;
+        }
+    }
+
+    // All belts passed — assign the lowest belt
+    return sortedBelts[0];
 }
