@@ -21,6 +21,7 @@ const ADMIN_ALLOWED_PUBLIC_ROUTES = [
   '/ar/auth/login',
   '/en/auth/logout',
   '/ar/auth/logout',
+  '/salesdashboard',
 ];
 
 export async function middleware(request: NextRequest) {
@@ -30,6 +31,7 @@ export async function middleware(request: NextRequest) {
   if (
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next') ||
+    pathname.startsWith('/salesdashboard') ||
     pathname.includes('.')
   ) {
     return NextResponse.next();

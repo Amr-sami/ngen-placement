@@ -4,6 +4,7 @@ import { authOptions } from '@/lib/auth/authOptions';
 import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PlacementTest from '@/lib/models/PlacementTest';
+import { savePlacementResultToFirebase } from '@/lib/firebase-service';
 
 interface SubmitRequestBody {
     testId?: string;
@@ -217,6 +218,16 @@ export async function POST(req: Request) {
                 },
             });
         }
+
+        // Mirror result to Firebase for Sales Dashboard (Non-blocking)
+        savePlacementResultToFirebase({
+            ...placementTest.toObject(),
+            testType: 'technical',
+            email: user?.email || guestDetails?.email || null,
+            name: user?.profile?.firstName || guestDetails?.name || null,
+        }).catch(firebaseError => {
+            console.error('⚠️ Firebase sync failed:', firebaseError);
+        });
 
         return NextResponse.json({
             success: true,

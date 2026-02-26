@@ -4,9 +4,11 @@ import { useLocale } from 'next-intl'
 
 interface LoadingStateProps {
   loadingProgress: number
+  customTitle?: string
+  customText?: string
 }
 
-export default function LoadingState({ loadingProgress }: LoadingStateProps) {
+export default function LoadingState({ loadingProgress, customTitle, customText }: LoadingStateProps) {
   const locale = useLocale()
   const isRTL = locale === 'ar'
 
@@ -16,19 +18,22 @@ export default function LoadingState({ loadingProgress }: LoadingStateProps) {
       title: 'Building Your Challenge',
       analyzing: 'Analyzing profile...',
       selecting: 'Selecting questions...',
-      finalizing: 'Finalizing AI model...'
+      finalizing: 'Finalizing AI model...',
+      saving: 'Saving your results...'
     },
     ar: {
       title: 'جارٍ إنشاء التحدي الخاص بك',
       analyzing: 'جارٍ تحليل الملف الشخصي...',
       selecting: 'جارٍ اختيار الأسئلة...',
-      finalizing: 'جارٍ الانتهاء من نموذج الذكاء الاصطناعي...'
+      finalizing: 'جارٍ الانتهاء من نموذج الذكاء الاصطناعي...',
+      saving: 'جارٍ حفظ نتائجك...'
     }
   }
 
   const t = translations[locale as 'en' | 'ar'] || translations.en
 
   const getLoadingText = () => {
+    if (customText) return customText
     if (loadingProgress < 30) return t.analyzing
     if (loadingProgress < 60) return t.selecting
     return t.finalizing
@@ -67,7 +72,7 @@ export default function LoadingState({ loadingProgress }: LoadingStateProps) {
         </motion.div>
 
         <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
-          {t.title}
+          {customTitle || t.title}
           <motion.span
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
