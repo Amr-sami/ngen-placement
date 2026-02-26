@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { requireAdminAccess } from '@/lib/auth/adminAuth';
+import { redirect } from 'next/navigation';
+import { headers } from 'next/headers';
 import AdminSidebar from '@/components/admin/AdminSidebar';
 
 export const metadata: Metadata = {
@@ -8,17 +10,36 @@ export const metadata: Metadata = {
     robots: { index: false, follow: false }, // Prevent search engines from indexing admin pages
 };
 
+// Paths that support users are allowed to access
+const SUPPORT_ALLOWED_PATHS = ['/admin/placement-tests'];
+
 export default async function AdminLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     // This will redirect non-admins to 404 or login
-    await requireAdminAccess();
+    const session = await requireAdminAccess();
+
+    // Server-side guard: redirect sales users from restricted pages
+    if (session.user.role === 'sales') {
+        const headersList = await headers();
+        const pathname = headersList.get('x-pathname') || '';
+        const locale = pathname.split('/')[1] || 'en';
+
+        // Check if current path is allowed for sales
+        const isAllowed = SUPPORT_ALLOWED_PATHS.some(p =>
+            pathname.includes(p)
+        );
+
+        if (!isAllowed) {
+            redirect(`/${locale}/admin/placement-tests`);
+        }
+    }
 
     return (
         <div className="flex h-screen bg-gray-900">
-            <AdminSidebar />
+            <AdminSidebar userRole={session.user.role} />
             <main className="flex-1 overflow-y-auto">
                 <div className="p-6">
                     {children}

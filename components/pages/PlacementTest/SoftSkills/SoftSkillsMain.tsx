@@ -290,7 +290,11 @@ const SoftSkillsMain: React.FC<SoftSkillsMainProps> = ({ ageGroup, onComplete })
 
             {submitting && (
                 <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center">
-                    <LoadingState loadingProgress={100} />
+                    <LoadingState
+                        loadingProgress={100}
+                        customTitle={isRTL ? 'جارٍ حفظ النتائج' : 'Saving Results'}
+                        customText={isRTL ? 'جارٍ إرسال ردودك إلى السحابة...' : 'Sending your responses to the cloud...'}
+                    />
                 </div>
             )}
 

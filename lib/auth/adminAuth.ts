@@ -3,9 +3,36 @@ import { authOptions } from './authOptions';
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
 
+/** Roles allowed to access the admin panel */
+const ADMIN_ROLES = ['superadmin', 'support'] as const;
+
+/**
+ * Require admin-level access (superadmin OR support) for a page.
+ * Redirects to login if not authenticated, or 404 if not an admin role.
+ * 
+ * @returns The session object if the user has admin access
+ */
+export async function requireAdminAccess() {
+    const session = await getServerSession(authOptions);
+
+    if (!session?.user) {
+        const headersList = await headers();
+        const pathname = headersList.get('x-pathname') || '/en/auth/login';
+        const locale = pathname.split('/')[1] || 'en';
+        redirect(`/${locale}/auth/login`);
+    }
+
+    if (!ADMIN_ROLES.includes(session.user.role as any)) {
+        redirect('/404');
+    }
+
+    return session;
+}
+
 /**
  * Require super admin access for a page or action.
  * Redirects to login if not authenticated, or 404 if not a super admin.
+ * Use this for write operations (create, update, delete).
  * 
  * @returns The session object if the user is a super admin
  */
@@ -65,6 +92,15 @@ export async function isSuperAdmin(): Promise<boolean> {
 }
 
 /**
+ * Check if the current user is a support user.
+ * Does not redirect, just returns a boolean.
+ */
+export async function isSupport(): Promise<boolean> {
+    const session = await getServerSession(authOptions);
+    return session?.user?.role === 'support';
+}
+
+/**
  * Get the current admin session.
  * Returns null if not logged in or not a super admin.
  * Does not redirect.
@@ -78,3 +114,4 @@ export async function getAdminSession() {
 
     return session;
 }
+

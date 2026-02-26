@@ -27,7 +27,14 @@ const navItems = [
     { path: '/admin/settings', label: 'Settings', icon: Settings },
 ];
 
-export default function AdminSidebar() {
+// Nav items visible to support role (read-only results access)
+const SUPPORT_ALLOWED_PATHS = ['/admin/placement-tests'];
+
+interface AdminSidebarProps {
+    userRole?: string;
+}
+
+export default function AdminSidebar({ userRole }: AdminSidebarProps) {
     const pathname = usePathname();
     const { data: session } = useSession();
     const userRole = session?.user?.role;
@@ -62,7 +69,7 @@ export default function AdminSidebar() {
             <nav className="flex-1 py-4 overflow-y-auto">
                 <div className="px-3 mb-2">
                     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                        Management
+                        {userRole === 'sales' ? 'Results' : 'Management'}
                     </p>
                 </div>
                 {filteredNavItems.map((item) => {
