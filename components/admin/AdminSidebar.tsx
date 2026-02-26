@@ -34,17 +34,17 @@ interface AdminSidebarProps {
     userRole?: string;
 }
 
-export default function AdminSidebar({ userRole }: AdminSidebarProps) {
+export default function AdminSidebar({ userRole: propRole }: AdminSidebarProps) {
     const pathname = usePathname();
     const { data: session } = useSession();
-    const userRole = session?.user?.role;
+    const userRole = session?.user?.role || propRole;
 
     // Extract locale from pathname (e.g., /en/admin -> en)
     const locale = pathname.split('/')[1] || 'en';
 
     // Filter nav items based on user role
     const filteredNavItems = navItems.filter(item => {
-        if (userRole === 'sales') {
+        if (userRole === 'sales' || userRole === 'support') {
             return item.path === '/admin/placement-tests' || item.path === '/admin/evaluations';
         }
         return true; // Superadmins see everything
@@ -60,16 +60,18 @@ export default function AdminSidebar({ userRole }: AdminSidebarProps) {
                     </div>
                     <div>
                         <h1 className="text-lg font-bold text-white">NGEN Admin</h1>
-                        <p className="text-xs text-gray-400 capitalize">{userRole || 'Control Panel'}</p>
-                    </div>
-                </div>
-            </div>
+                        <p className="text-xs text-gray-400 capitalize">
+                            {userRole ? `${userRole} Panel` : 'Control Panel'}
+                        </p>
+                    </div >
+                </div >
+            </div >
 
             {/* Navigation */}
-            <nav className="flex-1 py-4 overflow-y-auto">
+            < nav className="flex-1 py-4 overflow-y-auto" >
                 <div className="px-3 mb-2">
                     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                        {userRole === 'sales' ? 'Results' : 'Management'}
+                        {userRole === 'support' ? 'Results' : 'Management'}
                     </p>
                 </div>
                 {filteredNavItems.map((item) => {
@@ -92,11 +94,12 @@ export default function AdminSidebar({ userRole }: AdminSidebarProps) {
                             <span>{item.label}</span>
                         </Link>
                     );
-                })}
-            </nav>
+                })
+                }
+            </nav >
 
             {/* Footer */}
-            <div className="p-4 border-t border-gray-700">
+            < div className="p-4 border-t border-gray-700" >
                 <button
                     onClick={() => signOut({ callbackUrl: '/' })}
                     className="flex items-center gap-3 w-full px-3 py-2.5 rounded-lg text-sm text-red-400 hover:bg-red-500/10 hover:text-red-300 transition-all duration-200"
@@ -104,7 +107,7 @@ export default function AdminSidebar({ userRole }: AdminSidebarProps) {
                     <LogOut size={18} />
                     <span>Sign Out</span>
                 </button>
-            </div>
-        </aside>
+            </div >
+        </aside >
     );
 }
