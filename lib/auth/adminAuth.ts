@@ -4,10 +4,11 @@ import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
 
 /** Roles allowed to access the admin panel */
-const ADMIN_ROLES = ['superadmin', 'support'] as const;
+const ADMIN_ROLES = ['superadmin', 'sales', 'support'] as const;
+type AdminRole = typeof ADMIN_ROLES[number];
 
 /**
- * Require admin-level access (superadmin OR support) for a page.
+ * Require admin-level access (superadmin, sales, OR support) for a page.
  * Redirects to login if not authenticated, or 404 if not an admin role.
  * 
  * @returns The session object if the user has admin access
@@ -22,7 +23,9 @@ export async function requireAdminAccess() {
         redirect(`/${locale}/auth/login`);
     }
 
-    if (!ADMIN_ROLES.includes(session.user.role as any)) {
+    const userRole = session.user.role as AdminRole;
+
+    if (!ADMIN_ROLES.includes(userRole)) {
         redirect('/404');
     }
 
@@ -54,6 +57,8 @@ export async function requireSuperAdmin() {
 
     return session;
 }
+
+
 
 /**
  * Check if the current user is a super admin.

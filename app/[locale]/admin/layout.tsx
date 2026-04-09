@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     robots: { index: false, follow: false }, // Prevent search engines from indexing admin pages
 };
 
-// Paths that support users are allowed to access
-const SUPPORT_ALLOWED_PATHS = ['/admin/placement-tests'];
+// Paths that restricted users (support/sales) are allowed to access
+const RESTRICTED_ALLOWED_PATHS = ['/admin/placement-tests', '/admin/evaluations'];
 
 export default async function AdminLayout({
     children,
@@ -21,14 +21,14 @@ export default async function AdminLayout({
     // This will redirect non-admins to 404 or login
     const session = await requireAdminAccess();
 
-    // Server-side guard: redirect support users from restricted pages
-    if (session.user.role === 'support') {
+    // Server-side guard: redirect restricted users from unauthorized pages
+    if (session.user.role === 'support' || session.user.role === 'sales') {
         const headersList = await headers();
         const pathname = headersList.get('x-pathname') || '';
         const locale = pathname.split('/')[1] || 'en';
 
-        // Check if current path is allowed for support
-        const isAllowed = SUPPORT_ALLOWED_PATHS.some(p =>
+        // Check if current path is allowed for restricted roles
+        const isAllowed = RESTRICTED_ALLOWED_PATHS.some(p =>
             pathname.includes(p)
         );
 

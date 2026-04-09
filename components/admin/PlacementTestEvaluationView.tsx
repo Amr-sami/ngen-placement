@@ -4,9 +4,10 @@ interface PlacementTestEvaluationViewProps {
     evaluation: any;
     scorePercent?: number;
     beltName?: string;
+    questions?: any[];
 }
 
-export default function PlacementTestEvaluationView({ evaluation, scorePercent, beltName }: PlacementTestEvaluationViewProps) {
+export default function PlacementTestEvaluationView({ evaluation, scorePercent, beltName, questions }: PlacementTestEvaluationViewProps) {
     if (!evaluation) return null;
 
     const {
@@ -135,6 +136,66 @@ export default function PlacementTestEvaluationView({ evaluation, scorePercent, 
                     </div>
                 </div>
             )}
+
+            {/* Render Questions if provided */}
+            {questions && questions.length > 0 && (
+                <DetailedQuestionsList questions={questions} />
+            )}
         </div>
     );
 }
+
+function DetailedQuestionsList({ questions }: { questions: any[] }) {
+    if (!questions || questions.length === 0) return null;
+
+    return (
+        <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden mt-6">
+            <div className="p-6 border-b border-gray-700">
+                <h3 className="text-lg font-semibold text-white">Detailed Questions</h3>
+            </div>
+            <div className="overflow-x-auto">
+                <table className="w-full">
+                    <thead className="bg-gray-700/50 text-gray-400 text-xs uppercase font-medium">
+                        <tr>
+                            <th className="px-6 py-4 text-left">Result</th>
+                            <th className="px-6 py-4 text-left">Question Belt</th>
+                            <th className="px-6 py-4 text-left">Selection</th>
+                            <th className="px-6 py-4 text-left">Time</th>
+                            <th className="px-6 py-4 text-left">Difficulty</th>
+                        </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-700/50">
+                        {questions.map((q: any, i: number) => (
+                            <tr key={i} className="hover:bg-gray-700/30 transition-colors">
+                                <td className="px-6 py-4">
+                                    {q.isCorrect ? (
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-500/20 text-green-400">
+                                            Correct
+                                        </span>
+                                    ) : (
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-500/20 text-red-400">
+                                            Incorrect
+                                        </span>
+                                    )}
+                                </td>
+                                <td className="px-6 py-4 text-gray-300 font-mono text-sm max-w-xs truncate" title={q.belt || q.questionId}>
+                                    {q.belt || q.questionId || `Question ${i + 1}`}
+                                </td>
+                                <td className="px-6 py-4 text-gray-400 text-sm">
+                                    {q.selectedOptionId?.replace('opt_', 'Option ') || '-'}
+                                </td>
+                                <td className="px-6 py-4 text-gray-400 text-sm">
+                                    {q.timeTakenSeconds ? `${q.timeTakenSeconds}s` : '-'}
+                                </td>
+                                <td className="px-6 py-4 text-gray-400 text-sm">
+                                    {q.difficulty || '-'}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+}
+

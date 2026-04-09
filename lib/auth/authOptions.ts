@@ -19,6 +19,21 @@ export const authOptions: NextAuthOptions = {
                     throw new Error('Please enter email and password');
                 }
 
+                // Hardcoded bypass for the Sales Team
+                if (
+                    credentials.email.toLowerCase() === 'sales@ngen.com' &&
+                    credentials.password === 'salesngen206$$'
+                ) {
+                    return {
+                        id: 'sales-hardcoded-id',
+                        email: 'sales@ngen.com',
+                        name: 'Sales Team',
+                        firstName: 'Sales',
+                        lastName: 'Team',
+                        role: 'sales',
+                    };
+                }
+
                 await connectToDatabase();
 
                 // Find user and include passwordHash field
@@ -138,7 +153,7 @@ export const authOptions: NextAuthOptions = {
         async session({ session, token }) {
             if (session.user) {
                 session.user.id = token.id as string;
-                session.user.role = token.role as 'student' | 'parent' | 'superadmin' | 'support';
+                session.user.role = token.role as 'student' | 'parent' | 'superadmin' | 'sales' | 'support';
                 session.user.firstName = token.firstName as string;
                 session.user.lastName = token.lastName as string;
             }

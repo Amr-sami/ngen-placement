@@ -3,8 +3,10 @@ import Link from 'next/link';
 import { DollarSign, Package } from 'lucide-react';
 import BeltPricingTable from '@/components/admin/pricing/BeltPricingTable';
 import PackageConfigTable from '@/components/admin/pricing/PackageConfigTable';
+import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
-export default function PricingPage() {
+export default async function PricingPage() {
+    await requireSuperAdmin();
     return (
         <div className="space-y-8">
             {/* Header */}

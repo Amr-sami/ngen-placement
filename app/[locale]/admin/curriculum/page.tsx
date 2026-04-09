@@ -1,8 +1,10 @@
 import { Suspense } from 'react';
 import CurriculumList from '@/components/admin/curriculum/CurriculumList';
 import CreateTrackModal from '@/components/admin/curriculum/CreateTrackModal';
+import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
-export default function CurriculumPage() {
+export default async function CurriculumPage() {
+    await requireSuperAdmin();
     return (
         <div className="space-y-6">
             {/* Header */}
