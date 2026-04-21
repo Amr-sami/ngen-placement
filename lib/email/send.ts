@@ -1,8 +1,15 @@
 import { Resend } from 'resend';
 import { EMAIL_CONFIG, isEmailConfigured } from './config';
 
-// Initialize Resend client
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy so Next.js static analysis at build time (no env vars) can evaluate
+// this module. Resend's constructor throws on an undefined API key.
+let _resend: Resend | null = null;
+function getResend(): Resend {
+    if (!_resend) {
+        _resend = new Resend(process.env.RESEND_API_KEY);
+    }
+    return _resend;
+}
 
 interface SendEmailParams {
     to: string;
@@ -33,7 +40,7 @@ export async function sendPaymentEmail(params: SendEmailParams): Promise<SendEma
     }
 
     try {
-        const { data, error } = await resend.emails.send({
+        const { data, error } = await getResend().emails.send({
             from: from || `${EMAIL_CONFIG.appName} <${EMAIL_CONFIG.fromEmail}>`,
             to,
             subject,

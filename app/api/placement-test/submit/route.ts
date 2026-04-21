@@ -1,247 +1,252 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { z } from 'zod';
+import mongoose from 'mongoose';
 import { authOptions } from '@/lib/auth/authOptions';
 import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PlacementTest from '@/lib/models/PlacementTest';
-import { savePlacementResultToFirebase } from '@/lib/firebase-service';
+import {
+    hashLeadToken,
+    parseLeadTokenFromHeader,
+    clearLeadCookie,
+} from '@/lib/placement-test/leadToken';
 
-interface SubmitRequestBody {
-    testId?: string;
-    surveyData?: {
-        name?: string;
-        age?: string;
-        country?: string;
-        city?: string;
-        schoolName?: string;
-        preferredHouse?: string;
-        techExperience?: string;
-        techDetails?: string;
-        heardAboutUs?: string;
-        phone?: string;
-        email?: string;
-    };
-    questions: Array<{
-        question: string;
-        options: string[];
-        ans_idx: number;
-        justification?: string;
-    }>;
-    selectedAnswers: (number | null)[];
-    score: number;
-    totalQuestions: number;
-    belt: {
-        belt: string;
-        stage: string;
-        color: string;
-        focus: string;
-        duration: string;
-        totalHours: string;
-        totalClasses: string;
-        scoreRange: [number, number];
-    };
-    track?: string; // 'general' or specific track like 'python_programming'
-}
+// Bounded survey fields — used only for populating guestDetails on the saved
+// row. We accept optional/empty because sales still wants partial leads.
+const SurveySchema = z
+    .object({
+        name: z.string().trim().max(120).optional(),
+        age: z.string().trim().max(16).optional(),
+        country: z.string().trim().max(80).optional(),
+        city: z.string().trim().max(80).optional(),
+        schoolName: z.string().trim().max(200).optional(),
+        preferredHouse: z.string().trim().max(60).optional(),
+        techExperience: z.string().trim().max(200).optional(),
+        techDetails: z.string().trim().max(1000).optional(),
+        heardAboutUs: z.string().trim().max(200).optional(),
+        phone: z.string().trim().max(40).optional(),
+        email: z.string().trim().email().max(200).optional().or(z.literal('')),
+    })
+    .partial()
+    .optional();
+
+// We do NOT trust anything about the questions or the score from the client.
+// The only client-controlled field we read during scoring is selectedAnswers
+// (nullable ints into the options array) and the testId. Everything else on
+// the payload is historical/UI metadata that we either overwrite or ignore.
+const SubmitSchema = z.object({
+    testId: z.string().trim().min(1).max(64),
+    surveyData: SurveySchema,
+    selectedAnswers: z
+        .array(z.number().int().min(0).max(20).nullable())
+        .min(1)
+        .max(200),
+    track: z.string().trim().max(64).optional(),
+});
+
+const TRACK_NAME_MAP: Record<string, string> = {
+    data_science: 'AI & Data Science',
+    computer_fundamentals: 'Computer Fundamentals',
+    cybersecurity: 'Cybersecurity',
+    data_analysis: 'Data Analysis',
+    python_programming: 'Python Programming',
+    robotics: 'Robotics',
+    general: 'General Placement',
+};
 
 export async function POST(req: Request) {
     try {
-        const body: SubmitRequestBody = await req.json();
-        const { testId, questions, selectedAnswers, score, totalQuestions, belt, track } = body;
-
-        const session = await getServerSession(authOptions);
-
-        // Calculate score percentage (legacy/default)
-        let scorePercent = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
-        let detailedEvaluation = null;
-        let isGeneralTest = false;
-
-        // Determine if this is a General test or specific track
-        // If track is 'general' or not provided, it's a general placement test
-        const isGeneral = !track || track === 'general';
-
-        // Check if this is a General Test based on question structure
-        const firstQuestion = questions[0] as any;
-        const hasBeltData = firstQuestion && (firstQuestion.belt === 'White' || firstQuestion.belt === 'Yellow' || firstQuestion.belt === 'Orange');
-
-        if (hasBeltData) {
-            isGeneralTest = true;
+        const rawBody = await req.json().catch(() => null);
+        const parsed = SubmitSchema.safeParse(rawBody);
+        if (!parsed.success) {
+            return NextResponse.json(
+                { error: 'Invalid request body', details: parsed.error.issues },
+                { status: 400 }
+            );
         }
-
-        // Debug logging
-        console.log('📋 Submit API Debug:');
-        console.log('  - Track:', track);
-        console.log('  - Is General:', isGeneral);
-        console.log('  - Has Belt Data:', hasBeltData);
-        console.log('  - First Question Belt:', firstQuestion?.belt);
-        console.log('  - Questions Count:', questions?.length);
-
-        // Map track keys to display names
-        const TRACK_NAME_MAP: Record<string, string> = {
-            data_science: 'AI & Data Science',
-            computer_fundamentals: 'Computer Fundamentals',
-            cybersecurity: 'Cybersecurity',
-            data_analysis: 'Data Analysis',
-            python_programming: 'Python Programming',
-            robotics: 'Robotics',
-            general: 'General Placement',
-        };
-
-        const trackName = isGeneral ? 'General Placement' : (TRACK_NAME_MAP[track] || track);
-
-        if (isGeneralTest) {
-            const { evaluatePlacementTest } = await import('@/lib/placement-test/evaluator'); // Dynamic import
-
-            // Map frontend questions format back to our internal Question format if needed
-            // The frontend sends { question, options, ans_idx, justification }
-            // We need { difficulty_level, concepts, belt, ... }
-            // The frontend MUST send this extra metadata. 
-            // We need to verify if `questions` in body contains this. 
-            // Looking at `TestMain.tsx`, it sends `questions` from state.
-            // The `generate-questions` API returns full objects. 
-            // `TestMain.tsx` preserves them.
-            // So `body.questions` should have all fields.
-
-            console.log('  - Running evaluator with', questions.length, 'questions');
-            console.log('  - First question sample:', JSON.stringify(questions[0]));
-
-            const evaluationResult = evaluatePlacementTest(questions as any, selectedAnswers);
-            detailedEvaluation = evaluationResult;
-            scorePercent = Math.round(evaluationResult.overall_readiness);
-
-            // Log the study plan for debugging
-            console.log('🎓 General Test Evaluation:', JSON.stringify(evaluationResult.study_plan, null, 2));
-            console.log('🎓 Evaluation belt_details:', JSON.stringify(Object.keys(evaluationResult.belt_details || {})));
-        } else {
-            console.log('  - NOT running evaluator (not a general test)');
-        }
-
-        // Prepare questions data for storage
-        const questionsData = questions.map((q: any, index) => ({
-            questionId: `q_${index}`,
-            selectedOptionId: selectedAnswers[index] !== null ? `opt_${selectedAnswers[index]}` : '',
-            isCorrect: selectedAnswers[index] === q.ans_idx,
-            points: selectedAnswers[index] === q.ans_idx ? 1 : 0,
-            belt: q.belt,
-            difficulty: q.difficulty_level
-        }));
+        const { testId, surveyData, selectedAnswers, track } = parsed.data;
 
         await dbConnect();
 
+        // Load the test including the server-stored answer key + leadTokenHash
+        // (both marked select:false in the schema).
+        const existingTest = await PlacementTest.findById(testId).select(
+            '+generatedQuestions +leadTokenHash'
+        );
+
+        if (!existingTest) {
+            return NextResponse.json(
+                { error: 'Test not found' },
+                { status: 404 }
+            );
+        }
+
+        // Ownership: the submitter must either be the authenticated user that
+        // started the test, OR present the HttpOnly cookie whose hash matches
+        // the leadTokenHash stored when the test was created. If neither holds
+        // this is someone poking at another guest's testId.
+        const session = await getServerSession(authOptions);
         let user = null;
         if (session?.user?.email) {
             user = await User.findOne({ email: session.user.email });
         }
 
-        const surveyData = body.surveyData || {};
-        const guestDetails = !user ? {
-            name: surveyData.name,
-            email: surveyData.email,
-            phone: surveyData.phone,
-            age: surveyData.age,
-            country: surveyData.country,
-            city: surveyData.city,
-            schoolName: surveyData.schoolName,
-            preferredHouse: surveyData.preferredHouse,
-            techExperience: surveyData.techExperience,
-            heardAboutUs: surveyData.heardAboutUs,
-        } : undefined;
+        const cookieToken = parseLeadTokenFromHeader(req.headers.get('cookie'));
+        const cookieMatches =
+            !!cookieToken &&
+            !!existingTest.leadTokenHash &&
+            hashLeadToken(cookieToken) === existingTest.leadTokenHash;
 
-        // Update or create placement test record
-        let placementTest;
+        const userMatches =
+            !!user &&
+            !!existingTest.userId &&
+            existingTest.userId.toString() === user._id.toString();
 
-        // For general tests, use server-side evaluator belt; for specific tracks, use frontend belt
-        const assignedBeltName = (isGeneralTest && detailedEvaluation?.assigned_belt)
-            ? detailedEvaluation.assigned_belt
-            : belt.belt;
-
-        const updateData: any = {
-            status: 'completed',
-            scorePercent,
-            resultBeltName: assignedBeltName,
-            trackName: trackName,
-            questions: questionsData,
-            detailedEvaluation,
-            completedAt: new Date(),
-        };
-
-        if (guestDetails) {
-            updateData.guestDetails = guestDetails;
-        }
-
-        if (testId) {
-            // Update existing test
-            placementTest = await PlacementTest.findByIdAndUpdate(
-                testId,
-                updateData,
-                { new: true }
+        if (!userMatches && !cookieMatches) {
+            return NextResponse.json(
+                { error: 'Access denied' },
+                { status: 403 }
             );
         }
 
-        // If no testId provided OR update failed (invalid testId), create new record
-        if (!placementTest) {
-            // Create new test record
-            const attemptNumber = user ? ((user.placementTest?.attemptsUsed || 0) + 1) : 1;
+        // Recompute score from the server-stored answer key.
+        const generated: any[] = Array.isArray(existingTest.generatedQuestions)
+            ? (existingTest.generatedQuestions as any[])
+            : [];
 
-            placementTest = await PlacementTest.create({
-                userId: user?._id || null,
-                trackId: user?._id || null, // Placeholder
-                trackName: trackName, // Store track name for display
-                attemptNumber,
-                status: 'completed',
-                scorePercent,
-                resultBeltName: belt.belt,
-                questions: questionsData,
-                detailedEvaluation,
-                guestDetails,
-                startedAt: new Date(),
-                completedAt: new Date(),
-            });
+        if (generated.length === 0) {
+            return NextResponse.json(
+                { error: 'Test has no associated questions on the server' },
+                { status: 500 }
+            );
         }
 
+        // Determine if this is a general (3-belt) test based on stored shape.
+        const firstQ: any = generated[0];
+        const hasBeltData = !!firstQ && (firstQ.belt === 'White' || firstQ.belt === 'Yellow' || firstQ.belt === 'Orange');
+        const isGeneral = !track || track === 'general' || hasBeltData;
+
+        let detailedEvaluation: any = null;
+        let correctCount = 0;
+        const answered = selectedAnswers.slice(0, generated.length);
+
+        for (let i = 0; i < generated.length; i++) {
+            const expected = generated[i]?.ans_idx;
+            const picked = answered[i] ?? null;
+            if (picked !== null && typeof expected === 'number' && picked === expected) {
+                correctCount += 1;
+            }
+        }
+
+        let scorePercent =
+            generated.length > 0 ? Math.round((correctCount / generated.length) * 100) : 0;
+
+        if (isGeneral) {
+            const { evaluatePlacementTest } = await import('@/lib/placement-test/evaluator');
+            const evaluationResult = evaluatePlacementTest(generated as any, answered);
+            detailedEvaluation = evaluationResult;
+            scorePercent = Math.round(evaluationResult.overall_readiness);
+        }
+
+        const trackName = isGeneral ? 'General Placement' : (TRACK_NAME_MAP[track || ''] || track || 'General Placement');
+
+        const questionsData = generated.map((q: any, index: number) => ({
+            questionId: `q_${index}`,
+            selectedOptionId: answered[index] !== null && answered[index] !== undefined
+                ? `opt_${answered[index]}`
+                : '',
+            isCorrect: answered[index] === q.ans_idx,
+            points: answered[index] === q.ans_idx ? 1 : 0,
+            belt: q.belt,
+            difficulty: q.difficulty_level,
+        }));
+
+        const assignedBeltName =
+            (isGeneral && detailedEvaluation?.assigned_belt)
+                ? detailedEvaluation.assigned_belt
+                : (existingTest.resultBeltName || 'White');
+
+        const guestDetails = !user && surveyData
+            ? {
+                name: surveyData.name,
+                email: surveyData.email || undefined,
+                phone: surveyData.phone,
+                age: surveyData.age,
+                country: surveyData.country,
+                city: surveyData.city,
+                schoolName: surveyData.schoolName,
+                preferredHouse: surveyData.preferredHouse,
+                techExperience: surveyData.techExperience,
+                heardAboutUs: surveyData.heardAboutUs,
+            }
+            : undefined;
+
+        existingTest.status = 'completed';
+        existingTest.scorePercent = scorePercent;
+        existingTest.resultBeltName = assignedBeltName;
+        existingTest.trackName = trackName;
+        existingTest.questions = questionsData as any;
+        existingTest.detailedEvaluation = detailedEvaluation;
+        existingTest.completedAt = new Date();
+        if (guestDetails) {
+            existingTest.guestDetails = guestDetails;
+        }
+        // Consume the lead token on submit; the cookie gets cleared in the
+        // response below. A replayed cookie against a completed test won't
+        // match anymore, and the token can't be reused for a new test.
+        existingTest.leadTokenHash = undefined;
 
         let currentTechnicalAttemptsUsed = 0;
-
         if (user) {
-            // Update user's placement test summary
             currentTechnicalAttemptsUsed = user.placementTest?.technicalAttemptsUsed || 0;
-
-            // Update technical test attempts
-            await User.findByIdAndUpdate(user._id, {
-                $set: {
-                    'placementTest.hasTakenAnyPlacementTest': true,
-                    'placementTest.lastPlacementTestId': placementTest._id,
-                    'placementTest.resultBeltName': assignedBeltName,
-                    'placementTest.resultScorePercent': scorePercent,
-                    'placementTest.takenAt': new Date(),
-                    'placementTest.attemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
-                    'placementTest.technicalAttemptsUsed': testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
-                },
-            });
         }
 
-        // Mirror result to Firebase for Sales Dashboard (Non-blocking)
-        savePlacementResultToFirebase({
-            ...placementTest.toObject(),
-            testType: 'technical',
-            email: user?.email || guestDetails?.email || null,
-            name: user?.profile?.firstName || guestDetails?.name || null,
-        }).catch(firebaseError => {
-            console.error('⚠️ Firebase sync failed:', firebaseError);
-        });
+        // Atomically persist the completed test row and (for logged-in users)
+        // the user's placementTest summary. Crashing between them could
+        // otherwise leave a saved result without an updated attemptsUsed count.
+        const dbSession = await mongoose.startSession();
+        try {
+            await dbSession.withTransaction(async () => {
+                await existingTest.save({ session: dbSession });
 
-        return NextResponse.json({
+                if (user) {
+                    await User.findByIdAndUpdate(
+                        user._id,
+                        {
+                            $set: {
+                                'placementTest.hasTakenAnyPlacementTest': true,
+                                'placementTest.lastPlacementTestId': existingTest._id,
+                                'placementTest.resultBeltName': assignedBeltName,
+                                'placementTest.resultScorePercent': scorePercent,
+                                'placementTest.takenAt': new Date(),
+                                'placementTest.attemptsUsed': currentTechnicalAttemptsUsed + 1,
+                                'placementTest.technicalAttemptsUsed': currentTechnicalAttemptsUsed + 1,
+                            },
+                        },
+                        { session: dbSession }
+                    );
+                }
+            });
+        } finally {
+            dbSession.endSession();
+        }
+
+        const response = NextResponse.json({
             success: true,
-            isGuest: false,
+            isGuest: !user,
             message: 'Results saved successfully!',
             data: {
-                testId: placementTest._id.toString(),
+                testId: existingTest._id.toString(),
                 scorePercent,
                 beltName: assignedBeltName,
-                beltStage: belt.stage,
-                attemptsUsed: testId ? currentTechnicalAttemptsUsed : currentTechnicalAttemptsUsed + 1,
-                detailedEvaluation // Send back to frontend
+                attemptsUsed: user ? currentTechnicalAttemptsUsed + 1 : null,
+                detailedEvaluation,
             },
         });
+
+        response.headers.set('Set-Cookie', clearLeadCookie());
+        return response;
     } catch (error) {
         console.error('Error submitting placement test:', error);
         return NextResponse.json(

@@ -49,6 +49,23 @@ export function LoginForm({ locale }: LoginFormProps) {
         };
         setError(errorMessages[result.error] || result.error);
       } else {
+        // Claim any orphan guest placement-test rows left behind under the
+        // lead-token cookie. Fire-and-forget on failure: a login should not
+        // break because the cookie is absent or the link endpoint hiccups.
+        // When rows were linked, stash the count so downstream pages can
+        // surface a one-time "we linked N past results" notice.
+        try {
+          const linkRes = await fetch('/api/placement-test/link-guest', { method: 'POST' });
+          if (linkRes.ok) {
+            const { linked } = await linkRes.json();
+            if (typeof linked === 'number' && linked > 0) {
+              sessionStorage.setItem('linkedGuestTests', String(linked));
+            }
+          }
+        } catch (linkErr) {
+          console.warn('link-guest failed (non-fatal):', linkErr);
+        }
+
         // Successful login - fetch session to check role
         const sessionRes = await fetch('/api/auth/session');
         const session = await sessionRes.json();

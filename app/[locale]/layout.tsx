@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Nunito, Protest_Riot } from 'next/font/google';
+import localFont from 'next/font/local';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -8,17 +8,21 @@ import { locales, localeDirections } from '@/i18n';
 import { AuthProvider } from '@/components/providers/AuthProvider';
 import '../globals.css';
 
-const nunito = Nunito({
-  subsets: ['latin'],
+const nunito = localFont({
+  src: [
+    { path: '../../public/fonts/nunito-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: '../../public/fonts/nunito-latin-700-normal.woff2', weight: '700', style: 'normal' },
+    { path: '../../public/fonts/nunito-latin-800-normal.woff2', weight: '800', style: 'normal' },
+  ],
   display: 'swap',
-  weight: ['400', '700', '800'],
   variable: '--font-nunito',
 });
 
-const protestRiot = Protest_Riot({
-  subsets: ['latin'],
+const protestRiot = localFont({
+  src: '../../public/fonts/protest-riot-latin-400-normal.woff2',
+  weight: '400',
+  style: 'normal',
   display: 'swap',
-  weight: ['400'],
   variable: '--font-protestRiot',
 });
 

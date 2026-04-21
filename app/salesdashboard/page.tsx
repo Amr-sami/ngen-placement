@@ -248,16 +248,17 @@ export default function SalesDashboardPage() {
     const router = useRouter();
 
     useEffect(() => {
-        // Simple security check for our hardcoded cookie
-        const isAuth = document.cookie.includes('sales_session=true');
-        if (!isAuth) {
-            router.push('/salesdashboard/login');
-            return;
-        }
-
+        // Source of truth is the API: a non-admin gets 401/403 and we bounce
+        // to login. The old `sales_session=true` cookie check was fake — it
+        // could be set in DevTools and any unauthenticated visitor who did so
+        // would still see the dashboard shell until the API call failed.
         const fetchData = async () => {
             try {
                 const res = await fetch('/api/sales/results');
+                if (res.status === 401 || res.status === 403) {
+                    router.push('/salesdashboard/login');
+                    return;
+                }
                 if (!res.ok) throw new Error('API fetch failed');
                 const data = await res.json();
                 setResults(data);
@@ -271,8 +272,14 @@ export default function SalesDashboardPage() {
         fetchData();
     }, [router]);
 
-    const handleLogout = () => {
-        document.cookie = 'sales_session=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    const handleLogout = async () => {
+        // Ends the NextAuth session — the old cookie clear was a no-op once
+        // the client-side gate went away.
+        try {
+            await fetch('/api/auth/signout', { method: 'POST' });
+        } catch (err) {
+            console.error('Signout failed:', err);
+        }
         router.push('/salesdashboard/login');
     };
 

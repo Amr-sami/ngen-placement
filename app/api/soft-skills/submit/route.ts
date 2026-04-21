@@ -1,26 +1,48 @@
-
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { z } from 'zod';
 import { authOptions } from '@/lib/auth/authOptions';
 import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PlacementTest from '@/lib/models/PlacementTest';
 import { SoftSkillsEvaluator } from '@/lib/soft-skills/evaluator';
-import { savePlacementResultToFirebase } from '@/lib/firebase-service';
+
+const SoftSkillsSubmitSchema = z.object({
+    ageGroup: z.enum(['6-9', '10-14', '15-18']),
+    answers: z.record(
+        z.string().regex(/^\d{1,4}$/),
+        z.number().int().min(0).max(9)
+    ),
+    surveyData: z
+        .object({
+            name: z.string().trim().max(120).optional(),
+            email: z.string().trim().email().max(200).optional().or(z.literal('')),
+            phone: z.string().trim().max(40).optional(),
+            age: z.string().trim().max(16).optional(),
+            country: z.string().trim().max(80).optional(),
+            city: z.string().trim().max(80).optional(),
+            schoolName: z.string().trim().max(200).optional(),
+            preferredHouse: z.string().trim().max(60).optional(),
+            techExperience: z.string().trim().max(200).optional(),
+            heardAboutUs: z.string().trim().max(200).optional(),
+        })
+        .partial()
+        .optional(),
+});
 
 export async function POST(req: Request) {
     try {
         const session = await getServerSession(authOptions);
 
-        const body = await req.json();
-        const { ageGroup, surveyData, answers } = body; // answers: { [questionId]: optionIndex }
-
-        if (!ageGroup || !answers) {
+        const rawBody = await req.json().catch(() => null);
+        const parsed = SoftSkillsSubmitSchema.safeParse(rawBody);
+        if (!parsed.success) {
             return NextResponse.json(
-                { error: 'Missing required fields' },
+                { error: 'Invalid request body', details: parsed.error.issues },
                 { status: 400 }
             );
         }
+        const { ageGroup, answers, surveyData } = parsed.data;
 
         await dbConnect();
         let user = null;
@@ -31,7 +53,7 @@ export async function POST(req: Request) {
         const resolvedSurveyData = surveyData || {};
         const guestDetails = !user ? {
             name: resolvedSurveyData.name,
-            email: resolvedSurveyData.email,
+            email: resolvedSurveyData.email || undefined,
             phone: resolvedSurveyData.phone,
             age: resolvedSurveyData.age,
             country: resolvedSurveyData.country,
@@ -55,24 +77,22 @@ export async function POST(req: Request) {
         // Create PlacementTest record
         const placementTest = await PlacementTest.create({
             userId: user?._id || null,
-            trackId: user?._id || null, // Placeholder, soft skills isn't tied to a track really
-            attemptNumber: 1, // Soft skills is usually once-off or handled differently
+            attemptNumber: 1,
             testType: 'soft_skills',
             status: 'completed',
-            scorePercent: 0, // No pass/fail score
+            scorePercent: 0,
             questions: Object.entries(answers).map(([qid, optIdx]) => ({
                 questionId: qid,
                 selectedOptionId: String(optIdx),
-                isCorrect: true // No right/wrong answer
+                isCorrect: true
             })),
             detailedEvaluation: evaluationResult,
             guestDetails,
-            startedAt: new Date(), // Approximate
+            startedAt: new Date(),
             completedAt: new Date(),
         });
 
         if (user) {
-            // Update User - increment soft skills attempts
             const currentSoftSkillsAttempts = user.placementTest?.softSkillsAttemptsUsed || 0;
             await User.findByIdAndUpdate(user._id, {
                 $set: {
@@ -82,17 +102,6 @@ export async function POST(req: Request) {
                 }
             });
         }
-
-        // Mirror result to Firebase for Sales Dashboard (Non-blocking)
-        savePlacementResultToFirebase({
-            ...placementTest.toObject(),
-            testType: 'soft_skills',
-            email: user?.email || guestDetails?.email || null,
-            name: user?.profile?.firstName || guestDetails?.name || null,
-            evaluation: evaluationResult
-        }).catch(firebaseError => {
-            console.error('⚠️ Firebase sync failed:', firebaseError);
-        });
 
         return NextResponse.json({
             success: true,

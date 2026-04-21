@@ -1,50 +1,33 @@
 import { NextResponse } from 'next/server';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth/authOptions';
+import { z } from 'zod';
 import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
+import { requireSuperAdmin } from '@/lib/auth/adminAuth';
 
-interface GrantAttemptBody {
-    userId: string;
-    extraAttempts: number;
-}
+const GrantAttemptSchema = z.object({
+    userId: z.string().trim().min(1).max(64),
+    extraAttempts: z.number().int().min(1).max(100),
+});
 
 export async function POST(req: Request) {
     try {
-        const session = await getServerSession(authOptions);
+        // requireSuperAdmin revalidates role+status against Mongo on every call
+        // (never trusts a stale JWT claim) and redirects to 404 otherwise. It
+        // throws via redirect() on non-admins, which Next.js handles correctly.
+        await requireSuperAdmin();
 
-        // Check if user is authenticated
-        if (!session?.user?.email) {
+        const rawBody = await req.json().catch(() => null);
+        const parsed = GrantAttemptSchema.safeParse(rawBody);
+        if (!parsed.success) {
             return NextResponse.json(
-                { error: 'Authentication required' },
-                { status: 401 }
-            );
-        }
-
-        // TODO: Add proper admin role check when admin system is implemented
-        // For now, check against admin email from env
-        const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(e => e.trim().toLowerCase());
-
-        if (!adminEmails.includes(session.user.email.toLowerCase())) {
-            return NextResponse.json(
-                { error: 'Admin access required' },
-                { status: 403 }
-            );
-        }
-
-        const body: GrantAttemptBody = await req.json();
-        const { userId, extraAttempts } = body;
-
-        if (!userId || typeof extraAttempts !== 'number' || extraAttempts < 1) {
-            return NextResponse.json(
-                { error: 'Valid userId and extraAttempts (minimum 1) are required' },
+                { error: 'Invalid request body', details: parsed.error.issues },
                 { status: 400 }
             );
         }
+        const { userId, extraAttempts } = parsed.data;
 
         await dbConnect();
 
-        // Find and update user
         const user = await User.findById(userId);
 
         if (!user) {
@@ -54,7 +37,6 @@ export async function POST(req: Request) {
             );
         }
 
-        // Initialize placementTest if not exists
         if (!user.placementTest) {
             user.placementTest = {
                 hasTakenAnyPlacementTest: false,
@@ -66,7 +48,6 @@ export async function POST(req: Request) {
             };
         }
 
-        // Add extra attempts
         const currentExtra = user.placementTest.extraAttemptsGrantedBySupport || 0;
         user.placementTest.extraAttemptsGrantedBySupport = currentExtra + extraAttempts;
 

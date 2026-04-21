@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PasswordResetToken, { generatePasswordResetToken } from '@/lib/models/PasswordResetToken';
+import { hashToken } from '@/lib/auth/tokenHash';
 import { sendPasswordResetEmail } from '@/lib/email';
 
 // Rate limiting: simple in-memory store (use Redis in production)
@@ -12,7 +13,7 @@ const RESET_COOLDOWN_MS = 60 * 1000; // 1 minute
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { email } = body;
+        const { email, locale } = body;
 
         if (!email) {
             return NextResponse.json(
@@ -60,22 +61,27 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Check if user uses social login
+        // If the account uses a social provider a password reset is a no-op —
+        // but we must not leak that fact, so we return the same neutral success
+        // response an email-auth account would see.
         if (user.authProvider !== 'email') {
             return NextResponse.json(
-                { error: `This account uses ${user.authProvider} login. Please use that method to sign in.` },
-                { status: 400 }
+                {
+                    success: true,
+                    message: 'If an account exists with this email, a password reset link has been sent.',
+                },
+                { status: 200 }
             );
         }
 
         // Delete any existing reset tokens
         await PasswordResetToken.deleteMany({ email: lowerEmail });
 
-        // Create new reset token
+        // Create new reset token (store only the hash)
         const token = generatePasswordResetToken();
         await PasswordResetToken.create({
             email: lowerEmail,
-            token,
+            tokenHash: hashToken(token),
             expiresAt: new Date(Date.now() + 60 * 60 * 1000), // 1 hour
         });
 
@@ -83,7 +89,8 @@ export async function POST(request: NextRequest) {
         const emailResult = await sendPasswordResetEmail(
             lowerEmail,
             token,
-            user.profile.firstName
+            user.profile.firstName,
+            locale
         );
 
         if (!emailResult.success) {

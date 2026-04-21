@@ -83,12 +83,13 @@ export default function TestMain() {
       const surveyResults = sessionStorage.getItem('surveyResults')
 
       if (!surveyResults) {
-        router.push('/placement-test/survey')
+        router.push(`/${locale}/placement-test/survey`)
         return
       }
 
       // Ensure any previous test save flags are cleared so this test can save
       sessionStorage.removeItem('resultsSaved_v2')
+      sessionStorage.removeItem('testId')
 
       startProgress()
 
@@ -146,7 +147,13 @@ export default function TestMain() {
           throw new Error(t('error.noQuestions'))
         }
 
-        console.log(`Successfully loaded ${apiQuestions.length} questions in ${locale}`)
+        // Persist the server-issued testId so /submit can locate the row that
+        // holds the authoritative answer key. Without this, every guest submit
+        // falls through to the "Test not found" 400 branch.
+        const issuedTestId = (data as { testId?: string }).testId
+        if (issuedTestId) {
+          sessionStorage.setItem('testId', issuedTestId)
+        }
 
         setQuestions(apiQuestions)
         setSelectedAnswers(new Array(apiQuestions.length).fill(null))
@@ -193,29 +200,23 @@ export default function TestMain() {
   }
 
   const handleSubmit = () => {
-    const score = selectedAnswers.reduce<number>((total, answer, index) => {
-      if (answer === null) return total
-      return answer === questions[index].ans_idx ? total + 1 : total
-    }, 0)
-
-    // Store full question data including belt, difficulty_level, and concepts for evaluation
+    // Score is computed server-side from the stored answer key. The client
+    // intentionally does NOT reduce over `q.ans_idx` — shipping that to the
+    // browser bundle would leak the answer key on every exam load.
     const storedQuestions = questions.map(q => ({
       question: q.question,
       options: q.choices,
-      ans_idx: q.ans_idx,
       justification: q.justification,
-      // Include these fields for the evaluator
       belt: q.belt,
       difficulty_level: q.difficulty_level,
       concepts: q.concepts,
     }))
 
-    sessionStorage.setItem('testScore', score.toString())
     sessionStorage.setItem('totalQuestions', questions.length.toString())
     sessionStorage.setItem('questions', JSON.stringify(storedQuestions))
     sessionStorage.setItem('selectedAnswers', JSON.stringify(selectedAnswers))
 
-    router.push('/placement-test/results')
+    router.push(`/${locale}/placement-test/results`)
   }
 
   // --- Render Soft Skills Test ---
@@ -244,7 +245,7 @@ export default function TestMain() {
         </div>
         <SoftSkillsMain
           ageGroup={ageGroup}
-          onComplete={() => router.push('/')}
+          onComplete={() => router.push(`/${locale}`)}
         />
       </div>
     );
@@ -368,7 +369,7 @@ export default function TestMain() {
     return (
       <ErrorState
         error={error}
-        onRetry={() => router.push('/placement-test/survey')}
+        onRetry={() => router.push(`/${locale}/placement-test/survey`)}
       />
     )
   }

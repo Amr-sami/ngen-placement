@@ -439,6 +439,7 @@ export default function SurveyForm() {
                         placeholder={t('fields.name')}
                         value={formData.name}
                         onChange={handleChange('name')}
+                        maxLength={120}
                       />
                     </div>
                     <div className="flex-1 min-w-[100px]">
@@ -448,6 +449,7 @@ export default function SurveyForm() {
                         type="number"
                         value={formData.age}
                         onChange={handleChange('age')}
+                        maxLength={16}
                       />
                     </div>
                   </div>
@@ -459,6 +461,7 @@ export default function SurveyForm() {
                         placeholder={t('fields.country')}
                         value={formData.country}
                         onChange={handleChange('country')}
+                        maxLength={80}
                       />
                     </div>
                     <div className="flex-1">
@@ -467,6 +470,7 @@ export default function SurveyForm() {
                         placeholder={t('fields.city')}
                         value={formData.city}
                         onChange={handleChange('city')}
+                        maxLength={80}
                       />
                     </div>
                   </div>
@@ -481,6 +485,7 @@ export default function SurveyForm() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange('phone')}
+                      maxLength={40}
                     />
                     <div className="relative">
                       <InputField
@@ -490,6 +495,7 @@ export default function SurveyForm() {
                         value={formData.email}
                         onChange={handleChange('email')}
                         onBlur={handleEmailBlur}
+                        maxLength={200}
                       />
                       {isCheckingUser && (
                         <div className="absolute end-4 top-1/2 -translate-y-1/2">
@@ -543,6 +549,7 @@ export default function SurveyForm() {
                     placeholder={t('fields.school')}
                     value={formData.schoolName}
                     onChange={handleChange('schoolName')}
+                    maxLength={120}
                   />
 
                   {/* Tech Toggle */}
@@ -579,6 +586,7 @@ export default function SurveyForm() {
                         value={formData.techDetails}
                         onChange={handleChange('techDetails')}
                         placeholder={t('questions.details')}
+                        maxLength={500}
                         className="w-full mt-3 bg-black/30 border border-white/10 rounded-xl p-4 text-white text-sm focus:outline-none focus:border-[#4ade80] transition-colors resize-none"
                         rows={2}
                       />

@@ -28,8 +28,9 @@ export async function getCountryFromIP(ip: string): Promise<GeoLocationResult> {
     }
 
     try {
-        // Use ip-api.com free tier (no HTTPS on free tier)
-        const response = await fetch(`http://ip-api.com/json/${ip}?fields=status,country,countryCode,city`, {
+        // HTTPS is mandatory — a plaintext lookup is tamperable in transit and
+        // the returned country is persisted onto the user record during signup.
+        const response = await fetch(`https://ip-api.com/json/${ip}?fields=status,country,countryCode,city`, {
             next: { revalidate: 86400 }, // Cache for 24 hours
         });
 

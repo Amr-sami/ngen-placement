@@ -14,9 +14,12 @@
 
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import { assertNotProduction } from './_prodGuard';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });
+
+assertNotProduction('migrate-to-bilingual.ts');
 
 const MONGODB_URI = process.env.MONGODB_URI;
 

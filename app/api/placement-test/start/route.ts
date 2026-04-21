@@ -71,9 +71,11 @@ export async function POST(req: Request) {
         // Create a new placement test record
         const newAttemptNumber = currentAttemptsUsed + 1;
 
+        // trackId intentionally omitted — it was previously set to `user._id`
+        // as a placeholder, which polluted the Track collection foreign-key
+        // with user ids. Leave it null until we actually know the track.
         const placementTest = await PlacementTest.create({
             userId: user._id,
-            trackId: user._id, // Using user ID as placeholder, will be updated when test completes
             attemptNumber: newAttemptNumber,
             testType,
             status: 'in_progress',

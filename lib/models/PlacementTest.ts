@@ -35,6 +35,14 @@ export interface IPlacementTest extends Document {
         heardAboutUs?: string;
     };
     detailedEvaluation?: any; // Stores the complex JSON result from new evaluator
+    // Server-side answer key for scoring. Stored as Mixed because the question
+    // object shape varies between general/specific tracks. Never returned to
+    // the client; only read by the submit route to recompute the score.
+    generatedQuestions?: any;
+    // Hash of the guest lead-token cookie. Lets the submit/results routes
+    // verify ownership without requiring a logged-in user. Cleartext token
+    // lives only in the HttpOnly cookie on the browser; we store sha256.
+    leadTokenHash?: string;
     startedAt?: Date;
     completedAt?: Date;
     createdAt: Date;
@@ -116,6 +124,15 @@ const PlacementTestSchema = new Schema<IPlacementTest>(
         questions: [QuestionSchema],
         detailedEvaluation: {
             type: Schema.Types.Mixed, // Flexible for the complex result object
+        },
+        generatedQuestions: {
+            type: Schema.Types.Mixed,
+            select: false,
+        },
+        leadTokenHash: {
+            type: String,
+            select: false,
+            index: true,
         },
         guestDetails: {
             name: String,

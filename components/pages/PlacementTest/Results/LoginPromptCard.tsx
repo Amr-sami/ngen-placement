@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { LogIn, UserPlus, Shield } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 interface LoginPromptCardProps {
     onClose?: () => void
@@ -12,19 +12,20 @@ interface LoginPromptCardProps {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function LoginPromptCard(_props: LoginPromptCardProps) {
     const router = useRouter()
+    const locale = useLocale()
     const t = useTranslations('placementTest.results.loginPrompt')
 
     const handleLogin = () => {
         // Store current path for redirect after login
         const currentPath = window.location.pathname + window.location.search
         sessionStorage.setItem('returnUrl', currentPath)
-        router.push(`/auth/login?callbackUrl=${encodeURIComponent(currentPath)}`)
+        router.push(`/${locale}/auth/login?callbackUrl=${encodeURIComponent(currentPath)}`)
     }
 
     const handleSignup = () => {
         const currentPath = window.location.pathname + window.location.search
         sessionStorage.setItem('returnUrl', currentPath)
-        router.push(`/auth/signup?callbackUrl=${encodeURIComponent(currentPath)}`)
+        router.push(`/${locale}/auth/signup?callbackUrl=${encodeURIComponent(currentPath)}`)
     }
 
     return (

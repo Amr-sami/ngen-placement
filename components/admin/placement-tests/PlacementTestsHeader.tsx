@@ -1,10 +1,12 @@
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { Filter } from 'lucide-react';
 
 export default function PlacementTestsHeader() {
     const router = useRouter();
+    const locale = useLocale();
     const searchParams = useSearchParams();
 
     const handleStatusFilter = (status: string) => {
@@ -15,7 +17,7 @@ export default function PlacementTestsHeader() {
             params.set('status', status);
         }
         params.set('page', '1');
-        router.push(`/en/admin/placement-tests?${params.toString()}`);
+        router.push(`/${locale}/admin/placement-tests?${params.toString()}`);
     };
 
     const currentStatus = searchParams.get('status') || 'all';

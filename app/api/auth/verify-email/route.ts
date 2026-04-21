@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import VerificationToken from '@/lib/models/VerificationToken';
+import { hashToken } from '@/lib/auth/tokenHash';
+import { getLocaleFromRequest } from '@/lib/requestLocale';
 
 export async function POST(request: NextRequest) {
     try {
@@ -17,10 +19,10 @@ export async function POST(request: NextRequest) {
 
         await connectToDatabase();
 
-        // Find the verification token
+        // Find the verification token by hashed lookup
         const verificationToken = await VerificationToken.findOne({
             email: email.toLowerCase(),
-            token,
+            tokenHash: hashToken(token),
         });
 
         if (!verificationToken) {
@@ -92,25 +94,27 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const email = searchParams.get('email');
     const token = searchParams.get('token');
+    const locale = getLocaleFromRequest(request);
+    const verifyPath = `/${locale}/auth/verify-email`;
 
     if (!email || !token) {
         return NextResponse.redirect(
-            new URL('/en/auth/verify-email?error=missing_params', request.url)
+            new URL(`${verifyPath}?error=missing_params`, request.url)
         );
     }
 
     try {
         await connectToDatabase();
 
-        // Find the verification token
+        // Find the verification token by hashed lookup
         const verificationToken = await VerificationToken.findOne({
             email: email.toLowerCase(),
-            token,
+            tokenHash: hashToken(token),
         });
 
         if (!verificationToken) {
             return NextResponse.redirect(
-                new URL('/en/auth/verify-email?error=invalid_token', request.url)
+                new URL(`${verifyPath}?error=invalid_token`, request.url)
             );
         }
 
@@ -118,7 +122,7 @@ export async function GET(request: NextRequest) {
         if (verificationToken.expiresAt < new Date()) {
             await VerificationToken.deleteOne({ _id: verificationToken._id });
             return NextResponse.redirect(
-                new URL('/en/auth/verify-email?error=expired_token', request.url)
+                new URL(`${verifyPath}?error=expired_token`, request.url)
             );
         }
 
@@ -127,7 +131,7 @@ export async function GET(request: NextRequest) {
 
         if (!user) {
             return NextResponse.redirect(
-                new URL('/en/auth/verify-email?error=user_not_found', request.url)
+                new URL(`${verifyPath}?error=user_not_found`, request.url)
             );
         }
 
@@ -141,12 +145,12 @@ export async function GET(request: NextRequest) {
 
         // Redirect to success page
         return NextResponse.redirect(
-            new URL('/en/auth/verify-email?success=true', request.url)
+            new URL(`${verifyPath}?success=true`, request.url)
         );
     } catch (error) {
         console.error('Email verification error:', error);
         return NextResponse.redirect(
-            new URL('/en/auth/verify-email?error=server_error', request.url)
+            new URL(`${verifyPath}?error=server_error`, request.url)
         );
     }
 }

@@ -2,11 +2,15 @@
   "name": "kayfa-lms",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "packageManager": "npm@10.9.2",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "db:seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
@@ -30,9 +34,9 @@
     "next": "^16.1.1",
     "next-auth": "^4.24.13",
     "next-intl": "^4.5.5",
-    "react": "19.0.0-rc-66855b96-20241106",
+    "react": "^19.0.0",
     "react-country-flag": "^3.1.0",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-select": "^5.10.2",
     "resend": "^4.1.2",
@@ -44,9 +48,9 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
     "eslint-config-next": "^16.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",

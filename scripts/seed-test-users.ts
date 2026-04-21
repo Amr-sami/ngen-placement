@@ -22,6 +22,9 @@ config({ path: '.env.local' });
 
 // Import User model
 import User from '../lib/models/User';
+import { assertNotProduction } from './_prodGuard';
+
+assertNotProduction('seed-test-users.ts');
 
 const MONGODB_URI = process.env.MONGODB_URI;
 

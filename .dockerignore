@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.gitignore
+.env*
+*.log
+*.tsbuildinfo
+docs
+scripts
+coverage
+.vscode
+.idea
+.DS_Store
+README.md
+Dockerfile
+.dockerignore

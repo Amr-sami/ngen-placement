@@ -1,8 +1,18 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
+import { z } from 'zod';
 import { authOptions } from '@/lib/auth/authOptions';
 import User from '@/lib/models/User';
 import dbConnect from '@/lib/mongodb';
+
+// Hard caps on level/score so a tampered client can't write arbitrarily large
+// numbers into the user document.
+const ProgressSchema = z.object({
+    level: z.number().int().min(1).max(999).optional(),
+    score: z.number().int().min(0).max(1_000_000).optional(),
+}).refine(v => v.level !== undefined || v.score !== undefined, {
+    message: 'At least one of level or score is required',
+});
 
 export async function PUT(req: Request) {
     try {
@@ -12,8 +22,15 @@ export async function PUT(req: Request) {
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
         }
 
-        const body = await req.json();
-        const { level, score } = body;
+        const rawBody = await req.json().catch(() => null);
+        const parsed = ProgressSchema.safeParse(rawBody);
+        if (!parsed.success) {
+            return NextResponse.json(
+                { error: 'Invalid request body', details: parsed.error.issues },
+                { status: 400 }
+            );
+        }
+        const { level, score } = parsed.data;
 
         await dbConnect();
         const user = await User.findOne({ email: session.user.email });

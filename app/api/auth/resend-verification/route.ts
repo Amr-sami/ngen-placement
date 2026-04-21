@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import VerificationToken, { generateVerificationToken } from '@/lib/models/VerificationToken';
+import { hashToken } from '@/lib/auth/tokenHash';
 import { sendVerificationEmail } from '@/lib/email';
 
 // Rate limiting: simple in-memory store (use Redis in production)
@@ -12,7 +13,7 @@ const RESEND_COOLDOWN_MS = 60 * 1000; // 1 minute
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { email } = body;
+        const { email, locale } = body;
 
         if (!email) {
             return NextResponse.json(
@@ -70,11 +71,11 @@ export async function POST(request: NextRequest) {
         // Delete any existing tokens
         await VerificationToken.deleteMany({ email: lowerEmail });
 
-        // Create new verification token
+        // Create new verification token (store only the hash)
         const token = generateVerificationToken();
         await VerificationToken.create({
             email: lowerEmail,
-            token,
+            tokenHash: hashToken(token),
             expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000), // 24 hours
         });
 
@@ -82,7 +83,8 @@ export async function POST(request: NextRequest) {
         const emailResult = await sendVerificationEmail(
             lowerEmail,
             token,
-            user.profile.firstName
+            user.profile.firstName,
+            locale
         );
 
         if (!emailResult.success) {

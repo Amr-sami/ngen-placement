@@ -3,7 +3,7 @@ import crypto from 'crypto';
 
 export interface IPasswordResetToken extends Document {
     email: string;
-    token: string;
+    tokenHash: string;
     expiresAt: Date;
     createdAt: Date;
 }
@@ -16,7 +16,7 @@ const PasswordResetTokenSchema = new Schema<IPasswordResetToken>(
             lowercase: true,
             trim: true,
         },
-        token: {
+        tokenHash: {
             type: String,
             required: true,
             unique: true,
@@ -35,7 +35,7 @@ const PasswordResetTokenSchema = new Schema<IPasswordResetToken>(
 // Index for cleanup of expired tokens
 PasswordResetTokenSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });
 // Index for quick lookup
-PasswordResetTokenSchema.index({ email: 1, token: 1 });
+PasswordResetTokenSchema.index({ email: 1, tokenHash: 1 });
 
 /**
  * Generate a secure password reset token

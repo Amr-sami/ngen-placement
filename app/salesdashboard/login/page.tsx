@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { signIn } from 'next-auth/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Lock, Mail, ArrowRight, Loader2, AlertCircle, ShieldCheck } from 'lucide-react';
 
@@ -17,20 +18,23 @@ export default function SalesLoginPage() {
         setIsLoading(true);
         setError('');
 
-        // Hardcoded credentials for sales users
-        // sales@ngen.com / salesngen2026$$
-        if (email === 'sales@ngen.com' && password === 'salesngen2026$$') {
-            // Set a simple cookie for authentication (in a real app, this would be a secure HTTP-only cookie)
-            document.cookie = `sales_session=true; path=/; max-age=${60 * 60 * 24}; SameSite=Lax`;
+        // Authenticate against the real user store via NextAuth. The API then
+        // checks the user's role server-side; we must not gate on anything
+        // client-visible (the previous flow shipped a hardcoded credential
+        // pair inside the bundle, which was an auth bypass by itself).
+        const result = await signIn('credentials', {
+            email,
+            password,
+            redirect: false,
+        });
 
-            // Artificial delay for premium feel
-            setTimeout(() => {
-                router.push('/salesdashboard');
-            }, 1000);
-        } else {
+        if (!result || result.error) {
             setIsLoading(false);
             setError('Invalid credentials. Access denied for unauthorized personnel.');
+            return;
         }
+
+        router.push('/salesdashboard');
     };
 
     return (

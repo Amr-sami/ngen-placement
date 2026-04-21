@@ -11,6 +11,9 @@
 
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
+import { assertNotProduction } from './_prodGuard';
+
+assertNotProduction('create-support-user.ts');
 
 const MONGODB_URI = process.env.MONGODB_URI || '';
 

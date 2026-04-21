@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { Search, Filter, UserPlus } from 'lucide-react';
 
 export default function UsersHeader() {
     const router = useRouter();
+    const locale = useLocale();
     const searchParams = useSearchParams();
     const [searchValue, setSearchValue] = useState(searchParams.get('search') || '');
 
@@ -18,7 +20,7 @@ export default function UsersHeader() {
             params.delete('search');
         }
         params.set('page', '1');
-        router.push(`/en/admin/users?${params.toString()}`);
+        router.push(`/${locale}/admin/users?${params.toString()}`);
     };
 
     const handleStatusFilter = (status: string) => {
@@ -29,7 +31,7 @@ export default function UsersHeader() {
             params.set('status', status);
         }
         params.set('page', '1');
-        router.push(`/en/admin/users?${params.toString()}`);
+        router.push(`/${locale}/admin/users?${params.toString()}`);
     };
 
     const currentStatus = searchParams.get('status') || 'all';

@@ -19,6 +19,9 @@ import Track from '../lib/models/Track';
 import Belt from '../lib/models/Belt';
 import PricingConfig from '../lib/models/PricingConfig';
 import { LocalizedString } from '../lib/localization';
+import { assertNotProduction } from './_prodGuard';
+
+assertNotProduction('seed.ts');
 
 const MONGODB_URI = process.env.MONGODB_URI;
 

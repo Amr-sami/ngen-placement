@@ -3,8 +3,11 @@ import bcrypt from 'bcryptjs';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import VerificationToken, { generateVerificationToken } from '@/lib/models/VerificationToken';
+import { hashToken } from '@/lib/auth/tokenHash';
 import { sendVerificationEmail } from '@/lib/email';
 import { getIPFromHeaders, getCountryFromIP } from '@/lib/geoLocation';
+import { linkGuestPlacementTests } from '@/lib/placement-test/linkGuest';
+import { clearLeadCookie } from '@/lib/placement-test/leadToken';
 
 export async function POST(request: NextRequest) {
     try {
@@ -25,6 +28,7 @@ export async function POST(request: NextRequest) {
             joinType,
             organizationName,
             howDidYouKnowNgen,
+            locale,
         } = body;
 
         // Validate required fields
@@ -54,12 +58,17 @@ export async function POST(request: NextRequest) {
 
         await connectToDatabase();
 
-        // Check if user already exists
+        // Do not branch the response on whether the email already exists — that
+        // turns signup into an account-enumeration oracle. If the email is in
+        // use we return the same "success" payload an actual signup would.
         const existingUser = await User.findOne({ email: email.toLowerCase() });
         if (existingUser) {
             return NextResponse.json(
-                { error: 'User with this email already exists' },
-                { status: 409 }
+                {
+                    success: true,
+                    message: 'If this email is new, a verification link has been sent.',
+                },
+                { status: 201 }
             );
         }
 
@@ -103,11 +112,11 @@ export async function POST(request: NextRequest) {
         // Delete any existing verification tokens for this email
         await VerificationToken.deleteMany({ email: email.toLowerCase() });
 
-        // Create verification token
+        // Create verification token (store only the hash; email the plaintext)
         const token = generateVerificationToken();
         await VerificationToken.create({
             email: email.toLowerCase(),
-            token,
+            tokenHash: hashToken(token),
             expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000), // 24 hours
         });
 
@@ -115,7 +124,8 @@ export async function POST(request: NextRequest) {
         const emailResult = await sendVerificationEmail(
             email.toLowerCase(),
             token,
-            firstName
+            firstName,
+            locale
         );
 
         if (!emailResult.success) {
@@ -123,7 +133,24 @@ export async function POST(request: NextRequest) {
             // Don't fail registration if email fails - user can request resend
         }
 
-        return NextResponse.json(
+        // If this user just walked in from a guest placement test, claim the
+        // orphan PlacementTest row before we respond. Link failures are
+        // non-fatal — the dedicated /api/placement-test/link-guest endpoint
+        // will retry on first sign-in.
+        let clearLeadHeader: string | null = null;
+        try {
+            const link = await linkGuestPlacementTests(
+                user._id.toString(),
+                request.headers.get('cookie')
+            );
+            if (link.hadToken) {
+                clearLeadHeader = clearLeadCookie();
+            }
+        } catch (err) {
+            console.error('Guest link on register failed:', err);
+        }
+
+        const response = NextResponse.json(
             {
                 success: true,
                 message: 'User registered successfully. Please check your email to verify your account.',
@@ -131,14 +158,22 @@ export async function POST(request: NextRequest) {
             },
             { status: 201 }
         );
+        if (clearLeadHeader) {
+            response.headers.append('Set-Cookie', clearLeadHeader);
+        }
+        return response;
     } catch (error) {
         console.error('Registration error:', error);
 
-        // Handle MongoDB duplicate key error
+        // Duplicate-key races also return a neutral response so the endpoint
+        // cannot be used to enumerate existing accounts.
         if (error instanceof Error && error.message.includes('duplicate key')) {
             return NextResponse.json(
-                { error: 'User with this email already exists' },
-                { status: 409 }
+                {
+                    success: true,
+                    message: 'If this email is new, a verification link has been sent.',
+                },
+                { status: 201 }
             );
         }
 

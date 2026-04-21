@@ -43,13 +43,12 @@ export const authOptions: NextAuthOptions = {
                     throw new Error('Invalid password');
                 }
 
-                // TODO: Re-enable email verification check after testing
-                // if (user.status === 'pending') {
-                //     throw new Error('Please verify your email before logging in');
-                // }
-
                 if (user.status === 'suspended' || user.status === 'deleted') {
                     throw new Error('Your account has been suspended');
+                }
+
+                if (user.status === 'pending' || !user.emailVerified) {
+                    throw new Error('Please verify your email before logging in');
                 }
 
                 // Update last login
@@ -89,11 +88,16 @@ export const authOptions: NextAuthOptions = {
                 const existingUser = await User.findOne({ email: user.email });
 
                 if (existingUser) {
-                    // Update provider info if user exists
+                    if (existingUser.status === 'suspended' || existingUser.status === 'deleted') {
+                        return false;
+                    }
+
                     if (existingUser.authProvider !== 'google') {
                         existingUser.authProvider = 'google';
                         existingUser.emailVerified = true;
-                        existingUser.status = 'active';
+                        if (existingUser.status === 'pending') {
+                            existingUser.status = 'active';
+                        }
                         if (user.image) existingUser.profile.avatarUrl = user.image;
                         existingUser.lastLoginAt = new Date();
                         await existingUser.save();
@@ -146,20 +150,20 @@ export const authOptions: NextAuthOptions = {
         },
 
         async redirect({ url, baseUrl }) {
-            // Handle callbackUrl for super admin
-            // If the callback contains /admin, allow it for super admins
-            if (url.includes('/admin')) {
-                return url;
+            // Only same-origin callbacks are honored. The prior `url.includes('/admin')`
+            // check accepted https://evil.example/admin because `includes` does not
+            // pin the origin. Resolve against baseUrl and bail out to baseUrl if
+            // the resolved origin differs.
+            try {
+                const resolved = new URL(url, baseUrl);
+                const base = new URL(baseUrl);
+                if (resolved.origin !== base.origin) {
+                    return baseUrl;
+                }
+                return resolved.toString();
+            } catch {
+                return baseUrl;
             }
-
-            // Default redirect behavior
-            if (url.startsWith('/')) {
-                return `${baseUrl}${url}`;
-            }
-            if (url.startsWith(baseUrl)) {
-                return url;
-            }
-            return baseUrl;
         },
     },
 

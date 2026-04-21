@@ -3,7 +3,7 @@ import crypto from 'crypto';
 
 export interface IVerificationToken extends Document {
     email: string;
-    token: string;
+    tokenHash: string;
     expiresAt: Date;
     createdAt: Date;
 }
@@ -16,7 +16,7 @@ const VerificationTokenSchema = new Schema<IVerificationToken>(
             lowercase: true,
             trim: true,
         },
-        token: {
+        tokenHash: {
             type: String,
             required: true,
             unique: true,
@@ -35,7 +35,7 @@ const VerificationTokenSchema = new Schema<IVerificationToken>(
 // Index for cleanup of expired tokens
 VerificationTokenSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });
 // Index for quick lookup
-VerificationTokenSchema.index({ email: 1, token: 1 });
+VerificationTokenSchema.index({ email: 1, tokenHash: 1 });
 
 /**
  * Generate a secure verification token

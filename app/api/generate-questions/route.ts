@@ -1,12 +1,21 @@
 import { NextResponse } from "next/server"
 import fs from "fs/promises"
 import path from "path"
+import { getServerSession } from "next-auth"
+import { authOptions } from "@/lib/auth/authOptions"
+import dbConnect from "@/lib/mongodb"
+import User from "@/lib/models/User"
+import PlacementTest from "@/lib/models/PlacementTest"
 import { generateBalancedExam, type BankQuestion } from "@/lib/questionGenerator"
 import { loadGeneralQuestions } from "@/lib/question-loader"
+import {
+  generateLeadToken,
+  hashLeadToken,
+  serializeLeadCookie,
+} from "@/lib/placement-test/leadToken"
 
 export const runtime = "nodejs"
 
-// Map track keys to file names
 const TRACK_FILE_MAP: Record<string, string> = {
   data_science: "AI_Data_Science.json",
   computer_fundamentals: "Computer_Fundamentals.json",
@@ -16,7 +25,6 @@ const TRACK_FILE_MAP: Record<string, string> = {
   robotics: "Robotics.json",
 }
 
-// Map track keys to track names used in the question bank
 const TRACK_NAME_MAP: Record<string, string> = {
   data_science: "AI & Data Science",
   computer_fundamentals: "Computer Fundamentals",
@@ -24,6 +32,7 @@ const TRACK_NAME_MAP: Record<string, string> = {
   data_analysis: "Data Analysis",
   python_programming: "Python Programming",
   robotics: "Robotics",
+  general: "General Placement",
 }
 
 async function readSpecificTrackFile(track: string, language: 'en' | 'ar' = 'en') {
@@ -48,21 +57,26 @@ async function readSpecificTrackFile(track: string, language: 'en' | 'ar' = 'en'
 function getAgeFromSurvey(surveyResults: string): number {
   try {
     const data = JSON.parse(surveyResults);
-    // data.age is usually a string "6-9" or "10-14" or "15-18", or a number
-    // We'll try to parse a number or range
     const ageRaw = data.age;
-    if (!ageRaw) return 10; // Default
-
+    if (!ageRaw) return 10;
     if (typeof ageRaw === 'number') return ageRaw;
-
-    // If range "6-9", take lower bound
     const match = ageRaw.match(/^(\d+)/);
     if (match) return parseInt(match[1]);
-
     return 10;
   } catch {
     return 10;
   }
+}
+
+/**
+ * Strip the answer key before returning questions to the client. The full
+ * exam (including ans_idx) is stored on the PlacementTest row and re-read by
+ * the submit route — the client never sees it.
+ */
+function sanitizeQuestionForClient(q: any) {
+  const { ans_idx, ...rest } = q ?? {};
+  void ans_idx;
+  return rest;
 }
 
 export async function POST(req: Request) {
@@ -78,7 +92,6 @@ export async function POST(req: Request) {
     let tracks: string[]
 
     if (selectedTrack === 'general') {
-      // General track: Load from questions_v2 based on age
       const age = getAgeFromSurvey(surveyResults);
       console.log(`👶 Detected age for general test: ${age}`);
 
@@ -88,30 +101,16 @@ export async function POST(req: Request) {
         throw new Error('No questions found for the selected age group.');
       }
 
-      // We want questions from all 3 belts.
-      // The generateBalancedExam expects "tracks" to distribute questions.
-      // Our questions now have "belt" property, but "track" property might still be "AI", "Data Science" etc.
-      // We should probably balance by BELT or keep balanced by original tracks? 
-      // The requirement is "Assessment across multiple independent belts". 
-      // Let's assume we want balance across the Belts (White, Yellow, Orange).
-      // However, generateBalancedExam keys off `track` property. 
-      // Mapping belt to track for generation purpose or updating generator?
-      // Let's TRY to map belt -> track for generation to ensure we get X questions from each belt.
-
-      // HACK: Temporarily override track with belt name to force distribution by belt
       allQuestions = allQuestions.map(q => ({
         ...q,
-        track: (q as any).belt || q.track // Use belt as track for balancing
+        track: (q as any).belt || q.track
       }));
 
       tracks = ["White", "Yellow", "Orange"];
-
     } else {
-      // Specific track: load from SpicificTest-EN / SpicificTest-AR
       const raw = await readSpecificTrackFile(selectedTrack, language)
       allQuestions = JSON.parse(raw)
 
-      // Use only the selected track
       const trackName = TRACK_NAME_MAP[selectedTrack]
       if (!trackName) {
         throw new Error(`Unknown track name for: ${selectedTrack}`)
@@ -120,28 +119,68 @@ export async function POST(req: Request) {
     }
 
     const DIFFICULTIES = [1, 2, 3]
-
-    // Determine N based on general or specific?
-    // User requested 25 questions for General (and Specific)
     const n = 25;
 
     const exam = generateBalancedExam(allQuestions, {
       n,
-      tracks: tracks, // For General: ["White", "Yellow", "Orange"]; For Specific: [TrackName]
+      tracks,
       difficulties: DIFFICULTIES,
       seed: Date.now(),
     })
 
     console.log(`✅ Generated ${exam.length} questions in ${language} for track: ${selectedTrack}`)
 
-    return NextResponse.json({
-      questions: exam,
+    // Persist the exam server-side so submit can recompute the score against
+    // a trusted answer key rather than trusting whatever ans_idx the browser
+    // echoes back. Guests get a lead-token cookie that the submit route
+    // verifies as a proof-of-ownership. Authenticated users are linked by
+    // session; they still get the cookie as a fallback if the session lapses.
+    let session = null;
+    try {
+      session = await getServerSession(authOptions);
+    } catch (e) {
+      console.warn('getServerSession failed:', e);
+    }
+
+    await dbConnect();
+
+    let user: any = null;
+    if (session?.user?.email) {
+      user = await User.findOne({ email: session.user.email });
+    }
+
+    const leadToken = generateLeadToken();
+    const leadTokenHash = hashLeadToken(leadToken);
+
+    const trackName = selectedTrack === 'general'
+      ? 'General Placement'
+      : (TRACK_NAME_MAP[selectedTrack] || selectedTrack);
+
+    const placementTest = await PlacementTest.create({
+      userId: user?._id || null,
+      trackName,
+      attemptNumber: user ? ((user.placementTest?.technicalAttemptsUsed || 0) + 1) : 1,
+      testType: 'technical',
+      status: 'in_progress',
+      generatedQuestions: exam,
+      leadTokenHash,
+      startedAt: new Date(),
+    });
+
+    const sanitizedExam = exam.map(sanitizeQuestionForClient);
+
+    const response = NextResponse.json({
+      questions: sanitizedExam,
       partial: false,
       failed_tracks: [],
       message: `Questions generated for track: ${selectedTrack}.`,
       language,
       selectedTrack,
-    })
+      testId: placementTest._id.toString(),
+    });
+
+    response.headers.set('Set-Cookie', serializeLeadCookie(leadToken));
+    return response;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Failed to generate questions"
     console.error('❌ Error:', message)

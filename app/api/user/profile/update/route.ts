@@ -1,8 +1,19 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { z } from 'zod';
 import { authOptions } from '@/lib/auth/authOptions';
 import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
+
+const ProfileUpdateSchema = z.object({
+    firstName: z.string().trim().min(1).max(60),
+    lastName: z.string().trim().min(1).max(60),
+    phone: z.string().trim().max(40).optional().or(z.literal('')),
+    age: z.union([z.number().int().min(3).max(120), z.string().trim().max(16)]),
+    country: z.string().trim().max(80).optional().or(z.literal('')),
+    city: z.string().trim().max(80).optional().or(z.literal('')),
+    organizationName: z.string().trim().max(120).optional().or(z.literal('')),
+});
 
 export async function PUT(req: Request) {
     try {
@@ -15,16 +26,15 @@ export async function PUT(req: Request) {
             );
         }
 
-        const data = await req.json();
-        const { firstName, lastName, phone, age, country, city, organizationName } = data;
-
-        // Basic validation
-        if (!firstName || !lastName || !age) {
+        const rawBody = await req.json().catch(() => null);
+        const parsed = ProfileUpdateSchema.safeParse(rawBody);
+        if (!parsed.success) {
             return NextResponse.json(
-                { error: 'First name, last name, and age are required' },
+                { error: 'Invalid request body', details: parsed.error.issues },
                 { status: 400 }
             );
         }
+        const { firstName, lastName, phone, age, country, city, organizationName } = parsed.data;
 
         await dbConnect();
 
@@ -35,8 +45,6 @@ export async function PUT(req: Request) {
                 $set: {
                     'profile.firstName': firstName,
                     'profile.lastName': lastName,
-                    // Update fullName via pre-save hook? findOneAndUpdate bypasses pre-save hooks usually.
-                    // We should set fullName explicitly or use save().
                     'profile.fullName': `${firstName} ${lastName}`,
                     'profile.phoneNumber': phone,
                     'profile.age': age,

@@ -1,9 +1,41 @@
 import { Resend } from 'resend';
+import { locales, defaultLocale, type Locale } from '@/i18n';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy so Next.js static analysis at build time (no env vars) can evaluate
+// this module. Resend's constructor throws on an undefined API key.
+let _resend: Resend | null = null;
+function getResend(): Resend {
+    if (!_resend) {
+        _resend = new Resend(process.env.RESEND_API_KEY);
+    }
+    return _resend;
+}
 
 const FROM_EMAIL = process.env.FROM_EMAIL || 'noreply@ngen.school';
 const APP_NAME = 'NGen Schools';
+
+function escapeHtml(value: string): string {
+    return value
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function resolveLocale(input?: string): Locale {
+    return (locales as readonly string[]).includes(input ?? '')
+        ? (input as Locale)
+        : defaultLocale;
+}
+
+function requireAppUrl(): string {
+    const url = process.env.NEXTAUTH_URL || process.env.APP_BASE_URL;
+    if (!url) {
+        throw new Error('NEXTAUTH_URL (or APP_BASE_URL) must be set to build email links');
+    }
+    return url.replace(/\/+$/, '');
+}
 
 interface EmailResult {
     success: boolean;
@@ -16,12 +48,16 @@ interface EmailResult {
 export async function sendVerificationEmail(
     email: string,
     token: string,
-    firstName: string
+    firstName: string,
+    locale?: string
 ): Promise<EmailResult> {
-    const verificationUrl = `${process.env.NEXTAUTH_URL}/en/auth/verify-email?token=${token}&email=${encodeURIComponent(email)}`;
+    const resolvedLocale = resolveLocale(locale);
+    const verificationUrl = `${requireAppUrl()}/${resolvedLocale}/auth/verify-email?token=${encodeURIComponent(token)}&email=${encodeURIComponent(email)}`;
+    const safeFirstName = escapeHtml(firstName);
+    const safeUrl = escapeHtml(verificationUrl);
 
     try {
-        const { error } = await resend.emails.send({
+        const { error } = await getResend().emails.send({
             from: `${APP_NAME} <${FROM_EMAIL}>`,
             to: email,
             subject: 'Verify your email - NGen Schools',
@@ -39,13 +75,13 @@ export async function sendVerificationEmail(
                         </div>
                         <div style="padding: 40px 30px;">
                             <p style="font-size: 16px; color: #333333; margin-bottom: 20px;">
-                                Hi <strong>${firstName}</strong>,
+                                Hi <strong>${safeFirstName}</strong>,
                             </p>
                             <p style="font-size: 16px; color: #555555; line-height: 1.6; margin-bottom: 30px;">
                                 Thank you for signing up! Please verify your email address by clicking the button below:
                             </p>
                             <div style="text-align: center; margin: 30px 0;">
-                                <a href="${verificationUrl}" 
+                                <a href="${safeUrl}"
                                    style="display: inline-block; background-color: #FF6B35; color: #ffffff; text-decoration: none; padding: 14px 40px; border-radius: 30px; font-weight: bold; font-size: 16px;">
                                     Verify Email Address
                                 </a>
@@ -56,7 +92,7 @@ export async function sendVerificationEmail(
                             <hr style="border: none; border-top: 1px solid #eeeeee; margin: 30px 0;">
                             <p style="font-size: 12px; color: #aaaaaa; text-align: center;">
                                 If the button doesn't work, copy and paste this link into your browser:<br>
-                                <a href="${verificationUrl}" style="color: #FF6B35; word-break: break-all;">${verificationUrl}</a>
+                                <a href="${safeUrl}" style="color: #FF6B35; word-break: break-all;">${safeUrl}</a>
                             </p>
                         </div>
                     </div>
@@ -83,12 +119,16 @@ export async function sendVerificationEmail(
 export async function sendPasswordResetEmail(
     email: string,
     token: string,
-    firstName: string
+    firstName: string,
+    locale?: string
 ): Promise<EmailResult> {
-    const resetUrl = `${process.env.NEXTAUTH_URL}/en/auth/reset-password?token=${token}&email=${encodeURIComponent(email)}`;
+    const resolvedLocale = resolveLocale(locale);
+    const resetUrl = `${requireAppUrl()}/${resolvedLocale}/auth/reset-password?token=${encodeURIComponent(token)}&email=${encodeURIComponent(email)}`;
+    const safeFirstName = escapeHtml(firstName);
+    const safeUrl = escapeHtml(resetUrl);
 
     try {
-        const { error } = await resend.emails.send({
+        const { error } = await getResend().emails.send({
             from: `${APP_NAME} <${FROM_EMAIL}>`,
             to: email,
             subject: 'Reset your password - NGen Schools',
@@ -106,13 +146,13 @@ export async function sendPasswordResetEmail(
                         </div>
                         <div style="padding: 40px 30px;">
                             <p style="font-size: 16px; color: #333333; margin-bottom: 20px;">
-                                Hi <strong>${firstName}</strong>,
+                                Hi <strong>${safeFirstName}</strong>,
                             </p>
                             <p style="font-size: 16px; color: #555555; line-height: 1.6; margin-bottom: 30px;">
                                 We received a request to reset your password. Click the button below to create a new password:
                             </p>
                             <div style="text-align: center; margin: 30px 0;">
-                                <a href="${resetUrl}" 
+                                <a href="${safeUrl}"
                                    style="display: inline-block; background-color: #FF6B35; color: #ffffff; text-decoration: none; padding: 14px 40px; border-radius: 30px; font-weight: bold; font-size: 16px;">
                                     Reset Password
                                 </a>
@@ -123,7 +163,7 @@ export async function sendPasswordResetEmail(
                             <hr style="border: none; border-top: 1px solid #eeeeee; margin: 30px 0;">
                             <p style="font-size: 12px; color: #aaaaaa; text-align: center;">
                                 If the button doesn't work, copy and paste this link into your browser:<br>
-                                <a href="${resetUrl}" style="color: #FF6B35; word-break: break-all;">${resetUrl}</a>
+                                <a href="${safeUrl}" style="color: #FF6B35; word-break: break-all;">${safeUrl}</a>
                             </p>
                         </div>
                     </div>
@@ -157,7 +197,7 @@ export async function sendEmail({
     html: string;
 }): Promise<EmailResult> {
     try {
-        const { error } = await resend.emails.send({
+        const { error } = await getResend().emails.send({
             from: `${APP_NAME} <${FROM_EMAIL}>`,
             to,
             subject,

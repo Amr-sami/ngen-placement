@@ -10,6 +10,7 @@ interface InputFieldProps {
   type?: string
   min?: string
   max?: string
+  maxLength?: number
   disabled?: boolean
 }
 
@@ -22,6 +23,7 @@ export default function InputField({
   type = "text",
   min,
   max,
+  maxLength,
   disabled = false
 }: InputFieldProps) {
   return (
@@ -36,6 +38,7 @@ export default function InputField({
         onBlur={onBlur}
         min={min}
         max={max}
+        maxLength={maxLength}
         disabled={disabled}
         className="block w-full ps-12 pe-4 py-3.5 bg-black/20 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-black/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         placeholder={placeholder}

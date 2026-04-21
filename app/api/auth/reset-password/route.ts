@@ -3,6 +3,7 @@ import bcrypt from 'bcryptjs';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PasswordResetToken from '@/lib/models/PasswordResetToken';
+import { hashToken } from '@/lib/auth/tokenHash';
 
 export async function POST(request: NextRequest) {
     try {
@@ -26,10 +27,10 @@ export async function POST(request: NextRequest) {
 
         await connectToDatabase();
 
-        // Find the reset token
+        // Find the reset token by hashed lookup
         const resetToken = await PasswordResetToken.findOne({
             email: email.toLowerCase(),
-            token,
+            tokenHash: hashToken(token),
         });
 
         if (!resetToken) {

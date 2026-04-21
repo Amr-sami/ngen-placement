@@ -4,6 +4,10 @@ import { authOptions } from '@/lib/auth/authOptions';
 import dbConnect from '@/lib/mongodb';
 import User from '@/lib/models/User';
 import PlacementTest from '@/lib/models/PlacementTest';
+import {
+    hashLeadToken,
+    parseLeadTokenFromHeader,
+} from '@/lib/placement-test/leadToken';
 
 interface RouteParams {
     params: Promise<{ testId: string }>;
@@ -14,27 +18,11 @@ export async function GET(req: Request, { params }: RouteParams) {
         const { testId } = await params;
         const session = await getServerSession(authOptions);
 
-        if (!session?.user?.email) {
-            return NextResponse.json(
-                { error: 'Authentication required' },
-                { status: 401 }
-            );
-        }
-
         await dbConnect();
 
-        // Find user
-        const user = await User.findOne({ email: session.user.email });
-
-        if (!user) {
-            return NextResponse.json(
-                { error: 'User not found' },
-                { status: 404 }
-            );
-        }
-
-        // Find the test and verify ownership
-        const test = await PlacementTest.findById(testId).lean();
+        // Need +leadTokenHash to verify guest ownership. select:false keeps it
+        // off default reads so it never leaks to other endpoints.
+        const test = await PlacementTest.findById(testId).select('+leadTokenHash');
 
         if (!test) {
             return NextResponse.json(
@@ -43,8 +31,26 @@ export async function GET(req: Request, { params }: RouteParams) {
             );
         }
 
-        // Check if user owns this test
-        if (!test.userId || test.userId.toString() !== user._id.toString()) {
+        // Access is granted if EITHER the logged-in user owns the row OR the
+        // caller presents a lead-token cookie whose hash matches the row. This
+        // lets guests read their own completed results from the /results page.
+        let userMatches = false;
+        if (session?.user?.email) {
+            const user = await User.findOne({ email: session.user.email });
+            userMatches =
+                !!user &&
+                !!test.userId &&
+                test.userId.toString() === user._id.toString();
+        }
+
+        let cookieMatches = false;
+        if (!userMatches && test.leadTokenHash) {
+            const cookieToken = parseLeadTokenFromHeader(req.headers.get('cookie'));
+            cookieMatches =
+                !!cookieToken && hashLeadToken(cookieToken) === test.leadTokenHash;
+        }
+
+        if (!userMatches && !cookieMatches) {
             return NextResponse.json(
                 { error: 'Access denied' },
                 { status: 403 }
@@ -60,6 +66,7 @@ export async function GET(req: Request, { params }: RouteParams) {
                 resultBeltName: test.resultBeltName,
                 trackName: test.trackName,
                 questions: test.questions,
+                detailedEvaluation: test.detailedEvaluation,
                 startedAt: test.startedAt,
                 completedAt: test.completedAt,
                 createdAt: test.createdAt,

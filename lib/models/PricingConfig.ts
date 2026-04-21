@@ -6,6 +6,7 @@ export interface IPricingConfig extends Document {
     configType: 'perBelt' | 'package' | 'organization';
     name: LocalizedString;
     packageLevel?: 'pre-foundation' | 'foundation' | 'specialization' | 'advanced';
+    durationMonths?: number;
     discountPercentEGP: number;
     discountPercentUSD: number;
     fixedPriceEGP?: number;
@@ -30,6 +31,11 @@ const PricingConfigSchema = new Schema<IPricingConfig>(
         packageLevel: {
             type: String,
             enum: ['pre-foundation', 'foundation', 'specialization', 'advanced'],
+        },
+        durationMonths: {
+            type: Number,
+            min: 1,
+            max: 24,
         },
         discountPercentEGP: {
             type: Number,
@@ -70,6 +76,13 @@ const PricingConfigSchema = new Schema<IPricingConfig>(
 // Index for fast lookups
 PricingConfigSchema.index({ configType: 1, isActive: 1 });
 PricingConfigSchema.index({ packageLevel: 1 });
+
+// At most one active config per (configType, packageLevel, durationMonths) tuple.
+// Prevents silent duplicate-active rows that would make pricing lookup non-deterministic.
+PricingConfigSchema.index(
+    { configType: 1, packageLevel: 1, durationMonths: 1 },
+    { unique: true, partialFilterExpression: { isActive: true } }
+);
 
 const PricingConfig: Model<IPricingConfig> =
     mongoose.models.PricingConfig || mongoose.model<IPricingConfig>('PricingConfig', PricingConfigSchema);
